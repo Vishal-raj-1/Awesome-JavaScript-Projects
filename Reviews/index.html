@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #d6e9f7;
+        }
+        h1{
+            margin-top: 6rem;
+        }
+        .container{
+            width: 40%;
+            margin: auto;
+            background-color: white;
+            box-shadow: 10px 12px 21px rgb(109, 147, 211);
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+            box-shadow: 11px -2px rgb(38, 146, 213);
+            border-radius: 50%;
+            margin: 12px;
+        }
+
+        button{
+            margin: .3rem .6rem;
+            background-color: transparent;
+            border: none;
+            color:rgb(38, 146, 213) ;
+        }
+
+        #random-btn{
+            border: 2px solid rgb(38, 146, 213);
+            padding: 8px;
+            border-radius: 15%;
+        }
+
+        #random-btn:hover{
+            background-color: rgb(38, 146, 213);
+            color: black;
+        }
+
+        #name, #job{
+            margin: .1rem;
+            text-transform: capitalize;
+        }
+
+        #info{
+            padding: 3px .8rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Our Reviews</h1>
+        <span></span>
+        <div class="container">
+            <img src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg" alt="">
+            <div>
+                <h3 id="name">Susan Smith</h3>
+                <p id="job">web developer</p>
+                <p id="info">
+                    I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry
+                </p>
+            </div>
+
+            <div class="button-container">
+                <button id="prev-btn">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-btn">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+
+              <button id="random-btn">Surprise Me</button>
+        </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
