@@ -9,61 +9,137 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Awesome JavaScript Project</title>
 </head>
 
 <body>
-    <div class="container my-3 text-center">
-        <h1>Welcome to Awesome JavaScript Project</h1>
-    </div>
-    <div class="container border py-4">
-        <div class="row row-cols-3">
-            <div class="card m-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Note App</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="./Note app/index.html" class="btn btn-primary">Visit</a>
-                </div>
+    <!-- Navbar -->
+    <nav id="Navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Awesome Javscript</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#project">Projects</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container my-5">
+            <img src="Images/home.svg" class="img-fluid" alt="">
+        </div>
+    </section>
+    <section id="about" class="container-fluid mt-5">
+        <div class="row">
+            <div class="col col-6">
+                <img src="Images/about us.svg" class="aboutUsImg img-fluid" alt="">
             </div>
 
-            <div class="card m-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Calculator</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="./Calculator/index.html" class="btn btn-primary">Visit</a>
-                </div>
-            </div>
-
-            <div class="card m-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Color Flipper</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="./Color Flipper/index.html" class="btn btn-primary">Visit</a>
-                </div>
-            </div>
-            <div class="card m-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Counter</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="./Counter/index.html" class="btn btn-primary">Visit</a>
-                </div>
-            </div>
-
-            <div class="card m-3" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Reviews</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="./Reviews/index.html" class="btn btn-primary">Visit</a>
+            <div class="col col-6">
+                <div class="aboutSection">
+                    <h2 class="aboutHeader">About Us</h2>
+                    <p class="aboutPara">This Platform is built by JavaScript Developers to make Learning Javascript
+                        easy for the newbies
+                        . This website has so many Beginner Friendly Projects which you should try your hands on. It
+                        will help you learn each and every basic concept of Javscript and you will keep a strong hold on
+                        Javscript </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+
+    <section id="project">
+        <div class="container my-3 text-center">
+            <h1> Awesome Javascript Projects</h1>
+        </div>
+        <div class="container border py-4">
+            <div class="row row-cols-3">
+                <div class="card m-3  cardStyle">
+                    <img class="card-img-top" src="Images/Note app.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Note app</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="./public/note-app.html" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 cardStyle">
+                    <img class="card-img-top" src="Images/Calculator.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculator</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="./public/calculator.html" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 cardStyle">
+                    <img class="card-img-top" src="Images/Color flipper.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Color Flipper</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="./public/color-flipper.html" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 cardStyle">
+                    <img class="card-img-top" src="Images/Counter.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Counter</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="./public/counter.html" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 cardStyle">
+                    <img class="card-img-top" src="Images/Reviews.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Reviews</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p> -->
+                        <a href="./public/reviews.html" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3 footer">
+            © 2020 Copyright: AwesomeJavascript.com
+        </div>
+        <!-- Copyright -->
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
