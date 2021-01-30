@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutUsImg{
+    height: 50%;
+}
+
+.aboutHeader{
+    border-bottom: 4px ridge black;
+    width: 10rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.aboutSection{
+    padding: 0 3rem;
+}
+
+.aboutPara{
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    color: #716e6e;
+}
+
+/* Cards */
+.card{
+    transform: scale(0.98);
+    box-shadow: 7px 7px #dedada;
+}
+
+.card:hover{
+    transform: scale(1) ;
+}
+
+/* Footer */
+.footer{
+    color: white;
+    background-color: rgba(14, 13, 13, 0.2);
+}
