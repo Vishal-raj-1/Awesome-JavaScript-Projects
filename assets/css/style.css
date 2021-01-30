@@ -27,12 +27,13 @@
 }
 
 /* Cards */
-.card{
+.cardStyle{
     transform: scale(0.98);
     box-shadow: 7px 7px #dedada;
+    width: 21rem;
 }
 
-.card:hover{
+.cardStyle:hover{
     transform: scale(1) ;
 }
 
