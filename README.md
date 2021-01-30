@@ -1,6 +1,15 @@
 <h1 align="center">Awesome JavaScript Projects</h1>
 
-This Projects contain many awesome Vanilla Javascript Projects, check the website here[here](https://vishal-raj-1.github.io/Awesome-JavaScript-Projects/). 
+This Projects contain many awesome Vanilla Javascript Projects, check the website [here](https://vishal-raj-1.github.io/Awesome-JavaScript-Projects/). 
+
+
+Projects Build till now :
+
+- Calculator
+- Color Flipper
+- Counter
+- Note app
+- Reviews
 
 # Contribution is fun! :green_heart:
 
