@@ -1,15 +1,28 @@
 <h1 align="center">Awesome JavaScript Projects</h1>
 
-This Projects contain many awesome Vanilla Javascript Projects, check the website [here](https://vishal-raj-1.github.io/Awesome-JavaScript-Projects/). 
+Are you a Newbie in Web development and want to dive deep into Javascript?
 
+<p align="center"><img src="https://media.giphy.com/media/l4q83E0RjRSGLXBLO/giphy.gif" width = 40%></p>
 
-Projects Build till now :
+Are you looking for some awesome Javascript Projects in which each and every project will teach you an important Javascript Concept?
 
-- Calculator
-- Color Flipper
-- Counter
-- Note app
-- Reviews
+<p align="center"><img src="https://media.giphy.com/media/Uq4XZx6xm8bdVgrv9T/giphy.gif" width = 40%></p>
+
+Do you want to contribute to some Awesome Javascript projects and showcase your Javascript skills through it?🤩
+
+<p align="center"><img src="https://media.giphy.com/media/VeBFQLNzdBV3cfMpDR/giphy.gif" width = 40%></p>
+
+Then, You got here right!! 
+
+Awesome Javscript Projects Website contain many awesome Vanilla Javascript Projects in which each and every project will teach you some new and important javscript concepts. It includes concepts like Functional Components, Class Components, Math Objects, Arrow functions, APIs and many more.
+
+The Main Motive of this project is to make you fall❌ rise ✅ in love with Javascript. You will be in love with the beauty of Javascript.
+
+What we have for you here? 
+
+<p align="center"><img src="https://media.giphy.com/media/36JlZFv9TrxNofgm5h/giphy.gif" width = 60%></p>
+
+So, What are you waiting for?
 
 # Contribution is fun! :green_heart:
 
