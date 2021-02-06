@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+/* Home */
+
+.homePara{
+    font-size: 1.2rem;
+}
+
+.homeImg{
+    margin-bottom: 5rem;
+}
+
+/* About Section */
+
 .aboutUsImg{
     height: 50%;
 }
@@ -21,7 +33,6 @@
 
 .aboutPara{
     margin-bottom: 1rem;
-    line-height: 1.8rem;
     font-size: 1.1rem;
     color: #716e6e;
 }
@@ -42,3 +53,19 @@
     color: white;
     background-color: rgba(14, 13, 13, 0.2);
 }
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    .home, .about{
+        text-align: center;
+    }
+
+    .aboutUsImg{
+        display: none;
+    }
+  }
