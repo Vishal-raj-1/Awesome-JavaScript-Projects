@@ -9,28 +9,34 @@ table{
 
 input{
     border-radius: 21px;
-    border: 5px solid #244624;
-    font-size:34px;
+    border: 5px solid rgb(10 19 61);
+    font-size: 34px;
     height: 65px;
-    width: 456px;
+    width: 441px;
 }
 
 button{
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 40px;
-    background: #978fa0;
-    width: 102px;
-    height: 90px;
+    background: #ddf7e3;
+    width: 100px;
+    height: 69px;
     margin: 6px;
+    transform: scale(1);
+    box-shadow: 1px 1px #8e00ff, 2px 2px #e67641, 4px 4px rgb(10 19 61);
+}
+
+button:hover{
+    transform: scale(0.9);
 }
 
 .calculator{ 
-    border: 4px solid #13695d;
-    background-color: #ff99f7;
+    border: 4px solid rgb(10 19 61);
+    background-image: linear-gradient(to right, rgb(10 19 61), rgb(255 0 151));
     padding: 23px;
     border-radius: 53px;
     display: inline-block;
-    
+    box-shadow: 8px 8px 8px #150aaf57;
 }
 
 h1{
