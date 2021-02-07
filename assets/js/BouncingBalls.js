@@ -122,12 +122,13 @@ function animate() {
         if (bal[i].x + bal[i].radius > tx || bal[i].x - bal[i].radius < 0) {
             bal[i].dx = -bal[i].dx;
         }
+        
+        let distance = Math.floor(Math.sqrt(
+              Math.pow(mousex - bal[i].x, 2) + Math.pow(mousey - bal[i].y, 2)
+            ));
+        
         // increasing ball's size on mouse triggered. At max the radius of the ball should be less than 70mm.
-        if (mousex > bal[i].x - 20 &&
-            mousex < bal[i].x + 20 &&
-            mousey > bal[i].y - 50 &&
-            mousey < bal[i].y + 50 &&
-            bal[i].radius < 70) {
+        if (distance < bal[i].radius &&  bal[i].radius < 70 ) {
             bal[i].radius += 5;
         }
         else {
