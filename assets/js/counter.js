@@ -12,7 +12,7 @@ decreaseCount.addEventListener("click", () => {
     count = count - 1;
     counter.innerHTML = count;
     if (count < 0) {
-        countColor = "red";
+        countColor = "#ffee93";
         counter.style.color = countColor;
     }
     else if (count == 0) {
@@ -25,7 +25,7 @@ increaseCount.addEventListener("click", () => {
     count = count + 1;
     counter.innerHTML = count;
     if (count > 0) {
-        countColor = "green";
+        countColor = "#ffee93";
         counter.style.color = countColor;
     }
     else if (count == 0) {
