@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Counter</title>
     <style>
         body{
@@ -30,111 +26,13 @@
             margin-top: 10%;
         }
 
-        button {
-            padding: 0.7rem 1rem;
+        button{
+            padding: .5rem;
             margin: .5rem;
-            background:linear-gradient(90deg,#d9d5df,#e97887);
-            border-radius: 15px;
-            font-weight: 500;
-        }
-        .btn{
-            font-weight: 500;
-            border:2px solid black;
-            color:black;
-            padding: 0.5rem 1rem;
-        }
-        .btn:hover{
-            color:black;
-            background:linear-gradient(90deg,#d9d5df,#726e6f);
-        }
-        .icon-btn {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(90deg,#d9d5df,#5e5c5c);
-            border-radius: 25px;
-            border: 2px solid #000000;
-            overflow: hidden;
-            position: relative;
-            transition: width 0.2s ease-in-out;
-        }
-
-        .add-btn:hover {
-            width: 180px;
-        }
-
-        .add-btn::before,
-        .add-btn::after {
-            transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
-            content: "";
-            position: absolute;
-            height: 3px;
-            width: 10px;
-            top: calc(50% - 2px);
-            background:rgb(0, 0, 0);
-        }
-
-        .add-btn::after {
-            right: 14px;
-            overflow: hidden;
-        }
-
-        .add-btn::before {
-            left: 14px;
-        }
-
-        .icon-btn:focus {
-            outline: none;
-        }
-
-        .btn-txt {
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-
-        .add-btn:hover::before,
-        .add-btn:hover::after {
-            width: 4px;
-            border-radius: 3px;
-        }
-
-        .add-btn:hover .btn-txt {
-            opacity: 1;
-        }
-
-        .add-icon::after,
-        .add-icon::before {
-            transition: all 0.2s ease-in-out;
-            content: "";
-            position: absolute;
-            height: 20px;
-            width: 2.5px;
-            top: calc(50% - 10px);
-            background: rgb(0, 0, 0);
-            overflow: hidden;
-        }
-
-        .add-icon::before {
-            left: 22px;
-        }
-
-        .add-icon::after {
-            right: 22px;
-        }
-
-        .add-btn:hover .add-icon::before {
-            left: 15px;
-            height: 4px;
-            top: calc(50% - 2px);
-        }
-
-        .add-btn:hover .add-icon::after {
-            right: 15px;
-            height: 4px;
-            top: calc(50% - 2px);
+            border-radius: 4%;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <h1>Counter</h1>
@@ -142,18 +40,12 @@
             <span id="count">0</span>
         </div>
         <div>
-            <button id="decrease" class="icon-btn add-btn">
-                <div class="btn-txt">Decrease Count</div>
-            </button>
-            <button id="reset" class="btn btn-secondary">Reset</button>
-            <button id="increase" class="icon-btn add-btn">
-                <div class="add-icon"></div>
-                <div class="btn-txt">Increase Count</div>
-            </button>
+            <button id="decrease">Decrease Count</button>
+            <button id="reset">Reset</button>
+            <button id="increase">Increase Count</button>
         </div>
     </div>
 
     <script src="../assets/js/counter.js"></script>
 </body>
-
 </html>
