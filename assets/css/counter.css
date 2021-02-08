@@ -26,21 +26,21 @@ button {
 .decrease {
   color: #fca3cc;
 }
-.one {
+.decrease {
   background-color: #bce6eb;
   border-color: #bce6eb;
 }
-.one:hover {
+.decrease:hover {
   color: blueviolet;
 }
-.Three:hover {
+.increase:hover {
   color: blueviolet;
 }
-.Two {
+.reset {
   background-color: #fdcfdf;
   border-color: #fdcfdf;
 }
-.Three {
+.increase {
   background-color: #bce6eb;
   border-color: #bce6eb;
 }
