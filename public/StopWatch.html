@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>StopWatch</title>
+    <!-- CSS ADDED -->
+    <style>
+        body {
+            color: black;
+            display: flex;
+            margin-top: 5rem;
+            height: 100vh;
+        }
+
+        .stopwatch {
+            font-size: 7rem;
+        }
+
+        .btn {
+            padding: 5px 13px;
+            color: white;
+            border: 2px solid rgb(27, 9, 129);
+            margin: 10px;
+            font-weight: 450;
+            border-radius: 10px;
+            background-color: rgb(27, 9, 129);
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 30px;
+        }
+        /* Mobile view */
+        @media only screen and (max-width: 768px) {
+            .heading {
+                font-size: 3rem;
+            }
+
+            .stopwatch {
+                font-size: 4rem;
+                font-weight: 300;
+            }
+
+            .btn {
+                padding: 3px 10px;
+                color: white;
+                border: 2px solid rgb(27, 9, 129);
+                margin: 5px;
+                font-weight: 300;
+                border-radius: 10px;
+                background-color: rgb(27, 9, 129);
+            }
+            ul li {
+            list-style: none;
+            font-size: 20px;
+        }
+        }
+    </style>
+</head>
+<!-- body -->
+
+<body>
+    <div class="container">
+        <h1 class="heading text-center">Stop Watch</h1>
+        <div class="stopwatch text-center">00:00:00</div>
+        <div class="controls text-center">
+            <button onclick="start()" class="btn">Start</button>
+            <button onclick="stop()" class="btn">Stop</button>
+            <button onclick="reset()" class="btn">Reset</button>
+            <button onclick="lap()" class="btn">Lap</button>
+            <button onclick="resetlaps()" class="btn">Reset Laps</button>
+        </div>
+        <ul class="laps text-center font-weight-bold my-2"></ul>
+    </div>
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        let ms = 0, s = 0, m = 0;
+        let timer;
+        let stopwatchEl = document.querySelector('.stopwatch');
+        let lapsContainer = document.querySelector('.laps');
+
+        function start() {
+            if (!timer) {
+                timer = setInterval(run, 10);
+            }
+        }
+        function run() {
+            stopwatchEl.textContent = getTimer();
+            ms++;
+            if (ms == 100) {
+                ms = 0;
+                s++;
+            }
+            if (s == 60) {
+                s = 0;
+                m++;
+            }
+        }
+        function stop() {
+            clearInterval(timer);
+            timer = false
+        }
+        function reset() {
+            ms = 0;
+            s = 0;
+            m = 0;
+            stopwatchEl.textContent = getTimer();
+        }
+        function getTimer() {
+            return (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s) + ":" + (ms < 10 ? "0" + ms : ms);
+        }
+        function lap() {
+            if (timer) {
+                let li = document.createElement('li');
+                li.innerText = getTimer();
+                lapsContainer.appendChild(li);
+            }
+        }
+        function resetlaps(){
+            lapsContainer.innerHTML="";
+        }
+    </script>
+</body>
+
+</html>
