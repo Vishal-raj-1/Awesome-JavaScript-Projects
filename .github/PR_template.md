@@ -1,5 +1,5 @@
 #### Issue Number
-Fixes #
+fixes #
 <!-- Please Mention the issue number as  ISSUE #(Issue Number)
 Example:
 ISSUE #5
