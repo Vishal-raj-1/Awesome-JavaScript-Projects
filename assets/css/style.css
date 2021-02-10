@@ -6,6 +6,10 @@
 
 /* Home */
 
+.homeSection {
+  margin-bottom: 5rem;
+}
+
 .homePara {
   font-size: 1.2rem;
 }
