@@ -54,21 +54,6 @@
     background-color: rgba(14, 13, 13, 0.2);
 }
 
-/* visit button */
-.visitbutton{
-    color:#12013a;
-    font-weight:550;
-    padding:6px 18px;
-    border-radius: 20px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform:uppercase;
-    background:linear-gradient(90deg,#671fee,#acc2eb);
-}
-.visitbutton:hover{
-    color:#fcfcfc;
-    background:linear-gradient(90deg,#f18383,#671fee);
-}
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
