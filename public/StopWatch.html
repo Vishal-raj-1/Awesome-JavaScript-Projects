@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/StopWatch.css">
+    <title>StopWatch</title>
+</head>
+<!-- body -->
+
+<body>
+    <div class="container">
+        <h1 class="heading text-center">Stop Watch</h1>
+        <div class="stopwatch text-center">00:00:00</div>
+        <div class="controls text-center">
+            <button onclick="start()" class="btn">Start</button>
+            <button onclick="stop()" class="btn">Stop</button>
+            <button onclick="reset()" class="btn">Reset</button>
+            <button onclick="lap()" class="btn">Lap</button>
+            <button onclick="resetlaps()" class="btn">Reset Laps</button>
+        </div>
+        <ul class="laps text-center font-weight-bold my-2"></ul>
+    </div>
+    <!-- JavaScript -->
+    <script src="../assets/js/StopWatch.js"></script>
+</body>
+
+</html>
