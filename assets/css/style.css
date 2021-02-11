@@ -1,71 +1,99 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Home */
 
-.homePara{
-    font-size: 1.2rem;
+.homePara {
+  font-size: 1.2rem;
 }
 
-.homeImg{
-    margin-bottom: 5rem;
+.homeImg {
+  margin-bottom: 5rem;
 }
 
 /* About Section */
 
-.aboutUsImg{
-    height: 50%;
+.aboutUsImg {
+  height: 50%;
 }
 
-.aboutHeader{
-    border-bottom: 4px ridge black;
-    width: 10rem;
-    text-align: center;
-    margin-bottom: 2.5rem;
+.aboutHeader {
+  border-bottom: 4px ridge black;
+  width: 10rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
-.aboutSection{
-    padding: 0 3rem;
+.aboutSection {
+  padding: 0 3rem;
 }
 
-.aboutPara{
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    color: #716e6e;
+.aboutPara {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #716e6e;
 }
 
 /* Cards */
-.cardStyle{
-    transform: scale(0.98);
-    box-shadow: 7px 7px #dedada;
-    width: 21rem;
+.cardStyle {
+  transform: scale(0.98);
+  box-shadow: 7px 7px #dedada;
+  width: 21rem;
 }
 
-.cardStyle:hover{
-    transform: scale(1) ;
+.cardStyle:hover {
+  transform: scale(1);
 }
 
 /* Footer */
-.footer{
-    color: white;
-    background-color: rgba(14, 13, 13, 0.2);
+.footer {
+  color: white;
+  background-color: rgba(14, 13, 13, 0.2);
 }
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
-
-    .home, .about{
-        text-align: center;
-    }
-
-    .aboutUsImg{
-        display: none;
-    }
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
   }
+
+  .home,
+  .about {
+    text-align: center;
+  }
+
+  .aboutUsImg {
+    display: none;
+  }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  line-height: 1.33;
+  border-radius: 35px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.top_button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
