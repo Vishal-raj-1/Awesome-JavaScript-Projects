@@ -51,7 +51,9 @@
 .cardStyle:hover {
   transform: scale(1);
 }
-
+.card-body{
+  color: black;
+}
 /* Footer */
 .footer {
   color: white;
