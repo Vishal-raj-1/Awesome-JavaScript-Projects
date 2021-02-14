@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -95,4 +96,83 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-=======
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Home */
+
+.homeSection {
+  margin-bottom: 5rem;
+}
+
+.homePara {
+  font-size: 1.2rem;
+}
+
+.homeImg {
+  margin-bottom: 3rem;
+}
+
+/* About Section */
+
+.aboutUsImg {
+  margin-bottom: 5rem;
+}
+
+.aboutHeader {
+  border-bottom: 4px ridge black;
+  width: 10rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.aboutSection {
+  padding: 3rem 3rem 0;
+}
+
+.aboutPara {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #716e6e;
+}
+
+/* Cards */
+.cardStyle {
+  transform: scale(0.98);
+  box-shadow: 7px 7px #dedada;
+  width: 21rem;
+}
+
+.cardStyle:hover {
+  transform: scale(1);
+}
+.card-body{
+  color: black;
+}
+/* Footer */
+.footer {
+  color: white;
+  background-color: rgba(14, 13, 13, 0.2);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .home,
+  .about {
+    text-align: center;
+  }
+
+  .aboutUsImg {
+    display: none;
+  }
+}
+
