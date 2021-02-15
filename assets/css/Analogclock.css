@@ -13,12 +13,18 @@ section{
 .clock{
     width: 310px;
     height:310px;
-    background-color: rgb(250, 126, 112,0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
-    border: 2px solid rgb(2, 2, 2);
+    border:10px solid rgb(255, 255, 255);
     position: absolute;  
+    animation: mymove 5s infinite;
 }
+@keyframes mymove {
+    from {border: 10px solid rgb(5, 41, 109);}
+    to {border: 10px solid rgb(156, 13, 3);}
+  }
 .clock .number{
+    /* color:rgb(224, 224, 224); */
     --rotate : 0;
     position: absolute;
     width: 100%;
@@ -68,7 +74,7 @@ section{
 .clock .seconds{
     width:2px;
     height:45%;
-    background-color: rgb(8, 109, 13);
+    background-color: rgb(155, 10, 10);
     z-index: 11;
 }
 .clock .minutes{
