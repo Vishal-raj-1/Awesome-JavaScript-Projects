@@ -125,3 +125,4 @@ git push -u origin <your_branch_name>
 
 <img src ="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/cwoc.png" alt ="Cross Winter of Code"></img>
 
+<img src ="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/gssoc.png" alt ="Cross Winter of Code"></img>
