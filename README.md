@@ -1,5 +1,14 @@
 <h1 align="center">Awesome JavaScript Projects</h1>
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
+[![GitHub issues](https://img.shields.io/github/issues/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/network)
+[![GitHub stars](https://img.shields.io/github/stars/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/stargazers)
+
 Are you a Newbie in Web development and want to dive deep into Javascript?
 
 <p align="center"><img src="https://media.giphy.com/media/l4q83E0RjRSGLXBLO/giphy.gif" width = 40%></p>
@@ -101,3 +110,13 @@ git push -u origin <your_branch_name>
 
 
 **15** Voila :exclamation: You have made a PR to the awesome-javascript-projects :boom: . Wait for your submission to be accepted and your PR to be merged.
+
+## Project Maintainers 😃
+
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/Vishal-raj-1"><img alt="" src="https://avatars.githubusercontent.com/u/59874304?s=400&u=a90ce890d0e3d04ef84d5ae09b143dcb2ecc5d1b&v=4" width="130px;"><br><sub><b> Vishal Rajput </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=Vishal-raj-1" title="Code">💻 </a></td> </a></td>
+    <td align="center"><a href="https://github.com/urvashi-code1255"><img alt="" src="https://avatars.githubusercontent.com/u/63122133?s=400&u=acae9e4d42078288a36310800dfbce3906bc3798&v=4" width="130px;"><br><sub><b>
+ Urvashi Anand </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=urvashi-code1255" title="Code">💻 </a></td></a></td>
+  </tr>
+</tbody></table>

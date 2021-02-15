@@ -6,18 +6,35 @@
 
 /* Home */
 
+
 .homePara {
   font-size: 1.2rem;
 }
 
 .homeImg {
   margin-bottom: 5rem;
+
+.homeSection {
+  margin-bottom: 5rem;
+}
+
+.homePara {
+  font-size: 1.2rem;
+}
+
+.homeImg {
+  margin-bottom: 3rem;
+
 }
 
 /* About Section */
 
 .aboutUsImg {
+
   height: 50%;
+=======
+  margin-bottom: 5rem;
+
 }
 
 .aboutHeader {
@@ -28,7 +45,11 @@
 }
 
 .aboutSection {
+
   padding: 0 3rem;
+
+  padding: 3rem 3rem 0;
+
 }
 
 .aboutPara {
@@ -46,8 +67,12 @@
 
 .cardStyle:hover {
   transform: scale(1);
-}
 
+}
+.card-body{
+  color: black;
+
+}
 /* Footer */
 .footer {
   color: white;
@@ -60,6 +85,7 @@
   [class*="col-"] {
     width: 100%;
   }
+
 
   .home,
   .about {
@@ -99,4 +125,15 @@
   font-size: 30px;
   text-align: center;
   justify-content: center;
+=======
+
+  .home,
+  .about {
+    text-align: center;
+  }
+
+  .aboutUsImg {
+    display: none;
+  }
+
 }
