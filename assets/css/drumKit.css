@@ -1,0 +1,110 @@
+:root {
+  --main-font:  "monospace","montserrat", sans-serif;
+  --drum-font:  "monospace","open sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  height: 100%;
+  text-align: center;
+  /*background-image: url(assets/back.gif);*/
+}
+
+header {
+  margin: 1em;
+}
+
+header img {
+  height: 10em;
+}
+
+header h1 {
+  color: #25CCF7;
+  font-family : monospace ;
+  font-size: xx-large;
+}
+
+main {
+  margin: 0 auto;
+}
+
+main .key {
+  display: inline-block;
+  padding: 1em;
+  margin: 0.5em;
+  border: 0.25em solid #000000;
+  border-radius: 0.25em;
+  width: 4em;
+  transition: 0.1s;
+  color: #ffffff;
+  background: #000000;
+}
+
+main .key-playing {
+  transform: scale(1.1);
+  border-color: #25CCF7;
+}
+
+main .key kbd {
+  font-family: var(--drum-font);
+  font-weight: 700;
+  display: block;
+  font-size: 1.75em;
+  padding: 0.5em;
+}
+
+main .key span {
+  font-weight: 500;
+  font-size: 0.85em;
+  color: #25CCF7;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 2em;
+  padding: 2em 0;
+  background: linear-gradient(to right,#25CCF7, #192A56);
+  width: 100%;
+}
+
+footer p {
+  margin: 1em 0;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: monospace;
+  font-size: x-large;
+}
+
+/* for smaller devices*/
+
+@media (max-width: 766px) {
+  header {
+    margin: 2em;
+  }
+
+  main .key {
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 3.25em;
+  }
+
+  main .key kbd {
+    font-size: 1.25em;
+    padding: 0.25em 0;
+  }
+
+  main .key span {
+    font-size: 0.7em;
+  }
+
+  footer {
+    padding: 1em 0;
+  }
+}
