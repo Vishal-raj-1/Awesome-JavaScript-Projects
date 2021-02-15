@@ -111,6 +111,12 @@ git push -u origin <your_branch_name>
 
 **15** Voila :exclamation: You have made a PR to the awesome-javascript-projects :boom: . Wait for your submission to be accepted and your PR to be merged.
 
+### This Project is a part of the following Open Source Program
+
+<img align="center" alt="GIF" src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/cwoc.png" width="400" height="320" />
+
+<img align="center" alt="GIF" src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/gssoc.png" width="400" height="320" />
+
 ## Project Maintainers 😃
 
 <table>
@@ -121,8 +127,3 @@ git push -u origin <your_branch_name>
   </tr>
 </tbody></table>
 
-### This Project is a part of the following Open Source Program
-
-<img src ="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/cwoc.png" alt ="Cross Winter of Code"></img>
-
-<img src ="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/gssoc.png" alt ="Cross Winter of Code"></img>
