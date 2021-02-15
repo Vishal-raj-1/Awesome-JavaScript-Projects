@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.app{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header h1{
+    margin: 46px 0px 32px 0px;
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 0.25rem;
+    font-weight: 900;
+    color: grey;
+}
+
+.header p{
+    text-align: center;
+    font-size: 19px;
+    color: grey;
+    
+}
+
+.pads{
+    background: lightblue;
+    width: 100vw;
+    display: flex;
+    
+}
+
+.pads > div{
+    height: 150px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad-1{
+    background-color: rgb(119, 211, 26);
+
+}
+.pad-2{
+    background-color: rgb(101, 123, 172);
+
+}
+.pad-3{
+    background-color:  rgb(190, 109, 32);
+
+}
+.pad-4{
+    background-color: rgb(139, 67, 211);
+
+}
+.pad-5{
+    background-color: rgb(167, 51, 147);
+
+}
+.pad-6{
+    background-color: rgb(255, 0, 47);
+
+}
+
+
+.visual > div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+@keyframes jump{
+    0%{
+        left: 20%;
+        bottom: 0px;
+    }
+
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+   
+    100%{
+        left: 80%;
+        bottom: 0%;
+
+    }
+}
+
