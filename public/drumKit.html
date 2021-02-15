@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../assets/css/drumKit.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <title>Javascript Drum kit</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="../assets/GIFs/drum-kit.gif" alt="drum icon">
+    <h1><i class="fab fa-js"></i> Javascript Drum-Kit <i class="fas fa-drum"></i></h1>
+  </header>
+
+  <main class="keys">
+    
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span>Boom</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">Clap</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">HiHat</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">Kick</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">OpenHat</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">Ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">Snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">Tink</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">Tom</span>
+    </div>
+
+    <audio data-key="65" src="../assets/sounds/boom.wav"></audio>
+    <audio data-key="83" src="../assets/sounds/clap.wav"></audio>
+    <audio data-key="68" src="../assets/sounds/hihat.wav"></audio>
+    <audio data-key="70" src="../assets/sounds/boom.wav"></audio>
+    <audio data-key="71" src="../assets/sounds/openhat.wav"></audio>
+    <audio data-key="72" src="../assets/sounds/ride.wav"></audio>
+    <audio data-key="74" src="../assets/sounds/snare.wav"></audio>
+    <audio data-key="75" src="../assets/sounds/tink.wav"></audio>
+    <audio data-key="76" src="../assets/sounds/tom.wav"></audio>
+
+  </main>
+  <footer>
+    <p>Made with Code <i class="fas fa-code"></i> and Coffee <i class="fas fa-mug-hot"></i></p>
+  </footer>
+</body>
+<script src="../assets/js/drumKit.js"></script>
+
+</html>

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2d006b;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.heart {
+  animation: grow 3s linear;
+  position: absolute;
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 40px;
+  top: 0;
+  width: 40px;
+  height: 65px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0% 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes grow {
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
