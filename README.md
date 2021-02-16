@@ -113,9 +113,12 @@ git push -u origin <your_branch_name>
 
 ### This Project is a part of the following Open Source Program
 
+<p align="center">
 <img align="center" alt="GIF" src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/cwoc.png" width="200" height="200" />
-
 <img align="center" alt="GIF" src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/gssoc.png" width="200" height="200" />
+</a>
+</p>
+  
 
 ## Project Maintainers 😃
 
@@ -126,4 +129,3 @@ git push -u origin <your_branch_name>
  Urvashi Anand </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=urvashi-code1255" title="Code">💻 </a></td></a></td>
   </tr>
 </tbody></table>
-
