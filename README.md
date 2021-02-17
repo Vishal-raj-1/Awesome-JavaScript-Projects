@@ -114,11 +114,9 @@ git push -u origin <your_branch_name>
 ### This Project is a part of the following Open Source Program
 
 <p align="center">
-<img align="center" alt="GIF" src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/cwoc.png" width="200" height="200" />
-<img align="center" alt="GIF" src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/gssoc.png" width="200" height="200" />
-</a>
+    <img src="./assets/images/cwoc.png" alt="Logo" width="400" height="400"/>
+  </a>
 </p>
-  
 
 ## Project Maintainers 😃
 
