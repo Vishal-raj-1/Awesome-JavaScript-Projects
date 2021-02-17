@@ -114,7 +114,7 @@ git push -u origin <your_branch_name>
 ### This Project is a part of the following Open Source Program
 
 <p align="center">
-    <img src="./assets/images/cwoc.png" alt="Logo" width="400" height="400"/>
+    <img src=" ./assets/images/cwoc.png" alt="Logo" width="400" height="400"/>
   </a>
 </p>
 
