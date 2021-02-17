@@ -1,0 +1,140 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 15px;
+    margin: 0 auto;
+    align-content: center;
+    color: white;
+    background-color: #121212;
+
+
+}
+
+.marked {
+    background-color: lightgreen;
+    color: #121212;
+}
+.unmarked{
+    background-color: #841F27;
+    color: #f4f4f4;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #E50914;
+}
+
+hr {
+    border: 1px solid #E50914;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.box {
+    padding: 10px;
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid silver;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px 5px #E50914;
+}
+
+.box h2 {
+    text-align: start;
+}
+
+.box input {
+    width: 100%;
+    height: 100%;
+    min-height: 10px;
+    font-size: 18px;
+    max-height: 25px;
+}
+
+.optionsBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.optionsBox .options {
+    flex: 1;
+    border: 1px solid silver;
+    text-align: left;
+    padding: 5px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#optionsBox .options :hover {
+    transform: scale(1.5);
+}
+
+.boxFooter {
+    padding: 5px;
+    margin: 0 auto;
+}
+
+input {
+    padding: 5px 0;
+    background-color: #424242;
+    color: #f4f4f4;
+}
+
+input[type="text"]:focus {
+    outline-color: silver;
+    /* box-shadow: 2px 5px 2px 5px lightgreen */
+}
+
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+
+.swing:after {
+    content: '';
+    border: 1px solid #999;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+/* nail */
+.swing:before {
+    content: '';
+
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+button {
+    padding: 5px;
+    border: 1px solid silver;
+    background-color: #E50914;
+    color: #121212;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 7px;
+    cursor: pointer;
+}
