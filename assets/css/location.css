@@ -1,0 +1,34 @@
+
+       #map {
+        height: 80%;
+        width: 80%;
+        margin: 0 auto;
+      }
+     
+     html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
+      .note{
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+      }
+      .custom-map-control-button {
+        appearance: button;
+        background-color: #fff;
+        border: 0;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin: 10px;
+        padding: 0 0.5em;
+        height: 40px;
+        font: 400 18px Roboto, Arial, sans-serif;
+        overflow: hidden;
+      }
+      .custom-map-control-button:hover {
+        background: #ebebeb;
+      }
