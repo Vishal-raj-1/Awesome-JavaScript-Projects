@@ -6,8 +6,7 @@ html {
   body {
     height: 100vh;
     width: 100vw;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   
   .color-wrapper {
@@ -61,15 +60,15 @@ html {
   }
   
   .s-small:hover {
-    transform: scale(0.85);
+    transform: scale(0.8);
   }
   
   .s-medium:hover {
-    transform: scale(0.85);
+    transform: scale(0.8);
   }
   
   .s-large:hover {
-    transform: scale(0.85);
+    transform: scale(0.8);
   }
   
   .color:active {
