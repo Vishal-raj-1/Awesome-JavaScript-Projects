@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider Quiz</title>
+    <link rel="shortcut icon" data-credit="http://www.google.com" href="../assets/Images/quizVirus.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/quiz.css">
+</head>
+<body class="container">
+    <br>
+    <h1>
+        <img class="swing" src="../assets/Images/quizLogo.png" alt="logo">
+    </h1>
+    <hr>
+    <form id="inputBox" class="box">
+        <h2>Instructions :</h2>
+        <p>
+            <ul>
+                <li> You can skip Question no marks will be reduced from your score </li>
+                <li>Each question carries 4 score </li>
+                <li> For every question which is attempted incorrectly, one-fourth of allotted marks will be deducted
+                    i.e. 1
+                <li> Time Management is your responsibility :p</li>
+                <li> Final score = time-left * (correct-answer/wrong-answers) </li>
+            </ul>
+        </p>
+        <h3 style="text-align: left;">Name</h3>
+        <input type="text" class="form-control" name="" id="name" placeholder="Enter your name ">
+        <br>
+        <button>Start Test !</button>
+    </form>
+    <div id="quizBox">
+        <div id="timer">
+            <h3> Time <span id="showTimer">180</span>`s left </h3>
+        </div>
+        <p id="colors"> <span id="visit"> visited </span> <span id="unvisit"> not visited </span> </p>
+        <div id="grid">
+            <p style="background-color: yellow;" onclick="updateQuestion(this,0)">1</p>
+            <p onclick="updateQuestion(this,1)">2</p>
+            <p onclick="updateQuestion(this,2)">3</p>
+            <p onclick="updateQuestion(this,3)">4</p>
+            <p onclick="updateQuestion(this,4)">5</p>
+            <p onclick="updateQuestion(this,5)">6</p>
+            <p onclick="updateQuestion(this,6)">7</p>
+            <p onclick="updateQuestion(this,7)">8</p>
+            <p onclick="updateQuestion(this,8)">9</p>
+            <p onclick="updateQuestion(this,9)">10</p>
+        </div>
+        <br>
+        <div class="box">
+            <div id="question"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, accusamus. </div>
+            <hr>
+            <div id="optionsBox" class="optionsBox">
+            </div>
+            <p class="boxFooter">
+                <button onclick="PreviousQuestion()" id="previousBtn">Previous</button>
+                <button onclick="nextQuestion()" id="nextBtn">Next</button>
+                <button onclick="finishQuiz()" id="checkBtn">Check Score</button>
+            </p>
+        </div>
+    </div>
+    <div id="finishBox">
+        <h2> HighScore is <span id="highScore"></span> by <span id="highName"></span> within <span id="highTimer">
+            </span>`s at <span id="highTime"></span>
+        </h2>
+        <br>
+        <h2> <span id="showName">ridhu</span> your Score is <span id="showScore">10</span> </h2>
+        <button onclick="location.reload()">Re-Take Quiz </button>
+    </div>
+</body>
+</html>
+<script src="../assets/js/quiz.js"></script>
