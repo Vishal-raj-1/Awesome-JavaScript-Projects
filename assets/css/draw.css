@@ -1,0 +1,133 @@
+html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .color-wrapper {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+  }
+  
+  .size-wrapper {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%);
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .color {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    transition: 250ms ease;
+  }
+  
+  .size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 5px;
+    transition: 250ms ease;
+  }
+  
+  .size button {
+    width: 70px;
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  .s-small:hover {
+    transform: scale(0.85);
+  }
+  
+  .s-medium:hover {
+    transform: scale(0.85);
+  }
+  
+  .s-large:hover {
+    transform: scale(0.85);
+  }
+  
+  .color:active {
+    transform: scale(0.9);
+  }
+  
+  .color:hover {
+    opacity: 0.8;
+  }
+  
+  .c-blue {
+    background-color: #0275d8;
+    border: 1.8px solid black;
+  }
+  
+  .c-orange {
+    background-color: #eb5b2d;
+    border: 1.8px solid black;
+  }
+  
+  .c-green {
+    background-color: #5cb85c;
+    border: 1.8px solid black;
+  }
+  
+  .eraser {
+    position: absolute;
+    top: 0%;
+    left: 95%;
+    transform: translate(-50%);
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .erase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    transition: 250ms ease;
+  }
+  
+  .erase button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: black;
+    color: red;
+    outline: none;
+  }
+  
+  .erase:hover i:hover {
+    background: none;
+    transform: scale(.80);
+    color: white;
+  }
