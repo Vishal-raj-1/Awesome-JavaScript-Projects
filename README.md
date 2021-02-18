@@ -119,7 +119,7 @@ git push -u origin <your_branch_name>
 </p>
 
 <p align="center">
-<img src=" ./main/assets/Images/gssoc.png" alt="Logo" width="400" height="400"/>
+    <img src=" ./main/assets/images/gssoc.png" alt="Logo" width="400" height="400"/>
   </a>
 </p>
  
