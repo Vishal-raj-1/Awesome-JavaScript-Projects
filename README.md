@@ -118,6 +118,11 @@ git push -u origin <your_branch_name>
   </a>
 </p>
 
+<p align="center">
+<img src=" ./main/assets/Images/gssoc.png" alt="Logo" width="400" height="400"/>
+  </a>
+</p>
+ 
 ## Project Maintainers 😃
 
 <table>
