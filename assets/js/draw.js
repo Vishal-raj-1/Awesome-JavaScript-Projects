@@ -1,4 +1,5 @@
-const ctx = document.getElementById("canvas").getContext("2d");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 resize();
 
 window.addEventListener("resize", resize);
@@ -27,6 +28,10 @@ function setSize(elem) {
 function erase(elem) {
   color = "#fff";
   size = 15;
+}
+
+function clearCanva(elem) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 function mousePosition(e) {
