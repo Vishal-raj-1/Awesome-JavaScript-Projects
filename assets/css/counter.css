@@ -23,27 +23,43 @@ button {
   margin: 0.5rem;
   border-radius: 4%;
 }
-.decrease {
-  color: #fca3cc;
-}
-.decrease {
+
+#decrease {
   background-color: #bce6eb;
   border-color: #bce6eb;
+  color: #000;
+  outline: none;
+  transition: 0.3s linear;
 }
-.decrease:hover {
+
+#decrease:hover {
   color: blueviolet;
+  transform: scale(0.95);
 }
-.increase:hover {
-  color: blueviolet;
-}
-.reset {
+
+#reset {
   background-color: #fdcfdf;
   border-color: #fdcfdf;
+  outline: none;
+  transition: 0.3s linear;
 }
-.increase {
+
+#reset:hover {
+  transform: scale(0.95);
+}
+
+#increase {
   background-color: #bce6eb;
   border-color: #bce6eb;
+  outline: none;
+  transition: 0.3s linear;
 }
+
+#increase:hover {
+  color: blueviolet;
+  transform: scale(0.95);
+}
+
 .container {
   border: 4px solid rgb(10 19 61);
   background-image: linear-gradient(to right, rgb(10 19 61), rgb(255 0 151));

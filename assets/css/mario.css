@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+#game {
+    background-image: url("../Images/mario-background.jpg");
+     height: 450px; 
+     border: 1px solid black;   
+     position: relative;
+     margin: 0;
+     background-repeat: repeat;
+}
+
+#gameOver {
+    background-color: lightgray;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: none;
+    color: #3f3f3f;
+    text-align: center;
+
+}
+#gameOver h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#gameOver p {
+    padding-top: 10%;
+    font-size: medium;
+
+}
+
+#score-wrapper {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px 8px;
+    font-size: 24px;
+}
+
+#highest-score {
+    justify-self: end;
+}
+
+#score {
+    justify-self: end;
+}
+
+#character {
+    width: 120px;
+    height: 150px;
+    background-image: url("../Images/mario-char.gif");
+    position: relative;
+    top: 240px;
+    left: 250px;
+   }
+
+.animate {
+    animation: jump 0.5s;
+}
+
+#block {
+    width: 50px;
+    height: 45px;
+    background-image:url("../Images/mario-block.gif");
+    position: relative;
+    top: 192px;
+    left: 1200px;
+    animation: block 3s infinite linear;
+}
+
+h1 {
+    font-family: monospace;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: large;
+}
+
+ul {
+    font-family: monospace; 
+    margin-top: 3px;
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+@keyframes slideleft {
+    from { background-position: 90000%; }
+    to { background-position:0%; }
+  }
+  
+  #game {
+    background-repeat: repeat-x;
+    animation: slideleft 3000s infinite linear;
+  }
+
+@keyframes jump {
+   0%{top:200px;}
+   50%{top:0px;}
+   100%{top:200px;}
+}
+
+@keyframes block {
+     0%{left:1150px;}
+     100%{left:50px;}
+}
