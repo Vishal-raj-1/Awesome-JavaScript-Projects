@@ -2,6 +2,7 @@ html{
     box-sizing: border-box;
     font-size: 10px;
     background: rgb(42, 184, 202);
+    overflow: hidden;
 }
  
 *, *:before, *:after {
@@ -33,10 +34,25 @@ h1{
     left: 50%;
   }
 
-button{
-    text-align: center;
-    align-items: center;
-    background: lightblue;
+.button {
+    padding: 15px 25px;
+    margin-right: 400px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;;
+}
+  
+.button:hover {background-color: #3e8e41}
+  
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .score {
