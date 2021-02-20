@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+}
+
+.clock {
+  display: flex;
+}
+
+.clock div {
+  position: relative;
+  margin: 0 10px;
+  width: 200px;
+  height: 240px;
+}
+
+.clock div p {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2ed6f;
+  z-index: 1;
+  font-size: 80px;
+  border: none;
+  box-shadow: 0px 20px 25px 0px black;
+}
+
+.clock div p:first-child {
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(0, 255, 0);
+  color: white;
+}
+
+.clock div p:last-child {
+  font-size: 30px;
+  height: 80px;
+  background-color: rgba(0, 255, 95);
+  border-radius: 0 0 20px 20px;
+}
+
+.clock div:first-child p {
+  background-color: Blue;
+  color: white;
+}
+
+.clock div:first-child p:last-child {
+  background-color: rgb(70, 80, 255);
+  color: black;
+}
+
+.clock div:last-child p {
+  background-color: red;
+  color: white;
+}
+
+.clock div:last-child p:last-child {
+  background-color: rgb(255, 55, 50);
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start,
+.stop {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  margin: 0 10px;
+  border: 2px solid white;
+  box-shadow: 0px 10px 10px -3px black;
+  color: black;
+  font-weight: bold;
+}
+
+.start:hover {
+  background-color: DarkOrange;
+  color: white;
+}
+
+.start:focus {
+  outline: none;
+}
+
+.stop:focus {
+  outline: none;
+}
+
+.stop:hover {
+  background-color: black;
+  color: white;
+}
+
+.disabled {
+  background-color: gray;
+  color: gray;
+}
