@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:10px;
+            text-align:center;
+            font-family:monospace;
+            color:white;
+        }
+        video {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .viewport-header {
+            position: relative;
+            height: 100vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        #box p{
+            position:absolute;
+            padding:20px;
+            border-radius:20px;
+        }
+        h1{
+            font-size:60px;
+        }
+        #date{
+            font-size:25px;
+            bottom:325px;
+            background:#00000096;
+            color:lightyellow;
+        }
+        #day{
+            bottom:70px;
+            font-size:100px;
+            background:#00000096;
+            color:lightyellow;
+        }
+        #week{
+            font-size:40px;
+            bottom:20px;
+            background:#FFFFFF46;
+            color:black;
+        }
+        @media only screen and (max-width: 600px) {
+            #day{
+                font-size:60px;
+                bottom:110px;
+            }  
+            #date{
+                font-size:15px;
+                bottom:280px;
+            }  
+            #week{
+                font-size:25px;
+                padding:10px;
+                bottom:60px;
+            }  
+        }
+    </style>
+</head>
+<body>
+    <video playsinline autoplay muted loop id="bgvid">
+      <!--<source src="../assets/Images/dow-3.mp4" type="video/mp4">
+      <source src="../assets/Images/dow-1.mp4" type="video/mp4">
+      <source src="../assets/Images/dow-2.mp4" type="video/mp4">
+      <source src="../assets/Images/dow-4.mp4" type="video/mp4">-->
+    </video>
+    <div id="box" class="viewport-header">
+        <!--<h1>TODAY is: </h1>-->
+        <p id="date"><span class="time"></span></p>
+        <b><p id="day"></p></b>
+        <p id="week"></p>
+    </div>
+
+    <script>
+        var today = new Date();
+        var dd = today.getDate();   //Get the day as a number (1-31)
+        var mm = today.getMonth();   //Get the month as a number (0-11)
+        var yyyy = today.getFullYear();     //Get the year as a four digit number (yyyy)
+        var weekday=today.getDay();   //Get the weekday as a number (0-6)
+        var hh=today.getHours();
+        var mn=today.getMinutes();
+        weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        weekends = ['Happy Weekend :)', 'Good Bye Weekend!', '3 more days left for Weekend!', 'Weekend is near!', 'Weekend is nearer!', 'Weekend is nearerer!', 'Yay! Weekend is here ..'];
+        document.getElementById("date").innerHTML = dd + "/" + mm + "/" + yyyy + "&nbsp; " + hh + ":" + mn;
+        document.getElementById("day").innerHTML = weekdays[weekday];
+        document.getElementById("week").innerHTML = weekends[weekday];
+        
+        if (weekday==0 || weekday==6){
+            console.log("Yay!!!! Weekend :)")
+            console.log("%c WARNING: Going to sleep on Sunday cause Monday!","color: yellow; background:red; font-family:monospace; font-size: 20px");
+        }
+        else if(weekday==1){
+            console.log("Good Bye! Weekend :(")
+        }
+        else{ 
+            console.log("Normal Week day!");
+            console.log(`%c ${weekday} days left for Sunday!!`,"color: yellow; background:red; font-family:monospace; font-size: 20px");
+        }
+        if(hh>=6 && hh<12){
+            url='../assets/Images/dow-3.mp4';
+        }else if(hh>=12 && hh<18){
+            url='../assets/Images/dow-1.mp4';
+        }else if(hh>=18 && hh<24){
+            url='../assets/Images/dow-4.mp4';
+        }else{
+            url='../assets/Images/dow-2.mp4';
+        }
+        document.getElementById("bgvid").innerHTML = '<source src="' + url + '" type="video/mp4">';
+    </script>
+</body>
+</html>
