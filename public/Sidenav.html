@@ -1,58 +1,51 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE Html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript project|sidenav</title>
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  background-color:black;
-  overflow-x: hidden;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration:indianred;
-  font-size: 25px;
-  color:gray;
-  display: block;
-}
-
-.sidenav a:hover {
-  color:azure;
-}
-
-
-
-</style>
+  <link rel="stylesheet" href="/assets/css/sidenav.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)"  onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Services</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
-</div>
+<body id="color">
+
+  <div class="sidenav" id="function">
+    <a href="#"><i class="fa fa-home"></i></a>
+    <a href="#"><i class="fa fa-tachometer"></i></a>
+    <a href="#"><i class="fa fa-cube"></i></a>
+    <a href="#"><i class="fa fa-user"></i></a>
+    <a href="#"><i class="fa fa-product-hunt"></i></a>
+    <a href="#"><i class="fa fa-cog"></i></a>
+  </div>
+
+  <div class="rotate" onclick="show()" id="colorful">
+
+  </div>
 
 
-<span style="font-size:30px;cursor:pointer; color:black; font-weight: bold" onclick="openNav()">&#9776; open</span>
+   <!-- js -->
+  <script>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+    function show() {
+      document.getElementById('function').classList.toggle('active');
+    }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+    function color() {
+      document.getElementById("color").classList.toggle("color");
+    }
+
+    $(document).ready(function () {
+      $("#colorful").on("click", function () {
+        $("#color").toggleClass("change");
+      });
+    });
+  </script>
+
+
 </body>
-</html> 
+
+</html>
