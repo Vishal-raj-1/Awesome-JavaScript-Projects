@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../Images/word-counter.jpg"), no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 88vh;
+  margin-top: 2rem;
+}
+h1 {
+  color: whitesmoke;
+  font-weight: 300;
+  font-size: 2rem;
+}
+section.container textarea {
+  position: relative;
+  min-width: 300px;
+  border: none;
+  outline: none;
+  margin: 1rem;
+  border-radius: 4px;
+  background: rgb(247, 246, 246);
+  color: rgb(3, 3, 3);
+  height: 60px;
+  resize: none;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 1px 1px 1px 1px transparent;
+}
+#stat {
+  color: whitesmoke;
+}
