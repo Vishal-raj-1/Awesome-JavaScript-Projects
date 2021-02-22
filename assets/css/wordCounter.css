@@ -8,6 +8,7 @@ section.container {
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  padding: 4rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url("../Images/word-counter.jpg"), no-repeat;
   background-position: center;
