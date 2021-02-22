@@ -149,9 +149,15 @@ body img {
 .cardStyle:hover {
   transform: scale(1);
 }
+
 .card-body {
   color: black;
 }
+
+.card-img-top {
+  height: 210px;
+}
+
 /* Footer */
 .footer {
   color: white;
