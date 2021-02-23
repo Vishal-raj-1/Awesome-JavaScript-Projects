@@ -114,15 +114,18 @@ git push -u origin <your_branch_name>
 ### This Project is a part of the following Open Source Program
 
 <p align="center">
-    <img src=" ./assets/images/cwoc.png" alt="Logo" width="400" height="400"/>
-  </a>
+<a href="https://crosswoc.ieeedtu.in/"> 
+  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/cwoc.png" alt="PNG" width="200" height="200" style="margin: 10px;"/>
+   </a>
 </p>
 
 <p align="center">
-    <img src=" ./assets/images/gssoc.png" alt="Logo" width="400" height="400"/>
-  </a>
+<a href="https://gssoc.girlscript.tech/"> 
+<img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/gssoc.png" alt="PNG" width="200" height="200" style="margin: 10px;"/> 
+    </a>
 </p>
  
+
 ## Project Maintainers 😃
 
 <table>
