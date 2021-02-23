@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="../assets/css/DragNDrop.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <section>
+        <h1 style="text-align: center; font-size: 25px; margin-top: 50px;">Heyy beautiful..! Put the correct symbol in correct place:)</h1>
+    </section>
+    <section class="draggable-elements">
+        <i class="fas fa-cat draggable" draggable="true" style="color: #ff6384;" id="cat"></i>
+        <i class="fas fa-dog draggable" draggable="true" style="color: #36a2eb;" id="dog"></i>
+        <i class="fas fa-dove draggable" draggable="true" style="color: #ffce56;" id="dove"></i>
+        <i class="fas fa-fish draggable" draggable="true" style="color: #9966ff;" id="fish"></i>
+        <i class="fas fa-frog draggable" draggable="true" style="color: #4bc0c0;" id="frog"></i>
+    </section>
+    <section class="droppable-elememts">
+        <div class="droppable" data-draggable-id="frog"><span>Frog</span></div>
+        <div class="droppable" data-draggable-id="dove"><span>Bird</span></div>
+        <div class="droppable" data-draggable-id="cat"><span>Cat</span></div>
+        <div class="droppable" data-draggable-id="fish"><span>Fish</span></div>
+        <div class="droppable" data-draggable-id="dog"><span>Dog</span></div>
+    </section>
+
+    <div class="attribution">
+        Coded by: <a href="#">Sonali Sonawane</a>.
+    </div>
+    <script src="../assets/js/DragNDrop.js"></script>
+
+</body>
+
+</html>
