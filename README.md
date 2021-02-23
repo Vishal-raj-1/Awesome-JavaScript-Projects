@@ -19,7 +19,7 @@ Are you looking for some awesome Javascript Projects in which each and every pro
 
 Do you want to contribute to some Awesome Javascript projects and showcase your Javascript skills through it?🤩
 
-<p align="center"><img src="https://media.giphy.com/media/VeBFQLNzdBV3cfMpDR/giphy.gif" width = 40%></p>
+<p align="center"><img src="https://media.giphy.com/media/3oEjI8vagntG7EDxgQ/giphy.gif" width = 40%></p>
 
 Then, You got here right!! 
 
