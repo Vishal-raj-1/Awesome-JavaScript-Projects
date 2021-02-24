@@ -115,10 +115,10 @@ git push -u origin <your_branch_name>
 
 <p align="center">
 <a href="https://crosswoc.ieeedtu.in/"> 
-  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/cwoc.png" alt="PNG" width="200" height="200" style="margin: 10px 20px;"/>
+  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/cwoc.png" alt="CrossWoc" width="250px" height="250px"/>
 </a>
 <a href="https://gssoc.girlscript.tech/"> 
-  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/gssoc.png" alt="PNG" width="200" height="200" style="margin: 10px 20px;"/> 
+  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/gssoc.png" alt="GSSOC" width="250px" height="250px"/> 
 </a>
 </p>
 
