@@ -1,3 +1,34 @@
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+  --color-scheme: light dark; /* both supported */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+
+  /*other styles*/
+  .....
+}
+
+h1 {
+  color: var(--secondary-color);
+
+  /*other styles*/
+  .....
+}
+
+a {
+  color: var(--primary-color);
+
+  /*other styles*/
+  .....
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +72,73 @@
   color: #716e6e;
 }
 
+/* About Dark/light Toggle */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+}
+
+body img {
+  filter: brightness(.8) contrast(1.2);
+}
+
 /* Cards */
 .cardStyle {
   transform: scale(0.98);
@@ -51,9 +149,15 @@
 .cardStyle:hover {
   transform: scale(1);
 }
+
 .card-body {
   color: black;
 }
+
+.card-img-top {
+  height: 210px;
+}
+
 /* Footer */
 .footer {
   color: white;
