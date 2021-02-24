@@ -55,6 +55,7 @@ function showNotes(){
                     <h5 class="card-title">Note ${index + 1}</h5>
                     <p class="card-text">${element}</p>
                     <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
+                    <button onclick="editNote(${index})"  class="btn btn-primary">Edit Note</button>
                 </div>
             </div>`
     });
@@ -68,6 +69,32 @@ function showNotes(){
     }
     
 }
+// this is edit function
+function editNote(index){
+    let saveindex = document.getElementById('saveindex')
+    let saveBtn = document.getElementById('saveBtn')
+    let addBtn = document.getElementById('addBtn')
+    saveindex.value = index;
+    let notes = localStorage.getItem('notes');
+    let notesObj = JSON.parse(notes);
+    addTxt.value = notesObj[index];
+    addBtn.style.display="none";
+    saveBtn.style.display="block";
+    }
+//  this is save function   
+let saveBtn = document.getElementById('saveBtn')
+saveBtn.addEventListener('click',function(){
+    let addBtn = document.getElementById('addBtn')
+    let notes = localStorage.getItem('notes');
+    let notesObj = JSON.parse(notes);
+    let saveindex = document.getElementById('saveindex').value
+    notesObj[saveindex]=addTxt.value;
+    saveBtn.style.display="none";
+    addBtn.style.display="block";
+    localStorage.setItem('notes', JSON.stringify(notesObj));
+    addTxt.value="";
+    showNotes();
+})
 
 // this function will delete note, and show remaining notes.
 function deleteNote(index){
