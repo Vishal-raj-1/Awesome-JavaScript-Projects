@@ -1,7 +1,7 @@
 let projectData = [
   {
     projectName: "Note App",
-    projectImage: "assets/Images/Note app.PNG",
+    projectImage: "assets/Images/noteApp.png",
     projectUrl: "public/note-app.html",
   },
   {
@@ -11,12 +11,12 @@ let projectData = [
   },
   {
     projectName: "Color Flipper",
-    projectImage: "assets/Images/Color flipper.PNG",
+    projectImage: "assets/Images/colorFlipper.png",
     projectUrl: "public/color-flipper.html",
   },
   {
     projectName: "Dynamic Quote Generator",
-    projectImage: "assets/Images/DynamicQuoteGenerator.png",
+    projectImage: "assets/Images/quoteGenerator.png",
     projectUrl: "public/Dynamic-quotegenerator.html",
   },
   {
