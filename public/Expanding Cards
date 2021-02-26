@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPANDING CARDS</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(44, 43, 43);
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+    
+}
+
+.panel{
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    color: lawngreen;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    
+}
+
+.panel.active{
+    flex: 5;
+    box-shadow: 10px 10px 5px hotpink;
+}
+
+.panel.active h3{
+ opacity: 0.9; 
+ transition: opacity 0.4s ease-in 0.4s;
+}
+
+@media(max-width: 500px){
+    .container{width: 100vw;}
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel active" style="background: url(https://source.unsplash.com/1600x900/?nature,world);">
+        <h3>EXPLORE WORLD</h3>            
+        </div>
+        <div class="panel" style="background: url(https://source.unsplash.com/1600x900/?nature,everything);">
+            <h3>EXPLORE EVERYTHING</h3>
+        </div>
+        <div class="panel" style="background: url(https://source.unsplash.com/1600x900/?nature,places);">
+            <h3>EXPLORE PLACES</h3>
+        </div>
+        <div class="panel" style="background: url(https://source.unsplash.com/1600x900/?nature,mountains);">
+            <h3>EXPLORE MOUNTAINS</h3>
+        </div>
+        <div class="panel" style="background: url(https://source.unsplash.com/1600x900/?nature,india);">
+            <h3>EXPLORE INDIA</h3>
+        </div>
+    </div>
+    <script>
+        const panels = document.querySelectorAll('.panel');
+
+panels.forEach((panel) => {
+    panel.addEventListener('click', () => {
+        removeActiveClass();
+        panel.classList.add('active');
+    })
+})
+
+function removeActiveClass(){
+    panels.forEach((panel) => {
+        panel.classList.remove('active');     
+    });
+}
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
