@@ -19,7 +19,7 @@ Are you looking for some awesome Javascript Projects in which each and every pro
 
 Do you want to contribute to some Awesome Javascript projects and showcase your Javascript skills through it?🤩
 
-<p align="center"><img src="https://media.giphy.com/media/VeBFQLNzdBV3cfMpDR/giphy.gif" width = 40%></p>
+<p align="center"><img src="https://media.giphy.com/media/3oEjI8vagntG7EDxgQ/giphy.gif" width = 40%></p>
 
 Then, You got here right!! 
 
@@ -111,6 +111,17 @@ git push -u origin <your_branch_name>
 
 **15** Voila :exclamation: You have made a PR to the awesome-javascript-projects :boom: . Wait for your submission to be accepted and your PR to be merged.
 
+### This Project is a part of the following Open Source Program
+
+<p align="center">
+<a href="https://crosswoc.ieeedtu.in/"> 
+  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/cwoc.png" alt="CrossWoc" width="250px" height="250px"/>
+</a>
+<a href="https://gssoc.girlscript.tech/"> 
+  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/gssoc.png" alt="GSSOC" width="250px" height="250px"/> 
+</a>
+</p>
+
 ## Project Maintainers 😃
 
 <table>
@@ -120,3 +131,8 @@ git push -u origin <your_branch_name>
  Urvashi Anand </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=urvashi-code1255" title="Code">💻 </a></td></a></td>
   </tr>
 </tbody></table>
+
+## Our valuable Contributors👩‍💻👨‍💻 :
+<a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=Vishal-raj-1/Awesome-JavaScript-Projects" />
+</a>

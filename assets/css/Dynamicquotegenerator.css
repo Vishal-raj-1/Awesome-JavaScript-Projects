@@ -1,0 +1,51 @@
+
+html { 
+    background: url("https://i.pinimg.com/originals/fc/08/0d/fc080de4b5a7e67dce55de829fb6beba.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+  }
+  h1{
+      text-align: center;
+      color: #D0F8FF;
+      
+        text-shadow:  0 1px 0 #999999, 0 2px 0 #888888,
+        0 3px 0 #777777, 0 4px 0 #666666,
+        0 5px 0 #555555, 0 6px 0 #444444,
+        0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+        0 9px 10px rgba(0, 0, 0, 0.2)
+  }
+  .container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -150px;
+    margin-top: -150px;
+ }
+ .quote-box{
+     font-size: 30px;
+     color:white;
+     font-weight: bold;
+     font-family: Helvetica;
+ }
+ #btn{
+    background-color: white;
+    color: black;
+    border: 4px double #4CAF50;
+    width:50%;
+    height:50px;
+    margin:20px;
+    font-weight:bold;
+    font-size: 15px;
+ }
+#btn {
+    transition-duration: 0.4s;
+  }
+  
+#btn:hover {
+    background-color:  #4CAF50 ; /* Green */
+    color: white;
+  }
