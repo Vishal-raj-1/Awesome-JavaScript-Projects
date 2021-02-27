@@ -121,7 +121,7 @@ let projectData = [
   },
   {
     projectName: "URL Shortner",
-    projectImage: "assets/Images/url.png",
+    projectImage: "assets/GIFs/urlShortner.gif",
     projectUrl: "public/url-shortner.html",
   },
   {
