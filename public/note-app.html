@@ -36,9 +36,14 @@
 
     <div class="container my-3">
         <h1>Welcome to Magic Notes</h1>
+        <div id="alerts">
+        </div>
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Add a Note</h5>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" id="addTitle" rows="3" placeholder="Insert a cool Title for your Awesome Note!">
+                </div>
                 <div class="form-group mb-3">
                     <textarea class="form-control" id="addTxt" rows="3"></textarea>
                     <input type="hidden" id="saveindex"></input>
