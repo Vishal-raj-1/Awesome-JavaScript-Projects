@@ -144,6 +144,11 @@ let projectData = [
     projectImage: "assets/Images/word-counter-short.png",
     projectUrl: "public/wordCounter.html",
   },
+  {
+    projectName: "Tic Tac Toe Game",
+    projectImage: "assets/Images/Tic_Tac_Toe.png",
+    projectUrl: "public/Tic_Tac_Toe.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
