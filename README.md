@@ -74,7 +74,7 @@ git remote -v
 **6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
 
 ```
-git pull upstream master
+git pull upstream main
 ```
 
 **7.** Create a new branch.
@@ -116,10 +116,10 @@ git push -u origin <your_branch_name>
 
 <p align="center">
 <a href="https://crosswoc.ieeedtu.in/"> 
-  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/cwoc.png" alt="CrossWoc" width="250px" height="250px"/>
-</a>
+  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/cwoc.png" alt="CrossWoc" width="200px" height="200px"/>
+</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://gssoc.girlscript.tech/"> 
-  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/gssoc.png" alt="GSSOC" width="250px" height="250px"/> 
+  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/gssoc.png" alt="GSSOC" width="200px" height="200px"/> 
 </a>
 </p>
 
