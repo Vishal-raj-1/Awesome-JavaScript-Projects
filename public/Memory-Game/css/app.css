@@ -229,6 +229,7 @@ h1:hover {
 }
 
 .footer_left {
+    float: left;
     width: 80%;
     height: 80%;
     color:black;
@@ -252,7 +253,7 @@ h1:hover {
 
 .style-footer {
     background-color: white;
-    color:#02ccba;
+    color:black;
     transition: 0.9s;
     padding:4px 4px;
     border-radius: 15px;
@@ -261,14 +262,18 @@ h1:hover {
 .style-footer:hover {
     background-color:#02ccba;
     color: white;
-    padding:3px 4px;
+    padding:4px 4px;
     transition: 0.9s;
     transform: inherit;
     border-radius: 15px;
 }
 
-.social-icon {
-    size: 0px;
+.style-icon {
+    background-color: white;
+    color: #02ccba;
+    padding:4px 4px;
+    transition: 0.9s;
+    transform: inherit;
+    border-radius: 15px;
 }
-
 /* to be continued @ravireddy07 */
