@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400");
+
 html {
     box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 *,
@@ -14,11 +23,14 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    /* font-family: "Lato", sans-serif;
+    font-family: Florence, cursive; */
+    font-family: serif, sans-serif;
+    font-style: Helvetica;
 }
 
 body {
     background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
-    font-family: 'Coda', cursive;
 }
 
 .container {
@@ -29,8 +41,8 @@ body {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-family: serif;
+    font-weight: 700;
 }
 
 /*
@@ -87,9 +99,9 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 550px;
+    width: 625px;
     margin-bottom: 10px;
-    font-size: 16px;
+    max-width: 100%;
 }
 
 .score-panel .stars {
@@ -113,6 +125,20 @@ h1 {
     cursor: pointer;
 }
 
+#restart {
+    background-color:darkslategray;
+    color: white;
+    border-radius: 15px;
+    padding: 3px 0px;
+}
+
+#restart:hover {
+    background-color:#02ccba;
+    padding: 3px 0px;
+    transition: 0.9s;
+    transform: inherit;
+    border-radius: 15px;
+}
 
 /** Responsive Optimizations(Also called as Responsive Web Design) **/
 
@@ -135,8 +161,74 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
     .score-panel {
-        font-size: 20px;
+        font-size: 18px;
     }
+}
+
+.hint {
+    float: left;
+    cursor: pointer;
+    padding: 1.5px 0px;
+    background-color:darkslategray;
+    color: white;
+    border-radius: 15px;
+}
+
+.hint:hover {
+    background-color:#02ccba;
+    padding: 1.5px 0px;
+    transition: 0.9s;
+    transform: inherit;
+    border-radius: 15px;
+}
+
+/*--- Modifiers---*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer--dark {
+    display: flex;
+    background-color: #333C44;
+}
+  
+.footer--dark .footer__textLogo {
+      color: #fff;
+}
+  
+.footer--dark .footer__inner {
+      color: #d9d9d9;
+}
+  
+.footer--dark .footer__link {
+      color: #d9d9d9;
+      border-color: #d9d9d9;
+}
+
+@media (min-width: 992px) {
+  .footer--dark .footer__link:hover {
+      color: #fff;
+      border-color: #fff;
+  }
+}
+
+.footer_left {
+    float: left;
+    color: white;
+    padding: 20px 25px;
+}
+
+.footer_right {
+    color: white;
+    margin-left: 1100px;
+    padding: 20px 25px;
 }
 
 /* to be continued @ravireddy07 */

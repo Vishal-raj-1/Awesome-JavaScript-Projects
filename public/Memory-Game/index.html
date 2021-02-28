@@ -13,33 +13,65 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="container">
+    <div class="header footer--dark">
         <header>
-            <h1>Memory Game</h1>
+            <h1><strong>Memory Game</strong></h1>
         </header>
-
+    </div>
+</br>
+    <div class="container">
+        <div id="info-btn" class="hint">
+            <span>&nbsp;&nbsp;<i class="fa fa-info"></i>&nbsp;&nbsp;Grading System <i>[Click Me]</i>&nbsp;&nbsp;</span>
+        </div>
         <section class="score-panel">
         	<ul class="stars">
         	</ul>
 
-            <span id="moves">0 </span> Moves
+            <span id="moves">&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;</span> Moves
 
             <div class="panel-right">
-                <span id="timer">0</span>  Seconds
+                <span id="timer">0&nbsp;</span> Seconds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                <span id="restart">
+                <span id="restart">&nbsp;
                     <i class="fa fa-repeat"></i>
+                    &nbsp;Restart&nbsp;&nbsp;
                 </span>
             </div>
+            
+            <!-- Footer-->
+            <!-- Author-->
+            <!-- Github Repo link to be added-->
         </section>
 
         <ul class="deck">
 
         </ul>
+        <footer>
 
-        <script src="js/jQuery.js"></script>
-        <script src="js/versed.js"></script>
-        <script src="js/app.js"></script>
-    </div>    
+        </footer>
+    </div> 
+
+    <div class="footer--dark">
+        <div>
+            <p class="footer_left">Author:
+                <a href="https://github.com/ravireddy07" target="_blank" class="footer__link">
+                    <abbr title="Call me Harry">
+                        Ravi Kanth Gojur
+                    </abbr>
+                </a>
+            </p>
+            <p class="footer_right">For Javascript Awesome Projects:
+                <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank" class="footer__link">
+                    <abbr title="Javascript Awesome Projects">
+                        Visit Repo
+                    </abbr>
+                </a>
+            </p>
+		</div>
+	</div>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/versed.js"></script>
+    <script src="js/app.js"></script> 
 </body>
 </html>

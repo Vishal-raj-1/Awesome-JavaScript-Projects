@@ -9,6 +9,11 @@ let moves = 0;
 let timeCount = 0;
 let solvedCount = 0;
 let timerPtr;
+let infoBtn = document.getElementById('info-btn');
+let time_results = document.getElementById('time_results');
+let moves_results = document.getElementById('moves_results');
+let grade_results = document.getElementById('grade_results');
+let modal_reset_btn = document.getElementById('modal_reset_btn');
 
 
 // Shuffle function from http://stackoverflow.com/a/2450976
@@ -178,6 +183,71 @@ $.fn.extend({
         return this;
     }
 });
+
+// updates grade with every move
+function updateGrade() {
+    if(moves > 12) {
+      if(grade !== "Average") {
+        grade = "Average";
+        gradeSpan.innerText = grade;
+        starsList.removeChild(starsList.children[0]);
+      }
+    }
+    if(moves > 24) {
+      if(grade !== "Poor...") {
+        grade = "Poor...";
+        gradeSpan.innerText = grade;
+        starsList.removeChild(starsList.children[0]);
+      }
+    }
+  }
+
+  /*
+    finds a card that is not matched yet,
+    get its card class then find the other that matches,
+    then shows both for a few moments
+  */
+ function hint() {
+    let hiddenCards = Array.from(document.querySelectorAll('.card')).filter(function(card){
+      return card.classList.contains('open') === false;
+    });
+    let cardItem = getRandomItem(hiddenCards);
+    let card_name = '.card-' + cardItem.getAttribute('data-card');
+
+    pause = true;
+    document.querySelectorAll(card_name).forEach(function(card) {
+      card.classList.add('open', 'show');
+    });
+    setTimeout(function(){
+      document.querySelectorAll(card_name).forEach(function(card) {
+        card.classList.remove('open', 'show');
+      });
+      pause = false;
+    }, 3000);
+  }
+
+  function info() {
+    alert('Grading System: \n\n\
+    0-12 Moves = Great! \n\
+    13-24 Moves = Average \n\
+    25+ Moves = Poor...  \
+    ');
+  }
+
+  infoBtn.addEventListener('click', info);
+
+  /* sets the info in the modal */
+  function gameOver() {
+    isGameOver = true;
+    watch.stopTimer();
+
+    grade_results.innerText = grade;
+    moves_results.innerText = moves;
+    time_results.innerText = watch.getTimeString();
+
+    modal_instance.open();
+  }
+
 
 /*
  * Author: ravireddy07 
