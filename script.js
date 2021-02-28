@@ -162,7 +162,7 @@ function getProjects() {
     (data, item) =>
       (output += `
           <div class="card my-3 mx-auto col cardStyle">
-            <a href=${data.projectUrl} class="text-decoration-none">
+            <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
               <img
                 class="card-img-top"
                 src=${data.projectImage}
