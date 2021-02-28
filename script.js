@@ -153,7 +153,7 @@ let projectData = [
         projectName: "DragNDrop",
         projectImage: "assets/GIFs/DragNDrop.gif",
         projectUrl: "public/DragNDrop.html",
-    },
+    }
 ];
 
 let projectContainer = document.getElementById("js-projects");
