@@ -1,5 +1,3 @@
-
-  
 let projectData = [
   {
     projectName: "Note App",
@@ -146,18 +144,16 @@ let projectData = [
     projectImage: "assets/GIFs/wordCount.gif",
     projectUrl: "public/wordCounter.html",
   },
-   {
-        projectName: "DragNDrop",
-        projectImage: "assets/GIFs/DragNDrop.gif",
-        projectUrl: "public/DragNDrop.html",
-    },
-
   {
     projectName: "Tic Tac Toe Game",
     projectImage: "assets/GIFs/ticTacToe.gif",
     projectUrl: "public/Tic_Tac_Toe.html",
-  }
-
+  },
+ {
+        projectName: "DragNDrop",
+        projectImage: "assets/GIFs/DragNDrop.gif",
+        projectUrl: "public/DragNDrop.html",
+    },
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -166,10 +162,10 @@ console.log(projectContainer);
 window.addEventListener("load", getProjects());
 
 function getProjects() {
-    let output = "";
-    projectData.forEach(
-        (data, item) =>
-        (output += `
+  let output = "";
+  projectData.forEach(
+    (data, item) =>
+      (output += `
           <div class="card my-3 mx-auto col cardStyle">
             <a href=${data.projectUrl} class="text-decoration-none">
               <img
@@ -187,8 +183,9 @@ function getProjects() {
             </a>
           </div>
       `)
-    );
+  );
 
-    projectContainer.innerHTML = output;
-    console.log("projectContainer", projectContainer.innerHTML);
+  projectContainer.innerHTML = output;
+  console.log("projectContainer", projectContainer.innerHTML);
 }
+ 
