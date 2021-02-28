@@ -3,17 +3,17 @@
 let projectData = [
   {
     projectName: "Note App",
-    projectImage: "assets/Images/noteApp.png",
+    projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
   },
   {
     projectName: "Calculator",
-    projectImage: "assets/Images/Calculator.PNG",
+    projectImage: "assets/GIFs/calculator.gif",
     projectUrl: "public/calculator.html",
   },
   {
     projectName: "Color Flipper",
-    projectImage: "assets/Images/colorFlipper.png",
+    projectImage: "assets/GIFs/colorFlipper.gif",
     projectUrl: "public/color-flipper.html",
   },
   {
@@ -23,7 +23,7 @@ let projectData = [
   },
   {
     projectName: "Counter",
-    projectImage: "assets/Images/Counter.PNG",
+    projectImage: "assets/GIFs/counter.gif",
     projectUrl: "public/counter.html",
   },
   {
@@ -33,52 +33,52 @@ let projectData = [
   },
   {
     projectName: "Image Slide",
-    projectImage: "assets/Images/ImageSlider.jpeg",
+    projectImage: "assets/GIFs/imageSlide.gif",
     projectUrl: "public/ImageSlide.html",
   },
   {
     projectName: "Sidenav",
-    projectImage: "assets/Images/Sidenav.jpg",
+    projectImage: "assets/GIFs/sidenav.gif",
     projectUrl: "public/Sidenav.html",
   },
   {
     projectName: "Mole Game",
-    projectImage: "assets/Images/molegame.jpeg",
+    projectImage: "assets/GIFs/whackMole.gif",
     projectUrl: "public/molegame.html",
   },
   {
     projectName: "Click and Drag",
-    projectImage: "assets/Images/clickanddrag.jpeg",
+    projectImage: "assets/GIFs/clickandDrag.gif",
     projectUrl: "public/clickanddrag.html",
   },
   {
     projectName: "Bouncing Balls",
-    projectImage: "assets/Images/BouncingBalls.PNG",
+    projectImage: "assets/GIFs/bouncingBalls.gif",
     projectUrl: "public/BouncingBalls.html",
   },
   {
     projectName: "Reviews",
-    projectImage: "assets/Images/Reviews.PNG",
+    projectImage: "assets/GIFs/reviews.gif",
     projectUrl: "public/reviews.html",
   },
   {
     projectName: "Stop Watch",
-    projectImage: "assets/Images/StopWatch.png",
+    projectImage: "assets/GIFs/stopWatch.gif",
     projectUrl: "public/StopWatch.html",
   },
   {
     projectName: "Animated Counter",
-    projectImage: "assets/GIFs/counter.gif",
+    projectImage: "assets/GIFs/animatedCounter.gif",
     projectUrl: "public/animatedCounter.html",
   },
   {
     projectName: "Music Player",
-    projectImage: "assets/Images/game2.png",
+    projectImage: "assets/GIFs/musicPlayer.gif",
     projectUrl: "public/music_player.html",
   },
   {
     projectName: "Maze Game",
-    projectImage: "assets/Images/maze.png",
+    projectImage: "assets/GIFs/maze.gif",
     projectUrl: "public/maze.html",
   },
   {
@@ -98,7 +98,7 @@ let projectData = [
   },
   {
     projectName: "Analog Clock",
-    projectImage: "assets/Images/AnalogClock.png",
+    projectImage: "assets/GIFs/analogClock.gif",
     projectUrl: "public/Analogclock.html",
   },
   {
@@ -113,22 +113,22 @@ let projectData = [
   },
   {
     projectName: "New Year Count Down",
-    projectImage: "assets/Images/NewYearCountDown.png",
+    projectImage: "assets/GIFs/newYearCountdown.gif",
     projectUrl: "public/newyearcountdown.html",
   },
   {
     projectName: "Password Generator",
-    projectImage: "assets/Images/passwordGenerator.png",
+    projectImage: "assets/GIFs/passwordGenerator.gif",
     projectUrl: "public/passwordGenerator.html",
   },
   {
     projectName: "URL Shortner",
-    projectImage: "assets/Images/url.png",
+    projectImage: "assets/GIFs/urlShortner.gif",
     projectUrl: "public/url-shortner.html",
   },
   {
     projectName: "Mario Game",
-    projectImage: "assets/Images/mario.PNG",
+    projectImage: "assets/GIFs/mario.gif",
     projectUrl: "public/mario.html",
   },
   {
@@ -138,12 +138,12 @@ let projectData = [
   },
   {
     projectName: "QR Code Generator",
-    projectImage: "assets/Images/QRCode.png",
+    projectImage: "assets/GIFs/qrCode.gif",
     projectUrl: "public/QRCode.html",
   },
   {
     projectName: "Word Counter",
-    projectImage: "assets/Images/word-counter-short.png",
+    projectImage: "assets/GIFs/wordCount.gif",
     projectUrl: "public/wordCounter.html",
   },
    {
@@ -154,7 +154,7 @@ let projectData = [
 
   {
     projectName: "Tic Tac Toe Game",
-    projectImage: "assets/Images/Tic_Tac_Toe.png",
+    projectImage: "assets/GIFs/ticTacToe.gif",
     projectUrl: "public/Tic_Tac_Toe.html",
   }
 
