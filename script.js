@@ -148,7 +148,7 @@ let projectData = [
     projectName: "Tic Tac Toe Game",
     projectImage: "assets/GIFs/ticTacToe.gif",
     projectUrl: "public/Tic_Tac_Toe.html",
-  },
+  ,
   {
         projectName: "DragNDrop",
         projectImage: "assets/GIFs/DragNDrop.gif",
