@@ -117,7 +117,8 @@ git push -u origin <your_branch_name>
 <p align="center">
 <a href="https://crosswoc.ieeedtu.in/"> 
   <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/cwoc.png" alt="CrossWoc" width="200px" height="200px"/>
-</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://gssoc.girlscript.tech/"> 
   <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/gssoc.png" alt="GSSOC" width="200px" height="200px"/> 
 </a>
