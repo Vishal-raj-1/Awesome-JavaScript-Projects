@@ -116,12 +116,14 @@ git push -u origin <your_branch_name>
 
 <p align="center">
 
+
 <a href="https://crosswoc.ieeedtu.in/"  target="_blank"> 
   <img src="assets/Images/cwoc.png" alt="CrossWoc"/>
 </a>
 &nbsp;&nbsp;
 <a href="https://gssoc.girlscript.tech/"  target="_blank"> 
   <img src="assets/Images/gssoc.png" alt="GSSOC" /> 
+
 
 </a>
 </p>
