@@ -45,6 +45,15 @@ h1 {
     font-weight: 700;
 }
 
+h1:hover {
+    background-color:#02ccba;
+    color: White;
+    transition: 1.0s;
+    border-radius: 20px;
+    font-family: serif;
+    font-weight: 700;
+}
+
 /*
  *  Styles for the deck of cards
  */
@@ -220,15 +229,46 @@ h1 {
 }
 
 .footer_left {
-    float: left;
-    color: white;
-    padding: 20px 25px;
+    width: 80%;
+    height: 80%;
+    color:black;
+    padding: 20px 20px;
 }
 
 .footer_right {
+    float: right;
+    color: black;
+    padding: 20px 20px;
+}
+
+.footer a {
+    font-family: Florence, cursive;
+}
+
+.footer {
+    font-size: 16px;
+    padding: 30px 10px 10px 10px;
+}
+
+.style-footer {
+    background-color: white;
+    color:#02ccba;
+    transition: 0.9s;
+    padding:4px 4px;
+    border-radius: 15px;
+}
+
+.style-footer:hover {
+    background-color:#02ccba;
     color: white;
-    margin-left: 1100px;
-    padding: 20px 25px;
+    padding:3px 4px;
+    transition: 0.9s;
+    transform: inherit;
+    border-radius: 15px;
+}
+
+.social-icon {
+    size: 0px;
 }
 
 /* to be continued @ravireddy07 */
