@@ -188,4 +188,3 @@ function getProjects() {
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
 }
- 
