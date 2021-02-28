@@ -4,13 +4,25 @@ showNotes();
 
 // If user click on add note button, then it will store the note in localStorage and call the function showNotes()
 let addBtn = document.getElementById('addBtn');
+
+// Div where error alert will be shown
+let errorAlertDiv = document.getElementById("alerts");
+
+// Error alert when no text provided in the note
+let errorAlert = `<div id="errorAleart" class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Oops!</strong> This is empty note !! Try to write something useful
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`;
+
 addBtn.addEventListener('click', function(e){
 
     let addTxt = document.getElementById('addTxt');
 
     //if note is empty and press add note button, then give a alert
-    if(addTxt.value == ""){
-        return alert('This is empty note !! Try to write something useful');
+    if (addTxt.value == "") {
+        // Show error alert when note is empty
+        errorAlertDiv.innerHTML = errorAlert;
+        return;
     }
 
     let notes = localStorage.getItem('notes');
@@ -131,6 +143,18 @@ search.addEventListener('input', function(){
         }
     })
 })
+
+// Dismissing the error alert when the user enters some text
+let addTxt = document.getElementById("addTxt");
+
+addTxt.addEventListener("input", function () {
+    let inputVal = addTxt.value.toLowerCase();
+
+    if (inputVal != null && inputVal.trim().length > 0) {
+        errorAlertDiv.innerHTML = ``;
+    }
+
+});
 /*
 further features
 
