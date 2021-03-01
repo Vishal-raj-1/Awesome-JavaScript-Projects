@@ -148,6 +148,11 @@ let projectData = [
     projectName: "Tic Tac Toe Game",
     projectImage: "assets/Images/Tic_Tac_Toe.png",
     projectUrl: "public/Tic_Tac_Toe.html",
+  },
+  {
+    projectName: "Memory Game",
+    projectImage: "assets/Images/memory-game.png",
+    projectUrl: "public/Memory-Game/index.html",
   }
 ];
 
