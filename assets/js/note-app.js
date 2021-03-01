@@ -17,12 +17,15 @@ let errorAlert = `<div id="errorAleart" class="alert alert-danger alert-dismissi
 addBtn.addEventListener('click', function(e){
 
     let addTxt = document.getElementById('addTxt');
+    let addTitle = document.getElementById("addTitle");
 
     //if note is empty and press add note button, then give a alert
-    if (addTxt.value == "") {
-        // Show error alert when note is empty
-        errorAlertDiv.innerHTML = errorAlert;
-        return;
+    if(addTitle.value == ""){
+        return alert('That Title is empty !! Try to write something useful');
+    }
+
+    if(addTxt.value == ""){
+        return alert('This is empty note !! Try to write something useful');
     }
 
     let notes = localStorage.getItem('notes');
@@ -38,11 +41,12 @@ addBtn.addEventListener('click', function(e){
     }
 
     // add the note in notes array, and then update localStorage.
-    notesObj.push(addTxt.value);
+    notesObj.push([addTitle.value, addTxt.value]);
     localStorage.setItem('notes', JSON.stringify(notesObj));
 
     // after presssing add note button, our textarea(where we write note) should be blank as before.
     addTxt.value = "";
+	addTitle.value = "";
     showNotes();
 })
 
@@ -64,8 +68,8 @@ function showNotes(){
         addNote += `
         <div class="noteCard m-2 card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Note ${index + 1}</h5>
-                    <p class="card-text">${element}</p>
+                    <h5 class="card-title">${element[0]}</h5>
+                    <p class="card-text">${element[1]}</p>
                     <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
                     <button onclick="editNote(${index})"  class="btn btn-primary">Edit Note</button>
                 </div>
@@ -89,7 +93,8 @@ function editNote(index){
     saveindex.value = index;
     let notes = localStorage.getItem('notes');
     let notesObj = JSON.parse(notes);
-    addTxt.value = notesObj[index];
+    addTitle.value = notesObj[index][0];
+    addTxt.value = notesObj[index][1];
     addBtn.style.display="none";
     saveBtn.style.display="block";
     }
@@ -100,11 +105,13 @@ saveBtn.addEventListener('click',function(){
     let notes = localStorage.getItem('notes');
     let notesObj = JSON.parse(notes);
     let saveindex = document.getElementById('saveindex').value
-    notesObj[saveindex]=addTxt.value;
+    notesObj[saveindex][0]=addTitle.value;
+    notesObj[saveindex][1]=addTxt.value;
     saveBtn.style.display="none";
     addBtn.style.display="block";
     localStorage.setItem('notes', JSON.stringify(notesObj));
     addTxt.value="";
+    addTitle.value="";
     showNotes();
 })
 
