@@ -171,6 +171,26 @@ addTxt.addEventListener("input", function () {
     }
 
 });
+
+let addTxt = document.getElementById("addTxt");
+let addTitle = document.getElementById("addTitle");
+
+addTxt.addEventListener("input", function () {
+    checkNoteEmpty();
+});
+
+addTitle.addEventListener("input", function () {
+    checkNoteEmpty();
+});
+
+let checkNoteEmpty = () => {
+    let textVal = addTxt.value.toLowerCase();
+    let titleVal = addTitle.value.toLowerCase();
+
+    if (textVal != null && titleVal != null && textVal.trim().length > 0 && titleVal.trim().length > 0) {
+        errorAlertDiv.innerHTML = ``;
+    }
+}
 /*
 further features
 
