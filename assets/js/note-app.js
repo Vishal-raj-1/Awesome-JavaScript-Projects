@@ -147,6 +147,7 @@ function deleteNote(index){
     showNotes();
 }
 
+//this function will change the favorite state of the note
 function favoriteNote(index){
     
     let notes = localStorage.getItem('notes');
@@ -159,13 +160,8 @@ function favoriteNote(index){
         notesObj = JSON.parse(notes); 
     }
 
-    //We make a new instance of a note
-    // let note = new Note(notesObj[index].title,notesObj[index].text,notesObj[index].favorite)
     //we set the new favorite state
     notesObj[index].favorite = !notesObj[index].favorite;
-    // note.setFav();
-    //then we save it into the array of notes
-    // notesObj[index] = note;
     //Finally, we save it into the localstorage
     localStorage.setItem('notes', JSON.stringify(notesObj));
 
@@ -200,11 +196,15 @@ showFavs.addEventListener("click", ()=>{
     showFavorites();
 })
 
+//This function is called when user press "Show Favorites only" btn
 function showFavorites() {
+    //We get the non favorites ones, so its easier to only show the favs ones
     let noteCards = document.getElementsByClassName("not-favorite");
-    let favCards = document.getElementsByClassName("favorite");
+
+    //We get the amount of favorites notes already existing
+    let favCards = document.getElementsByClassName("favorite").length;
     
-    if(favCards.length > 0){
+    if(favCards > 0){
         if(showing_favs){
             Array.from(noteCards).forEach(element => {
                 element.style.display = "none";
