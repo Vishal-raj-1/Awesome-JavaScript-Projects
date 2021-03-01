@@ -7,20 +7,23 @@ for (item of buttons) {
         console.log('Button text is ', buttonText);
         if (buttonText == 'X') {
             buttonText = '*';
-            screenValue += buttonText;
-            screen.value = screenValue;
+            screen.value += buttonText;
         }
         else if (buttonText == 'C') {
             screenValue = "";
             screen.value = screenValue;
         }
         else if (buttonText == '=') {
-            screen.value = eval(screenValue);
+            screen.value = eval(screen.value);
         }
         else {
-            screenValue += buttonText;
-            screen.value = screenValue;
+            if (screenValue.length==0) {
+                screenValue += buttonText;
+                screen.value = screenValue;
+            }
+            else {
+                screen.value += buttonText;
+            }
         }
-
     })
 }
