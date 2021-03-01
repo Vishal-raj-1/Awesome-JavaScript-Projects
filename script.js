@@ -149,11 +149,19 @@ let projectData = [
     projectImage: "assets/GIFs/ticTacToe.gif",
     projectUrl: "public/Tic_Tac_Toe.html",
   },
+
    {
         projectName: "DragNDrop",
         projectImage: "assets/GIFs/DragNDrop.gif",
         projectUrl: "public/DragNDrop.html",
     }
+
+  {
+    projectName: "Quiz App",
+    projectImage: "assets/GIFs/quiz app.gif",
+    projectUrl: "public/quizapp.html",
+  }
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -167,7 +175,7 @@ function getProjects() {
     (data, item) =>
       (output += `
           <div class="card my-3 mx-auto col cardStyle">
-            <a href=${data.projectUrl} class="text-decoration-none">
+            <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
               <img
                 class="card-img-top"
                 src=${data.projectImage}
