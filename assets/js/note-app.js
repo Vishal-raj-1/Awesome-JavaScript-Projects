@@ -144,31 +144,6 @@ function deleteNote(index){
     showNotes();
 }
 
-//this function will change the favorite state of the note
-function favoriteNote(index){
-    
-    let notes = localStorage.getItem('notes');
-    let notesObj;
-
-    if(notes == null){
-        notesObj = [];
-    }
-    else{
-        notesObj = JSON.parse(notes); 
-    }
-
-    //we set the new favorite state
-    notesObj[index].favorite = !notesObj[index].favorite;
-    //Finally, we save it into the localstorage
-    localStorage.setItem('notes', JSON.stringify(notesObj));
-
-    showNotes();
-
-    //We check if the user was already watching only the favorites
-    if(showing_favs) showFavorites();
-    
-}
-
 let search = document.getElementById('searchTxt');
 
 search.addEventListener('input', function(){
@@ -216,6 +191,31 @@ function showFavorites() {
     }else{
         showing_favs = false;
     }
+}
+
+//this function will change the favorite state of the note
+function favoriteNote(index){
+    
+    let notes = localStorage.getItem('notes');
+    let notesObj;
+
+    if(notes == null){
+        notesObj = [];
+    }
+    else{
+        notesObj = JSON.parse(notes); 
+    }
+
+    //we set the new favorite state
+    notesObj[index].favorite = !notesObj[index].favorite;
+    //Finally, we save it into the localstorage
+    localStorage.setItem('notes', JSON.stringify(notesObj));
+
+    showNotes();
+
+    //We check if the user was already watching only the favorites
+    if(showing_favs) showFavorites();
+    
 }
 
 /*
