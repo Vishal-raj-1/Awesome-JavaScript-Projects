@@ -10,9 +10,6 @@ class Note{
         this.text = text;
         this.favorite = favorite;
     }
-    setFav() {
-        this.favorite = !this.favorite;
-    }
 }
 
 let addBtn = document.getElementById('addBtn');
@@ -166,6 +163,8 @@ function favoriteNote(index){
     localStorage.setItem('notes', JSON.stringify(notesObj));
 
     showNotes();
+
+    //We check if the user was already watching only the favorites
     if(showing_favs) showFavorites();
     
 }
