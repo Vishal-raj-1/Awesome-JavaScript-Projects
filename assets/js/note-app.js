@@ -8,9 +8,14 @@ let addBtn = document.getElementById('addBtn');
 // Div where error alert will be shown
 let errorAlertDiv = document.getElementById("alerts");
 
-// Error alert when no text provided in the note
-let errorAlert = `<div id="errorAleart" class="alert alert-danger alert-dismissible fade show" role="alert">
+// Error alert when no text provided in the note or title of the note
+let emptyNoteAlert = `<div id="errorAleart" class="alert alert-danger alert-dismissible fade show" role="alert">
                     <strong>Oops!</strong> This is empty note !! Try to write something useful
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`;
+
+let emptyTitleAlert = `<div id="errorAleart" class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Oops!</strong> Title is empty !! Add the title for the note
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>`;
 
@@ -19,13 +24,17 @@ addBtn.addEventListener('click', function(e){
     let addTxt = document.getElementById('addTxt');
     let addTitle = document.getElementById("addTitle");
 
-    //if note is empty and press add note button, then give a alert
+    // if title or note is empty and press add note button, then give a alert
     if(addTitle.value == ""){
-        return alert('That Title is empty !! Try to write something useful');
+        // Show error alert when note is empty
+        errorAlertDiv.innerHTML = emptyTitleAlert;
+        return;
     }
 
-    if(addTxt.value == ""){
-        return alert('This is empty note !! Try to write something useful');
+    if (addTxt.value == "") {
+        // Show error alert when note is empty
+        errorAlertDiv.innerHTML = emptyNoteAlert;
+        return;
     }
 
     let notes = localStorage.getItem('notes');
