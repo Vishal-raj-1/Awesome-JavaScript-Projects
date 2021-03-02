@@ -1,0 +1,234 @@
+/*css contnet*/ 
+
+
+        
+@charset "UTF-8";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    opacity: 1;
+    z-index: 999;
+    background-size: cover;
+    overflow: hidden;
+    background-image: linear-gradient(-45deg, none, none none);
+    transition: 2s;
+}
+
+.sidenav {
+    width:110px;
+    height: 600px;
+    box-shadow: 2px 3px 19px #004cf0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    border-radius: 5px;
+    margin-left: -400px;
+    transition: 2s;
+}
+
+.active {
+    margin-left: 0px;
+    transition: 2s;
+}
+
+.fa-home {
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: 0.9;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fa-home:hover {
+    transition: 1s;
+    color: #008ce3;
+    animation: myhome 1.1s linear infinite;
+}
+
+@keyframes myhome {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fa-tachometer {
+    position: absolute;
+    left: 32%;
+    top: 23%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: 0.9;
+    transition: 1s;
+    cursor: pointer;
+    transform: rotateX(0deg);
+}
+
+.fa-tachometer:hover {
+    transition: 1s;
+    color: #008ce3;
+    transform: rotateX(360deg);
+}
+
+.fa-cog {
+    position: absolute;
+    left: 31%;
+    top: 85.8%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: 0.9;
+    transition: 2s;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+.fa-cog:hover {
+    transition: 1s;
+    color: #008ce3;
+    transform: rotate(200deg);
+}
+
+.fa-cube {
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: 0.9;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fa-cube:hover {
+    transition: 1s;
+    color: #008ce3;
+}
+
+.fa-product-hunt {
+    position: absolute;
+    left: 29%;
+    top: 68.8%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: 0.9;
+    transition: 1s;
+    cursor: pointer;
+    transform: rotateY(0deg);
+}
+
+.fa-product-hunt:hover {
+    transition: 1s;
+    color: #008ce3;
+    transform: rotateY(180deg);
+}
+
+
+.fa-user {
+    position: absolute;
+    left: 50%;
+    top: 43.8%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: 0.9;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.fa-user:hover {
+    transition: 1s;
+    color: #008ce3;
+    margin-left: 150px;
+    margin-top: -70px;
+    opacity: 0;
+}
+
+
+/* rotator */
+
+.rotate {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 20px solid blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transform: rotate(270deg);
+    transition: .6s;
+    cursor: pointer;
+    border-left: 20px solid #00a6de;
+    border-right: 20px solid #00a6de;
+}
+
+.rotate:hover {
+    transition: .6s;
+    transform: rotate(540deg);
+    border-left: 20px solid #004cf0;
+    border-right: 20px solid #004cf0;
+}
+
+@media(max-width: 767px) {
+    .rotate {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.forte {
+    font-size: 35px;
+    font-family: forte;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 17%;
+    left: 85%;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.forte:hover {
+    color: #00b2ff;
+    transition: 1s;
+}
+
+.fa-cube:hover {
+    transition: 1s;
+    margin-left: 150px;
+    font-size: 100px;
+}
+
+
+
+
+.change {
+    background-image: linear-gradient(-45deg, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #00ffff);
+    transition: 2s;
+}
