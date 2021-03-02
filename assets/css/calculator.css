@@ -13,6 +13,7 @@ input{
     font-size: 34px;
     height: 65px;
     width: 441px;
+    outline: none;
 }
 
 button{
@@ -23,6 +24,7 @@ button{
     height: 69px;
     margin: 6px;
     transform: scale(1);
+    outline: none;
     box-shadow: 1px 1px #8e00ff, 2px 2px #e67641, 4px 4px rgb(10 19 61);
 }
 
