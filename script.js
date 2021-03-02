@@ -150,6 +150,11 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html",
   },
   {
+        projectName: "DragNDrop",
+        projectImage: "assets/GIFs/DragNDrop.gif",
+        projectUrl: "public/DragNDrop.html",
+   },
+  {
     projectName: "Quiz App",
     projectImage: "assets/GIFs/quiz app.gif",
     projectUrl: "public/quizapp.html",

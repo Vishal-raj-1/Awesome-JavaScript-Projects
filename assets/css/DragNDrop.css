@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    color: #111;
+}
+
+.draggable-elements {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.draggable {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+}
+
+.draggable:hover {
+    opacity: 0.5;
+}
+
+section.droppable-elememts {
+    flex-direction: row;
+    display: flex;
+}
+
+.droppable {
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px dashed #111;
+    transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+
+.droppable span {
+    font-size: 1.25rem;
+    pointer-events: none;
+    /* The element is never the target of pointer events */
+}
+
+
+/* Drag and Drop Related Styling */
+
+.droppable.droppable-hover {
+    /* background-color: #bee3f0; */
+    border-width: 5px;
+    transform: scale(1.1);
+}
+
+.droppable.dropped {
+    border-style: solid;
+    color: #fff;
+}
+
+.droppable.dropped span {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.droppable.dropped i {
+    pointer-events: none;
+}
+
+.draggable.dragged {
+    user-select: none;
+    opacity: 0.1;
+    cursor: default;
+}
+
+.draggable.dragged:hover {
+    opacity: 0.1;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    .draggable-elements {
+        margin: 1.5rem;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
