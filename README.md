@@ -8,6 +8,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/issues)
 [![GitHub forks](https://img.shields.io/github/forks/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/network)
 [![GitHub stars](https://img.shields.io/github/stars/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/stargazers)
+<a href="https://discord.gg/tRmWXExVtw"><img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" /></a>
 
 Are you a Newbie in Web development and want to dive deep into Javascript?
 
@@ -73,7 +74,7 @@ git remote -v
 **6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
 
 ```
-git pull upstream master
+git pull upstream main
 ```
 
 **7.** Create a new branch.
@@ -114,11 +115,12 @@ git push -u origin <your_branch_name>
 ### This Project is a part of the following Open Source Program
 
 <p align="center">
-<a href="https://crosswoc.ieeedtu.in/"> 
-  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/cwoc.png" alt="CrossWoc" width="250px" height="250px"/>
+<a href="https://crosswoc.ieeedtu.in/"  target="_blank"> 
+  <img src="assets/Images/cwoc.png" alt="CrossWoc"/>
 </a>
-<a href="https://gssoc.girlscript.tech/"> 
-  <img src="https://github.com/Ayush7614/Awesome-JavaScript-Projects/blob/main/assets/Images/gssoc.png" alt="GSSOC" width="250px" height="250px"/> 
+&nbsp;&nbsp;
+<a href="https://gssoc.girlscript.tech/"  target="_blank"> 
+  <img src="assets/Images/gssoc.png" alt="GSSOC" /> 
 </a>
 </p>
 

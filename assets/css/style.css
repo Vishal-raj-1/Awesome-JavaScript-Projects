@@ -12,21 +12,18 @@ body {
   color: var(--font-color);
 
   /*other styles*/
-  .....
 }
 
 h1 {
   color: var(--secondary-color);
 
   /*other styles*/
-  .....
 }
 
 a {
   color: var(--primary-color);
 
   /*other styles*/
-  .....
 }
 
 * {
@@ -208,3 +205,8 @@ body img {
 #icon {
   font-size: 30px;
 }
+
+i:hover, i:active {font-size: 250%;}
+       @media only screen and (min-width: 768px) {
+           i{float:left;}
+        }
