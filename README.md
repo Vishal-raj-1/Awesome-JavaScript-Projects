@@ -8,6 +8,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/issues)
 [![GitHub forks](https://img.shields.io/github/forks/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/network)
 [![GitHub stars](https://img.shields.io/github/stars/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/stargazers)
+<a href="https://discord.gg/tRmWXExVtw"><img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" /></a>
 
 Are you a Newbie in Web development and want to dive deep into Javascript?
 
@@ -19,7 +20,7 @@ Are you looking for some awesome Javascript Projects in which each and every pro
 
 Do you want to contribute to some Awesome Javascript projects and showcase your Javascript skills through it?🤩
 
-<p align="center"><img src="https://media.giphy.com/media/VeBFQLNzdBV3cfMpDR/giphy.gif" width = 40%></p>
+<p align="center"><img src="https://media.giphy.com/media/3oEjI8vagntG7EDxgQ/giphy.gif" width = 40%></p>
 
 Then, You got here right!! 
 
@@ -73,7 +74,7 @@ git remote -v
 **6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
 
 ```
-git pull upstream master
+git pull upstream main
 ```
 
 **7.** Create a new branch.
@@ -111,6 +112,18 @@ git push -u origin <your_branch_name>
 
 **15** Voila :exclamation: You have made a PR to the awesome-javascript-projects :boom: . Wait for your submission to be accepted and your PR to be merged.
 
+### This Project is a part of the following Open Source Program
+
+<p align="center">
+<a href="https://crosswoc.ieeedtu.in/"  target="_blank"> 
+  <img src="assets/Images/cwoc.png" alt="CrossWoc"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://gssoc.girlscript.tech/"  target="_blank"> 
+  <img src="assets/Images/gssoc.png" alt="GSSOC" /> 
+</a>
+</p>
+
 ## Project Maintainers 😃
 
 <table>
@@ -120,3 +133,8 @@ git push -u origin <your_branch_name>
  Urvashi Anand </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=urvashi-code1255" title="Code">💻 </a></td></a></td>
   </tr>
 </tbody></table>
+
+## Our valuable Contributors👩‍💻👨‍💻 :
+<a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=Vishal-raj-1/Awesome-JavaScript-Projects" />
+</a>
