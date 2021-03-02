@@ -149,11 +149,11 @@ let projectData = [
     projectImage: "assets/GIFs/ticTacToe.gif",
     projectUrl: "public/Tic_Tac_Toe.html",
   },
-   {
+  {
         projectName: "DragNDrop",
         projectImage: "assets/GIFs/DragNDrop.gif",
         projectUrl: "public/DragNDrop.html",
-    },
+   },
   {
     projectName: "Quiz App",
     projectImage: "assets/GIFs/quiz app.gif",
