@@ -163,6 +163,11 @@ let projectData = [
     projectName: "Day Of the Week",
     projectImage: "assets/Images/DaysOfWeek.png",
     projectUrl: "public/DaysOfWeek.html",
+  },
+  {
+    projectName: "Weather App",
+    projectImage: "assets/Images/Weather_app.png",
+    projectUrl: "public/Weather_app.html",
   }
 ];
 
