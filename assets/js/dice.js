@@ -13,13 +13,12 @@ const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
 
 
+//Intial Conditions
 let playing = true;
 let currentScore = 0;
-    let activePlayer = 0;
-    let scores = [0, 0];
-//Intial Conditions
+let activePlayer = 0;
+let scores = [0, 0];
 
- 
 function newGame(){
     playing = true;
     currentScore = 0;
@@ -107,3 +106,13 @@ btnNew.addEventListener('click', function(){
         newGame();
 })
 document.querySelector('.btn--name').addEventListener('click', setName);
+
+
+//ABOUT THIS PROJECT
+//This project is a dice game also called pig game.
+//You can read more about dice game at https://en.wikipedia.org/wiki/Pig_(dice_game)
+//Pig is a simple dice game which in its basic form is playable with just a single die. You win by being the first player to score 100 or more points.
+
+//How do you win?
+//The first player to accumulate 100 or more points wins the game.
+
