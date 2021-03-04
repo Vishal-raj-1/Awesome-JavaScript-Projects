@@ -166,7 +166,7 @@ let projectData = [
   },
   {
     projectName: "Weather App",
-    projectImage: "assets/Images/Weather_app.png",
+    projectImage: "assets/GIFs/Weather_app.gif",
     projectUrl: "public/Weather_app.html",
   }
 ];
