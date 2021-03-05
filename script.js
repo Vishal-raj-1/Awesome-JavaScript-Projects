@@ -173,6 +173,11 @@ let projectData = [
     projectName: "Weather App",
     projectImage: "assets/GIFs/Weather_app.gif",
     projectUrl: "public/Weather_app.html",
+  },
+  {
+    projectName: "Insect Catch Game",
+    projectImage: "assets/GIFs/Insect Catch.png",
+    projectUrl: "public/InsectCatch.html",
   }
 ];
 
