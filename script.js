@@ -176,7 +176,7 @@ let projectData = [
   },
   {
     projectName: "Insect Catch Game",
-    projectImage: "assets/GIFs/Insect Catch.png",
+    projectImage: "assets/Images/Insect Catch.png",
     projectUrl: "public/InsectCatch.html",
   }
 ];
