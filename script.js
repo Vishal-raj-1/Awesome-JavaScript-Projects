@@ -120,6 +120,11 @@ let projectData = [
     projectUrl: "public/passwordGenerator.html",
   },
   {
+    projectName: "BMI Calculator",
+    projectImage: "assets/Images/BMICalculator.png",
+    projectUrl: "public/BMICalculator.html",
+  },
+  {
     projectName: "URL Shortner",
     projectImage: "assets/GIFs/urlShortner.gif",
     projectUrl: "public/url-shortner.html",
@@ -150,9 +155,24 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html",
   },
   {
+        projectName: "DragNDrop",
+        projectImage: "assets/GIFs/DragNDrop.gif",
+        projectUrl: "public/DragNDrop.html",
+   },
+  {
     projectName: "Quiz App",
-    projectImage: "assets/GIFs/quiz app.gif",
+    projectImage: "assets/GIFs/quizApp.gif",
     projectUrl: "public/quizapp.html",
+  },
+  {
+    projectName: "Day Of the Week",
+    projectImage: "assets/Images/DaysOfWeek.png",
+    projectUrl: "public/DaysOfWeek.html",
+  },
+  {
+    projectName: "Weather App",
+    projectImage: "assets/GIFs/Weather_app.gif",
+    projectUrl: "public/Weather_app.html",
   }
 ];
 
@@ -167,7 +187,7 @@ function getProjects() {
     (data, item) =>
       (output += `
           <div class="card my-3 mx-auto col cardStyle">
-            <a href=${data.projectUrl} class="text-decoration-none">
+            <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
               <img
                 class="card-img-top"
                 src=${data.projectImage}

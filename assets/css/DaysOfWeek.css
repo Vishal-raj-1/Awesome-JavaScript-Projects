@@ -1,0 +1,62 @@
+body{
+    margin:10px;
+    text-align:center;
+    font-family:monospace;
+    color:white;
+}
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.viewport-header {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#box p{
+    position:absolute;
+    padding:20px;
+    border-radius:20px;
+}
+h1{
+    font-size:60px;
+}
+#date{
+    font-size:25px;
+    bottom:325px;
+    background:#00000096;
+    color:lightyellow;
+}
+#day{
+    bottom:70px;
+    font-size:100px;
+    background:#00000096;
+    color:lightyellow;
+}
+#week{
+    font-size:40px;
+    bottom:20px;
+    background:#FFFFFF46;
+    color:black;
+}
+@media only screen and (max-width: 600px) {
+    #day{
+        font-size:60px;
+        bottom:110px;
+    }  
+    #date{
+        font-size:15px;
+        bottom:280px;
+    }  
+    #week{
+        font-size:25px;
+        padding:10px;
+        bottom:60px;
+    }  
+}
