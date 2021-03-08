@@ -208,7 +208,22 @@ body img {
   font-size: 30px;
 }
 
+.navbar {
+ 
+  z-index: 1;
+}
+
 i:hover, i:active {font-size: 250%;}
        @media only screen and (min-width: 768px) {
            i{float:left;}
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .sticky + .content {
+          padding-top: 60px;
         }
