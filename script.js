@@ -171,7 +171,7 @@ let projectData = [
   },
   {
     projectName: "Rock Paper Sessior Game",
-    projectImage: "assets/Images/r-p-s/r-p-s.PNG",
+    projectImage: "assets/Images/r-p-s/rps.gif",
     projectUrl: "public/Rock-paper-sesssior.html",
   },
   {
