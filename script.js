@@ -166,7 +166,7 @@ let projectData = [
   },
   {
     projectName: "GuessingGame",
-    projectImage: "assets/Images/GuessingGame/looks.png",
+    projectImage: "assets/Images/GuessingGame/look.png",
     projectUrl: "public/GuessingGame.html",
   },
   {
