@@ -165,6 +165,11 @@ let projectData = [
     projectUrl: "public/quizapp.html",
   },
   {
+    projectName: "Guessing Game",
+    projectImage: "assets/Images//Guessing Game/looks.png",
+    projectUrl: "public/Guessing Game.html",
+  },
+  {
     projectName: "Day Of the Week",
     projectImage: "assets/Images/DaysOfWeek.png",
     projectUrl: "public/DaysOfWeek.html",
