@@ -1,0 +1,12 @@
+body{
+    height: 100px;
+    background-color: #115cdf;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    font-family:sans-serif;
+}
