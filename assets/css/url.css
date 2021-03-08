@@ -34,7 +34,7 @@ div {
     font-size: 1rem;
     float: left;
     width: 100px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .form-box input {
@@ -65,8 +65,10 @@ div {
     background-color: rgb(211, 42, 42);
     transition-duration: 0.4s;
     color:white;
+    outline-style: none;
     cursor: pointer;
 }
+
 .form-box button:hover{
     border: 2px solid rgb(211, 42, 42);
     border-radius: 40rem;
@@ -89,6 +91,7 @@ div {
 #div1{
     padding-left: 3rem;
 }
+
 #form-user{
     margin: auto;
     width: 50%;
