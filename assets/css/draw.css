@@ -15,6 +15,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   user-select: none;
+  
 }
 
 .size-wrapper {
@@ -91,6 +92,26 @@ body {
 
 .c-green {
   background-color: #5cb85c;
+  border: 1.8px solid black;
+}
+
+.c-black {
+  background-color: #000000;
+  border: 1.8px solid black;
+}
+
+.c-white {
+  background-color: #ffffff;
+  border: 1.8px solid black;
+}
+
+.c-yellow {
+  background-color: #ffff00;
+  border: 1.8px solid black;
+}
+
+.c-purple {
+  background-color: #800080;
   border: 1.8px solid black;
 }
 
