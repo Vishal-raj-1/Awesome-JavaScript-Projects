@@ -505,5 +505,4 @@ var VanillaTilt = (function () {
     
     return VanillaTilt;
     
-    }());
-    
+    }());    
