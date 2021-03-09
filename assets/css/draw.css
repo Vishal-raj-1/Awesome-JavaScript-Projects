@@ -68,6 +68,14 @@ body {
   transform: scale(0.8);
 }
 
+.s-x-large:hover {
+  transform: scale(0.8);
+}
+
+.s-tiny:hover {
+  transform: scale(0.8);
+}
+
 .s-large:hover {
   transform: scale(0.8);
 }
