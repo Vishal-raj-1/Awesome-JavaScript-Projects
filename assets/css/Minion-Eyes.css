@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    transform-origin: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    background: #ffffff url(../Images/Minions-body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 348px;
+    height: 553.7px;
+    margin-top: 90px;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+}
+
+.eye {
+    width: 79.7px;
+    height: 68px;
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+.ball {
+    background: url(../Images/minion-eye.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42.3px;
+    height: 42.3px;
+    border-radius: 50%;
+}

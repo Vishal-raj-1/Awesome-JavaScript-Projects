@@ -120,6 +120,11 @@ let projectData = [
     projectUrl: "public/passwordGenerator.html",
   },
   {
+    projectName: "BMI Calculator",
+    projectImage: "assets/Images/BMICalculator.png",
+    projectUrl: "public/BMICalculator.html",
+  },
+  {
     projectName: "URL Shortner",
     projectImage: "assets/GIFs/urlShortner.gif",
     projectUrl: "public/url-shortner.html",
@@ -156,7 +161,7 @@ let projectData = [
    },
   {
     projectName: "Quiz App",
-    projectImage: "assets/GIFs/quiz app.gif",
+    projectImage: "assets/GIFs/quizApp.gif",
     projectUrl: "public/quizapp.html",
   },
   {
@@ -168,6 +173,16 @@ let projectData = [
     projectName:"Hangman",
     projectImage:"assets/GIFs/hangman.gif",
     projectUrl:"public/hangman.html",
+  },
+  {
+    projectName: "Weather App",
+    projectImage: "assets/GIFs/Weather_app.gif",
+    projectUrl: "public/Weather_app.html",
+  },
+  {
+    projectName: "Animated Minion Eyes",
+    projectImage: "assets/GIFs/Minion-Eyes.gif",
+    projectUrl: "public/Minion-Eyes.html",
   }
 ];
 

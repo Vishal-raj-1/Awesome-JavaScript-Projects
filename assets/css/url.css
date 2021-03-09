@@ -34,7 +34,7 @@ div {
     font-size: 1rem;
     float: left;
     width: 100px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .form-box input {
@@ -57,12 +57,23 @@ div {
 
 .form-box button {
     font-size: 1rem;
-    border: none;
-    padding: 0.25rem 2rem;
-    margin-right: 1rem;
-    color: white;
-    background-color: rgb(166, 94, 193);
+    border: 2px solid rgb(211, 42, 42);
+    border-radius: 40rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 0.50rem 2rem;
+    margin:0.4rem 10rem;
+    background-color: rgb(211, 42, 42);
+    transition-duration: 0.4s;
+    color:white;
+    outline-style: none;
     cursor: pointer;
+}
+
+.form-box button:hover{
+    border: 2px solid rgb(211, 42, 42);
+    border-radius: 40rem;
+    background-color: white;
+    color: rgb(211, 42, 42);
 }
 
 .error::after {
@@ -80,3 +91,15 @@ div {
 #div1{
     padding-left: 3rem;
 }
+
+#form-user{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  #div1{
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+    }
