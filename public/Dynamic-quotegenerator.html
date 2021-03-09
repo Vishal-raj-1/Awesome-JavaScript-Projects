@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../assets/css/Dynamicquotegenerator.css">
-  <title> Dynamic Quote Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/Dynamicquotegenerator.css" />
+    <title>Dynamic Quote Generator</title>
 </head>
 <body>
-    
-      <h1 class="heading">Generate Random Quotes!</h1>
-      <div class="container">
-        <div class="quote-box">   
-               <p id="quote">"All our knowledge has its origins in our perceptions."</p> 
-          <small id="author">- Leonardo da Vinci</small>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Dynamic Quote Generator</h1>
         </div>
-        <button id="btn">Generate Quote</button>
-      </div>
-      <script type="text/javascript" src="../assets/js/Dynamicquotegenerator.js"></script>
+        <div class="inner neumorphic neumorphic--pressed">
+            <div class="box">
+                <p class="number">
+                    <i class="fab fa-twitter" id="tweet"></i>
+                </p>
+                <div class="text">
+                    <i class="star-quote fas fa-quote-left"></i>
+                    <p id="quotes" class="quotes"> “All big things come from small beginnings. The seed of every habit is a single, tiny decision. But as that decision is repeated, a habit sprouts and grows stronger. Roots entrench themselves and branches grow. The task of breaking a bad habit is like uprooting a powerful oak within us. And the task of building a good habit is like cultivating a delicate flower one day at a time.”
+                    </p>
+                    <p id="author" class="author"> - James Clear</p>
+                </div>
+
+                <div class="btn-container">
+                    <button class="button" id="newQ">
+                        New Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Color-stripe">
+            <abbr title="Pinky Pinkish" id="pink">
+                <div class="pink"></div>
+            </abbr>
+            <abbr title="Greish Grey" id="grey">
+                <div class="grey" ></div>
+            </abbr>
+            <abbr title="Bluish blue" id="blue">
+                <div class="blue" ></div>
+            </abbr>
+        </div>
+    </div>
+
+    <script src="../assets/js/Dynamicquotegenerator.js"></script>
 </body>
 </html>
