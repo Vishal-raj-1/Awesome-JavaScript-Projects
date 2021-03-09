@@ -161,7 +161,7 @@ let projectData = [
   },
   {
     projectName: "Typing Speed Tester",
-    projectImage: "assets/GIFs/typing_speed_test.png",
+    projectImage: "assets/GIFs/typing_speed_test.gif",
     projectUrl: "public/typing_speed_test.html",
   },
   {
