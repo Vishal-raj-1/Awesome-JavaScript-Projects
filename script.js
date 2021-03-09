@@ -16,7 +16,7 @@ let projectData = [
   },
   {
     projectName: "Dynamic Quote Generator",
-    projectImage: "assets/Images/quoteGenerator.png",
+    projectImage: "assets/GIFs/dynamicQuote.gif",
     projectUrl: "public/Dynamic-quotegenerator.html",
   },
   {
