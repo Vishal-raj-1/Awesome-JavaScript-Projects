@@ -1,6 +1,6 @@
 body{
     height: 100%;
-    background: linear-gradient(315deg, #89c268 0%, rgb(118, 105, 231) 74%);
+    background-color: orange;
 }
 h1{
     
@@ -21,6 +21,7 @@ table {
     margin-bottom: auto;
     border-collapse: collapse;
     font-weight: 60;
+    border-radius: 3px;
     
 }
 
@@ -32,6 +33,7 @@ th {
     height: 50px;
     color: wheat;
     background-color: rgb(34, 34, 34);
+    border-radius: 3px;
 }
 
 td {
@@ -41,7 +43,8 @@ td {
     text-align: center;
     height: 79px;
     font-size: 26px;
-    background-color: wheat;
+    background-color: #fbdafb;
+    border-radius: 3px;
 }
 
 #today {
@@ -73,7 +76,7 @@ button{
     width: 150px;
     height: 40px;
     padding: 7px;
-    border: 2px orange;
+    border: 2px rgb(141, 94, 6);
     background-color: purple;
     color: white;
     font-size: 18px;

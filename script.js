@@ -16,7 +16,7 @@ let projectData = [
   },
   {
     projectName: "Dynamic Quote Generator",
-    projectImage: "assets/Images/quoteGenerator.png",
+    projectImage: "assets/GIFs/dynamicQuote.gif",
     projectUrl: "public/Dynamic-quotegenerator.html",
   },
   {
@@ -120,6 +120,11 @@ let projectData = [
     projectUrl: "public/passwordGenerator.html",
   },
   {
+    projectName: "BMI Calculator",
+    projectImage: "assets/Images/BMICalculator.png",
+    projectUrl: "public/BMICalculator.html",
+  },
+  {
     projectName: "URL Shortner",
     projectImage: "assets/GIFs/urlShortner.gif",
     projectUrl: "public/url-shortner.html",
@@ -156,14 +161,34 @@ let projectData = [
    },
   {
     projectName: "Quiz App",
-    projectImage: "assets/GIFs/quiz app.gif",
+    projectImage: "assets/GIFs/quizApp.gif",
     projectUrl: "public/quizapp.html",
+  },
+  {
+    projectName: "Day Of the Week",
+    projectImage: "assets/Images/DaysOfWeek.png",
+    projectUrl: "public/DaysOfWeek.html",
+  },
+  {
+    projectName: "Rock Paper Sessior Game",
+    projectImage: "assets/Images/r-p-s/rps.gif",
+    projectUrl: "public/Rock-paper-sesssior.html",
+  },
+  {
+    projectName: "Weather App",
+    projectImage: "assets/GIFs/Weather_app.gif",
+    projectUrl: "public/Weather_app.html",
+  },
+  {
+    projectName: "Animated Minion Eyes",
+    projectImage: "assets/GIFs/Minion-Eyes.gif",
+    projectUrl: "public/Minion-Eyes.html",
   },
   {
     projectName: "calendar",
     projectImage: "assets/GIFs/cal.gif",
     projectUrl: "public/calendar.html",
-  }
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
