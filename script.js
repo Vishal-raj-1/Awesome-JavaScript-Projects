@@ -155,10 +155,15 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html",
   },
   {
-        projectName: "DragNDrop",
-        projectImage: "assets/GIFs/DragNDrop.gif",
-        projectUrl: "public/DragNDrop.html",
-   },
+    projectName: "DragNDrop",
+    projectImage: "assets/GIFs/DragNDrop.gif",
+    projectUrl: "public/DragNDrop.html",
+  },
+  {
+    projectName: "Typing Speed Tester",
+    projectImage: "assets/GIFs/typing_speed_test.gif",
+    projectUrl: "public/typing_speed_test.html",
+  },
   {
     projectName: "Quiz App",
     projectImage: "assets/GIFs/quizApp.gif",
@@ -200,7 +205,7 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
           <div class="card my-3 mx-auto col cardStyle">
             <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
               <img
