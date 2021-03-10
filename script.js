@@ -184,6 +184,11 @@ let projectData = [
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
   }
+  {
+    projectName: "Currency Converter",
+    projectImage: "assets/GIFs/currencyConverter.gif",
+    projectUrl: "public/currecyConverter.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
