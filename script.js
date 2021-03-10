@@ -184,6 +184,11 @@ let projectData = [
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
   }
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
