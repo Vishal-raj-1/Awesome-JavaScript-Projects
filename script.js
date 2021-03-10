@@ -170,6 +170,11 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
+    projectName:"Hangman",
+    projectImage:"assets/GIFs/hangman.gif",
+    projectUrl:"public/hangman.html",
+  },
+  {
     projectName: "Rock Paper Sessior Game",
     projectImage: "assets/Images/r-p-s/rps.gif",
     projectUrl: "public/Rock-paper-sesssior.html",
