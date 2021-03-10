@@ -25,7 +25,7 @@ let projectData = [
     projectUrl: "public/counter.html",
   },
   {
-    projectName: "Local Storgae",
+    projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.jpeg",
     projectUrl: "public/localstorage.html",
   },
@@ -155,10 +155,15 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html",
   },
   {
-     projectName: "DragNDrop",
-     projectImage: "assets/GIFs/DragNDrop.gif",
-     projectUrl: "public/DragNDrop.html",
-   },
+    projectName: "DragNDrop",
+    projectImage: "assets/GIFs/DragNDrop.gif",
+    projectUrl: "public/DragNDrop.html",
+  },
+  {
+    projectName: "Typing Speed Tester",
+    projectImage: "assets/GIFs/typing_speed_test.gif",
+    projectUrl: "public/typing_speed_test.html",
+  },
   {
     projectName: "Quiz App",
     projectImage: "assets/GIFs/quizApp.gif",
@@ -168,6 +173,11 @@ let projectData = [
     projectName: "Day Of the Week",
     projectImage: "assets/Images/DaysOfWeek.png",
     projectUrl: "public/DaysOfWeek.html",
+  },
+  {
+    projectName:"Hangman",
+    projectImage:"assets/GIFs/hangman.gif",
+    projectUrl:"public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -189,6 +199,11 @@ let projectData = [
     projectImage: "assets/GIFs/cal.gif",
     projectUrl: "public/calendar.html",
   },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -200,7 +215,7 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
           <div class="card my-3 mx-auto col cardStyle">
             <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
               <img
@@ -222,4 +237,17 @@ function getProjects() {
 
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("Navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
