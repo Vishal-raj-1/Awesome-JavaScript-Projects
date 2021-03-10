@@ -193,12 +193,17 @@ let projectData = [
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
-  }
+  },
   {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
-  }
+  },
+  {
+    projectName: "Currency Converter",
+    projectImage: "assets/GIFs/currencyConverter.gif",
+    projectUrl: "public/currencyConverter.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
