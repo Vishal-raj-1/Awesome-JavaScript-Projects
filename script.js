@@ -25,7 +25,7 @@ let projectData = [
     projectUrl: "public/counter.html",
   },
   {
-    projectName: "Local Storgae",
+    projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.jpeg",
     projectUrl: "public/localstorage.html",
   },
