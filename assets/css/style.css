@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #302AE6;
+  --primary-color: #302ae6;
   --secondary-color: #536390;
   --font-color: #424242;
   --bg-color: #fff;
@@ -82,8 +82,19 @@ a {
   width: 60px;
 }
 
-.theme-switch input {
-  display:none;
+.text-white {
+  color: #fff;
+}
+.color-black {
+  color: rgba(105, 84, 84, 0.932);
+}
+.theme-switch span i {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.hide-display {
+  display: none;
 }
 
 .slider {
@@ -94,17 +105,17 @@ a {
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
   background-color: #fff;
   bottom: 4px;
-  content: '';
+  content: "";
   height: 26px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 26px;
 }
 
@@ -125,7 +136,7 @@ input:checked + .slider:before {
 }
 
 [data-theme="dark"] {
-  --primary-color: #9A97F3;
+  --primary-color: #9a97f3;
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
   --bg-color: #161625;
@@ -133,7 +144,7 @@ input:checked + .slider:before {
 }
 
 body img {
-  filter: brightness(.8) contrast(1.2);
+  filter: brightness(0.8) contrast(1.2);
 }
 
 /* Cards */
@@ -209,21 +220,25 @@ body img {
 }
 
 .navbar {
- 
   z-index: 1;
 }
 
-i:hover, i:active {font-size: 250%;}
-       @media only screen and (min-width: 768px) {
-           i{float:left;}
-        }
+i:hover,
+i:active {
+  font-size: 250%;
+}
+@media only screen and (min-width: 768px) {
+  i {
+    float: left;
+  }
+}
 
-        .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-        .sticky + .content {
-          padding-top: 60px;
-        }
+.sticky + .content {
+  padding-top: 60px;
+}
