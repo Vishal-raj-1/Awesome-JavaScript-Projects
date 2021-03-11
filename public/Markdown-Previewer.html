@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mark Down Previewer</title>
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="../assets/css/Markdown-Previewer.css">
+</head>
+
+<body>
+    <div class='header'>
+        <h1 id="page-header">
+            MarkDown Previewer
+        </h1>
+    </div>
+    <div id="content">
+        <div id='editor-container'>
+            <h2  id='editor-label'>Editor</h2>
+            <!-- editor update as typed-->
+    <textarea id="editor" cols="100" rows="15">
+# Welcome to the Markdown Previewer!
+<hr>
+
+## This is a sub-heading...
+
+### here are some other cool features
+
+<em> make any changes to see the difference in the output</em>
+<br>
+**bold** <i> italic</i>
+<ul>
+    <li>point1</li>
+    <li>point2</li>
+    <li>point3</li>
+</ul>
+            </textarea>
+        </div>
+        
+        <div id="preview-container">
+            <h2 id='preview-label'>Preview</h2>
+            <div id="preview">
+                
+                <!-- the output goes here  -->
+                make changes in the editor to see the output
+            </div>
+        </div>
+    </div>
+    <!-- script tag and marked cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/Markdown-Previewer.js"></script>
+    
+</body>
+</html>
