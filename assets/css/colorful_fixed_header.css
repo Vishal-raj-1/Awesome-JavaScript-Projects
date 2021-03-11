@@ -12,6 +12,7 @@ header{
     z-index:10;
     width:100%;
 }
+/* additional class for header*/
 .act{
     color:black;
     background-color:yellow;
