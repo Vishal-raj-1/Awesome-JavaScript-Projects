@@ -47,7 +47,7 @@ h3{
     border-radius: 5px;
     padding:10px;
 }
-.btn:hover, .btn:active, btn.selected{
+.btn:hover, .btn:active{
     background-color: rgb(94, 6, 102);
 }
 /* note-card styling */
