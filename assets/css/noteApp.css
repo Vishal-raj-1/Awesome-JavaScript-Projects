@@ -1,0 +1,66 @@
+.btn{
+    /* border: 5px solid green; */
+}
+.container{
+    /* border: 5px solid purple; */
+}
+.card{
+    /* border: 5px solid lime; */
+}
+.col{
+    /* border: 5px solid red; */
+}
+/*main heading*/
+body{
+    background: #ffee00;
+    font-family:  cursive;
+}
+h1{
+    color:purple;
+    font-family: cursive;
+}
+/*adding title & text part */
+h3{
+    font-family:cursive;
+    color:purple;
+}
+#addTitle{
+    font-size:28px ;
+    font-family: cursive;
+    /* font-family: 'Caveat'; */
+}
+#addTxt{
+    font-size: 25px;
+    font-family: cursive;
+    /* font-family: 'Caveat'; */
+}
+
+
+/* button styling */
+.btn{
+    color: #ffee00;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    background-color: rgb(155, 2, 155);
+    border:2px solid purple;
+    border-radius: 5px;
+    padding:10px;
+}
+.btn:hover, .btn:active, btn.selected{
+    background-color: rgb(94, 6, 102);
+}
+/* note-card styling */
+#notes{
+    /* border: 2px solid black; */
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+.noteCard{
+    border: 5px solid purple;
+    background-color: #ffff8b;
+}
+h2{
+    color: purple;
+    font-weight: 400;
+}

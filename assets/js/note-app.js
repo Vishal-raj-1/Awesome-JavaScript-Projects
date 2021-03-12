@@ -74,7 +74,7 @@ function showNotes(){
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col">
-                    <h5 class="card-title">${element.title}</h5>
+                    <h2 class="card-title">${element.title}</h2>
                 <p class="card-text">${element.text}</p>
                 </div>
                 <div class="col-2">
