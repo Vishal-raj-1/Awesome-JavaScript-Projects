@@ -193,6 +193,16 @@ let projectData = [
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
+  },
+  {
+    projectName: "calendar",
+    projectImage: "assets/GIFs/cal.gif",
+    projectUrl: "public/calendar.html",
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
   }
 ];
 
