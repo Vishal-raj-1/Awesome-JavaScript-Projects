@@ -67,29 +67,6 @@ body {
     background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 }
 
-
-#logout {
-    display: flex;
-    position:relative;
-    max-width:100px;
-    left: 70%;
-    margin-top: -40px;
-    width: 100%;
-    height: 20px;
-    border: gold;
-    border-radius: 2mm;
-    background: linear-gradient(120deg,#3498db,#8e44ad,#3498db);
-    background-size: 200%;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-    transition: .5s;
-    justify-content: center ;
-        
-}
-#logout:hover{
-    background-position: right;
-}
 .current {
     padding-left: 1rem ;
     width: fit-content;
