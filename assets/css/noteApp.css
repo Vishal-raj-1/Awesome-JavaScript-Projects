@@ -12,14 +12,18 @@
 }
 /*main heading*/
 body{
-    background: #ffee00;
+    /* background: #ffee00; */
+    background:rgb(139, 3, 139);
     font-family:  cursive;
 }
 h1{
-    color:purple;
+    color:#ffee00;
     font-family: cursive;
 }
 /*adding title & text part */
+.card{
+    border: 5px solid #ffc600;
+}
 h3{
     font-family:cursive;
     color:purple;
@@ -34,21 +38,36 @@ h3{
     font-family: cursive;
     /* font-family: 'Caveat'; */
 }
+/*navbar*/
+.navbar{
+    background-color: #ffee00;
+}
+.navtag{
+    color: purple;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    flex:none;
+    padding:10px;
+}
+
 
 
 /* button styling */
 .btn{
-    color: #ffee00;
+    color: purple;
     font-size: 20px;
     font-family: 'Caveat', cursive;
     font-weight: bold;
-    background-color: rgb(155, 2, 155);
-    border:2px solid purple;
+    background-color: #ffee00;
+    border:2px solid #ffee00;
     border-radius: 5px;
     padding:10px;
 }
 .btn:hover, .btn:active{
-    background-color: rgb(94, 6, 102);
+    background-color: #ffc600;
+    color:purple;
+    border:3px solid #ffc600
 }
 /* note-card styling */
 #notes{
@@ -57,10 +76,10 @@ h3{
     font-size: 30px;
 }
 .noteCard{
-    border: 5px solid purple;
+    border: 5px solid #ffc600;
     background-color: #ffff8b;
 }
 h2{
-    color: purple;
+    color:purple;
     font-weight: 400;
 }
