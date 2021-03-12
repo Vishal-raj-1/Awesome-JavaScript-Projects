@@ -70,6 +70,11 @@ let projectData = [
     projectUrl: "public/animatedCounter.html",
   },
   {
+    projectName: "Bubble Sort",
+    projectImage: "assets/GIFs/bubbleSort.gif",
+    projectUrl: "public/bubbleSort.html",
+  },
+  {
     projectName: "Music Player",
     projectImage: "assets/GIFs/musicPlayer.gif",
     projectUrl: "public/music_player.html",
@@ -193,10 +198,10 @@ let projectData = [
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
-  }
+  },
   {
     projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
+    projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   }
 ];
