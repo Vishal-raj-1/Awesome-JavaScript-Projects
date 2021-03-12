@@ -193,6 +193,11 @@ let projectData = [
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
+  },
+  {
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
   }
 ];
 
