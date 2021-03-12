@@ -81,7 +81,9 @@
 
     //--------------------------------------RealTime Database-------------------------------------------//
     document.getElementById('check').onclick = function () {
-      move();}
+      move();
+      Disable();
+    }
     var i = document.getElementById('osVersion').innerHTML;
  
     
@@ -167,6 +169,9 @@
         }
       }
     }
+    function Disable(check) {
+    document.getElementById("check").disabled = 'true';
+}
 
   </script>
 </body>
