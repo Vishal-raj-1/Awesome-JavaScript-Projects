@@ -25,7 +25,7 @@ let projectData = [
     projectUrl: "public/counter.html",
   },
   {
-    projectName: "Local Storgae",
+    projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.jpeg",
     projectUrl: "public/localstorage.html",
   },
@@ -175,6 +175,11 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
+    projectName:"Hangman",
+    projectImage:"assets/GIFs/hangman.gif",
+    projectUrl:"public/hangman.html",
+  },
+  {
     projectName: "Rock Paper Sessior Game",
     projectImage: "assets/Images/r-p-s/rps.gif",
     projectUrl: "public/Rock-paper-sesssior.html",
@@ -188,6 +193,16 @@ let projectData = [
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
+  },
+  {
+    projectName: "calendar",
+    projectImage: "assets/GIFs/cal.gif",
+    projectUrl: "public/calendar.html",
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
   }
 ];
 

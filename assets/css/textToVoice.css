@@ -1,0 +1,51 @@
+* {
+    margin:0;
+}
+
+body {
+    background-color:black;
+    color:white;
+}
+
+.main {
+    margin: 5% 30% 0 30%;
+    display: flex;
+    flex-direction: column;
+    border:1px solid white;
+    padding:25px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align:center;
+}
+
+#voices {
+    font-size: 1.6rem;
+    margin-top:50px;
+    padding:12px; 
+    text-align:center;
+}
+
+label {
+    font-size: 1.6rem;
+    margin-top:20px;
+}
+
+textarea {
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size: 1.8rem;
+}
+
+.buttons {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+button {
+    font-size: 1.6rem;
+    padding:10px;
+    width:150px;
+}
