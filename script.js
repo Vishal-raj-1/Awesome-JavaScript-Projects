@@ -206,7 +206,7 @@ let projectData = [
   },
   {
     projectName: "Yoga App",
-    projectImage: "assets/Images/yogass.png",
+    projectImage: "assets/GIFs/yoga.gif",
     projectUrl: "public/yoga.html",
   },
   {
