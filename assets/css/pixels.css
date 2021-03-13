@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    background-image: url(../images/background-pixels.jpg);
+    font-family:"Lucida Console", "Courier New", monospace;
+}
+
+
+
+#start-button{
+    border-radius: 10%;
+    width:178px;
+    height:86px;
+    background-color: rgb(243, 104, 236);
+    color:white;
+    font-size:xx-large;
+    font-weight: bolder;
+    transition: all 0.5s;
+    cursor:pointer;
+    position: absolute; 
+    right:42%;
+    top:45%;
+    outline:none;
+    font-family: inherit;
+}
+
+#start-button:hover
+{
+    background-color:rgb(128, 28, 103);
+    transform: scale(1.2);
+}
+
+#how-to-play
+{
+    padding:20px;
+    border-radius:7%;
+    background-color: rgb(243, 104, 236);
+    color:#fff;
+    width:40%;
+    position: absolute; 
+    right:28%;
+    top:65%;
+}
+
+.pixel
+{
+    background-color:rgb(201, 87, 211);
+    width:50px;
+    height:50px;
+    border-radius: 6%;
+    top:-20%;
+    position: absolute;
+    animation: fall 5s linear forwards;
+    transition: all 0.5s;
+    
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(112vh);
+    }
+}
+
+.lives,.score
+{
+    font-size:20px;
+    text-align:right;
+    color:#fff;
+    padding:10px;
+    z-index:1000;
+    font-family: inherit;
+    display:none;
+}
+
+#game-over-msg
+{
+    background-color: rgb(100, 41, 97);
+    text-align: center;
+    position: fixed;
+    padding:20px;
+    color:white;
+    border-radius:5%;
+    top:30%;
+    right:40%;
+    display:none;
+    
+}
+
+#restart-btn
+{
+    width:200px;
+    height:80px;
+    border-radius:5%;
+    cursor:pointer;
+    margin:10px;
+    color:#fff;
+    font-family: inherit;
+    font-weight:bolder;
+    font-size:large;
+    background-color: rgb(243, 104, 236);
+    
+}
+

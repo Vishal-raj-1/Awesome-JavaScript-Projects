@@ -206,8 +206,14 @@ let projectData = [
   },
   {
     projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
+    projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
+  }
+  ,
+  {
+    projectName: "Pixels Game",
+    projectImage: "assets/GIFs/pixels.gif",
+    projectUrl: "public/pixels-game.html",
   }
 ];
 
