@@ -57,3 +57,8 @@ function draw(e) {
   ctx.lineTo(mousePos.x, mousePos.y);
   ctx.stroke();
 }
+
+download_img = function(el) {
+  var image = canvas.toDataURL("image/jpg");
+  el.href = image;
+};
