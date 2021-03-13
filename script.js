@@ -195,6 +195,11 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: " Key Event Code",
+    projectImage: " ",
+    projectUrl: "public/KeyEventCode.html",
+  },
+  {
     projectName: "calendar",
     projectImage: "assets/GIFs/cal.gif",
     projectUrl: "public/calendar.html",
@@ -204,11 +209,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   },
-  {
-    projectName: "KeyEvent_code",
-    projectImage: "assets/Images/KeyNote_code.png",
-    projectUrl: "public/KeyEvent_code.html",
-  },
+  
 ];
 
 let projectContainer = document.getElementById("js-projects");
