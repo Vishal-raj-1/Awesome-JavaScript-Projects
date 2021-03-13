@@ -175,9 +175,9 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
-    projectName:"Hangman",
-    projectImage:"assets/GIFs/hangman.gif",
-    projectUrl:"public/hangman.html",
+    projectName: "Hangman",
+    projectImage: "assets/GIFs/hangman.gif",
+    projectUrl: "public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -208,6 +208,11 @@ let projectData = [
     projectName: "Yoga App",
     projectImage: "assets/Images/yogass.png",
     projectUrl: "public/yoga.html",
+  },
+  {
+    projectName: "Flip Cards",
+    projectImage: "assets/GIFs/flipped.gif",
+    projectUrl: "public/flipcards.html",
   }
 ];
 
