@@ -1,4 +1,5 @@
-let btnHtml = document.querySelectorAll('.btn-move');
+       //Selecting items
+        let btnHtml = document.querySelectorAll('.btn-move');
         let htmlProgress = document.querySelector('.html-progress');
         let cssProgress = document.querySelector('.css-progress');
         let reactProgress = document.querySelector('.js-progress');
