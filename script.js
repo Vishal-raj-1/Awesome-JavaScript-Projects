@@ -194,11 +194,8 @@ let projectData = [
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
   },
+  
   {
-    projectName: "Github Issue Tracker",
-    projectImage: "assets/Images/IssueTracker.png",
-    projectUrl: "public/IssueTracker.html",
-  }
     projectName: "calendar",
     projectImage: "assets/GIFs/cal.gif",
     projectUrl: "public/calendar.html",
@@ -207,6 +204,11 @@ let projectData = [
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "Github Issue Tracker",
+    projectImage: "assets/Images/IssueTracker.png",
+    projectUrl: "public/IssueTracker.html",
   }
 ];
 
