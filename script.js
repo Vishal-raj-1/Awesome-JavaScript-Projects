@@ -205,10 +205,10 @@ let projectData = [
     projectUrl: "public/textToVoice.html",
   },
   {
-    projectName: "KeyEvent_code",
-    projectImage:"assets/Images/KeyNote_code.png",
-    projectUrl:"public/KeyEvent_code.html",
-  }
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
