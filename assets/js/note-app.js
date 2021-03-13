@@ -80,7 +80,7 @@ function showNotes(){
                 <div class="col-2">
                 <span class="iconify" data-icon=${element.favorite ? "bi:star-fill":"bi:star"} data-inline="false" data-width="24" data-height="24" style=${element.favorite ? "color:gold":"color:black"} onclick=favoriteNote(${index})></span>
                 </div>
-            </div>
+            </div>  
             <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
             <button onclick="editNote(${index})"  class="btn btn-primary">Edit Note</button>
             
@@ -94,8 +94,6 @@ function showNotes(){
     }
     else{
         notesEle.innerHTML = `You haven't add any note yet. Try to to add some note using above section and then press "Add Note" button.`
-        //changing color scheme hence adding a class in innerHTML
-        notesEle.classList.add("yellow_style");
     }
     
 }
