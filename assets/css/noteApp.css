@@ -83,3 +83,7 @@ h2{
     color:purple;
     font-weight: 400;
 }
+/* this class is for black text typed when no notecard is added */
+.yellow_style{
+    color:#ffee00;
+}

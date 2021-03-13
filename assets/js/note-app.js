@@ -94,6 +94,8 @@ function showNotes(){
     }
     else{
         notesEle.innerHTML = `You haven't add any note yet. Try to to add some note using above section and then press "Add Note" button.`
+        //changing color scheme hence adding a class in innerHTML
+        notesEle.classList.add("yellow_style");
     }
     
 }
