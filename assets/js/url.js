@@ -1,24 +1,21 @@
-const init = function(){
+const init = function () {
     document.getElementById('button-send').addEventListener('click', send);
 }
-const send = function(ev){
-    ev.preventDefault(); 
+const send = function (ev) {
+    ev.preventDefault();
     ev.stopPropagation();
-    
+
     var longUrl = document.getElementById('input-longurl').value;
-    //console.log(longUrl);
 
-    if(validateUrl(longUrl)) {
+    if (validateUrl(longUrl)) {
         const Http = new XMLHttpRequest();
-        const baseUrl='https:/tinyurl.com/api-create.php?url=';
+        const baseUrl = `https:/tinyurl.com/api-create.php?url=`;
 
-        var mLong = modifyUrl(longUrl);
-
-        let url = baseUrl + mLong;
+        let url = baseUrl + longUrl;
         Http.open("GET", url);
         Http.send();
-         
-        Http.onreadystatechange = function() {
+
+        Http.onreadystatechange = function () {
             document.getElementById('msg1').textContent = 'Long Url :';
             document.getElementById('longurl').textContent = longUrl;
             document.getElementById('longurl').href = longUrl;
@@ -43,17 +40,9 @@ const send = function(ev){
 function validateUrl(url1) {
     var url = String(url1);
     if (url.startsWith("http://") || url.startsWith("https://")) {
-      return true;
+        return true;
     } else {
-      return false;
+        return false;
     }
-  }
-  function modifyUrl(url) {
-    if (url.startsWith("http://") ) {
-        return "http:/" + url.substring(7,url.length);
-    } 
-    if(url.startsWith("https://")) {
-        return "https:/" + url.substring(8,url.length);
-    } 
-  }
-  document.addEventListener('DOMContentLoaded', init);
+}
+document.addEventListener('DOMContentLoaded', init);
