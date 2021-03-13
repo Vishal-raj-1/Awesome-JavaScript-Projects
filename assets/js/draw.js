@@ -26,7 +26,7 @@ function setSize(elem) {
 }
 
 function erase(elem) {
-  color = "#fff";
+  color = "#ffffff";
   size = 15;
 }
 
