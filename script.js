@@ -199,6 +199,16 @@ let projectData = [
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html",
   },
+  {
+    projectName: "calendar",
+    projectImage: "assets/GIFs/cal.gif",
+    projectUrl: "public/calendar.html",
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
