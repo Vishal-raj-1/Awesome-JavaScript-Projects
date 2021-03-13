@@ -70,7 +70,7 @@ function showNotes(){
     const favorite_class = ["noteCard m-2 card favorite","noteCard m-2 card not-favorite"]
 
     notesObj.forEach((element, index) => {
-        addNote += `<div class="${element.favorite ? favorite_class[0]:favorite_class[1]}" style="width: 18rem;">
+        addNote += `<div class="${element.favorite ? favorite_class[0]:favorite_class[1]}" style="width: auto;">
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col">
