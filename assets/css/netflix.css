@@ -24,6 +24,7 @@ header img{
     margin-top: -23px;
     margin-bottom: -20px;
 }
+
 .search{
     background-color:transparent ;
     border: 2px solid #303030;
@@ -41,10 +42,10 @@ header img{
     background-color: #303030 ;
     outline: none;
 }
-main{
+#main{
     display: flex;
     flex-wrap: wrap;
-
+    padding-top: 10%;
 }
 
 .movie{
@@ -89,6 +90,7 @@ main{
 .movie-info span.red{
     color:#e50914
 }
+
 
 .overview {
     background-color: #fff;
