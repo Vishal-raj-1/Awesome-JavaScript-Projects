@@ -198,7 +198,7 @@ let projectData = [
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html",
-  }
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
