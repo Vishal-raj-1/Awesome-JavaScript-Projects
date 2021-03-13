@@ -54,7 +54,8 @@
     font-size: 37px;
     outline: none;
     border: none;
-    border-radius: 22px;
+    text-align: center;
+    border-radius: 13px;
     }
     .btn{
         height: 20%;
@@ -76,6 +77,7 @@
     border-radius: 90px;
     outline: none;
     border: none;
+    transition: 1.5s ease-in-out all;
     }
     button:hover{
         background: #a01923;
