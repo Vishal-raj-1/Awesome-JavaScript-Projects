@@ -2,38 +2,41 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/rock-paper-sessior.css">
-    <title>Rock Paper Sessior</title>
+    <title>Rock Paper Scissor</title>
   </head>
   <body>
     <header>
-        <h1>Rock Paper Sessior Game</h1>
+        <h1>Rock Paper Scissor Game</h1>
     </header>
 
         <div class="container">
-            <div class="row">
-                <div class="col-3 ">
-                    <div class="card" style="width: 12rem;">
+            <div class="row justify-content-between">
+                
+                <div class="col-5">
+                    
+                    <div class="card " style="width: 10rem;">
                         <!--<img class="card-img-top" src="..." alt="Card image cap">-->
                         <h2></h2>
                         <div class="card-body">
                             <hr>
-                          <h4>User's<br>Choice</h4>
+                          <h4>User's Choice</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 ">
-                    <div class="score_board">
+            
+                <div class="col-5">
+                    <div class="score_board ">
                         <div id="user_id"class="identity_card">User</div>
                         <div id="comp_id"class="identity_card">Comp</div>
                         <span id="user_score">0</span>:<span id="comp_score">0</span>
                     </div>
-                
+                    <br>
                     <div class="result">
                         <p>Let's Test Your Luck</p>
                     </div>
@@ -58,8 +61,8 @@
                         <button type="button" class="btn btn-primary btn-lg" id="reset_button">Reset</button>
                       </div>
                 </div>
-                <div class="col-3 ">
-                    <div class="card card_right justify-content-center" style="width: 12rem;">
+                <div class="col-2">
+                    <div class="card card_right justify-content-center" style="width: 10rem;">
                         <!--<img class="card-img-top" src="..." alt="Card image cap">-->
                         <h2></h2>
                         <div class="card-body">
@@ -68,6 +71,7 @@
                         </div>
                     </div>
                 </div>
+               
             </div>
         </div>
     

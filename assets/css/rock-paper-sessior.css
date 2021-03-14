@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+*{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    background: rgb(243, 138, 0); 
+    color: #fff; 
+} 
 #p {
     height: 85px;
     border: 1px solid black;
@@ -21,6 +27,7 @@
 body{
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
     background-color: rgb(243, 138, 0); 
 }
@@ -37,46 +44,53 @@ header h1{
 }
 
 .score_board{
+    
     border: 3px solid rgb(255, 255, 255);
-    width: 200px;
-    margin: 20px auto;
+    width: 125px;
+    margin: 10px auto;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     border-radius: 5px;
     color: white;
 }
 
+  
 .identity_card{
+    display:flex;
     background-color: red;
     font-size: 14px;
-    padding: 3px 3px;
+    padding:1px 1px;
 }
 
 #user_id{
+    justify-content: space-evenly;
     position: absolute;
     top: 10px;
     left:-20px;
 }
 
 #comp_id{
+    justify-content: space-evenly;
     position: absolute;
     top: 10px;
     right:-25px;
 }
 
 .result p{
+    
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .choices{
     text-align: center;
+    
 }
 
 .choice{
@@ -105,8 +119,10 @@ header h1{
     margin-bottom: 20px;
 }
 
-.card{
-    margin-top: 20px;
+.card-body{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
 }
 
 .container{
@@ -114,6 +130,8 @@ header h1{
 }
 
 .card{
+    margin: 0 auto; 
+    float: none;
     background-color: rgb(243, 138, 0);
     border: 3px solid rgb(255, 255, 255);
     color: white;
@@ -136,15 +154,22 @@ h2{
 
 
 .col-md-3{
+    
     border: 2px solid black;
-    text-align: center;
+    
     
 }
 
 .card{
-    margin: 0px auto;
+    
+    margin: 0 auto; 
+    float: none; /* Added */
+    /*margin-bottom: 10px;  Added */
 }
 
 .col-md-6{
+    
     border: 2px solid blue;
 }
+
+
