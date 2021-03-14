@@ -196,7 +196,7 @@ let projectData = [
   },
   {
     projectName: " Key Event Code",
-    projectImage: " ",
+    projectImage: "assets/GIFs/KeyEventCode.gif ",
     projectUrl: "public/KeyEventCode.html",
   },
   {
