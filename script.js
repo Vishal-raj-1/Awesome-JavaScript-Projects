@@ -198,6 +198,21 @@ let projectData = [
     projectName: "RGB Color Guessing Game",
     projectImage: "assets/GIFs/RGB_Color.gif",
     projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
+    projectName: "Particle JS Project",
+    projectImage: "assets/GIFs/Particle.gif",
+    projectUrl: "public/Particle.html",
+  },
+  {
+    projectName: "calendar",
+    projectImage: "assets/GIFs/cal.gif",
+    projectUrl: "public/calendar.html",
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
   }
 ];
 
