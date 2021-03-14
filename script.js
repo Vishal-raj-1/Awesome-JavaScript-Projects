@@ -25,7 +25,7 @@ let projectData = [
     projectUrl: "public/counter.html",
   },
   {
-    projectName: "Local Storgae",
+    projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.jpeg",
     projectUrl: "public/localstorage.html",
   },
@@ -200,6 +200,16 @@ let projectData = [
     projectUrl: "public/textToVoice.html",
   },
   {
+    projectName: "Particle JS Project",
+    projectImage: "assets/GIFs/Particle.gif",
+    projectUrl: "public/Particle.html",
+  },
+  {
+    projectName: "calendar",
+    projectImage: "assets/GIFs/cal.gif",
+    projectUrl: "public/calendar.html",
+  },
+    {
     projectName: "Currency Converter",
     projectImage: "assets/GIFs/currencyConverter.gif",
     projectUrl: "public/currencyConverter.html",
