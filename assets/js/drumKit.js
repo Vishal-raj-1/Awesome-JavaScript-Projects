@@ -1,24 +1,46 @@
-window.addEventListener("keydown", playAudio);
+//loops through all keys and adds event listener for click
+for (let i = 0; i < document.querySelectorAll(".key").length; i++) {
+  document.querySelectorAll("div")[i].addEventListener("click", function() {
+    const key = this.getAttribute("data-key");
+    playAudio(key);
+    transitionAddRemove(key);
+  });
 
-function playAudio(e) {
+}
+//detects keypress
+document.addEventListener('keydown', function(event) {
+  let keyPressed=event.key;
+  
+  keyPressed=keyPressed.toUpperCase().charCodeAt(0);
+  playAudio(keyPressed);
+  transitionAddRemove(keyPressed);
+});
+
+function playAudio(key) {
   // To instantiate audio
-  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const audio = document.querySelector(`audio[data-key="${key}"]`);
 
   if (!audio) return;
   audio.play();
   audio.currentTime = 0;
 
-  // To animate key clicked
-  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+ 
+ 
+}
+ // To animate key clicked
 
-  key.classList.add("key-playing");
+function transitionAddRemove(key) {
+  
+ 
+  let activeDiv= document.querySelector(`div[data-key = "${key}"]`);
+  if(activeDiv==null){
+    return;
+  }
+  activeDiv.classList.add("key-playing");
+//to remove animation  
+  setTimeout(function(){
+    activeDiv.classList.remove("key-playing");
+  },100);
 }
 
-// To remove animation on key clicked
-function removeTransition(e) {
-  if (e.propertyName !== "transform") return;
-  this.classList.remove("key-playing");
-}
 
-const keys = document.querySelectorAll(".key");
-keys.forEach(key => key.addEventListener("transitionend", removeTransition));
