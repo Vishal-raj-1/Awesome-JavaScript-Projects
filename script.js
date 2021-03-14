@@ -180,9 +180,9 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
-    projectName:"Hangman",
-    projectImage:"assets/GIFs/hangman.gif",
-    projectUrl:"public/hangman.html",
+    projectName: "Hangman",
+    projectImage: "assets/GIFs/hangman.gif",
+    projectUrl: "public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -200,8 +200,18 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "Particle JS Project",
+    projectImage: "assets/GIFs/Particle.gif",
+    projectUrl: "public/Particle.html",
+  },
+  {
+    projectName: "calendar",
+    projectImage: "assets/GIFs/cal.gif",
+    projectUrl: "public/calendar.html",
+  },
+  {
     projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice.gif",
+    projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   }
 ];
@@ -239,7 +249,7 @@ function getProjects() {
   console.log("projectContainer", projectContainer.innerHTML);
 }
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("Navbar");
 var sticky = navbar.offsetTop;
