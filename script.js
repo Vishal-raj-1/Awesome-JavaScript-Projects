@@ -208,7 +208,12 @@ let projectData = [
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
-  }
+  },
+  {
+    projectName:"Color Picker and Converter",
+    projectImage:"assets/GIFs/ColorPickerConverter.gif",
+    projectUrl:"public/ColorPickerConverter.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
