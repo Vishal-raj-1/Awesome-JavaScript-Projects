@@ -194,9 +194,7 @@ let projectData = [
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
   },
-  
   {
-
     projectName: "Text To Speech",
     projectImage: "assets/GIFs/speechText.gif",
     projectUrl: "public/TextToSpeech.html",
@@ -215,7 +213,6 @@ let projectData = [
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
-
   },
   {
     projectName: "Github Issue Tracker",
