@@ -112,7 +112,7 @@ const displaySessionDetails= ()=>
     for(let ind in sessionDetails)
     {
         let content =sessionDetails[ind]
-        console.log(content)
+        // console.log(content)
         if(content.length>=1)
         {
             curlistEleCount+=1

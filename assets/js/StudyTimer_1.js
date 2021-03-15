@@ -158,10 +158,10 @@ startStop.addEventListener('click' , function()
 //calling the reset
 reset.addEventListener('click',function()
 {
-    console.log(inbreak)
+    // console.log(inbreak)
     if(!inbreak)
     {
-        console.log('reset clicked');
+        // console.log('reset clicked');
         timeLeftmm.innerHTML=sessionLen.innerHTML;
         timeLeftss.innerHTML='00'
         stopInterval();
