@@ -58,7 +58,7 @@ body {
 
 .fa-home:hover {
     transition: 1s;
-    color: #008ce3;
+    color: #0080cf;
     animation: myhome 1.1s linear infinite;
 }
 
