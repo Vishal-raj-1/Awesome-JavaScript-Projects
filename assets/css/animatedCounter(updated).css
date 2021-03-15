@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing:content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: lightskyblue url("../Images/animatedCounter.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+}
+img{
+    height:100px;
+    width:80px;
+    margin: 0px 7px;
+}
+
+.btn{
+    position:relative;
+    background-color: white;
+    border: 4px outset green ;
+    margin:0px 2px;
+    padding: 3px 3px;
+}
+.btn:hover {
+    background-color:coral ;
+    color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0px auto;
+  overflow: auto;
+  max-height: 350px;
+  box-shadow: 20px 20px 25px grey;
+  border: outset;
+}
+section{
+  margin:auto 70px;
+
+}
+header {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  text-shadow: 3px 4px 7px black;
+}
+
+.counters {
+  background-color: white;
+  color: black;
+  padding: 20px 20px;
+  border-top: 3px black solid;
+}
+
+.counters .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.counters i {
+  margin-bottom: 5px;
+}
+
+.counters .counter {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+h1:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+@media (max-width: 700px) {
+  .counters .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counters .container > div:nth-of-type(1),
+  .counters .container > div:nth-of-type(2) {
+    border-bottom: 1px black solid;
+    padding-bottom: 20px;
+  }
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-twitter {
+  color: deepskyblue;
+}
+
+.fa-instagram {
+  background-image: linear-gradient(45deg, red, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin {
+  color: black;
+}
+
+h3:hover {
+  transform: rotateZ(180deg);
+  color: darkOrange;
+}
+
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .counters .counter {
+    font-size: 1.5rem;
+  }
+}
