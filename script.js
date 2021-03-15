@@ -144,6 +144,11 @@ let projectData = [
     projectImage: "assets/Images/word-counter-short.png",
     projectUrl: "public/wordCounter.html",
   },
+  {
+    projectName: "Blurry_Loading_Interface",
+    projectImage: "assets/Images/Blurry_Loading_Interface.png",
+    projectUrl: "public/molegame.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
