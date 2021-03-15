@@ -6,6 +6,7 @@ const lowerEl = document.getElementById("lower");
 const numberEl = document.getElementById("number");
 const symbolEl = document.getElementById("symbol");
 const generateEl = document.getElementById("generate");
+const tooltip = document.getElementById("tooltip");
 
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
@@ -55,6 +56,8 @@ function generatePassword() {
     }
 
     pwEl.innerText = password;
+    copyEl.innerText="Copy";
+    copyEl.style.color="rgb(29, 2, 56)";
 }
 
 function generateX() {
@@ -83,6 +86,9 @@ function generateX() {
 generateEl.addEventListener("click", generatePassword);
 
 copyEl.addEventListener("click", () => {
+    copyEl.innerText="Copied";
+    copyEl.style.color="green";
+
     const textarea = document.createElement("textarea");
     const password = pwEl.innerText;
 
@@ -95,5 +101,12 @@ copyEl.addEventListener("click", () => {
     textarea.select();
     document.execCommand("copy");
     textarea.remove();
-    alert("Password copied to clipboard");
+
 });
+
+function showTooltip(){
+    tooltip.style.display = 'block';
+  }
+function hideTooltip(){
+    tooltip.style.display = 'none';
+}

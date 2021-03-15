@@ -12,21 +12,18 @@ body {
   color: var(--font-color);
 
   /*other styles*/
-  .....
 }
 
 h1 {
   color: var(--secondary-color);
 
   /*other styles*/
-  .....
 }
 
 a {
   color: var(--primary-color);
 
   /*other styles*/
-  .....
 }
 
 * {
@@ -103,7 +100,7 @@ a {
 .slider:before {
   background-color: #fff;
   bottom: 4px;
-  content: "";
+  content: '';
   height: 26px;
   left: 4px;
   position: absolute;
@@ -141,13 +138,15 @@ body img {
 
 /* Cards */
 .cardStyle {
-  transform: scale(0.98);
-  box-shadow: 7px 7px #dedada;
+  transform: scale(0.92);
   width: 21rem;
+  transition: 0.5s;
+  border-radius: 2%;
 }
 
 .cardStyle:hover {
-  transform: scale(1);
+  transform: scale(1.05);
+  box-shadow: 6px 6px 8px #dedada;
 }
 
 .card-body {
@@ -208,3 +207,23 @@ body img {
 #icon {
   font-size: 30px;
 }
+
+.navbar {
+ 
+  z-index: 1;
+}
+
+i:hover, i:active {font-size: 250%;}
+       @media only screen and (min-width: 768px) {
+           i{float:left;}
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .sticky + .content {
+          padding-top: 60px;
+        }
