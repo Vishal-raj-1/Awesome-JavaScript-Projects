@@ -9,7 +9,7 @@ html, body {
 }
 
 #particles-js{
-  background:rgb(4, 46, 8);
+  background:rgb(2, 2, 2);
   height:100%;
   width: 100%;
   left:0;
@@ -26,7 +26,7 @@ html, body {
 }
 
 .ptext .border{
-  color:rgb(51, 255, 0);
+  color:rgb(99, 121, 94);
   padding:20px;
 }
 
