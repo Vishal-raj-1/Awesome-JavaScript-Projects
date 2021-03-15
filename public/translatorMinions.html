@@ -4,75 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translation Machine</title>
-   <style>
-       @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Yellowtail&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-}
-:root{
-    --button:#1D4ED8;
-    --minions: #FCD34D;
-}
-img{
-    max-width: 350px;
-    display: block;
-    margin: auto;  
-}
-
-textarea {
-    width: 80%;
-    height: 10vh;
-    display: block;
-    margin: 1rem;
-    padding: 1rem;
-}
-.navigation{
-    background-color: var(--minions);
-    color: black;
-    padding: 2rem;
-    text-align: center;
-   
-}
-.txt{
-    font-family: 'Roboto Slab', serif;
-    font-size: x-large;
-}
-.container{
-        padding: 0rem 1rem;
-     }
-     .container-center{
-         max-width: 600px;
-        margin: auto;
-     }
-#output {
-    border: 1px solid black;
-    height: 10vh;
-    width: 80%;
-    margin: 1rem;
-    padding: 1rem;
-}
-#btn-translate{
-    color: white;
-    font-size: large;
-    background-color: var(--button);
-    padding: 1.2rem 1.8rem;
-    text-align: center;
-    border-radius: 0.5rem;
-    margin: 1.5rem;
-}
-footer{
-    padding: 2rem 2rem;
-    text-align: center;
-    background-color: var(--minions);
-}
-.footer-header{
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
-    max-width: 600px;
-    margin: auto;
-}
-   </style>
+    <link rel="stylesheet" href="../assets/css/minions.css"/>  
 </head>
 <body>
    
@@ -94,42 +26,6 @@ footer{
     <div style="font-size: x-large;">About</div>
     <div class="footer-header"> "Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language.The language is actually lots of languages."</div>
 </footer>
-    <script>
-        //Inputs
-var btnTranslate = document.querySelector("#btn-translate");
-var txtInput = document.querySelector("#txt-input");
-var outputDiv = document.querySelector("#output");
-
-
-//calling the funtranslations.com api 
-var serverURL = "https://api.funtranslations.com/translate/minion.json"
-
-//getting hands on the server
-function getTranslationURL(input) {
-    return serverURL + "?" + "text=" + input
-}
-
-//for error handling
-function errorHandler(error) {
-    console.log("error occured", error);
-    alert("something wrong with server! try again after some time")
-}
-
-//for the operation and callback operation
-function clickHandler() {
-    var inputText = txtInput.value; // taking input
-
-    // calling server for processing
-    fetch(getTranslationURL(inputText))
-        .then(response => response.json())
-        .then(json => {
-            var translatedText = json.contents.translated;
-            outputDiv.innerText = translatedText; // output
-           })
-        .catch(errorHandler)
-};
-
-btnTranslate.addEventListener("click", clickHandler)
-    </script>
+<script src="../assets/js/minions.js"></script>
 </body>
-</html>"
+</html>
