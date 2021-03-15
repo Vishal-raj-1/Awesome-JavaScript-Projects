@@ -6,7 +6,7 @@ const score_board_div = document.querySelector(".score_board");
 const result_div = document.querySelector(".result>p");
 const rock_div = document.getElementById('r');
 const paper_div = document.getElementById('p');
-const scissors_div = document.getElementById('s');
+const sessior_div = document.getElementById('s');
 const btn = document.getElementById('reset_button');
 const user_img = document.querySelector('.card>h2');
 const comp_img = document.querySelector('.card_right>h2');
@@ -61,7 +61,7 @@ function game(user_turn){
     else if(computer_turn=='p'){
         comp_img.innerHTML = 'Paper';
     }else{
-        comp_img.innerHTML = 'Scissors';
+        comp_img.innerHTML = 'Sessior';
     }
      
     // console.log("computer pressed - "+list[computer_turn]);
@@ -101,10 +101,10 @@ paper_div.addEventListener('click',function(){
     // console.log('clicked on paper');
     user_img.innerHTML = 'Paper';    
 });
-scissors_div.addEventListener('click',function(){
+sessior_div.addEventListener('click',function(){
     game('s');
-    // console.log('clicked on scissors');
-    user_img.innerHTML = 'Scissors';
+    // console.log('clicked on sessior');
+    user_img.innerHTML = 'Sessior';
 });
 }
 

@@ -30,6 +30,11 @@ let projectData = [
     projectUrl: "public/localstorage.html",
   },
   {
+    projectName: "Translator App",
+    projectImage: "assets/GIFs/minions.gif",
+    projectUrl: "public/translatorMinions.html",
+  },
+  {
     projectName: "Image Slide",
     projectImage: "assets/GIFs/imageSlide.gif",
     projectUrl: "public/ImageSlide.html",
@@ -194,7 +199,6 @@ let projectData = [
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
   },
-  
   {
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
@@ -210,11 +214,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   },
-  {
-    projectName: "Github Issue Tracker",
-    projectImage: "assets/Images/IssueTracker.png",
-    projectUrl: "public/IssueTracker.html",
-  }
+  
 ];
 
 let projectContainer = document.getElementById("js-projects");
