@@ -216,6 +216,11 @@ let projectData = [
     projectUrl: "public/textToVoice.html",
   },
   {
+    projectName:"Color Picker and Converter",
+    projectImage:"assets/GIFs/ColorPickerConverter.gif",
+    projectUrl:"public/ColorPickerConverter.html",
+  },
+  {
     projectName: " Key Event Code",
     projectImage: "assets/GIFs/KeyEventCode.gif ",
     projectUrl: "public/KeyEventCode.html",
