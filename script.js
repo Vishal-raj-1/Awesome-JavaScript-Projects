@@ -225,7 +225,12 @@ let projectData = [
         projectName: "love Calculator",
         projectImage: "assets/GIFs/loveCalculator.gif",
         projectUrl: "public/loveCalculator.html",
-    }
+    },
+    {
+      projectName: "Live Code Editor",
+      projectImage: "assets/GIFs/LiveEditor.gif.gif",
+      projectUrl: "public/Live_Code_Editor.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
