@@ -1,3 +1,4 @@
+
 let projectData = [{
         projectName: "Note App",
         projectImage: "assets/GIFs/noteApp.gif",
@@ -213,6 +214,7 @@ let projectData = [{
         projectImage: "assets/GIFs/loveCalculator.gif",
         projectUrl: "public/loveCalculator.html",
     }
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
