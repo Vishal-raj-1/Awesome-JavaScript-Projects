@@ -211,6 +211,11 @@ let projectData = [
     projectUrl: "public/textToVoice.html",
   },
   {
+    projectName: "Contacts Search",
+    projectImage: "assets/GIFs/contactSearch.gif",
+    projectUrl: "public/contactSearch.html",
+  },
+  {
     projectName: "Github Issue Tracker",
     projectImage: "assets/Images/IssueTracker.png",
     projectUrl: "public/IssueTracker.html",
