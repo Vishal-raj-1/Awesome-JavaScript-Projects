@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels Game</title>
+    <link rel="stylesheet" href="../assets/css/pixels.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class='lives'>
+        <i class="fa fa-heartbeat" style='color:red;'  aria-hidden="true"></i>
+        <span id='lives-count'>5</span>
+    </div>
+    <div class='score'>
+        <p>Score:<span id=score-count>0</span> </p>
+    </div>
+    <div id='main-menu'>
+        
+            <button id='start-button'>
+                Start
+            </button>
+            <div id="how-to-play">
+                <h2>
+                    How to play?
+                </h2>
+                <br>
+                <p>
+                    Pixels are falling from the sky. You have to click on them to return them back to the sky or they will reach the ground and you will lose.
+                </p>
+            </div>
+    </div>
+    <div id=game-over-msg >
+        <h2>
+            You lost :(
+        </h2>
+        <button id='restart-btn'>
+            Play again ?
+        </button>
+    </div>
+   
+</body>
+<script src="../assets/js/pixels.js"></script>
+</html>
