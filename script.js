@@ -195,6 +195,11 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "User list filter",
+    projectImage: "assets/GIFs/UserListFilter.gif",
+    projectUrl: "public/UserListFilter.html",
+  },
+  {
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html",
