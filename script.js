@@ -215,6 +215,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   },
+
   {
     projectName:"Color Picker and Converter",
     projectImage:"assets/GIFs/ColorPickerConverter.gif",
@@ -231,6 +232,11 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
+    projectName: "Expanding Card",
+    projectImage: "assets/GIFs/ExpandingCard.gif",
+    projectUrl: "public/ExpandingCard.html",
+  },
+  {
     projectName: "Contacts Search",
     projectImage: "assets/GIFs/contactSearch.gif",
     projectUrl: "public/contactSearch.html",
@@ -239,8 +245,7 @@ let projectData = [
     projectName: "Github Issue Tracker",
     projectImage: "assets/Images/IssueTracker.png",
     projectUrl: "public/IssueTracker.html",
-  }
-  ,
+  },
   {
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
@@ -251,11 +256,8 @@ let projectData = [
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
   },
-  {
-    projectName: "Expanding Card",
-    projectImage: "assets/GIFs/ExpandingCard.gif",
-    projectUrl: "public/ExpandingCard.html",
-  },
+  
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
