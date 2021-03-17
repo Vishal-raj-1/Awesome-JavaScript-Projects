@@ -18,7 +18,7 @@
    <link rel="shortcut icon" type="image/jpg" href="./assets/Images/favicons/10.png">
    <link rel="stylesheet" href="./script.js">
  
-  <title>Awesome JavaScript Project</title>
+  <title>Awesome JavaScript Projects</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse">
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link text-light" aria-current="page" href="#">Home</a>
@@ -42,11 +42,8 @@
             <a class="nav-link text-light" aria-current="page" href="#project">Projects</a>
           </li>
         </ul>
-        <div style="margin: 1%" class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-          </label>
+        <div class="theme-switch">
+          <span> <i class="fas fa-moon"></i> </span>
         </div>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

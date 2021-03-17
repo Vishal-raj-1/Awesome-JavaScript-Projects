@@ -1,13 +1,13 @@
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const icon = document.querySelector('.theme-switch > span > i');
 
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
-    else {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }    
-}
+icon.addEventListener('click', ()=>{
+    if (document.documentElement.getAttribute("data-theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "light");
+        toggleSwitch.classList("color-black");
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+});
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 

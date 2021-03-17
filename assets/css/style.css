@@ -71,15 +71,26 @@ a {
 
 /* About Dark/light Toggle */
 
+span i{
+  font-size: 2em;
+  cursor: pointer;
+  padding: 0 3%;
+  margin: 10px;
+}
+
+.color-black{
+  color: #000;
+}
+
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
 }
 .theme-switch {
   display: inline-block;
-  height: 34px;
+  height: 35%;
   position: relative;
-  width: 60px;
+  width: 7%;
 }
 
 .theme-switch input {
