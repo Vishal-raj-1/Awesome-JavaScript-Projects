@@ -239,18 +239,22 @@ let projectData = [
     projectName: "Github Issue Tracker",
     projectImage: "assets/Images/IssueTracker.png",
     projectUrl: "public/IssueTracker.html",
-  }
-  ,
+  },
   {
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
   },
- {
+  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-    }
+  },
+  {
+    projectName: "PIN Code Tracker",
+    projectImage: "assets/GIFs/pinCodeSearch.gif",
+    projectUrl: "public/pinCodeSearch.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
