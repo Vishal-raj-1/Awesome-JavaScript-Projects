@@ -215,6 +215,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   },
+
   {
     projectName:"Color Picker and Converter",
     projectImage:"assets/GIFs/ColorPickerConverter.gif",
@@ -239,8 +240,7 @@ let projectData = [
     projectName: "Github Issue Tracker",
     projectImage: "assets/Images/IssueTracker.png",
     projectUrl: "public/IssueTracker.html",
-  }
-  ,
+  },
   {
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
