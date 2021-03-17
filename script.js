@@ -232,6 +232,11 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
+    projectName: "Expanding Card",
+    projectImage: "assets/GIFs/ExpandingCard.gif",
+    projectUrl: "public/ExpandingCard.html",
+  },
+  {
     projectName: "Contacts Search",
     projectImage: "assets/GIFs/contactSearch.gif",
     projectUrl: "public/contactSearch.html",
@@ -257,6 +262,7 @@ let projectData = [
       projectImage: "assets/GIFs/LiveEditor.gif.gif",
       projectUrl: "public/Live_Code_Editor.html",
   }
+  
 ];
 
 let projectContainer = document.getElementById("js-projects");
