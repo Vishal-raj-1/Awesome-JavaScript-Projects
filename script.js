@@ -195,12 +195,6 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html"
   },
   
-  {
-    projectName: "PingPong game",
-    projectImage: "assets/GIFs/pingpong-image.gif",
-    projectUrl: "public/pingpong.html",
-  }
-  
 ];
 
 let projectContainer = document.getElementById("js-projects");
