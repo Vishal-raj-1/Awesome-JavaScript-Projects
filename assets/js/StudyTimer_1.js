@@ -168,6 +168,7 @@ reset.addEventListener('click',function()
         running=false;
         currentStartStop=undefined;
     }
+    
 }
 );
 

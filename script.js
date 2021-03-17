@@ -208,12 +208,13 @@ let projectData = [
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
-  }
+  },
   {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   }
+  
 ];
 
 let projectContainer = document.getElementById("js-projects");
