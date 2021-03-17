@@ -240,25 +240,18 @@ let projectData = [
     projectImage: "assets/Images/IssueTracker.png",
     projectUrl: "public/IssueTracker.html",
   }
-<<<<<<< HEAD
-  {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
-    projectUrl: "public/textToVoice.html",
-  }
-=======
   ,
   {
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
   },
+   
  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
     }
->>>>>>> a3be3e50d72bf887301f257285f76a1ace405b4a
 ];
 
 let projectContainer = document.getElementById("js-projects");
