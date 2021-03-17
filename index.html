@@ -19,6 +19,94 @@
    <link rel="stylesheet" href="./script.js">
  
   <title>Awesome JavaScript Project</title>
+  
+ <style>
+  .footer-area{
+    margin-top:100px;
+    padding:100px 0;
+    background: #2c539e;
+    background: -moz-linear-gradient(left,  #2c539e 0%, #2c539e 100%);
+    background: -webkit-linear-gradient(left,  #2c539e 0%,#2c539e 100%);
+    background: linear-gradient(to right,  #2c539e 0%,#2c539e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=1 );
+    color:#fff;
+    position: relative;
+}
+.main{
+    width:1200px;
+    margin:0 auto;
+
+}
+.footer{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+
+}
+.single-footer:first-child{
+    width:400px;
+}
+.single-footer{
+    width:210px;
+
+}
+.single-footer h4{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin:20px;
+
+}
+
+.footer-social{
+    margin-top:20px;
+}
+.footer-social a{
+    color:#fff;
+    border:1px solid #fff;
+    width:40px;
+    height:40px;
+    display:inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.single-footer ul{
+    list-style: none;
+}
+.single-footer ul li{
+    margin-bottom:10px;
+    position:relative;
+    padding-left:20px;
+
+}
+.single-footer ul li a{
+    color:#fff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.single-footer ul li a i{
+    position: absolute;
+    top:5px;
+    left:0;
+
+
+}
+  @media only screen and (max-width:600px){
+    .main{
+      width:320px;
+    }
+   
+    .single-footer:first-child, .single-footer {
+      width: 100%;
+      margin-bottom:30px;
+    }
+  }
+ </style>
 </head>
 
 <body>
@@ -105,24 +193,47 @@
     </button>
   </div>
   <script src="assets/js/Scroll.js"></script>
-  <footer class="bg-dark text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3 footer">
-      <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank"><i style="color:white;"
-          class="fab fa-github fa-2x"></i></a>
-      <p class="">
-        ©
-        <script type="text/javascript">
-          document.write(new Date().getFullYear());
-        </script>
-        Copyright |
-        <a href="https://vishal-raj-1.github.io/Awesome-JavaScript-Projects/"
-          style="color: white; text-decoration: none">AwesomeJavascript.com</a>
-      </p>
-    </div>
-
-    <!-- Copyright -->
-  </footer>
+<footer class="footer-area">
+       
+        <div class="main">
+            <div class="footer">
+                <div class="single-footer">
+                    <h4>About Us</h4>
+                    <p>Awesome Javscript Projects Website contain many awesome Vanilla Javascript Projects in which each and every project will teach you some new and important javscript concepts. It includes concepts like Functional Components, Class Components, Math Objects, Arrow functions, APIs and many more.</p>
+                           <div class="footer-social">
+                                <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects"><i class="fab fa-github"></i></a>
+          
+                           </div>
+                </div>
+                <div class="single-footer">
+                    <h4>Main Menu</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-chevron-right"></i>HOME</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i>ABOUT</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i>PROJECTS</a></li>
+        
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>TECH STACKS USED</h4>
+                    <ul>
+                        <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/></a><br>
+                        <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/></a><br>
+                        <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/><br>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marked-alt"></i>XYZ</a></li>
+                        <li><a href=""><i class="fas fa-phone"></i> </a>Our No.</li>
+                        <li><a href=""><i class="fas fa-envelope"></i> jsprojects@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
