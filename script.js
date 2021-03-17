@@ -16,7 +16,7 @@ let projectData = [
   },
   {
     projectName: "Dynamic Quote Generator",
-    projectImage: "assets/Images/quoteGenerator.png",
+    projectImage: "assets/GIFs/dynamicQuote.gif",
     projectUrl: "public/Dynamic-quotegenerator.html",
   },
   {
@@ -25,7 +25,7 @@ let projectData = [
     projectUrl: "public/counter.html",
   },
   {
-    projectName: "Local Storgae",
+    projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.jpeg",
     projectUrl: "public/localstorage.html",
   },
@@ -155,10 +155,15 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html",
   },
   {
-        projectName: "DragNDrop",
-        projectImage: "assets/GIFs/DragNDrop.gif",
-        projectUrl: "public/DragNDrop.html",
-   },
+    projectName: "DragNDrop",
+    projectImage: "assets/GIFs/DragNDrop.gif",
+    projectUrl: "public/DragNDrop.html",
+  },
+  {
+    projectName: "Typing Speed Tester",
+    projectImage: "assets/GIFs/typing_speed_test.gif",
+    projectUrl: "public/typing_speed_test.html",
+  },
   {
     projectName: "Quiz App",
     projectImage: "assets/GIFs/quizApp.gif",
@@ -170,6 +175,16 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
+    projectName:"Hangman",
+    projectImage:"assets/GIFs/hangman.gif",
+    projectUrl:"public/hangman.html",
+  },
+  {
+    projectName: "Rock Paper Sessior Game",
+    projectImage: "assets/Images/r-p-s/rps.gif",
+    projectUrl: "public/Rock-paper-sesssior.html",
+  },
+  {
     projectName: "Weather App",
     projectImage: "assets/GIFs/Weather_app.gif",
     projectUrl: "public/Weather_app.html",
@@ -178,7 +193,64 @@ let projectData = [
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
+  },
+  {
+    projectName: "User list filter",
+    projectImage: "assets/GIFs/UserListFilter.gif",
+    projectUrl: "public/UserListFilter.html",
+  },
+  {
+    projectName: "Particle JS Project",
+    projectImage: "assets/GIFs/Particle.gif",
+    projectUrl: "public/Particle.html",
+
+  },
+  {
+    projectName: "calendar",
+    projectImage: "assets/GIFs/cal.gif",
+    projectUrl: "public/calendar.html",
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice.gif",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName:"Color Picker and Converter",
+    projectImage:"assets/GIFs/ColorPickerConverter.gif",
+    projectUrl:"public/ColorPickerConverter.html",
+  },
+  {
+    projectName: " Key Event Code",
+    projectImage: "assets/GIFs/KeyEventCode.gif ",
+    projectUrl: "public/KeyEventCode.html",
+  },
+  {
+    projectName: " Rotating Navigation",
+    projectImage: "assets/GIFs/RotatingNav.gif ",
+    projectUrl: "public/RotatingNav.html",
+  },
+  {
+    projectName: "Contacts Search",
+    projectImage: "assets/GIFs/contactSearch.gif",
+    projectUrl: "public/contactSearch.html",
+  },
+  {
+    projectName: "Github Issue Tracker",
+    projectImage: "assets/Images/IssueTracker.png",
+    projectUrl: "public/IssueTracker.html",
   }
+  ,
+  {
+    projectName: "Pixels Game",
+    projectImage: "assets/GIFs/pixels.gif",
+    projectUrl: "public/pixels-game.html",
+  },
+ {
+    projectName: "love Calculator",
+    projectImage: "assets/GIFs/loveCalculator.gif",
+    projectUrl: "public/loveCalculator.html",
+    }
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -190,7 +262,7 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
           <div class="card my-3 mx-auto col cardStyle">
             <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
               <img
@@ -213,3 +285,17 @@ function getProjects() {
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
 }
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("Navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
