@@ -105,6 +105,11 @@ let projectData = [
     projectUrl: "public/digitalClock.html",
   },
   {
+    projectName: "Date Time Widget",
+    projectImage: "assets/GIFs/dateTimeWidget.gif",
+    projectUrl: "public/dateTimeWidget.html",
+  },
+  {
     projectName: "Text Generator",
     projectImage: "assets/GIFs/textGenerator.gif",
     projectUrl: "public/textGenerator.html",
@@ -175,9 +180,9 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
-    projectName:"Hangman",
-    projectImage:"assets/GIFs/hangman.gif",
-    projectUrl:"public/hangman.html",
+    projectName: "Hangman",
+    projectImage: "assets/GIFs/hangman.gif",
+    projectUrl: "public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -203,7 +208,7 @@ let projectData = [
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
-  }
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
