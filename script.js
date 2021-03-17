@@ -250,7 +250,12 @@ let projectData = [
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-    }
+  },
+  {
+    projectName: "Expanding Card",
+    projectImage: "assets/GIFs/ExpandingCard.gif",
+    projectUrl: "public/ExpandingCard.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
