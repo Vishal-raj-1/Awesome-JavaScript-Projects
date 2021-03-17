@@ -175,9 +175,9 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
-    projectName:"Hangman",
-    projectImage:"assets/GIFs/hangman.gif",
-    projectUrl:"public/hangman.html",
+    projectName: "Hangman",
+    projectImage: "assets/GIFs/hangman.gif",
+    projectUrl: "public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -203,7 +203,6 @@ let projectData = [
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html",
-
   },
   {
     projectName: "calendar",
@@ -216,9 +215,9 @@ let projectData = [
     projectUrl: "public/textToVoice.html",
   },
   {
-    projectName:"Color Picker and Converter",
-    projectImage:"assets/GIFs/ColorPickerConverter.gif",
-    projectUrl:"public/ColorPickerConverter.html",
+    projectName: "Color Picker and Converter",
+    projectImage: "assets/GIFs/ColorPickerConverter.gif",
+    projectUrl: "public/ColorPickerConverter.html",
   },
   {
     projectName: " Key Event Code",
@@ -239,18 +238,22 @@ let projectData = [
     projectName: "Github Issue Tracker",
     projectImage: "assets/Images/IssueTracker.png",
     projectUrl: "public/IssueTracker.html",
-  }
-  ,
+  },
   {
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
   },
- {
+  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-    }
+  },
+  {
+    projectName: "Typewriter Effect",
+    projectImage: "assets/GIFs/typewriter.gif",
+    projectUrl: "public/typewriter.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -262,7 +265,7 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
-    (output += `
+      (output += `
           <div class="card my-3 mx-auto col cardStyle">
             <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
               <img
@@ -286,16 +289,17 @@ function getProjects() {
   console.log("projectContainer", projectContainer.innerHTML);
 }
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 
 var navbar = document.getElementById("Navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
 }
-
