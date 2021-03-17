@@ -1,6 +1,7 @@
 const counters = document.querySelectorAll('.counter')
-const speed = 500
+const speed = 1000
 
+function start(){
 counters.forEach(counter => {
   const updateCount = () => {
 
@@ -24,3 +25,4 @@ counters.forEach(counter => {
 
   updateCount()
 })
+}
