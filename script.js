@@ -183,7 +183,12 @@ let projectData = [
     projectName: "Text To Speech",
     projectImage: "assets/GIFs/speechText.gif",
     projectUrl: "public/TextToSpeech.html",
-  }
+  },
+  {
+    projectName: "Recipe Finder",
+    projectImage: "assets/GIFs/recipie.gif",
+    projectUrl: "public/Recipie_finder.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
