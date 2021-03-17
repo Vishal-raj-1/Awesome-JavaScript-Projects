@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issue Tracker - Github</title>
+
+    <!-- Linking bootstrap CDN for adding CSS classes using Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"/>
+      <link rel="stylesheet" href="../assets/css/IssueTracker.css">
+  </head>
+
+
+  <body>
+    <header>
+      <div class="overlay">
+        <h1>Issue Tracker</h1>
+        <h3>Manage your important issues here !!</h3>
+        <br>
+      </div>
+    </header>
+
+    <body onload="fetchIssues()">
+        <div class="container">
+          <div class="jumbotron">
+            <h3 style="text-align: center;">Add New Issue:</h3>
+            <form id="issueInputForm">
+              <div class="form-group">
+                <label for="issueDescInput">Description</label>
+                <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ...">
+              </div>
+              <div class="form-group">
+                <label for="issueDescInput">Severity</label>
+                 <select class="form-control" id="issueSeverityInput">
+                  <option value="Low">Low</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
+                </select> 
+              </div>
+              <div class="form-group">
+                <label for="issueDescInput">Assigned To</label>
+                <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible ...">
+              </div>          <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="issuesList">
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Made with <3</p>
+          </div>    
+        </div>
+
+    <script src="../assets/js/IssueTracker.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <!-- To generate unique identifiers to the issues, a library of JS called Chance.js is used -->
+    <script src="http://chancejs.com/chance.min.js"></script>
+  </body>
+</html>
