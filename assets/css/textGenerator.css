@@ -8,7 +8,9 @@
 body {
   line-height: 1.5;
   font-size: 0.875rem;
+  background-color: #edffec ; 
 }
+  
 
 section {
   padding: 2rem 0;
@@ -47,6 +49,8 @@ section {
 h3 {
   text-transform: uppercase;
   color: hsl(205, 86%, 17%);
+  font-family: 'Acme', sans-serif;
+  word-spacing: 0.5rem;
 }
 
 .lorem-form {
@@ -62,6 +66,7 @@ h3 {
 label {
   font-size: 1.25rem;
   color: hsl(205, 86%, 17%);
+  font-family: 'Roboto', sans-serif;
 }
 
 input {
