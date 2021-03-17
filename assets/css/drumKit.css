@@ -44,6 +44,7 @@ main .key {
   transition: 0.1s;
   color: #ffffff;
   background: #000000;
+  cursor:pointer;
 }
 
 main .key-playing {
