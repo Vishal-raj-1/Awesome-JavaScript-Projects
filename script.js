@@ -121,7 +121,7 @@ let projectData = [
   },
   {
     projectName: "BMI Calculator",
-    projectImage: "assets/Images/BMIcal.png",
+    projectImage: "assets/GIFs/BMIcal.gif",
     projectUrl: "public/BMICalculator.html",
   },
   {
