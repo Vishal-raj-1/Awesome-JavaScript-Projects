@@ -271,7 +271,7 @@ let projectData = [
     projectUrl: "public/VideoPlayer.html",
   },
   {
-
+    
     projectName: "Study Timer",
     projectImage: "assets/Images/StudyTimer.png",
     projectUrl: "public/StudyTimer.html",
@@ -280,7 +280,6 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
-  
 ];
 
 let projectContainer = document.getElementById("js-projects");
