@@ -251,6 +251,7 @@ let projectData = [
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
   },
+   
  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
