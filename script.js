@@ -196,7 +196,7 @@ let projectData = [
   },
   {
     projectName: "Rode Slider Game",
-    projectImage: "assets/GIFs/rodeslider.gif",
+    projectImage: "assets/GIFs/rodeslidergame.gif",
     projectUrl: "public/rodeslider.html",
   }
 ];
