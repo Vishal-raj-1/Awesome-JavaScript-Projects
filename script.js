@@ -215,6 +215,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   },
+
   {
     projectName: "Random Color Generator",
     projectImage: "assets/Images/randomColorGenerator.png",
@@ -236,6 +237,11 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
+    projectName: "Expanding Card",
+    projectImage: "assets/GIFs/ExpandingCard.gif",
+    projectUrl: "public/ExpandingCard.html",
+  },
+  {
     projectName: "Contacts Search",
     projectImage: "assets/GIFs/contactSearch.gif",
     projectUrl: "public/contactSearch.html",
@@ -254,7 +260,7 @@ let projectData = [
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-  }
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
