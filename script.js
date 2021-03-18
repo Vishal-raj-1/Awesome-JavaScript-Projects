@@ -262,6 +262,11 @@ let projectData = [
     projectImage: "assets/Images/customVideoPlayer.png",
     projectUrl: "public/VideoPlayer.html",
   },
+  {
+    projectName: "Palindrome Checker",
+    projectImage: "assets/Images/palindrome.jpg",
+    projectUrl:"public/palindrome.html"
+  },
   
 
 ];
