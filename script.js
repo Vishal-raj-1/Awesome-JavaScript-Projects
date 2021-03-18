@@ -262,8 +262,12 @@ let projectData = [
     projectImage: "assets/Images/customVideoPlayer.png",
     projectUrl: "public/VideoPlayer.html",
   },
+  {
+    projectName: "Study Timer",
+    projectImage: "assets/Images/StudyTimer.png",
+    projectUrl: "public/StudyTimer.html",
+  },
   
-
 ];
 
 let projectContainer = document.getElementById("js-projects");
