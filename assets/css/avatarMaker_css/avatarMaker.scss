@@ -1,0 +1,28 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: #fff;
+     color: #000;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ #profilePic {
+     width: 256px;
+     height: 256px;
+     color: #fff;
+     background: #000;
+     border-radius: 50%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 80px;
+ }
+
+ canvas {
+     border-radius: 50%;
+ }
