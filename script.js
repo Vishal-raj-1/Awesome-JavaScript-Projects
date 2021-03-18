@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Weight Converter",
+    projectImage: "assets/GIFs/WeightConverter.gif",
+    projectUrl: "public/WeightConverter.html",
+  },
+  {
     projectName: "Expense Tracker",
     projectImage: "assets/GIFs/ExpenseTracker.gif",
     projectUrl: "public/ExpenseTracker.html",
