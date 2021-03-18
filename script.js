@@ -249,7 +249,7 @@ let projectData = [
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
-  },
+  },   
   {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
@@ -259,7 +259,12 @@ let projectData = [
     projectName: "PIN Code Tracker",
     projectImage: "assets/GIFs/pinCodeSearch.gif",
     projectUrl: "public/pinCodeSearch.html",
-  }
+  },
+  {
+    projectName: "Custom Video Player",
+    projectImage: "assets/Images/customVideoPlayer.png",
+    projectUrl: "public/VideoPlayer.html",
+  },
   
 ];
 
