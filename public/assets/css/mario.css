@@ -6,8 +6,8 @@
 
 #game {
     background-image: url("../Images/mario-background.jpg");
-     height: 450px; 
-     border: 1px solid black;   
+     height: 450px;
+     border: 1px solid black;
      position: relative;
      margin: 0;
      background-repeat: repeat;
@@ -83,7 +83,7 @@ h1 {
 }
 
 ul {
-    font-family: monospace; 
+    font-family: monospace;
     margin-top: 3px;
     margin-left: 50px;
     font-size: 15px;
@@ -93,7 +93,7 @@ ul {
     from { background-position: 90000%; }
     to { background-position:0%; }
   }
-  
+
   #game {
     background-repeat: repeat-x;
     animation: slideleft 3000s infinite linear;

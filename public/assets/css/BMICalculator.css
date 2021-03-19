@@ -1,0 +1,42 @@
+.container {
+    width: 375px;
+    height: 525px;
+    margin-left: 350px;
+    margin-top: 65px;
+    background-color: rgb(185, 185, 133);
+    padding-left: 30px;
+}
+#height, #weight {
+    width: 150px;
+    height: 25px;
+    margin-top: 30px;
+}
+
+#weight-guide{
+    margin-left: 75px;
+    margin-top: 25px;
+}
+
+#results{
+    font-size: 35px;
+    margin-left: 90px;
+    margin-top: 20px;
+    color: blue;
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    margin-left: 90px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(10, 10, 59);
+    color: #fff;
+    font-size: 25px;
+}
+
+h1{
+    padding-left: 15px;
+    padding-top: 25px;
+}
