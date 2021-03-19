@@ -281,6 +281,3 @@ leftBrack.addEventListener('click', (event) => {
 rightBrack.addEventListener('click', (event) => {
     addKeyToInputContainer(')');
 });
-
-
-
