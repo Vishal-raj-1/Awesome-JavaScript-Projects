@@ -263,12 +263,16 @@ let projectData = [
     projectUrl: "public/VideoPlayer.html",
   },
   {
-    projectName: "Palindrome Checker",
+
+    projectName: "Study Timer",
+    projectImage: "assets/Images/StudyTimer.png",
+    projectUrl: "public/StudyTimer.html",
+  },
+  { projectName: "Palindrome Checker",
     projectImage: "assets/Images/palindrome.jpg",
-    projectUrl:"public/palindrome.html"
+    projectUrl:"public/palindrome.html",
   },
   
-
 ];
 
 let projectContainer = document.getElementById("js-projects");
