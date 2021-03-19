@@ -74,10 +74,11 @@ function showNotification() {
 }
 
 // Keydown letter press
-window.addEventListener('keydown', e => {
-  // console.log(e.keyCode);
+window.addEventListener('keyup', e => {
+  // console.log(e.key);
+  var str = e.key.toLowerCase();
   if (e.keyCode >= 65 && e.keyCode <= 90) {
-    const letter = e.key;
+    const letter = str;
 
     if (selectedWord.includes(letter)) {
       if (!correctLetters.includes(letter)) {
