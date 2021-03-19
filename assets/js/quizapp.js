@@ -41,6 +41,7 @@ const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitBtn = document.getElementById('submit')
+const progressBarWidth = document.querySelector('div.meter > span')
 
 let currentQuiz = 0
 let score = 0
@@ -67,7 +68,7 @@ function getSelected() {
     let answer
 
     answerEls.forEach(answerEl => {
-        if(answerEl.checked) {
+        if (answerEl.checked) {
             answer = answerEl.id
         }
     })
@@ -77,21 +78,28 @@ function getSelected() {
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
-    
-    if(answer) {
-        if(answer === quizData[currentQuiz].correct) {
+    let percent
+    if (answer) {
+        if (answer === quizData[currentQuiz].correct) {
             score++
         }
-
         currentQuiz++
+        percent = (currentQuiz / quizData.length) * 100
+        progressBarWidth.style.display = 'block'
+        progressBarWidth.style.width = percent + '%'
 
-        if(currentQuiz < quizData.length) {
+
+        if (currentQuiz < quizData.length) {
             loadQuiz()
         } else {
-            quiz.innerHTML = `
+            setTimeout(function () {
+                quiz.innerHTML = `
                 <h2>You answered ${score}/${quizData.length} questions correctly</h2>
                 <button onclick="location.reload()">Reload</button>
             `
+            }, 550)
+
         }
     }
 })
+
