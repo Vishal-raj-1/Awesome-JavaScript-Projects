@@ -121,7 +121,7 @@ let projectData = [
   },
   {
     projectName: "BMI Calculator",
-    projectImage: "assets/Images/BMICalculator.png",
+    projectImage: "assets/GIFs/BMIcal.gif",
     projectUrl: "public/BMICalculator.html",
   },
   {
@@ -195,6 +195,11 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "Text To Speech",
+    projectImage: "assets/GIFs/speechText.gif",
+    projectUrl: "public/TextToSpeech.html",
+  },
+  {
     projectName: "User list filter",
     projectImage: "assets/GIFs/UserListFilter.gif",
     projectUrl: "public/UserListFilter.html",
@@ -215,7 +220,11 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   },
-
+  {
+    projectName: "Device Info",
+    projectImage: "assets/GIFs/DeviceInfo.gif",
+    projectUrl: "public/deviceInfo.html",
+  }, 
   {
     projectName:"Color Picker and Converter",
     projectImage:"assets/GIFs/ColorPickerConverter.gif",
@@ -261,7 +270,22 @@ let projectData = [
       projectName: "Live Code Editor",
       projectImage: "assets/GIFs/LiveEditor.gif.gif",
       projectUrl: "public/Live_Code_Editor.html",
-  }
+  },
+  {
+    projectName: "Custom Video Player",
+    projectImage: "assets/Images/customVideoPlayer.png",
+    projectUrl: "public/VideoPlayer.html",
+  },
+  {
+
+    projectName: "Study Timer",
+    projectImage: "assets/Images/StudyTimer.png",
+    projectUrl: "public/StudyTimer.html",
+  },
+  { projectName: "Palindrome Checker",
+    projectImage: "assets/Images/palindrome.jpg",
+    projectUrl:"public/palindrome.html",
+  },
   
 ];
 
@@ -310,4 +334,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
