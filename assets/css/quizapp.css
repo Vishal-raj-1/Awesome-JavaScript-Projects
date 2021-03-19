@@ -68,3 +68,17 @@ button:focus {
   outline: none;
   background-color: #5e3370;
 }
+
+.meter { 
+  height: 20px; 
+  position: relative;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.7);
+  background-color:#9c9c9c;
+}
+
+.meter > span {
+  width: 0%;
+background-color: #8e44ad;
+height: 100%;
+transition: width 0.4s linear;
+}
