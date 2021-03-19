@@ -121,7 +121,7 @@ let projectData = [
   },
   {
     projectName: "BMI Calculator",
-    projectImage: "assets/Images/BMICalculator.png",
+    projectImage: "assets/GIFs/BMIcal.gif",
     projectUrl: "public/BMICalculator.html",
   },
   {
@@ -216,6 +216,11 @@ let projectData = [
     projectUrl: "public/textToVoice.html",
   },
   {
+    projectName: "Device Info",
+    projectImage: "assets/GIFs/DeviceInfo.gif",
+    projectUrl: "public/deviceInfo.html",
+  }, 
+  {
     projectName:"Color Picker and Converter",
     projectImage:"assets/GIFs/ColorPickerConverter.gif",
     projectUrl:"public/ColorPickerConverter.html",
@@ -249,7 +254,7 @@ let projectData = [
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
-  },   
+  },
   {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
@@ -264,6 +269,15 @@ let projectData = [
     projectName: "Custom Video Player",
     projectImage: "assets/Images/customVideoPlayer.png",
     projectUrl: "public/VideoPlayer.html",
+  },
+  {
+    projectName: "Study Timer",
+    projectImage: "assets/Images/StudyTimer.png",
+    projectUrl: "public/StudyTimer.html",
+  },
+  { projectName: "Palindrome Checker",
+    projectImage: "assets/Images/palindrome.jpg",
+    projectUrl:"public/palindrome.html",
   },
   
 ];
