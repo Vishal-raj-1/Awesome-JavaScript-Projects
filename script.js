@@ -121,7 +121,7 @@ let projectData = [
   },
   {
     projectName: "BMI Calculator",
-    projectImage: "assets/Images/BMICalculator.png",
+    projectImage: "assets/GIFs/BMIcal.gif",
     projectUrl: "public/BMICalculator.html",
   },
   {
@@ -195,6 +195,11 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "Text To Speech",
+    projectImage: "assets/GIFs/speechText.gif",
+    projectUrl: "public/TextToSpeech.html",
+  },
+  {
     projectName: "User list filter",
     projectImage: "assets/GIFs/UserListFilter.gif",
     projectUrl: "public/UserListFilter.html",
@@ -216,6 +221,11 @@ let projectData = [
     projectUrl: "public/textToVoice.html",
   },
   {
+    projectName: "Device Info",
+    projectImage: "assets/GIFs/DeviceInfo.gif",
+    projectUrl: "public/deviceInfo.html",
+  }, 
+  {
     projectName:"Color Picker and Converter",
     projectImage:"assets/GIFs/ColorPickerConverter.gif",
     projectUrl:"public/ColorPickerConverter.html",
@@ -231,6 +241,11 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
+    projectName: "Expanding Card",
+    projectImage: "assets/GIFs/ExpandingCard.gif",
+    projectUrl: "public/ExpandingCard.html",
+  },
+  {
     projectName: "Contacts Search",
     projectImage: "assets/GIFs/contactSearch.gif",
     projectUrl: "public/contactSearch.html",
@@ -239,18 +254,33 @@ let projectData = [
     projectName: "Github Issue Tracker",
     projectImage: "assets/Images/IssueTracker.png",
     projectUrl: "public/IssueTracker.html",
-  }
-  ,
+  },
   {
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
   },
- {
+  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-    }
+  },
+  {
+    projectName: "Custom Video Player",
+    projectImage: "assets/Images/customVideoPlayer.png",
+    projectUrl: "public/VideoPlayer.html",
+  },
+  {
+
+    projectName: "Study Timer",
+    projectImage: "assets/Images/StudyTimer.png",
+    projectUrl: "public/StudyTimer.html",
+  },
+  { projectName: "Palindrome Checker",
+    projectImage: "assets/Images/palindrome.jpg",
+    projectUrl:"public/palindrome.html",
+  },
+  
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -298,4 +328,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
