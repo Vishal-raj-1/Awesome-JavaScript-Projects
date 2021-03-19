@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet"> -->
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../assets/css/BMICalculator.css">
     <title>BMI Calculator</title>
 </head>
 <body>
+    <div class="main">
+
     <div class="container">
-    <h1>BMI Calculator</h1>
-    <form>
-    <p><label>Height (in cm): </label><input type="text" id="height" placeholder="Enter Value"></p>
-    <p><label>Weight (in kg): </label><input type="text" id="weight" placeholder="Enter Value"></p>
-    <button>Calculate</button>
-    <div id="results"></div>
-    <div id="weight-guide">
-    <h3>BMI Weight Guide:</h3>
-    <p>Under Weight = Less than 18.6</p>
-    <p>Normal Range = 18.6 and 24.9</p>
-    <p>Overweight = Greater than 24.9</p>
+        <h1>BMI <br> CALCULATOR</h1>
+
+        <img class="bmi-img" src="/assets/Images/bmi.png" alt="bmi-img">
+
+        <form>
+            <p><input type="text" id="height" placeholder="Height in cm"></p>
+            <p><input type="text" id="weight" placeholder="Weight in kg"></p>
+
+            <button class="btn">Calculate</button>
+
+            
+        </form>
     </div>
-    </form>
+
+    <div class="guide">
+        <h2>Your BMI</h2>
+
+        <div class="results-box">
+            <div id="results"></div>
+        </div>
+        
+        <div id="weight-guide">
+            <h3>BMI Weight Guide:</h3>
+            <p class="details">Under Weight = Less than 18.6</p>
+            <p class="details">Normal Range = Between 18.6 and 24.9</p>
+            <p class="details">Overweight = Greater than 24.9</p>
+        </div>
     </div>
+
+</div>
 </body>
 
 <script src="../assets/js/BMICalculator.js"></script>
