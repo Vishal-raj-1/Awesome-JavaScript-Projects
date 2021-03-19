@@ -175,9 +175,9 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
-    projectName:"Hangman",
-    projectImage:"assets/GIFs/hangman.gif",
-    projectUrl:"public/hangman.html",
+    projectName: "Hangman",
+    projectImage: "assets/GIFs/hangman.gif",
+    projectUrl: "public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -224,11 +224,11 @@ let projectData = [
     projectName: "Device Info",
     projectImage: "assets/GIFs/DeviceInfo.gif",
     projectUrl: "public/deviceInfo.html",
-  }, 
+  },
   {
-    projectName:"Color Picker and Converter",
-    projectImage:"assets/GIFs/ColorPickerConverter.gif",
-    projectUrl:"public/ColorPickerConverter.html",
+    projectName: "Color Picker and Converter",
+    projectImage: "assets/GIFs/ColorPickerConverter.gif",
+    projectUrl: "public/ColorPickerConverter.html",
   },
   {
     projectName: " Key Event Code",
@@ -276,11 +276,17 @@ let projectData = [
     projectImage: "assets/Images/StudyTimer.png",
     projectUrl: "public/StudyTimer.html",
   },
-  { projectName: "Palindrome Checker",
+  {
+    projectName: "Palindrome Checker",
     projectImage: "assets/Images/palindrome.jpg",
-    projectUrl:"public/palindrome.html",
+    projectUrl: "public/palindrome.html",
   },
-  
+  {
+    projectName: "Dice Game",
+    projectImage: "assets/Images/diceGame/dice.png",
+    projectUrl: "public/diceGame.html",
+  },
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -316,7 +322,7 @@ function getProjects() {
   console.log("projectContainer", projectContainer.innerHTML);
 }
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("Navbar");
 var sticky = navbar.offsetTop;
