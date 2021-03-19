@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>ContactUS</title>
+    <title >ContactUS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        h2{text-align:center;}
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -44,12 +45,26 @@
             background-color: #f2f2f2;
             padding: 20px;
         }
+        .btn {
+          background-color: black;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition: 0.3s;
+        }
+        .btn:hover {
+          background-color: #fff;
+          color: black;
+        }
     </style>
 </head>
 
 <body>
 
-    <h3>Contact Form</h3>
+    <h2>Contact Form</h2>
 
     <div class="container">
         <form action="#">
@@ -66,7 +81,7 @@
             <textarea id="subject" name="subject" placeholder="Write something.." required
                 style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <button class="btn">Submit</button>
         </form>
     </div>
 
