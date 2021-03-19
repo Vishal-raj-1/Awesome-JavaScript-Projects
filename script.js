@@ -280,6 +280,11 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
+  {
+    projectName: "TV Show Search",
+    projectImage: "assets/Images/Tv_Show_Search.png",
+    projectUrl: "public/Tv_Show_Search.html",
+  },
   
 ];
 
