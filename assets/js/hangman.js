@@ -73,9 +73,10 @@ function showNotification() {
   }, 2000);
 }
 
-// Keydown letter press
+// Keyup letter press
 window.addEventListener('keyup', e => {
   // console.log(e.key);
+  // if uppercase convert to lowercase
   var str = e.key.toLowerCase();
   if (e.keyCode >= 65 && e.keyCode <= 90) {
     const letter = str;
