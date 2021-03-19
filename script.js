@@ -195,6 +195,11 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "Text To Speech",
+    projectImage: "assets/GIFs/speechText.gif",
+    projectUrl: "public/TextToSpeech.html",
+  },
+  {
     projectName: "User list filter",
     projectImage: "assets/GIFs/UserListFilter.gif",
     projectUrl: "public/UserListFilter.html",
@@ -323,4 +328,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
