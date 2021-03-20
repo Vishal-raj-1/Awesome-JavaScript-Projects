@@ -200,6 +200,11 @@ let projectData = [
     projectUrl: "public/TextToSpeech.html",
   },
   {
+    projectName: "Recipe Finder",
+    projectImage: "assets/GIFs/recipie.gif",
+    projectUrl: "public/Recipie_finder.html",
+  },
+  {
     projectName: "User list filter",
     projectImage: "assets/GIFs/UserListFilter.gif",
     projectUrl: "public/UserListFilter.html",
@@ -284,7 +289,7 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
-  
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
