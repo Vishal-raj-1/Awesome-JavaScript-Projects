@@ -290,10 +290,19 @@ let projectData = [
     projectUrl:"public/palindrome.html",
   },
   {
+    projectName: "DarkMode",
+    projectImage: {
+                    "assets/Images/DarkMode1.jpeg",
+                    "assets/Image/DarkMode2.jpeg",
+                  },
+    projectUrl: "public/DarkMode.html"
+   },
+  {
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   }
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
