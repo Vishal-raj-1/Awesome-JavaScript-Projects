@@ -293,6 +293,11 @@ let projectData = [
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
+  },
+  {
+    projectName: "Connect Four",
+    projectImage: "assets/GIFs/connectFour.gif",
+    projectUrl: "public/connectFour.html"
   }
 ];
 
