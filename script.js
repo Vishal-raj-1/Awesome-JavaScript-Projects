@@ -284,6 +284,10 @@ let projectData = [
     projectImage: "assets/Images/BookMarks.jpg",
     projectUrl:"public/bookmarks.html",
   },
+  { projectName: "MarkDown Previewer",  
+  projectImage: "assets/Images/markDownPreviewer.jpg",
+  projectUrl:"public/MarkDownPreviewer.html",
+},
 ];
 
 let projectContainer = document.getElementById("js-projects");
