@@ -183,7 +183,7 @@ let projectData = [
     projectName: "Insect Catch Game",
     projectImage: "assets/Images/Insect Catch.png",
     projectUrl: "public/InsectCatch.html",
-=======
+  },
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
