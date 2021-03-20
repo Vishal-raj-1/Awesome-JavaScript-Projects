@@ -266,12 +266,16 @@ let projectData = [
     projectUrl: "public/loveCalculator.html",
   },
   {
+    projectName: "PIN Code Tracker",
+    projectImage: "assets/GIFs/pinCodeSearch.gif",
+    projectUrl: "public/pinCodeSearch.html",
+  },
+  {
     projectName: "Custom Video Player",
     projectImage: "assets/Images/customVideoPlayer.png",
     projectUrl: "public/VideoPlayer.html",
   },
   {
-
     projectName: "Study Timer",
     projectImage: "assets/Images/StudyTimer.png",
     projectUrl: "public/StudyTimer.html",
