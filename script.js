@@ -229,7 +229,7 @@ let projectData = [
     projectName: "Device Info",
     projectImage: "assets/GIFs/DeviceInfo.gif",
     projectUrl: "public/deviceInfo.html",
-  }, 
+  },
   {
     projectName:"Color Picker and Converter",
     projectImage:"assets/GIFs/ColorPickerConverter.gif",
@@ -301,6 +301,11 @@ let projectData = [
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
+  },
+  {
+    projectName: "Exchange Rate",
+    projectImage: "assets/Images/ExchangeRate.png",
+    projectUrl: "public/ExchangeRate.html",
   }
 
 ];
@@ -327,7 +332,7 @@ function getProjects() {
                 <h5 class="card-title">${data.projectName}</h5>
                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
-                            card's content.</p> --> 
+                            card's content.</p> -->
               </div>
             </a>
           </div>
