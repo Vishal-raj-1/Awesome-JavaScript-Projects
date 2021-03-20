@@ -289,7 +289,11 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
-
+  {
+    projectName: "Blurry Loading Interface",
+    projectImage: "assets/GIFs/blurry_loading_interface.gif",
+    projectUrl: "public/blurry_loading_interface.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
