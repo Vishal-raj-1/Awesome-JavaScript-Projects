@@ -280,6 +280,14 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
+  {
+    projectName: "DarkMode",
+    projectImage: {
+                    "assets/Images/DarkMode1.jpeg",
+                    "assets/Image/DarkMode2.jpeg",
+                  },
+    projectUrl: "public/DarkMode.html"
+   }
   
 ];
 
