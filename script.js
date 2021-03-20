@@ -280,6 +280,10 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
+  { projectName: "Bookmarks App",  
+    projectImage: "assets/Images/BookMarks.jpg",
+    projectUrl:"public/bookmarks.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
