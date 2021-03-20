@@ -1,0 +1,123 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1a1a1a;
+    text-align: left;
+    height: 100%;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+}
+
+.map {
+    flex: 1;
+    background: #f0f0f0;
+    text-align: center;
+    display: inline-flexbox;
+    padding-bottom: 708px;
+
+}
+.heading {
+    font-size: 50px;
+    background: -webkit-linear-gradient( #ff6600 0%, #ffe927 100%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.tag {
+    font-size: 20px;
+    color:whitesmoke;
+    position: relative;
+    bottom:50px
+}
+
+.info {
+    padding:1rem;
+    margin: 0;
+    background: linear-gradient(to right, #ff6600 -30%, #ffff66 100%);
+}
+#logo {
+    height: 60px;
+    padding: 2mm;
+    position: relative;
+    top: 4px;
+    max-height: 100px;
+}
+.device {
+    max-width: 500px;
+    padding-left:2mm;
+    margin: 0;
+    height: 2%;
+}
+.footer {
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+
+.current {
+    padding-left: 1rem ;
+    width: fit-content;
+    max-width: 200px;
+}
+#check {
+    display: flex;
+    position:relative;
+    width:100px;
+    left: 70%;
+    bottom: 43px;
+    height: 20px;
+    border: gold;
+    border-radius: 2mm;
+    background: linear-gradient(120deg,#d41041,#8e44ad,#3498db);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    justify-content: center ;
+}
+#check:hover{
+    background-position: right;
+}
+#myProgress {
+    display: flex;
+    width: 250px;
+    border-radius: 5mm;
+    background:linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    position:relative;
+    left:45%;
+    bottom:20px;
+    transform: rotate(270deg);
+  }
+  
+#myBar {
+    width: 10%;
+    height: 30px;
+    border-radius: 5mm;
+    background: linear-gradient(120deg,#d41041,#8e44ad,#3498db);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#Ptxt {
+    padding-left: 1rem ;
+    width: fit-content;
+    max-width: 150px;
+    position: relative;
+    left: 45%;
+    top: 20px;
+    transform: rotate(270deg);
+}
