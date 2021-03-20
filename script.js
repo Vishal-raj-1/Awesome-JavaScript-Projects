@@ -290,6 +290,11 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl: "public/palindrome.html",
   },
+  {
+    projectName: "Dice Game",
+    projectImage: "assets/Images/diceGame/dice.png",
+    projectUrl: "public/diceGame.html",
+  },
 
   
 =======
