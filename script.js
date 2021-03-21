@@ -301,7 +301,12 @@ let projectData = [
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
-  }
+  },
+  {
+    projectName: "TV Show Search",
+    projectImage: "assets/GIFs/TV_Show_Search.gif",
+    projectUrl: "public/TV_Show_Search.html",
+  },
 
 ];
 
