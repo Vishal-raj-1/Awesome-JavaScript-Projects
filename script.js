@@ -285,7 +285,11 @@ let projectData = [
     projectImage: "assets/Images/Tv_Show_Search.png",
     projectUrl: "public/Tv_Show_Search.html",
   },
-  
+  {
+   projectName: "Code Converter",
+   projectImage: "assets/GIFs/Code_Converter.gif",
+   projectUrl: "public/Code_Converter.html"
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
