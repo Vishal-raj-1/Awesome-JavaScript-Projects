@@ -302,12 +302,16 @@ let projectData = [
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
+  
+  { projectName: "Bookmarks App",  
+    projectImage: "assets/Images/BookMarks.jpg",
+    projectUrl:"public/bookmarks.html",
+  },
   {
     projectName: "Exchange Rate",
     projectImage: "assets/Images/ExchangeRate.png",
     projectUrl: "public/ExchangeRate.html",
   }
-
 ];
 
 let projectContainer = document.getElementById("js-projects");
