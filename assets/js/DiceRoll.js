@@ -14,7 +14,7 @@ document.querySelector("button").addEventListener("click",playGame);
     randomNumber1=Math.floor(randomNumber1*6)+1;                 //1-6
 
     var randomDiceImage="dice" + randomNumber1 + ".png";         //dice1.png
-    var  imagesource1= "images/" + randomDiceImage;                //images/dice1.png
+    var  imagesource1= "../assets/Images/" + randomDiceImage;                //images/dice1.png
 
     document.querySelector(".img1").setAttribute("src",imagesource1);
     document.querySelector(".img1").classList.add(".rotate");
@@ -24,7 +24,7 @@ document.querySelector("button").addEventListener("click",playGame);
     var randomNumber2=Math.random();
     randomNumber2=Math.floor(randomNumber2*6)+1;
 
-    var imagesource2 ="images/dice" + randomNumber2 + ".png";     //images/dice1.png
+    var imagesource2 ="../assets/Images/dice" + randomNumber2 + ".png";     //images/dice1.png
 
     document.querySelector(".img2").setAttribute("src",imagesource2);
     document.querySelector(".img2").classList.add(".rotate");
