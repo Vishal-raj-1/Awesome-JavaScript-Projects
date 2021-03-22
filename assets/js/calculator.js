@@ -15,6 +15,7 @@ const ac=document.getElementById('AC');
 const leftBrack=document.getElementById('(');
 const rightBrack= document.getElementById(')');
 
+
 let inputContainerText = '';
 let noNumber = false;
 let tempNum;
@@ -49,16 +50,18 @@ function calculateExpression(exp) {
             // add parent
              if(exp[i] != '(') {
                 if(isNumber(exp[i+1]) || exp[i+1] == '-') {
+
                     //console.log('add (', i+1);
                     exp.splice(i+1, 0, '(');
                     //console.log('test', exp.join(''), i);
+
                     isOperator ++;
                     i++;
                     next = true;
                 }                
             }
             if(isOperator > 0 && !next) {
-                //console.log('add )', i);
+
                 exp.splice(i, 0, ')');
                 isOperator --;
                 i++;               
@@ -91,11 +94,13 @@ function calculateExpression(exp) {
     // exp = exp.split('C(').join('C(,');
     // exp = exp.split('P(').join('P(,');
 
-    let movedValue = [];
+
+
+    let movedValue = []; 
+
     for(let p=0; p<exp.length; p++) {
-       
-         
-    }
+       }
+
 
     console.log('exp:', exp);
     try {
@@ -275,6 +280,4 @@ leftBrack.addEventListener('click', (event) => {
 rightBrack.addEventListener('click', (event) => {
     addKeyToInputContainer(')');
 });
-
-
 

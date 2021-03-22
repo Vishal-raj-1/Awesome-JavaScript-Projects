@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Let's Deaw</title>
+    <title>Let's Draw(Drawing app)</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/draw.css">
   </head>
@@ -11,20 +11,26 @@
     <canvas id="canvas"></canvas>
 
     <div class="eraser">
-      <div onClick="erase(this)" class="erase"><button><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i></button></div>
-      <div onClick="clearCanva(this)" class="erase"><button><i class="fa fa-file-o fa-2x" aria-hidden="true"></i></button></div>
+      <div onClick="erase(this)" class="erase"><button><i class="fa fa-eraser fa-2x" aria-hidden="true" title="Eraser"></i></button></div>
+      <div onClick="clearCanva(this)" class="erase"><button><i class="fa fa-file-o fa-2x" aria-hidden="true" title="Clear All"></i></button></div>
     </div>
 
     <div class="color-wrapper">
-      <div data-color="#0275d8" onClick="setColor(this)" class="color c-blue"></div>
-      <div data-color="#5cb85c" onClick="setColor(this)" class="color c-green"></div>
-      <div data-color="#eb5b2d" onClick="setColor(this)" class="color c-orange"></div>
+      <div data-color="#0275d8" onClick="setColor(this)" class="color c-blue" title="Blue"></div>
+      <div data-color="#5cb85c" onClick="setColor(this)" class="color c-green" title="Green"></div>
+      <div data-color="#eb5b2d" onClick="setColor(this)" class="color c-orange" title="Orange"></div>
+      <div data-color="#000000" onClick="setColor(this)" class="color c-black" title="Black"></div>
+      <div data-color="#ffffff" onClick="setColor(this)" class="color c-white" title="White"></div>
+      <div data-color="#ffff00" onClick="setColor(this)" class="color c-yellow" title="Yellow"></div>
+      <div data-color="#800080" onClick="setColor(this)" class="color c-purple" title="Purple"></div>
     </div>
 
     <div class="size-wrapper">
+      <div data-size="2" onClick="setSize(this)" class="size s-tiny"><button>Tiny</button></div>
       <div data-size="5" onClick="setSize(this)" class="size s-small"><button>Small</button></div>
       <div data-size="8" onClick="setSize(this)" class="size s-medium"><button>Medium</button></div>
       <div data-size="12" onClick="setSize(this)" class="size s-large"><button>Large</button></div>
+      <div data-size="18" onClick="setSize(this)" class="size s-x-large"><button>Extra Large</button></div>
     </div>
 
 
