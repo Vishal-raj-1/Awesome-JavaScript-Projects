@@ -301,8 +301,12 @@ let projectData = [
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
-  }
-
+  },
+  
+  { projectName: "Bookmarks App",  
+    projectImage: "assets/Images/BookMarks.jpg",
+    projectUrl:"public/bookmarks.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
