@@ -1,5 +1,9 @@
 let projectData = [
   {
+    projectName: "Interest Calculator",
+    projectUrl: "public/InterestCalculator.html,
+  },
+  {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
