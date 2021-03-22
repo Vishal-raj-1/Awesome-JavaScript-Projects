@@ -5,7 +5,15 @@ var ball=document.getElementById("ball");
 var flag=false;
 var a=document.getElementById('rod1');
 var b=document.getElementById('rod2');
+<<<<<<< HEAD
 
+=======
+// On click on start button , the centerly placed div should be removed
+// and game should start (hence called func() function) , And flag is 
+// used to detect wheather this click event occured or not for 
+// further reference , so that the other functinality doesnot work 
+// untill player click start .
+>>>>>>> issue#431
 start.addEventListener("click",function(){
    flag=true;
     document.getElementById("start_game").remove();
@@ -17,6 +25,12 @@ var top_value =40;
 var left_value=600;
 var top_value1=5;
 var left_value1=5;
+<<<<<<< HEAD
+=======
+
+// func is the main function by which the bouncing back of ball is occuring 
+// or if ball touches the wall behind rods , then game is over !
+>>>>>>> issue#431
 function func(){
     ball.style.position="relative";
 
@@ -67,7 +81,11 @@ function func(){
 
    
 
+<<<<<<< HEAD
 
+=======
+// Below function is used to move both rode collectively .
+>>>>>>> issue#431
 
 	var l = 500;
 
@@ -116,8 +134,13 @@ a.style.position="relative";
     b.style.top="570px";
 
 
+<<<<<<< HEAD
 
 document.addEventListener("keypress", move );
+=======
+document.addEventListener("keypress", move );
+// Below code is used to calculate score and max score using "local storage"
+>>>>>>> issue#431
 var i=0;
 var max_score=0;
 var id1 = setInterval(function(){
