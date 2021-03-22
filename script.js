@@ -290,15 +290,24 @@ let projectData = [
     projectUrl:"public/palindrome.html",
   },
   {
+    projectName: "DarkMode",
+    projectImage: "assets/Images/DarkMode2.jpeg",
+    projectUrl: "public/DarkMode.html"
+   },
+  {
     projectName: "Blurry Loading Interface",
-    projectImage: "assets/GIFs/blurry_loading_interface.gif",
+    projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
   {
     projectName: "Connect Four",
     projectImage: "assets/GIFs/connectFour.gif",
     projectUrl: "public/connectFour.html"
-  }
+  },
+  { projectName: "Bookmarks App",  
+    projectImage: "assets/Images/BookMarks.jpg",
+    projectUrl:"public/bookmarks.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
