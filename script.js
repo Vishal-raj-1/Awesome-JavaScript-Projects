@@ -200,6 +200,11 @@ let projectData = [
     projectUrl: "public/TextToSpeech.html",
   },
   {
+    projectName: "Recipe Finder",
+    projectImage: "assets/GIFs/recipie.gif",
+    projectUrl: "public/Recipie_finder.html",
+  },
+  {
     projectName: "User list filter",
     projectImage: "assets/GIFs/UserListFilter.gif",
     projectUrl: "public/UserListFilter.html",
@@ -271,6 +276,11 @@ let projectData = [
     projectUrl: "public/loveCalculator.html",
   },
   {
+    projectName: "PIN Code Tracker",
+    projectImage: "assets/GIFs/pinCodeSearch.gif",
+    projectUrl: "public/pinCodeSearch.html",
+  },
+  {
     projectName: "Custom Video Player",
     projectImage: "assets/Images/customVideoPlayer.png",
     projectUrl: "public/VideoPlayer.html",
@@ -283,6 +293,19 @@ let projectData = [
   { projectName: "Palindrome Checker",
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
+  },
+  {
+    projectName: "DarkMode",
+    projectImage: {
+                    "assets/Images/DarkMode1.jpeg",
+                    "assets/Image/DarkMode2.jpeg",
+                  },
+    projectUrl: "public/DarkMode.html"
+   },
+  {
+    projectName: "Blurry Loading Interface",
+    projectImage: "assets/GIFs/blurry_loading_interface.gif",
+    projectUrl: "public/blurry_loading_interface.html",
   },
 ];
 
