@@ -189,6 +189,11 @@ let projectData = [
     projectImage: "assets/GIFs/recipie.gif",
     projectUrl: "public/Recipie_finder.html",
   },
+  {
+    projectName: "Github User Finder",
+    projectImage: "assets/GIFs/github_finder.gif",
+    projectUrl: "public/github_finder.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
