@@ -44,6 +44,20 @@
             background-color: #f2f2f2;
             padding: 20px;
         }
+        .alert {
+            margin: 10px 0;
+        }
+        .alert-danger {
+            background-color: #F04124;
+            color: white;
+            padding: 10px;
+        }
+
+        .alert-success {
+            background-color: #43AC6A;
+            color: white;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -52,24 +66,24 @@
     <h3>Contact Form</h3>
 
     <div class="container">
-        <form action="#">
+        <form action="#" id="contactForm">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
             <label for="lname">Email</label>
-            <input type="text" id="email" name="emailadd" placeholder="name@example.com" required>
+            <input type="text" id="email" name="emailadd" placeholder="name@example.com">
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." required
+            <textarea id="subject" name="subject" placeholder="What can we help you with?"
                 style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id='btn-submit'>
         </form>
     </div>
-
+    <script src="assets/js/contactValidation.js"></script>
 </body>
 
 </html>
