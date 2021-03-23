@@ -289,20 +289,19 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
-  {
+  /*{
     projectName: "DarkMode",
     projectImage: {
                     "assets/Images/DarkMode1.jpeg",
                     "assets/Image/DarkMode2.jpeg",
                   },
     projectUrl: "public/DarkMode.html"
-   },
+   },*/
   {
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
-  
   { projectName: "Bookmarks App",  
     projectImage: "assets/Images/BookMarks.jpg",
     projectUrl:"public/bookmarks.html",
