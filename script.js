@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName:  "Pinpad",
+    projectImage: "assets/GIFs/pinpad.gif",
+    projectUrl:   "public/pinpad.html",
+  },
+  {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
