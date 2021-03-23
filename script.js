@@ -310,7 +310,7 @@ let projectData = [
     projectName: "Exchange Rate",
     projectImage: "assets/Images/ExchangeRate.png",
     projectUrl: "public/ExchangeRate.html",
-  }
+  },
   {
     projectName: "Word Scramble Game",
     projectImage: "assets/GIFs/wordScramble.gif",
