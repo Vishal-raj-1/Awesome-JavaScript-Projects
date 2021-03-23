@@ -158,6 +158,38 @@ body img {
   filter: brightness(.8) contrast(1.2);
 }
 
+/* Search bar */
+.search-box{
+  position: relative;
+  height: 48px;
+  width: 259px;
+}
+.search-box input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #fff;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 0 60px 0 20px;
+}
+.search-box .search-btn {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  transform: translateY(-90%);
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  background: #66bb6a;
+  line-height: 50px;
+  font-size: 23px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 /* Cards */
 .cardStyle {
   transform: scale(0.92);
