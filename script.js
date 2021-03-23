@@ -289,6 +289,7 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
+  <<<<<<< main
   // {
   //   projectName: "DarkMode",
   //   projectImage: {
@@ -297,17 +298,36 @@ let projectData = [
   //                 },
   //   projectUrl: "public/DarkMode.html",
   //  },
+=======
+  /*{
+    projectName: "DarkMode",
+    projectImage: {
+                    "assets/Images/DarkMode1.jpeg",
+                    "assets/Image/DarkMode2.jpeg",
+                  },
+    projectUrl: "public/DarkMode.html"
+   },*/
+>>>>>>> main
   {
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
+<<<<<<< main
   {
     projectName: "Simon's Game",
     projectImage: "assets/Images/Simons_s_Game.png",
     projectUrl: "public/simon.html",
-  }
-
+=======
+  { projectName: "Bookmarks App",  
+    projectImage: "assets/Images/BookMarks.jpg",
+    projectUrl:"public/bookmarks.html",
+  },
+  {
+    projectName: "Exchange Rate",
+    projectImage: "assets/Images/ExchangeRate.png",
+    projectUrl: "public/ExchangeRate.html",
+>>>>>>> main
 ];
 
 let projectContainer = document.getElementById("js-projects");
