@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName:  "Pinpad",
+    projectImage: "assets/GIFs/pinpad.gif",
+    projectUrl:   "public/pinpad.html",
+  },
+  {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
@@ -229,7 +234,7 @@ let projectData = [
     projectName: "Device Info",
     projectImage: "assets/GIFs/DeviceInfo.gif",
     projectUrl: "public/deviceInfo.html",
-  }, 
+  },
   {
     projectName:"Color Picker and Converter",
     projectImage:"assets/GIFs/ColorPickerConverter.gif",
@@ -289,7 +294,7 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
-  <<<<<<< main
+
   // {
   //   projectName: "DarkMode",
   //   projectImage: {
@@ -298,7 +303,7 @@ let projectData = [
   //                 },
   //   projectUrl: "public/DarkMode.html",
   //  },
-=======
+
   /*{
     projectName: "DarkMode",
     projectImage: {
@@ -307,18 +312,18 @@ let projectData = [
                   },
     projectUrl: "public/DarkMode.html"
    },*/
->>>>>>> main
   {
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
-<<<<<<< main
+
   {
     projectName: "Simon's Game",
     projectImage: "assets/Images/Simons_s_Game.png",
     projectUrl: "public/simon.html",
-=======
+  },
+  
   { projectName: "Bookmarks App",  
     projectImage: "assets/Images/BookMarks.jpg",
     projectUrl:"public/bookmarks.html",
@@ -327,7 +332,7 @@ let projectData = [
     projectName: "Exchange Rate",
     projectImage: "assets/Images/ExchangeRate.png",
     projectUrl: "public/ExchangeRate.html",
->>>>>>> main
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -352,7 +357,7 @@ function getProjects() {
                 <h5 class="card-title">${data.projectName}</h5>
                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
-                            card's content.</p> --> 
+                            card's content.</p> -->
               </div>
             </a>
           </div>
