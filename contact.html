@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #1a1a1a;
         }
 
         * {
@@ -21,13 +23,14 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
+            font-family: sans-serif;
             margin-top: 6px;
             margin-bottom: 16px;
             resize: vertical;
         }
 
         input[type=submit] {
-            background-color: #4CAF50;
+            background-color: #351d2d;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -36,33 +39,65 @@
         }
 
         input[type=submit]:hover {
-            background-color: #45a049;
+            background-color: #4e0934;
+
         }
 
         .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
+            border-radius: 0px 0px 5px 5px;
+            background-color: #d9d9d9;
+            width: 70%;
+            margin: auto;
             padding: 20px;
         }
+
+        .head {
+            color: black;
+            align-content: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px 5px 0px 0px;
+            width: 70%;
+            margin: auto;
+            font-size: 30px;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .head:hover {
+            color: #813203;
+        }
+
+        .head p {
+            color: black;
+            font-size: 15px;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <h3>Contact Form</h3>
+    <div class="head">
+        <u><strong>Contact Form</strong></u>
+        <br>
+        <p>Please fill the details to get in touch!</p>
+    </div>
 
     <div class="container">
         <form action="#">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <label for="fname"> <strong>First Name:</strong> <span style="color:red"> <sup>*</sup></span></label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
 
-            <label for="lname">Last Name</label>
+            <label for="lname"> <strong>Last Name:</strong> <span style="color:red;"> <sup>*</sup></span></label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-            <label for="lname">Email</label>
+            <label for="email"> <strong>Email:</strong> <span style="color:red;"> <sup>*</sup></span></label>
             <input type="text" id="email" name="emailadd" placeholder="name@example.com" required>
 
-            <label for="subject">Subject</label>
+            <label for="subject"> <strong>Subject:</strong> <span style="color:red;"> <sup>*</sup></span></label>
             <textarea id="subject" name="subject" placeholder="Write something.." required
                 style="height:200px"></textarea>
 
