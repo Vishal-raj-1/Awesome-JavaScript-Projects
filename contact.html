@@ -13,6 +13,16 @@
             box-sizing: border-box;
         }
 
+        h1{
+            text-align: center;
+            color: rgb(72, 29, 170);
+        }
+        
+        label{
+            color: rgb(72, 29, 170);
+            font-size: 20px;
+        }
+
         input[type=text],
         select,
         textarea {
@@ -26,6 +36,13 @@
             resize: vertical;
         }
 
+        input[type=text]:hover,
+        textarea:hover {
+            border: 1px solid rgb(72, 29, 170);
+            box-shadow: 2px 2px rgb(72, 29, 170);
+            transition: all 1s;
+        }
+
         input[type=submit] {
             background-color: #4CAF50;
             color: white;
@@ -37,19 +54,22 @@
 
         input[type=submit]:hover {
             background-color: #45a049;
+            box-shadow: 2px 2px rgb(72, 29, 170);
+            transition: all 1s;
         }
 
         .container {
             border-radius: 5px;
             background-color: #f2f2f2;
             padding: 20px;
+            margin: 10px 250px;
         }
     </style>
 </head>
 
 <body>
 
-    <h3>Contact Form</h3>
+    <h1>Contact Form</h1>
 
     <div class="container">
         <form action="#">
