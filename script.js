@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName:  "Pinpad",
+    projectImage: "assets/GIFs/pinpad.gif",
+    projectUrl:   "public/pinpad.html",
+  },
+  {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
@@ -302,7 +307,7 @@ let projectData = [
     projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
-  { projectName: "Bookmarks App",  
+  { projectName: "Bookmarks App",
     projectImage: "assets/Images/BookMarks.jpg",
     projectUrl:"public/bookmarks.html",
   },
@@ -310,7 +315,13 @@ let projectData = [
     projectName: "Exchange Rate",
     projectImage: "assets/Images/ExchangeRate.png",
     projectUrl: "public/ExchangeRate.html",
-  }
+  },
+  {
+    projectName: "Word Scramble Game",
+    projectImage: "assets/GIFs/wordScramble.gif",
+    projectUrl: "public/wordScramble.html",
+  },
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
