@@ -1,15 +1,5 @@
 let projectData = [
   {
-    projectName: "Weight Converter",
-    projectImage: "assets/GIFs/WeightConverter.gif",
-    projectUrl: "public/WeightConverter.html",
-  },
-  {
-    projectName: "Expense Tracker",
-    projectImage: "assets/GIFs/ExpenseTracker.gif",
-    projectUrl: "public/ExpenseTracker.html",
-  },
-  {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
@@ -218,7 +208,17 @@ let projectData = [
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
-  }
+  },
+  {
+    projectName: "Weight Converter",
+    projectImage: "assets/GIFs/WeightConverter.gif",
+    projectUrl: "public/WeightConverter.html",
+  },
+  {
+    projectName: "Expense Tracker",
+    projectImage: "assets/GIFs/ExpenseTracker.gif",
+    projectUrl: "public/ExpenseTracker.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
