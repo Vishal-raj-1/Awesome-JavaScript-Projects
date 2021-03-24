@@ -1,6 +1,6 @@
 let canvas, ctx, w, h;
 const size = 256;
-const colors = ["#003F63", "#F2B138", "#A6BF4B", "#D94C1A"];
+const colors = ["#003F63", "#F2B138", "#A6BF4B", "#D94C1A", "#FF665A", "#FFF587", "#3EB595", "#F2ACB9", "#1FFF00", "#FF3534"];
 const font = 100;
 
 
@@ -24,7 +24,15 @@ const draw = () => {
 
     // printing name
     let txt = document.querySelector("#text");
-    txt.innerText = printText;
+    let err = document.querySelector("#errorText");
+    if (printText.trim().length == 0) {
+        err.innerText = 'Warning : Text field is empty !!';
+        xt.innerText = "GS";
+    } else {
+        err.innerText = "";
+        txt.innerText = printText.toUpperCase();
+    }
+
 
 }
 
@@ -52,10 +60,16 @@ let download = () => {
 }
 
 //event listeners for onload & resize
-window.addEventListener("load", draw);
 document.querySelector("#btn").addEventListener("click", () => {
     draw();
 })
+window.addEventListener("keypress", (e) => {
+    // console.log(e.key);
+    if (e.key == "Enter") {
+        draw();
+    }
+})
+
 document.querySelector("#download").addEventListener("click", () => {
     download();
 })
