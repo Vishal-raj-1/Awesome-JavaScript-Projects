@@ -309,11 +309,15 @@ let projectData = [
    },*/
   {
     projectName: "Blurry Loading Interface",
-    projectImage: "assets/GIFs/blurry_loading_interface.gif",
+    projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
+<<<<<<< HEAD
   {
     projectName: "Bookmarks App",
+=======
+  { projectName: "Bookmarks App",
+>>>>>>> aece9d2cdec500a4888e5fa2826eb2f5a650248b
     projectImage: "assets/Images/BookMarks.jpg",
     projectUrl: "public/bookmarks.html",
   },
@@ -322,6 +326,15 @@ let projectData = [
     projectImage: "assets/Images/ExchangeRate.png",
     projectUrl: "public/ExchangeRate.html",
   },
+<<<<<<< HEAD
+=======
+  {
+    projectName: "Word Scramble Game",
+    projectImage: "assets/GIFs/wordScramble.gif",
+    projectUrl: "public/wordScramble.html",
+  },
+
+>>>>>>> aece9d2cdec500a4888e5fa2826eb2f5a650248b
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -333,6 +346,7 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
+<<<<<<< HEAD
       (output += `
           <div class="card my-3 mx-auto col cardStyle">
             <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
@@ -351,12 +365,29 @@ function getProjects() {
             </a>
           </div>
       `)
+=======
+    (output += `
+    <div class="projectCard">
+    <a href=${data.projectUrl} class="hoverEffect" target="_blank">
+      <img
+        class="projectCardImg"
+        src=${data.projectImage}
+        alt="Card image cap"
+      />
+        <h5 class="projectCardTitle">${data.projectName}</h5>
+        <span class="computerLegs"></span>
+        <span class="computerBase"></span>
+    </a>
+  </div>
+  `)
+>>>>>>> aece9d2cdec500a4888e5fa2826eb2f5a650248b
   );
 
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
 }
 
+<<<<<<< HEAD
 window.onscroll = function () {
   myFunction();
 };
@@ -371,3 +402,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+=======
+
+>>>>>>> aece9d2cdec500a4888e5fa2826eb2f5a650248b
