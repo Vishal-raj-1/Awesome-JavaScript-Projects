@@ -314,7 +314,7 @@ let projectData = [
    },*/
   {
     projectName: "Blurry Loading Interface",
-    projectImage: "assets/GIFs/blurry_loading_interface.gif",
+    projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
 
@@ -323,8 +323,9 @@ let projectData = [
     projectImage: "assets/Images/Simons_s_Game.png",
     projectUrl: "public/simon.html",
   },
-  
-  { projectName: "Bookmarks App",  
+
+  { projectName: "Bookmarks App",
+
     projectImage: "assets/Images/BookMarks.jpg",
     projectUrl:"public/bookmarks.html",
   },
@@ -350,38 +351,23 @@ function getProjects() {
   projectData.forEach(
     (data, item) =>
     (output += `
-          <div class="card my-3 mx-auto col cardStyle">
-            <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
-              <img
-                class="card-img-top"
-                src=${data.projectImage}
-                style="height: 207.12px"
-                alt="Card image cap"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">${data.projectName}</h5>
-                     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> -->
-              </div>
-            </a>
-          </div>
-      `)
+    <div class="projectCard">
+    <a href=${data.projectUrl} class="hoverEffect" target="_blank">
+      <img
+        class="projectCardImg"
+        src=${data.projectImage}
+        alt="Card image cap"
+      />
+        <h5 class="projectCardTitle">${data.projectName}</h5>
+        <span class="computerLegs"></span>
+        <span class="computerBase"></span>
+    </a>
+  </div>
+  `)
   );
 
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
 }
 
-window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("Navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
