@@ -1,14 +1,5 @@
 let projectData = [
   {
-    projectName: "Weight Converter",
-    projectImage: "assets/GIFs/WeightConverter.gif",
-    projectUrl: "public/WeightConverter.html",
-  },
-  {
-    projectName: "Expense Tracker",
-    projectImage: "assets/GIFs/ExpenseTracker.gif",
-    projectUrl: "public/ExpenseTracker.html",
-  },
   {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
@@ -131,7 +122,7 @@ let projectData = [
   },
   {
     projectName: "BMI Calculator",
-    projectImage: "assets/Images/BMICalculator.png",
+    projectImage: "assets/GIFs/BMIcal.gif",
     projectUrl: "public/BMICalculator.html",
   },
   {
@@ -205,9 +196,25 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "Text To Speech",
+    projectImage: "assets/GIFs/speechText.gif",
+    projectUrl: "public/TextToSpeech.html",
+  },
+  {
+    projectName: "Recipe Finder",
+    projectImage: "assets/GIFs/recipie.gif",
+    projectUrl: "public/Recipie_finder.html",
+  },
+  {
+    projectName: "User list filter",
+    projectImage: "assets/GIFs/UserListFilter.gif",
+    projectUrl: "public/UserListFilter.html",
+  },
+  {
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html",
+
   },
   {
     projectName: "calendar",
@@ -216,9 +223,100 @@ let projectData = [
   },
   {
     projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
+    projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
-  }
+  },
+  {
+    projectName: "Device Info",
+    projectImage: "assets/GIFs/DeviceInfo.gif",
+    projectUrl: "public/deviceInfo.html",
+  },
+  {
+    projectName:"Color Picker and Converter",
+    projectImage:"assets/GIFs/ColorPickerConverter.gif",
+    projectUrl:"public/ColorPickerConverter.html",
+  },
+  {
+    projectName: " Key Event Code",
+    projectImage: "assets/GIFs/KeyEventCode.gif ",
+    projectUrl: "public/KeyEventCode.html",
+  },
+  {
+    projectName: " Rotating Navigation",
+    projectImage: "assets/GIFs/RotatingNav.gif ",
+    projectUrl: "public/RotatingNav.html",
+  },
+  {
+    projectName: "Expanding Card",
+    projectImage: "assets/GIFs/ExpandingCard.gif",
+    projectUrl: "public/ExpandingCard.html",
+  },
+  {
+    projectName: "Contacts Search",
+    projectImage: "assets/GIFs/contactSearch.gif",
+    projectUrl: "public/contactSearch.html",
+  },
+  {
+    projectName: "Github Issue Tracker",
+    projectImage: "assets/Images/IssueTracker.png",
+    projectUrl: "public/IssueTracker.html",
+  },
+  {
+    projectName: "Pixels Game",
+    projectImage: "assets/GIFs/pixels.gif",
+    projectUrl: "public/pixels-game.html",
+  },
+  {
+    projectName: "love Calculator",
+    projectImage: "assets/GIFs/loveCalculator.gif",
+    projectUrl: "public/loveCalculator.html",
+  },
+  {
+    projectName: "PIN Code Tracker",
+    projectImage: "assets/GIFs/pinCodeSearch.gif",
+    projectUrl: "public/pinCodeSearch.html",
+  },
+  {
+    projectName: "Custom Video Player",
+    projectImage: "assets/Images/customVideoPlayer.png",
+    projectUrl: "public/VideoPlayer.html",
+  },
+  {
+    projectName: "Study Timer",
+    projectImage: "assets/Images/StudyTimer.png",
+    projectUrl: "public/StudyTimer.html",
+  },
+  { projectName: "Palindrome Checker",
+    projectImage: "assets/Images/palindrome.jpg",
+    projectUrl:"public/palindrome.html",
+  },
+  /*{
+    projectName: "DarkMode",
+    projectImage: {
+                    "assets/Images/DarkMode1.jpeg",
+                    "assets/Image/DarkMode2.jpeg",
+                  },
+    projectUrl: "public/DarkMode.html"
+   },*/
+  {
+    projectName: "Blurry Loading Interface",
+    projectImage: "assets/GIFs/blurry_loading_interface.gif",
+    projectUrl: "public/blurry_loading_interface.html",
+  },
+  { projectName: "Bookmarks App",
+    projectImage: "assets/Images/BookMarks.jpg",
+    projectUrl:"public/bookmarks.html",
+  },
+  {
+    projectName: "Exchange Rate",
+    projectImage: "assets/Images/ExchangeRate.png",
+    projectUrl: "public/ExchangeRate.html",
+  },
+  {
+    projectName: "Word Scramble Game",
+    projectImage: "assets/GIFs/wordScramble.gif",
+    projectUrl: "public/wordScramble.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -243,7 +341,7 @@ function getProjects() {
                 <h5 class="card-title">${data.projectName}</h5>
                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
-                            card's content.</p> --> 
+                            card's content.</p> -->
               </div>
             </a>
           </div>
