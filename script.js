@@ -307,7 +307,7 @@ let projectData = [
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
-  { projectName: "Bookmarks App",  
+  { projectName: "Bookmarks App",
     projectImage: "assets/Images/BookMarks.jpg",
     projectUrl:"public/bookmarks.html",
   },
@@ -315,7 +315,13 @@ let projectData = [
     projectName: "Exchange Rate",
     projectImage: "assets/Images/ExchangeRate.png",
     projectUrl: "public/ExchangeRate.html",
-  }
+  },
+  {
+    projectName: "Word Scramble Game",
+    projectImage: "assets/GIFs/wordScramble.gif",
+    projectUrl: "public/wordScramble.html",
+  },
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
