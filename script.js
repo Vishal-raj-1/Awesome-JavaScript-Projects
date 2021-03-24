@@ -321,6 +321,16 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
+  {
+    projectName: "Expense Tracker",
+    projectImage: "assets/GIFs/ExpenseTracker.gif",
+    projectUrl: "public/ExpenseTracker.html",
+  },
+  {
+    projectName: "Weight Converter",
+    projectImage: "assets/GIFs/WeightConverter.gif",
+    projectUrl: "public/WeightConverter.html",
+  },
 
 ];
 
