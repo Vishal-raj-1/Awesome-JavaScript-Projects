@@ -154,6 +154,15 @@ h2 {
 
             }
         }
+
+        .error {
+            margin: 10px;
+            margin-left: 16px;
+            width: 100%;
+            color: tomato;
+            font-size: 14px;
+            text-align: left;
+        }
     }
 
     .profile {
@@ -163,7 +172,7 @@ h2 {
             width: $picSize;
             height: $picSize;
             color: #fff;
-            background: #000;
+            background: tomato;
             border-radius: 50%;
             display: flex;
             flex-direction: row;

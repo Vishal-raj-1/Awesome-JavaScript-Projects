@@ -20,12 +20,19 @@ const draw = () => {
         }
     }
     let printText = firstNameInitial + lastNameInitial;
-    printText = (printText == "undefined") ? "GS" : printText;
     // console.log(printText);
 
     // printing name
     let txt = document.querySelector("#text");
-    txt.innerText = printText.toUpperCase();
+    let err = document.querySelector("#errorText");
+    if (printText.trim().length == 0) {
+        err.innerText = 'Warning : Text field is empty !!';
+        xt.innerText = "GS";
+    } else {
+        err.innerText = "";
+        txt.innerText = printText.toUpperCase();
+    }
+
 
 }
 
@@ -53,7 +60,6 @@ let download = () => {
 }
 
 //event listeners for onload & resize
-window.addEventListener("load", draw);
 document.querySelector("#btn").addEventListener("click", () => {
     draw();
 })
