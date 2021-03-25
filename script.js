@@ -321,7 +321,11 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-
+  {
+    projectName: "Currency Converter",
+    projectImage: "assets/GIFs/currencyConverter.gif",
+    projectUrl: "public/currencyConverter.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
