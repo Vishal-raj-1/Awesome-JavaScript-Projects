@@ -321,6 +321,13 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
+  {
+    projectName: "Balloon Firing Game",
+    projectImage: "assets/Images/balloonFiring.js.png",
+    projectUrl: "public/balloonFiring.html",
+  },
+  
+  
 
 ];
 
