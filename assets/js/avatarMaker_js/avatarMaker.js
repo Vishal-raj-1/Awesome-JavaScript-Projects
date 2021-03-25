@@ -57,6 +57,13 @@ window.addEventListener("load", draw);
 document.querySelector("#btn").addEventListener("click", () => {
     draw();
 })
+window.addEventListener("keypress", (e) => {
+    // console.log(e.key);
+    if (e.key == "Enter") {
+        draw();
+    }
+})
+
 document.querySelector("#download").addEventListener("click", () => {
     download();
 })
