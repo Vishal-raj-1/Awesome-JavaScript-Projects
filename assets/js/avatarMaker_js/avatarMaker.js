@@ -20,11 +20,12 @@ const draw = () => {
         }
     }
     let printText = firstNameInitial + lastNameInitial;
+    printText = (printText == "undefined") ? "GS" : printText;
     // console.log(printText);
 
     // printing name
     let txt = document.querySelector("#text");
-    txt.innerText = printText;
+    txt.innerText = printText.toUpperCase();
 
 }
 

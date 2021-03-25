@@ -1,5 +1,6 @@
 //  variables
 $picSize: 200px;
+$mobile : 500px;
 
 * {
     margin: 0;
@@ -151,6 +152,10 @@ h2 {
         }
 
 
+    }
+
+    @media (max-width: $mobile) {
+        flex-direction: column-reverse;
     }
 }
 
