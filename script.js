@@ -331,7 +331,11 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-
+{
+    projectName: "Flip cards",
+    projectImage: "assets/GIFs/flipped.gif",
+    projectUrl: "public/flipcards.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
