@@ -1,8 +1,8 @@
 let projectData = [
   {
-    projectName:  "Pinpad",
+    projectName: "Pinpad",
     projectImage: "assets/GIFs/pinpad.gif",
-    projectUrl:   "public/pinpad.html",
+    projectUrl: "public/pinpad.html",
   },
   {
     projectName: "Note App",
@@ -18,6 +18,11 @@ let projectData = [
     projectName: "Color Flipper",
     projectImage: "assets/GIFs/colorFlipper.gif",
     projectUrl: "public/color-flipper.html",
+  },
+  {
+    projectName: "Movie Seat Booking",
+    projectImage: "assets/GIFs/movieSeatBooking.gif",
+    projectUrl: "public/movieSeatBooking.html",
   },
   {
     projectName: "Dynamic Quote Generator",
@@ -180,9 +185,9 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
-    projectName:"Hangman",
-    projectImage:"assets/GIFs/hangman.gif",
-    projectUrl:"public/hangman.html",
+    projectName: "Hangman",
+    projectImage: "assets/GIFs/hangman.gif",
+    projectUrl: "public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -218,7 +223,6 @@ let projectData = [
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html",
-
   },
   {
     projectName: "calendar",
@@ -236,9 +240,9 @@ let projectData = [
     projectUrl: "public/deviceInfo.html",
   },
   {
-    projectName:"Color Picker and Converter",
-    projectImage:"assets/GIFs/ColorPickerConverter.gif",
-    projectUrl:"public/ColorPickerConverter.html",
+    projectName: "Color Picker and Converter",
+    projectImage: "assets/GIFs/ColorPickerConverter.gif",
+    projectUrl: "public/ColorPickerConverter.html",
   },
   {
     projectName: " Key Event Code",
@@ -290,9 +294,10 @@ let projectData = [
     projectImage: "assets/Images/StudyTimer.png",
     projectUrl: "public/StudyTimer.html",
   },
-  { projectName: "Palindrome Checker",
+  {
+    projectName: "Palindrome Checker",
     projectImage: "assets/Images/palindrome.jpg",
-    projectUrl:"public/palindrome.html",
+    projectUrl: "public/palindrome.html",
   },
   /*{
     projectName: "DarkMode",
@@ -309,9 +314,10 @@ let projectData = [
     projectImage: "assets/GIFs/connectFour.gif",
     projectUrl: "public/connectFour.html"
   }, 
-  { projectName: "Bookmarks App",
+  {
+    projectName: "Bookmarks App",
     projectImage: "assets/Images/BookMarks.jpg",
-    projectUrl:"public/bookmarks.html",
+    projectUrl: "public/bookmarks.html",
   },
   {
     projectName: "Exchange Rate",
@@ -323,7 +329,6 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -335,7 +340,7 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
-    (output += `
+      (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
@@ -354,5 +359,3 @@ function getProjects() {
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
 }
-
-
