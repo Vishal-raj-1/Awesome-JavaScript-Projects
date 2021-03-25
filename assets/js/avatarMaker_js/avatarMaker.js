@@ -1,6 +1,6 @@
 let canvas, ctx, w, h;
 const size = 256;
-const colors = ["#003F63", "#F2B138", "#A6BF4B", "#D94C1A"];
+const colors = ["#003F63", "#F2B138", "#A6BF4B", "#D94C1A", "#FF665A", "#FFF587", "#3EB595", "#F2ACB9", "#1FFF00", "#FF3534"];
 const font = 100;
 
 

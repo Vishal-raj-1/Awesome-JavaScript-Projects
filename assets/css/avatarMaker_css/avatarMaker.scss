@@ -159,7 +159,7 @@ h2 {
             margin: 10px;
             margin-left: 16px;
             width: 100%;
-            color: tomato;
+            color: #FF3534;
             font-size: 14px;
             text-align: left;
         }
@@ -172,7 +172,7 @@ h2 {
             width: $picSize;
             height: $picSize;
             color: #fff;
-            background: tomato;
+            background: #F2ACB9;
             border-radius: 50%;
             display: flex;
             flex-direction: row;
@@ -213,6 +213,6 @@ footer {
 
     a {
         text-decoration: none;
-        color: tomato;
+        color: #FF3534;
     }
 }
