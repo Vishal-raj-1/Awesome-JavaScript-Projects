@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/connectFour.css">
+    <title>Connect Four!</title>
+</head>
+<body>
+    <h1>Connect Four <span class="player-turn"></span> </h1>
+
+    <div class="game-board">
+        <div class="cell row-top col-0 top"></div>
+        <div class="cell row-top col-1 top"></div>
+        <div class="cell row-top col-2 top"></div>
+        <div class="cell row-top col-3 top"></div>
+        <div class="cell row-top col-4 top"></div>
+        <div class="cell row-top col-5 top"></div>
+        <div class="cell row-top col-6 top"></div>
+
+        <div class="cell row-0 col-0 left-border top-border"></div>
+        <div class="cell row-0 col-1 top-border"></div>
+        <div class="cell row-0 col-2 top-border"></div>
+        <div class="cell row-0 col-3 top-border"></div>
+        <div class="cell row-0 col-4 top-border"></div>
+        <div class="cell row-0 col-5 top-border"></div>
+        <div class="cell row-0 col-6 top-border right-border"></div>
+
+        <div class="cell row-1 col-0 left-border"></div>
+        <div class="cell row-1 col-1"></div>
+        <div class="cell row-1 col-2"></div>
+        <div class="cell row-1 col-3"></div>
+        <div class="cell row-1 col-4"></div>
+        <div class="cell row-1 col-5"></div>
+        <div class="cell row-1 col-6 right-border"></div>
+
+        <div class="cell row-2 col-0 left-border"></div>
+        <div class="cell row-2 col-1"></div>
+        <div class="cell row-2 col-2"></div>
+        <div class="cell row-2 col-3"></div>
+        <div class="cell row-2 col-4"></div>
+        <div class="cell row-2 col-5"></div>
+        <div class="cell row-2 col-6 right-border"></div>
+
+        <div class="cell row-3 col-0 left-border"></div>
+        <div class="cell row-3 col-1"></div>
+        <div class="cell row-3 col-2"></div>
+        <div class="cell row-3 col-3"></div>
+        <div class="cell row-3 col-4"></div>
+        <div class="cell row-3 col-5"></div>
+        <div class="cell row-3 col-6 right-border"></div>
+
+        <div class="cell row-4 col-0 left-border"></div>
+        <div class="cell row-4 col-1"></div>
+        <div class="cell row-4 col-2"></div>
+        <div class="cell row-4 col-3"></div>
+        <div class="cell row-4 col-4"></div>
+        <div class="cell row-4 col-5"></div>
+        <div class="cell row-4 col-6 right-border"></div>
+
+        <div class="cell row-5 col-0 bottom-border left-border"></div>
+        <div class="cell row-5 col-1 bottom-border"></div>
+        <div class="cell row-5 col-2 bottom-border"></div>
+        <div class="cell row-5 col-3 bottom-border"></div>
+        <div class="cell row-5 col-4 bottom-border"></div>
+        <div class="cell row-5 col-5 bottom-border"></div>
+        <div class="cell row-5 col-6 bottom-border right-border"></div>
+
+    </div>
+
+    <div class="footer">
+        <button class="reset hvr-sweep-to-right">Reset</button>
+        <span class="status"></span>
+    </div>
+
+    <script src="../assets/js/ConnectFour.js"></script>
+</body>
+</html>
