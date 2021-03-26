@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Pinpad",
+    projectImage: "assets/GIFs/pinpad.gif",
+    projectUrl: "public/pinpad.html",
+  },
+  {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
@@ -13,6 +18,11 @@ let projectData = [
     projectName: "Color Flipper",
     projectImage: "assets/GIFs/colorFlipper.gif",
     projectUrl: "public/color-flipper.html",
+  },
+  {
+    projectName: "Movie Seat Booking",
+    projectImage: "assets/GIFs/movieSeatBooking.gif",
+    projectUrl: "public/movieSeatBooking.html",
   },
   {
     projectName: "Dynamic Quote Generator",
@@ -121,7 +131,7 @@ let projectData = [
   },
   {
     projectName: "BMI Calculator",
-    projectImage: "assets/Images/BMICalculator.png",
+    projectImage: "assets/GIFs/BMIcal.gif",
     projectUrl: "public/BMICalculator.html",
   },
   {
@@ -175,9 +185,9 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
-    projectName:"Hangman",
-    projectImage:"assets/GIFs/hangman.gif",
-    projectUrl:"public/hangman.html",
+    projectName: "Hangman",
+    projectImage: "assets/GIFs/hangman.gif",
+    projectUrl: "public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -195,6 +205,16 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "Text To Speech",
+    projectImage: "assets/GIFs/speechText.gif",
+    projectUrl: "public/TextToSpeech.html",
+  },
+  {
+    projectName: "Recipe Finder",
+    projectImage: "assets/GIFs/recipie.gif",
+    projectUrl: "public/Recipie_finder.html",
+  },
+  {
     projectName: "User list filter",
     projectImage: "assets/GIFs/UserListFilter.gif",
     projectUrl: "public/UserListFilter.html",
@@ -203,7 +223,6 @@ let projectData = [
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html",
-
   },
   {
     projectName: "calendar",
@@ -217,9 +236,22 @@ let projectData = [
   },
   {
 
+
     projectName: "Dice Game",
     projectImage: "assets/Images/dice6.png",
     projectUrl: "public/diceGame.html",
+
+
+    projectName: "Device Info",
+    projectImage: "assets/GIFs/DeviceInfo.gif",
+    projectUrl: "public/deviceInfo.html",
+  },
+  {
+    projectName: "Color Picker and Converter",
+    projectImage: "assets/GIFs/ColorPickerConverter.gif",
+    projectUrl: "public/ColorPickerConverter.html",
+  },
+  {
 
     projectName: " Key Event Code",
     projectImage: "assets/GIFs/KeyEventCode.gif ",
@@ -231,6 +263,11 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
+    projectName: "Expanding Card",
+    projectImage: "assets/GIFs/ExpandingCard.gif",
+    projectUrl: "public/ExpandingCard.html",
+  },
+  {
     projectName: "Contacts Search",
     projectImage: "assets/GIFs/contactSearch.gif",
     projectUrl: "public/contactSearch.html",
@@ -240,18 +277,72 @@ let projectData = [
     projectImage: "assets/Images/IssueTracker.png",
     projectUrl: "public/IssueTracker.html",
 
+
   }
   ,
+=======
+  },
+
   {
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
   },
- {
+  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-    }
+  },
+  {
+    projectName: "PIN Code Tracker",
+    projectImage: "assets/GIFs/pinCodeSearch.gif",
+    projectUrl: "public/pinCodeSearch.html",
+  },
+  {
+    projectName: "Custom Video Player",
+    projectImage: "assets/Images/customVideoPlayer.png",
+    projectUrl: "public/VideoPlayer.html",
+  },
+  {
+    projectName: "Study Timer",
+    projectImage: "assets/Images/StudyTimer.png",
+    projectUrl: "public/StudyTimer.html",
+  },
+  {
+    projectName: "Palindrome Checker",
+    projectImage: "assets/Images/palindrome.jpg",
+    projectUrl: "public/palindrome.html",
+  },
+  /*{
+    projectName: "DarkMode",
+    projectImage: "assets/Images/DarkMode2.jpeg",
+    projectUrl: "public/DarkMode.html"
+   },*/
+  {
+    projectName: "Blurry Loading Interface",
+    projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
+    projectUrl: "public/blurry_loading_interface.html",
+  },
+  {
+    projectName: "Connect Four",
+    projectImage: "assets/GIFs/connectFour.gif",
+    projectUrl: "public/connectFour.html"
+  }, 
+  {
+    projectName: "Bookmarks App",
+    projectImage: "assets/Images/BookMarks.jpg",
+    projectUrl: "public/bookmarks.html",
+  },
+  {
+    projectName: "Exchange Rate",
+    projectImage: "assets/Images/ExchangeRate.png",
+    projectUrl: "public/ExchangeRate.html",
+  },
+  {
+    projectName: "Word Scramble Game",
+    projectImage: "assets/GIFs/wordScramble.gif",
+    projectUrl: "public/wordScramble.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -263,40 +354,22 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
-    (output += `
-          <div class="card my-3 mx-auto col cardStyle">
-            <a href=${data.projectUrl} class="text-decoration-none" target="_blank">
-              <img
-                class="card-img-top"
-                src=${data.projectImage}
-                style="height: 207.12px"
-                alt="Card image cap"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">${data.projectName}</h5>
-                     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p> --> 
-              </div>
-            </a>
-          </div>
-      `)
+      (output += `
+    <div class="projectCard">
+    <a href=${data.projectUrl} class="hoverEffect" target="_blank">
+      <img
+        class="projectCardImg"
+        src=${data.projectImage}
+        alt="Card image cap"
+      />
+        <h5 class="projectCardTitle">${data.projectName}</h5>
+        <span class="computerLegs"></span>
+        <span class="computerBase"></span>
+    </a>
+  </div>
+  `)
   );
 
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
 }
-
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("Navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
