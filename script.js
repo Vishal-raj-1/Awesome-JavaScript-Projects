@@ -329,6 +329,11 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
+  {
+    projectName: "Dice Game",
+    projectImage: "assets/GIFs/dice_game.gif",
+    projectUrl: "public/dice_game.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
