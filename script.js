@@ -301,6 +301,10 @@ let projectData = [
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/blurry_loading_interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
+  },{
+    projectName:"Sequence Game",
+    projectImage:"assets/Images/sequence-game.png",
+    projectUrl:"public/Sequence-game.html",
   }
 
 ];
