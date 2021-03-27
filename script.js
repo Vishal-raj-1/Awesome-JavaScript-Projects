@@ -205,6 +205,20 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+   },
+  {
+
+    projectName: "Rode Slider Game",
+    projectImage: "assets/GIFs/rodeslidergame.gif",
+    projectUrl: "public/rodeslider.html",
+  },
+  {
+
+
     projectName: "Text To Speech",
     projectImage: "assets/GIFs/speechText.gif",
     projectUrl: "public/TextToSpeech.html",
@@ -230,9 +244,15 @@ let projectData = [
     projectUrl: "public/calendar.html",
   },
   {
+    projectName: "Math Quiz for kids 🙂 ",
+    projectImage: "assets/Images/MathQuiz.jpg",
+    projectUrl: "public/MathQuiz.html",
+  },
+  {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
+
   },
   {
     projectName: "Yoga App",
@@ -339,11 +359,12 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-{
+  {
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
     projectUrl: "public/flipcards.html",
   },
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
