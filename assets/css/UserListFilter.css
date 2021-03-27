@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "RocknRoll One", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: linear-gradient(225deg, #357736, #3f8d40);
+  box-shadow: -35px 35px 70px #265627, 35px -35px 70px #50b251;
+}
+
+.container {
+  border-radius: 13px;
+  background: linear-gradient(225deg, #357736, #3f8d40);
+  box-shadow: -35px 35px 70px #265627, 35px -35px 70px #50b251;
+  overflow: hidden;
+  width: 350px;
+  margin-top: 30px;
+  color: #e8e8e8;
+}
+
+.title {
+  margin: 0;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 2px;
+  padding-bottom: 15px;
+}
+
+.header {
+  color: white;
+  padding: 30px 20px;
+  border-bottom: 1px solid grey;
+}
+
+.header input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  border-radius: 50px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  color: #e8e8e8;
+}
+
+.header input:focus {
+  outline: none;
+}
+
+.user-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.user-list li {
+  display: flex;
+  padding: 20px;
+}
+
+.user-list img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.user-list .user-info {
+  margin-left: 12px;
+}
+
+.user-list .user-info h3 {
+  margin: 0 0 10px;
+}
+.user-list .user-info p {
+  font-size: 12px;
+}
+
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid grey;
+}
+
+.user-list li.hide {
+  display: none;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

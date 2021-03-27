@@ -1,0 +1,81 @@
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+#rod1{
+    height: 25px;
+    width: 250px;
+    background-color: rgb(76, 13, 221);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    position: absolute;
+    left: 40%;
+    z-index: 2;
+}
+
+#ball{
+    color: rgb(74, 218, 86);
+    font-size:50px;
+    position: absolute;
+    left: 48%;
+    top: 40px;
+    z-index: 1.5;
+}
+#rod2{
+    height: 25px;
+    width: 250px;
+    background-color: crimson;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    /* top: 570px; */
+    left: 40%;
+    z-index: 2;
+
+}
+
+
+#start_game{
+    background-color: rgb(154, 16, 218);
+    position: absolute;
+    top: 230px;
+    left: 28%;
+    border-radius: 30px;
+    box-shadow:200px;
+    
+}
+#para{
+    color: rgb(180, 205, 233);
+    font-size: 30px;
+}
+#start_game_button{
+    background-color: slateblue;
+    color: white;
+    font-size: 40px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+#score_div{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 50px;
+
+}
+#score{
+    font-size: 20px;
+    color: cornsilk;
+}
