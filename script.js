@@ -295,11 +295,6 @@ let projectData = [
     projectUrl: "public/loveCalculator.html",
   },
   {
-    projectName: "Typewriter Effect",
-    projectImage: "assets/GIFs/typewriter.gif",
-    projectUrl: "public/typewriter.html",
-  },
-  {
     projectName: "PIN Code Tracker",
     projectImage: "assets/GIFs/pinCodeSearch.gif",
     projectUrl: "public/pinCodeSearch.html",
@@ -348,6 +343,11 @@ let projectData = [
     projectName: "Word Scramble Game",
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
+  },
+  {
+    projectName: "Typewriter Effect",
+    projectImage: "assets/GIFs/typewriter.gif",
+    projectUrl: "public/typewriter.html",
   },
 ];
 
