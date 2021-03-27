@@ -35,6 +35,11 @@ let projectData = [
     projectUrl: "public/counter.html",
   },
   {
+    projectName: "Translator-App",
+    projectImage: "assets/GIFs/minions.gif",
+    projectUrl: "public/translatorMinions.html",
+  },
+  {
     projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.jpeg",
     projectUrl: "public/localstorage.html",
