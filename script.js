@@ -205,6 +205,12 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "Rode Slider Game",
+    projectImage: "assets/GIFs/rodeslidergame.gif",
+    projectUrl: "public/rodeslider.html",
+  },
+  {
+
     projectName: "Text To Speech",
     projectImage: "assets/GIFs/speechText.gif",
     projectUrl: "public/TextToSpeech.html",
@@ -329,6 +335,7 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
