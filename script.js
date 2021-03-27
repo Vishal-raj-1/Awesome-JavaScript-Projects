@@ -244,9 +244,15 @@ let projectData = [
     projectUrl: "public/calendar.html",
   },
   {
+    projectName: "Math Quiz for kids 🙂 ",
+    projectImage: "assets/Images/MathQuiz.jpg",
+    projectUrl: "public/MathQuiz.html",
+  },
+  {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
+
   },
   {
     projectName: "Device Info",
