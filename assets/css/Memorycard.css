@@ -152,7 +152,7 @@ h1 button {
 .add-container {
   opacity: 0;
   z-index: -1;
-  background-color: palevioletred;
+  background-color:rgb(200, 173, 224) ;
   border-top: 2px solid rgb(173, 246, 248);
   display: flex;
   flex-direction: column;
@@ -188,3 +188,5 @@ h1 button {
   min-width: 500px;
   max-width: 100%;
 }
+
+

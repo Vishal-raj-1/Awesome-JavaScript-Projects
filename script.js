@@ -65,6 +65,11 @@ let projectData = [
     projectUrl: "public/StopWatch.html",
   },
   {
+    projectName: "Memory Cards",
+    projectImage: "",
+    projectUrl: "public/Memorycard.html",
+  },
+  {
     projectName: "Animated Counter",
     projectImage: "assets/GIFs/animatedCounter.gif",
     projectUrl: "public/animatedCounter.html",
@@ -193,7 +198,8 @@ let projectData = [
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
-  }
+  },
+  
   {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
