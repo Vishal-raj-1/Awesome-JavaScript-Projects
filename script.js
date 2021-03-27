@@ -1,5 +1,9 @@
 let projectData = [
   {
+    projectName: "AND OR XOR Converter",
+    projectUrl: "public/AND,OR,XOR Converter.html"
+  },
+  {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
