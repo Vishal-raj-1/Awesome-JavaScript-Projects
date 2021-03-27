@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg{
+    background: url('https://source.unsplash.com/1600x900/?nature,water');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    /* width: 100vw;
+    height: 100vh; */
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+    transition: filter 0.8s ease;
+}
+
+.loading-text{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
