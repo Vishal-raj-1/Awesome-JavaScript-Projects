@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style2.css">
+    <script src="../assets/js/main.js"></script>
+    <title>Image-gallery</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row ">
+            <div class="content">
+            <img src="../assets/Images/img/download.jpg" alt="'Let's just sit quietly and listen to the secrets the rain.'" style="width: 200px; height: 200px;" onclick="show(this)">
+            </div>
+            <div class="content">
+            <img src="../assets/Images/img/summer.jpg" alt="'In summer, the song sings itself.'" style="width: 200px; height: 200px;" onclick="show(this)">
+            </div>
+            <div class="content">
+            <img src="../assets/Images/img/winter.jpg" alt="'Winter forms our character and brings out our best.'" style="width: 200px; height: 200px;" onclick="show(this)">
+            </div>
+            <div class="content">
+            <img src="../assets/Images/img/autumn.jpg" alt="'Autumn is a second spring when every leaf is a flower.'" style="width: 200px; height: 200px;" onclick="show(this)">
+            </div>
+            <div class="content">
+                <img src="../assets/Images/img/spring2.jpg" alt="'Spring is nature's way of saying, 'Let's Party!'" style="width: 200px; height: 200px;" onclick="show(this)">
+                </div>
+                <div class="content">
+                    <img src="../assets/Images/img/post-monsoon.jpg" alt="'Nature Beauty'" style="width: 200px; height: 200px;" onclick="show(this)">
+                    </div>
+           
+        </div>
+        
+        <div class="view">
+            <span class="closeButton" onclick="this.parentElement.style.display='none'">&times;</span>
+            <img id="big_img" style="width: 100%;">
+            <div id="text"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
