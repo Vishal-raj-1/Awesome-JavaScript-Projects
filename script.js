@@ -204,6 +204,20 @@ let projectData = [
     projectImage: "assets/GIFs/newYearCountdown.gif",
     projectUrl: "public/newyearcountdown.html",
   },
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
+    projectName: "Rode Slider Game",
+    projectImage: "assets/GIFs/rodeslidergame.gif",
+    projectUrl: "public/rodeslider.html",
+  },
+  {
+    projectName: "Text To Speech",
+    projectImage: "assets/GIFs/speechText.gif",
+    projectUrl: "public/TextToSpeech.html",
+  },
   {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
@@ -233,6 +247,10 @@ let projectData = [
     projectName: "Pinpad",
     projectImage: "assets/GIFs/pinpad.gif",
     projectUrl: "public/pinpad.html",
+  },
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice.gif",
+    projectUrl: "public/textToVoice.html",
   },
   {
     projectName: "Pixels Game",
@@ -309,6 +327,10 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   },
+    projectName: "Connect Four",
+    projectImage: "assets/GIFs/connectFour.gif",
+    projectUrl: "public/connectFour.html",
+  },
   {
     projectName: "Tic Tac Toe Game",
     projectImage: "assets/GIFs/ticTacToe.gif",
@@ -343,6 +365,11 @@ let projectData = [
     projectName: "Word Scramble Game",
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
+  },
+  {
+    projectName: "Typewriter Effect",
+    projectImage: "assets/GIFs/typewriter.gif",
+    projectUrl: "public/typewriter.html",
   },
 ];
 
