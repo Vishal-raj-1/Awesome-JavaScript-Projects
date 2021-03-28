@@ -205,6 +205,16 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
+    projectName: "Rode Slider Game",
+    projectImage: "assets/GIFs/rodeslidergame.gif",
+    projectUrl: "public/rodeslider.html",
+  },
+  {
     projectName: "Text To Speech",
     projectImage: "assets/GIFs/speechText.gif",
     projectUrl: "public/TextToSpeech.html",
@@ -228,6 +238,11 @@ let projectData = [
     projectName: "calendar",
     projectImage: "assets/GIFs/cal.gif",
     projectUrl: "public/calendar.html",
+  },
+  {
+    projectName: "Math Quiz for kids 🙂 ",
+    projectImage: "assets/Images/MathQuiz.jpg",
+    projectUrl: "public/MathQuiz.html",
   },
   {
     projectName: "Text to Voice Generator",
@@ -312,8 +327,8 @@ let projectData = [
   {
     projectName: "Connect Four",
     projectImage: "assets/GIFs/connectFour.gif",
-    projectUrl: "public/connectFour.html"
-  }, 
+    projectUrl: "public/connectFour.html",
+  },
   {
     projectName: "Bookmarks App",
     projectImage: "assets/Images/BookMarks.jpg",
@@ -328,6 +343,11 @@ let projectData = [
     projectName: "Word Scramble Game",
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
+  },
+  {
+    projectName: "Typewriter Effect",
+    projectImage: "assets/GIFs/typewriter.gif",
+    projectUrl: "public/typewriter.html",
   },
   {
     projectName: "Age Calculator",
