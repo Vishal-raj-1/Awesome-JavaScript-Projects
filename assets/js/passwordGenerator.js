@@ -109,8 +109,8 @@ copyEl.addEventListener("click", () => {
 
 function showTooltip(){
     tooltip.style.display = 'block';
-   
-  }
+   }
 function hideTooltip(){
     tooltip.style.display = 'none';
-}
+  }
+
