@@ -1,80 +1,72 @@
-body{
-    background-color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+:root{
+    --font1: 'Noto Sans', sans-serif; 
 }
 
-.container{
-    text-align: center;
-    margin-top: 34px;
+*{
+	padding:0;
+	margin:0;
+}
+.Calculator{
+	width: 400px;
+	background-color: black;
+	color: white;
+	justify-content: center;
+}
+.Calculator{
+	
+    margin-left: 600px;
+    margin-top: 200px;
+}
+.screen{
+	color: white;
+	font-size: 40px;
+	font-family: var(--font1);
+	text-align: right;
+	padding: 20px 5px;
+}
+.Calculator-button{
+	background-color: maroon;
+	color:black;
+	font-family: var(--font1);
+	height: 200px;
+	width: 400px;
+	font-size: 40px;
+	cursor: pointer;
+}
+.Calculator-button:hover{
+	background-color: white;
+}
+.Calculator-button:active {
+  background-color: #bbbcbe;
+}
+.double{
+	width: 50%;
+}
+.triple{
+	width: 75%;
+}
+.Calculator-button:last-child {
+  background-color:rgb(245, 66, 66);
+  color: white;
 }
 
-body{
-    background-color: #0f0f0f
-
+.Calculator-button:last-child:hover {
+  background-color: black;
 }
 
-table{
-    margin: auto;
+.Calculator-button:last-child:active {
+  background-color: red;
 }
 
-input {
-    border-radius: 10px;
-    border: none;
-    font-size: 58px;
-    height: 90px;
-    width: 450px;
-    margin-bottom: 5px;
-    outline: none;
-    background: #28f1ed96;
-    box-shadow: inset -3px -3px 7px #00f3fffa,
-                inset 2px 2px 5px #012d2ffc;
+.Calculator-button-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
 }
 
-
-button{
-    font-size: 40px;
-    width: 100px;
-    height: 69px;
-    margin: 6px;
-    transform: scale(1);
-    outline: none;
-    border:none;
-    background: linear-gradient(315deg , #56d0c5, #89b0ad);
-    box-shadow: 3px 3px 8px 0px #224e4a, 
-               -3px -3px 8px 0px #4ac3bcf2;
-    border-radius: 8px;
+.Calculator-button-row:last-child {
+  padding-bottom: 0;
 }
 
-
-
-button:hover{
-    transform: scale(0.9);
-    cursor: pointer;
-    background-color: #13caefc9;   
-}
-
-button:active:focus{
-    box-shadow: inset 3px 3px 8px 0px #224e4a,
-                -3px -3px 8px 0px #4ac3bcf2;
-}
-
-button:focus{
-    box-shadow: inset 3px 3px 5px 0px #224e4a,
-                inset -3px -3px 8px 0px #0bd1f98c;
-}
-
-.calculator{ 
-    background-image: linear-gradient(to right,
-                      rgb(30, 30, 30),
-                      rgb(42, 223, 220));
-    padding: 23px;
-    border-radius: 30px;
-    display: inline-block;
-    box-shadow: -5px -5px 10px #224c4e, 
-                 5px 5px 10px #224c4e;
-}
-
-h1{
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    color: aqua;
-}
