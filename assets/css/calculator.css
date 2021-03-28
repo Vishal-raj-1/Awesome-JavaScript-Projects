@@ -15,7 +15,7 @@
 }
 .Calculator{
 	
-    margin-left: 600px;
+    margin-left: 400px;
     margin-top: 200px;
 }
 .screen{
@@ -29,10 +29,11 @@
 	background-color: maroon;
 	color:black;
 	font-family: var(--font1);
-	height: 200px;
+	max-height: 200px;
 	width: 400px;
 	font-size: 40px;
 	cursor: pointer;
+	isolation: isolate;
 }
 .Calculator-button:hover{
 	background-color: white;
