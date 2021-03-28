@@ -1,0 +1,48 @@
+.header1 {
+  background-color: #d6b0b1;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.headertitle{
+  font-family: 'Lexend Mega', sans-serif;
+  font-size: 2vw;
+  color: #8b5e83;
+  margin-left: 10px;
+}
+span{
+  font-weight: bolder;
+}
+
+.intro{
+  padding-top: 250px;
+
+  background-color: #E6E7E9;
+}
+.introtext{
+  font-size: 6.5vw;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  color: #4d375d;
+}
+.introimage{
+  height: 200px;
+  width: 100%;
+
+}
+.search{
+  padding-top: 250px;
+
+  background-color: #EEEEEE;
+}
+.search_area{
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.button1{
+  margin-left: 47%;
+  margin-top: 30px;
+}
