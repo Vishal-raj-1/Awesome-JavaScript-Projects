@@ -344,11 +344,15 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-  ,
   {
     projectName: "Typewriter Effect",
     projectImage: "assets/GIFs/typewriter.gif",
     projectUrl: "public/typewriter.html",
+  },
+  {
+    projectName: "Lyrics App",
+    projectImage: "assets/GIFs/lyricsApp.gif",
+    projectUrl: "public/lyricsApp.html",
   },
 ];
 
