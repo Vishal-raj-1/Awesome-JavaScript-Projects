@@ -100,13 +100,17 @@ copyEl.addEventListener("click", () => {
     document.body.appendChild(textarea);
     textarea.select();
     document.execCommand("copy");
+    window.setTimeout(() => {
+        tooltip.style.display= 'none';
+    },3000);
     textarea.remove();
 
 });
 
 function showTooltip(){
     tooltip.style.display = 'block';
-  }
+   }
+   
 function hideTooltip(){
     tooltip.style.display = 'none';
 }
