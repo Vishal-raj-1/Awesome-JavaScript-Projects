@@ -350,6 +350,11 @@ let projectData = [
     projectImage: "assets/GIFs/typewriter.gif",
     projectUrl: "public/typewriter.html",
   },
+  {
+    projectName: " Markdown Previewer",
+    projectImage:'assets/Images/markDownPreviewer.jpg',
+    projectUrl: 'public/MarkDownPreviewer.html',
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
