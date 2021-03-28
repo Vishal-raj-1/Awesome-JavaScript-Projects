@@ -213,8 +213,8 @@ let projectData = [
     projectName: "MemeUrl",
     projectImage: "assets/GIFs/memeUrl.png",
     projectUrl: "memeUrl.html",
-  }
-=======
+  },
+  {
     projectName: "RGB Color Guessing Game",
     projectImage: "assets/GIFs/RGB_Color.gif",
     projectUrl: "public/RGB_Color_Guessing_Game.html",
