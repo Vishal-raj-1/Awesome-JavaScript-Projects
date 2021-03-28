@@ -231,6 +231,11 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
+    projectName: " BackgroundSlider",
+    projectImage: "assets/GIFs/BackgroundSlider.gif ",
+    projectUrl: "public/BackgroundSlider.html",
+  },
+  {
     projectName: "Contacts Search",
     projectImage: "assets/GIFs/contactSearch.gif",
     projectUrl: "public/contactSearch.html",
