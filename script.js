@@ -364,6 +364,11 @@ let projectData = [
     projectImage: "assets/GIFs/typewriter.gif",
     projectUrl: "public/typewriter.html",
   },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakouthere.gif",
+    projectUrl: "public/breakout.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
