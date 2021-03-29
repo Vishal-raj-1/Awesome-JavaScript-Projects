@@ -55,7 +55,7 @@ let projectData = [
     projectUrl: "public/molegame.html",
   },
   {
-    projectName: "Click and Drag",
+    projectName: "Click and Drag Image Slider",
     projectImage: "assets/GIFs/clickandDrag.gif",
     projectUrl: "public/clickanddrag.html",
   },
