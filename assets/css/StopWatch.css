@@ -28,6 +28,11 @@ ul li {
     list-style: none;
     font-size: 30px;
 }
+
+.hidden{
+    display: none;
+}
+
 /* Mobile view */
 @media only screen and (max-width: 768px) {
     .heading {
