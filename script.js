@@ -355,6 +355,11 @@ let projectData = [
     projectImage: 'assets/GIFs/typewriter.gif',
     projectUrl: 'public/typewriter.html',
   },
+  {
+    projectName: 'Falling Bullets Animation JS',
+    projectImage: 'https://media.giphy.com/media/LvZkyieRRxr24YoHJU/giphy.gif',
+    projectUrl: 'public/FallingBulletsAnimation.html',
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
