@@ -350,6 +350,11 @@ let projectData = [
     projectImage: "assets/GIFs/typewriter.gif",
     projectUrl: "public/typewriter.html",
   },
+  {
+    projectName: "Pagination",
+    projectImage: "assets/Images/Pagination.png",
+    projectUrl: "public/Pagination.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
