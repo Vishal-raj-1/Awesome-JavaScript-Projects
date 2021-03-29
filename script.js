@@ -344,7 +344,11 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-  ,
+  {
+    projectName: "Bubble Particle Text",
+    projectImage: "assets/GIFs/bubbleParticle.gif",
+    projectUrl: "public/bubbleParticle.html",
+  },
   {
     projectName: "Typewriter Effect",
     projectImage: "assets/GIFs/typewriter.gif",
