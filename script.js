@@ -383,6 +383,11 @@ let projectData = [
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
   },
+  {
+    projectName: "PianoApp",
+    projectImage: "assets/Images/pianoApp.png",
+    projectUrl: "public/pianoApp.html",
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
