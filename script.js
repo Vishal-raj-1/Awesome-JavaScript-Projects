@@ -209,7 +209,12 @@ let projectData = [
     projectImage: "assets/GIFs/progressbar.png",
     projectUrl: "public/progressbar.html",
   }
-];
+  ,
+  {
+    projectName: "Herry Potter Characters",
+    projectImage: "assets/Images/herry.png",
+    projectUrl: "public/herry.html",
+  }];
 
 let projectContainer = document.getElementById("js-projects");
 console.log(projectContainer);
