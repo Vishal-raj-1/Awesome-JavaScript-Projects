@@ -14,9 +14,16 @@ async function searchSongs(term) {
 
 function showData(data) {
   if (!data && window.realData) data = window.realData;
-  console.log(data);
-  window.realData = data;
-  result.innerHTML = `
+  console.log(data.data.length);
+  if (data.data.length === 0) {
+    window.dataLength = data.data.length;
+    return (result.innerHTML = `
+      <p>No Results Found.</p>
+      <p>Try something different</p>
+    `);
+  } else {
+    window.realData = data;
+    result.innerHTML = `
     <ul class="songs">
       ${data.data
         .map(
@@ -29,8 +36,8 @@ function showData(data) {
     </ul>
   `;
 
-  if (data.prev || data.next) {
-    more.innerHTML = `
+    if (data.prev || data.next) {
+      more.innerHTML = `
       ${
         data.prev
           ? `<button class="btn" onclick="getMoreSongs('${data.prev}')">Prev</button>`
@@ -42,8 +49,9 @@ function showData(data) {
           : ""
       }
     `;
-  } else {
-    more.innerHTML = "";
+    } else {
+      more.innerHTML = "";
+    }
   }
 }
 
@@ -62,7 +70,6 @@ async function getLyrics(artist, songTitle) {
     result.innerHTML = data.error;
   } else {
     const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, "<br>");
-    console.log("realData", window.realData);
     result.innerHTML = `
             <h2><strong>${artist}</strong> - ${songTitle}</h2>
             <span>${lyrics}</span>
