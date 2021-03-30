@@ -366,6 +366,11 @@ let projectData = [
     projectImage: 'assets/GIFs/typewriter.gif',
     projectUrl: 'public/typewriter.html',
   },
+  {
+    projectName: 'Tip Calculator',
+    projectImage: 'assets/Images/Tip-Calculator.png',
+    projectUrl: 'public/Tip-Calculator.html',
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
