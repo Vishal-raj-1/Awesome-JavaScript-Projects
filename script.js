@@ -35,9 +35,21 @@ let projectData = [
     projectUrl: 'public/Dynamic-quotegenerator.html',
   },
   {
+
+    projectName: "Translator-App",
+    projectImage: "assets/GIFs/minions.gif",
+    projectUrl: "public/translatorMinions.html",
+  },
+  {
+    projectName: "Local Storage",
+    projectImage: "assets/Images/localstorage.jpeg",
+    projectUrl: "public/localstorage.html",
+  },
+  {
     projectName: 'Counter',
     projectImage: 'assets/GIFs/counter.gif',
     projectUrl: 'public/counter.html',
+
   },
   {
     projectName: 'Local Storage',
@@ -366,10 +378,16 @@ let projectData = [
     projectUrl: 'public/typewriter.html',
   },
   {
+    projectName: "Pagination",
+    projectImage: "assets/Images/Pagination.png",
+    projectUrl: "public/Pagination.html",
+  },
+  {
     projectName: "Age Calculator",
     projectImage: "assets/Images/AgeCalculator.png",
     projectUrl: "public/AgeCalculator.html",
   }
+
 ];
 
 
