@@ -16,7 +16,7 @@ function getData(){
       char.forEach(function(el){
             actor += `
             
-            <div class="charecter-card data-aos="fade-up"">
+            <div class="charecter-card" data-aos="fade-up">
         <div class="charecter-container box-one">
             <img src="${el.image}" id="charecter-img">
             <h4 id="actor-name">${el.actor}</h4>
