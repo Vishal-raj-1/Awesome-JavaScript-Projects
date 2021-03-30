@@ -1,7 +1,8 @@
 let projectData = [
  {
   projectname: 'And Or Xor Converter',
-  projectUrl: 'public/AND,OR,XOR Converter.html',
+   projectImage: 'assets/GIFs/AND_OR_XOR_Converter.gif',
+  projectUrl: 'public/AND_OR_XOR_Converter.html',
 
  },
   {
