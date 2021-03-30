@@ -10,6 +10,11 @@ let projectData = [
     projectUrl: "public/calculator.html",
   },
   {
+    projectName: "SGPA and CGPA calculator",
+    projectImage: "assets/Images/sgpa_and_cgpa.jpg",
+    projectUrl: "public/sgpa_and_cgpa.html",
+  },
+  {
     projectName: "Color Flipper",
     projectImage: "assets/GIFs/colorFlipper.gif",
     projectUrl: "public/color-flipper.html",
