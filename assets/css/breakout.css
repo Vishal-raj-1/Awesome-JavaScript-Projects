@@ -68,3 +68,9 @@ canvas {
 .rules.show {
   transform: translateX(0);
 }
+
+@media (max-width:800px){
+    canvas{
+      width: 100%;
+    }
+}
