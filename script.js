@@ -205,6 +205,17 @@ let projectData = [
     projectUrl: 'public/Weather_app.html',
   },
   {
+
+    projectName: "Github User Finder",
+    projectImage: "assets/GIFs/github_finder.gif",
+    projectUrl: "public/github_finder.html",
+  },
+  {
+    projectName: "User list filter",
+    projectImage: "assets/GIFs/UserListFilter.gif",
+    projectUrl: "public/UserListFilter.html",
+  },
+  {
     projectName: 'Animated Minion Eyes',
     projectImage: 'assets/GIFs/Minion-Eyes.gif',
     projectUrl: 'public/Minion-Eyes.html',
