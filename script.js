@@ -16,7 +16,7 @@ let projectData = [
   },
   {
     projectName: "Color Flipper",
-    projectImage: "assets/GIFs/colorFlipper.gif",
+    projectImage: "assets/GIFs/color-flipper.gif",
     projectUrl: "public/color-flipper.html",
   },
   {
