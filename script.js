@@ -35,9 +35,21 @@ let projectData = [
     projectUrl: 'public/Dynamic-quotegenerator.html',
   },
   {
+
+    projectName: "Translator-App",
+    projectImage: "assets/GIFs/minions.gif",
+    projectUrl: "public/translatorMinions.html",
+  },
+  {
+    projectName: "Local Storage",
+    projectImage: "assets/Images/localstorage.jpeg",
+    projectUrl: "public/localstorage.html",
+  },
+  {
     projectName: 'Counter',
     projectImage: 'assets/GIFs/counter.gif',
     projectUrl: 'public/counter.html',
+
   },
   {
     projectName: 'Local Storage',
@@ -219,6 +231,17 @@ let projectData = [
     projectImage: "assets/GIFs/RGB_Color.gif",
     projectUrl: "public/RGB_Color_Guessing_Game.html",
   },
+    projectName: "Github User Finder",
+    projectImage: "assets/GIFs/github_finder.gif",
+    projectUrl: "public/github_finder.html",
+  },
+  {
+    projectName: "User list filter",
+    projectImage: "assets/GIFs/UserListFilter.gif",
+    projectUrl: "public/UserListFilter.html",
+  },
+  {
+
     projectName: 'Animated Minion Eyes',
     projectImage: 'assets/GIFs/Minion-Eyes.gif',
     projectUrl: 'public/Minion-Eyes.html',
@@ -368,6 +391,11 @@ let projectData = [
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
     projectUrl: 'public/typewriter.html',
+  },
+  {
+    projectName: "Pagination",
+    projectImage: "assets/Images/Pagination.png",
+    projectUrl: "public/Pagination.html",
   },
 
 ];

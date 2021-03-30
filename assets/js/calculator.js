@@ -61,6 +61,7 @@ function calculateExpression(exp) {
                 }                
             }
             if(isOperator > 0 && !next) {
+
                 exp.splice(i, 0, ')');
                 isOperator --;
                 i++;               
@@ -94,10 +95,12 @@ function calculateExpression(exp) {
     // exp = exp.split('P(').join('P(,');
 
 
+
     let movedValue = []; 
 
     for(let p=0; p<exp.length; p++) {
        }
+
 
     console.log('exp:', exp);
     try {
