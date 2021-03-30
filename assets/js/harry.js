@@ -12,10 +12,9 @@ function getData(){
          //console.log(herry)
     }).then((data) => {
       let char = data;
-      var actor = "";
+      var herrypotter = "";
       char.forEach(function(el){
-            actor += `
-            
+        herrypotter += `
             <div class="charecter-card" data-aos="fade-up">
         <div class="charecter-container box-one">
             <img src="${el.image}" id="charecter-img">
@@ -38,12 +37,10 @@ function getData(){
                 </ul>
             </div>
         </div>
-    </div>
-
-            `;
+    </div> `;
       });
-            container.innerHTML = actor;
-            console.log(char);
+         container.innerHTML = herrypotter;
+        console.log(char);
     })
     
 }
