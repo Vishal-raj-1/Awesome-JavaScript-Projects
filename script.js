@@ -35,9 +35,21 @@ let projectData = [
     projectUrl: 'public/Dynamic-quotegenerator.html',
   },
   {
+
+    projectName: "Translator-App",
+    projectImage: "assets/GIFs/minions.gif",
+    projectUrl: "public/translatorMinions.html",
+  },
+  {
+    projectName: "Local Storage",
+    projectImage: "assets/Images/localstorage.jpeg",
+    projectUrl: "public/localstorage.html",
+  },
+  {
     projectName: 'Counter',
     projectImage: 'assets/GIFs/counter.gif',
     projectUrl: 'public/counter.html',
+
   },
   {
     projectName: 'Local Storage',
