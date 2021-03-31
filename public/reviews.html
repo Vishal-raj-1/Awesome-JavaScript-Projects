@@ -4,85 +4,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <style>
-        body{
-            text-align: center;
-            background-color: #d6e9f7;
-        }
-        h1{
-            margin-top: 6rem;
-        }
-        .container{
-            width: 40%;
-            margin: auto;
-            background-color: white;
-            box-shadow: 10px 12px 21px rgb(109, 147, 211);
-        }
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-        img{
-            width: 150px;
-            height: 150px;
-            box-shadow: 11px -2px rgb(38, 146, 213);
-            border-radius: 50%;
-            margin: 12px;
+      *,
+      ::after,
+      ::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+        background: hsl(210, 36%, 96%);
+        color: hsl(209, 61%, 16%);
+        line-height: 1.5;
+        font-size: 0.875rem;
+      }
+      ul {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        letter-spacing: 0.1rem;
+        text-transform: capitalize;
+        line-height: 1.25;
+        margin-bottom: 0.75rem;
+        font-family: "Roboto", sans-serif;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.25rem;
+      }
+      h4 {
+        font-size: 0.875rem;
+      }
+      p {
+        margin-bottom: 1.25rem;
+        color:  hsl(210, 22%, 49%);
+      }
+      @media screen and (min-width: 800px) {
+        h1 {
+          font-size: 4rem;
         }
+        h2 {
+          font-size: 2.5rem;
+        }
+        h3 {
+          font-size: 1.75rem;
+        }
+        h4 {
+          font-size: 1rem;
+        }
+        body {
+          font-size: 1rem;
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+          line-height: 1;
+        }
+      }
 
-        button{
-            margin: .3rem .6rem;
-            background-color: transparent;
-            border: none;
-            color:rgb(38, 146, 213) ;
+      .section {
+        padding: 5rem 0;
+      }
+      
+      .section-center {
+        width: 90vw;
+        margin: 0 auto;
+        max-width: 1170px;
+      }
+      @media screen and (min-width: 992px) {
+        .section-center {
+          width: 95vw;
         }
-
-        #random-btn{
-            border: 2px solid rgb(38, 146, 213);
-            padding: 8px;
-            border-radius: 15%;
-        }
-
-        #random-btn:hover{
-            background-color: rgb(38, 146, 213);
-            color: black;
-        }
-
-        #name, #job{
-            margin: .1rem;
-            text-transform: capitalize;
-        }
-
-        #info{
-            padding: 3px .8rem;
-        }
+      }
+      main {      
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      
+      .title {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+      .underline {
+        height: 0.25rem;
+        width: 5rem;
+        background: hsl(205, 78%, 60%);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .container {
+        width: 80vw;
+        max-width: 620px;
+      }
+      .review {
+        background: #fff;
+        padding: 1.5rem 2rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s linear;
+        text-align: center;
+      }
+      .review:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .img-container {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+      }
+      #person-img {
+        width: 100%;
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        position: relative;
+      }
+      .img-container::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f10e";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        transform: translateY(25%);
+        background: hsl(205, 78%, 60%);
+        color: #fff;
+      }
+      .img-container::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: hsl(205, 78%, 60%);
+        position: absolute;
+        top: -0.25rem;
+        right: -0.5rem;
+        border-radius: 50%;
+      }
+      #name {
+        margin-bottom: 0.25rem;
+      }
+      #job {
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        color: hsl(205, 78%, 60%);
+        font-size: 0.85rem;
+      }
+      #info {
+        margin-bottom: 0.75rem;
+      }
+      #prev-btn,
+      #next-btn {
+        color: hsl(205, 90%, 76%);
+        font-size: 1.25rem;
+        background: transparent;
+        border-color: transparent;
+        margin: 0 0.5rem;
+        transition: all 0.3s linear;
+        cursor: pointer;
+      }
+      #prev-btn:hover,
+      #next-btn:hover {
+        color: hsl(205, 78%, 60%);
+      }
+      #random-btn {
+        margin-top: 0.5rem;
+        background: hsl(205, 100%, 96%);
+        color: hsl(205, 78%, 60%);
+        padding: 0.25rem 0.5rem;
+        text-transform: capitalize;
+        border-radius: 0.25rem;
+        transition: all 0.3s linear;
+        border-color: hsl(205, 78%, 60%);
+        cursor: pointer;
+      }
+      #random-btn:hover {
+        background: hsl(205, 78%, 60%);
+        color: hsl(205, 86%, 17%);
+      }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Our Reviews</h1>
-        <span></span>
-        <div class="container">
-            <img src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg" alt="">
-            <div>
-                <h3 id="name">Susan Smith</h3>
-                <p id="job">web developer</p>
-                <p id="info">
-                    I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry
-                </p>
+    <main>
+        <section class="container">
+            <div class="title">
+                <h2>Our Reviews</h2>
+                <div class="underline"></div>
             </div>
+            <article class="review">
+                <div class="img-container">
+                    <img id="person-img" src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg" alt="">
+                </div>
+                <h3 id="name">Susan Smith</h3>
+                    <p id="job">web developer</p>
+                    <p id="info">
+                        I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry
+                    </p>
+                    <div class="button-container">
+                        <button id="prev-btn">
+                          <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button id="next-btn">
+                          <i class="fas fa-chevron-right"></i>
+                        </button>
+                      </div>
+        
+                      <button id="random-btn">Surprise Me</button>
+            </article>
+        </section>
+    </main>
 
-            <div class="button-container">
-                <button id="prev-btn">
-                  <i class="fas fa-chevron-left"></i>
-                </button>
-                <button id="next-btn">
-                  <i class="fas fa-chevron-right"></i>
-                </button>
-              </div>
-
-              <button id="random-btn">Surprise Me</button>
-        </div>
-    </div>
-
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="../assets/js/reviews.js"></script>
+   <script src="../assets/js/reviews.js"></script>
 </body>
 </html>
