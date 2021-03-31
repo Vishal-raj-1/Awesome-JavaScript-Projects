@@ -199,7 +199,7 @@ let projectData = [
   {
     projectName: "Rock Paper Scissors Game",
     projectImage: "assets/Images/r-p-s/rps.gif",
-    projectUrl: "public/Rock-paper-sesssior.html",
+    projectUrl: "public/Rock-paper-scissors.html",
   },
   {
     projectName: 'Day Of the Week',
