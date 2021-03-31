@@ -356,8 +356,8 @@ let projectData = [
     projectUrl: 'public/typewriter.html',
   },
   {
-    projectName: 'Falling Bullets Animation JS',
-    projectImage: 'https://media.giphy.com/media/LvZkyieRRxr24YoHJU/giphy.gif',
+    projectName: 'Color Changing Falling Bullets Animation JS',
+    projectImage: 'assets/GIFs/FallingBulletsAnimation.gif',
     projectUrl: 'public/FallingBulletsAnimation.html',
   },
 ];
