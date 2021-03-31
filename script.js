@@ -190,7 +190,7 @@ let projectData = [
     projectUrl: "public/hangman.html",
   },
   {
-    projectName: "Rock Paper Sessior Game",
+    projectName: "Rock Paper Scissor Game",
     projectImage: "assets/Images/r-p-s/rps.gif",
     projectUrl: "public/Rock-paper-sesssior.html",
   },
