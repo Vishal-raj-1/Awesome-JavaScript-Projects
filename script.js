@@ -383,6 +383,11 @@ let projectData = [
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
   },
+  {
+    projectName: "Spotify Finder",
+    projectImage: "assets/Images/SpotifyFinder.png",
+    projectUrl: "public/SpotifyFinder.html",
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
