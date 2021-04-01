@@ -1,6 +1,7 @@
 :root {
-  --main-font:  "monospace","montserrat", sans-serif;
-  --drum-font:  "monospace","open sans", sans-serif;
+ 
+  --background: #cc0066;
+  --text:#ffcce6;
 }
 
 * {
@@ -13,7 +14,8 @@ body {
   font-family: "montserrat", sans-serif;
   height: 100%;
   text-align: center;
-  /*background-image: url(assets/back.gif);*/
+  background: var(--background);
+  
 }
 
 header {
@@ -80,6 +82,40 @@ footer p {
   color: #ffffff;
   font-family: monospace;
   font-size: x-large;
+}
+
+/*effects on button*/
+.util__buttons{
+  margin-top: 40px;
+}
+.util__buttons >button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background: var(--background);
+  color: var(--text);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.util__buttons:hover {background: var(--background)}
+.util__buttons:active {
+  background: var(--background);
+  color: var(--text);
+   transform: translateY(4px);
+}
+#util__button-theme{
+  color: var(--background);
+  background: var(--text);
+}
+.pressed{
+  opacity: 1;
+  box-shadow: -1px -2px 9px var(--background);
 }
 
 /* for smaller devices*/

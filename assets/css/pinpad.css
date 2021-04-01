@@ -1,0 +1,108 @@
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color: antiquewhite;
+  }
+  
+  .pad{
+    border: 10px solid black;
+    width:22%;
+    height:450px;
+    border-radius: 10px;
+  }
+  
+  .toppad{
+    background-color:aqua;
+    width:100%;
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .screen{
+    width:300px;
+    height:100px;
+    background-color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 5px solid black;
+  }
+  
+  .screen p{
+    color:black;
+    font-size:40px;
+    margin:0;
+    padding:0 5px;
+    background-color:white;
+    text-align:center;
+    width:280px;
+  }
+  
+  .bottompad{
+    width:100%;
+    height:300px;
+    background-color:aqua;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .buttonholder{
+    padding:10px;
+    height:250px;
+    width:250px;
+    background-color:black;
+    border: 2px solid black;
+  }
+  
+  .holder{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    height:85px;
+  }
+  
+  .button{
+    width:80px;
+    height:80px;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:maroon;
+    color:white;
+    font-size:30px;
+  }
+
+  .button:hover{
+    background-color: #3e8e41;
+    cursor:pointer;
+  }
+  
+  .invalid{
+    font-size:10px;
+    color:red;
+  }
+  <style>
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+  
+  .correct{
+    font-size:10px;
+  }
