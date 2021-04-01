@@ -342,11 +342,11 @@ let projectData = [
     projectImage: 'assets/Images/palindrome.jpg',
     projectUrl: 'public/palindrome.html',
   },
-  /*{
+  {
     projectName: "DarkMode",
     projectImage: "assets/Images/DarkMode2.jpeg",
     projectUrl: "public/DarkMode.html"
-   },*/
+   },
   {
     projectName: 'Blurry Loading Interface',
     projectImage: 'assets/GIFs/Blurry_Loading_Interface.gif',
@@ -372,7 +372,6 @@ let projectData = [
     projectImage: 'assets/GIFs/wordScramble.gif',
     projectUrl: 'public/wordScramble.html',
   },
-  ,
   {
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
@@ -388,7 +387,6 @@ let projectData = [
     projectImage: 'assets/GIFs/TV_ShowSearch.gif',
     projectUrl: "public/TV_ShowSearch.html",
   },
-
 ];
 
 let projectContainer = document.getElementById('js-projects');
