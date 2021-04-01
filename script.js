@@ -383,6 +383,11 @@ let projectData = [
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
   },
+  {
+    projectName: "Tip Calculator",
+    projectImage: "assets/GIFs/Tip-Calculator.gif",
+    projectUrl: "public/Tip-Calculator.html",
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
