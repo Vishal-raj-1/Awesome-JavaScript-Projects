@@ -287,6 +287,12 @@ i#menuClose{
 .bannerIllustration img{
     width: 500px;
 }
+
+.shadow:hover{
+    text-shadow: 1px 1px 2.5px #87CEEB;
+
+}
+
 @-webkit-keyframes up-down{
     0%{
         transform: translateY(10px);
