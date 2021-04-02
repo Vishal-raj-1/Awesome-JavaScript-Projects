@@ -1,0 +1,21 @@
+.icon-remove,
+.icon-check {
+  display : none;
+}
+
+.mbody {
+  background-color : white !important;
+  border : 2px solid DodgerBlue !important;
+}
+
+.message-header {
+  background-color : DodgerBlue !important;
+}
+
+.delete {
+  background-color : black;
+}
+
+.message-body li {
+  font-size : 20px;
+}
