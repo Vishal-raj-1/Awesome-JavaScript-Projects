@@ -194,6 +194,11 @@ let projectData = [
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html",
   },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakout.gif",
+    projectUrl: "public/Breakout.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
