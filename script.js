@@ -383,6 +383,11 @@ let projectData = [
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
   },
+  {
+    projectName: "Speech Recognization",
+    projectImage: "assets/Images/speech-recognization.PNG",
+    projectUrl: "public/speech-recognization.html",
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
