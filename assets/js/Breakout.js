@@ -1,8 +1,5 @@
 function playClassic() {
 	document.getElementById("startButtonContainer").innerHTML = "";
-
-
-
 	//global variables
 	var canvas = document.getElementById("myCanvas");
 	var ctx = canvas.getContext("2d");
@@ -15,23 +12,14 @@ function playClassic() {
 	var lives = 3;
 	var frameRate = 6;
 	var brickColors = ["#CD3ECF", "#FA5255", "#FF811E", "#0CB01C", "#6B64FF"];
-
-
-
 	//paddle details
 	var paddleHeight = 12;
 	var paddleWidth = 90;
 	var paddleX = (canvas.width - paddleWidth) / 2;
 	var paddleY = (canvas.height - paddleHeight);
-
-
-
 	//keypress booleans
 	var rightPressed = false;
 	var leftPressed = false;
-
-
-
 	//bricks variables
 	var brickRowCount = 5;
 	var brickColumnCount = 9;
@@ -41,8 +29,6 @@ function playClassic() {
 	var brickOffsetTop = 30;
 	var brickOffsetLeft = 30;
 	var brickRessurect = 800;
-
-
 	//bricks initialization
 	var bricks = []; //2d array to store bricks
 	for (c = 0; c < brickColumnCount; c++) {
@@ -55,17 +41,10 @@ function playClassic() {
 			};
 		}
 	}
-
-
-
 	//Event Listeners
 	document.addEventListener("keydown", keyDownHandler, false);
 	document.addEventListener("keyup", keyUpHandler, false);
 	document.addEventListener("mousemove", mouseMoveHandler, false);
-
-
-
-
 	//Event Handlers
 	function keyDownHandler(e) {
 		if (e.keyCode == 39)
@@ -73,7 +52,6 @@ function playClassic() {
 		else if (e.keyCode == 37)
 			leftPressed = true;
 	}
-
 	function keyUpHandler(e) {
 		if (e.keyCode == 39)
 			rightPressed = false;
@@ -87,10 +65,6 @@ function playClassic() {
 			paddleX = relativeX - paddleWidth / 2;
 		}
 	}
-
-
-
-
 	//Drawing objects functions
 	function drawBall() {
 		ctx.beginPath();
@@ -137,34 +111,22 @@ function playClassic() {
 			}
 		}
 	}
-
 	function drawScore() {
 		ctx.font = "16px Arial";
 		ctx.fillStyle = "#008000";
 		ctx.fillText("Score: " + score, 8, 20);
 	}
-
 	function drawLives() {
 		ctx.font = "16px Arial";
 		ctx.fillStyle = "#008000";
 		ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
 	}
-
-
-
-
-
 	//Collision Detection
 	function collisionDetection() {
 		for (c = 0; c < brickColumnCount; c++) {
 			for (r = 0; r < brickRowCount; r++) {
 				var b = bricks[c][r];
-
-
-
-
 				//for vertical collision
-
 				if (b.status == 1) {
 					if (x > b.x - ballRadius && x < b.x + brickWidth + ballRadius) {
 						if (dy > 0) {
@@ -190,12 +152,7 @@ function playClassic() {
 						}
 					}
 				}
-
-
-
-
 				//for horizontal collision
-
 				if (b.status == 1) {
 					if (y > b.y - ballRadius && y < b.y + ballRadius + brickHeight) {
 						if (dx > 0) {
@@ -221,19 +178,9 @@ function playClassic() {
 						}
 					}
 				}
-
-
-
-
-
 			}
 		}
 	}
-
-
-
-
-
 	//main repetitive draw function
 	function draw() {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -267,9 +214,6 @@ function playClassic() {
 				paddleX = (canvas.width - paddleWidth) / 2;
 			}
 		}
-
-
-
 		if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
 			dx = -dx;
 		}
@@ -281,9 +225,6 @@ function playClassic() {
 			paddleX -= 7;
 		//requestAnimationFrame(draw);
 	}
-
-
-
 	setInterval(draw, frameRate);
 	//draw();
 }
