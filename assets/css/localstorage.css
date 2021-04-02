@@ -13,10 +13,10 @@ html{
 *,
 *:before,
 *:active {
-    box-sizing: inherit;
+    /* box-sizing: inherit; */
 }
 
-svg {
+.logo{
     fill: white;
     background: rgba(0,0,0,0.1);
     padding: 20px;
@@ -37,7 +37,14 @@ h2{
     margin: 0;
     font-weight: 200;
 }
-
+.refresh{
+    color:rgb(109, 109, 109);
+    float: right;
+    cursor: pointer;
+}
+.refresh:hover{
+    color:rgb(56, 56, 56);
+}
 .plates {
     margin: 0;
     padding: 0;
@@ -78,4 +85,16 @@ h2{
     padding: 10px;
     outline: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.delete{
+    font-size: 20px;
+    cursor: pointer;
+    color:#333333;
+}
+.delete path{
+    pointer-events: none;
+}
+.delete:hover{
+    color: rgba(201, 3, 3, 0.973);
 }
