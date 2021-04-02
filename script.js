@@ -391,7 +391,7 @@ let projectData = [
   {
     projectName: "FoodRecipe",
     projectImage: "assets/GIFs/foodRecipe.gif",
-    projectUrl: "public/foodRecipes.html",
+    projectUrl: "public/foodRecipe.html",
   },
 ];
 
