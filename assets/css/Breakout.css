@@ -2,22 +2,17 @@
 	padding: 0;
 	margin: 0;
 }
-
 body {
 	background-color: rgb(49, 6, 27);
 }
-
-
 div {
 	text-align: center;
 }
-
 canvas {
 	background: #000;
 	display: block;
 	margin: 0 auto;
 }
-
 #startButtonClassic {
 	padding: 10px 30px;
 	border: 0px;
@@ -28,7 +23,6 @@ canvas {
 	font-size: 18px;
 	color: rgb(49, 6, 27);
 }
-
 #startButtonClassic:active {
 	background-color: #959595;
 }
