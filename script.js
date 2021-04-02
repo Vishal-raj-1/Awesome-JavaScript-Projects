@@ -288,6 +288,32 @@ let projectData = [
     projectUrl: 'public/MathQuiz.html',
   },
   {
+
+    projectName: "Animated Minion Eyes",
+    projectImage: "assets/GIFs/Minion-Eyes.gif",
+    projectUrl: "public/Minion-Eyes.html",
+  },
+  {
+    projectName: "Text To Speech",
+    projectImage: "assets/GIFs/speechText.gif",
+    projectUrl: "public/TextToSpeech.html",
+  },
+  {
+    projectName: "Recipe Finder",
+    projectImage: "assets/GIFs/recipie.gif",
+    projectUrl: "public/Recipie_finder.html",
+  },
+  {
+    projectName: "Github User Finder",
+    projectImage: "assets/GIFs/github_finder.gif",
+    projectUrl: "public/github_finder.html",
+  },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakout.gif",
+    projectUrl: "public/Breakout.html",
+  },
+  {
     projectName: 'Text to Voice Generator',
     projectImage: 'assets/GIFs/textToVoice.gif',
     projectUrl: 'public/textToVoice.html',
@@ -406,6 +432,11 @@ let projectData = [
     projectName: "Breakout!",
     projectImage: "assets/GIFs/breakouthere.gif",
     projectUrl: "public/breakout.html",
+  },
+  {
+    projectName: "FruitSlicer",
+    projectImage: "assets/GIFs/fruitSlicer.gif",
+    projectUrl: "public/fruitSlicer.html",
   },
 ];
 
