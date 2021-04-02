@@ -408,6 +408,11 @@ let projectData = [
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
   },
+  {
+    projectName: "FruitSlicer",
+    projectImage: "assets/GIFs/fruitSlicer.gif",
+    projectUrl: "public/fruitSlicer.html",
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
