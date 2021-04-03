@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exchange Rate Calculator</title>
-    <link rel="stylesheet" href="ExchangeRate.css" />
+    <link rel="stylesheet" href="/assets/css/ExchangeRate.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <img src="ExchangeRate.png" alt="" class="money-img" />
+    
     <h1>Exchange Rate Calculator</h1>
+
     <p>Choose the currency and the amounts to get the exchange rate</p>
 
     <div class="container">
-      <div class="currency">
+
+      <!-- Currency-1 -->
+      <div class="currency-1">
+        <!-- Image-1 -->
+        <img src="/assets/Images/money.png" alt="Image-1">
+
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+
         <select id="currency-one">
           <option value="AED">AED</option>
           <option value="ARS">ARS</option>
@@ -68,17 +80,15 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number" id="amount-one" placeholder="0" value="1" />
       </div>
 
-      <div class="swap-rate-container">
-        <button class="btn" id="swap">
-          Swap
-        </button>
-        <div class="rate" id="rate"></div>
-      </div>
+      <!-- Currency-2 -->
+      <div class="currency-2">
+        <!-- Image-2 -->
+        <img style="transform: rotateY(180deg);" src="/assets/Images/money.png" alt="Image-2">
 
-      <div class="currency">
+        <input type="number" id="amount-two" placeholder="0" />
+        
         <select id="currency-two">
           <option value="AED">AED</option>
           <option value="ARS">ARS</option>
@@ -133,10 +143,23 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number" id="amount-two" placeholder="0" />
       </div>
-    </div>
 
-    <script src="ExchangeRate.js"></script>
+    </div>
+      
+    
+        <!-- SWAP Button -->
+        <div class="swap">
+          <img id="exchange-img" src="/assets/Images/exchange.png" alt="">
+          <button class="btn" id="swap">
+            Swap
+          </button>
+        </div>
+        
+
+      <!-- Exchange Rate Value -->
+      <div class="rate" id="rate"></div>
+
+    <script src="/assets/js/ExchangeRate.js"></script>
   </body>
 </html>
