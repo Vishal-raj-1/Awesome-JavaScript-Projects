@@ -55,6 +55,11 @@ let projectData = [
     projectUrl: "public/BouncingBalls.html",
   },
   {
+    projectName: 'Auto-Text',
+    projectImage: 'assets/GIFs/auto-text.gif',
+    projectUrl: 'public/auto-text.html',
+  },
+  {
     projectName: "Reviews",
     projectImage: "assets/GIFs/reviews.gif",
     projectUrl: "public/reviews.html",
