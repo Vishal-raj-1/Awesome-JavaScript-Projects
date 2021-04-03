@@ -1,5 +1,10 @@
 let projectData = [
    {
+    projectName: 'Tubelight-text',
+    projectImage: 'assets/GIFs/Tubelight-text.gif',
+    projectUrl: 'public/Tubelight-text.html',
+  },
+   {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
