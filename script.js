@@ -439,6 +439,11 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
+    projectName: "Spotify Finder",
+    projectImage: "assets/Images/SpotifyFinder.png",
+    projectUrl: "public/SpotifyFinder.html",
+  },
+  {
     projectName: "Breakout!",
     projectImage: "assets/GIFs/breakouthere.gif",
     projectUrl: "public/breakout.html",
