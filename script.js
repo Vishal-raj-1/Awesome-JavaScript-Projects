@@ -453,6 +453,11 @@ let projectData = [
     projectImage: "assets/GIFs/fruitSlicer.gif",
     projectUrl: "public/fruitSlicer.html",
   },
+  {
+     projectName: "Image Editor",
+    projectImage: "assets/GIFs/Image_editor.gif",
+    projectUrl: "public/Image_editor.html",
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
