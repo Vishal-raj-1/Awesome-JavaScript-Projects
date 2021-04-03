@@ -258,6 +258,21 @@ let projectData = [
     projectUrl: 'public/UserListFilter.html',
   },
   {
+    projectName: "Yoga App",
+    projectImage: "assets/GIFs/yoga.gif",
+    projectUrl: "public/yoga.html",
+  },
+  {
+    projectName: "Flip Cards",
+    projectImage: "assets/GIFs/flipped.gif",
+    projectUrl: "public/flipcards.html",
+  },
+  {
+    projectName: "Device Info",
+    projectImage: "assets/GIFs/DeviceInfo.gif",
+    projectUrl: "public/deviceInfo.html",
+  },
+  {
     projectName: 'Particle JS Project',
     projectImage: 'assets/GIFs/Particle.gif',
     projectUrl: 'public/Particle.html',
@@ -281,6 +296,32 @@ let projectData = [
     projectName: 'Math Quiz for kids 🙂 ',
     projectImage: 'assets/Images/MathQuiz.jpg',
     projectUrl: 'public/MathQuiz.html',
+  },
+  {
+
+    projectName: "Animated Minion Eyes",
+    projectImage: "assets/GIFs/Minion-Eyes.gif",
+    projectUrl: "public/Minion-Eyes.html",
+  },
+  {
+    projectName: "Text To Speech",
+    projectImage: "assets/GIFs/speechText.gif",
+    projectUrl: "public/TextToSpeech.html",
+  },
+  {
+    projectName: "Recipe Finder",
+    projectImage: "assets/GIFs/recipie.gif",
+    projectUrl: "public/Recipie_finder.html",
+  },
+  {
+    projectName: "Github User Finder",
+    projectImage: "assets/GIFs/github_finder.gif",
+    projectUrl: "public/github_finder.html",
+  },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakout.gif",
+    projectUrl: "public/Breakout.html",
   },
   {
     projectName: 'Text to Voice Generator',
@@ -348,6 +389,16 @@ let projectData = [
     projectUrl: 'public/StudyTimer.html',
   },
   {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "Progress bar",
+    projectImage: "assets/GIFs/progressbar.png",
+    projectUrl: "public/progressbar.html",
+  },
+  {
     projectName: 'Palindrome Checker',
     projectImage: 'assets/Images/palindrome.jpg',
     projectUrl: 'public/palindrome.html',
@@ -383,6 +434,11 @@ let projectData = [
     projectUrl: 'public/wordScramble.html',
   },
   {
+    projectName: "Flip cards",
+    projectImage: "assets/GIFs/flipped.gif",
+    projectUrl: "public/flipcards.html",
+  },
+  {
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
     projectUrl: 'public/typewriter.html',
@@ -391,6 +447,16 @@ let projectData = [
     projectName: "Pagination",
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
+  },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakouthere.gif",
+    projectUrl: "public/breakout.html",
+  },
+  {
+    projectName: "FruitSlicer",
+    projectImage: "assets/GIFs/fruitSlicer.gif",
+    projectUrl: "public/fruitSlicer.html",
   },
 ];
 
