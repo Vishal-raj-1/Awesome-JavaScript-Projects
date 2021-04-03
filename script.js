@@ -453,6 +453,11 @@ let projectData = [
     projectImage: "assets/GIFs/fruitSlicer.gif",
     projectUrl: "public/fruitSlicer.html",
   },
+  {
+    projectName: "Falling Bullets Animation JS",
+    projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
+    projectUrl: "public/FallingBulletsAnimation.html",
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
