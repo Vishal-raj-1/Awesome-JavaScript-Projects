@@ -440,6 +440,11 @@ let projectData = [
     projectUrl: "public/flipcards.html",
   },
   {
+    projectName: "Form Wave Animation",
+    projectImage: "assets/GIFs/Form_Wave_Animation.gif",
+    projectUrl: "public/Form_Wave_Animation.html",
+},
+  {
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
     projectUrl: 'public/typewriter.html',
@@ -465,9 +470,16 @@ let projectData = [
     projectUrl: "public/fruitSlicer.html",
   },
   {
+
     projectName: "Simon's Game",
     projectImage: "assets/Images/Simon-s-Game.png",
     projectUrl: "public/simon.html",
+  },
+  
+  {
+    projectName: "Falling Bullets Animation JS",
+    projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
+    projectUrl: "public/FallingBulletsAnimation.html",
   },
 ];
 
