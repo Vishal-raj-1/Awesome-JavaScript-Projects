@@ -338,6 +338,16 @@ let projectData = [
     projectImage: 'assets/GIFs/DeviceInfo.gif',
     projectUrl: 'public/deviceInfo.html',
   },
+ {
+
+        projectName: "love Calculator",
+        projectImage: "assets/GIFs/loveCalculator.gif",
+        projectUrl: "public/loveCalculator.html",
+    },
+    {
+      projectName: "Live Code Editor",
+      projectImage: "assets/GIFs/LiveEditor.gif.gif",
+      projectUrl: "public/Live_Code_Editor.html",
   {
     projectName: 'Color Picker and Converter',
     projectImage: 'assets/GIFs/ColorPickerConverter.gif',
