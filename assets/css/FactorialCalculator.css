@@ -12,6 +12,8 @@ body {
     margin: 100px auto;
     color: #000;
 }
+
+/* Heading */
 .display-2 {
     font-family: 'Architects Daughter', cursive;
     margin: 30px auto 0px;
@@ -22,19 +24,33 @@ hr {
     width: 75%;
     border-top: 2px solid black !important;
 }
+
+/* Main Content */
 .form-box {
     margin: 20px;
     padding: 20px 20px 0px;
 }
+
+/* Input Form */
 .form-group {
     width: 18rem;
     margin: 10px;
 }
+.form-control {
+    border-color: black;
+    color: #000;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.5);
+    border-color: black;
+}
+
+/* Submit Button */
 .btn {
     width: 50% !important;
 }
 .btn-outline-primary {
-    color: #000 !important;
+    color: #000;
     border-color: black !important;
 }
 .btn-outline-primary:hover {
@@ -44,19 +60,16 @@ hr {
 .btn-outline-primary:focus {
     box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.5) !important;
 }
-.form-control {
-    border-color: black !important;
-    color: #000 !important;
-}
-.form-control:focus{
-    box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.5) !important;
-    border-color: black !important;
-}
+
+
+/* Answer  */
 #answer {
     font-size: 50px;
     font-family: 'RocknRoll One', sans-serif;
 }
 
+
+/* Footer */
 .footer {
     font-family: 'Architects Daughter', cursive;
     width: 100%;
@@ -73,6 +86,8 @@ a {
 i {
     color: red;
 }
+
+/* Media Queries */
 
 /* Small (sm) devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {

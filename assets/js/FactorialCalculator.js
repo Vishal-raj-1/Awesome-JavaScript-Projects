@@ -1,11 +1,11 @@
 function factorial () {
 
-    var x = document.getElementById("number").value;
+    const x = document.getElementById("number").value;
 
-    var fact = 1;
-    for (var i=1; i<=x; i++) {
+    let fact = 1;
+    for (let i=1; i<=x; i++) {
         fact = fact * i;
     }
 
-    document.getElementById("answer").innerHTML = x + "! = " + fact;
+    document.getElementById("answer").innerHTML = `${x}! = ${fact}`;
 }
