@@ -16,7 +16,7 @@ let projectData = [
   },
   {
     projectName: 'Color Flipper',
-    projectImage: 'assets/GIFs/colorFlipper.gif',
+    projectImage: 'assets/GIFs/color-flipper.gif',
     projectUrl: 'public/color-flipper.html',
   },
   {
@@ -207,9 +207,9 @@ let projectData = [
     projectUrl: 'public/hangman.html',
   },
   {
-    projectName: 'Rock Paper Sessior Game',
+    projectName: 'Rock Paper Scissors Game',
     projectImage: 'assets/Images/r-p-s/rps.gif',
-    projectUrl: 'public/Rock-paper-sesssior.html',
+    projectUrl: 'public/Rock-paper-scissor.html',
   },
   {
     projectName: 'Weather App',
@@ -217,7 +217,21 @@ let projectData = [
     projectUrl: 'public/Weather_app.html',
   },
   {
-
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "MemeUrl",
+    projectImage: "assets/GIFs/memeUrl.png",
+    projectUrl: "public/memeUrl.html",
+  },
+  {
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html",
@@ -228,6 +242,7 @@ let projectData = [
     projectUrl: "public/UserListFilter.html",
   },
   {
+
     projectName: 'Animated Minion Eyes',
     projectImage: 'assets/GIFs/Minion-Eyes.gif',
     projectUrl: 'public/Minion-Eyes.html',
@@ -323,6 +338,16 @@ let projectData = [
     projectImage: 'assets/GIFs/DeviceInfo.gif',
     projectUrl: 'public/deviceInfo.html',
   },
+ {
+
+        projectName: "love Calculator",
+        projectImage: "assets/GIFs/loveCalculator.gif",
+        projectUrl: "public/loveCalculator.html",
+    },
+    {
+      projectName: "Live Code Editor",
+      projectImage: "assets/GIFs/LiveEditor.gif.gif",
+      projectUrl: "public/Live_Code_Editor.html",
   {
     projectName: 'Color Picker and Converter',
     projectImage: 'assets/GIFs/ColorPickerConverter.gif',
