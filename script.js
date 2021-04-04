@@ -217,7 +217,21 @@ let projectData = [
     projectUrl: 'public/Weather_app.html',
   },
   {
-
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "MemeUrl",
+    projectImage: "assets/GIFs/memeUrl.png",
+    projectUrl: "public/memeUrl.html",
+  },
+  {
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html",
@@ -228,6 +242,7 @@ let projectData = [
     projectUrl: "public/UserListFilter.html",
   },
   {
+
     projectName: 'Animated Minion Eyes',
     projectImage: 'assets/GIFs/Minion-Eyes.gif',
     projectUrl: 'public/Minion-Eyes.html',
@@ -463,6 +478,7 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
+
 ];
 
 let projectContainer = document.getElementById('js-projects');
