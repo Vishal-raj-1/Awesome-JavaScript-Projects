@@ -4,7 +4,7 @@ body{
     font-family:sans-serif;
     padding: 30px;
     text-align: center;
-    background-image: url("bg.png");
+    background-image: url("../Images/bg.png");
     background-repeat: repeat;
     font-family: 'Dela Gothic One', cursive;
 }
