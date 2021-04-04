@@ -17,11 +17,11 @@
         <h1 class="heading text-center">Stop Watch</h1>
         <div class="stopwatch text-center">00:00:00</div>
         <div class="controls text-center">
-            <button onclick="start()" class="btn">Start</button>
-            <button onclick="stop()" class="btn">Stop</button>
-            <button onclick="reset()" class="btn">Reset</button>
-            <button onclick="lap()" class="btn">Lap</button>
-            <button onclick="resetlaps()" class="btn">Reset Laps</button>
+            <button id="start" onclick="start()" class="btn">Start</button>
+            <button id="stop" onclick="stop()" class="btn hidden">Stop</button>
+            <button id="reset" onclick="reset()" class="btn hidden">Reset</button>
+            <button id="lap" onclick="lap()" class="btn hidden">Lap</button>
+            <button id="resetlaps" onclick="resetlaps()" class="btn hidden">Reset Laps</button>
         </div>
         <ul class="laps text-center font-weight-bold my-2"></ul>
     </div>
