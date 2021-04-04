@@ -16,6 +16,9 @@ function preload(){
     earthq=loadStrings("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv");
 
 }
+//this is the Web Mercator projection formula
+//that i have used here
+//in this i have used P5 framework ,usgs government API and mapbox API for showing the data on map.
 
 function merX(lon) {
     lon = radians(lon);
@@ -32,6 +35,7 @@ function merX(lon) {
     return a * c;
   }
   
+// this is to create a canvas and for showing the data on map feed
   
   function setup(){
     createCanvas(1024,512);
@@ -49,9 +53,7 @@ function merX(lon) {
         var magnitude=Data[4];
         var x=merX(lon)-cx;
         var y=merY(lat)-cy;
-        
-
-
+       
         magnitude=pow(10,magnitude);
         magnitude=sqrt(magnitude);
         var magmx=sqrt(pow(10,10));
@@ -59,7 +61,6 @@ function merX(lon) {
         var diameter=map(magnitude,0,magmx,0,180);
         stroke(255,0,0);
         fill(255,0,100,200);
-       
         ellipse(x,y,diameter,diameter);
     }
     
@@ -67,6 +68,7 @@ function merX(lon) {
 
 
 }
+// submitted by abhimanyu
 
 
 
