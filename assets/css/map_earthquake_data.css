@@ -5,7 +5,7 @@ body{
         background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
 
       }
-      p.name{
+p.name{
         text-align: center;
         text-shadow: 1px 1px 1px #ccc;
         font-size: 25px;
@@ -15,7 +15,7 @@ body{
         text-transform: uppercase;
         
       }
-      .bttn{
+.bttn{
         background-color:#D76D77;
         color:black;
         border-radius: 15px;
@@ -26,4 +26,4 @@ body{
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
-      }
+     }
