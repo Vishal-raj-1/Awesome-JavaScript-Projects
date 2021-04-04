@@ -10,6 +10,11 @@ let projectData = [
     projectUrl: 'public/note-app.html',
   },
   {
+    projectName: 'Music Player',
+    projectImage: 'assets/GIFs/Music_Player.gif',
+    projectUrl: 'public/MusicPlayer.html',
+  },
+  {
     projectName: 'Calculator',
     projectImage: 'assets/GIFs/calculator.gif',
     projectUrl: 'public/calculator.html',
@@ -348,6 +353,7 @@ let projectData = [
       projectName: "Live Code Editor",
       projectImage: "assets/GIFs/LiveEditor.gif.gif",
       projectUrl: "public/Live_Code_Editor.html",
+    },
   {
     projectName: 'Color Picker and Converter',
     projectImage: 'assets/GIFs/ColorPickerConverter.gif',
