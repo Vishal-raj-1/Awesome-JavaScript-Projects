@@ -4,6 +4,7 @@ function fun() {
 		document.getElementById("result").innerHTML = "Type something !";
 		return false;
 	} else {
+		val=val.toLowerCase();
 		val = val.split("");
 		for (var i = 0; i < val.length; i++) {
 			if (val[i] == " ") {
