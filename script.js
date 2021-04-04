@@ -10,14 +10,14 @@ let projectData = [
     projectUrl: "public/note-app.html",
   },
   {
-    projectName: "Color Flipper",
-    projectImage: "assets/GIFs/color-flipper.gif",
-    projectUrl: "public/color-flipper.html",
-  },
-  {
     projectName: "Calculator",
     projectImage: "assets/GIFs/calculator.gif",
     projectUrl: "public/calculator.html",
+  },
+  {
+    projectName: "Color Flipper",
+    projectImage: "assets/GIFs/color-flipper.gif",
+    projectUrl: "public/color-flipper.html",
   },
   {
     projectName: "Dynamic Quote Generator",
