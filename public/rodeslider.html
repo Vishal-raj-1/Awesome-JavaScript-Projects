@@ -1,0 +1,36 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>
+            Rode Slider Game 
+        </title>
+        <!-- Required Links -->
+        <link rel="icon" href="https://icons.iconarchive.com/icons/google/noto-emoji-activities/1024/52761-video-game-icon.png">
+        <link rel="stylesheet" href="../assets/css/rodeslider.css" >
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    </head>
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="../assets/Images/rodesliderback.mp4" type="video/mp4">
+          </video>
+        <div id="score_div" >
+            <p id="score" >Your Score:<br>0</p>
+        </div>
+        <div id="start_game" >
+            <p id="para" >Want to play the game! Click the start button below!!
+                <br> &nbsp;&nbsp;&nbsp;  (Press "a" for moving rods left and "d" for right)
+            </p>
+            <button id="start_game_button" >START</button>
+        </div>
+        <div id="rod1" >ROD 1</div>
+        <i id="ball" class="fa fa-bullseye" aria-hidden="true"></i>
+        <div id="rod2" >ROD 2</div>
+
+
+        <script src="../assets/js/rodeslider.js" ></script>
+    </body>
+</html>

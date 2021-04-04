@@ -1,0 +1,36 @@
+body{
+    background-color: darkslategrey;
+    }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.para{
+background-color: aqua;
+text-align: center;
+margin-left: 40vh;
+margin-right: 40vh;
+}   
+
+#Image{
+position:absolute;
+height:450px;
+padding-right: 10vh;
+padding-top: 25vh;;
+padding-left:60vh;
+width: 450px;
+background-position: center;
+justify-content: flex-end;
+
+}  
+
+.switches{
+padding-left: 7vh;
+height:6vh;
+width:6vh;
+padding-top: 25vh;
+}

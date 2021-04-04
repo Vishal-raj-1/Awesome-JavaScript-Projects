@@ -93,13 +93,13 @@ function showNotes(){
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col">
-                    <h5 class="card-title">${element.title}</h5>
+                    <h2 class="card-title">${element.title}</h2>
                 <p class="card-text">${element.text}</p>
                 </div>
                 <div class="col-2">
                 <span class="iconify" data-icon=${element.favorite ? "bi:star-fill":"bi:star"} data-inline="false" data-width="24" data-height="24" style=${element.favorite ? "color:gold":"color:black"} onclick=favoriteNote(${index})></span>
                 </div>
-            </div>
+            </div>  
             <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
             <button onclick="editNote(${index})"  class="btn btn-primary">Edit Note</button>
             

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/bookmarks.css">
+    <title>Bookmarks</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__left">
+        <h2>Bookmarks</h2>
+      </div>
+    </nav>
+
+    <section class="main">
+
+      <div class="main__left" id="mainDiv">
+      
+      </div>
+
+      <div class="main__right">
+
+          <form action="" id="form" class="inputValues">
+
+            <h1> Add New Bookmark </h1>
+            
+            <input type="text" class="input" name="title" id="title" autocomplete="off" placeholder="Title" required/>
+            <textarea type="text" rows="4" class="input" name="desc" id="desc" placeholder="Description" ></textarea>
+            <input type="url" class="input" name="url" id="url" autocomplete="off" placeholder="URL" required/>
+
+            <button class="formBtn">Add</button>
+          </form>
+          
+      </div>
+
+    </section>
+    <script src="../assets/js/bookmarks.js"></script>
+  </body>
+</html>
