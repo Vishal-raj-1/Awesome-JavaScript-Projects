@@ -415,14 +415,6 @@ let projectData = [
   },
 
   {
-    projectName: "Simon's Game",
-    projectImage: "assets/Images/Simons_s_Game.png",
-    projectUrl: "public/simon.html",
-  },
-
-  { projectName: "Bookmarks App",
-
-  {
     projectName: 'Connect Four',
     projectImage: 'assets/GIFs/connectFour.gif',
     projectUrl: 'public/connectFour.html',
@@ -471,6 +463,11 @@ let projectData = [
     projectName: "FruitSlicer",
     projectImage: "assets/GIFs/fruitSlicer.gif",
     projectUrl: "public/fruitSlicer.html",
+  },
+  {
+    projectName: "Simon's Game",
+    projectImage: "assets/Images/Simon-s-Game.png",
+    projectUrl: "public/simon.html",
   },
 ];
 
