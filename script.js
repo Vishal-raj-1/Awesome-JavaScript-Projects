@@ -447,7 +447,7 @@ let projectData = [
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
-},
+  },
   {
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
@@ -478,7 +478,11 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
-
+  {
+    projectName: 'Play-Beats',
+    projectImage: 'assets/GIFs/playbeats.gif',
+    projectUrl: 'public/Play-Beats.html',
+  }
 ];
 
 let projectContainer = document.getElementById('js-projects');
@@ -490,7 +494,7 @@ function getProjects() {
   let output = '';
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
