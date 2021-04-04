@@ -231,6 +231,7 @@ let projectData = [
     projectImage: "assets/GIFs/RGB_Color.gif",
     projectUrl: "public/RGB_Color_Guessing_Game.html",
   },
+  {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html",
