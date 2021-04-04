@@ -290,6 +290,11 @@ let projectData = [
     projectImage: "assets/Images/StudyTimer.png",
     projectUrl: "public/StudyTimer.html",
   },
+  {
+    projectName: "Mapping Earthquake Data",
+    projectImage: "assets/Images/earthquake.png",
+    projectUrl: "public/map_earthquake_data.html",
+  },
   { projectName: "Palindrome Checker",
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
