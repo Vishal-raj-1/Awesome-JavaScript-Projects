@@ -429,6 +429,11 @@ let projectData = [
     projectUrl: "public/flipcards.html",
   },
   {
+    projectName: "Form Wave Animation",
+    projectImage: "assets/GIFs/Form_Wave_Animation.gif",
+    projectUrl: "public/Form_Wave_Animation.html",
+},
+  {
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
     projectUrl: 'public/typewriter.html',
