@@ -151,7 +151,7 @@ let projectData = [
   },
   {
     projectName: "Word Counter",
-    projectImage: "assets/GIFs/wordCount.gif",
+    projectImage: "assets/GIFs/wordCounter.gif",
     projectUrl: "public/wordCounter.html",
   },
   {
