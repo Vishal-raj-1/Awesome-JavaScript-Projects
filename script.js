@@ -217,11 +217,6 @@ let projectData = [
     projectUrl: 'public/Weather_app.html',
   },
   {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
-    projectUrl: "public/textToVoice.html",
-  },
-  {
     projectName: "MemeUrl",
     projectImage: "assets/GIFs/memeUrl.png",
     projectUrl: "public/memeUrl.html",
@@ -326,7 +321,7 @@ let projectData = [
   {
     projectName: "Breakout!",
     projectImage: "assets/GIFs/breakout.gif",
-    projectUrl: "public/Breakout.html",
+    projectUrl: "public/breakout.html",
   },
   {
     projectName: 'Text to Voice Generator',
@@ -348,6 +343,8 @@ let projectData = [
       projectName: "Live Code Editor",
       projectImage: "assets/GIFs/LiveEditor.gif.gif",
       projectUrl: "public/Live_Code_Editor.html",
+    },
+      
   {
     projectName: 'Color Picker and Converter',
     projectImage: 'assets/GIFs/ColorPickerConverter.gif',
@@ -402,11 +399,6 @@ let projectData = [
     projectName: 'Study Timer',
     projectImage: 'assets/Images/StudyTimer.png',
     projectUrl: 'public/StudyTimer.html',
-  },
-  {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
-    projectUrl: "public/textToVoice.html",
   },
   {
     projectName: "Progress bar",
@@ -472,11 +464,6 @@ let projectData = [
     projectName: "Spotify Finder",
     projectImage: "assets/Images/SpotifyFinder.png",
     projectUrl: "public/SpotifyFinder.html",
-  },
-  {
-    projectName: "Breakout!",
-    projectImage: "assets/GIFs/breakouthere.gif",
-    projectUrl: "public/breakout.html",
   },
   {
     projectName: "FruitSlicer",
