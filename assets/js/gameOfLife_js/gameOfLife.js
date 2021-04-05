@@ -1,5 +1,5 @@
 // import pre-made formations
-import * as formations from "./formations.js";
+import { formations } from "./formations.js";
 
 // variables
 let canvas, canvasBound, ctx, w, h;
@@ -23,10 +23,18 @@ const init = () => {
     canvasBound = canvas.getBoundingClientRect();
     grid = make2dArray(rows, cols);
 
+    // assign initial formation
+    assignFormation(formations["walker"].cells);
+
     //drawing or animating
     draw();
 }
-
+const assignFormation = (arr) => {
+    grid = make2dArray(rows, cols);
+    for (let i = 0; i < arr.length; i++) {
+        grid[arr[i][0]][arr[i][1]] = 1;
+    }
+}
 const draw = () => {
     //clearing canvas by creating grid
     ctx.fillStyle = baseColor;
@@ -122,6 +130,7 @@ window.addEventListener("resize", () => {
 });
 
 //giving each cell the ability to live or die as the click
+let newPattern = [];
 const makeCellClickable = () => {
     canvas = document.getElementById("canvas");
     canvas.addEventListener("click", (e) => {
@@ -139,7 +148,8 @@ const makeCellClickable = () => {
         // draw the newly formed cell
         draw();
         // console.table(grid);
-        console.log("[" + pY + "," + pX + "]");
+        // console.log("[" + pY + "," + pX + "]");
+        newPattern.push([pX, pY]);
     });
 }
 
@@ -151,6 +161,7 @@ window.addEventListener("keydown", (e) => {
         if (animationState == "false") {
             animationState = setInterval(runLoop, 1000 / fps);
             console.log("Starting...");
+            console.log(newPattern);
         } else {
             clearInterval(animationState);
             animationState = "false";
