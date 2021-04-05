@@ -1,3 +1,7 @@
+// import pre-made formations
+import * as formations from "./formations.js";
+
+// variables
 let canvas, canvasBound, ctx, w, h;
 let grid, cols, rows;
 let animationState = "false";
@@ -17,7 +21,7 @@ const init = () => {
     canvas.width = cols * boxSize;
     canvas.height = rows * boxSize;
     canvasBound = canvas.getBoundingClientRect();
-    grid = make2Darray(rows, cols);
+    grid = make2dArray(rows, cols);
 
     //drawing or animating
     draw();
@@ -46,12 +50,12 @@ const draw = () => {
 }
 const update = () => {
     //A new grid to store next location of live cells
-    let newGrid = make2Darray(rows, cols);
+    let newGrid = make2dArray(rows, cols);
 
-    //conditions i.e actual conways game of life rules
+    //conditions i.e actual conway's game of life rules
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
-            let count = neighbours(grid, i, j);
+            let count = neighbors(grid, i, j);
 
             if (count == 3 && grid[i][j] != 1) {
                 newGrid[i][j] = 1;
@@ -68,7 +72,7 @@ const update = () => {
 }
 
 // function to check neighboring grid cells
-const neighbours = (arr, x, y) => {
+const neighbors = (arr, x, y) => {
     let sum = 0;
     for (let i = -1; i < 2; i++) {
         for (let j = -1; j < 2; j++) {
@@ -96,7 +100,7 @@ const runLoop = () => {
 }
 
 // generic function to make 2d arrays
-const make2Darray = (rows, cols) => {
+const make2dArray = (rows, cols) => {
     let arr = new Array(rows);
 
     for (let i = 0; i < arr.length; i++) {
