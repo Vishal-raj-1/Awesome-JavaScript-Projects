@@ -1,7 +1,8 @@
-let canvas, ctx, w, h;
+let canvas, canvasBound, ctx, w, h;
 let grid, cols, rows;
-let run = "false";
-let fps = 6, spacing = 4, boxSize = 20;
+let animationState = "false";
+let fps = 6, spacing = 2, boxSize = 20;
+let cellActiveColor = "#fff", cellColor = "#262626", baseColor = "#262626";
 
 const init = () => {
     //setting things up
@@ -15,29 +16,83 @@ const init = () => {
     rows = Math.floor(h / boxSize) - spacing;
     canvas.width = cols * boxSize;
     canvas.height = rows * boxSize;
+    canvasBound = canvas.getBoundingClientRect();
     grid = make2Darray(rows, cols);
 
     //drawing or animating
     draw();
-
 }
 
 const draw = () => {
     //clearing canvas by creating grid
+    ctx.fillStyle = baseColor;
     ctx.fillRect(0, 0, w, h);
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
+            if (grid[i][j] == 1) {
+                ctx.fillStyle = cellActiveColor;
+            } else {
+                ctx.fillStyle = cellColor;
+            }
             ctx.beginPath();
             ctx.lineWidth = 1;
             ctx.strokeStyle = "#fff";
-            ctx.fillStyle = "#262626";
             ctx.rect(j * boxSize, i * boxSize, boxSize - 1, boxSize - 1);
             ctx.fill();
             ctx.stroke();
             ctx.closePath();
-
         }
     }
+}
+const update = () => {
+    //A new grid to store next location of live cells
+    let newGrid = make2Darray(rows, cols);
+
+    //conditions i.e actual conways game of life rules
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            let count = neighbours(grid, i, j);
+
+            if (count == 3 && grid[i][j] != 1) {
+                newGrid[i][j] = 1;
+            } else if (grid[i][j] == 1 && (count < 2 || count > 3)) {
+                newGrid[i][j] = 0;
+            } else {
+                newGrid[i][j] = grid[i][j];
+            }
+        }
+    }
+
+    //assigning the newly created grid to the old grid to update the environment
+    grid = newGrid;
+}
+
+// function to check neighboring grid cells
+const neighbours = (arr, x, y) => {
+    let sum = 0;
+    for (let i = -1; i < 2; i++) {
+        for (let j = -1; j < 2; j++) {
+            let posX = x + i;
+            let posY = y + j;
+            if (posX > -1 && posX < rows && posY > -1 && posY < cols) {
+                if (arr[posX][posY] == 1) {
+                    sum++;
+                }
+            }
+        }
+    }
+
+    if (arr[x][y] == 1) {
+        return sum - 1;
+    } else {
+        return sum;
+    }
+}
+
+// loop to run and update the grid
+const runLoop = () => {
+    draw();
+    update();
 }
 
 // generic function to make 2d arrays
@@ -51,5 +106,51 @@ const make2Darray = (rows, cols) => {
 }
 
 //event listeners
-window.addEventListener("load", init);
-window.addEventListener("resize", init);
+window.addEventListener("load", () => {
+    init();
+    makeCellClickable();
+});
+window.addEventListener("resize", () => {
+    clearInterval(animationState);
+    animationState = "false";
+    console.log("Restarting...");
+    init();
+});
+
+//giving each cell the ability to live or die as the click
+const makeCellClickable = () => {
+    canvas = document.getElementById("canvas");
+    canvas.addEventListener("click", (e) => {
+        // console.log(e);
+        e.preventDefault();
+        let pX = Math.floor((e.clientX - canvasBound.x) / boxSize);
+        let pY = Math.floor((e.clientY - canvasBound.y) / boxSize);
+
+        if (grid[pY][pX] != 1) {
+            grid[pY][pX] = 1;
+        } else {
+            grid[pY][pX] = null;
+        }
+
+        // draw the newly formed cell
+        draw();
+        // console.table(grid);
+        console.log("[" + pY + "," + pX + "]");
+    });
+}
+
+//To start and pause
+window.addEventListener("keydown", (e) => {
+    e.preventDefault();
+    // console.log(e);
+    if (e.code == "Space") {
+        if (animationState == "false") {
+            animationState = setInterval(runLoop, 1000 / fps);
+            console.log("Starting...");
+        } else {
+            clearInterval(animationState);
+            animationState = "false";
+            console.log("Game stopped");
+        }
+    }
+});
