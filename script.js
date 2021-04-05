@@ -1,4 +1,5 @@
 let projectData = [
+
   {
     projectName: 'Pinpad',
     projectImage: 'assets/GIFs/pinpad.gif',
@@ -140,6 +141,16 @@ let projectData = [
     projectName: 'Text Generator',
     projectImage: 'assets/GIFs/textGenerator.gif',
     projectUrl: 'public/textGenerator.html',
+  },
+  {
+    projectName: 'Auto-Text',
+    projectImage: 'assets/GIFs/auto-text.gif',
+    projectUrl: 'public/auto-text.html',
+  },
+  {
+    projectName: "Reviews",
+    projectImage: "assets/GIFs/reviews.gif",
+    projectUrl: "public/reviews.html",
   },
   {
     projectName: 'New Year Count Down',
@@ -524,4 +535,17 @@ function getProjects() {
 
   projectContainer.innerHTML = output;
   console.log('projectContainer', projectContainer.innerHTML);
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("Navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
