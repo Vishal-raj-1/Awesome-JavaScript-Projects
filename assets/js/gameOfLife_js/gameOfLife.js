@@ -24,7 +24,7 @@ const init = () => {
     grid = make2dArray(rows, cols);
 
     // assign initial formation
-    assignFormation(formations["walker"].cells);
+    assignFormation(formations["beacon"].cells);
 
     //drawing or animating
     draw();
@@ -149,7 +149,7 @@ const makeCellClickable = () => {
         draw();
         // console.table(grid);
         // console.log("[" + pY + "," + pX + "]");
-        newPattern.push([pX, pY]);
+        newPattern.push([pY, pX]);
     });
 }
 
