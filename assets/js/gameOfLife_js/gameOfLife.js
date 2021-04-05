@@ -5,7 +5,7 @@ import { formations } from "./formations.js";
 let canvas, canvasBound, ctx, w, h;
 let grid, cols, rows;
 let animationState = "false";
-let fps = 6, spacing = 2, boxSize = 20;
+let fps = 15, spacing = 2, boxSize = 10;
 let cellActiveColor = "#fff", cellColor = "#262626", baseColor = "#262626";
 
 const init = () => {
@@ -24,7 +24,7 @@ const init = () => {
     grid = make2dArray(rows, cols);
 
     // assign initial formation
-    // assignFormation(formations["beacon"].cells);
+    assignFormation(formations["gosperGlider"].cells);
 
     //drawing or animating
     draw();
