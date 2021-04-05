@@ -17,8 +17,28 @@ const init = () => {
     canvas.height = rows * boxSize;
     grid = make2Darray(rows, cols);
 
+    //drawing or animating
+    draw();
+
 }
 
+const draw = () => {
+    //clearing canvas by creating grid
+    ctx.fillRect(0, 0, w, h);
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            ctx.beginPath();
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = "#fff";
+            ctx.fillStyle = "#262626";
+            ctx.rect(j * boxSize, i * boxSize, boxSize - 1, boxSize - 1);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+
+        }
+    }
+}
 
 // generic function to make 2d arrays
 const make2Darray = (rows, cols) => {
@@ -29,3 +49,7 @@ const make2Darray = (rows, cols) => {
     }
     return arr;
 }
+
+//event listeners
+window.addEventListener("load", init);
+window.addEventListener("resize", init);
