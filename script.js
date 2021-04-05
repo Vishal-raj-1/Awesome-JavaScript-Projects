@@ -220,6 +220,16 @@ let projectData = [
     projectUrl: "public/Weather_app.html",
   },
   {
+    projectName: "MemeUrl",
+    projectImage: "assets/GIFs/memeUrl.png",
+    projectUrl: "public/memeUrl.html",
+  },
+  {
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html",
@@ -230,9 +240,9 @@ let projectData = [
     projectUrl: "public/UserListFilter.html",
   },
   {
-    projectName: "Animated Minion Eyes",
-    projectImage: "assets/GIFs/Minion-Eyes.gif",
-    projectUrl: "public/Minion-Eyes.html",
+    projectName: 'Animated Minion Eyes',
+    projectImage: 'assets/GIFs/Minion-Eyes.gif',
+    projectUrl: 'public/Minion-Eyes.html',
   },
   {
     projectName: "RGB Color Guessing Game",
@@ -322,7 +332,7 @@ let projectData = [
   {
     projectName: "Breakout!",
     projectImage: "assets/GIFs/breakout.gif",
-    projectUrl: "public/Breakout.html",
+    projectUrl: "public/breakout.html",
   },
   {
     projectName: 'Text to Voice Generator',
@@ -334,6 +344,18 @@ let projectData = [
     projectImage: "assets/GIFs/DeviceInfo.gif",
     projectUrl: "public/deviceInfo.html",
   },
+ {
+
+        projectName: "love Calculator",
+        projectImage: "assets/GIFs/loveCalculator.gif",
+        projectUrl: "public/loveCalculator.html",
+    },
+    {
+      projectName: "Live Code Editor",
+      projectImage: "assets/GIFs/LiveEditor.gif.gif",
+      projectUrl: "public/Live_Code_Editor.html",
+    },
+      
   {
     projectName: "Color Picker and Converter",
     projectImage: "assets/GIFs/ColorPickerConverter.gif",
@@ -388,11 +410,6 @@ let projectData = [
     projectName: "Study Timer",
     projectImage: "assets/Images/StudyTimer.png",
     projectUrl: "public/StudyTimer.html",
-  },
-  {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
-    projectUrl: "public/textToVoice.html",
   },
   {
     projectName: "Progress bar",
@@ -460,11 +477,6 @@ let projectData = [
     projectUrl: "public/SpotifyFinder.html",
   },
   {
-    projectName: "Breakout!",
-    projectImage: "assets/GIFs/breakouthere.gif",
-    projectUrl: "public/breakout.html",
-  },
-  {
     projectName: "FruitSlicer",
     projectImage: "assets/GIFs/fruitSlicer.gif",
     projectUrl: "public/fruitSlicer.html",
@@ -474,6 +486,7 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
+
 ];
 
 let projectContainer = document.getElementById('js-projects');
