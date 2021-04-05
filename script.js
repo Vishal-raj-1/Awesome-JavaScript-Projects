@@ -448,6 +448,11 @@ let projectData = [
     projectImage: "assets/GIFs/fruitSlicer.gif",
     projectUrl: "public/fruitSlicer.html",
   },
+  {
+    projectName: "Computer Giveaway",
+    projectImage: "assets/Images/giveaway.jpg",
+    projectUrl: "public/giveaway.html",
+  }
 ];
 
 let projectContainer = document.getElementById('js-projects');
