@@ -127,6 +127,11 @@ let projectData = [
     projectUrl: 'public/Analogclock.html',
   },
   {
+    projectName: "Date Time Widget",
+    projectImage: "assets/GIFs/dateTimeWidget.gif",
+    projectUrl: "public/dateTimeWidget.html",
+  },
+  {
     projectName: 'Digital Clock',
     projectImage: 'assets/GIFs/digitalClock.gif',
     projectUrl: 'public/digitalClock.html',
@@ -450,8 +455,7 @@ let projectData = [
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
-},
-
+  },
   {
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
