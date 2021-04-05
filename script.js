@@ -312,8 +312,8 @@ let projectData = [
   {
     projectName: "Connect Four",
     projectImage: "assets/GIFs/connectFour.gif",
-    projectUrl: "public/connectFour.html"
-  }, 
+    projectUrl: "public/connectFour.html",
+  },
   {
     projectName: "Bookmarks App",
     projectImage: "assets/Images/BookMarks.jpg",
@@ -328,6 +328,11 @@ let projectData = [
     projectName: "Word Scramble Game",
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
+  },
+  {
+    projectName: "Memes Generator",
+    projectImage: "assets/Images/memeimages/memebg.png",
+    projectUrl: "public/Memegenerator.html",
   },
 ];
 
