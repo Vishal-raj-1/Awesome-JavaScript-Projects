@@ -480,6 +480,12 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
+   {
+    projectName: "JavaScript Dragon Game",
+    projectImage: "assets/Images/JavaScript Dragon Game.png",
+    projectUrl: "public/Dino game.html",
+  },
+
 
 ];
 
