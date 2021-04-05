@@ -24,7 +24,7 @@ const init = () => {
     grid = make2dArray(rows, cols);
 
     // assign initial formation
-    assignFormation(formations["beacon"].cells);
+    // assignFormation(formations["beacon"].cells);
 
     //drawing or animating
     draw();
@@ -130,7 +130,6 @@ window.addEventListener("resize", () => {
 });
 
 //giving each cell the ability to live or die as the click
-let newPattern = [];
 const makeCellClickable = () => {
     canvas = document.getElementById("canvas");
     canvas.addEventListener("click", (e) => {
@@ -149,8 +148,20 @@ const makeCellClickable = () => {
         draw();
         // console.table(grid);
         // console.log("[" + pY + "," + pX + "]");
-        newPattern.push([pY, pX]);
     });
+}
+
+const printAliveCellsArray = () => {
+    let res = "[";
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            if (grid[i][j] == 1) {
+                res += `[${i},${j}],`;
+            }
+        }
+    }
+    res += "]"
+    console.log(res);
 }
 
 //To start and pause
@@ -161,7 +172,7 @@ window.addEventListener("keydown", (e) => {
         if (animationState == "false") {
             animationState = setInterval(runLoop, 1000 / fps);
             console.log("Starting...");
-            console.log(newPattern);
+            printAliveCellsArray();
         } else {
             clearInterval(animationState);
             animationState = "false";
