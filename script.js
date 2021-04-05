@@ -26,9 +26,20 @@ let projectData = [
     projectUrl: 'public/movieSeatBooking.html',
   },
   {
+    projectName: "SGPA and CGPA calculator",
+    projectImage: "assets/Images/sgpa_and_cgpa.jpg",
+    projectUrl: "public/sgpa_and_cgpa.html",
+  },
+  {
+    projectName: "Color Flipper",
+    projectImage: "assets/GIFs/colorFlipper.gif",
+    projectUrl: "public/color-flipper.html",
+  },
+  {
     projectName: 'Movie Trailer App',
     projectImage: 'assets/GIFs/trailerAppGif.gif',
     projectUrl: 'public/movTrailer.html',
+
   },
   {
     projectName: 'Dynamic Quote Generator',
