@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma-rtl.css"
+          integrity="sha256-8c3iUwMTRp4NGIoybGwbQUO27Luo4DwwC27e+2IXGzM="
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/pinCodeSearch.css"/>
+    <title>Pin Code Tracker</title>
+  </head>
+  <body>
+    <section class="hero hero-body is-dark container">
+      <h1 class="title">India Location Info</h1>
+      <h2 class="subtitle">Enter a pincode to get the location info</h2>
+      <form id="zipForm">
+        <div class="field">
+          <div class="control has-icons-left has-icons-right">
+            <input class="input zip is-large is-hovered is-rounded" type="text" placeholder="Enter PinCode"/>
+            <span class="icon is-small is-left">
+              <i class="fa fa-map-marker"></i>
+            </span>
+            <span class="icon is-small is-right icon-check">
+              <i class="fa fa-check"></i>
+            </span>
+            <span class="icon is-small is-right icon-remove">
+              <i class="fa fa-remove"></i>
+            </span>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <br><br>
+    <div class="container">
+      <div id="output"></div>
+    </div>
+
+    <script src="../assets/js/PinCodeSearch.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Image Editor</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../assets/css/Image_editor.css">
+   </head>
+   <body>
+      <div id="top"></div>
+      <section class="container">
+         <div class="sec1" style="overflow-x: auto;">
+         <table cellpadding="10px">
+            <tr>
+               <td colspan="2" rowspan="2">
+                  <form id="img" onsubmit="fun()">
+                     <input type="text" placeholder="Enter Image URL" id="url">
+                     <input type="button" name="submit" value="Change image" onclick="fun()" id="btn">
+                     <!--<button type="submit">Change image</button>-->
+                  </form>
+                  <div id="ss">
+                  <img src="https://images.ctfassets.net/hrltx12pl8hq/4plHDVeTkWuFMihxQnzBSb/aea2f06d675c3d710d095306e377382f/shutterstock_554314555_copy.jpg" id="targetimg" alt="online-image"><br>
+                  <input type="button" id="btn" name="download" value="Click here to download an original image" onclick="down()" style="width: 100%; margin-top: 10px;">
+                  <!--<a href="" id="download" onclick="down()" download="abc.jpg">Click here to download an original image !</a>-->
+               <td></td>
+               <td>
+                  <div class="sec2">
+                     <form id="filter" class="filter">
+                        <p>
+                           <label for="blur">Blur</label><br>
+                           <input type="range" name="blur" id="blur" class="slider" min="0" value="0" max="">
+                        </p>
+                        <p>
+                           <label>Grayscale</label><br>
+                           <input type="range" name="grayscale" id="gs" class="slider" min="" max="100" value="0">
+                        </p>
+                        <p>
+                           <label>Sepia</label><br>
+                           <input type="range" name="sepia" id="sepia" class="slider" min="0" max="" value="0">
+                        </p>
+                        <p>
+                           <label>Hue-Rotate</label><br>
+                           <input type="range" name="hr" id="hr" class="slider" min="0" max="" value="0">
+                        </p>
+                        <p>
+                           <label>Opacity</label><br>
+                           <input type="range" name="op" id="op" class="slider" min="50" max="100" value="100">
+                        </p>
+                        <button type="reset" id="btn" style="width: 100%;">Reset</button>
+                     </form>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </section>
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" integrity="sha512-k8F8QynmFNURwbUJC8drKA+fo3YfNvjqKzStdydD6au+MzvxBoRnxH8E31RJXwDY9DrnEiPhh9wBoDSIxhkyHQ==" crossorigin="anonymous"></script>
+      <script src="../assets/js/Image_editor.js"></script>
+   </body>
+</html>
+

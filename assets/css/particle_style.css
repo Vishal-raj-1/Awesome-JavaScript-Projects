@@ -1,0 +1,45 @@
+body{
+  margin:0;
+  font: normal 16px Arial, Helvetica, sand-serif; 
+}
+html, body {
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#particles-js{
+  background:rgb(4, 46, 8);
+  height:100%;
+  width: 100%;
+  left:0;
+  top:0;
+}
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  color:rgb(51, 255, 0);
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+canvas{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  left:0;
+  top:0;
+  resize:none;
+}
+
