@@ -5,8 +5,10 @@ import { formations } from "./formations.js";
 let canvas, canvasBound, ctx, w, h;
 let grid, cols, rows;
 let animationState = "false";
-let fps = 25, spacing = 2, boxSize = 15;
-let cellActiveColor = "#fff", cellColor = "#262626", baseColor = "#262626";
+let fps = 25, spacing = 4, boxSize = 15;
+let cellActiveColor = "hsl(220,12%,80%)";
+let baseColor = "hsl(220,15%,17%)";
+let gridLine = "hsl(220, 30%,30%)";
 
 const init = () => {
     //setting things up
@@ -44,11 +46,11 @@ const draw = () => {
             if (grid[i][j] == 1) {
                 ctx.fillStyle = cellActiveColor;
             } else {
-                ctx.fillStyle = cellColor;
+                ctx.fillStyle = baseColor;
             }
             ctx.beginPath();
-            ctx.lineWidth = 1;
-            ctx.strokeStyle = "#fff";
+            ctx.lineWidth = 0.7;
+            ctx.strokeStyle = gridLine;
             ctx.rect(j * boxSize, i * boxSize, boxSize - 1, boxSize - 1);
             ctx.fill();
             ctx.stroke();
