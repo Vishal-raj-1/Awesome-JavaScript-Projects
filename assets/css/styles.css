@@ -312,7 +312,7 @@ i#menuClose{
     height: fit-content;
     margin-bottom: 20px;
 }
-.body h1{
+.body h2{
     color: #37517E;
     font-size: 30px;
     text-transform: uppercase;
@@ -362,6 +362,12 @@ i#menuClose{
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
+}
+.projectDescription h2{
+    color: #37517E;
+    font-size: 30px;
+    text-transform: uppercase;
+
 }
 .projectCard{
     position: relative;
