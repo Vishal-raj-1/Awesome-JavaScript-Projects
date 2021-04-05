@@ -5,7 +5,7 @@ import { formations } from "./formations.js";
 let canvas, canvasBound, ctx, w, h;
 let grid, cols, rows;
 let animationState = "false";
-let fps = 15, spacing = 2, boxSize = 10;
+let fps = 25, spacing = 2, boxSize = 15;
 let cellActiveColor = "#fff", cellColor = "#262626", baseColor = "#262626";
 
 const init = () => {
@@ -65,9 +65,9 @@ const update = () => {
         for (let j = 0; j < cols; j++) {
             let count = neighbors(grid, i, j);
 
-            if (count == 3 && grid[i][j] != 1) {
+            if (count == 3) {
                 newGrid[i][j] = 1;
-            } else if (grid[i][j] == 1 && (count < 2 || count > 3)) {
+            } else if (count < 2 || count > 3) {
                 newGrid[i][j] = 0;
             } else {
                 newGrid[i][j] = grid[i][j];
