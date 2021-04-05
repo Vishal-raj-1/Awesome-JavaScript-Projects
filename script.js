@@ -475,6 +475,11 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
+  {
+    projectName: "Progress Steps",
+    projectImage: "assets/GIFs/Progress_steps.gif",
+    projectUrl: "public/Progress_steps.html",
+  },
 
 ];
 
