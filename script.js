@@ -1,4 +1,5 @@
 let projectData = [
+
   {
     projectName: 'Pinpad',
     projectImage: 'assets/GIFs/pinpad.gif',
@@ -16,7 +17,7 @@ let projectData = [
   },
   {
     projectName: 'Color Flipper',
-    projectImage: 'assets/GIFs/colorFlipper.gif',
+    projectImage: 'assets/GIFs/color-flipper.gif',
     projectUrl: 'public/color-flipper.html',
   },
   {
@@ -127,6 +128,11 @@ let projectData = [
     projectUrl: 'public/Analogclock.html',
   },
   {
+    projectName: "Date Time Widget",
+    projectImage: "assets/GIFs/dateTimeWidget.gif",
+    projectUrl: "public/dateTimeWidget.html",
+  },
+  {
     projectName: 'Digital Clock',
     projectImage: 'assets/GIFs/digitalClock.gif',
     projectUrl: 'public/digitalClock.html',
@@ -135,6 +141,16 @@ let projectData = [
     projectName: 'Text Generator',
     projectImage: 'assets/GIFs/textGenerator.gif',
     projectUrl: 'public/textGenerator.html',
+  },
+  {
+    projectName: 'Auto-Text',
+    projectImage: 'assets/GIFs/auto-text.gif',
+    projectUrl: 'public/auto-text.html',
+  },
+  {
+    projectName: "Reviews",
+    projectImage: "assets/GIFs/reviews.gif",
+    projectUrl: "public/reviews.html",
   },
   {
     projectName: 'New Year Count Down',
@@ -207,9 +223,9 @@ let projectData = [
     projectUrl: 'public/hangman.html',
   },
   {
-    projectName: 'Rock Paper Sessior Game',
+    projectName: 'Rock Paper Scissors Game',
     projectImage: 'assets/Images/r-p-s/rps.gif',
-    projectUrl: 'public/Rock-paper-sesssior.html',
+    projectUrl: 'public/Rock-paper-scissor.html',
   },
   {
     projectName: 'Weather App',
@@ -217,7 +233,16 @@ let projectData = [
     projectUrl: 'public/Weather_app.html',
   },
   {
-
+    projectName: "MemeUrl",
+    projectImage: "assets/GIFs/memeUrl.png",
+    projectUrl: "public/memeUrl.html",
+  },
+  {
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html",
@@ -228,6 +253,7 @@ let projectData = [
     projectUrl: "public/UserListFilter.html",
   },
   {
+
     projectName: 'Animated Minion Eyes',
     projectImage: 'assets/GIFs/Minion-Eyes.gif',
     projectUrl: 'public/Minion-Eyes.html',
@@ -291,7 +317,12 @@ let projectData = [
 
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
-    projectUrl: "public/Minion-Eyes.html",
+    projectUrl: "public/Minion-Eyes.html"
+  },
+  {
+    projectName:"PingPong Game",
+    projectImage:"assets/GIFs/pingpong-image.gif",
+    projectUrl: "public/pingpong.html",
   },
   {
     projectName: "Text To Speech",
@@ -311,7 +342,7 @@ let projectData = [
   {
     projectName: "Breakout!",
     projectImage: "assets/GIFs/breakout.gif",
-    projectUrl: "public/Breakout.html",
+    projectUrl: "public/breakout.html",
   },
   {
     projectName: 'Text to Voice Generator',
@@ -323,6 +354,18 @@ let projectData = [
     projectImage: 'assets/GIFs/DeviceInfo.gif',
     projectUrl: 'public/deviceInfo.html',
   },
+ {
+
+        projectName: "love Calculator",
+        projectImage: "assets/GIFs/loveCalculator.gif",
+        projectUrl: "public/loveCalculator.html",
+    },
+    {
+      projectName: "Live Code Editor",
+      projectImage: "assets/GIFs/LiveEditor.gif.gif",
+      projectUrl: "public/Live_Code_Editor.html",
+    },
+      
   {
     projectName: 'Color Picker and Converter',
     projectImage: 'assets/GIFs/ColorPickerConverter.gif',
@@ -379,11 +422,6 @@ let projectData = [
     projectUrl: 'public/StudyTimer.html',
   },
   {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
-    projectUrl: "public/textToVoice.html",
-  },
-  {
     projectName: "Progress bar",
     projectImage: "assets/GIFs/progressbar.png",
     projectUrl: "public/progressbar.html",
@@ -423,6 +461,7 @@ let projectData = [
     projectImage: 'assets/GIFs/wordScramble.gif',
     projectUrl: 'public/wordScramble.html',
   },
+
   {
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
@@ -432,7 +471,7 @@ let projectData = [
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
-},
+  },
   {
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
@@ -444,14 +483,15 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
+
+    projectName: "Age Calculator",
+    projectImage: "assets/Images/AgeCalculator.png",
+    projectUrl: "public/AgeCalculator.html",
+  },
+  {
     projectName: "Spotify Finder",
     projectImage: "assets/Images/SpotifyFinder.png",
     projectUrl: "public/SpotifyFinder.html",
-  },
-  {
-    projectName: "Breakout!",
-    projectImage: "assets/GIFs/breakouthere.gif",
-    projectUrl: "public/breakout.html",
   },
   {
     projectName: "FruitSlicer",
@@ -459,11 +499,17 @@ let projectData = [
     projectUrl: "public/fruitSlicer.html",
   },
   {
+     projectName: "Image Editor",
+    projectImage: "assets/GIFs/Image_editor.gif",
+    projectUrl: "public/Image_editor.html",
+}, 
+  {
     projectName: "Falling Bullets Animation JS",
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
 ];
+
 
 let projectContainer = document.getElementById('js-projects');
 console.log(projectContainer);
@@ -492,4 +538,17 @@ function getProjects() {
 
   projectContainer.innerHTML = output;
   console.log('projectContainer', projectContainer.innerHTML);
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("Navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }

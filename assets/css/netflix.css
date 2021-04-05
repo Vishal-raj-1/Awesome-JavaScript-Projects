@@ -41,11 +41,13 @@ header img {
   background-color: #303030;
   outline: none;
 }
+
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
+
 }
 
 .movie {
@@ -90,6 +92,7 @@ main {
 .movie-info span.red {
   color: #e50914;
 }
+
 
 .overview {
   background-color: #fff;
@@ -160,4 +163,5 @@ main {
     padding: 0.5rem 0.6rem;
     width: 80%;
   }
+
 }
