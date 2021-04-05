@@ -1,10 +1,28 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- body {
-     background-color: #262626;
-     color: #fff;
- }
+body {
+    background-image: linear-gradient(to left,
+            rgba(0, 150, 150, 1) 20%,
+            rgba(0, 0, 0, 1));
+    background-color: #262626;
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#canvas {
+    background-color: #262626;
+    // border: 1px solid #fff;
+}

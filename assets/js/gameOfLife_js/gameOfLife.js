@@ -1,1 +1,31 @@
-console.log("hello");
+let canvas, ctx, w, h;
+let grid, cols, rows;
+let run = "false";
+let fps = 6, spacing = 4, boxSize = 20;
+
+const init = () => {
+    //setting things up
+    canvas = document.getElementById("canvas");
+
+    ctx = canvas.getContext("2d");
+    canvas.width = w = window.innerWidth;
+    canvas.height = h = window.innerHeight;
+
+    cols = Math.floor(w / boxSize) - spacing;
+    rows = Math.floor(h / boxSize) - spacing;
+    canvas.width = cols * boxSize;
+    canvas.height = rows * boxSize;
+    grid = make2Darray(rows, cols);
+
+}
+
+
+// generic function to make 2d arrays
+const make2Darray = (rows, cols) => {
+    let arr = new Array(rows);
+
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = new Array(cols);
+    }
+    return arr;
+}
