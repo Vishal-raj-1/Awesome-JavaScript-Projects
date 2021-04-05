@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+body{
+    font-family:sans-serif;
+    padding: 30px;
+    text-align: center;
+    background-image: url("../Images/ballonSplash.png");
+    background-repeat: repeat;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+
+/* For Scroll Bar  */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  /* Background */
+  ::-webkit-scrollbar-track-piece{
+      background: #212121;
+  }
+
+.wrapper{
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.blue {
+    color:#3f7abe;
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+}
+
+#balloon-gallery div{
+    background: #ff3300;
+    height: 121px;
+    width: 119px;
+    text-align: center;
+    color: #ff3300;
+    font-size: 40px;
+    font-family: sans-serif, arial;
+    border-radius: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    margin: 10px;
+    /* float: left; */
+    margin: 2.5px 5 px 2.5px 0px;
+}
+
+#balloon-gallery div:nth-child(3n){
+    background: #ffce00;
+    color: #ffce00;
+}
+
+#balloon-gallery div:nth-child(3n-1){
+    background:#3f7abe;
+    color:#3f7abe;
+}
+
+#balloon-gallery div:nth-child(5n){
+    background:#8e7a8e;
+    color:#8e7a8e;
+}
+
+#balloon-gallery div:nth-child(13){
+    background:#8e7a8e;
+    color:#8e7a8e;
+}
+
+#balloon-gallery div:nth-child(10n){
+    background:#ff3300;
+    color: #ff3300;
+}
+
+#balloon-gallery div:nth-child(4n){
+    clear:right;
+}
+
+#yay-no-balloons {
+    display:none;
+    color:#ff3300;
+    font-size:100px;
+}
+
+
+/* Footer */
+footer{
+    margin-top: 20px;
+    margin-bottom: -40px;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
