@@ -475,7 +475,11 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
-
+  {
+    projectName: 'Giphy-Search',
+    projectImage: 'assets/GIFs/Giphy-Search.gif',
+    projectUrl: 'public/Giphy-Search.html',
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
