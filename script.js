@@ -451,6 +451,7 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
+
   {
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
@@ -472,6 +473,12 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
+
+    projectName: "Age Calculator",
+    projectImage: "assets/Images/AgeCalculator.png",
+    projectUrl: "public/AgeCalculator.html",
+  },
+  {
     projectName: "Spotify Finder",
     projectImage: "assets/Images/SpotifyFinder.png",
     projectUrl: "public/SpotifyFinder.html",
@@ -482,12 +489,19 @@ let projectData = [
     projectUrl: "public/fruitSlicer.html",
   },
   {
+     projectName: "Image Editor",
+    projectImage: "assets/GIFs/Image_editor.gif",
+    projectUrl: "public/Image_editor.html",
+}, 
+  {
     projectName: "Falling Bullets Animation JS",
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
 
+
 ];
+
 
 let projectContainer = document.getElementById('js-projects');
 console.log(projectContainer);
