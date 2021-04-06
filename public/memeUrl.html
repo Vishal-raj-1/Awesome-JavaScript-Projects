@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEME URL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- had to add additional css file as the above css file is contradicting with the index.html -->
+    <!-- adding font caveat -->
+    <link rel="style" href="../assets/css/memeurl.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-3">
+        <h1>Welcome to MemeUrl</h1>
+        <small><b>Your Meme Delight!</b></small>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Add a MEME</h3>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" id="addTitle" rows="3" placeholder="Insert a cool caption">
+                </div>
+                <div class="form-group mb-3">
+                    <input type="url" class="form-control" id="addTxt" placeholder="Paste a image url"></input>
+                    <input type="hidden" id="saveindex"></input>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add meme</button>
+                <button class="btn btn-primary" id="saveBtn" style="display: none;">Save</button>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h1>MEME's</h1>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" style="float: right;" id="fav-btn"> Favorites </button>
+            </div>
+        </div>
+        <hr>
+        <!-- Notes will be added or removed from here using app.js -->
+        <div id="notes" class="container-fluid row"></div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="../assets/js/memeUrl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+    </script>
+    <script>
+        window.addEventListener('load', addDarkmodeWidget);
+        const options = {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.9s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#fff',  // default: '#100f2c'
+            buttonColorLight: '', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+</body>
+
+</html>
