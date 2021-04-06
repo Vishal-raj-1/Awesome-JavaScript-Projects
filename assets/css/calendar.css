@@ -1,0 +1,91 @@
+body {
+    background-color: chartreuse;
+}
+* {
+    box-sizing: content-box;
+}
+i {
+    position: fixed;
+    cursor: pointer;
+}
+#prev {
+    top: 60%;
+    left: 10%;
+}
+#next {
+    top: 60%;
+    right: 10%;
+}
+i:hover {
+    transform: scale(2);
+}
+.block {
+    height: 100vh;
+    width: 100vw;
+}
+.data {
+    border: 1px solid grey;
+    margin-top: 80px;
+    width: 50%;
+    padding: 10px;
+}
+.form-row {
+    width: 100%;
+    
+}
+.buttons {
+    width: 70%;
+}
+.box {
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+#cala {
+    border: 1px solid grey;
+}
+h1{
+    
+    font-family: 'Stick', sans-serif;
+    color: rgb(0, 0, 0);
+}
+hr {
+    border-top: 2px solid grey;
+    margin-bottom: 20px;
+    width: 60%;
+}
+table {
+    border-collapse: unset;
+}
+
+th, td {
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px 15px;
+    width: 100px;
+    margin: 5px;
+}
+
+th {
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    font-weight: lighter;
+}
+td {
+    color: black;
+    background-color: rgba(199, 181, 181, 0.363);
+}
+
+#today {
+    background-color: aqua;
+}
+
+#goto {
+    
+    background-color: yellow;
+    
+}
+.btn {
+    width: 100%;
+}
