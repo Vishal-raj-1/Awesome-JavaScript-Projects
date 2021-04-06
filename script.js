@@ -458,6 +458,11 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
+  {
+    projectName: "Grocery Bud",
+    projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
+    projectUrl: "public/FallingBulletsAnimation.html",
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
