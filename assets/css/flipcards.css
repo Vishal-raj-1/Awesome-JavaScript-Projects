@@ -188,3 +188,51 @@ h1 button {
   min-width: 500px;
   max-width: 100%;
 }
+@media only screen and (max-width: 515px) {
+  .cards{
+    width:450px;
+    margin-left: 0.5rem;
+  }
+  .navigation{
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .cards{
+    width:400px;
+    margin-left: 2rem;
+  }
+  .navigation{
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .cards{
+    width:350px;
+    margin-left:2.9rem;
+  }
+  .navigation{
+    margin-left: 3rem;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .cards{
+    width:300px;
+    margin-left:4.6rem;
+  }
+  .navigation{
+    margin-left: 3rem;
+  }
+}
+@media only screen and (max-width: 345px) {
+  .cards{
+    width:270px;
+    margin-left:6.9rem;
+  }
+  .navigation{
+    margin-left: 5rem;
+  }
+  #clear{
+    margin-left: 2rem;
+  }
+}
