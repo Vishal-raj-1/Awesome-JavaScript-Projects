@@ -368,6 +368,11 @@ let projectData = [
     projectUrl: 'public/ExchangeRate.html',
   },
   {
+    projectName: 'Flappy Bird',
+    projectImage: 'assets/Images/FlappyBird/FlappyBirdDemo',
+    projectUrl: 'public/flappybird.html',
+  },
+  {
     projectName: 'Word Scramble Game',
     projectImage: 'assets/GIFs/wordScramble.gif',
     projectUrl: 'public/wordScramble.html',
