@@ -1,0 +1,74 @@
+.btn.dropdown-toggle {
+    width: 150px;
+    text-align: left;
+  }
+  
+  span.caret {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+  }
+  
+  label {
+    padding-top: 5px;
+  }
+  
+  .form-label {
+    padding-left: 0px !important;
+  }
+  
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  
+  .btn-success {
+    background-color: #3b7d4a !important;
+  }
+  
+  .btn-success:hover {
+    background-color: #4daf64 !important;
+  }
+  
+  img.track {
+    border: 1px solid #8a8a8a;
+  }
+  
+  .holder {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .genre {
+    font-size: 2rem;
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #4caf50;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4caf50;
+    color: white;
+  }
