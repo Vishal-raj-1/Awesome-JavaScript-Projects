@@ -1,5 +1,9 @@
 let projectData = [
-
+   {
+    projectName: 'Tubelight-text',
+    projectImage: 'assets/GIFs/Tubelight-text.gif',
+    projectUrl: 'public/Tubelight-text.html',
+  },
   {
     projectName: "Pinpad",
     projectImage: "assets/GIFs/pinpad.gif",
@@ -29,11 +33,6 @@ let projectData = [
     projectName: "SGPA and CGPA calculator",
     projectImage: "assets/Images/sgpa_and_cgpa.jpg",
     projectUrl: "public/sgpa_and_cgpa.html",
-  },
-  {
-    projectName: "Color Flipper",
-    projectImage: "assets/GIFs/colorFlipper.gif",
-    projectUrl: "public/color-flipper.html",
   },
   {
     projectName: 'Movie Trailer App',
@@ -81,11 +80,6 @@ let projectData = [
     projectUrl: "public/molegame.html",
   },
   {
-    projectName: "Click and Drag",
-    projectImage: "assets/GIFs/clickandDrag.gif",
-    projectUrl: "public/clickanddrag.html",
-  },
-  {
     projectName: "Bouncing Balls",
     projectImage: "assets/GIFs/bouncingBalls.gif",
     projectUrl: "public/BouncingBalls.html",
@@ -94,6 +88,11 @@ let projectData = [
     projectName: "Reviews",
     projectImage: "assets/GIFs/reviews.gif",
     projectUrl: "public/reviews.html",
+  },
+  {
+    projectName: "Click and Drag Image Slider",
+    projectImage: "assets/GIFs/clickandDrag.gif",
+    projectUrl: "public/clickanddrag.html",
   },
   {
     projectName: "Stop Watch",
@@ -201,9 +200,9 @@ let projectData = [
     projectUrl: "public/QRCode.html",
   },
   {
-    projectName: "Word Counter",
-    projectImage: "assets/GIFs/wordCount.gif",
-    projectUrl: "public/wordCounter.html",
+    projectName: 'Word Counter',
+    projectImage: 'assets/GIFs/wordCounter.gif',
+    projectUrl: 'public/wordCounter.html',
   },
   {
     projectName: "Tic Tac Toe Game",
