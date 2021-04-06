@@ -1,35 +1,27 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/breakout.css" />
+    <title>Breakout!</title>
+  </head>
+  <body>
+    <h1>Breakout!</h1>
+    <button id="rules-btn" class="btn rules-btn">Show Rules</button>
+    <div id="rules" class="rules">
+      <h2>How To Play:</h2>
+      <p>
+        Use your right and left keys to move the paddle to bounce the ball up
+        and break the blocks.
+      </p>
+      <p>If you miss the ball, your score and the blocks will reset.</p>
+      <button id="close-btn" class="btn">Close</button>
+    </div>
 
-<html>
+    <canvas id="canvas" width="800" height="600"></canvas>
 
-<head>
-	<meta charset="utf-8" />
-	<title>Breakout Game</title>
-	<link rel="stylesheet" href="../assets/css/Breakout.css">
-</head>
-
-
-<body>
-	<br>
-	<br>
-	<br>
-	<script src="../assets/js/Breakout.js"></script>
-	<div class="canvasDiv">
-		<canvas id="myCanvas" width="810" height="540"
-			style="background: url('../assets/Images/breakoutt.png')"></canvas>
-	</div>
-	<script>
-		{
-			var canvas = document.getElementById("myCanvas");
-			var ctx = canvas.getContext("2d");
-			ctx.font = "72px Roboto";
-			ctx.fillStyle = "#470C1E";
-			ctx.fillText("Breakout!", 245, 270);
-		}
-	</script>
-	<div id="startButtonContainer">
-		<button id="startButtonClassic" onclick="playClassic()">Lets Play!</button>
-	</div>
-</body>
-
+    <script src="../assets/js/breakout.js"></script>
+  </body>
 </html>
