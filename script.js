@@ -1,4 +1,9 @@
 let projectData = [
+   {
+    projectName: 'Tubelight-text',
+    projectImage: 'assets/GIFs/Tubelight-text.gif',
+    projectUrl: 'public/Tubelight-text.html',
+  },
   {
     projectName: 'Pinpad',
     projectImage: 'assets/GIFs/pinpad.gif',
@@ -25,9 +30,15 @@ let projectData = [
     projectUrl: 'public/movieSeatBooking.html',
   },
   {
+    projectName: "SGPA and CGPA calculator",
+    projectImage: "assets/Images/sgpa_and_cgpa.jpg",
+    projectUrl: "public/sgpa_and_cgpa.html",
+  },
+  {
     projectName: 'Movie Trailer App',
     projectImage: 'assets/GIFs/trailerAppGif.gif',
     projectUrl: 'public/movTrailer.html',
+
   },
   {
     projectName: 'Dynamic Quote Generator',
@@ -98,7 +109,7 @@ let projectData = [
   },
   {
     projectName: 'Music Player',
-    projectImage: 'assets/GIFs/musicPlayer.gif',
+    projectImage: 'assets/GIFs/musicplayer.gif',
     projectUrl: 'public/music_player.html',
   },
   {
@@ -125,6 +136,11 @@ let projectData = [
     projectName: 'Analog Clock',
     projectImage: 'assets/GIFs/analogClock.gif',
     projectUrl: 'public/Analogclock.html',
+  },
+  {
+    projectName: "Date Time Widget",
+    projectImage: "assets/GIFs/dateTimeWidget.gif",
+    projectUrl: "public/dateTimeWidget.html",
   },
   {
     projectName: 'Digital Clock',
@@ -183,7 +199,7 @@ let projectData = [
   },
   {
     projectName: 'Word Counter',
-    projectImage: 'assets/GIFs/wordCount.gif',
+    projectImage: 'assets/GIFs/wordCounter.gif',
     projectUrl: 'public/wordCounter.html',
   },
   {
@@ -316,7 +332,12 @@ let projectData = [
 
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
-    projectUrl: "public/Minion-Eyes.html",
+    projectUrl: "public/Minion-Eyes.html"
+  },
+  {
+    projectName:"PingPong Game",
+    projectImage:"assets/GIFs/pingpong-image.gif",
+    projectUrl: "public/pingpong.html",
   },
   {
     projectName: "Text To Speech",
@@ -455,6 +476,7 @@ let projectData = [
     projectImage: 'assets/GIFs/wordScramble.gif',
     projectUrl: 'public/wordScramble.html',
   },
+
   {
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
@@ -464,7 +486,7 @@ let projectData = [
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
-},
+  },
   {
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
@@ -474,6 +496,12 @@ let projectData = [
     projectName: "Pagination",
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
+  },
+  {
+
+    projectName: "Age Calculator",
+    projectImage: "assets/Images/AgeCalculator.png",
+    projectUrl: "public/AgeCalculator.html",
   },
   {
     projectName: "Spotify Finder",
@@ -486,12 +514,22 @@ let projectData = [
     projectUrl: "public/fruitSlicer.html",
   },
   {
+     projectName: "Image Editor",
+    projectImage: "assets/GIFs/Image_editor.gif",
+    projectUrl: "public/Image_editor.html",
+}, 
+  {
     projectName: "Falling Bullets Animation JS",
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
-
+  {
+    projectName: "Factorial Calculator",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/FactorialCalculator.html",
+  }
 ];
+
 
 let projectContainer = document.getElementById('js-projects');
 console.log(projectContainer);
