@@ -7,11 +7,11 @@
     <title>Magic Notes App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-         <!-- had to add additional css file as the above css file is contradicting with the index.html -->
-         <link rel="stylesheet" href="/assets/css/noteApp.css">
-         <!-- adding font caveat -->
-         <link rel="preconnect" href="https://fonts.gstatic.com">
-         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">    
+    <!-- had to add additional css file as the above css file is contradicting with the index.html -->
+    <link rel="stylesheet" href="../assets/css/noteApp.css">
+    <!-- adding font caveat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +46,8 @@
                 <h5 class="card-title">Add a Note</h5>
                 <div id="alerts"></div>
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" id="addTitle" rows="3" placeholder="Insert a cool Title for your Awesome Note!">
+                    <input type="text" class="form-control" id="addTitle" rows="3"
+                        placeholder="Insert a cool Title for your Awesome Note!">
                 </div>
                 <div class="form-group mb-3">
                     <textarea class="form-control" id="addTxt" rows="3"></textarea>
@@ -62,8 +63,8 @@
             <div class="col">
                 <h1>My Notes</h1>
             </div>
-            <div class="col" >
-                <button class="btn btn-secondary"style="float: right;" id="fav-btn">Show Favorites Only</button>
+            <div class="col">
+                <button class="btn btn-secondary" style="float: right;" id="fav-btn">Show Favorites Only</button>
             </div>
         </div>
         <hr>
@@ -78,7 +79,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
-        
+
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="../assets/js/note-app.js"></script>
 </body>
