@@ -1,4 +1,5 @@
 let projectData = [
+
   {
     projectName: "Pinpad",
     projectImage: "assets/GIFs/pinpad.gif",
@@ -25,9 +26,19 @@ let projectData = [
     projectUrl: "public/movieSeatBooking.html",
   },
   {
-    projectName: "Movie Trailer App",
-    projectImage: "assets/GIFs/trailerAppGif.gif",
-    projectUrl: "public/movTrailer.html",
+    projectName: "SGPA and CGPA calculator",
+    projectImage: "assets/Images/sgpa_and_cgpa.jpg",
+    projectUrl: "public/sgpa_and_cgpa.html",
+  },
+  {
+    projectName: "Color Flipper",
+    projectImage: "assets/GIFs/colorFlipper.gif",
+    projectUrl: "public/color-flipper.html",
+  },
+  {
+    projectName: 'Movie Trailer App',
+    projectImage: 'assets/GIFs/trailerAppGif.gif',
+    projectUrl: 'public/movTrailer.html',
   },
   {
     projectName: "Dynamic Quote Generator",
@@ -135,14 +146,29 @@ let projectData = [
     projectUrl: "public/birthdayReminder.html",
   },
   {
+    projectName: "Date Time Widget",
+    projectImage: "assets/GIFs/dateTimeWidget.gif",
+    projectUrl: "public/dateTimeWidget.html",
+  },
+  {
     projectName: "Text Generator",
     projectImage: "assets/GIFs/textGenerator.gif",
     projectUrl: "public/textGenerator.html",
   },
   {
-    projectName: "New Year Count Down",
-    projectImage: "assets/GIFs/newYearCountdown.gif",
-    projectUrl: "public/newyearcountdown.html",
+    projectName: 'Auto-Text',
+    projectImage: 'assets/GIFs/auto-text.gif',
+    projectUrl: 'public/auto-text.html',
+  },
+  {
+    projectName: "Reviews",
+    projectImage: "assets/GIFs/reviews.gif",
+    projectUrl: "public/reviews.html",
+  },
+  {
+    projectName: 'New Year Count Down',
+    projectImage: 'assets/GIFs/newYearCountdown.gif',
+    projectUrl: 'public/newyearcountdown.html',
   },
   {
     projectName: "Password Generator",
@@ -312,7 +338,12 @@ let projectData = [
   {
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
-    projectUrl: "public/Minion-Eyes.html",
+    projectUrl: "public/Minion-Eyes.html"
+  },
+  {
+    projectName:"PingPong Game",
+    projectImage:"assets/GIFs/pingpong-image.gif",
+    projectUrl: "public/pingpong.html",
   },
   {
     projectName: "Text To Speech",
@@ -498,8 +529,11 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
-
-
+  {
+    projectName: "Factorial Calculator",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/FactorialCalculator.html",
+  }
 ];
 
 
@@ -530,4 +564,17 @@ function getProjects() {
 
   projectContainer.innerHTML = output;
   console.log('projectContainer', projectContainer.innerHTML);
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("Navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
