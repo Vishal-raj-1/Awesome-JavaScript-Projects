@@ -35,11 +35,6 @@ let projectData = [
     projectUrl: "public/sgpa_and_cgpa.html",
   },
   {
-    projectName: "Color Flipper",
-    projectImage: "assets/GIFs/colorFlipper.gif",
-    projectUrl: "public/color-flipper.html",
-  },
-  {
     projectName: 'Movie Trailer App',
     projectImage: 'assets/GIFs/trailerAppGif.gif',
     projectUrl: 'public/movTrailer.html',
@@ -114,7 +109,7 @@ let projectData = [
   },
   {
     projectName: 'Music Player',
-    projectImage: 'assets/GIFs/musicPlayer.gif',
+    projectImage: 'assets/GIFs/musicplayer.gif',
     projectUrl: 'public/music_player.html',
   },
   {
@@ -204,7 +199,7 @@ let projectData = [
   },
   {
     projectName: 'Word Counter',
-    projectImage: 'assets/GIFs/wordCount.gif',
+    projectImage: 'assets/GIFs/wordCounter.gif',
     projectUrl: 'public/wordCounter.html',
   },
   {
@@ -272,6 +267,11 @@ let projectData = [
     projectName: 'Animated Minion Eyes',
     projectImage: 'assets/GIFs/Minion-Eyes.gif',
     projectUrl: 'public/Minion-Eyes.html',
+  },
+  {
+    projectName: "Word Counter",
+    projectImage: "assets/GIFs/wordCounter.gif",
+    projectUrl: "public/wordCounter.html",
   },
   {
     projectName: 'RGB Color Guessing Game',
