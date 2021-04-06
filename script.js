@@ -523,6 +523,11 @@ let projectData = [
     projectName: "Factorial Calculator",
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
+  },
+  {
+    projectName: "Typing Practice",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/TypingPractice.html",
   }
 ];
 
