@@ -488,6 +488,16 @@ let projectData = [
     projectUrl: "public/flipcards.html",
   },
   {
+    projectName: 'Flappy Bird',
+    projectImage: 'assets/Images/FlappyBird/FlappyBirdDemo',
+    projectUrl: 'public/flappybird.html',
+  },
+  {
+    projectName: 'Word Scramble Game',
+    projectImage: 'assets/GIFs/wordScramble.gif',
+    projectUrl: 'public/wordScramble.html',
+  },
+  {
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
