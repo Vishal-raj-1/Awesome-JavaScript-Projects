@@ -26,15 +26,15 @@ body,
   /* width:700px;
     max-width: 90%; */
   margin: 100px;
-  box-shadow: 0 0 20px green, 0 0 20px green, 0 0 20px green, 0 0 20px green,
-    0 0 20px green, 0 0 20px green, 0 0 20px green;
+  box-shadow: 0 0 20px #38acec, 0 0 20px #38acec, 0 0 20px #38acec,
+    0 0 20px #38acec, 0 0 20px #38acec, 0 0 20px #38acec, 0 0 20px #38acec;
 }
 .timer {
   position: absolute;
   width: 100%;
   top: 20px;
   font-size: 50px;
-  color: green;
+  color: #38acec;
   font-weight: bold;
   text-align: center;
   margin: auto;
@@ -66,7 +66,7 @@ body,
   margin-bottom: 10px;
 }
 .quote-input:focus {
-  border-color: green;
+  border-color: #38acec;
 }
 .btn {
   width: 100%;
@@ -81,10 +81,10 @@ body,
   font-size: 20px;
 }
 #btnNext:hover {
-  border: 2px solid green;
+  border: 2px solid #38acec;
   border-radius: 20px;
   color: white;
-  background-color: green;
+  background-color: #38acec;
 }
 #btnexit {
   border: 2px solid white;
@@ -92,14 +92,14 @@ body,
   font-size: 20px;
 }
 #btnexit:hover {
-  border: 2px solid green;
+  border: 2px solid #38acec;
   border-radius: 20px;
   color: white;
-  background-color: green;
+  background-color: #38acec;
 }
 
 .correct {
-  color: green;
+  color: #38acec;
 }
 .incorrect {
   color: red;

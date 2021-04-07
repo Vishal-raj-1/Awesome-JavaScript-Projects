@@ -545,7 +545,7 @@ let projectData = [
   },
   {
     projectName: "Typing Practice",
-    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectImage: "assets/GIFs/TypingSpeed.gif",
     projectUrl: "public/TypingPractice.html",
   }
 ];
