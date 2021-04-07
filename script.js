@@ -50,19 +50,14 @@ let projectData = [
     projectUrl: "public/translatorMinions.html",
   },
   {
-    projectName: "Local Storage",
-    projectImage: "assets/Images/localstorage.jpeg",
-    projectUrl: "public/localstorage.html",
-  },
-  {
     projectName: "Counter",
     projectImage: "assets/GIFs/counter.gif",
     projectUrl: "public/counter.html",
   },
   {
-    projectName: "Local Storage",
-    projectImage: "assets/Images/localstorage.jpeg",
-    projectUrl: "public/localstorage.html",
+    projectName: 'Local Storage',
+    projectImage: 'assets/GIFs/localstorage.gif',
+    projectUrl: 'public/localstorage.html',
   },
   {
     projectName: "Image Slide",
@@ -543,6 +538,7 @@ let projectData = [
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
   }
+
 ];
 
 
