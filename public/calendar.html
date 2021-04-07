@@ -10,7 +10,7 @@
     <title>Calendar</title>
 
     <!-- Icon -->
-    <link rel="icon" href="../assets/Images/Calendar_Logo.png">
+    <link rel="icon" href="../assets/Images/calendar_Logo.png">
     
     <!-- Bootstrap stylesheet and scripts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -20,8 +20,7 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&Signika:wght@300&family=Orbitron:wght@600&family=Flavors&family=Stick&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 
     <!-- Fontawesom icons -->
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
@@ -32,12 +31,6 @@
 
 <body>
 
-    <!-- <img src="../assets/Images/prev.png" alt="prev" id="prev">
-    <img src="../assets/Images/next.png" alt="next" id="next"> -->
-
-    <i class="fas fa-chevron-left" id="prev"></i>
-    <i class="fas fa-chevron-right" id="next"></i>
-
     <div class="block go_to d-flex flex-column align-items-center text-center">
 
         <div class="data d-flex flex-column align-items-center">
@@ -45,7 +38,7 @@
             <div class="form-row">
 
                 <div class="col">
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-3  input-group-sm">
                         <div class="input-group-prepend">
                           <span class="input-group-text">Date</span>
                         </div>
@@ -54,7 +47,7 @@
                 </div>
 
                 <div class="col">
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-3  input-group-sm">
                         <div class="input-group-prepend">
                           <span class="input-group-text">Month</span>
                         </div>
@@ -76,7 +69,7 @@
                 </div>
 
                 <div class="col">
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-3  input-group-sm">
                         <div class="input-group-prepend">
                           <span class="input-group-text">Year</span>
                         </div>
@@ -99,7 +92,11 @@
         </div>
 
  
-        <div class="box card"><div id="cala" class=""></div></div>
+        <div class="box card">
+            <i class="fas fa-chevron-left" id="prev"></i>
+            <i class="fas fa-chevron-right" id="next"></i>
+            <div id="cala" class=""></div>
+        </div>
         
     </div>
 

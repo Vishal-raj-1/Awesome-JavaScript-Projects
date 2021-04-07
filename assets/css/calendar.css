@@ -1,33 +1,23 @@
 body {
-    background-color: chartreuse;
+    background-image: url("../Images/Calendar_background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 * {
     box-sizing: content-box;
-}
-i {
-    position: fixed;
-    cursor: pointer;
-}
-#prev {
-    top: 60%;
-    left: 10%;
-}
-#next {
-    top: 60%;
-    right: 10%;
-}
-i:hover {
-    transform: scale(2);
 }
 .block {
     height: 100vh;
     width: 100vw;
 }
 .data {
-    border: 1px solid grey;
-    margin-top: 80px;
+    margin-top: 50px;
     width: 50%;
     padding: 10px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 10px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .form-row {
     width: 100%;
@@ -37,16 +27,31 @@ i:hover {
     width: 70%;
 }
 .box {
-    margin-top: 50px;
+    margin-top: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
+    position: relative;
+}
+i {
+    position: absolute;
+    cursor: pointer;
+}
+#prev {
+    top: 50px;
+    left: 10%;
+}
+#next {
+    top: 50px;
+    right: 10%;
+}
+i:hover {
+    transform: scale(2);
 }
 #cala {
     border: 1px solid grey;
 }
 h1{
-    
-    font-family: 'Stick', sans-serif;
+    font-family: 'Dela Gothic One', cursive;
     color: rgb(0, 0, 0);
 }
 hr {
@@ -78,13 +83,14 @@ td {
 }
 
 #today {
-    background-color: aqua;
+    background-color: rgba(96, 226, 96, 0.5);
+    color: green;
+    font-weight: bolder;
 }
-
 #goto {
-    
-    background-color: yellow;
-    
+    background-color: rgba(245, 245, 51, 0.6);
+    color: brown;
+    font-weight: bolder;   
 }
 .btn {
     width: 100%;
