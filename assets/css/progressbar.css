@@ -61,7 +61,7 @@ footer{
 }
 
 @media(max-width: 600px){
-    btn-move{
+    .btn-move{
     width: auto;
     padding: 7px 10px;
     text-align: center;
@@ -76,4 +76,43 @@ footer{
     margin: 0 0px;
     width: auto;
 }
+}
+@media only screen and (max-width: 465px) {
+    .progresss{
+        width:380px;
+    }
+}
+@media only screen and (max-width: 405px) {
+    .progresss{
+        width:350px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .progresss{
+        width:300px;
+    }
+    ul{
+        font-size: 0.2rem;
+    }
+}
+@media only screen and (max-width: 345px) {
+    .progresss{
+        width:290px;
+    }
+    ul{
+        text-align: center;
+    }
+    .btn-html,.btn-css,.btn-js{
+        font-size:0.8rem;
+        margin:10px;
+    }
+    .btn-react,.btn-wordpress{
+        font-size: 0.8rem;
+        margin:20px;
+    }
+}
+@media only screen and (max-width: 290px) {
+    .progresss{
+        width:250px;
+    }
 }
