@@ -21,7 +21,7 @@ let projectData = [
   },
   {
     projectName: "Color Flipper",
-    projectImage: "assets/GIFs/colorFlipper.gif",
+    projectImage: "assets/GIFs/color-Flipper.gif",
     projectUrl: "public/color-flipper.html",
   },
   {
@@ -165,16 +165,6 @@ let projectData = [
     projectUrl: "public/reviews.html",
   },
   {
-    projectName: 'Auto-Text',
-    projectImage: 'assets/GIFs/auto-text.gif',
-    projectUrl: 'public/auto-text.html',
-  },
-  {
-    projectName: "Reviews",
-    projectImage: "assets/GIFs/reviews.gif",
-    projectUrl: "public/reviews.html",
-  },
-  {
     projectName: 'New Year Count Down',
     projectImage: 'assets/GIFs/newYearCountdown.gif',
     projectUrl: 'public/newyearcountdown.html',
@@ -283,11 +273,6 @@ let projectData = [
     projectName: 'Animated Minion Eyes',
     projectImage: 'assets/GIFs/Minion-Eyes.gif',
     projectUrl: 'public/Minion-Eyes.html',
-  },
-  {
-    projectName: "RGB Color Guessing Game",
-    projectImage: "assets/GIFs/RGB_Color.gif",
-    projectUrl: "public/RGB_Color_Guessing_Game.html",
   },
   {
     projectName: "Rode Slider Game",
