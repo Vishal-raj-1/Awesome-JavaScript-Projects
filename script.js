@@ -182,7 +182,7 @@ let projectData = [
   {
     projectName: 'Line replacing text',
     projectImage: 'assets/GIFs/line-replacing-project-.gif',
-    projectUrl: 'public/line replacing text.html',
+    projectUrl: 'public/line_replacing_project.html',
   },
   {
     projectName: 'Password Generator',
