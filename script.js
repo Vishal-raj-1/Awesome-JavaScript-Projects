@@ -458,6 +458,11 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
+  {
+    projectName: "Speech To Text Converter",
+    projectImage: "assets/GIFs/SpeechtoText.gif",
+    projectUrl: "public/SpeechtoText.html",
+  }
   
 ];
 
