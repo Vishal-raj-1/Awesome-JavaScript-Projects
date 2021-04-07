@@ -33,10 +33,13 @@
 
     <div class="block go_to d-flex flex-column align-items-center text-center">
 
+        <!-- Input fields -->
+
         <div class="data d-flex flex-column align-items-center">
 
             <div class="form-row">
 
+                <!-- Date -->
                 <div class="col">
                     <div class="input-group mb-3  input-group-sm">
                         <div class="input-group-prepend">
@@ -46,6 +49,7 @@
                     </div>
                 </div>
 
+                <!-- Month -->
                 <div class="col">
                     <div class="input-group mb-3  input-group-sm">
                         <div class="input-group-prepend">
@@ -68,6 +72,7 @@
                     </div>
                 </div>
 
+                <!-- Year -->
                 <div class="col">
                     <div class="input-group mb-3  input-group-sm">
                         <div class="input-group-prepend">
@@ -80,10 +85,13 @@
             </div>
 
             <div class="buttons d-flex flex-row">
+
+                <!-- goto button -->
                 <div class="col">
                     <button class="btn btn-primary" onclick="go_to()">Goto</button>
                 </div>
-    
+
+                <!-- today button -->
                 <div class="col">
                     <button class="btn btn-primary" onclick="to_day()">Today</button>
                 </div>
@@ -91,10 +99,13 @@
 
         </div>
 
- 
+        <!-- calendar display box -->
         <div class="box card">
+            <!-- arrow icons -->
             <i class="fas fa-chevron-left" id="prev"></i>
             <i class="fas fa-chevron-right" id="next"></i>
+
+            <!-- calendar -->
             <div id="cala" class=""></div>
         </div>
         

@@ -315,8 +315,8 @@ let projectData = [
     projectUrl: 'public/Particle.html',
   },
   {
-    projectName: "calendar",
-    projectImage: "assets/GIFs/cal.gif",
+    projectName: "Calendar",
+    projectImage: "assets/Images/calendar_backcover.png",
     projectUrl: "public/calendar.html",
   },
   {
@@ -538,7 +538,6 @@ let projectData = [
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
   }
-
 ];
 
 
