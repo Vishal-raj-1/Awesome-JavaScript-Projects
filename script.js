@@ -53,7 +53,7 @@ let projectData = [
   },
   {
     projectName: 'Local Storage',
-    projectImage: 'assets/Images/localstorage.jpeg',
+    projectImage: 'assets/GIFs/localstorage.gif',
     projectUrl: 'public/localstorage.html',
   },
   {
