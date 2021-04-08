@@ -575,6 +575,11 @@ let projectData = [
     projectImage: "assets/Images/memeimages/memebg.png",
     projectUrl: "public/Memegenerator.html",
   },
+  {
+    projectName: "Meme Soundboard",
+    projectImage: "assets/Images/meme_sound_icon.jpg",
+    projectUrl: "public/meme_soundboard.html",
+ }
 
 ];
 
