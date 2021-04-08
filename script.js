@@ -9,6 +9,11 @@ let projectData = [
     projectImage: "assets/GIFs/pinpad.gif",
     projectUrl: "public/pinpad.html",
   },
+   {
+    projectName: "Drag Drop To-Do List",
+    projectImage: "assets/GIFs/DragToDo.gif",
+    projectUrl: "public/DragToDo.html",
+  },
   {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
@@ -320,6 +325,21 @@ let projectData = [
     projectUrl: "public/calendar.html",
   },
   {
+
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice.gif",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "Randam User Finder",
+    projectImage: "assets/GIFs/Random_User.gif",
+    projectUrl: "public/Randomuser.html",
+  },
+  {
+    projectName: 'Math Quiz for kids 🙂 ',
+    projectImage: 'assets/Images/MathQuiz.jpg',
+    projectUrl: 'public/MathQuiz.html',
+
     projectName: "Math Quiz for kids 🙂 ",
     projectImage: "assets/Images/MathQuiz.jpg",
     projectUrl: "public/MathQuiz.html",
@@ -328,6 +348,7 @@ let projectData = [
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
+
   },
   {
     projectName: "Animated Minion Eyes",
@@ -446,11 +467,11 @@ let projectData = [
     projectImage: 'assets/Images/palindrome.jpg',
     projectUrl: 'public/palindrome.html',
   },
-  /*{
+  {
     projectName: "DarkMode",
     projectImage: "assets/Images/DarkMode2.jpeg",
     projectUrl: "public/DarkMode.html"
-   },*/
+   },
   {
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
@@ -476,7 +497,6 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-
   {
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
@@ -509,6 +529,12 @@ let projectData = [
   },
   {
 
+    projectName: "TV Show Search",
+    projectImage: 'assets/GIFs/TV_ShowSearch.gif',
+    projectUrl: "public/TV_ShowSearch.html",
+  },
+  {
+
     projectName: "Age Calculator",
     projectImage: "assets/Images/AgeCalculator.png",
     projectUrl: "public/AgeCalculator.html",
@@ -527,7 +553,7 @@ let projectData = [
      projectName: "Image Editor",
     projectImage: "assets/GIFs/Image_editor.gif",
     projectUrl: "public/Image_editor.html",
-}, 
+  }, 
   {
     projectName: "Falling Bullets Animation JS",
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
@@ -544,8 +570,21 @@ let projectData = [
     projectUrl: "public/FactorialCalculator.html",
 
     },
-
-   
+  {
+    projectName: "New year crackers",
+    projectImage: "assets/GIFs/newyearwish.gif",
+    projectUrl: "public/newyearwish.html",
+  },
+  {
+    projectName: "Factorial Calculator",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/FactorialCalculator.html",
+  },
+  {
+    projectName: "Memes Generator",
+    projectImage: "assets/Images/memeimages/memebg.png",
+    projectUrl: "public/Memegenerator.html",
+  },
 
 
 ];
