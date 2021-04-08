@@ -546,7 +546,7 @@ let projectData = [
 
   },
 
-  }
+  
 
 
 ];
