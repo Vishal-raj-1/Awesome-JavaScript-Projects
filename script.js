@@ -1,8 +1,8 @@
 let projectData = [
   {
-    projectName: "Etch-a-sketch",
-    projectImage: "assets/GIFs/etch_sketch.png",
-    projectUrl: "public/etch_sketch.html",
+    projectName: "Tubelight-text",
+    projectImage: "assets/GIFs/Tubelight-text.gif",
+    projectUrl: "public/Tubelight-text.html",
   },
   {
     projectName: "Pinpad",
@@ -21,7 +21,7 @@ let projectData = [
   },
   {
     projectName: "Color Flipper",
-    projectImage: "assets/GIFs/color-flipper.gif",
+    projectImage: "assets/GIFs/color-Flipper.gif",
     projectUrl: "public/color-flipper.html",
   },
   {
@@ -33,11 +33,6 @@ let projectData = [
     projectName: "SGPA and CGPA calculator",
     projectImage: "assets/Images/sgpa_and_cgpa.jpg",
     projectUrl: "public/sgpa_and_cgpa.html",
-  },
-  {
-    projectName: "Color Flipper",
-    projectImage: "assets/GIFs/colorFlipper.gif",
-    projectUrl: "public/color-flipper.html",
   },
   {
     projectName: "Movie Trailer App",
@@ -55,18 +50,13 @@ let projectData = [
     projectUrl: "public/translatorMinions.html",
   },
   {
-    projectName: "Local Storage",
-    projectImage: "assets/Images/localstorage.jpeg",
-    projectUrl: "public/localstorage.html",
-  },
-  {
     projectName: "Counter",
     projectImage: "assets/GIFs/counter.gif",
     projectUrl: "public/counter.html",
   },
   {
     projectName: "Local Storage",
-    projectImage: "assets/Images/localstorage.jpeg",
+    projectImage: "assets/GIFs/localstorage.gif",
     projectUrl: "public/localstorage.html",
   },
   {
@@ -85,11 +75,6 @@ let projectData = [
     projectUrl: "public/molegame.html",
   },
   {
-    projectName: "Click and Drag",
-    projectImage: "assets/GIFs/clickandDrag.gif",
-    projectUrl: "public/clickanddrag.html",
-  },
-  {
     projectName: "Bouncing Balls",
     projectImage: "assets/GIFs/bouncingBalls.gif",
     projectUrl: "public/BouncingBalls.html",
@@ -98,6 +83,11 @@ let projectData = [
     projectName: "Reviews",
     projectImage: "assets/GIFs/reviews.gif",
     projectUrl: "public/reviews.html",
+  },
+  {
+    projectName: "Click and Drag Image Slider",
+    projectImage: "assets/GIFs/clickandDrag.gif",
+    projectUrl: "public/clickanddrag.html",
   },
   {
     projectName: "Stop Watch",
@@ -140,14 +130,19 @@ let projectData = [
     projectUrl: "public/Analogclock.html",
   },
   {
-    projectName: "Date Time Widget",
-    projectImage: "assets/GIFs/dateTimeWidget.gif",
-    projectUrl: "public/dateTimeWidget.html",
-  },
-  {
     projectName: "Digital Clock",
     projectImage: "assets/GIFs/digitalClock.gif",
     projectUrl: "public/digitalClock.html",
+  },
+  {
+    projectName: "Birthday Reminder",
+    projectImage: "assets/Images/birthdayReminder.png",
+    projectUrl: "public/birthdayReminder.html",
+  },
+  {
+    projectName: "Date Time Widget",
+    projectImage: "assets/GIFs/dateTimeWidget.gif",
+    projectUrl: "public/dateTimeWidget.html",
   },
   {
     projectName: "Text Generator",
@@ -168,6 +163,11 @@ let projectData = [
     projectName: "New Year Count Down",
     projectImage: "assets/GIFs/newYearCountdown.gif",
     projectUrl: "public/newyearcountdown.html",
+  },
+  {
+    projectName: "Line replacing text",
+    projectImage: "assets/GIFs/line-replacing-project-.gif",
+    projectUrl: "public/line_replacing_project.html",
   },
   {
     projectName: "Password Generator",
@@ -201,7 +201,7 @@ let projectData = [
   },
   {
     projectName: "Word Counter",
-    projectImage: "assets/GIFs/wordCount.gif",
+    projectImage: "assets/GIFs/wordCounter.gif",
     projectUrl: "public/wordCounter.html",
   },
   {
@@ -235,9 +235,9 @@ let projectData = [
     projectUrl: "public/hangman.html",
   },
   {
-    projectName: "Rock Paper Scissors Game",
+    projectName: "Rock Paper Sessior Game",
     projectImage: "assets/Images/r-p-s/rps.gif",
-    projectUrl: "public/Rock-paper-scissor.html",
+    projectUrl: "public/Rock-paper-sesssior.html",
   },
   {
     projectName: "Weather App",
@@ -270,11 +270,6 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
-    projectName: "RGB Color Guessing Game",
-    projectImage: "assets/GIFs/RGB_Color.gif",
-    projectUrl: "public/RGB_Color_Guessing_Game.html",
-  },
-  {
     projectName: "Rode Slider Game",
     projectImage: "assets/GIFs/rodeslidergame.gif",
     projectUrl: "public/rodeslider.html",
@@ -293,6 +288,11 @@ let projectData = [
     projectName: "User list filter",
     projectImage: "assets/GIFs/UserListFilter.gif",
     projectUrl: "public/UserListFilter.html",
+  },
+  {
+    projectName: "Particle JS Project",
+    projectImage: "assets/GIFs/Particle.gif",
+    projectUrl: "public/Particle.html",
   },
   {
     projectName: "Yoga App",
@@ -320,9 +320,28 @@ let projectData = [
     projectUrl: "public/calendar.html",
   },
   {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice.gif",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "Randam User Finder",
+    projectImage: "assets/GIFs/Random_User.gif",
+    projectUrl: "public/Randomuser.html",
+  },
+  {
     projectName: "Math Quiz for kids 🙂 ",
     projectImage: "assets/Images/MathQuiz.jpg",
     projectUrl: "public/MathQuiz.html",
+
+    projectName: "Math Quiz for kids 🙂 ",
+    projectImage: "assets/Images/MathQuiz.jpg",
+    projectUrl: "public/MathQuiz.html",
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice.gif",
+    projectUrl: "public/textToVoice.html",
   },
   {
     projectName: "Animated Minion Eyes",
@@ -440,11 +459,11 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl: "public/palindrome.html",
   },
-  /*{
+  {
     projectName: "DarkMode",
     projectImage: "assets/Images/DarkMode2.jpeg",
-    projectUrl: "public/DarkMode.html"
-   },*/
+    projectUrl: "public/DarkMode.html",
+  },
   {
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
@@ -477,6 +496,16 @@ let projectData = [
     projectUrl: "public/flipcards.html",
   },
   {
+    projectName: "Flappy Bird",
+    projectImage: "assets/Images/FlappyBird/FlappyBirdDemo",
+    projectUrl: "public/flappybird.html",
+  },
+  {
+    projectName: "Word Scramble Game",
+    projectImage: "assets/GIFs/wordScramble.gif",
+    projectUrl: "public/wordScramble.html",
+  },
+  {
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
@@ -490,6 +519,11 @@ let projectData = [
     projectName: "Pagination",
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
+  },
+  {
+    projectName: "TV Show Search",
+    projectImage: "assets/GIFs/TV_ShowSearch.gif",
+    projectUrl: "public/TV_ShowSearch.html",
   },
   {
     projectName: "Age Calculator",
@@ -521,6 +555,11 @@ let projectData = [
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
   },
+  {
+    projectName: "Etch-a-Sketch",
+    projectImage: "assets/Images/etch_sketch.png",
+    projectUrl: "public/etch_sketch.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -533,19 +572,19 @@ function getProjects() {
   projectData.forEach(
     (data, item) =>
       (output += `
-    <div class="projectCard">
-    <a href=${data.projectUrl} class="hoverEffect" target="_blank">
-      <img
-        class="projectCardImg"
-        src=${data.projectImage}
-        alt="Card image cap"
-      />
-        <h5 class="projectCardTitle">${data.projectName}</h5>
-        <span class="computerLegs"></span>
-        <span class="computerBase"></span>
-    </a>
-  </div>
-  `)
+   <div class="projectCard">
+   <a href=${data.projectUrl} class="hoverEffect" target="_blank">
+     <img
+       class="projectCardImg"
+       src=${data.projectImage}
+       alt="Card image cap"
+     />
+       <h5 class="projectCardTitle">${data.projectName}</h5>
+       <span class="computerLegs"></span>
+       <span class="computerBase"></span>
+   </a>
+ </div>
+ `)
   );
 
   projectContainer.innerHTML = output;
