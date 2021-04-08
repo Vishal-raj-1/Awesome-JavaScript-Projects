@@ -10,11 +10,13 @@ This is a **Document to Handwriting** a website using HTML, CSS, JS and Google f
 - Download your work in png Format.
 - change font size, font width.
 
+
 ## Setup instructions
 There are two ways to run it on your Linux,MAC or Windows
 
 - Run the executable(Home.html) file.
 - Run the program in your IDE or terminal/command line.
+
 
 ## Requirements:
 -  Any Browser (Google Chrome,Microsoft Edge,Safari,Brave etc.)
