@@ -572,19 +572,19 @@ function getProjects() {
   projectData.forEach(
     (data, item) =>
       (output += `
-    <div class="projectCard">
-    <a href=${data.projectUrl} class="hoverEffect" target="_blank">
-      <img
-        class="projectCardImg"
-        src=${data.projectImage}
-        alt="Card image cap"
-      />
-        <h5 class="projectCardTitle">${data.projectName}</h5>
-        <span class="computerLegs"></span>
-        <span class="computerBase"></span>
-    </a>
-  </div>
-  `)
+   <div class="projectCard">
+   <a href=${data.projectUrl} class="hoverEffect" target="_blank">
+     <img
+       class="projectCardImg"
+       src=${data.projectImage}
+       alt="Card image cap"
+     />
+       <h5 class="projectCardTitle">${data.projectName}</h5>
+       <span class="computerLegs"></span>
+       <span class="computerBase"></span>
+   </a>
+ </div>
+ `)
   );
 
   projectContainer.innerHTML = output;
