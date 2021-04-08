@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body, html{
+  overflow: hidden;
+}
+
 body {
   background-color: #fae0e4;
   display: flex;
@@ -164,6 +168,7 @@ h1 button {
   bottom: 0;
   width: 100%;
   transition: 0.3s ease;
+  overflow-x: hidden;
 }
 
 .add-container.show {
@@ -174,10 +179,13 @@ h1 button {
 .add-container h3 {
   margin: 10px 0;
 }
-
+.form-group{
+  margin: 10px auto;
+}
 .form-group label {
   display: block;
   margin: 20px 0 10px;
+  max-width: 100%;
 }
 
 .form-group textarea {
@@ -185,6 +193,38 @@ h1 button {
   border-radius: 3px;
   font-size: 16px;
   padding: 12px;
-  min-width: 500px;
+  width: 500px;
   max-width: 100%;
+
+}
+@media only screen and (max-width: 550px) {
+  body{
+    padding: 20px;
+  }
+  .form-group textarea{
+    /* min-width: 95%; */
+    min-width: auto;
+    width: 100%;
+  }
+  .add-container{
+    padding: 10px;
+  }
+  /* .flip-heading{
+    display: flex;
+    justify-content: center;
+    width: 100%; */
+  /* } */
+  .flip-heading{
+    overflow-x:visible;
+  }
+  .btn-add{
+    /* width: 100%; */
+    /* display: block; */
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .btn-add{
+    padding: 2px 1px;
+  }
 }
