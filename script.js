@@ -553,11 +553,17 @@ let projectData = [
      projectName: "Image Editor",
     projectImage: "assets/GIFs/Image_editor.gif",
     projectUrl: "public/Image_editor.html",
-}, 
+  }, 
   {
     projectName: "Falling Bullets Animation JS",
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
+  },
+  {
+
+    projectName: "New year crackers",
+    projectImage: "assets/GIFs/newyearwish.gif",
+    projectUrl: "public/newyearwish.html",
   },
   {
     projectName: "Factorial Calculator",
@@ -569,6 +575,7 @@ let projectData = [
     projectImage: "assets/Images/memeimages/memebg.png",
     projectUrl: "public/Memegenerator.html",
   },
+
 ];
 
 
