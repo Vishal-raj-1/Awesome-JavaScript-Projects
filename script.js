@@ -349,6 +349,11 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
+  {
+    projectName: "Image Gallery",
+    projectImage: "assets/Images/imageGallery/images",
+    projectUrl: "public/imageGallery.html",
+  },
 
 ];
 
