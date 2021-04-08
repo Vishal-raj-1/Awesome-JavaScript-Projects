@@ -9,6 +9,11 @@ let projectData = [
     projectImage: "assets/GIFs/pinpad.gif",
     projectUrl: "public/pinpad.html",
   },
+   {
+    projectName: "Drag Drop To-Do List",
+    projectImage: "assets/GIFs/DragToDo.gif",
+    projectUrl: "public/DragToDo.html",
+  },
   {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
@@ -492,7 +497,6 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-
   {
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
@@ -563,10 +567,31 @@ let projectData = [
     projectUrl: "public/FallingBulletsAnimation.html",
   },
   {
+    projectName: 'Play-Beats',
+    projectImage: 'assets/GIFs/playbeats.gif',
+    projectUrl: 'public/Play-Beats.html',
+  },
+    {
     projectName: "Factorial Calculator",
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
-  }
+    },
+  {
+    projectName: "New year crackers",
+    projectImage: "assets/GIFs/newyearwish.gif",
+    projectUrl: "public/newyearwish.html",
+  },
+  {
+    projectName: "Factorial Calculator",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/FactorialCalculator.html",
+  },
+  {
+    projectName: "Memes Generator",
+    projectImage: "assets/Images/memeimages/memebg.png",
+    projectUrl: "public/Memegenerator.html",
+  },
+
 ];
 
 
@@ -579,7 +604,7 @@ function getProjects() {
   let output = '';
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
