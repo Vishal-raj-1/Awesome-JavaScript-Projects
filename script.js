@@ -9,6 +9,11 @@ let projectData = [
     projectImage: "assets/GIFs/pinpad.gif",
     projectUrl: "public/pinpad.html",
   },
+   {
+    projectName: "Drag Drop To-Do List",
+    projectImage: "assets/GIFs/DragToDo.gif",
+    projectUrl: "public/DragToDo.html",
+  },
   {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
