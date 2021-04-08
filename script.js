@@ -320,6 +320,21 @@ let projectData = [
     projectUrl: "public/calendar.html",
   },
   {
+
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice.gif",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "Randam User Finder",
+    projectImage: "assets/GIFs/Random_User.gif",
+    projectUrl: "public/Randomuser.html",
+  },
+  {
+    projectName: 'Math Quiz for kids 🙂 ',
+    projectImage: 'assets/Images/MathQuiz.jpg',
+    projectUrl: 'public/MathQuiz.html',
+
     projectName: "Math Quiz for kids 🙂 ",
     projectImage: "assets/Images/MathQuiz.jpg",
     projectUrl: "public/MathQuiz.html",
@@ -328,6 +343,7 @@ let projectData = [
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
+
   },
   {
     projectName: "Animated Minion Eyes",
@@ -446,11 +462,11 @@ let projectData = [
     projectImage: 'assets/Images/palindrome.jpg',
     projectUrl: 'public/palindrome.html',
   },
-  /*{
+  {
     projectName: "DarkMode",
     projectImage: "assets/Images/DarkMode2.jpeg",
     projectUrl: "public/DarkMode.html"
-   },*/
+   },
   {
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
@@ -505,6 +521,12 @@ let projectData = [
     projectName: "Pagination",
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
+  },
+  {
+
+    projectName: "TV Show Search",
+    projectImage: 'assets/GIFs/TV_ShowSearch.gif',
+    projectUrl: "public/TV_ShowSearch.html",
   },
   {
 
