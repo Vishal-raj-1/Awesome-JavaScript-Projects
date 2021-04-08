@@ -30,9 +30,22 @@ Click on the **Click Here** to see the Document to Handwritting Demo on YouTube.
 |Document to Handwritting| [Click Here](https://www.youtube.com/watch?v=mLCL7OZ4JFQ)| [Priyadarshan Ghosh](https://github.com/Priyadarshan2000) |HTML, CSS, JS,Google Font API
 
 ## Output
-- Default Mode:
+
+### Default Mode:
+
 ![image](https://user-images.githubusercontent.com/62868878/109396018-7cecb200-7955-11eb-971c-b0bf6f15109d.png)
-- Dark Mode:
+
+### Dark Mode:
+
 ![image](https://user-images.githubusercontent.com/62868878/109396022-883fdd80-7955-11eb-9dfc-ec0ad21e96f4.png)
 
+
+## Demo
+
+![20210329_130409](https://user-images.githubusercontent.com/62868878/112802134-7013c900-908f-11eb-806a-157f8b6a6770.gif)
+
+
+## Author(s)
+
+- Priyadarshan Ghosh (Priyadarshan2000)
 
