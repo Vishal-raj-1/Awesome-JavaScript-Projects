@@ -5,9 +5,19 @@ let projectData = [
     projectUrl: 'public/Tubelight-text.html',
   },
   {
+    projectName: 'And Or Xor Converter',
+    projectImage: 'assets/GIFs/AND_OR_XOR_Converter.gif',
+    projectUrl: 'public/AND_OR_XOR_Converter.html',
+  },
+  {
     projectName: "Pinpad",
     projectImage: "assets/GIFs/pinpad.gif",
     projectUrl: "public/pinpad.html",
+  },
+   {
+    projectName: "Drag Drop To-Do List",
+    projectImage: "assets/GIFs/DragToDo.gif",
+    projectUrl: "public/DragToDo.html",
   },
   {
     projectName: "Note App",
@@ -523,13 +533,20 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
+    projectName: "Lyrics App",
+    projectImage: "assets/GIFs/lyricsApp.gif",
+    projectUrl: "public/lyricsApp.html",
+  },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakouthere.gif",
+    projectUrl: "public/breakout.html",
 
     projectName: "TV Show Search",
     projectImage: 'assets/GIFs/TV_ShowSearch.gif',
     projectUrl: "public/TV_ShowSearch.html",
   },
   {
-
     projectName: "Age Calculator",
     projectImage: "assets/Images/AgeCalculator.png",
     projectUrl: "public/AgeCalculator.html",
@@ -548,11 +565,26 @@ let projectData = [
      projectName: "Image Editor",
     projectImage: "assets/GIFs/Image_editor.gif",
     projectUrl: "public/Image_editor.html",
-}, 
+  }, 
   {
     projectName: "Falling Bullets Animation JS",
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
+  },
+  {
+    projectName: 'Play-Beats',
+    projectImage: 'assets/GIFs/playbeats.gif',
+    projectUrl: 'public/Play-Beats.html',
+  },
+    {
+    projectName: "Factorial Calculator",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/FactorialCalculator.html",
+    },
+  {
+    projectName: "New year crackers",
+    projectImage: "assets/GIFs/newyearwish.gif",
+    projectUrl: "public/newyearwish.html",
   },
   {
     projectName: "Factorial Calculator",
@@ -569,6 +601,7 @@ let projectData = [
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
     projectUrl: "public/ArmstrongNumber.html",
   },
+
 ];
 
 
@@ -581,7 +614,7 @@ function getProjects() {
   let output = '';
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
