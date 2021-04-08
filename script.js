@@ -492,7 +492,6 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-
   {
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
@@ -561,11 +560,15 @@ let projectData = [
     projectUrl: "public/FactorialCalculator.html",
   },
   {
+    projectName: "Memes Generator",
+    projectImage: "assets/Images/memeimages/memebg.png",
+    projectUrl: "public/Memegenerator.html",
+  },
+  {
     projectName: "Armstrong Checker",
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
     projectUrl: "public/ArmstrongNumber.html",
   },
-
 ];
 
 
