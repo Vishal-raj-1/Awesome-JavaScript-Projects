@@ -2,6 +2,14 @@
 This is a **Document to Handwriting** a website using HTML, CSS, JS and Google font API. We type our work in the text box and our work will be converted to handwriting. On this site, we can change 10 different types of font. On this site we can change the font width On this site, we can upload our own font. our work will be downloaded into a png Format. This site also available in Dark Mode.
 
 
+## Functionalities:
+
+- Convert to Document to the handwriting
+- 10 different type of font
+- Dark mode
+- Download your work in png Format.
+- change font size, font width.
+
 ## Setup instructions
 There are two ways to run it on your Linux,MAC or Windows
 
