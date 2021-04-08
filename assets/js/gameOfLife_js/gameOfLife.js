@@ -6,8 +6,8 @@ let canvas, canvasBound, ctx, w, h;
 let grid, cols, rows;
 let animationState = "false";
 let fps = 25, spacing = 4, boxSize = 15;
-let cellActiveColor = "hsl(220,12%,80%)";
-let baseColor = "hsl(220,15%,17%)";
+let cellActiveColor = "#38ef7d";
+let baseColor = "#485563";
 let gridLine = "hsl(220, 30%,30%)";
 
 const init = () => {

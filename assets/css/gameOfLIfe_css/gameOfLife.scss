@@ -5,7 +5,7 @@
 }
 
 body {
-    background: hsl(220, 15%, 17%);
+    background: #0F2027;
 }
 
 .container {
@@ -17,9 +17,11 @@ body {
     height: 100vh;
     justify-content: space-around;
     align-items: center;
+    background: #0F2027;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }
 
 #canvas {
     background-color: #262626;
-    // border: 1px solid #fff;
+    cursor: pointer;
 }
