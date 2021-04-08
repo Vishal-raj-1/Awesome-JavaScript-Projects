@@ -1,48 +1,34 @@
-const init = function () {
-    document.getElementById('button-send').addEventListener('click', send);
-}
-const send = function (ev) {
-    ev.preventDefault();
-    ev.stopPropagation();
+const userForm = document.getElementById('form-user');
+let input = document.getElementById('input-longurl');
 
-    var longUrl = document.getElementById('input-longurl').value;
+userForm.onsubmit = (e) => {
+	document.querySelector('button span').classList.add('loader');
+	document.querySelector('#result p').textContent = '';
+	document.querySelector('#result a').removeAttribute('href');
+	document.querySelector('#result a').textContent = '';
+	document.querySelector('#error p').textContent = '';
 
-    if (validateUrl(longUrl)) {
-        const Http = new XMLHttpRequest();
-        const baseUrl = `https:/tinyurl.com/api-create.php?url=`;
-
-        let url = baseUrl + longUrl;
-        Http.open("GET", url);
-        Http.send();
-
-        Http.onreadystatechange = function () {
-            document.getElementById('msg1').textContent = 'Long Url :';
-            document.getElementById('longurl').textContent = longUrl;
-            document.getElementById('longurl').href = longUrl;
-
-            document.getElementById('msg2').textContent = 'Short Url :';
-            document.getElementById('shorturl').textContent = this.responseText;
-            document.getElementById('shorturl').href = this.responseText;
-
-        }
-    }
-    else {
-        document.getElementById('msg1').textContent = 'Note :';
-        document.getElementById('longurl').textContent = 'Invadlid Link';
-        document.getElementById('longurl').removeAttribute("href");
-        document.getElementById('msg2').textContent = '';
-        document.getElementById('shorturl').textContent = 'https:// or http:// format only';
-        document.getElementById('shorturl').removeAttribute("href");
-    }
-}
-
-
-function validateUrl(url1) {
-    var url = String(url1);
-    if (url.startsWith("http://") || url.startsWith("https://")) {
-        return true;
-    } else {
-        return false;
-    }
-}
-document.addEventListener('DOMContentLoaded', init);
+	e.preventDefault();
+	const apiUrl = 'https://is.gd/create.php';
+	axios
+		.get(apiUrl, {
+			params: {
+				format: 'json',
+				url: input.value.toString(),
+			},
+		})
+		.then((res) => {
+			document.querySelector('button span').classList.remove('loader');
+			const { shorturl, errormessage } = res.data;
+			if (shorturl) {
+				document.querySelector('#result p').textContent = 'Short URL :';
+				document.querySelector('#result a').href = shorturl;
+				document.querySelector('#result a').textContent = shorturl;
+			} else {
+				document.querySelector('#error p').textContent = `Error: ${errormessage}`;
+			}
+		})
+		.catch((err) => {
+			console.log(err.response);
+		});
+};
