@@ -5,7 +5,7 @@ let projectData = [
     projectUrl: 'public/Tubelight-text.html',
   },
   {
-    projectname: 'And Or Xor Converter',
+    projectName: 'And Or Xor Converter',
     projectImage: 'assets/GIFs/AND_OR_XOR_Converter.gif',
     projectUrl: 'public/AND_OR_XOR_Converter.html',
   },
