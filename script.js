@@ -528,13 +528,20 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
+    projectName: "Lyrics App",
+    projectImage: "assets/GIFs/lyricsApp.gif",
+    projectUrl: "public/lyricsApp.html",
+  },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakouthere.gif",
+    projectUrl: "public/breakout.html",
 
     projectName: "TV Show Search",
     projectImage: 'assets/GIFs/TV_ShowSearch.gif',
     projectUrl: "public/TV_ShowSearch.html",
   },
   {
-
     projectName: "Age Calculator",
     projectImage: "assets/Images/AgeCalculator.png",
     projectUrl: "public/AgeCalculator.html",
@@ -568,7 +575,6 @@ let projectData = [
     projectName: "Factorial Calculator",
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
-
     },
   {
     projectName: "New year crackers",
@@ -585,7 +591,6 @@ let projectData = [
     projectImage: "assets/Images/memeimages/memebg.png",
     projectUrl: "public/Memegenerator.html",
   },
-
 
 ];
 
