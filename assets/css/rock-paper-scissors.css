@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#p {
+    height: 85px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#s {
+    height: 85px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#r {
+    height: 85px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(243, 138, 0); 
+}
+
+header{
+    background-color: white;
+    padding: 10px 10px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.score_board{
+    border: 3px solid rgb(255, 255, 255);
+    width: 200px;
+    margin: 20px auto;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.identity_card{
+    background-color: red;
+    font-size: 14px;
+    padding: 3px 3px;
+}
+
+#user_id{
+    position: absolute;
+    top: 10px;
+    left:-20px;
+}
+
+#comp_id{
+    position: absolute;
+    top: 10px;
+    right:-25px;
+}
+
+.result p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.choices{
+    text-align: center;
+}
+
+.choice{
+    display: inline-block;
+    margin : 20px auto;
+    padding: 10px 15px;
+}
+
+.choice:hover{
+    cursor: pointer;
+     background-image: url('images/click.jpg');     
+    border-radius: 40%;
+
+}
+
+.order p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;   
+}
+
+.btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card{
+    margin-top: 20px;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.card{
+    background-color: rgb(243, 138, 0);
+    border: 3px solid rgb(255, 255, 255);
+    color: white;
+}
+
+
+h4{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card p{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.col-md-3{
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+.card{
+    margin: 0px auto;
+}
+
+.col-md-6{
+    border: 2px solid blue;
+}
