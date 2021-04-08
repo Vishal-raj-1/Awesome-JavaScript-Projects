@@ -12,7 +12,7 @@ There are two ways to run it on your Linux,MAC or Windows
 -  Any Browser (Google Chrome,Microsoft Edge,Safari,Brave etc.)
 
 ```bash
-live server extension
+live server Extension (only for Vs code)
 ```
 
 
