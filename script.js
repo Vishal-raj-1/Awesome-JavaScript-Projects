@@ -557,7 +557,7 @@ let projectData = [
   },
   {
     projectName: "Etch-a-Sketch",
-    projectImage: "assets/Images/etch_sketch.png",
+    projectImage: "assets/GIfs/etch_sketch.png",
     projectUrl: "public/etch_sketch.html",
   },
 ];
