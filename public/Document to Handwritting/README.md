@@ -31,7 +31,7 @@ Click on the **Click Here** to see the Document to Handwritting Demo on YouTube.
 
 ## Output
 
-### Default Mode:
+### Light Mode:
 
 ![image](https://user-images.githubusercontent.com/62868878/109396018-7cecb200-7955-11eb-971c-b0bf6f15109d.png)
 
