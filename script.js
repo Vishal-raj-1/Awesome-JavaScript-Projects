@@ -560,7 +560,17 @@ let projectData = [
     projectUrl: "public/FallingBulletsAnimation.html",
   },
   {
+    projectName: 'Play-Beats',
+    projectImage: 'assets/GIFs/playbeats.gif',
+    projectUrl: 'public/Play-Beats.html',
+  },
+    {
+    projectName: "Factorial Calculator",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/FactorialCalculator.html",
 
+    },
+  {
     projectName: "New year crackers",
     projectImage: "assets/GIFs/newyearwish.gif",
     projectUrl: "public/newyearwish.html",
@@ -576,6 +586,7 @@ let projectData = [
     projectUrl: "public/Memegenerator.html",
   },
 
+
 ];
 
 
@@ -588,7 +599,7 @@ function getProjects() {
   let output = '';
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
