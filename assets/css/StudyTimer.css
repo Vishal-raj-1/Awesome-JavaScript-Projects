@@ -3,7 +3,8 @@
     margin: 0px; }
   
   html {
-    font-size: calc(1em + 1vw); }
+    font-size: calc(1em + 1vw); 
+  overflow-x: hidden;}
   
   :root {
     --color-background-2:#232931;
@@ -82,7 +83,8 @@
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     color: var(--color-secondary);
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+  overflow-x: hidden; }
   
   .navbar {
     background: var(--color-secondary);
@@ -302,4 +304,84 @@
   #review-img {
     display: inline-block;
     height: 1.3vw; }
-  
+  @media only screen and (max-width:658px) {
+    .row{
+      margin: 0 17px;
+      justify-content: center;
+    } 
+    .row .col-1-of-3{
+      width:auto;
+      padding:0.1rem;
+      margin-top: 4.3rem;
+    }
+    .session_planner-heading {
+      padding: 0.9rem;
+  }
+  .planner{
+    margin: -1.8rem auto !important;
+  }
+  }
+  @media only screen and (max-width:575px) {
+    .row{
+      margin: 0 10px;
+    }
+    .row .col-2-of-3 {
+      width: calc( 2 * ((100% - 2 * 6rem) / 3) + 7rem);
+  }
+  @media only screen and (max-width:545px) {
+    .row{
+      justify-content: center;
+    }
+    .row .col-2-of-3 {
+      width: calc( 2 * ((100% - 2 * 6rem) / 3) + 16rem);
+  }
+  .settings-block{
+    display: contents;
+  }
+  .aim_bar{
+    width: 45vw !important;
+    height: 48vw;
+    margin-top:1rem;
+  }
+  .page-main{
+    margin-top:20px;
+  }
+  .col-2-of-3{
+    margin-top:50px;
+  }
+  .session_planner-heading {
+    padding: 0.9rem;
+    font-size: 2.5rem;
+  }
+  .planner{
+  margin: -1.3rem auto !important;
+  }
+  .label_heading{
+    font-size: 1.4rem;
+  }
+  .label_heading_small{
+    font-size:0.9rem;
+  }
+  .planner-btn{
+    width:90px;
+  }
+  .navbar{
+    font-size: 1.6rem;
+  }
+  }
+  @media only screen and (max-width:465px) {
+    .label_heading{
+      font-size: 0.9rem;
+    }
+    .label_heading_small{
+      font-size:0.8rem;
+    }
+  }
+  @media only screen and (max-width:465px) {
+    .label_heading{
+      font-size: 0.7rem;
+    }
+    .label_heading_small{
+      font-size:0.5rem;
+    }
+  }
