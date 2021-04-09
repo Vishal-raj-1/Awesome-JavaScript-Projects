@@ -6,6 +6,7 @@
 
  body {
      background-color: #262626;
+     font-family: 'Raleway', sans-serif;
  }
 
  #canvas {
@@ -30,7 +31,7 @@
      bottom: 5px;
      left: 5px;
      color: white;
-     font-family: monospace;
+     font-size: small;
 
      a {
          text-decoration: none;

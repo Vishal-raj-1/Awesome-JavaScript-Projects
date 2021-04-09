@@ -175,9 +175,9 @@ let projectData = [
     projectUrl: "public/DaysOfWeek.html",
   },
   {
-    projectName:"Hangman",
-    projectImage:"assets/GIFs/hangman.gif",
-    projectUrl:"public/hangman.html",
+    projectName: "Hangman",
+    projectImage: "assets/GIFs/hangman.gif",
+    projectUrl: "public/hangman.html",
   },
   {
     projectName: "Rock Paper Sessior Game",
@@ -217,9 +217,9 @@ let projectData = [
   },
 
   {
-    projectName:"Color Picker and Converter",
-    projectImage:"assets/GIFs/ColorPickerConverter.gif",
-    projectUrl:"public/ColorPickerConverter.html",
+    projectName: "Color Picker and Converter",
+    projectImage: "assets/GIFs/ColorPickerConverter.gif",
+    projectUrl: "public/ColorPickerConverter.html",
   },
   {
     projectName: " Key Event Code",
@@ -251,8 +251,8 @@ let projectData = [
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html",
   },
-   
- {
+
+  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
@@ -262,8 +262,11 @@ let projectData = [
     projectImage: "assets/Images/customVideoPlayer.png",
     projectUrl: "public/VideoPlayer.html",
   },
-  
-
+  {
+    projectName: "Phyllotaxis",
+    projectImage: "assets/Images/phyllotaxis.png",
+    projectUrl: "public/phyllotaxis.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -299,7 +302,7 @@ function getProjects() {
   console.log("projectContainer", projectContainer.innerHTML);
 }
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("Navbar");
 var sticky = navbar.offsetTop;
