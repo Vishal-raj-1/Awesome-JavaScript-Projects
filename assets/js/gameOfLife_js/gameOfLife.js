@@ -172,24 +172,6 @@ const stopAnimation = () => {
     clearInterval(animationState);
     animationState = "false";
 }
-//To start and pause
-window.addEventListener("keydown", (e) => {
-    e.preventDefault();
-    // console.log(e);
-    if (e.code == "Space") {
-        if (animationState == "false") {
-            startAnimation()
-            toggleControls(0)
-            console.log("Starting...");
-            printAliveCellsArray();
-        } else {
-            stopAnimation();
-            toggleControls(1)
-            console.log("Game stopped");
-        }
-    }
-});
-
 
 // control variables
 let play, pause, info, bookmark, forward, setting, controlPanel;
@@ -234,5 +216,32 @@ window.onload = () => {
         stopAnimation();
         toggleControls(1)
     }
+    forward.onclick = () => {
+        stopAnimation()
+        runLoop();
+    }
+
+    //To events for keypress
+    window.addEventListener("keydown", (e) => {
+        e.preventDefault();
+        // console.log(e);
+
+        // space for pause/play
+        if (e.code == "Space") {
+            if (animationState == "false") {
+                play.onclick()
+                console.log("Starting...");
+                // printAliveCellsArray();
+            } else {
+                pause.onclick()
+                console.log("Game stopped");
+            }
+        }
+
+        // forward
+        if (e.code == "ArrowRight") {
+            forward.onclick()
+        }
+    });
 
 }
