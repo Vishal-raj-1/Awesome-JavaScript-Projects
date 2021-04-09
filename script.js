@@ -609,6 +609,11 @@ let projectData = [
     projectImage: "assets/Images/memeimages/memebg.png",
     projectUrl: "public/Memegenerator.html",
   },
+  {
+    projectName: "Armstrong Checker",
+    projectImage: "assets/GIFs/ArmstrongNumber.gif",
+    projectUrl: "public/ArmstrongNumber.html",
+  },
 
 
 ];
