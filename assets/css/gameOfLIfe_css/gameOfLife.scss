@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+// variables
+$text-blue:#025D8C;
+
 body {
     background: #0F2027;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
 }
 
 .container {
@@ -19,9 +27,122 @@ body {
     align-items: center;
     background: #0F2027;
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+    #canvas {
+        background-color: #262626;
+        cursor: pointer;
+    }
+
+    z-index: 1;
 }
 
-#canvas {
-    background-color: #262626;
-    cursor: pointer;
+.title {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+
+    .name {
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .game {
+        font-size: 44px;
+        line-height: 42px;
+        color: #000000;
+    }
+}
+
+.para {
+    padding: 10px;
+    margin: 4px;
+
+    .heading {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        color: $text-blue;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text-blue;
+    }
+
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 10px;
+
+        color: #000000;
+    }
+}
+
+.tab {
+    position: absolute;
+    width: 90%;
+    padding: 20px;
+    padding-top: 200px;
+    max-width: 540px;
+    background: #fff;
+    border-radius: 30px;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    ul,
+    ol {
+        padding-left: 30px;
+    }
+}
+
+#control-panel {
+    position: absolute;
+    height: 20%;
+    max-height: 60px;
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+    border-radius: 100px;
+
+    svg {
+        cursor: pointer;
+        width: 40px;
+
+        &:active {
+            transform: scale(.92);
+        }
+    }
+
+    #bookmark {
+        width: 32px;
+    }
 }
