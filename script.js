@@ -261,7 +261,12 @@ let projectData = [
     projectName: "Custom Video Player",
     projectImage: "assets/Images/customVideoPlayer.png",
     projectUrl: "public/VideoPlayer.html",
-  }
+  },
+  {
+    projectName: "Phyllotaxis",
+    projectImage: "assets/Images/phyllotaxis.png",
+    projectUrl: "public/phyllotaxis.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
