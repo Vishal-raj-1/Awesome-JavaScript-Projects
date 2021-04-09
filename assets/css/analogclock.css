@@ -105,3 +105,17 @@ h3 a{
     z-index: 12;
     border-radius: 6px  6px 0 0;
 }
+ @media only screen and (max-width :385px){
+     .clock{
+        width: 270px;
+        height: 270px;
+     }
+     footer{
+         font-size: 0.9rem;
+     }
+ }
+ @media only screen and (max-width :300px){
+     footer{
+         font-size: 0.7rem;
+     }
+ }
