@@ -12,3 +12,16 @@
      background-color: #262626;
      position: fixed;
  }
+
+ footer {
+     position: fixed;
+     bottom: 5px;
+     left: 5px;
+     color: white;
+     font-family: monospace;
+
+     a {
+         text-decoration: none;
+         color: tomato;
+     }
+ }
