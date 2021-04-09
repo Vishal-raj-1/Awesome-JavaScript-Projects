@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/pinpad.html",
   },
    {
+    projectName: 'Music Player',
+    projectImage: 'assets/GIFs/Music_Player.gif',
+    projectUrl: 'public/MusicPlayer.html',
+  },
+   {
     projectName: "Drag Drop To-Do List",
     projectImage: "assets/GIFs/DragToDo.gif",
     projectUrl: "public/DragToDo.html",
