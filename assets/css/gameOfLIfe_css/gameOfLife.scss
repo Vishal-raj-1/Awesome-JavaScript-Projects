@@ -13,6 +13,10 @@ $shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
 body {
     background: #0F2027;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 ::-webkit-scrollbar {
@@ -183,28 +187,33 @@ body {
     display: none;
 }
 
+.setting-tab {
+    display: none;
+}
+
 #control-panel {
     position: absolute;
     height: 20%;
     max-height: 60px;
-    width: 90%;
-    max-width: 500px;
+    min-width: 50px;
+    width: auto;
     background: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     z-index: 100;
-    left: 0;
-    right: 0;
     margin: auto;
     bottom: 20px;
-    border-radius: 100px;
+    border-radius: 30px;
     box-shadow: $shadow;
+    transition: 300ms;
 
     svg {
         cursor: pointer;
         width: 40px;
+        transition: 300ms;
+        margin: 18px;
 
         &:active {
             transform: scale(.92);
@@ -213,5 +222,10 @@ body {
 
     #bookmark {
         width: 32px;
+    }
+
+    #pause {
+        position: absolute;
+        display: none;
     }
 }

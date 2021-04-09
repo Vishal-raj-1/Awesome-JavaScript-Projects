@@ -165,20 +165,74 @@ const printAliveCellsArray = () => {
     res += "]"
     console.log(res);
 }
-
+const startAnimation = () => {
+    animationState = setInterval(runLoop, 1000 / fps);
+}
+const stopAnimation = () => {
+    clearInterval(animationState);
+    animationState = "false";
+}
 //To start and pause
 window.addEventListener("keydown", (e) => {
     e.preventDefault();
     // console.log(e);
     if (e.code == "Space") {
         if (animationState == "false") {
-            animationState = setInterval(runLoop, 1000 / fps);
+            startAnimation()
+            toggleControls(0)
             console.log("Starting...");
             printAliveCellsArray();
         } else {
-            clearInterval(animationState);
-            animationState = "false";
+            stopAnimation();
+            toggleControls(1)
             console.log("Game stopped");
         }
     }
 });
+
+
+// control variables
+let play, pause, info, bookmark, forward, setting, controlPanel;
+
+const toggleControls = (val = 0) => {
+    val = (val == 0) ? "none" : "block";
+    // invisible
+    play.style.display = val
+    info.style.display = val
+    forward.style.display = val
+    bookmark.style.display = val
+    setting.style.display = val
+
+    // visible
+    let opp = (val == "none") ? "block" : "none";
+    pause.style.display = opp
+
+    // decreasing control panel opacity
+    controlPanel = document.querySelector("#control-panel")
+    if (val == "none") {
+        controlPanel.style.opacity = "0.7"
+    } else {
+        controlPanel.style.opacity = "1"
+    }
+}
+
+// adding event listeners to control
+window.onload = () => {
+    play = document.querySelector("#play");
+    pause = document.querySelector("#pause");
+    info = document.querySelector("#info");
+    bookmark = document.querySelector("#bookmark");
+    forward = document.querySelector("#forward");
+    setting = document.querySelector("#setting");
+
+
+    play.onclick = () => {
+        startAnimation()
+        toggleControls(0)
+    }
+    pause.onclick = () => {
+        stopAnimation();
+        toggleControls(1)
+    }
+
+}
