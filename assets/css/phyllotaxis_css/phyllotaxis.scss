@@ -13,6 +13,17 @@
      position: fixed;
  }
 
+ header {
+     position: fixed;
+     top: 0;
+     left: 5px;
+     font-size: 40px;
+     color: #fff;
+     opacity: 0.2;
+     z-index: 2;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
  footer {
      position: fixed;
      bottom: 5px;
