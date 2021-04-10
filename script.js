@@ -777,7 +777,11 @@ let projectData = [
     projectUrl: "public/ArmstrongNumber.html",
   },
 
-
+  {
+    projectName: "Code Converter",
+    projectImage: "assets/GIFs/Code_Converter.gif",
+    projectUrl: "public/Code_Converter.html",
+  },
 
 ];
 
