@@ -654,6 +654,10 @@ let projectData = [
     projectUrl: "public/wordScramble.html",
   },
   {
+    projectName: "Balloon Firing Game",
+    projectImage: "assets/Images/balloonFiring.js.png",
+    projectUrl: "public/balloonFiring.html",
+  },{
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
     projectUrl: "public/flipcards.html",
