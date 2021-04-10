@@ -494,7 +494,7 @@ let projectData = [
       projectName: "Live Code Editor",
       projectImage: "assets/GIFs/LiveEditor.gif.gif",
       projectUrl: "public/Live_Code_Editor.html",
-   },      
+   },
   {
     projectName: "Color Picker and Converter",
     projectImage: "assets/GIFs/ColorPickerConverter.gif",
@@ -510,7 +510,7 @@ let projectData = [
       projectImage: "assets/GIFs/LiveEditor.gif.gif",
       projectUrl: "public/Live_Code_Editor.html",
     },
-      
+
   {
     projectName: " Key Event Code",
     projectImage: "assets/GIFs/KeyEventCode.gif ",
@@ -714,7 +714,7 @@ let projectData = [
      projectName: "Image Editor",
     projectImage: "assets/GIFs/Image_editor.gif",
     projectUrl: "public/Image_editor.html",
-  }, 
+  },
   {
     projectName: "Falling Bullets Animation JS",
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
@@ -722,7 +722,7 @@ let projectData = [
   },
   {
 
- 
+
     projectName: 'Giphy-Search',
     projectImage: 'assets/GIFs/Giphy-Search.gif',
     projectUrl: 'public/Giphy-Search.html',
@@ -738,17 +738,37 @@ let projectData = [
     projectName: "Factorial Calculator",
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
-
-
-
   },
-
-  { 
+  {
+   projectName: "New year crackers",
+   projectImage: "assets/GIFs/newyearwish.gif",
+   projectUrl: "public/newyearwish.html",
+ },
+ {
+   projectName: "Factorial Calculator",
+   projectImage: "assets/Images/FactorialCalculator.jpg",
+   projectUrl: "public/FactorialCalculator.html",
+ },
+ {
+   projectName: "Speech To Text Converter",
+   projectImage: "assets/GIFs/SpeechtoText.gif",
+   projectUrl: "public/SpeechtoText.html",
+ }
+  {
     projectName: "Car Avoidance Game",
     projectImage: "assets/Images/carAvoidanceGame.png",
     projectUrl:"public/carAvoidanceGame.html",
   },
-  
+  {
+    projectName: "Memes Generator",
+    projectImage: "assets/Images/memeimages/memebg.png",
+    projectUrl: "public/Memegenerator.html",
+  },
+  {
+    projectName: "Armstrong Checker",
+    projectImage: "assets/GIFs/ArmstrongNumber.gif",
+    projectUrl: "public/ArmstrongNumber.html",
+  },
 
 ];
 
