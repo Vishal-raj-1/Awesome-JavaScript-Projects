@@ -403,6 +403,11 @@ let projectData = [
     projectUrl: 'public/BackgroundSlider.html',
   },
   {
+    projectName: 'Testimonial Design',
+    projectImage: 'assets/GIFs/TestimonialDesign.gif',
+    projectUrl: 'public/TestimonialDesign.html',
+  },
+  {
     projectName: 'Contacts Search',
     projectImage: 'assets/GIFs/contactSearch.gif',
     projectUrl: 'public/contactSearch.html',
