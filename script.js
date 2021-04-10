@@ -280,6 +280,11 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl:"public/palindrome.html",
   },
+  { 
+    projectName: "Car Avoidance Game",
+    projectImage: "assets/Images/carAvoidanceGame.png",
+    projectUrl:"public/carAvoidanceGame.html",
+  },
   
 ];
 
