@@ -26,7 +26,7 @@ const init = () => {
     grid = make2dArray(rows, cols);
 
     // assign initial formation
-    assignFormation(formations["gosperGlider"].cells);
+    assignFormation(formations[2].cells);
 
     //drawing or animating
     draw();
