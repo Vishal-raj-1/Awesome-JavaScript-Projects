@@ -92,7 +92,7 @@ body {
 }
 
 .start:hover {
-  background-color: DarkOrange;
+  background-color: black;
   color: white;
 }
 
@@ -105,11 +105,11 @@ body {
 }
 
 .stop:hover {
-  background-color: black;
+  background-color:black;
   color: white;
 }
 
 .disabled {
-  background-color: gray;
-  color: gray;
+  background-color:orange;
+  color:black;
 }
