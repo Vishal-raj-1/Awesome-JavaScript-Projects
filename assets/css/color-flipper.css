@@ -5,8 +5,13 @@ body {
 }
 
 h1 {
-    background-color: black;
-    color: darkred;
+    background-color: white;
+    mix-blend-mode: screen;
+    font-size: 3.5rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0% 3% 0% 3%;
 }
 
 .container{
@@ -15,13 +20,14 @@ h1 {
 }
 
 button{
-    padding: .7rem;
+    padding: .9rem;
+    margin-top: 5%;
     background-color: transparent;
     border-radius: 8%;
     background-color: black !important;
     color: white;
-    box-shadow: 2px 3px 3px rgba(199, 234, 240, 0.7);
-
+    font-size: 2rem;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 button:hover{
     border: 3px solid white;
@@ -104,4 +110,31 @@ section .wave.wave4
     {
         background-position-x:-1000px ;
     }
+}
+@media only screen and (max-width: 1100px) {
+    h1 {
+        font-size: 2.2rem;
+        border-radius: 2rem;
+    }
+    button{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 2.5rem;
+        border-radius: 2rem;
+    }
+    
+    button{
+        padding: .9rem;
+        margin-top: 22%;
+        background-color: transparent;
+        border-radius: 8%;
+        background-color: black !important;
+        color: white;
+        font-size: 1.5rem;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    
 }
