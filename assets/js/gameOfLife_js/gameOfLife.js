@@ -175,6 +175,7 @@ const stopAnimation = () => {
 
 // control variables
 let play, pause, info, bookmark, forward, setting, controlPanel;
+let infoTab, settingTab;
 
 const toggleControls = (val = 0) => {
     val = (val == 0) ? "none" : "block";
@@ -197,9 +198,20 @@ const toggleControls = (val = 0) => {
         controlPanel.style.opacity = "1"
     }
 }
+const closeOnExternalClick = (arr) => {
+    window.onclick = (e) => {
+        // console.log(e);
+        arr.forEach(elem => {
+            if (!elem[0].contains(e.target) && e.target !== elem[1] && window.getComputedStyle(elem[0]).display == "flex") {
+                elem[0].style.display = "none"
+            }
+        });
+    }
+}
 
 // adding event listeners to control
 window.onload = () => {
+    // control buttons
     play = document.querySelector("#play");
     pause = document.querySelector("#pause");
     info = document.querySelector("#info");
@@ -207,6 +219,9 @@ window.onload = () => {
     forward = document.querySelector("#forward");
     setting = document.querySelector("#setting");
 
+    // tabs in control
+    infoTab = document.querySelector("#game-info")
+    settingTab = document.querySelectorAll(".setting-tab")[0]
 
     play.onclick = () => {
         startAnimation()
@@ -218,8 +233,21 @@ window.onload = () => {
     }
     forward.onclick = () => {
         stopAnimation()
+        toggleControls(1)
         runLoop();
     }
+
+    // to bring tabs
+    info.onclick = () => {
+        infoTab.style.display = "flex";
+    }
+    setting.onclick = () => {
+        settingTab.style.display = "flex";
+    }
+
+    // to close tabs on click outside them
+    closeOnExternalClick([[infoTab, info], [settingTab, setting]]);
+
 
     //To events for keypress
     window.addEventListener("keydown", (e) => {
@@ -230,11 +258,9 @@ window.onload = () => {
         if (e.code == "Space") {
             if (animationState == "false") {
                 play.onclick()
-                console.log("Starting...");
                 // printAliveCellsArray();
             } else {
                 pause.onclick()
-                console.log("Game stopped");
             }
         }
 
