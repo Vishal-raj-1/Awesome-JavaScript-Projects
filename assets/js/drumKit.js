@@ -9,8 +9,7 @@ for(var i = 0 ; i <= numberOfButtons ; i++){
     makeSound(buttonInnerHTML);
 
     buttonAnimation(buttonInnerHTML);
-
-    });
+});
 
   }
 
