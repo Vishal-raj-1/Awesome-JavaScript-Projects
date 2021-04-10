@@ -34,9 +34,37 @@ const init = () => {
     draw();
 }
 const assignFormation = (arr) => {
+    let x = 0, y = 0;
+    let minX = 0, maxX = 0;
+    let minY = 0, maxY = 0;
+    for (let i = 0; i < arr.length; i++) {
+        // for y
+        if (arr[i][0] > minY) {
+            minY = arr[i][0]
+        }
+        if (arr[i][0] < minY || minY == 0) {
+            minY = arr[i][0]
+        }
+        // for x
+        if (arr[i][1] > minX) {
+            minX = arr[i][1]
+        }
+        if (arr[i][1] < minX || minX == 0) {
+            minX = arr[i][1]
+        }
+    }
+
+    x = Math.abs(maxX - minX);
+    y = Math.abs(maxY - minY);
+
+    let py = Math.floor(rows / 2) - y;
+    let px = Math.floor(cols / 2) - x;
+
     grid = make2dArray(rows, cols);
     for (let i = 0; i < arr.length; i++) {
-        grid[arr[i][0]][arr[i][1]] = 1;
+        let tx = px + arr[i][1];
+        let ty = py + arr[i][0]
+        grid[ty][tx] = 1;
     }
 }
 const draw = () => {
@@ -273,7 +301,7 @@ window.onload = () => {
         if (e.code == "Space") {
             if (animationState == "false") {
                 play.onclick()
-                // printAliveCellsArray();
+                printAliveCellsArray();
             } else {
                 pause.onclick()
             }
