@@ -486,6 +486,12 @@ let projectData = [
     projectUrl: "public/deviceInfo.html",
   },
   {
+
+    projectName: "Random Color Generator",
+    projectImage: "assets/Images/randomColorGenerator.png",
+    projectUrl: "public/randomColorGenerator.html",
+  },
+{
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
@@ -495,11 +501,7 @@ let projectData = [
       projectImage: "assets/GIFs/LiveEditor.gif.gif",
       projectUrl: "public/Live_Code_Editor.html",
    },      
-  {
-    projectName: "Color Picker and Converter",
-    projectImage: "assets/GIFs/ColorPickerConverter.gif",
-    projectUrl: "public/ColorPickerConverter.html",
-  },
+
  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
