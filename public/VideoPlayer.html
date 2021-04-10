@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title> 
+    <link rel="stylesheet" type="text/css" href="../assets/css/VideoPlayer.css">
+</head>
+<body>
+<div class="outerWrapper">
+<div class="videoWrapper">
+    
+<!--adding video element-->
+<video id="videoPlayer" timeUpdate="progressBar()">
+<source src="../assets/sounds/scienceFiction.mp4" type="video/mp4">
+Video is not supported in your browser.
+</video>
+
+<!--we add our custom buttons here for play, pause, stop and volume.-->
+<div class="video-controls">
+    <input type="image" src="../assets/Images/videoPlayer/playbtn.png" onclick="playVideo()" class="buttonPlay">
+    <input type="image" src="../assets/Images/videoPlayer/pausebtn.png" onclick="pauseVideo()" class="buttonPause">
+    <input type="image" src="../assets/Images/videoPlayer/stopbtn.png" onclick="stopVideo()" class="buttonStop">
+    <img src="../assets/Images/videoPlayer/volumebtn.png" class="volume-img">
+    <input type="range" id="volume-change" onchange="volumeChange()" step="0.05" min="0" max="1" value="0.5">
+    <input type="image" src="../assets/Images/videoPlayer/fullScreen.png" onclick="fullScreen()" class="fullScreenBtn">
+</div>
+</div>
+</div>  
+</div>  
+<script type="text/javascript" src="../assets/js/VideoPlayer.js"></script> 
+</body>
+<footer class="footer"><div class="attribution-block">Audio Rights: <a href="http://dig.ccmixter.org/files/beatgorilla/22372">Man Of Mystery (Woman Of Sin Mix)</a> by Pat Chilla The Beat Gorilla (c) copyright 2009 Licensed under a Creative Commons <a href="http://creativecommons.org/licenses/by-nc/3.0/">Attribution Noncommercial  (3.0)</a> license. </div> </footer>
+</html>

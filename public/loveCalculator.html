@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="../assets/css/loveCalculator.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="loader">
+
+        <h1> Love never Calculated by any measure but still wants to calculate cuteness in your love ..!</h1>
+    </div>
+
+    <audio controls> <source src="../assets/sounds/om_shanti_om_piano.mp3" type="audio/mpeg"></audio>
+    <!-- main container -->
+    <div class="container">
+        <div class="heading">
+            <h1>Love Calculator</h1>
+            <h1 class="quote">You Can't Blame Gravity For Falling In Love</h1>
+        </div>
+
+
+        <div class="userData">
+            <div class="Partner1">
+                <!-- <p1 class="name">Enter his/her Name.</p1> -->
+                <input id="name1" type="text" class="name-input1" placeholder="Your's Name">
+            </div>
+
+            <div class="partner2">
+                <!-- <p1 class="name">Enter his/her Name.</p1> -->
+                <input id="name2" type="text" class="name-input2" placeholder="Your's Love Name">
+            </div>
+        </div>
+        <button id="btn" type="button" value="submit">Calculate</button>
+        <div id="error" class="error hidden">Fill both the names</div>
+        <div class="results"></div>
+        <p class="aboutlove"></p>
+    </div>
+    <div class="attribution">
+        Coded by <a href="https://github.com/sonalisonawane">Sonali Sonawane :)</a>.
+    </div>
+    <script src="../assets/js/loveCalculator.js"></script>
+
+</body>
+
+</html>
