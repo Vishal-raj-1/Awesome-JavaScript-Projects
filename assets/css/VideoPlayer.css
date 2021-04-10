@@ -1,0 +1,44 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-color: #171717;
+}
+#volume-change{
+    color: #1F51FF;
+}
+.outerWrapper{
+    margin: 50px 0px;
+}
+#videoPlayer{
+    height:500px;
+    border: 2px solid #1F51FF;
+    padding: 20px 20px;
+}
+.buttonPlay,.buttonPause,.buttonStop,.volume-img,.fullScreenBtn{
+    outline:none;
+    height: 23px;
+   margin-top:15px;
+}
+.video-controls{
+    margin-top: 10px;
+}
+.attribution-block{
+    color: #C724B1;
+}
+.attribution-block>a{
+    text-decoration: none;    
+    color: #A117F2;
+}
+
+/*setting colors for volume bar*/
+#volume-change {
+    background: linear-gradient(to right, #BE00FE 0%, #A117F2 50%, #fff 50%, #fff 100%);
+    border: solid 4px #1F51FF;
+    border-radius: 8px;
+    height: 11px;
+    width: 100px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  

@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes Generator</title>
+
+    <link rel="stylesheet" href="../assets/css/Memegenerator.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content" id="content">
+    <div class="maindiv" id="maindiv">
+        <h1>Meme Generator</h1><br>
+        <button class="memeexpbtn" onclick="explorememes()">Explore</button><br>
+        <button class="memecreatebtn" onclick="hidehtml()" >Create</button>
+    </div>
+    <div id="memecreate"  class="memecreatebtncontent">
+        <div id="imageedit">
+            <div id="edit" class="child">
+                <h1>Edit your Meme</h1>
+                <div class="container">
+                    <img id="expandedImg" >
+                    <div id="textbox">
+                        <p id="topText"></p>
+                    </div>
+                    <div id="textbox2">
+                        <p id="bottomText"></p>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="child2" id="images">
+                <h1>Pick a Image</h1>
+                <img id="image1"  class="memeimg"  onclick="myFunction(this)" src="../assets/Images/memeimages/meme1.jpg" alt="">
+                <img id="image2"  class="memeimg" onclick="myFunction(this)" src="../assets/Images/memeimages/meme2.jpg" alt="">
+                <img id="image3"  class="memeimg" onclick="myFunction(this)" src="../assets/Images/memeimages/meme3.jpg" alt="">
+                <img id="image4"  class="memeimg" onclick="myFunction(this)" src="../assets/Images/memeimages/meme4.jpg" alt="">
+                <img id="image5"  class="memeimg" onclick="myFunction(this)" src="../assets/Images/memeimages/meme5.jpg" alt="">
+                <img id="image6"  class="memeimg" onclick="myFunction(this)" src="../assets/Images/memeimages/meme6.jpg" alt="">
+                <img id="image7"  class="memeimg" onclick="myFunction(this)" src="../assets/Images/memeimages/meme7.jpg" alt="">
+                <img id="image8"  class="memeimg" onclick="myFunction(this)" src="../assets/Images/memeimages/meme8.jpg" alt="">
+                <img id="image9"  class="memeimg" onclick="myFunction(this)" src="../assets/Images/memeimages/meme9.jpg" alt="">
+                <img id="image10" class="memeimg"  onclick="myFunction(this)" src="../assets/Images/memeimages/meme10.jpg" alt="">
+                <br>
+                <h4 style="margin: 0;">Top-Left Edit : </h4>
+                <textarea id="uppertext" ></textarea>
+                <br>
+                <h6>Change font size:  <input type="range" id="font_Size" style="margin: 0;" name="vol" min="0" max="60"><button id="fontbtn" onclick="changefont()">Change</button></h6>                               
+                <br>
+                <h4 style="margin: 0;">Bottom-Left Edit : </h4>
+                <textarea id="bottomtext2" ></textarea>
+                <br>
+                <h6>Change font size: <input type="range" id="font_Sizebottom" style="margin: 1%;" name="vol" min="0" max="60"><button id="fontbtn" onclick="changefontbottom()">Change</button></h6>
+                <br>
+                <button onclick="changetext()" id="textbtn">Add text</button>
+                <br>                
+            </div>
+        </div>
+    </div>
+    <div id="memeexplore">
+        <h1 style="color: black; font-size: xx-large; margin-top: 0.5rem;" >Explore random memes</h1>
+    <div id="container2">
+      <img id="image"  src="https://i.redd.it/sfmk5zbiv6r61.jpg"><br>
+      <button id="button" onclick="randommeme()"> Random </button>
+    </div>
+    </div>
+</div>
+    <script src="../assets/js/Memegenerator.js"></script>
+</body>
+</html>
