@@ -161,6 +161,7 @@ body {
         outline: none;
         width: 90%;
         margin-left: 10px;
+        cursor: pointer;
 
         &::-moz-range-progress {
             background: $green;
@@ -207,16 +208,16 @@ body {
     bottom: 20px;
     border-radius: 30px;
     box-shadow: $shadow;
-    transition: 300ms;
+    transition: 100ms;
 
     svg {
         cursor: pointer;
         width: 40px;
-        transition: 300ms;
+        transition: 100ms;
         margin: 18px;
 
         &:active {
-            transform: scale(.92);
+            transform: scale(.9);
         }
     }
 

@@ -5,15 +5,15 @@ import { formations } from "./formations.js";
 let canvas, canvasBound, ctx, w, h;
 let grid, cols, rows;
 let animationState = "false";
-let fps = 25, spacing = 4, boxSize = 15;
+let fps = 10, spacing = 4, boxSize = 16;
 let cellActiveColor = "#38ef7d";
 let baseColor = "#485563";
 let gridLine = "hsl(220, 30%,30%)";
 
 const init = () => {
+
     //setting things up
     canvas = document.getElementById("canvas");
-
     ctx = canvas.getContext("2d");
     canvas.width = w = window.innerWidth;
     canvas.height = h = window.innerHeight;
@@ -175,7 +175,7 @@ const stopAnimation = () => {
 
 // control variables
 let play, pause, info, bookmark, forward, setting, controlPanel;
-let infoTab, settingTab;
+let infoTab, settingTab, slider;
 
 const toggleControls = (val = 0) => {
     val = (val == 0) ? "none" : "block";
@@ -199,13 +199,18 @@ const toggleControls = (val = 0) => {
     }
 }
 const closeOnExternalClick = (arr) => {
-    window.onclick = (e) => {
-        // console.log(e);
+    let closeTab = (e) => {
         arr.forEach(elem => {
             if (!elem[0].contains(e.target) && e.target !== elem[1] && window.getComputedStyle(elem[0]).display == "flex") {
                 elem[0].style.display = "none"
             }
         });
+    }
+    window.onkeydown = (e) => {
+        closeTab(e)
+    }
+    window.onclick = (e) => {
+        closeTab(e)
     }
 }
 
@@ -256,6 +261,16 @@ window.onload = () => {
     // to close tabs on click outside them
     closeOnExternalClick([[infoTab, info], [settingTab, setting]]);
 
+    // setting tab sliders
+    // box size and speed
+    slider = document.getElementsByClassName("slider");
+    slider[0].addEventListener("input", () => {
+        fps = slider[0].value;
+    })
+    slider[1].addEventListener("input", () => {
+        boxSize = slider[1].value;
+        init();
+    })
 
     //To events for keypress
     window.addEventListener("keydown", (e) => {
