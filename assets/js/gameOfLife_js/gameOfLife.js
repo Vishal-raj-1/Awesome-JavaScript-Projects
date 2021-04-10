@@ -239,10 +239,18 @@ window.onload = () => {
 
     // to bring tabs
     info.onclick = () => {
-        infoTab.style.display = "flex";
+        if (window.getComputedStyle(infoTab).display == "none") {
+            infoTab.style.display = "flex";
+        } else {
+            infoTab.style.display = "none";
+        }
     }
     setting.onclick = () => {
-        settingTab.style.display = "flex";
+        if (window.getComputedStyle(settingTab).display == "none") {
+            settingTab.style.display = "flex";
+        } else {
+            settingTab.style.display = "none";
+        }
     }
 
     // to close tabs on click outside them
