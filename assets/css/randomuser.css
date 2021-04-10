@@ -1,0 +1,49 @@
+
+#Body-random{
+    background-color: #131c2c;
+}
+#Random_User{
+    background-color: #6610f2;
+    font-size: 20px;
+}
+.img{
+ text-align: center;
+}
+.img img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+label{
+
+    color: black;
+    font-weight: bold;
+}
+label::after{
+    content: " :-";
+    color: black;
+
+}
+p{
+    margin-top: 16px;
+    margin-bottom: 0rem;
+    font-family: auto;
+    margin-left: 10px;
+}
+
+#btn{
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+}
+
+.content h1{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.301);
+
+}
