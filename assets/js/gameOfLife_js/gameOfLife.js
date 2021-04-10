@@ -1,5 +1,6 @@
 // import pre-made formations
 import { formations } from "./formations.js";
+import { make2dArray, ran } from "./genericFunc.js";
 
 // variables
 let canvas, canvasBound, ctx, w, h;
@@ -26,7 +27,8 @@ const init = () => {
     grid = make2dArray(rows, cols);
 
     // assign initial formation
-    assignFormation(formations[2].cells);
+    let num = ran(0, formations.length)
+    assignFormation(formations[num].cells);
 
     //drawing or animating
     draw();
@@ -107,16 +109,6 @@ const neighbors = (arr, x, y) => {
 const runLoop = () => {
     draw();
     update();
-}
-
-// generic function to make 2d arrays
-const make2dArray = (rows, cols) => {
-    let arr = new Array(rows);
-
-    for (let i = 0; i < arr.length; i++) {
-        arr[i] = new Array(cols);
-    }
-    return arr;
 }
 
 //event listeners
