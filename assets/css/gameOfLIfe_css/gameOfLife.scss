@@ -23,6 +23,20 @@ body {
     width: 2px;
 }
 
+header {
+    position: fixed;
+    top: 0px;
+    left: 2px;
+    color: #fff;
+    opacity: 0.2;
+    font-size: large;
+    z-index: 100;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 .container {
     display: flex;
     position: fixed;
@@ -40,7 +54,7 @@ body {
         cursor: pointer;
     }
 
-    z-index: 1;
+    z-index: 10;
 }
 
 .tab {
