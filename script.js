@@ -160,6 +160,11 @@ let projectData = [
     projectUrl: "public/dateTimeWidget.html",
   },
   {
+    projectName: "FAQs",
+    projectImage: "assets/GIFs/FAQs.gif",
+    projectUrl: "public/FAQs.html",
+  },
+  {
     projectName: "Text Generator",
     projectImage: "assets/GIFs/textGenerator.gif",
     projectUrl: "public/textGenerator.html",
@@ -168,6 +173,86 @@ let projectData = [
     projectName: "Auto-Text",
     projectImage: "assets/GIFs/auto-text.gif",
     projectUrl: "public/auto-text.html",
+  },
+  {
+    projectName: "New Year Count Down",
+    projectImage: "assets/GIFs/newYearCountdown.gif",
+    projectUrl: "public/newyearcountdown.html",
+  },
+  {
+    projectName: "Line replacing text",
+    projectImage: "assets/GIFs/line-replacing-project-.gif",
+    projectUrl: "public/line_replacing_project.html",
+  },
+  {
+    projectName: "Stop Watch",
+    projectImage: "assets/GIFs/stopWatch.gif",
+    projectUrl: "public/StopWatch.html",
+  },
+  {
+    projectName: "Animated Counter",
+    projectImage: "assets/GIFs/animatedCounter.gif",
+    projectUrl: "public/animatedCounter.html",
+  },
+  {
+    projectName: "Music Player",
+    projectImage: "assets/GIFs/musicPlayer.gif",
+    projectUrl: "public/music_player.html",
+  },
+  {
+    projectName: "Maze Game",
+    projectImage: "assets/GIFs/maze.gif",
+    projectUrl: "public/maze.html",
+  },
+  {
+    projectName: "Drizzle of Hearts",
+    projectImage: "assets/GIFs/heart.gif",
+    projectUrl: "public/hearts.html",
+  },
+  {
+    projectName: "Drum Kit",
+    projectImage: "assets/GIFs/drum-kit.gif",
+    projectUrl: "public/drumKit.html",
+  },
+  {
+    projectName: "Netflix Clone",
+    projectImage: "assets/GIFs/netflix.gif",
+    projectUrl: "public/netflix.html",
+  },
+  {
+    projectName: "Analog Clock",
+    projectImage: "assets/GIFs/analogClock.gif",
+    projectUrl: "public/Analogclock.html",
+  },
+  {
+    projectName: "Digital Clock",
+    projectImage: "assets/GIFs/digitalClock.gif",
+    projectUrl: "public/digitalClock.html",
+  },
+  {
+    projectName: "Birthday Reminder",
+    projectImage: "assets/Images/birthdayReminder.png",
+    projectUrl: "public/birthdayReminder.html",
+  },
+  {
+    projectName: "Date Time Widget",
+    projectImage: "assets/GIFs/dateTimeWidget.gif",
+    projectUrl: "public/dateTimeWidget.html",
+  },
+  {
+    projectName: "Text Generator",
+    projectImage: "assets/GIFs/textGenerator.gif",
+    projectUrl: "public/textGenerator.html",
+  },
+  {
+    projectName: "Auto-Text",
+    projectImage: "assets/GIFs/auto-text.gif",
+    projectUrl: "public/auto-text.html",
+  },
+  {
+    projectName: "Reviews",
+    projectImage: "assets/GIFs/reviews.gif",
+    projectUrl: "public/reviews.html",
   },
   {
     projectName: "New Year Count Down",
@@ -253,6 +338,21 @@ let projectData = [
     projectName: "Weather App",
     projectImage: "assets/GIFs/Weather_app.gif",
     projectUrl: "public/Weather_app.html",
+  },
+  {
+    projectName: "MemeUrl",
+    projectImage: "assets/GIFs/memeUrl.png",
+    projectUrl: "public/memeUrl.html",
+  },
+  {
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
   },
   {
     projectName: "MemeUrl",
@@ -523,7 +623,6 @@ let projectData = [
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
   },
-
   {
     projectName: "New year crackers",
     projectImage: "assets/GIFs/newyearwish.gif",
@@ -539,11 +638,20 @@ let projectData = [
     projectImage: "assets/Images/memeimages/memebg.png",
     projectUrl: "public/Memegenerator.html",
   },
-
   {
     projectName: "Armstrong Checker",
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
     projectUrl: "public/ArmstrongNumber.html",
+  },
+  {
+    projectName: "Code Converter",
+    projectImage: "assets/GIFs/Code_Converter.gif",
+    projectUrl: "public/Code_Converter.html",
+  },
+  {
+    projectName: "AmoungUs Game Move",
+    projectImage: "assets/GIFs/amongus.gif",
+    projectUrl: "public/amongus.html",
   },
 ];
 
