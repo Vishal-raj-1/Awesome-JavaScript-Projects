@@ -538,6 +538,16 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl: "public/palindrome.html",
   },
+  
+//   {
+//     projectName: "DarkMode",
+//     projectImage: {
+//                     "assets/Images/DarkMode1.jpeg",
+//                     "assets/Image/DarkMode2.jpeg",
+//                   },
+//     projectUrl: "public/DarkMode.html",
+//    },
+  
   {
     projectName: "DarkMode",
     projectImage: "assets/Images/DarkMode2.jpeg",
@@ -548,6 +558,7 @@ let projectData = [
     projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
   },
+
   {
     projectName: "Connect Four",
     projectImage: "assets/GIFs/connectFour.gif",
@@ -628,6 +639,16 @@ let projectData = [
     projectImage: "assets/GIFs/fruitSlicer.gif",
     projectUrl: "public/fruitSlicer.html",
   },
+  {
+    projectName: "Simon's Game",
+    projectImage: "assets/Images/Simons_s_Game.png",
+    projectUrl: "public/simon.html",
+  },
+  {
+    projectName: "Image Editor",
+    projectImage: "assets/GIFs/Image_editor.gif",
+    projectUrl: "public/Image_editor.html",
+  }, 
   {
     projectName: "Image Editor",
     projectImage: "assets/GIFs/Image_editor.gif",
