@@ -425,6 +425,10 @@ let projectData = [
     projectUrl: "public/Minion-Eyes.html",
   },
   {
+    projectName: "2048 Game",
+    projectImage: "assets/GIFs/2048.gif",
+    projectUrl: "public/2048.html",
+  },{
     projectName: "PingPong Game",
     projectImage: "assets/GIFs/pingpong-image.gif",
     projectUrl: "public/pingpong.html",
