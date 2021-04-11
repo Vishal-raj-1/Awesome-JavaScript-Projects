@@ -8,7 +8,7 @@ body{
 }
 
 body{
-    background-color: #0f0f0f
+    background-color: #0f0f0f;
 
 }
 
@@ -39,7 +39,7 @@ button{
     outline: none;
     border:none;
     background: linear-gradient(315deg , #56d0c5, #89b0ad);
-    box-shadow: 3px 3px 8px 0px #224e4a, 
+    box-shadow: 3px 3px 8px 0px #224e4a,
                -3px -3px 8px 0px #4ac3bcf2;
     border-radius: 8px;
 }
@@ -49,7 +49,7 @@ button{
 button:hover{
     transform: scale(0.9);
     cursor: pointer;
-    background-color: #13caefc9;   
+    background-color: #13caefc9;
 }
 
 button:active:focus{
@@ -62,14 +62,14 @@ button:focus{
                 inset -3px -3px 8px 0px #0bd1f98c;
 }
 
-.calculator{ 
+.calculator{
     background-image: linear-gradient(to right,
                       rgb(30, 30, 30),
                       rgb(42, 223, 220));
     padding: 23px;
     border-radius: 30px;
     display: inline-block;
-    box-shadow: -5px -5px 10px #224c4e, 
+    box-shadow: -5px -5px 10px #224c4e,
                  5px 5px 10px #224c4e;
 }
 
@@ -77,4 +77,25 @@ h1{
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     color: aqua;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  table{
+  width: 80%;
+  }
+  input{
+    width: 90%;
+    font-size: 30px;
+    height: 50px;
+  }
+  button {
+    font-size: 25px;
+    width: 55px;
+    height: 40px;
+    margin: 4px;
+  }
+  .calculator{
+    width: 80%;
+    margin-top: 30px;
+  }
 }
