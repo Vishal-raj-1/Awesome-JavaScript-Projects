@@ -453,12 +453,27 @@ let projectData = [
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-  },
+   },
+   {
+      projectName: "Live Code Editor",
+      projectImage: "assets/GIFs/LiveEditor.gif.gif",
+      projectUrl: "public/Live_Code_Editor.html",
+   },
   {
     projectName: "Live Code Editor",
     projectImage: "assets/GIFs/LiveEditor.gif.gif",
     projectUrl: "public/Live_Code_Editor.html",
   },
+ {
+    projectName: "love Calculator",
+    projectImage: "assets/GIFs/loveCalculator.gif",
+    projectUrl: "public/loveCalculator.html",
+    },
+    {
+      projectName: "Live Code Editor",
+      projectImage: "assets/GIFs/LiveEditor.gif.gif",
+      projectUrl: "public/Live_Code_Editor.html",
+    },
   {
     projectName: " Key Event Code",
     projectImage: "assets/GIFs/KeyEventCode.gif ",
@@ -578,7 +593,7 @@ let projectData = [
     projectName: "Breakout!",
     projectImage: "assets/GIFs/breakouthere.gif",
     projectUrl: "public/breakout.html",
-
+  },{
     projectName: "TV Show Search",
     projectImage: "assets/GIFs/TV_ShowSearch.gif",
     projectUrl: "public/TV_ShowSearch.html",
@@ -609,9 +624,9 @@ let projectData = [
     projectUrl: "public/FallingBulletsAnimation.html",
   },
   {
-    projectName: "Giphy-Search",
-    projectImage: "assets/GIFs/Giphy-Search.gif",
-    projectUrl: "public/Giphy-Search.html",
+    projectName: 'Giphy-Search',
+    projectImage: 'assets/GIFs/Giphy-Search.gif',
+    projectUrl: 'public/Giphy-Search.html',
   },
   {
     projectName: "Play-Beats",
@@ -624,6 +639,25 @@ let projectData = [
     projectUrl: "public/FactorialCalculator.html",
   },
   {
+   projectName: "New year crackers",
+   projectImage: "assets/GIFs/newyearwish.gif",
+   projectUrl: "public/newyearwish.html",
+ },
+ {
+   projectName: "Factorial Calculator",
+   projectImage: "assets/Images/FactorialCalculator.jpg",
+   projectUrl: "public/FactorialCalculator.html",
+ },
+ {
+   projectName: "Speech To Text Converter",
+   projectImage: "assets/GIFs/SpeechtoText.gif",
+   projectUrl: "public/SpeechtoText.html",
+ },
+  {
+    projectName: "Car Avoidance Game",
+    projectImage: "assets/Images/carAvoidanceGame.png",
+    projectUrl:"public/carAvoidanceGame.html",
+  },{
     projectName: "New year crackers",
     projectImage: "assets/GIFs/newyearwish.gif",
     projectUrl: "public/newyearwish.html",
