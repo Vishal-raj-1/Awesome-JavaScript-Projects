@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .whole{
+        height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0c0e1c;
+    }
+    h1{
+        font-family: 'Stick', sans-serif;
+        color: lightgreen;
+    margin-bottom: 59px;
+    font-size: 37px;
+    }
+    .userinput{
+        height: 30%;
+    display: flex;
+    }
+    .uservalue1,.uservalue2{
+        display: flex;
+    flex-direction: column;
+    }
+    .uservalue1{
+        position: absolute;
+    left: 19px;
+    }
+    .uservalue2{
+        position: absolute;
+        right:19px;
+    }
+    .ans{
+        display: flex;
+    flex-direction: column;
+    margin-bottom: 47px;
+    pointer-events: none;  
+    }
+    label{
+        margin-bottom: 20px;
+        text-align: center;
+        color: lightblue;
+        font-size: 2rem;
+    }
+    input{
+        height: 5vh;
+    background: antiquewhite;
+    width: 31vw;
+    font-weight: bold;
+    font-size: 37px;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 13px;
+    }
+    .btn{
+        height: 20%;
+    margin-top: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    button{
+        /* ont-family: 'Arvo', serif; */
+    cursor: pointer;
+    height: 52%;
+    width: 28%;
+    background: #d02a36;
+    color: #f6f6f6;
+    font-weight: bold;
+    font-size: 43px;
+    margin-left: 14px;
+    border-radius: 90px;
+    outline: none;
+    border: none;
+    transition: 1.5s ease-in-out all;
+    }
+    button:hover{
+        background: #a01923;
+        color: #ecd4d4;
+    }
+    span{
+        color: red;
+    }
+    footer{
+        color: lightgray;
+    /* width: 100%; */
+    height: 7%;
+    position: absolute;
+    bottom: 1px;
+    font-size: 28px;
+    }
+    a{
+        color: lightgreen;
+    text-decoration: none;
+    }
+    @media only screen and (max-width: 500px) {
+        /* .whole{
+            min-height: 100vh;
+        } */
+        h1{
+            position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+        }
+        .userinput{
+            height: 31%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+        }
+        .uservalue1{
+            /* position: relative; */
+    margin-bottom: 20px;
+        }
+        .uservalue1,.uservalue2{
+            position: inherit;
+            display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+        }
+        input{
+            width: 100%;
+        }
+        button{
+            font-size: 36px;
+            width: 90%;
+    margin-bottom: 14px;
+        }
+        .btn{
+            display: flex;
+    flex-direction: column;
+        }
+    }
+    
