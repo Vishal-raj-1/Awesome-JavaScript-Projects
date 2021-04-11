@@ -2,12 +2,16 @@
     padding: 0;
     margin: 0;
 }
+html{
+    overflow-x: hidden;
+}
 
 body{
     background: linear-gradient(to right, #ee0979, #ff6a00);
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 header{
@@ -21,7 +25,10 @@ header,form {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    overflow-x: hidden;
 }
 form {
     display: flex;
@@ -31,7 +38,7 @@ form {
 
 form input, form button{
     padding: 0.4rem;
-    font-size: 1.6rem;
+    font-size: 1rem;
     border: none;
     background: white;
     border-radius: 5px;
@@ -47,6 +54,9 @@ form  input{
 
 .converter-container{
     padding: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 form button {
@@ -57,8 +67,7 @@ form button {
 }
 
 label {
-    font-size: 1.3rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -68,12 +77,12 @@ select {
     color:indigo;
     background: indianred;
     border: none;
-
+    justify-content: center;
 }
 
 span {
-    min-height: 20vh;
-    font-size: 18px;
+    min-height: 2vh;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;  
 }
 
@@ -91,4 +100,12 @@ color: whitesmoke;
 .card-title,.card-text{
     text-align: center;
 }
-
+@media only screen(max-width:427px) {
+    form input{
+        width:60px;
+        margin-right: 6px;
+    }
+    .converter-container{
+        padding: !important;
+    }
+}
