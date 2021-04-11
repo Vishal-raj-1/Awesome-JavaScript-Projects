@@ -350,6 +350,11 @@ let projectData = [
     projectImage: "assets/GIFs/typewriter.gif",
     projectUrl: "public/typewriter.html",
   },
+  {
+    projectName: "AwesomeSnakeGame",
+    projectImage: "assets/GIFs/AwesomeSnakeGame.gif",
+    projectUrl: "public/AwesomeSnakeGame.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
