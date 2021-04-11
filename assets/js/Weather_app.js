@@ -1,6 +1,8 @@
 let loc =document.getElementById("location");
 let tempicon=document.getElementById("temp-icon");
 let tempvalue=document.getElementById("temp-value");
+let tempunit=document.getElementById("temp-unit");
+let temperatureSection = document.querySelector('.temperature-section');
 let climate =document.getElementById("climate");
 let iconfile;
 const searchInput=document.getElementById("search-input");
@@ -21,7 +23,6 @@ searchInput.value='';
 const getWeather=async (city)=>
 {
     try{
-
         const response= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dab3af44de7d24ae7ff86549334e45bd`,
    
             {mode: 'cors'}
@@ -34,7 +35,7 @@ const getWeather=async (city)=>
         const{id,main}=weatherData.weather[0];
         loc.textContent=name;
         climate.textContent=main;
-        tempvalue.textContent=Math.round(feels_like-273);
+        tempvalue.textContent=(feels_like-273).toFixed(2);
         if(id<300 && id>200)
         {
             tempicon.src="../assets/Images/weather_icons/thunderstorm.svg"
@@ -60,12 +61,25 @@ const getWeather=async (city)=>
             tempicon.src="../assets/Images/weather_icons/clouds-and-sun.svg"
         }
 
+        //Change Temperature to Celsius/Fahrenheit
+        temperatureSection.addEventListener('click' , ()=>{
+            if(tempunit.textContent==="F"){
+                tempunit.textContent = "°C";
+                tempvalue.textContent=(feels_like-273).toFixed(2);
+                
+            }
+            else{
+                tempunit.textContent = "F";
+                tempvalue.textContent= 
+                ((feels_like- 273.15) * 9/5+ 32).toFixed(2);
+            }
+        });
    
     }
-catch(error)
-{
-    alert('city not found');
-}
+    catch(error)
+    {
+        alert('City not found');
+    }
 
 };
 
@@ -106,7 +120,7 @@ if(navigator.geolocation)
 
                     loc.textContent=name;
                     climate.textContent=main;
-                    tempvalue.textContent=Math.round(feels_like-273);
+                    tempvalue.textContent=(feels_like-273).toFixed(2);
                     if(id<300 && id>200)
                     {
                         tempicon.src="../assets/Images/weather_icons/thunderstorm.svg"
@@ -132,11 +146,25 @@ if(navigator.geolocation)
                         tempicon.src="../assets/Images/weather_icons/clouds-and-sun.svg"
                     }
 
-
                     console.log(data);
-            })
+
+                    //Change Temperature to Celsius/Fahrenheit
+                    temperatureSection.addEventListener('click' , ()=>{
+                        if(tempunit.textContent==="F"){
+                            tempunit.textContent = "°C";
+                            tempvalue.textContent=(feels_like-273).toFixed(2);
+                            
+                        }
+                        else{
+                            tempunit.textContent = "F";
+                            tempvalue.textContent= 
+                            ((feels_like- 273.15) * 9/5+ 32).toFixed(2);
+                        }
+                    });
+            });
 }
 
     )}
 
 })
+

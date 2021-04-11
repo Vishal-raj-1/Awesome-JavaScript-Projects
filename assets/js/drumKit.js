@@ -1,3 +1,4 @@
+
 var numberOfButtons = document.querySelectorAll(".drum").length;
 
 for(var i = 0 ; i <= numberOfButtons ; i++){
@@ -78,3 +79,4 @@ setTimeout(function () {
 }, 100);
 
 }
+

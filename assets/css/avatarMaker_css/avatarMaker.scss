@@ -1,0 +1,218 @@
+//  variables
+$picSize: 200px;
+$mobile : 600px;
+$mobilePic : 128px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.top {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: -1;
+
+    svg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+
+        @media (max-width: $mobile) {
+            top: -30%;
+        }
+    }
+}
+
+
+.bottom {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    svg {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 30%;
+        max-width: 300px;
+        transform: scaleX(-1);
+
+        @media (max-width: $mobile) {
+            width: 60%;
+            max-width: 400px;
+        }
+    }
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+    margin: 5px 10px;
+
+}
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 15vh;
+
+    @media (max-width: $mobile) {
+        margin-top: 10vh;
+    }
+
+    .input {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        @media (max-width: $mobile) {
+            width: 95%;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .info-text {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: lighter;
+
+            @media (max-width: $mobile) {
+                font-size: 1.8rem;
+            }
+        }
+
+        .input-bar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+
+            #name {
+                width: 100%;
+                max-width: 350px;
+                line-height: 20px;
+                padding: 16px;
+                border: 3px solid #000;
+                border-radius: 100px;
+                outline: none;
+                font-size: medium;
+                font-family: 'Raleway', sans-serif;
+
+            }
+
+            #btn {
+                width: auto;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 50px;
+                outline: none;
+                font-size: medium;
+                color: #fff;
+                transform: translate(-110%);
+                font-family: 'Raleway', sans-serif;
+                background: linear-gradient(90deg, #F12711 19.81%, rgba(245, 175, 25, 0.92) 119.81%);
+                cursor: pointer;
+
+                &:active {
+                    transform: translate(-110%) scale(.90);
+                }
+
+            }
+        }
+
+        .error {
+            margin: 10px;
+            margin-left: 16px;
+            width: 100%;
+            color: #FF3534;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+
+    .profile {
+
+        #dowloadBtn,
+        #profilePic {
+            width: $picSize;
+            height: $picSize;
+            color: #fff;
+            background: #F2ACB9;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 80px;
+            border: 4px solid #fff;
+            cursor: pointer;
+            transition: 300ms;
+
+            @media (max-width: $mobile) {
+                transform: scale(0.82);
+            }
+        }
+
+        #dowloadBtn {
+            display: none;
+            position: absolute;
+            background: rgba(128, 128, 128, 0.9);
+            cursor: pointer;
+
+        }
+
+
+    }
+
+    @media (max-width: $mobile) {
+        flex-direction: column-reverse;
+    }
+}
+
+footer {
+    position: absolute;
+    font-size: 12px;
+    bottom: 2px;
+    left: 10px;
+    font-family: 'Raleway', sans-serif;
+
+    a {
+        text-decoration: none;
+        color: #FF3534;
+    }
+}

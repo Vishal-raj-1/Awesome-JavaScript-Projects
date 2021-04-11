@@ -1,0 +1,97 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-color: #171717;
+    overflow-x: hidden;
+    justify-content: center;
+    margin-top: 50px;
+}
+#volume-change{
+    color: #1F51FF;
+}
+.outerWrapper{
+    overflow-x: hidden;
+    width: 70%;
+    margin: auto;
+    padding: 0;
+}
+#videoPlayer{
+    height:auto;
+    border: 2px solid #1F51FF;
+    padding: 20px 20px;
+    overflow-x: hidden;
+    width: 80%;
+    margin:auto;
+}
+.buttonPlay,.buttonPause,.buttonStop,.volume-img,.fullScreenBtn{
+    outline:none;
+    height: 25px;
+   margin-top:15px;
+}
+.video-controls{
+    margin: 50px;
+    overflow-x: hidden;
+}
+.attribution-block{
+    color: #C724B1;
+}
+.attribution-block>a{
+    text-decoration: none;    
+    color: #A117F2;
+}
+
+/*setting colors for volume bar*/
+#volume-change {
+    background: linear-gradient(to right, #BE00FE 0%, #A117F2 50%, #fff 50%, #fff 100%);
+    border: solid 4px #1F51FF;
+    border-radius: 8px;
+    height: 11px;
+    width: 100px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  footer{
+      font-size: 0.7rem;
+      margin-top: 50px;
+  }
+  @media only screen and (max-width:526px) {
+    .buttonPlay,.buttonPause,.buttonStop,.volume-img,.fullScreenBtn{
+       height: 20px;
+       margin-top:15px;
+    }
+    .video-controls{
+        width:100%;
+        margin:auto;
+        margin-bottom: 30px;
+    }
+    body{
+        margin-top: 150px;
+    }
+  }
+  @media only screen and (max-width:350px) {
+    /* .buttonPlay,.buttonPause,.buttonStop,.volume-img,.fullScreenBtn{
+       height: 20px;
+       margin-top:15px;
+    }
+    .video-controls{
+        width:90%;
+        margin:auto;
+        margin-bottom: 30px;
+    }
+    body{
+        margin-top: 150px;
+    } */
+    #videoPlayer{
+        padding: 10px;
+    }
+    .video-controls{
+        padding:0;
+        margin:0;
+    }
+    .buttonPlay,.buttonPause,.buttonStop,.volume-img,.fullScreenBtn{
+        height: 15px;
+        width: 15px;
+        margin-top:15px;
+     }
+  }

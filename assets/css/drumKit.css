@@ -1,6 +1,7 @@
 :root {
-  --main-font:  "monospace","montserrat", sans-serif;
-  --drum-font:  "monospace","open sans", sans-serif;
+ 
+  --background: #cc0066;
+  --text:#ffcce6;
 }
 
 * {
@@ -13,7 +14,8 @@ body {
   font-family: "montserrat", sans-serif;
   height: 100%;
   text-align: center;
-  /*background-image: url(assets/back.gif);*/
+  background: var(--background);
+  
 }
 
 header {
@@ -57,6 +59,7 @@ footer p {
   font-size: x-large;
 }
 
+
 .drum {
   outline: none;
   border: 0.25em solid #000000;
@@ -78,6 +81,7 @@ footer p {
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
+
 }
 
 /* for smaller devices*/
