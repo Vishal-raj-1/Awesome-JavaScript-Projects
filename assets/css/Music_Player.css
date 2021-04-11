@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,11 +13,13 @@ body {
   background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../Images/MusicPlayer/back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Spartan, sans-serif;
   font-size: 12px;
+  overflow-x: hidden;
 }
 
 .player-container {
@@ -108,15 +111,15 @@ h3 {
 }
 
 /* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 405px) {
+  .img-container{
+    width: 75%;
+    height: 60%;
+    left: 40px;
+  }
   .player-container {
     width: 95vw;
   }
-
-  .img-container {
-    left: 29px;
-  }
-
   h2 {
     font-size: 20px;
   }
@@ -127,6 +130,6 @@ h3 {
 
   .player-controls {
     top: -10px;
-    left: 100px;
+    left: 26%;
   }
 }
