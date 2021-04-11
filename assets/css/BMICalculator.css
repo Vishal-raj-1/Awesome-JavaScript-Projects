@@ -7,7 +7,7 @@
     padding-left: 30px;
     padding-bottom: 3px;;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 25px 3px rgba(0, 0, 0, 0.774);
-   
+   margin-top: 50px;
 }
 #height, #weight {
    
@@ -80,4 +80,16 @@ label{
     font-family:'Noto Serif', serif;
     padding-right:5px;
 }
-
+@media only screen and (max-width:415px) {
+    .container{
+        margin-top:25%;
+    }
+    #weight-guide{
+        margin-left: 51px;
+        font-size: 1rem;
+    }
+    body{
+        justify-content: center;
+        margin: auto;
+    }
+}
