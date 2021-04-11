@@ -790,7 +790,11 @@ let projectData = [
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
     projectUrl: "public/ArmstrongNumber.html",
   },
-
+  {
+    projectName: "AmoungUs Game Move",
+    projectImage: "assets/GIFs/amongus.gif",
+    projectUrl: "public/amongus.html",
+  },
 ];
 
 
