@@ -659,6 +659,7 @@ footer a{
 }
 .contact p textarea{
     padding: 10px;
+    resize: none;
 }
 .contactForm p input:focus,
 .contactForm p textarea:focus{
