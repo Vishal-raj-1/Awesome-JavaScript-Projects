@@ -643,6 +643,11 @@ let projectData = [
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
     projectUrl: "public/ArmstrongNumber.html",
   },
+   {
+    projectName: " Testimonial Design",
+    projectImage: "assets/GIFs/TestimonialDesign.gif ",
+    projectUrl: "public/TestimonialDesign.html",
+  },
   {
     projectName: "Code Converter",
     projectImage: "assets/GIFs/Code_Converter.gif",
