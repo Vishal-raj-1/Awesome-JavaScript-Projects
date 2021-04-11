@@ -360,6 +360,21 @@ let projectData = [
     projectUrl: "public/RGB_Color_Guessing_Game.html",
   },
   {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "MemeUrl",
+    projectImage: "assets/GIFs/memeUrl.png",
+    projectUrl: "public/memeUrl.html",
+  },
+  {
+    projectName: "RGB Color Guessing Game",
+    projectImage: "assets/GIFs/RGB_Color.gif",
+    projectUrl: "public/RGB_Color_Guessing_Game.html",
+  },
+  {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html",
@@ -370,9 +385,9 @@ let projectData = [
     projectUrl: "public/UserListFilter.html",
   },
   {
-    projectName: "Animated Minion Eyes",
-    projectImage: "assets/GIFs/Minion-Eyes.gif",
-    projectUrl: "public/Minion-Eyes.html",
+    projectName: 'Animated Minion Eyes',
+    projectImage: 'assets/GIFs/Minion-Eyes.gif',
+    projectUrl: 'public/Minion-Eyes.html',
   },
   {
     projectName: "Rode Slider Game",
@@ -509,6 +524,7 @@ let projectData = [
     projectImage: "assets/GIFs/ColorPickerConverter.gif",
     projectUrl: "public/ColorPickerConverter.html",
   },
+
   {
     projectName: " Key Event Code",
     projectImage: "assets/GIFs/KeyEventCode.gif ",
@@ -650,6 +666,10 @@ let projectData = [
     projectUrl: "public/wordScramble.html",
   },
   {
+    projectName: "Balloon Firing Game",
+    projectImage: "assets/Images/balloonFiring.js.png",
+    projectUrl: "public/balloonFiring.html",
+  },{
     projectName: "Flip cards",
     projectImage: "assets/GIFs/flipped.gif",
     projectUrl: "public/flipcards.html",
@@ -733,7 +753,6 @@ let projectData = [
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
   },
-
   {
     projectName: "New year crackers",
     projectImage: "assets/GIFs/newyearwish.gif",
@@ -754,11 +773,25 @@ let projectData = [
     projectImage: "assets/Images/memeimages/memebg.png",
     projectUrl: "public/Memegenerator.html",
   },
-
+  {
+    projectName : "Typing Practice",
+    projectImage:"assets/GIFs/TypingSpeed.gif",
+    projectUrl: "public/TypingPractice.html"
+  }
   {
     projectName: "Armstrong Checker",
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
     projectUrl: "public/ArmstrongNumber.html",
+  },
+  {
+    projectName: "Code Converter",
+    projectImage: "assets/GIFs/Code_Converter.gif",
+    projectUrl: "public/Code_Converter.html",
+  },
+  {
+    projectName: "AmoungUs Game Move",
+    projectImage: "assets/GIFs/amongus.gif",
+    projectUrl: "public/amongus.html",
   },
 ];
 
