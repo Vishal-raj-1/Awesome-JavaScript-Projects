@@ -614,7 +614,6 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
-
     projectName: "PianoApp",
     projectImage: "assets/Images/pianoApp.png",
     projectUrl: "public/pianoApp.html",
@@ -681,6 +680,21 @@ let projectData = [
     projectName: "Factorial Calculator",
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
+  },
+  {
+    projectName: "Hospital Registration Form",
+    projectImage: "assets/GIFs/registration_form.gif",
+    projectUrl: "public/registration_form.html",
+  },
+  {
+    projectName: "Lyrics App",
+    projectImage: "assets/GIFs/lyricsApp.gif",
+    projectUrl: "public/lyricsApp.html",
+  },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakouthere.gif",
+    projectUrl: "public/breakout.html",
   },
   {
    projectName: "New year crackers",
