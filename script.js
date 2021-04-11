@@ -614,6 +614,11 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
+
+    projectName: "PianoApp",
+    projectImage: "assets/Images/pianoApp.png",
+    projectUrl: "public/pianoApp.html",
+  },{
     projectName: "Lyrics App",
     projectImage: "assets/GIFs/lyricsApp.gif",
     projectUrl: "public/lyricsApp.html",
