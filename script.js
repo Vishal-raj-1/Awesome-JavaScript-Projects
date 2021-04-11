@@ -557,6 +557,10 @@ let projectData = [
     projectName: "Blurry Loading Interface",
     projectImage: "assets/GIFs/Blurry_Loading_Interface.gif",
     projectUrl: "public/blurry_loading_interface.html",
+  },{
+    projectName:"Sequence Game",
+    projectImage:"assets/Images/sequence-game.png",
+    projectUrl:"public/Sequence-game.html",
   },
 
   {
@@ -580,7 +584,6 @@ let projectData = [
     projectUrl: "public/wordScramble.html",
   },
   {
-
     projectName: "Expense Tracker",
     projectImage: "assets/GIFs/ExpenseTracker.gif",
     projectUrl: "public/ExpenseTracker.html",
