@@ -558,7 +558,7 @@ let projectData = [
   },
   {
     projectName: "Simon's Game",
-    projectImage: "assets/Images/Simon-s-Game.png",
+    projectImage: "assets/Images/Simons_s_Game.png",
     projectUrl: "public/simon.html",
   },
   {
