@@ -779,7 +779,11 @@ let projectData = [
     projectImage: "assets/Images/memeimages/memebg.png",
     projectUrl: "public/Memegenerator.html",
   },
-
+  {
+    projectName : "Typing Practice",
+    projectImage:"assets/GIFs/TypingSpeed.gif",
+    projectUrl: "public/TypingPractice.html"
+  }
 
   {
     projectName: "Armstrong Checker",
