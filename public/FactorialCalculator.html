@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Factorial Calculator</title>        
+        <link rel="icon" href="../assets/Images/FactorialCalculator_Logo.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=RocknRoll+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>   
+        <link rel="stylesheet" href="../assets/css/FactorialCalculator.css">    
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="box d-flex justify-content-center text-center">
+                <div>
+                    <!-- Heading -->
+                    <h1 class="display-2">Factorial Calculator</h1>
+
+                    <hr>
+
+                    <!-- Main Content -->
+                
+                    <div class="form-box">
+                        <div class="d-flex flex-wrap justify-content-center">
+
+                            <!-- Input Box -->
+                            <div class="form-group">
+                                <input type="text" id="number" class="form-control" placeholder="Enter Number">
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-outline-primary form-control" onclick="factorial()">Calculate</button>
+                            </div>
+                        </div>
+
+                        <!-- Answer -->
+    
+                        <div>
+                           <p id="answer"></p>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+        <!-- Footer -->
+
+        <p class="footer text-center">Made with <i class="fas fa-heart"></i> by <a href="https://github.com/AnshikaAgrawal5501">Anshika Agrawal</a></p>
+
+        <script src="../assets/js/FactorialCalculator.js"></script>
+        
+    </body>
+</html>

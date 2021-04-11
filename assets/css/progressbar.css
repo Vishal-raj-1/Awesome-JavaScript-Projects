@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 12px 25px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.198);
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+body{
+    transition: all 500ms;
+    font-family: monospace;
+}
+
+.progresss{
+    width: 450px;
+    margin: 10px 0;
+    background-color: rgba(0, 140, 255, 0.13);
+    border-radius: 15px;
+}
+.progress-bar{
+    background-color: rgb(174, 0, 255);
+    width: 3%;
+    padding: 16px 10px;
+    border-radius: 15px;
+    color: #fff;
+}
+.Btn-container{
+    margin-top: 30px;
+}
+.Btn-container ul li{
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    margin: 0 10px;
+}
+.btn-move{
+    width: auto;
+    padding: 7px 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: 0;
+    }
+footer{
+    text-align: center;
+    font-size: 20px;
+    padding: 12px 0;
+}
+
+@media(max-width: 600px){
+    .btn-move{
+    width: auto;
+    padding: 7px 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: 0;
+    }
+    .Btn-container ul li{
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    margin: 0 0px;
+    width: auto;
+}
+}
+@media only screen and (max-width: 465px) {
+    .progresss{
+        width:380px;
+    }
+}
+@media only screen and (max-width: 405px) {
+    .progresss{
+        width:350px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .progresss{
+        width:300px;
+    }
+    ul{
+        font-size: 0.2rem;
+    }
+}
+@media only screen and (max-width: 345px) {
+    .progresss{
+        width:290px;
+    }
+    ul{
+        text-align: center;
+    }
+    .btn-html,.btn-css,.btn-js{
+        font-size:0.8rem;
+        margin:10px;
+    }
+    .btn-react,.btn-wordpress{
+        font-size: 0.8rem;
+        margin:20px;
+    }
+}
+@media only screen and (max-width: 290px) {
+    .progresss{
+        width:250px;
+    }
+}
