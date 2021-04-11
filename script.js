@@ -614,6 +614,11 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
+
+    projectName: "Speech Recognization",
+    projectImage: "assets/Images/speech-recognization.PNG",
+    projectUrl: "public/speech-recognization.html",
+  },{
     projectName: "PianoApp",
     projectImage: "assets/Images/pianoApp.png",
     projectUrl: "public/pianoApp.html",
