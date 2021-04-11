@@ -647,6 +647,10 @@ let projectData = [
     projectUrl: "public/fruitSlicer.html",
   },
   {
+    projectName: "FoodRecipe",
+    projectImage: "assets/GIFs/foodRecipe.gif",
+    projectUrl: "public/foodRecipe.html",
+  },{
     projectName: "Simon's Game",
     projectImage: "assets/Images/Simons_s_Game.png",
     projectUrl: "public/simon.html",
