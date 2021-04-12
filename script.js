@@ -572,7 +572,7 @@ let projectData = [
     projectName: "Moving Car Animation",
     projectImage: "assets/GIFs/Animated_moving_car.gif",
     projectUrl: "public/Animated_moving_car.html",
-  }
+  },
   
 //   {
 //     projectName: "DarkMode",
@@ -828,6 +828,11 @@ let projectData = [
     projectName: "AmoungUs Game Move",
     projectImage: "assets/GIFs/amongus.gif",
     projectUrl: "public/amongus.html",
+  },
+  {
+    projectName: "Typing Practice",
+    projectImage: "assets/GIFs/TypingSpeed.gif",
+    projectUrl: "public/TypingPractice.html",
   },
 ];
 
