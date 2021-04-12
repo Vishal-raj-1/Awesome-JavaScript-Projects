@@ -42,11 +42,11 @@ h1 {
 }
 
 .year {
-  font-size: 200px;
+  font-size: 180px;
   z-index: -1;
   opacity: 0.5;
   position: absolute;
-  top: 20px;
+  top: 5px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -68,7 +68,22 @@ h1 {
   margin: 0 0 5px;
 }
 
+@media (max-width: 636px) {
+  .year {
+    font-size: 140px;
+    z-index: -1;
+    opacity: 0.5;
+    /* position: absolute; */
+    top: 10px;
+    /* left: 50%; */
+    transform: translate(-50%);
+  }
+
+}
 @media (max-width: 500px) {
+  .year{
+    font-size: 100px;
+  }
   h1 {
     font-size: 45px;
   }

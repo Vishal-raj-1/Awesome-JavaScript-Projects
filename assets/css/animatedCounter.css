@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
-  box-sizing: border-box;
+  box-sizing:content-box;
   margin: 0;
   padding: 0;
 }
@@ -18,13 +18,36 @@ body {
   justify-content: flex-end;
   height: 100vh;
 }
+img{
+    height:100px;
+    width:80px;
+    margin: 0px 7px;
+}
+
+.btn{
+    position:relative;
+    background-color: white;
+    border: 4px outset green ;
+    margin:0px 2px;
+    padding: 3px 3px;
+}
+.btn:hover {
+    background-color:coral ;
+    color: white;
+}
 
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0px auto;
   overflow: auto;
+  max-height: 350px;
+  box-shadow: 20px 20px 25px grey;
+  border: outset;
 }
+section{
+  margin:auto 70px;
 
+}
 header {
   flex: 1;
   height: 100%;
@@ -41,13 +64,13 @@ header h1 {
 .counters {
   background-color: white;
   color: black;
-  padding: 40px 20px;
+  padding: 20px 20px;
   border-top: 3px black solid;
 }
 
 .counters .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
   text-align: center;
 }

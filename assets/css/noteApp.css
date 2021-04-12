@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(#eb126c, #10daf5,#7b10f5);
+    margin:20px auto;
+    
+}
+.navbar-brand{
+    letter-spacing: 2px;
+    opacity: 1;
+}
+.navbar-brand:hover{
+    letter-spacing: 3px;
+}
+.title1{
+    padding-bottom:  10px;
+    opacity: 1;
+}
+.title1:hover{
+    opacity: 0.8;
+}
+.card-body{
+    width:inherit;
+    background: linear-gradient( #a3eaf3,#d1769c);
+    border:2px solid rgb(216, 212, 248);
+    border-radius: 5px;
+    border-style: outset;
+}
+
+.form-control{
+    background-color:white;
+    border-radius: 5px;
+}
+
+.card-title{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
