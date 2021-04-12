@@ -1,0 +1,291 @@
+.sgpa_reset {
+    background:#3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 12px;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+   
+   margin-bottom: 15px;
+   margin-right: 10px;
+ }
+ 
+ .sgpa_reset:hover {
+    background: #1CC1CD;
+    border: solid #013337 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+ .cgpa_reset {
+    background: #FA3C3C;
+    background-image: -webkit-linear-gradient(top, #FA3C3C, #D01E1E);
+    background-image: -moz-linear-gradient(top, #FA3C3C, #D01E1E);
+    background-image: -ms-linear-gradient(top, #FA3C3C, #D01E1E);
+    background-image: -o-linear-gradient(top, #FA3C3C, #D01E1E);
+    background-image: -webkit-gradient(to bottom, #FA3C3C, #D01E1E);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 12px;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #DD380D 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 10px;
+ }
+ 
+ .cgpa_reset:hover {
+    background: #FF7500;
+    border: solid #FF7500 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+ .sgpa_submit {
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 12px;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .sgpa_submit:hover {
+    background: #1CC1CD;
+    border: solid #013337 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+ .cgpa_submit {
+    background: #FA3C3C;
+    background-image: -webkit-linear-gradient(top, #FA3C3C, #D01E1E);
+    background-image: -moz-linear-gradient(top, #FA3C3C, #D01E1E);
+    background-image: -ms-linear-gradient(top, #FA3C3C, #D01E1E);
+    background-image: -o-linear-gradient(top, #FA3C3C, #D01E1E);
+    background-image: -webkit-gradient(to bottom, #FA3C3C, #D01E1E);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 12px;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #DD380D 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .cgpa_submit:hover {
+    background: #FF7500;
+    border: solid #FF7500 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+body{
+    background-image: url(../Images/sgpa_and_cgpa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+ .sgpa{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    margin: 10px auto 0 auto;
+    box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.03),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  .cgpa{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    margin: 140px auto 0 auto;
+    box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.03),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  .sgpa_title{
+      background-color:	#3D94F6 ;
+      font-family: Helvetica;
+      padding :5px;
+      border-radius: 10px 10px 0px 0px ;
+     
+     
+  }
+  .cgpa_title{
+    background-color:#FA3C3C ;
+    font-family: Helvetica;
+    padding :5px;
+    border-radius: 10px 10px 0px 0px ;
+   
+   
+   
+}
+  .sgpa_subtitle{
+    font-family: Helvetica;
+    width: 80%;
+    margin: 10px auto;
+    
+  }
+
+  .course {
+    padding: 8px;
+    border-radius: 15px;
+    outline: none;
+    font-family: Helvetica;
+    text-align: center;
+    margin-right: 10px;
+    
+  }
+  .credits {
+    padding: 8px;
+    border-radius: 15px;
+    outline: none;
+    font-family: Helvetica;
+    text-align: center;
+  }
+  .total_credits {
+    padding: 8px;
+    border-radius: 15px;
+    outline: none;
+    font-family: Helvetica;
+    text-align: center;
+  }
+  .oldcgpa {
+    padding: 8px;
+    border-radius: 15px;
+    outline: none;
+    font-family: Helvetica;
+    text-align: center;
+  }
+  .total_pcredits {
+    padding: 8px;
+    border-radius: 15px;
+    outline: none;
+    font-family: Helvetica;
+    text-align: center;
+  }
+  .newsgpa {
+    padding: 8px;
+    border-radius: 15px;
+    outline: none;
+    font-family: Helvetica;
+    text-align: center;
+  }
+  .subject1{
+      margin-bottom: 10px;
+  }
+  .old_cgpa{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+  .subject2{
+    margin-bottom: 10px;
+}
+.past_tcredits{
+    margin-bottom: 20px;
+}
+.subject3{
+    margin-bottom: 10px;
+}
+.new_sgpa{
+    margin-bottom: 20px;
+}
+.subject4{
+    margin-bottom: 10px;
+}
+.tcredits{
+    margin-bottom: 20px;
+}
+.subject5{
+    margin-bottom: 10px;
+}
+
+.subject6{
+    margin-bottom: 10px;
+}
+
+.subject7{
+    margin-bottom: 10px;
+}
+
+  .sgpa_result{
+      margin: 20px auto;
+      font-family: Helvetica;
+  }
+  .cgpa_result{
+    margin: 20px auto;
+    font-family: Helvetica;
+}
+@media only screen and (max-width:500px) {
+  body{
+    background-size: auto;
+  }
+}
