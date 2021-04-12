@@ -1,0 +1,55 @@
+*{
+    background-color: rgb(194, 187, 187);
+}
+h1{
+    text-shadow: 1px 2px  rgb(19, 16, 19);
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 1px;
+    font-size: 50px;
+    color: rgb(1, 1, 73);
+}
+h3{
+    text-shadow: 1px 1px rgb(9, 9, 110);
+    text-decoration: underline;
+    margin-left: 40%;
+    margin-top: 1px;
+    font-size: 40px;
+    color: rgb(9, 9, 110);
+}
+.Calculation{
+    font-size: 25px;
+    font-weight:bold;
+    margin-left: 20%;
+    margin-top: 5px;
+}
+#p,#r,#t{
+    text-align: left;
+    border-radius: 6px;
+    border: 2px solid rgb(10 19 61);
+    font-size: 20px;
+    font-style: italic;
+    height: 30px;
+    width: 70%;
+    box-shadow: 1px 1px #201727, 2px 2px #494848, 4px 4px rgb(10 19 61);
+}
+#reset{
+    margin-left: 55%;
+    background-color: rgb(66, 117, 119);
+}
+#submit{
+    background-color: rgb(18, 182, 223);
+}
+#reset,#submit{
+     text-align: center;
+     width: 8%;
+     height: 30px;
+     border-color: #0c0a0a;
+     box-shadow: 1px 1px #131214, 1px 1px #0c0806, 2px 2px rgb(5 15 31);
+}
+#simpleInterest{
+    font-size: 35px;
+    text-shadow: 1px 1px  rgb(19, 16, 19);
+    margin-left: 120px;
+    margin-top: -5px;
+}

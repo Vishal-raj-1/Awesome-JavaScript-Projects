@@ -13,18 +13,37 @@ class Note{
 }
 
 let addBtn = document.getElementById('addBtn');
+
+// Div where error alert will be shown
+let errorAlertDiv = document.getElementById("alerts");
+
+// Error alert when no text provided in the note or title of the note
+let emptyNoteAlert = `<div id="errorAleart" class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Oops!</strong> This is empty note !! Try to write something useful
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`;
+
+let emptyTitleAlert = `<div id="errorAleart" class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Oops!</strong> Title is empty !! Add the title for the note
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`;
+
 addBtn.addEventListener('click', function(e){
 
     let addTxt = document.getElementById('addTxt');
     let addTitle = document.getElementById("addTitle");
 
-    //if note is empty and press add note button, then give a alert
+    // if title or note is empty and press add note button, then give a alert
     if(addTitle.value == ""){
-        return alert('That Title is empty !! Try to write something useful');
+        // Show error alert when note is empty
+        errorAlertDiv.innerHTML = emptyTitleAlert;
+        return;
     }
 
-    if(addTxt.value == ""){
-        return alert('This is empty note !! Try to write something useful');
+    if (addTxt.value == "") {
+        // Show error alert when note is empty
+        errorAlertDiv.innerHTML = emptyNoteAlert;
+        return;
     }
 
     let notes = localStorage.getItem('notes');
@@ -70,7 +89,7 @@ function showNotes(){
     const favorite_class = ["noteCard m-2 card favorite","noteCard m-2 card not-favorite"]
 
     notesObj.forEach((element, index) => {
-        addNote += `<div class="${element.favorite ? favorite_class[0]:favorite_class[1]}" style="width: 18rem;">
+        addNote += `<div class="${element.favorite ? favorite_class[0]:favorite_class[1]}" style="width: auto;">
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col">
@@ -162,6 +181,39 @@ search.addEventListener('input', function(){
                 }
     })
 })
+
+
+// Dismissing the error alert when the user enters some text
+let addTxt = document.getElementById("addTxt");
+
+addTxt.addEventListener("input", function () {
+    let inputVal = addTxt.value.toLowerCase();
+
+    if (inputVal != null && inputVal.trim().length > 0) {
+        errorAlertDiv.innerHTML = ``;
+    }
+
+});
+
+let addTxt = document.getElementById("addTxt");
+let addTitle = document.getElementById("addTitle");
+
+addTxt.addEventListener("input", function () {
+    checkNoteEmpty();
+});
+
+addTitle.addEventListener("input", function () {
+    checkNoteEmpty();
+});
+
+let checkNoteEmpty = () => {
+    let textVal = addTxt.value.toLowerCase();
+    let titleVal = addTitle.value.toLowerCase();
+
+    if (textVal != null && titleVal != null && textVal.trim().length > 0 && titleVal.trim().length > 0) {
+        errorAlertDiv.innerHTML = ``;
+    }
+}
 
 const showFavs = document.getElementById("fav-btn");
 let showing_favs = false;

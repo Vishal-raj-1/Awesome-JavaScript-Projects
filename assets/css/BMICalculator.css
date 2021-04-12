@@ -1,42 +1,213 @@
-.container {
-    width: 375px;
-    height: 525px;
-    margin-left: 350px;
-    margin-top: 65px;
-    background-color: rgb(185, 185, 133);
-    padding-left: 30px;
-}
-#height, #weight {
-    width: 150px;
-    height: 25px;
-    margin-top: 30px;
+body{
+    background-image: url("../Images/bmi-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
 }
 
-#weight-guide{
-    margin-left: 75px;
-    margin-top: 25px;
-}
-
-#results{
-    font-size: 35px;
-    margin-left: 90px;
-    margin-top: 20px;
-    color: blue;
-}
-
+/* CALCULATE BUTTON */
 button{
-    width: 150px;
-    height: 35px;
-    margin-left: 90px;
-    margin-top: 25px;
-    border-radius: 5px;
-    border-style: none;
-    background-color: rgb(10, 10, 59);
-    color: #fff;
-    font-size: 25px;
+    background-color: #f25287;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    height: 55px;
+    left: 15%;
+    outline: transparent;
+    position: relative;
+    text-align: center;
+    transition:all 0.2s ease-in;
+    width:70%;
+
+}
+button:hover{
+    background-color: white;
+    border: 1px solid #f25287;
+    color: #f25287;
 }
 
+/* HEADINGS */
 h1{
-    padding-left: 15px;
-    padding-top: 25px;
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #f25287;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    color: #f25287;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+/* BMI-IMAGE */
+.bmi-img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding: 3%;
+    width: 40%;
+}
+
+/* CONTAINER-DIV */
+.container {
+    align-items: center;
+    background-color: #f9f3f3;
+    border-radius: 25px;
+    color: #f25287;
+    height:525px;
+    padding: 3%;
+    position: relative;
+    top: -25px;
+    width: 400px;
+}
+
+.details {
+    color: gray;
+    font-size: 1.2rem;
+    line-height: 0.7;
+}
+
+/* ERROR MESSAGE */
+.error {
+    color:#f25287;
+    font-size: 1.75rem;
+    padding-top: 10px;
+    text-align:center;
+}
+
+.guide {
+    height:525px;
+    margin: auto;
+    width: 400px;
+}
+
+/* MAIN-DIV */
+.main {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height:525px;
+    position: relative;
+    top: 80px;
+    width: 900px;
+}
+
+/* RESULTS-DIV */
+.results{
+    color: #f25287;
+    font-size: 4rem;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* RESULTS BOX */
+.results-box {
+    align-items: center;
+    background-color: #f9f3f3;
+    border-radius: 20px;
+    display: flex;
+    height: 100px;
+    margin: auto;
+    width: 300px;
+}
+
+/* FORM-INPUTS */
+#height, #weight {
+    border-radius: 50px;
+    border: 1px solid gray;
+    display: block;
+    font-size: 1.2em;
+    height: 50px;
+    margin: auto;
+    outline: transparent;
+    text-align: center;
+    width:70%;
+}
+#height:focus, #weight:focus{
+    border:none;
+}
+
+/* WEIGHT GUIDE DIV */
+#weight-guide{
+    bottom: 40px;
+    color: white;
+    margin: auto;
+    padding:10px;
+    position: absolute;
+    width:max-content;
+}
+
+/* Code for responsive design */
+@media screen and (min-width: 374px) and (max-width: 921px) {
+    body {
+        background-image: none;
+        background-color: #F8C1D8;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        /* margin: 10px auto; */
+    }
+
+    h3 {
+        margin: 10px auto;
+    }
+
+    .container {
+        border-radius: 25px 25px 0 0;
+        height: auto;
+        width: fit-content;
+    }
+
+    .details {
+        display: inline-block;
+        line-height: 1.2;
+        margin: 10px auto;
+    }
+
+    .guide {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 1025px;
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .results {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .results-box {
+        display: flex;
+        width: fit-content;
+    }
+
+    #weight-guide {
+        bottom: 0;
+        height: fit-content;
+        position: relative;
+        width: auto;
+    }
 }
