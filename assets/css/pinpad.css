@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color: antiquewhite;
+  }
+  
+  .pad{
+    border: 12px solid black;
+    width:600px;
+    max-width: 600px;
+    height:450px;
+    border-radius: 10px;
+  }
+  
+  .toppad{
+    background-color:aqua;
+    width:600px;
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .screen{
+    width:500px;
+    height:100px;
+    background-color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 5px solid black;
+  }
+  
+  .screen p{
+    color:black;
+    font-size:40px;
+    margin:0;
+    padding:0 5px;
+    background-color:white;
+    text-align:center;
+    width:400px;
+  }
+  
+  .bottompad{
+    width:600px;
+    height:300px;
+    background-color:aqua;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .buttonholder{
+    padding:10px;
+    height:250px;
+    width:450px;
+    background-color:black;
+    border: 2px solid black;
+  }
+  
+  .holder{
+    display:flex;
+    justify-content:space-evenly;
+    width:450px;
+    height:85px;
+  }
+  
+  .button{
+    width:100px;
+    height:80px;
+    border:0 8px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:maroon;
+    color:white;
+    font-size:30px;
+    border-radius: 3rem;
+  }
+
+  .button:hover{
+    background-color: #3e8e41;
+    cursor:pointer;
+  }
+  
+  .invalid{
+    font-size:10px;
+    color:red;
+  }
+  <style>
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+  
+  .correct{
+    font-size:10px;
+  }

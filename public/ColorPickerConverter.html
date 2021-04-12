@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/ColorPickerConverter.css">
+
+    <title>Color Picker and Converter</title>
+    <link rel="shortcut icon" href="../assets/Images/favicons/ColorPickerConverter.png" type="image/x-icon">
+</head>
+<body>
+    <div>
+        <div class="container">
+              <h1 class="text-center main-heading">Color Picker and Converter</h1>
+        </div>
+
+        <div class="container features">
+        <div class="feature-heading">
+            <h1>Features</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <a href="#hexTrgbGO">
+                <div class="text-center">
+                    <h3>HEX to RGB Converter</h3>
+                    <p>Converts Code from HEX value to RGB value</p>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <a href="#rgbThexGO">
+                <div class="text-center">
+                <h3>RGB to HEX Converter</h3>
+                <p>Converts Code from RGB value to HEX value</p>
+                </div>
+            </a>
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <a href="#selectByRangeGO">
+                <div class="text-center">
+                <h3>Select by RGB Range</h3>
+                <p>Choose by changing the Range of RGB</p>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <a href="#randomPickerGO">
+                <div class="text-center">
+                <h3>Random Color Picker</h3>
+                <p>Choose randomly by tapping the button</p>
+                </div>
+            </a>
+            </div>
+            
+        </div>
+        </div>
+
+            <!-- Hex to RGB -->
+            <section id="hexTrgbGO">
+            <div class="container hexTrgbConv-cont">
+                <h2>HEX To RGB</h2>
+                <div class="note">
+                    <h6 class="text-center"><span>Note:</span> Enter 6 digit Hex code <span>Without # Sign</span></h6>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-6">
+                    <label class="hashSign">#</label>
+                    <input type="text" id="hexCInp" placeholder="6 digit Hex Code">
+                    <div><a class="btn btn-primary btn-light hex-conv-button" onclick="hexConvbtn()" id="HexConvertButton">Convert</a></div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="hexConv-out-box">
+                        <h1 id="hexCOut">
+                        
+                        </h1>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+            <!-- RGB to Hex -->
+            <section id="rgbThexGO">
+            <div class="container rgbThexConv-cont">
+                <h2>RGB To HEX</h2>
+                <div class="row text-center">
+                <div class="col-md-6">
+                    <input type="number" max="255" min="0" id="RCInput" placeholder="R">
+                    <input type="number" max="255" min="0" id="GCInput" placeholder="G">
+                    <input type="number" max="255" min="0" id="BCInput" placeholder="B">
+                    <div><a class="btn btn-primary btn-light rgb-conv-button" onclick="rgbConvbtn()" id="rgbConvertButton">Convert</a></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rgbConv-out-box">
+                    <h1 id="rgbCOut">
+                        
+                    </h1>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
+
+
+            <!-- Select By Range         -->
+            <section id="selectByRangeGO">
+            <div class="container RangeFinder-cont">
+                <h2>Select by RGB Range</h2>
+                <div class="row text-center range-selector">
+                <div class="col-12 mb-5">
+                    <div class="row edit">
+                        <div class="col-4">
+                            <label for="RValue">R</label>
+                            <input type="range" max="255" min="0" id="RrInput" value="0" oninput="RangeSelector()">    
+                        </div>
+                        <div class="col-4">
+                            <label for="GValue">G</label>
+                            <input type="range" max="255" min="0" id="GrInput" value="0" oninput="RangeSelector()">
+                        </div>
+                        <div class="col-4">
+                            <label for="BValue">B</label>
+                            <input type="range" max="255" min="0" id="BrInput" value="0" oninput="RangeSelector()">    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div id="range-color-box"></div>
+                </div>
+                </div>
+            </div>
+            </section>
+
+
+            <!-- Random Picker -->
+            <section id="randomPickerGO">
+              <div class=" container random-container">
+                <div class="text text-center">
+                    <h2 class="random-picker-h2">Random Picker</h2>
+                    <a class="btn btn-primary btn-light px-5 py-2 random-picker-button" onclick="randompickerbtn()" id="randomPickerButton">Hit Me</a>
+                    <div class="random-picker" id="randomPicker">
+                    <p class="random-value-para" id="randomValuePara">#F46075</p>  
+                </div>
+                </div>
+            </section>
+
+    </div>
+    <footer>
+        <h3>Made with ❤️ by <a href="https://github.com/AmeyaJain-25" target="_blank">Ameya Jain</a></h3>
+    </footer>
+    <script type="text/javascript" src="../assets/js/ColorPickerConverter.js"></script>
+</body>
+</html>
