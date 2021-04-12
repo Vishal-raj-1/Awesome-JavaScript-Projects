@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    padding:0;
+    border:0;
+}
+header{
+    background-color:black;
+    color:yellow;
+    text-align:center;
+    padding:2vh;
+    position:fixed;
+    z-index:10;
+    width:100%;
+}
+/* additional class for header*/
+.act{
+    color:black;
+    background-color:yellow;
+}
+span{
+    font-size:35px;
+    padding-left:1vw;
+    padding-right:1vw;
+}
+div{
+    visibility:hidden;
+}
