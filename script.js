@@ -750,6 +750,11 @@ let projectData = [
     projectUrl: "public/Memegenerator.html",
   },
   {
+    projectName: "Meme Soundboard",
+    projectImage: "assets/Images/meme_sound_icon.jpg",
+    projectUrl: "public/meme_soundboard.html",
+ },
+  {
     projectName: '3D Cube',
     projectImage: 'assets/GIFs/3DCube.gif',
     projectUrl: 'public/3DCube.html'
