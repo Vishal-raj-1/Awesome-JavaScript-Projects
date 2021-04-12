@@ -9,15 +9,16 @@ body{
   }
   
   .pad{
-    border: 10px solid black;
-    width:22%;
+    border: 12px solid black;
+    width:600px;
+    max-width: 600px;
     height:450px;
     border-radius: 10px;
   }
   
   .toppad{
     background-color:aqua;
-    width:100%;
+    width:600px;
     height:150px;
     display:flex;
     justify-content:center;
@@ -25,7 +26,7 @@ body{
   }
   
   .screen{
-    width:300px;
+    width:500px;
     height:100px;
     background-color:black;
     display:flex;
@@ -41,11 +42,11 @@ body{
     padding:0 5px;
     background-color:white;
     text-align:center;
-    width:280px;
+    width:400px;
   }
   
   .bottompad{
-    width:100%;
+    width:600px;
     height:300px;
     background-color:aqua;
     display:flex;
@@ -56,28 +57,29 @@ body{
   .buttonholder{
     padding:10px;
     height:250px;
-    width:250px;
+    width:450px;
     background-color:black;
     border: 2px solid black;
   }
   
   .holder{
     display:flex;
-    justify-content:space-between;
-    width:100%;
+    justify-content:space-evenly;
+    width:450px;
     height:85px;
   }
   
   .button{
-    width:80px;
+    width:100px;
     height:80px;
-    border:1px solid black;
+    border:0 8px solid black;
     display:flex;
     justify-content:center;
     align-items:center;
     background-color:maroon;
     color:white;
     font-size:30px;
+    border-radius: 3rem;
   }
 
   .button:hover{

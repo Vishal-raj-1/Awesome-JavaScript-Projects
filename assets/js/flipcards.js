@@ -8,6 +8,7 @@ const questionEl = document.getElementById('question');
 const answerEl = document.getElementById('answer');
 const addCardBtn = document.getElementById('add-card');
 const clearBtn = document.getElementById('clear');
+const clearBtn2 = document.getElementById('clear2');
 const addContainer = document.getElementById('add-container');
 
 // Keep track of current card
@@ -17,8 +18,7 @@ let currentActiveCard = 0;
 const cardsEl = [];
 
 // Store card data
-const cardsData = getCardsData();
-
+let cardsData = getCardsData();
 // const cardsData = [
 //   {
 //     question: 'What must a variable begin with?',
@@ -49,7 +49,7 @@ function createCard(data, index) {
   }
 
   card.innerHTML = `
-  <div class="inner-card">
+  <div class="inner-card" id=${index}>
   <div class="inner-card-front">
     <p>
       ${data.question}
@@ -154,4 +154,9 @@ clearBtn.addEventListener('click', () => {
   localStorage.clear();
   cardsContainer.innerHTML = '';
   window.location.reload();
+});
+clearBtn2.addEventListener('click', () => {
+  const id = document.querySelector('.active .inner-card').id;
+  cardsData = cardsData.filter((data, index) => index != id );
+  setCardsData(cardsData);
 });

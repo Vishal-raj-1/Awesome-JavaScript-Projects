@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header{
+    min-height: 25vh;
+    font-size: 2.5rem;
+    font-family:monospace;
+    color: #680c3a;
+}
+
+header,form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form input, form button{
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+    border-radius: 5px;
+}
+
+form  input{
+    width: 250px;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: #e965de;
+    color: whitesmoke;
+}
+
+.converter-container{
+    padding: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+form button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgb(226, 139, 105);
+    color: white;
+}
+
+label {
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+select {
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+    color:indigo;
+    background: indianred;
+    border: none;
+    justify-content: center;
+}
+
+span {
+    min-height: 2vh;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;  
+}
+
+form button:hover {
+background: #f56d38;
+color: whitesmoke;
+}
+
+ .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title,.card-text{
+    text-align: center;
+}
+@media only screen(max-width:427px) {
+    form input{
+        width:60px;
+        margin-right: 6px;
+    }
+    .converter-container{
+        padding: !important;
+    }
+}
