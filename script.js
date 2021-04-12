@@ -614,6 +614,11 @@ let projectData = [
     projectUrl: "public/typewriter.html",
   },
   {
+    projectName: "AwesomeSnakeGame",
+    projectImage: "assets/GIFs/AwesomeSnakeGame.gif",
+    projectUrl: "public/AwesomeSnakeGame.html",
+  },
+  {
     projectName: "Pagination",
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
