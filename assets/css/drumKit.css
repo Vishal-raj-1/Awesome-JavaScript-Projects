@@ -1,6 +1,7 @@
 :root {
-  --main-font:  "monospace","montserrat", sans-serif;
-  --drum-font:  "monospace","open sans", sans-serif;
+ 
+  --background: #cc0066;
+  --text:#ffcce6;
 }
 
 * {
@@ -8,12 +9,19 @@
   padding: 0;
   border: 0;
 }
+html{
+  overflow-x: hidden;
+}
 
 body {
   font-family: "montserrat", sans-serif;
   height: 100%;
   text-align: center;
-  /*background-image: url(assets/back.gif);*/
+  background: var(--background);
+  width: 100%;
+  overflow-x: hidden;
+  margin: auto;
+  justify-content: center;
 }
 
 header {
@@ -29,7 +37,12 @@ header h1 {
   font-family : monospace ;
   font-size: xx-large;
 }
-
+.container{
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
 main {
   margin: 0 auto;
 }
@@ -66,12 +79,13 @@ main .key span {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  margin-top: 2em;
+  margin-top: 2rem;
   padding: 2em 0;
   background: linear-gradient(to right,#25CCF7, #192A56);
   width: 100%;
+  justify-content: center;
 }
 
 footer p {
@@ -79,7 +93,41 @@ footer p {
   font-weight: 500;
   color: #ffffff;
   font-family: monospace;
-  font-size: x-large;
+  font-size: 1.3rem;
+}
+
+/*effects on button*/
+.util__buttons{
+  margin-top: 40px;
+}
+.util__buttons >button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background: var(--background);
+  color: var(--text);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.util__buttons:hover {background: var(--background)}
+.util__buttons:active {
+  background: var(--background);
+  color: var(--text);
+   transform: translateY(4px);
+}
+#util__button-theme{
+  color: var(--background);
+  background: var(--text);
+}
+.pressed{
+  opacity: 1;
+  box-shadow: -1px -2px 9px var(--background);
 }
 
 /* for smaller devices*/

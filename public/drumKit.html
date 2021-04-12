@@ -13,62 +13,69 @@
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <img src="../assets/GIFs/drum-kit.gif" alt="drum icon">
+      <h1><i class="fab fa-js"></i> Javascript Drum-Kit <i class="fas fa-drum"></i></h1>
+    </header>  
+    <main class="keys">
 
-  <header>
-    <img src="../assets/GIFs/drum-kit.gif" alt="drum icon">
-    <h1><i class="fab fa-js"></i> Javascript Drum-Kit <i class="fas fa-drum"></i></h1>
-  </header>
+      <div data-key="65" class="key"  style="cursor:pointer">
+        <kbd>A</kbd>
+        <span>Boom</span>
+      </div>
+      <div data-key="83" class="key"  style="cursor:pointer">
+        <kbd>S</kbd>
+        <span class="sound">Clap</span>
+      </div>
+      <div data-key="68" class="key"  style="cursor:pointer">
+        <kbd>D</kbd>
+        <span class="sound">HiHat</span>
+      </div>
+      <div data-key="70" class="key"  style="cursor:pointer">
+        <kbd>F</kbd>
+        <span class="sound">Kick</span>
+      </div>
+      <div data-key="71" class="key"  style="cursor:pointer">
+        <kbd>G</kbd>
+        <span class="sound">OpenHat</span>
+      </div>
+      <div data-key="72" class="key"  style="cursor:pointer">
+        <kbd>H</kbd>
+        <span class="sound">Ride</span>
+      </div>
+      <div data-key="74" class="key" style="cursor:pointer">
+        <kbd>J</kbd>
+        <span class="sound">Snare</span>
+      </div>
+      <div data-key="75" class="key"  style="cursor:pointer">
+        <kbd>K</kbd>
+        <span class="sound">Tink</span>
+      </div>
+      <div data-key="76" class="key" style="cursor:pointer">
+        <kbd>L</kbd>
+        <span class="sound">Tom</span>
+      </div>
+  
+      <audio data-key="65" src="../assets/sounds/boom.wav"></audio>
+      <audio data-key="83" src="../assets/sounds/clap.wav"></audio>
+      <audio data-key="68" src="../assets/sounds/hihat.wav"></audio>
+      <audio data-key="70" src="../assets/sounds/kick.wav"></audio>
+      <audio data-key="71" src="../assets/sounds/openhat.wav"></audio>
+      <audio data-key="72" src="../assets/sounds/ride.wav"></audio>
+      <audio data-key="74" src="../assets/sounds/snare.wav"></audio>
+      <audio data-key="75" src="../assets/sounds/tink.wav"></audio>
+      <audio data-key="76" src="../assets/sounds/tom.wav"></audio>
+  
+    </main>
+  
+    <div class="util__buttons">
+      <button id="util__button-theme">Change Theme</button>
+    </div>
+  </div>
 
-  <main class="keys">
-    
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span>Boom</span>
-    </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">Clap</span>
-    </div>
-    <div data-key="68" class="key">
-      <kbd>D</kbd>
-      <span class="sound">HiHat</span>
-    </div>
-    <div data-key="70" class="key">
-      <kbd>F</kbd>
-      <span class="sound">Kick</span>
-    </div>
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">OpenHat</span>
-    </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">Ride</span>
-    </div>
-    <div data-key="74" class="key">
-      <kbd>J</kbd>
-      <span class="sound">Snare</span>
-    </div>
-    <div data-key="75" class="key">
-      <kbd>K</kbd>
-      <span class="sound">Tink</span>
-    </div>
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">Tom</span>
-    </div>
+  
 
-    <audio data-key="65" src="../assets/sounds/boom.wav"></audio>
-    <audio data-key="83" src="../assets/sounds/clap.wav"></audio>
-    <audio data-key="68" src="../assets/sounds/hihat.wav"></audio>
-    <audio data-key="70" src="../assets/sounds/kick.wav"></audio>
-    <audio data-key="71" src="../assets/sounds/openhat.wav"></audio>
-    <audio data-key="72" src="../assets/sounds/ride.wav"></audio>
-    <audio data-key="74" src="../assets/sounds/snare.wav"></audio>
-    <audio data-key="75" src="../assets/sounds/tink.wav"></audio>
-    <audio data-key="76" src="../assets/sounds/tom.wav"></audio>
-
-  </main>
   <footer>
     <p>Made with Code <i class="fas fa-code"></i> and Coffee <i class="fas fa-mug-hot"></i></p>
   </footer>
