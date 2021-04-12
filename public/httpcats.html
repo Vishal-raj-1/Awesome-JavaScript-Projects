@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../assets/images/httpcat.ico">
+    <title>HTTP-Cats</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/httpcats.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">HTTP-Cats</a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://httpstatuses.com/">Status-Codes</a>
+              </li>
+            </ul>
+        </nav>
+
+
+      <div class="row">
+        <div class="col-lg-6 inputcontainer">
+          <h4 class="inputtitle" id="inputtitle">Enter HTTP status code below</h4>
+          <input class="inp" type="number" id="inputcode" name="inputcode" autofocus>
+          <button type="button" name="button" onclick="handlesearch()"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="col-lg-6 outputcontainer">
+          <img class="outputimg" id="outputimg" src="../assets/Images/welcomecat.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+    <p>Made with ❤ by <a class="footlink" href="https://www.linkedin.com/in/sandeepkrsuman/">SandeepKrSuman</a></p>
+  </footer>
+
+  <script src="../assets/js/httpcats.js"></script>
+
+  </body>
+</html>
