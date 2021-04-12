@@ -179,6 +179,12 @@ let projectData = [
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
   }
+  ,
+  {
+    projectName: "Bubble Particle Project",
+    projectImage: "assets/GIFs/bubble-particle.gif",
+    projectUrl: "public/bubbleParticle.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
