@@ -311,7 +311,7 @@ window.onload = () => {
         if (e.code == "Space") {
             if (animationState == "false") {
                 play.onclick()
-                printAliveCellsArray();
+                // printAliveCellsArray();
             } else {
                 pause.onclick()
             }
