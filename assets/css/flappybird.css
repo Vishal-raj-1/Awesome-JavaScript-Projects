@@ -1,0 +1,117 @@
+body{
+    display: flex;
+}
+html {
+    zoom: 0.7;
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    text-align: center;
+    transform-origin: 0% 0%;
+}
+.game-container{
+    width:750px;
+    height: 730px;
+    position:absolute;
+    left: 880px;
+    top:150px;
+
+}
+
+.sky{
+    background-image: url('../Images/FlappyBird/fb-game-background.png');
+    width:750px;
+    height:580px;
+    position:absolute;    
+}
+.ground{
+    background-image: url('../Images/FlappyBird/bottom-background.png');
+    width: 750px;
+    height: 150px;
+    position:absolute;    
+    top:580px;
+    z-index: +1;
+}
+.bird{
+    background-image: url('../Images/FlappyBird/flappy-bird.png');
+    position: absolute;
+    height: 45px;
+    width: 60px;
+}
+.border-left {
+    width: 872px;
+    height: 872px;
+    position:  absolute;
+    background-color: white;
+    z-index: +2;
+}
+
+.border-top {
+    width: 665px;
+    height: 151px;
+    position:  absolute;
+    background-color: white;
+    z-index: +2;
+    top: -150px;
+}
+
+.obstacle {
+    background-image: url('../Images/FlappyBird/flappybird-pipe.png');
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.topObstacle {
+    background-image: url('../Images/FlappyBird/flappybird-pipe.png');
+    transform: rotate(180deg);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.start{
+    background-color: teal;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin-top: 450px;
+    margin-left: 300px;
+    font-size: 25px;
+}
+.restart{
+    background-color: teal;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 300px;
+    font-size: 25px;
+}
+#over{
+    visibility: hidden;
+}
+.scoreboard{
+    width:700px;
+    height:730px;
+    text-align: center;
+    margin-left:800px;
+    margin-top:-40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 30px;
+    color:rebeccapurple;
+    background-color:thistle;
+}
+#score{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+footer{
+    background:thistle;
+    overflow-x: hidden;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(2, 1, 1);
+  }
+
