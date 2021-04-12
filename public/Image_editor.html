@@ -8,18 +8,18 @@
    <body>
       <div id="top"></div>
       <section class="container">
-         <div class="sec1" style="overflow-x: auto;">
+         <div class="sec1">
          <table cellpadding="10px">
-            <tr>
+            <tr class="shift">
                <td colspan="2" rowspan="2">
                   <form id="img" onsubmit="fun()">
-                     <input type="text" placeholder="Enter Image URL" id="url">
-                     <input type="button" name="submit" value="Change image" onclick="fun()" id="btn">
+                     <input type="text" placeholder="Enter Image URL" id="url" class="url">
+                     <input type="button" name="submit" value="Change image" onclick="fun()" id="btn" class="change">
                      <!--<button type="submit">Change image</button>-->
                   </form>
-                  <div id="ss">
+                  <div id="ss"class="ss">
                   <img src="https://images.ctfassets.net/hrltx12pl8hq/4plHDVeTkWuFMihxQnzBSb/aea2f06d675c3d710d095306e377382f/shutterstock_554314555_copy.jpg" id="targetimg" alt="online-image"><br>
-                  <input type="button" id="btn" name="download" value="Click here to download an original image" onclick="down()" style="width: 100%; margin-top: 10px;">
+                  <input type="button" id="btn" class="btn" name="download" value="Download Image" onclick="down()" style="width: 100%; margin-top: 10px;">
                   <!--<a href="" id="download" onclick="down()" download="abc.jpg">Click here to download an original image !</a>-->
                <td></td>
                <td>
@@ -45,7 +45,7 @@
                            <label>Opacity</label><br>
                            <input type="range" name="op" id="op" class="slider" min="50" max="100" value="100">
                         </p>
-                        <button type="reset" id="btn" style="width: 100%;">Reset</button>
+                        <button type="reset" id="btn" class="btn" style="width: 100%;">Reset</button>
                      </form>
                   </div>
                </td>
