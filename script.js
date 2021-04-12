@@ -594,6 +594,11 @@ let projectData = [
     projectUrl: "public/wordScramble.html",
   },
   {
+    projectName: "Image Gallery",
+    projectImage: "assets/Images/imageGallery/images",
+    projectUrl: "public/imageGallery.html",
+  },
+  {
     projectName: "Expense Tracker",
     projectImage: "assets/GIFs/ExpenseTracker.gif",
     projectUrl: "public/ExpenseTracker.html",
@@ -629,7 +634,6 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
-
     projectName: "Speech Recognization",
     projectImage: "assets/Images/speech-recognization.PNG",
     projectUrl: "public/speech-recognization.html",
