@@ -31,6 +31,56 @@ const quizData = [
         d: "none of the above",
         correct: "b",
     },
+    {
+        question :"What software do you need to view webpages that you create?",
+        a : "Linux",
+        b : "Command prompt",
+        c : "A compiler",
+        d : "A web browser",
+        correct : "d",
+    },
+    {
+        question:  "Chose correct CSS syntax? ",
+        a :" {body;color:black;}",
+        b : "{body:color=black;}",
+        c : "body{color=black;}",
+        d : "body {color: black;}",
+        correct : "d", 
+    
+    },
+    {
+        question:  "What is the purpose of the <head> tag?",
+        a : "No such tag in HTML",
+        b : "Signifies the head section of an HTML document",
+        c : "Sets the title of a webpage",
+        d :" Signifies the body section of an HTML document",
+        correct : "b",
+    },
+    {
+        question:  "How can you make a numbered list?",
+        a : "<ol>",
+        b : "<ul>",
+        c : "<dl>",
+        d : "<nl>",
+        correct : "a",
+    },
+   
+   {
+        question:  "Which HTML tag is used to define an internal style sheet?",
+        a : "<script>",
+        b : "<style>",
+        c : "<code>",
+        d : "<css>",
+        correct  : "b",
+   },    
+    {
+        question:  "Where is the correct place to insert a JavaScript?",
+        a : "The <body> section",
+        b : "The <head> section",
+        c : "Both the <head> section and the <body> section are correct",
+        d : "The <footer> section",
+        correct : "c",
+    },
 ];
 
 const quiz = document.getElementById('quiz')
@@ -45,6 +95,8 @@ const progressBarWidth = document.querySelector('div.meter > span')
 
 let currentQuiz = 0
 let score = 0
+let maximumQuestions = 5
+let questionCounter = 1
 
 loadQuiz()
 
@@ -52,7 +104,7 @@ function loadQuiz() {
     deselectAnswers()
 
     const currentQuizData = quizData[currentQuiz]
-
+     quizData.splice(currentQuiz, 1);
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
@@ -72,7 +124,6 @@ function getSelected() {
             answer = answerEl.id
         }
     })
-
     return answer
 }
 
@@ -84,12 +135,14 @@ submitBtn.addEventListener('click', () => {
             score++
         }
         currentQuiz++
-        percent = (currentQuiz / quizData.length) * 100
+        percent = (questionCounter / maximumQuestions) * 100
         progressBarWidth.style.display = 'block'
         progressBarWidth.style.width = percent + '%'
 
 
-        if (currentQuiz < quizData.length) {
+        if (questionCounter <=maximumQuestions) {
+            questionCounter++;
+            currentQuiz = Math.floor(Math.random() * quizData.length);
             loadQuiz()
         } else {
             setTimeout(function () {
@@ -100,6 +153,6 @@ submitBtn.addEventListener('click', () => {
             }, 550)
 
         }
-    }
+    } 
 })
 

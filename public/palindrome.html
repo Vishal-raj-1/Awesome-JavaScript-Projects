@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../assets/css/palindrome.css">
+
+	<title>Palindrome check</title>
+</head>
+<body>
+	<div id="bg"></div>
+	<div id="def" class="def">
+	<h1>Palindrome Checker</h1>
+	<p>
+		A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam or racecar.
+	</p>
+	</div><br><br>
+	<div id="div2">
+	<h1>Type a string to check for palindrome ?</h1>
+	<form id="form" onsubmit="fun()">
+		<input type="text" id="fld"><br>
+		<input type="button" value="Check" id="btn" class="btn-check" onclick="fun()">
+		<input type="button" value="Reset" id="btn" class="btn-reset" onclick="myFunction()">
+		<p id="result"></p>
+	</form>
+    </div>
+    <script src="../assets/js/palindrome.js"></script>
+</body>
+</html>
