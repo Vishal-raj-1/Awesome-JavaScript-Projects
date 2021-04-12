@@ -1,0 +1,37 @@
+body {
+    font-family: arial;
+    background-color: #ffc600;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.text-content {
+    height: 30px;
+    width: 100%;
+    background-color: white;
+}
+
+button {
+    padding: 10px;
+    background-color: #6a67ce;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hide {
+    
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    align-items: center;
+}
