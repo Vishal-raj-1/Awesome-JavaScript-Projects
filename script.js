@@ -250,6 +250,11 @@ let projectData = [
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
+    },
+   {
+    projectName: "Tetris Game",
+    projectImage: "assets/Images/TetrisGame.png",
+    projectUrl: "public/TetrisGame.html",
     }
 ];
 
