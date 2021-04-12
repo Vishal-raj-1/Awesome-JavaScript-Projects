@@ -504,9 +504,19 @@ let projectData = [
     projectUrl: "public/ExpandingCard.html",
   },
   {
-    projectName: "Contacts Search",
-    projectImage: "assets/GIFs/contactSearch.gif",
-    projectUrl: "public/contactSearch.html",
+    projectName: 'Background Slider',
+    projectImage: 'assets/GIFs/BackgroundSlider.gif',
+    projectUrl: 'public/BackgroundSlider.html',
+  },
+  {
+    projectName: 'Testimonial Design',
+    projectImage: 'assets/GIFs/TestimonialDesign.gif',
+    projectUrl: 'public/TestimonialDesign.html',
+  },
+  {
+    projectName: 'Contacts Search',
+    projectImage: 'assets/GIFs/contactSearch.gif',
+    projectUrl: 'public/contactSearch.html',
   },
   {
     projectName: "Pixels Game",
@@ -655,7 +665,9 @@ let projectData = [
     projectName: "Breakout!",
     projectImage: "assets/GIFs/breakouthere.gif",
     projectUrl: "public/breakout.html",
-  },{
+  },
+  {
+
     projectName: "TV Show Search",
     projectImage: "assets/GIFs/TV_ShowSearch.gif",
     projectUrl: "public/TV_ShowSearch.html",
