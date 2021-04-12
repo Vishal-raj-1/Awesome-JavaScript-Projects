@@ -572,7 +572,7 @@ let projectData = [
     projectName: "Moving Car Animation",
     projectImage: "assets/GIFs/Animated_moving_car.gif",
     projectUrl: "public/Animated_moving_car.html",
-  }
+  },
   
 //   {
 //     projectName: "DarkMode",
@@ -771,6 +771,16 @@ let projectData = [
    projectUrl: "public/newyearwish.html",
  },
  {
+    projectName: "love Calculator",
+    projectImage: "assets/GIFs/loveCalculator.gif",
+    projectUrl: "public/loveCalculator.html",
+    },
+   {
+    projectName: "Tetris Game",
+    projectImage: "assets/Images/TetrisGame.png",
+    projectUrl: "public/TetrisGame.html",
+    },
+  {
    projectName: "Factorial Calculator",
    projectImage: "assets/Images/FactorialCalculator.jpg",
    projectUrl: "public/FactorialCalculator.html",
