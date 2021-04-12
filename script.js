@@ -45,6 +45,11 @@ let projectData = [
     projectUrl: "public/color-flipper.html",
   },
   {
+    projectName: "Dice Game",
+    projectImage: "assets/GIFs/dice.gif.gif",
+    projectUrl: "public/dice.html",
+  },
+  {
     projectName: "Movie Seat Booking",
     projectImage: "assets/GIFs/movieSeatBooking.gif",
     projectUrl: "public/movieSeatBooking.html",
