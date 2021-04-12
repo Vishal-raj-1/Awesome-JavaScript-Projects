@@ -3,9 +3,14 @@ const calc = () => {
     let physics = document.getElementById("physics").value;
     let chemistry = document.getElementById("chemistry").value;
     let biology = document.getElementById("biology").value;
+    if(maths>100 || physics>100 || chemistry>100 || biology>100){
+        document.getElementById("result").innerHTML = "Enter valid numbers"
+    }
+   else{
     let grade = "";
     let total = parseFloat(maths) + parseFloat(physics) + parseFloat(chemistry) + parseFloat(biology);
     let precentage = (total / 400) * 100;
+  
     if (precentage >= 80) {
         garde = "GRADE A";
     }
@@ -23,6 +28,7 @@ const calc = () => {
 
 
 
+   }
 
 
 
