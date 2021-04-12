@@ -28,7 +28,7 @@ const init = () => {
 
     // assign initial formation
     let num = ran(0, formations.length)
-    assignFormation(formations[2].cells);
+    assignFormation(formations[num].cells);
 
     //drawing or animating
     draw();
@@ -196,6 +196,7 @@ const stopAnimation = () => {
 // control variables
 let play, pause, info, bookmark, forward, setting, controlPanel;
 let infoTab, settingTab, bookmarkTab, slider;
+let preloaded;
 
 const toggleControls = (val = 0) => {
     val = (val == 0) ? "none" : "block";
@@ -320,5 +321,18 @@ window.onload = () => {
             forward.onclick()
         }
     });
+
+
+    // to add click event to preloaded pattern pics
+    preloaded = document.getElementsByClassName("pattern");
+    for (let i = 0; i < preloaded.length; i++) {
+        preloaded[i].addEventListener("click", () => {
+            stopAnimation();
+            assignFormation(formations[i].cells);
+            draw();
+            bookmarkTab.style.display = "none";
+        })
+
+    }
 
 }
