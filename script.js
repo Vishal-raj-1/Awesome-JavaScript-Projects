@@ -629,6 +629,11 @@ let projectData = [
     projectUrl: "public/flappybird.html",
   },
   {
+    projectName: "HTTP - CATS",
+    projectImage: "assets/GIFs/httpcats.gif",
+    projectUrl: "public/httpcats.html",
+  },
+  {
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
