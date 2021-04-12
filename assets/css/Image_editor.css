@@ -47,4 +47,92 @@ label {
 	font-size: 18px;
 	font-weight: bold;
 }
-
+@media only screen and (max-width:765px) {
+	.filter input{
+		width:100%;
+		margin:auto;
+		padding:3px;
+	}
+	.shift{
+		display: grid;
+	}
+	form{
+		width:500px;
+		margin: auto;
+	}
+	.btn{
+		width:60% !important;
+		margin:0 20%;
+	}
+	.ss img{
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width:590px) {
+	.filter input{
+		width:100%;
+		margin:auto;
+		padding:0.5rem;
+	}
+	table{
+		padding:2px;
+	}
+	.shift{
+		display: grid;
+	}
+	form{
+		width:90%;
+		margin: auto;
+	}
+	.btn{
+		width:60% !important;
+		margin:0 20%;
+	}
+	.ss img{
+		margin-top: 10px;
+		padding: 0 0.1%;
+	}
+}
+@media only screen and (max-width:500px) {
+	.filter input{
+		width:100%;
+		margin:auto;
+		padding:0.5rem;
+	}
+	table{
+		padding:5px;
+		width: 100%;
+	}
+	.shift{
+		display: grid;
+	}
+	form{
+		width:100%;
+		margin: auto;
+	}
+	.btn{
+		width:70% !important;
+		margin:0 17%;
+	}
+	.ss img{
+		margin-top: 10px;
+		padding: 0 0.1%;
+		width:100%;
+	}
+	.sec2{
+		margin: 5%;
+	}
+}
+@media only screen and (max-width:368px) {
+	form{
+		width: 100%;
+		margin: 0px;
+	}
+	.url{
+		margin: 0 !important;
+		font-size: 0.8rem;
+	}
+	.change{
+		font-size: 0.8rem !important;
+	}
+}
