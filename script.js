@@ -839,6 +839,11 @@ let projectData = [
     projectImage: "assets/GIFs/amongus.gif",
     projectUrl: "public/amongus.html",
   },
+  {
+    projectName: "Password Strength Checker",
+    projectImage: "assets/GIFs/Password_Strength_Checker.gif",
+    projectUrl: "public/Password_Strength_Checker.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
