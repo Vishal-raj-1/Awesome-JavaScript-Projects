@@ -202,6 +202,28 @@ header {
     display: none;
 }
 
+#preloaded-patterns {
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+
+    .para {
+        padding: 10px;
+        margin: 4px;
+    }
+
+    .heading {
+        text-transform: capitalize;
+    }
+
+    img {
+        padding: 10px;
+        height: 130px;
+        cursor: pointer;
+    }
+}
+
 .setting-tab {
     display: none;
 }

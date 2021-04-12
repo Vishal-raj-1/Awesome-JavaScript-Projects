@@ -28,7 +28,7 @@ const init = () => {
 
     // assign initial formation
     let num = ran(0, formations.length)
-    assignFormation(formations[num].cells);
+    assignFormation(formations[2].cells);
 
     //drawing or animating
     draw();
@@ -195,7 +195,7 @@ const stopAnimation = () => {
 
 // control variables
 let play, pause, info, bookmark, forward, setting, controlPanel;
-let infoTab, settingTab, slider;
+let infoTab, settingTab, bookmarkTab, slider;
 
 const toggleControls = (val = 0) => {
     val = (val == 0) ? "none" : "block";
@@ -246,6 +246,7 @@ window.onload = () => {
 
     // tabs in control
     infoTab = document.querySelector("#game-info")
+    bookmarkTab = document.querySelector("#preloaded-patterns")
     settingTab = document.querySelectorAll(".setting-tab")[0]
 
     play.onclick = () => {
@@ -277,9 +278,16 @@ window.onload = () => {
             settingTab.style.display = "none";
         }
     }
+    bookmark.onclick = () => {
+        if (window.getComputedStyle(bookmarkTab).display == "none") {
+            bookmarkTab.style.display = "flex";
+        } else {
+            bookmarkTab.style.display = "none";
+        }
+    }
 
     // to close tabs on click outside them
-    closeOnExternalClick([[infoTab, info], [settingTab, setting]]);
+    closeOnExternalClick([[infoTab, info], [settingTab, setting], [bookmarkTab, bookmark]]);
 
     // setting tab sliders
     // box size and speed
