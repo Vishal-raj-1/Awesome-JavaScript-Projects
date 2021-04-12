@@ -685,15 +685,15 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
-  {
+  { 
     projectName: 'Giphy-Search',
     projectImage: 'assets/GIFs/Giphy-Search.gif',
     projectUrl: 'public/Giphy-Search.html',
   },
   {
-    projectName: "Play-Beats",
-    projectImage: "assets/GIFs/playbeats.gif",
-    projectUrl: "public/Play-Beats.html",
+    projectName: 'Play-Beats',
+    projectImage: 'assets/GIFs/playbeats.gif',
+    projectUrl: 'public/Play-Beats.html',
   },
   {
     projectName: "Factorial Calculator",
@@ -748,6 +748,11 @@ let projectData = [
     projectName: "Memes Generator",
     projectImage: "assets/Images/memeimages/memebg.png",
     projectUrl: "public/Memegenerator.html",
+  },
+  {
+    projectName: '3D Cube',
+    projectImage: 'assets/GIFs/3DCube.gif',
+    projectUrl: 'public/3DCube.html'
   },
   {
     projectName: "Armstrong Checker",
