@@ -1,0 +1,15 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+.main-title{
+  background: #DC7633;
+}
+  
+span{
+  color:red;
+}
+
+p{
+  color:rgb(255, 57, 57);
+}

@@ -18,6 +18,7 @@
       background-color:rgb(0, 0, 0,0.2) ;
       padding: 20px 40px;
       border-radius: 7px;
+      overflow-x: hidden;
   }
   
   .container h1{
@@ -92,4 +93,7 @@
   .form-control input:focus + label span, .form-control input:valid + label span{
       color: white;
       transform: translateY(-30px);
+  }
+  form{
+      overflow-x: hidden;
   }
