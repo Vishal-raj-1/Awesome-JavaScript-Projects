@@ -547,7 +547,7 @@ let projectData = [
 
   }, {
 
-  },{
+  }, {
 
     projectName: "PingPong Game",
     projectImage: "assets/GIFs/pingpong-image.gif",
@@ -609,27 +609,27 @@ let projectData = [
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-   },
-   {
-      projectName: "Live Code Editor",
-      projectImage: "assets/GIFs/LiveEditor.gif.gif",
-      projectUrl: "public/Live_Code_Editor.html",
-   },
+  },
   {
     projectName: "Live Code Editor",
     projectImage: "assets/GIFs/LiveEditor.gif.gif",
     projectUrl: "public/Live_Code_Editor.html",
   },
- {
+  {
+    projectName: "Live Code Editor",
+    projectImage: "assets/GIFs/LiveEditor.gif.gif",
+    projectUrl: "public/Live_Code_Editor.html",
+  },
+  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-    },
-    {
-      projectName: "Live Code Editor",
-      projectImage: "assets/GIFs/LiveEditor.gif.gif",
-      projectUrl: "public/Live_Code_Editor.html",
-    },
+  },
+  {
+    projectName: "Live Code Editor",
+    projectImage: "assets/GIFs/LiveEditor.gif.gif",
+    projectUrl: "public/Live_Code_Editor.html",
+  },
   {
     projectName: " Key Event Code",
     projectImage: "assets/GIFs/KeyEventCode.gif ",
@@ -717,16 +717,16 @@ let projectData = [
   //    },
 
 
-  
-//   {
-//     projectName: "DarkMode",
-//     projectImage: {
-//                     "assets/Images/DarkMode1.jpeg",
-//                     "assets/Image/DarkMode2.jpeg",
-//                   },
-//     projectUrl: "public/DarkMode.html",
-//    },
-  
+
+  //   {
+  //     projectName: "DarkMode",
+  //     projectImage: {
+  //                     "assets/Images/DarkMode1.jpeg",
+  //                     "assets/Image/DarkMode2.jpeg",
+  //                   },
+  //     projectUrl: "public/DarkMode.html",
+  //    },
+
 
   {
     projectName: "DarkMode",
@@ -834,10 +834,10 @@ let projectData = [
   },
   {
 
-  },{
-    projectName:"Sequence Game",
-    projectImage:"assets/Images/sequence-game.png",
-    projectUrl:"public/Sequence-game.html",
+  }, {
+    projectName: "Sequence Game",
+    projectImage: "assets/Images/sequence-game.png",
+    projectUrl: "public/Sequence-game.html",
   },
 
   {
@@ -914,11 +914,11 @@ let projectData = [
     projectName: "Speech Recognization",
     projectImage: "assets/Images/speech-recognization.PNG",
     projectUrl: "public/speech-recognization.html",
-  },{
+  }, {
     projectName: "PianoApp",
     projectImage: "assets/Images/pianoApp.png",
     projectUrl: "public/pianoApp.html",
-  },{
+  }, {
     projectName: "Lyrics App",
     projectImage: "assets/GIFs/lyricsApp.gif",
     projectUrl: "public/lyricsApp.html",
@@ -955,7 +955,7 @@ let projectData = [
 
   }, {
 
-  },{
+  }, {
 
     projectName: "Simon's Game",
     projectImage: "assets/Images/Simons_s_Game.png",
@@ -967,8 +967,6 @@ let projectData = [
     projectUrl: "public/Image_editor.html",
 
   },
-
-  }, 
 
   {
     projectName: "Image Editor",
@@ -1050,35 +1048,35 @@ let projectData = [
     projectUrl: "public/carAvoidanceGame.html",
   }, {
 
-   projectName: "New year crackers",
-   projectImage: "assets/GIFs/newyearwish.gif",
-   projectUrl: "public/newyearwish.html",
- },
- {
+    projectName: "New year crackers",
+    projectImage: "assets/GIFs/newyearwish.gif",
+    projectUrl: "public/newyearwish.html",
+  },
+  {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
-    },
-   {
+  },
+  {
     projectName: "Tetris Game",
     projectImage: "assets/Images/TetrisGame.png",
     projectUrl: "public/TetrisGame.html",
-    },
+  },
   {
-   projectName: "Factorial Calculator",
-   projectImage: "assets/Images/FactorialCalculator.jpg",
-   projectUrl: "public/FactorialCalculator.html",
- },
- {
-   projectName: "Speech To Text Converter",
-   projectImage: "assets/GIFs/SpeechtoText.gif",
-   projectUrl: "public/SpeechtoText.html",
- },
+    projectName: "Factorial Calculator",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/FactorialCalculator.html",
+  },
+  {
+    projectName: "Speech To Text Converter",
+    projectImage: "assets/GIFs/SpeechtoText.gif",
+    projectUrl: "public/SpeechtoText.html",
+  },
   {
     projectName: "Car Avoidance Game",
     projectImage: "assets/Images/carAvoidanceGame.png",
-    projectUrl:"public/carAvoidanceGame.html",
-  },{
+    projectUrl: "public/carAvoidanceGame.html",
+  }, {
 
     projectName: "New year crackers",
     projectImage: "assets/GIFs/newyearwish.gif",
@@ -1132,9 +1130,6 @@ let projectData = [
     projectImage: "assets/Images/rose-mathematics/icon.png",
     projectUrl: "public/rose-mathematics.html",
   }
-
-  },
-
 ];
 
 let projectContainer = document.getElementById("js-projects");
@@ -1146,7 +1141,7 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
 
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
