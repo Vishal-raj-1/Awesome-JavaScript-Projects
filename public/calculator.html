@@ -13,7 +13,9 @@
     <div class="container">
         <h1>Calculator</h1>
         <div class="calculator">
-            <input type="text"  id="screen" readonly />
+
+            <input type="text"  id="screen" readonly>
+
             <table>
                 <tr>
                     <td><button id="(">(</button></td>
@@ -51,5 +53,15 @@
 
 </body>
 <script src="../assets/js/calculator.js"></script>
+<script type="text/javascript" src="../assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	    VanillaTilt.init(document.querySelector(".calculator"),
+	     {
+		   max: 2,
+		   speed: 800,
+		    glare: true,
+		    "max-glare":0.2,
+	     });
+</script>
 
 </html>
