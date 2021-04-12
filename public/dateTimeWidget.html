@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time Widget</title>
+
+    <style>
+        body {
+            background-color:#2d2d2d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #timedate {
+          font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+          text-align:left;
+          width: 50%;
+          color:#fff;
+          border-left: 3px solid #ed1f24;
+          padding: 20px;
+        }
+
+        #day, #date, #time {
+            display: inline-block;
+            font-size: 3rem;
+        }
+
+        @media (max-width: 635px) {
+            
+            #timedate {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 540px) {
+
+            #day, #date, #time {
+            font-size: 2.1rem;
+            }
+        }
+
+    </style>
+</head>
+<body onLoad="initClock()">
+    <div id="timedate">
+        <span id="day"></span>
+        <span id="date"></span>
+        <span id="time"></span>
+    </div>
+    <script src="../assets/js/dateTimeWidget.js"></script>
+</body>
+</html>

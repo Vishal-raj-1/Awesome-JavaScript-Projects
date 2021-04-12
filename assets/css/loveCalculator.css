@@ -9,7 +9,9 @@
 body {
     color: white;
 }
-
+.hidden{
+    display: none;
+}
 .container {
     display: none;
     height: 100vh;
@@ -151,6 +153,13 @@ div#loader {
     color: hsl(228, 45%, 44%);
 }
 
+.error{
+    padding-top: 40px;
+    font-weight: 900;
+    color: #ff0033;
+    font-size: 1.6rem;
+    text-shadow: 0.7px 0.7px #ddd;
+}
 
 /* Responsive Style */
 
