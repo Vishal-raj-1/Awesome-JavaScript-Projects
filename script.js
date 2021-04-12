@@ -405,8 +405,13 @@ let projectData = [
     projectUrl: "public/deviceInfo.html",
   },
   {
-    projectName: "calendar",
-    projectImage: "assets/GIFs/cal.gif",
+    projectName: 'Particle JS Project',
+    projectImage: 'assets/GIFs/Particle.gif',
+    projectUrl: 'public/Particle.html',
+  },
+  {
+    projectName: "Calendar",
+    projectImage: "assets/Images/calendar_backcover.png",
     projectUrl: "public/calendar.html",
   },
   {
