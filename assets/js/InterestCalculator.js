@@ -1,0 +1,13 @@
+function calculate(){
+     p=document.getElementById("p").value;
+     r=document.getElementById("r").value;
+     t=document.getElementById("t").value;
+    simpleInterest=document.getElementById("simpleInterest");
+    simpleInterest.innerHTML="The Simple Interest is"+" " + (p*r*t/100);
+}
+
+function reset(){
+  document.getElementById('p').value="";
+  document.getElementById('r').value="";
+  document.getElementById('t').value="";
+}
