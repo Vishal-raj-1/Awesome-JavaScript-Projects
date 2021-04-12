@@ -11,6 +11,11 @@
     <title>Awesome JavaScript | Home</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="./assets/Images/favicons/faviconss.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="assets/typed.js/typed.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -71,8 +76,6 @@
     }
 </style>
 
-
-
 <body>
     <!--Sticky Sidebar-->
     <div class="icon-bar">
@@ -99,7 +102,7 @@
         <!-- Header -->
         <header>
             <nav>
-                <h2><a href="index.html">Awesome JavaScript</a></h2>
+                <h2 class="shadow"><a href="index.html">Awesome JavaScript</a></h2>
                 <i class="fa fa-bars" aria-hidden="true" id="menuBar" onclick="menu()"></i>
                 <i class="fa fa-times" aria-hidden="true" id="menuClose" onclick="menuClose()"></i>
                 <ul id="menu">
@@ -114,7 +117,7 @@
             <div class="bannerSection">
                 <div class="bannerText">
                     <h1>JavaScript Projects <br> that you need!!</h1>
-                    <h2>The great collection of JavaScript projects, <br>just for you!!!</h2>
+                    <span class="typed"></span>
                     <div class="buttonCenter">
                         <a href="#about" class="commanBtn">Get Started</a>
                         <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank"
@@ -198,12 +201,22 @@
 
         <!-- Added Footer -->
         <footer>
+
+
+
+            <p>© <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script> Copyright. <b>Awesome JavaScript Project</b>. All Rights Reserved.</p>
+
             <p>©
                 <script type="text/javascript">
                     document.write(new Date().getFullYear());
                 </script> Copyright. <b>Awesome JavaScript Project</b>. All Rights Reserved.
             </p>
+
             <p>Design by <a href="https://cratonik.com" target="_blank" rel="follow">Cratonik</a></p>
+
+            
         </footer>
         <!-- Closed Footer -->
     </main>
