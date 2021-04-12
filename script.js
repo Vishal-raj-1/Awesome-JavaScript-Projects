@@ -558,6 +558,11 @@ let projectData = [
     projectImage: "assets/Images/palindrome.jpg",
     projectUrl: "public/palindrome.html",
   },
+  {
+    projectName: "Moving Car Animation",
+    projectImage: "assets/GIFs/Animated_moving_car.gif",
+    projectUrl: "public/Animated_moving_car.html",
+  }
   
 //   {
 //     projectName: "DarkMode",
