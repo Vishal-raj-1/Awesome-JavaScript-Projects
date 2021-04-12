@@ -694,6 +694,11 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
+   {
+    projectName: "JavaScript Dragon Game",
+    projectImage: "assets/Images/JavaScript Dragon Game.png",
+    projectUrl: "public/Dino game.html",
+  },
   { 
     projectName: 'Giphy-Search',
     projectImage: 'assets/GIFs/Giphy-Search.gif',
@@ -707,7 +712,6 @@ let projectData = [
   {
     projectName: "Factorial Calculator",
     projectImage: "assets/Images/FactorialCalculator.jpg",
-    projectUrl: "public/FactorialCalculator.html",
   },
   {
     projectName: "Hospital Registration Form",
