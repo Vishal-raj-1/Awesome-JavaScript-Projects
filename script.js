@@ -125,6 +125,11 @@ let projectData = [
     projectUrl: "public/animatedCounter.html",
   },
   {
+    projectName: "Bubble Sort",
+    projectImage: "assets/GIFs/bubbleSort.gif",
+    projectUrl: "public/bubbleSort.html",
+  },
+  {
     projectName: "Music Player",
     projectImage: "assets/GIFs/musicPlayer.gif",
     projectUrl: "public/music_player.html",
