@@ -7,6 +7,7 @@ section{
     justify-content: center;
     align-items: center;
     background-color: #82ccdd;
+    overflow-x: hidden;
 }
 
 section h1{
@@ -86,4 +87,12 @@ section h1{
     border:none;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+body{
+    overflow-x: hidden;
+}
+@media only screen and (max-width:520px) {
+    .centerdiv{
+        width: 90%;
+    }
 }
