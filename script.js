@@ -589,9 +589,14 @@ let projectData = [
     projectUrl: "public/ExchangeRate.html",
   },
   {
-    projectName: "Word Scramble Game",
-    projectImage: "assets/GIFs/wordScramble.gif",
-    projectUrl: "public/wordScramble.html",
+    projectName: "Mapping Earthquake Data",
+    projectImage: "assets/Images/earthquake.png",
+    projectUrl: "public/map_earthquake_data.html",
+  },
+  {
+    projectName: 'Word Scramble Game',
+    projectImage: 'assets/GIFs/wordScramble.gif',
+    projectUrl: 'public/wordScramble.html',
   },
   {
     projectName: "Image Gallery",
