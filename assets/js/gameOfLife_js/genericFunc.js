@@ -10,5 +10,3 @@ const make2dArray = (rows, cols) => {
 const ran = (min = 0, max = 1) => {
     return Math.floor(Math.random() * (max - min) + min);
 }
-
-export { make2dArray, ran };

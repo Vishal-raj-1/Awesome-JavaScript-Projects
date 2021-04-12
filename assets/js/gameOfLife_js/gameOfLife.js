@@ -1,7 +1,3 @@
-// import pre-made formations
-import { formations } from "./formations.js";
-import { make2dArray, ran } from "./genericFunc.js";
-
 // variables
 let canvas, canvasBound, ctx, w, h;
 let grid, cols, rows;
