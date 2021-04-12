@@ -147,6 +147,7 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
     clearInterval(animationState);
     animationState = "false";
+    toggleControls(1);
     console.log("Restarting...");
     init();
 });
