@@ -6,22 +6,25 @@
 
 body {
   font-family: "Lobster", cursive;
-  height: 100vh;
+  background-color: yellow;
+}
+
+.container {
+  margin-top: 150px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
 }
 
 .clock {
   display: flex;
+  flex-direction: row;
 }
 
 .clock div {
   position: relative;
-  margin: 0 10px;
-  width: 200px;
-  height: 240px;
+  margin: 20px 20px;
 }
 
 .clock div p {
@@ -71,10 +74,32 @@ body {
   color: black;
 }
 
+@media (max-width: 700px) {
+  .clock {
+  flex-direction: column;
+  }
+
+  .clock div p {
+    width: 170px;
+    height: 90px;
+    font-size: 70px;
+  }
+
+  .clock div p:last-child {
+    font-size: 20px;
+    height: 70px;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+}
+
 .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px 0;
 }
 
 .start,
