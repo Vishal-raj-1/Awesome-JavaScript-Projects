@@ -866,7 +866,14 @@ let projectData = [
     projectName: "AmoungUs Game Move",
     projectImage: "assets/GIFs/amongus.gif",
     projectUrl: "public/amongus.html",
-  }, {
+  },
+  {
+    projectName: "Progress Steps",
+    projectImage: "assets/GIFs/Progress_steps.gif",
+    projectUrl: "public/Progress_Steps.html",
+  },
+
+   {
     projectName: "Rose | Mathematics",
     projectImage: "assets/Images/rose-mathematics/icon.png",
     projectUrl: "public/rose-mathematics.html",
