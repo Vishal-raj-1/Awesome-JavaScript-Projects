@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "JavaScript Interest Calculator",
+    projectImage: "assets/Images/InterestCalculator.png",
+    projectUrl: "public/InterestCalculator.html",
+  },
+  {
     projectName: "Tubelight-text",
     projectImage: "assets/GIFs/Tubelight-text.gif",
     projectUrl: "public/Tubelight-text.html",
@@ -571,6 +576,11 @@ let projectData = [
     projectUrl: "public/palindrome.html",
   },
   {
+    projectName: "Student marks calculator",
+    projectImage: "assets/Images/studentCalc.png",
+    projectUrl:"public/studentCalc.html",
+  },
+  {
     projectName: "Moving Car Animation",
     projectImage: "assets/GIFs/Animated_moving_car.gif",
     projectUrl: "public/Animated_moving_car.html",
@@ -585,6 +595,15 @@ let projectData = [
   //                   },
   //     projectUrl: "public/DarkMode.html",
   //    },
+  
+//   {
+//     projectName: "DarkMode",
+//     projectImage: {
+//                     "assets/Images/DarkMode1.jpeg",
+//                     "assets/Image/DarkMode2.jpeg",
+//                   },
+//     projectUrl: "public/DarkMode.html",
+//    },
 
   {
     projectName: "DarkMode",
