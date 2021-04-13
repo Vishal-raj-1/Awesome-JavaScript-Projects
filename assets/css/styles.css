@@ -9,8 +9,55 @@
     scroll-behavior: smooth;
 }
 
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #eeebdd;
+      color: #3B5998;
+    }
+
+    .facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .twitter {
+      background: #3B5998;
+      color: white;
+    }
+
+    .google {
+      background: #3B5998;
+      color: white;
+    }
+
+    .linkedin {
+      background: #3B5998;
+      color: white;
+    }
+
+    .youtube {
+      background: #3B5998;
+      color: white;
+    }
+
 a{
-  text-decoration: none;  
+  text-decoration: none;
   color: #fff;
   transition: color .25s ease-in-out;
   outline: none;
@@ -43,7 +90,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-transform: rotateZ(45deg);
             transform: rotateZ(45deg);
   }
-  
+
   .sk-folding-cube .sk-cube {
     float: left;
     width: 50%;
@@ -51,7 +98,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
-            transform: scale(1.1); 
+            transform: scale(1.1);
   }
   .sk-folding-cube .sk-cube:before {
     content: '';
@@ -85,7 +132,7 @@ body::-webkit-scrollbar-thumb {
   }
   .sk-folding-cube .sk-cube3:before {
     -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s; 
+            animation-delay: 0.6s;
   }
   .sk-folding-cube .sk-cube4:before {
     -webkit-animation-delay: 0.9s;
@@ -95,31 +142,31 @@ body::-webkit-scrollbar-thumb {
     0%, 10% {
       -webkit-transform: perspective(140px) rotateX(-180deg);
               transform: perspective(140px) rotateX(-180deg);
-      opacity: 0; 
+      opacity: 0;
     } 25%, 75% {
       -webkit-transform: perspective(140px) rotateX(0deg);
               transform: perspective(140px) rotateX(0deg);
-      opacity: 1; 
+      opacity: 1;
     } 90%, 100% {
       -webkit-transform: perspective(140px) rotateY(180deg);
               transform: perspective(140px) rotateY(180deg);
-      opacity: 0; 
-    } 
+      opacity: 0;
+    }
   }
-  
+
   @keyframes sk-foldCubeAngle {
     0%, 10% {
       -webkit-transform: perspective(140px) rotateX(-180deg);
               transform: perspective(140px) rotateX(-180deg);
-      opacity: 0; 
+      opacity: 0;
     } 25%, 75% {
       -webkit-transform: perspective(140px) rotateX(0deg);
               transform: perspective(140px) rotateX(0deg);
-      opacity: 1; 
+      opacity: 1;
     } 90%, 100% {
       -webkit-transform: perspective(140px) rotateY(180deg);
               transform: perspective(140px) rotateY(180deg);
-      opacity: 0; 
+      opacity: 0;
     }
   }
   #spinner-wrapper {
@@ -139,7 +186,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
     bottom: 30px;
     right: 30px;
-    background-color: #1fa0db;    
+    background-color: #1fa0db;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -172,6 +219,61 @@ body::-webkit-scrollbar-thumb {
 .path p{
     color: #333;
 }
+
+body {margin:0;height:2000px;}
+    
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #eeebdd;
+      color: #3B5998;
+    }
+    
+    .facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .twitter {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .google {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .linkedin {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .youtube {
+      background: #3B5998;
+      color: white;
+    }
+
+    .typed{
+        color: #87CEEB;
+    }
+
+    
 header{
     background-color: #37517E;
     height: 80vh;
@@ -287,6 +389,12 @@ i#menuClose{
 .bannerIllustration img{
     width: 500px;
 }
+
+.shadow:hover{
+    text-shadow: 1px 1px 2.5px #87CEEB;
+
+}
+
 @-webkit-keyframes up-down{
     0%{
         transform: translateY(10px);
@@ -557,6 +665,7 @@ footer a{
 }
 .contact p textarea{
     padding: 10px;
+    resize: none;
 }
 .contactForm p input:focus,
 .contactForm p textarea:focus{

@@ -1,41 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Let's Draw(Drawing app)</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Clone</title>
+    <link rel="icon" type="image/png" href="../assets/Images/favicons/11.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="../assets/css/draw.css">
-  </head>
-  <body>
-
-    <canvas id="canvas"></canvas>
-
-    <div class="eraser">
-      <div onClick="erase(this)" class="erase"><button><i class="fa fa-eraser fa-2x" aria-hidden="true" title="Eraser"></i></button></div>
-      <div onClick="clearCanva(this)" class="erase"><button><i class="fa fa-file-o fa-2x" aria-hidden="true" title="Clear All"></i></button></div>
+</head>
+<body>
+    <!-- Tool Bar -->
+    <div class="top-bar">
+        <!-- Active Tool -->
+        <div class="active-tool">
+            <span id="active-tool" title="Active Tool">Brush</span>
+        </div>
+        <!-- Brush -->
+        <div class="brush tool">
+            <i class="fas fa-brush" id="brush" title="Brush"></i>
+            <input class="jscolor" value="a51dab" id="brush-color">
+            <span class="size" id="brush-size" title="Brush Size">10</span>
+            <input type="range" min="1" max="50" value="10" class="slider" id="brush-slider">
+        </div>
+        <!-- Bucket -->
+        <div class="bucket tool">
+            <i class="fas fa-fill-drip" title="Background Color"></i>
+            <input class="jscolor" value="ffffff" id="bucket-color">
+        </div>
+        <!-- Eraser -->
+        <div class="tool">
+            <i class="fas fa-eraser" id="eraser" title="Eraser"></i>
+        </div>
+        <!-- Clear Canvas -->
+        <div class="tool">
+            <i class="fas fa-undo-alt" id="clear-canvas" title="Clear"></i>
+        </div>
+        <!-- Save Local Storage -->
+        <div class="tool">
+            <i class="fas fa-download" id="save-storage" title="Save Local Storage"></i>
+        </div>
+        <!-- Load Local Storage -->
+        <div class="tool">
+            <i class="fas fa-upload" id="load-storage" title="Load Local Storage"></i>
+        </div>
+        <!-- Clear Local Storage -->
+        <div class="tool">
+            <i class="fas fa-trash-alt" id="clear-storage" title="Clear Local Storage"></i>
+        </div>
+        <!-- Download Image -->
+        <div class="tool">
+            <a id="download">
+                <i class="far fa-save" title="Save Image File"></i>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Mobile Message -->
+    <div class="mobile-message">
+        <h2>Please use application on larger screen</h2>
     </div>
 
-    <div class="color-wrapper">
-      <div data-color="#0275d8" onClick="setColor(this)" class="color c-blue" title="Blue"></div>
-      <div data-color="#5cb85c" onClick="setColor(this)" class="color c-green" title="Green"></div>
-      <div data-color="#eb5b2d" onClick="setColor(this)" class="color c-orange" title="Orange"></div>
-      <div data-color="#000000" onClick="setColor(this)" class="color c-black" title="Black"></div>
-      <div data-color="#ffffff" onClick="setColor(this)" class="color c-white" title="White"></div>
-      <div data-color="#ffff00" onClick="setColor(this)" class="color c-yellow" title="Yellow"></div>
-      <div data-color="#800080" onClick="setColor(this)" class="color c-purple" title="Purple"></div>
-    </div>
-
-    <div class="size-wrapper">
-      <div data-size="2" onClick="setSize(this)" class="size s-tiny"><button>Tiny</button></div>
-      <div data-size="5" onClick="setSize(this)" class="size s-small"><button>Small</button></div>
-      <div data-size="8" onClick="setSize(this)" class="size s-medium"><button>Medium</button></div>
-      <div data-size="12" onClick="setSize(this)" class="size s-large"><button>Large</button></div>
-      <div data-size="18" onClick="setSize(this)" class="size s-x-large"><button>Extra Large</button></div>
-    </div>
-
-
-  <script src="../assets/js/draw.js">
-
-  </script>
-  </body>
+    <!-- Script -->
+    <script src="../assets/js/jscolor.js"></script>
+    <script src="../assets/js/draw.js"></script>
+</body>
 </html>

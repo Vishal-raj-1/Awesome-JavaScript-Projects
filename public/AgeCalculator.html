@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AGE CALCULATOR</title>
+    <link rel="shortcut icon" href="../assets/Images/favicons/10.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/AgeCalculator.css">
+</head>
+<body>
+    <h1 style="text-align:center">AGE CALCULATOR</h1>
+    <div id="input">
+        <form>
+            <label for="dob">Date Of Birth:</label><br/>
+            <input type="date" name="dob" id="dob" value="1970-01-01"/><br/><br />
+            <label for="bd">Age At Date:</label><br/>
+            <input type="date" name="bd" id="bd" /><br/><br />
+            <button type="button" onclick="cal()">Calculate</button>
+        </form>
+    </div >
+    <div id="bottom">
+     
+       <span>Age:</span>
+        <p id="age"></p><br/>
+        <span>Age In Months:</span>
+        <p id="months"></p><br/>
+        <span>Age In Weeks:</span>
+        <p id="weeks"></p><br/>
+        <span>Age In Days:</span>
+        <p id="days"></p><br/>
+        <span>Age In Hours:</span>
+        <p id="hours"></p><br/>
+        <span>Age In Minutes:</span>
+        <p id="minutes"></p><br/>
+        <span>Age In Seconds:</span>
+        <p id="seconds"></p><br/>
+       
+    </div>
+    <script src="../assets/js/AgeCalculator.js" type="text/javascript"></script>
+</body>
+</html>
