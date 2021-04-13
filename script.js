@@ -438,6 +438,12 @@ let projectData = [
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
+  }
+  ,
+  {
+    projectName: "Bubble Particle Project",
+    projectImage: "assets/GIFs/bubble-particle.gif",
+    projectUrl: "public/bubbleParticle.html",
   },
   {
     projectName: "2048 Game",
