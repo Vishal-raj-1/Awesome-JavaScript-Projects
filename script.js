@@ -866,6 +866,11 @@ let projectData = [
     projectName: "Rose | Mathematics",
     projectImage: "assets/Images/rose-mathematics/icon.png",
     projectUrl: "public/rose-mathematics.html",
+  },
+  {
+    projectName: "Pricing Plan Cards",
+    projectImage: "assets/GIFs/PricingCards.gif",
+    projectUrl: "public/PricingCards.html",
   }
 ];
 
