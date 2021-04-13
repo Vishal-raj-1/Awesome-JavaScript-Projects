@@ -6,10 +6,6 @@
 
 body {
   font-family: "Lobster", cursive;
-  /* height: 100vh; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background-color: yellow;
 }
 
@@ -29,8 +25,6 @@ body {
 .clock div {
   position: relative;
   margin: 20px 20px;
-  /* width: 200px;
-  height: 240px; */
 }
 
 .clock div p {
@@ -83,7 +77,6 @@ body {
 @media (max-width: 700px) {
   .clock {
   flex-direction: column;
-  /* padding-top: 80px; */
   }
 
   .clock div p {
