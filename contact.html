@@ -30,7 +30,7 @@
         <!-- Added Header -->
         <header>
             <nav>
-                <h2><a href="index.html">Awesome JavaScript</a></h2>
+                <h2 class="shadow"><a href="index.html">Awesome JavaScript</a></h2>
                 <i class="fa fa-bars" aria-hidden="true" id="menuBar" onclick="menu()"></i>
                 <i class="fa fa-times" aria-hidden="true" id="menuClose" onclick="menuClose()"></i>
                 <ul id="menu">
@@ -68,11 +68,14 @@
         <!-- Path -->
         
         <!-- Added Contact -->
+
         <section class="body contact" id="contact">
             <h1>Contact Now</h1>
             <hr>
             <p>Be free to make your query solved with us. Contact Us Now. You can get the code on GitHub.</p>
+
             <div class="contactForm">
+
                 <form action="" post="">
                     <p>
                         <label for="fname">First Name</label>
@@ -94,7 +97,8 @@
                         <label for="message">Message</label>
                         <textarea name="message" id="message" cols="93" rows="10"></textarea>
                     </p>
-                    <p>
+                    <p class="button-container">
+                    	<button id="back-button" type="button" onclick="window.history.back();">Back</button>
                         <input type="submit" id="submit" value="Send Message">
                     </p>
                 </form>
@@ -113,5 +117,35 @@
     </main>
 </body>
 <script src="./assets/js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+    <script>
+        const options = {
+            bottom: '100px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.9s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+    <style>
+        .darkmode-toggle {
+            position: absolute;
+        }
+    </style>
 
 </html>
