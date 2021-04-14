@@ -1,0 +1,63 @@
+@keyframes spin {
+  0% {
+    background: url("../Images/heads.png");
+  }
+
+  25% {
+    background: url("../Images/tails.png");
+  }
+
+  50% {
+    background: url("../Images/heads.png");
+  }
+
+  75% {
+    background: url("../Images/tails.png");
+  }
+
+  100% {
+    background: url("../Images/heads.png");
+  }
+}
+
+#image {
+  background: url("../Images/heads.png");
+  width: 227px;
+  height: 337px;
+}
+
+.animate {
+  background: url("../Images/heads.png");
+  width: 227px;
+  height: 337px;
+  animation-name: spin;
+  animation-iteration-count: 2;
+  animation-duration: 1s;
+}
+
+.canvas {
+  width: 800px;
+  height: 500px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+#center {
+  width: 227px;
+  margin: 15px auto;
+}
+
+.selection,
+#player,
+#computer {
+  display: inline;
+  margin: 25px;
+  font-size: 1.3em;
+}
+
+button {
+  font-size: 1.2em;
+  border-radius: 5px;
+}
