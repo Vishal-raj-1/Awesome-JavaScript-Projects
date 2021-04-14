@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Coin-Toss Game",
+    projectImage: "assets/Images/Coin-toss.jpg",
+    projectUrl: "public/CoinToss.html",
+  },
+  {
     projectName: "Tubelight-text",
     projectImage: "assets/GIFs/Tubelight-text.gif",
     projectUrl: "public/Tubelight-text.html",
@@ -572,7 +577,7 @@ let projectData = [
     projectName: "Moving Car Animation",
     projectImage: "assets/GIFs/Animated_moving_car.gif",
     projectUrl: "public/Animated_moving_car.html",
-  }
+  },
   
 //   {
 //     projectName: "DarkMode",
