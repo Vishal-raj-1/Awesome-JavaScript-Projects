@@ -284,4 +284,8 @@ body{
     margin: 20px auto;
     font-family: Helvetica;
 }
-  
+@media only screen and (max-width:500px) {
+  body{
+    background-size: auto;
+  }
+}

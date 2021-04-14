@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose | (Mathematics)</title>
+
+    <!-- Manifest.json  -->
+    <meta property="og:title" content="Rose | (Mathematics)">
+    <meta property="og:description" content="Beautiful roses made by mathematical equations">
+    <meta property="og:image" content="../assets/Images/rose-mathematics/icon.png">
+    <meta property="og:url" content="name.com">
+
+    <!-- Main Link Tags  -->
+    <link href="../assets/Images/rose-mathematics/icon.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="../assets/Images/rose-mathematics/icon.png" rel="icon" type="image/png" sizes="32x32">
+
+    <!-- style and fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Slabo+27px" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/rose-mathematics_css/rose-mathematics.min.css">
+</head>
+
+<body>
+    <div id="fps">FPS : 00</div>
+
+    <h1>Rose</h1>
+    <button onclick="info()" id="infoBTN" title="info on the mathematical process">i</button>
+    <button id="redo" title="re-run the program">Re-run
+    </button>
+    <canvas id="canvas"></canvas>
+    <div id="info">
+
+        <h2>Info</h2>
+        <hr>
+
+        <p class="section">
+            In mathematics, a rose or rhodonea curve is a sinusoid specified by either the cosine or sine functions
+            with
+            no phase angle that is plotted in polar coordinates. Rose curves or "rhodonea" were named by the Italian
+            mathematician who studied them, Guido Grandi, between the years 1723 and 1728.
+            This project is an attempt to showcase its visualization.<br><br>
+
+            <b style="color:coral"> The equation used here : </b> <br><br>
+
+            <i> Radius = Cos( k * angle );<br>
+                <small>( where k is a constant )</small> <br>
+                k = n / b ;<br>
+                <small>( where n & b are constant as well)</small> <br> <br>
+            </i>
+
+            <b style="color:coral">NOTE : </b> The value used in code for n and b are generated randomly every
+            time...<br><br>
+            <i style="color:coral">Currently :</i> <br>
+            <b>n : </b><span id="n">0</span>
+            <br>
+            <b>d : </b><span id="d">0</span> .
+            </b>
+
+            <br /><br>
+            <b style="color:coral">Refer to chart :</b>
+            <img alt="Chart"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Rose-rhodonea-curve-7x9-chart-improved.svg/904px-Rose-rhodonea-curve-7x9-chart-improved.svg.png" />
+            <br>
+            <i><small>Twek the value of n & b and have fun !! </small></i>
+
+            <br> <br><b>Know more on : <i><a href="https://en.m.wikipedia.org/wiki/Rose_(mathematics)"
+                        target="blank">WIKIPEDIA</a></i></b>
+        </p>
+    </div>
+
+    <footer>
+        Made with ❤ and ☕ by <a href="https://jhamadhav.com">Madhav</a> for <a
+            href="https://www.girlscript.tech/Home">Girlscript !</a>
+    </footer>
+
+    <!-- scripts -->
+    <script src="../assets/js/rose-mathematics_js/rose-mathematics.js"></script>
+</body>
+
+</html>
