@@ -672,12 +672,23 @@ footer a{
     box-shadow: 0 0 4px 4px #228abb9a;
     border: 0;
 }
-.contactForm p:last-child input{
+.contactForm p:last-child input, .contactForm p:last-child button{
     background-color: #1fa0db;
     color: #fff;
     border-radius: 4px;
     border: 0;
+    width: 45%;
     cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+#back-button{
+    
+    font-size: 1.1rem;
 }
 
 /* Responsiveness */

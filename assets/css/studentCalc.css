@@ -12,7 +12,7 @@ body{
  align-items: center;
  justify-content: center;
  background: linear-gradient(25deg, #e91e63, #03a9f4);
-
+ overflow-x: hidden;
 }
 .container{
     display: flex;
@@ -82,4 +82,27 @@ p{
     font-size: 19px;
     color: #fff;
     
+}
+@media only screen and (max-width:500px) {
+    .container{
+        display:inline-block;
+        height: 650px;
+        padding: 2rem;
+        justify-content: center;
+        margin: 0px;
+    }
+    .inputs{
+        padding: 3rem 0;
+    }
+    #result{
+        font-size: 1.09rem;
+        justify-content: center;
+        text-align: center;
+        bottom: 60px;
+        left: 0;
+        margin:5%;
+    }
+    .inputs button{
+        margin-top: 30px;
+    }
 }
