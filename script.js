@@ -20,6 +20,11 @@ let projectData = [
     projectUrl: "public/AND_OR_XOR_Converter.html",
   },
   {
+    projectName: "Todo-App",
+    projectImage: "assets/GIFs/todo-app.gif",
+    projectUrl: "public/todo-app.html",
+  },
+  {
     projectName: "Pinpad",
     projectImage: "assets/GIFs/pinpad.gif",
     projectUrl: "public/pinpad.html",
