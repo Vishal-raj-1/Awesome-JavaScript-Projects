@@ -896,7 +896,13 @@ let projectData = [
     projectName: "Rose | Mathematics",
     projectImage: "assets/Images/rose-mathematics/icon.png",
     projectUrl: "public/rose-mathematics.html",
+  },
+  {
+    projectName: "Typing Practice",
+    projectImage: "assets/GIFs/TypingSpeed.gif",
+    projectUrl: "public/TypingPractice.html",
   }
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
