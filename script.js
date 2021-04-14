@@ -1,4 +1,9 @@
 let projectData = [
+   {
+    projectName: "Coin-Toss Game",
+    projectImage: "assets/Images/Coin-toss.jpg",
+    projectUrl: "public/CoinToss.html",
+  },
   {
     projectName: "JavaScript Interest Calculator",
     projectImage: "assets/Images/InterestCalculator.png",
