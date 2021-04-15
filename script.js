@@ -7,7 +7,7 @@ let projectData = [
   {
     projectName: "Gradient-Background Generator",
     projectImage: "assets/Images/gradientBackgroundGen.jpg",
-    projectUrl: "public/GradientBackgroundGen.html",
+    projectUrl: "public/gradientBackgroundGen.html",
   },
   {
     projectName: "JavaScript Interest Calculator",
