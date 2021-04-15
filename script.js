@@ -900,6 +900,10 @@ let projectData = [
     projectImage: "assets/GIFs/amongus.gif",
     projectUrl: "public/amongus.html",
   },
+  { projectName: "Etch-a-Sketch",
+    projectImage: "assets/GIfs/etch_sketch.png", 
+    projectUrl: "public/etch_sketch.html",
+  },
   {
     projectName: "Progress Steps",
     projectImage: "assets/GIFs/Progress_steps.gif",
