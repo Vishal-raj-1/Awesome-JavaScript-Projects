@@ -2,6 +2,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+overflow-x: hidden;
 }
   header{
     width: 100%;
@@ -31,7 +32,7 @@ section{
   align-items: center;
 }
 .gameArea{
-  width: 60%;
+  width: 100%;
   height: 500px;
   padding: 20px 0;
   border-radius: 20px;
@@ -42,6 +43,7 @@ section{
   align-items: center;
   font-family: sans-serif;
   box-shadow: 0 8px 6px -6px black;
+  max-width: 700px;
 }
 .items{
   display: inline-flex;
