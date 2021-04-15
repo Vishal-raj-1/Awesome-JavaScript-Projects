@@ -203,6 +203,13 @@ body {
   margin-top: 10rem !important;
 }
 
+.section-tours#blur.active {
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
 .btn {
   /* since it is a link so we should do :link */
   /* when we click an element it is an active state */
@@ -568,11 +575,13 @@ body {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
 }
-.popup:target {
+
+#popup.active {
   opacity: 1;
   visibility: visible;
 }
-.popup:target .popup__content {
+
+#popup.active .popup__content {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -580,6 +589,7 @@ body {
   -ms-transform: translate(-50%, -50%) scale(1);
   -o-transform: translate(-50%, -50%) scale(1);
 }
+
 .popup__close:link,
 .popup__close:visited {
   color: #777;
@@ -590,11 +600,11 @@ body {
   text-decoration: none;
   display: inline-block;
   line-height: 1;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
+  transition: all 0.4s 0.2s;
+  -webkit-transition: all 0.4s 0.2s;
+  -moz-transition: all 0.4s 0.2s;
+  -ms-transition: all 0.4s 0.2s;
+  -o-transition: all 0.4s 0.2s;
 }
 .popup__close:hover {
   color: #55c57a;
