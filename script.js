@@ -911,6 +911,11 @@ let projectData = [
     projectImage: "assets/GIFs/TypingSpeed.gif",
     projectUrl: "public/TypingPractice.html",
   },
+  {
+    projectName: "Expense Tracker",
+    projectImage: "assets/GIFs/expense_tracker.gif",
+    projectUrl: "public/expense_tracker.html",
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
