@@ -375,11 +375,6 @@ let projectData = [
     projectUrl: "public/RGB_Color_Guessing_Game.html",
   },
   {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
-    projectUrl: "public/textToVoice.html",
-  },
-  {
     projectName: "MemeUrl",
     projectImage: "assets/GIFs/memeUrl.png",
     projectUrl: "public/memeUrl.html",
