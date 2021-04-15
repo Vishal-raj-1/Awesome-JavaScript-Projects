@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     //Preloader
     preloaderFadeOutTime = 500;
@@ -7,6 +9,23 @@ $(document).ready(function() {
     }
     hidePreloader();
 });
+
+$(document).ready(function()
+ {
+    if ($('.typed').length) {
+        var typed=new Typed('.typed', {
+              
+              strings:["The great collection of JavaScript projects,just for you!!!"],
+              loop: true,
+              typeSpeed: 100,
+              backSpeed: 50,
+              backDelay: 2000
+            });}
+    
+    
+});
+
+
 
 
 let menuBar = document.getElementById('menuBar');

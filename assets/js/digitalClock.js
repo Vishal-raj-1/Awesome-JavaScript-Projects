@@ -12,7 +12,7 @@ function clock() {
       ? 12
       : hours.innerHTML > 12
       ? hours.innerHTML - 12
-      : hour.innerHTML;
+      : hours.innerHTML;
 
   if (hours.innerHTML.toString().length == 1) {
     hours.innerHTML = "0" + hours.innerHTML;

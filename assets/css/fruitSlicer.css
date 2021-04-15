@@ -1,0 +1,164 @@
+/*styling.css*/
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../Images/bg.png);
+  background-size: cover;
+}
+
+#container {
+  height: 600px;
+  width: 720px;
+  margin: 70px auto 10px auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px #011f0a;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+#instruction {
+  width: 300px;
+  left: 260px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #da50da;
+  box-shadow: 0px 2px black;
+  display: flex;
+  color: black;
+  justify-content: center;
+  margin: 10px auto;
+  align-items: center;
+  border-radius: 5px;
+  color: black;
+  padding: 11px;
+}
+
+#fruitsContainer {
+  width: 650px;
+  height: 450px;
+  margin: 20px auto 30px auto;
+  background-color: #dbd4ca;
+  box-shadow: 0px 4px #535aa8;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 4px black;
+  font-size: 30px;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+#begin {
+  width: 650px;
+  height: 450px;
+  margin: 0;
+  background-color: #00a0f0;
+  background-size: 100% 100%;
+  display: none;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+#begin img {
+  height: 150px;
+}
+
+#score {
+  width: 152px;
+  padding: 10px;
+  position: absolute;
+  top: 589px;
+  left: 500px;
+  background-color: #d62049;
+  border-radius: 3px;
+  box-shadow: 0px 4px black;
+  color: wheat;
+  text-align: center;
+  display: none;
+}
+
+#startreset {
+  width: 100px;
+  height: 20px;
+  padding: 10px;
+  background-color: rgba(13, 191, 197, 0.5);
+  margin: 0 auto;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 4px black;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+#trialsLeft {
+  width: 150px;
+  padding: 5px 0;
+  position: absolute;
+  top: 589px;
+  left: 120px;
+  background-color: #d62049;
+  border-radius: 3px;
+  box-shadow: 0px 4px black;
+  display: none;
+}
+
+#gameOver {
+  height: 250px;
+  width: 510px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  background-image: url(../Images/bg3.png);
+  background-size: 100% 100%;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 200px;
+  left: 140px;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.life {
+  width: 29px;
+  height: 25px;
+  margin: 0 9px;
+}
+
+.fruit {
+  display: none;
+  position: absolute;
+}
+
+footer {
+  width: 750px;
+  height: 60px;
+  color: #000000;
+  margin: 20px auto;
+  background-color: #e1a104;
+  box-shadow: 4px 4px black;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
