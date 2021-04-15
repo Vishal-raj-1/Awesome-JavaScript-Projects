@@ -10,6 +10,11 @@ let projectData = [
     projectUrl: "public/GradientBackgroundGen.html",
   },
   {
+    projectName: "Video Player",
+    projectImage: "assets/GIFs/video.gif",
+    projectUrl: "public/video.html",
+  },
+  {
     projectName: "JavaScript Interest Calculator",
     projectImage: "assets/Images/InterestCalculator.png",
     projectUrl: "public/InterestCalculator.html",
