@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/InterestCalculator.html",
   },
   {
+    projectName: "Car Game",
+    projectImage: "assets/GIFs/cargame.gif",
+    projectUrl: "public/car.html",
+  },
+  {
     projectName: "Tubelight-text",
     projectImage: "assets/GIFs/Tubelight-text.gif",
     projectUrl: "public/Tubelight-text.html",
