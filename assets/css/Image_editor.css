@@ -8,7 +8,7 @@ table {
 	margin-top: 10%;
 	background-color: #ffe6e6;
 	padding: 20px;
-	border-radius: 10%;
+	border-radius: 50px;
 }
 
 table:hover {
@@ -25,7 +25,7 @@ table:hover {
 #url {
 	box-sizing: content-box;
 	width: 55%;
-	margin: 0 2.5%;
+	margin: 15px 2.5%;
 	padding: 10px;
 	outline: none;
 	border: 2px solid transparent;
@@ -91,6 +91,10 @@ label {
 	form{
 		width:500px;
 		margin: auto;
+	}
+	#url {
+		width: 90%;
+		margin:15px 5%;
 	}
 	.btn{
 		width:60% !important;
@@ -160,8 +164,7 @@ label {
 		width: 100%;
 		margin: 0px;
 	}
-	.url{
-		margin: 0 !important;
+	#url{
 		font-size: 0.8rem;
 	}
 	.change{
