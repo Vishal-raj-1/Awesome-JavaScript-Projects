@@ -783,6 +783,12 @@ let projectData = [
     projectUrl: "public/amongus.html",
   },
 
+  {
+    projectName: "Birthday Greeting Card",
+    projectImage: "assets/GIFs/BirthdayGreeting.gif",
+    projectUrl: "public/BirthdayGreeting.html",
+  },
+
 
 
 ];
