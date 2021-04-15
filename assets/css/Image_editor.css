@@ -28,7 +28,7 @@ table:hover {
 	margin: 15px 2.5%;
 	padding: 10px;
 	outline: none;
-	border: 2px solid transparent;
+	border: 1px solid transparent;
 	border-radius: 2px;
 }
 #url:focus {
