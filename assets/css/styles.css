@@ -219,6 +219,61 @@ body::-webkit-scrollbar-thumb {
 .path p{
     color: #333;
 }
+
+body {margin:0;height:2000px;}
+    
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #eeebdd;
+      color: #3B5998;
+    }
+    
+    .facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .twitter {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .google {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .linkedin {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .youtube {
+      background: #3B5998;
+      color: white;
+    }
+
+    .typed{
+        color: #87CEEB;
+    }
+
+    
 header{
     background-color: #37517E;
     height: 80vh;
@@ -334,6 +389,12 @@ i#menuClose{
 .bannerIllustration img{
     width: 500px;
 }
+
+.shadow:hover{
+    text-shadow: 1px 1px 2.5px #87CEEB;
+
+}
+
 @-webkit-keyframes up-down{
     0%{
         transform: translateY(10px);
@@ -605,12 +666,23 @@ footer a{
     box-shadow: 0 0 4px 4px #228abb9a;
     border: 0;
 }
-.contactForm p:last-child input{
+.contactForm p:last-child input, .contactForm p:last-child button{
     background-color: #1fa0db;
     color: #fff;
     border-radius: 4px;
     border: 0;
+    width: 45%;
     cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+#back-button{
+    
+    font-size: 1.1rem;
 }
 
 /* Responsiveness */

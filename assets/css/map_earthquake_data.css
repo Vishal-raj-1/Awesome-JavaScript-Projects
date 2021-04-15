@@ -1,0 +1,29 @@
+body{
+        position: relative;
+        background: #3A1C71;  
+        background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  
+        background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+
+      }
+p.name{
+        text-align: center;
+        text-shadow: 1px 1px 1px #ccc;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: underline;
+        text-decoration-color:#D76D77;
+        text-transform: uppercase;
+        
+      }
+.bttn{
+        background-color:#D76D77;
+        color:black;
+        border-radius: 15px;
+        position:relative;
+        left:650px;
+        top:30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+     }
