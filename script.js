@@ -904,6 +904,11 @@ let projectData = [
     projectName: "Avatar Maker",
     projectImage: "assets/GIFs/avatarMaker-demo.gif",
     projectUrl: "public/avatarMaker.html",
+
+    projectName: "Password Strength Checker",
+    projectImage: "assets/GIFs/Password_Strength_Checker.gif",
+    projectUrl: "public/Password_Strength_Checker.html",
+
   },
   { projectName: "Etch-a-Sketch",
     projectImage: "assets/GIfs/etch_sketch.png", 
