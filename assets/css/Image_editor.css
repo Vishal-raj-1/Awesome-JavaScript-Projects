@@ -1,0 +1,173 @@
+body {
+	background-image: url("../Images/image_editor_background.jpg");
+	background-attachment: fixed;
+}
+
+table {
+	margin: auto;
+	margin-top: 10%;
+	background-color: #ffe6e6;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+table:hover {
+	box-shadow: 0 0 5px #e7accf, 0 0 50px #e7accf, 0 0 25px #e7accf, 0 0 5px #e7accf;
+}
+
+@media screen and (min-width: 500px) {
+	#targetimg {
+		width: 500px;
+		height: 300px;
+	}
+}
+
+#url {
+	box-sizing: content-box;
+	width: 55%;
+	margin: 15px 2.5%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid transparent;
+	border-radius: 2px;
+}
+#url:focus {
+	border-color: #ff7b7b;
+	box-shadow: 0 0 0 .2rem #ff7b7b5e !important;
+}
+.change {
+	box-sizing: border-box;
+	width: 29% !important;
+	margin: 15px 2.5%;
+}
+.btn {
+	background-color: #ff9999 !important;
+	padding: 10px;
+	width: 100%;
+	font-size: 15px;
+	border-color: #ff9999 !important;
+	outline: none;
+	border-width: 0px !important;
+	border-radius: 2px;
+}
+.btn:hover {
+    background-color: #ff7b7b !important;
+	border-color: #ff7b7b;
+}
+.btn:focus {
+    box-shadow: 0 0 0 .2rem #ff7b7b5e !important;
+}
+
+.slider {
+	-webkit-appearance: none;
+	background-color: #e7accf;
+	width: 100%;
+	cursor: pointer;
+	outline: none;
+}
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #db1169;
+	cursor: pointer;
+  }
+
+label {
+	font-size: 18px;
+	font-weight: bold;
+}
+@media only screen and (max-width:765px) {
+	.filter input{
+		width:100%;
+		margin:auto;
+		padding:3px;
+	}
+	.shift{
+		display: grid;
+	}
+	form{
+		width:500px;
+		margin: auto;
+	}
+	#url {
+		width: 90%;
+		margin:15px 5%;
+	}
+	.btn{
+		width:60% !important;
+		margin:0 20%;
+	}
+	.ss img{
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width:590px) {
+	.filter input{
+		width:100%;
+		margin:auto;
+		padding:0.5rem;
+	}
+	table{
+		padding:2px;
+	}
+	.shift{
+		display: grid;
+	}
+	form{
+		width:90%;
+		margin: auto;
+	}
+	.btn{
+		width:60% !important;
+		margin:0 20%;
+	}
+	.ss img{
+		margin-top: 10px;
+		padding: 0 0.1%;
+	}
+}
+@media only screen and (max-width:500px) {
+	.filter input{
+		width:100%;
+		margin:auto;
+		padding:0.5rem;
+	}
+	table{
+		padding:5px;
+		width: 100%;
+	}
+	.shift{
+		display: grid;
+	}
+	form{
+		width:100%;
+		margin: auto;
+	}
+	.btn{
+		width:70% !important;
+		margin:0 17%;
+	}
+	.ss img{
+		margin-top: 10px;
+		padding: 0 0.1%;
+		width:100%;
+	}
+	.sec2{
+		margin: 5%;
+	}
+}
+@media only screen and (max-width:368px) {
+	form{
+		width: 100%;
+		margin: 0px;
+	}
+	#url{
+		font-size: 0.8rem;
+	}
+	.change{
+		font-size: 0.8rem !important;
+	}
+}

@@ -3,6 +3,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #090c10;
   color: white;
+  overflow-x: hidden;
+}
+.container{
+  overflow-x: hidden;
+  margin:20px;
+  text-align: center;
 }
 .form-group {
   margin-bottom: 1rem;
@@ -28,9 +34,9 @@ body {
   background-color: #0e64c5;
 }
 #inputValue {
-  width: 760px;
+  width: 50%;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 400;
   outline: none;
@@ -38,6 +44,7 @@ body {
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
+  overflow-x: hidden;
 }
 
 section {
@@ -49,13 +56,14 @@ section {
 section img {
   width: 220px;
   transition: 250ms all;
+  padding: 0.1rem;
 }
 .movie-searchable {
   margin-top: 30px;
   margin-bottom: 40px;
 }
 .movie {
-  margin-bottom: 40px;
+  margin:20px;
 }
 
 section img:hover {
