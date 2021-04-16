@@ -641,7 +641,6 @@ let projectData = [
     projectImage: "assets/Images/sequence-game.png",
     projectUrl: "public/Sequence-game.html",
   },
-
   {
     projectName: "Connect Four",
     projectImage: "assets/GIFs/connectFour.gif",
@@ -868,6 +867,7 @@ let projectData = [
     projectName: "Meme Soundboard",
     projectImage: "assets/Images/meme_sound_icon.jpg",
     projectUrl: "public/meme_soundboard.html",
+
   },
   {
     projectName: "3D Cube",
@@ -880,7 +880,9 @@ let projectData = [
     projectUrl: "public/ArmstrongNumber.html",
 
   },
+
   {
+
     projectName: " Testimonial Design",
     projectImage: "assets/GIFs/TestimonialDesign.gif ",
     projectUrl: "public/TestimonialDesign.html",
@@ -896,6 +898,13 @@ let projectData = [
     projectUrl: "public/amongus.html",
   },
   {
+
+
+    projectName: "Conway's Game of life",
+    projectImage: "assets/Images/gameOfLife/demo.gif",
+    projectUrl: "public/gameOfLife.html",
+  },{
+
     projectName: "Phyllotaxis",
     projectImage: "assets/Images/phyllotaxis.png",
     projectUrl: "public/phyllotaxis.html",
@@ -904,6 +913,7 @@ let projectData = [
     projectName: "Avatar Maker",
     projectImage: "assets/GIFs/avatarMaker-demo.gif",
     projectUrl: "public/avatarMaker.html",
+  },{
 
     projectName: "Password Strength Checker",
     projectImage: "assets/GIFs/Password_Strength_Checker.gif",
