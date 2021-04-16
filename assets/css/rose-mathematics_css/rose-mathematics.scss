@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    user-select: none;
+}
+
+#canvas {
+    background-color: #262626;
+    position: fixed;
+}
+
+h1 {
+    position: fixed;
+    color: #d24;
+    z-index: 3;
+    letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: "Slabo 27px", serif;
+}
+
+#fps {
+    position: fixed;
+    color: coral;
+    z-index: 3;
+    left: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#infoBTN {
+    position: fixed;
+    height: 25px;
+    width: 25px;
+    border: 2px solid coral;
+    outline: none;
+    font-weight: bolder;
+    border-radius: 50%;
+    color: coral;
+    background-color: transparent;
+    z-index: 8;
+    right: 10px;
+    margin-top: 10px;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+#redo {
+    padding: 8px 12px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    bottom: 25px;
+    background: coral;
+    color: white;
+    z-index: 2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#info {
+    position: absolute;
+    display: none;
+    z-index: 6;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    height: 90%;
+    max-width: 600px;
+    max-height: 600px;
+    padding: 15px;
+    transition-duration: 100ms;
+    color: white;
+
+    h2 {
+        color: coral;
+        letter-spacing: 5px;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -3px;
+        font-family: "Slabo 27px", serif;
+    }
+
+    .section {
+        margin-top: 10px;
+        position: relative;
+        width: 100%;
+        height: calc(100% - 42px);
+        overflow: auto;
+        padding: 0;
+        overflow-x: hidden;
+        text-indent: 45px;
+        font-family: "PT Sans", sans-serif;
+
+    }
+
+    a {
+        color: coral;
+    }
+
+    #imgHolder {
+
+        background-color: white;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+        background-color: white;
+    }
+}
+
+footer {
+    position: absolute;
+    font-size: 12px;
+    bottom: 2px;
+    left: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+
+    a {
+        text-decoration: none;
+        color: turquoise;
+    }
+}
