@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Chess Game",
+    projectImage: "assets/GIFs/chess.gif",
+    projectUrl: "public/chess.html",
+  },
+  {
     projectName: "Coin-Toss Game",
     projectImage: "assets/Images/Coin-toss.jpg",
     projectUrl: "public/CoinToss.html",
