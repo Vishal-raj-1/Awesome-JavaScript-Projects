@@ -1,0 +1,156 @@
+.header {
+    display: flex;
+    width: 100vmin;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+ }
+
+ #headerTitle {
+     background: black;
+     color: white;
+     width: 100vmin;
+     flex-grow: 1;
+     text-align: center;
+ }
+ 
+#newBook, #resetBooks {
+	flex-grow: 1;
+    
+    text-align: center;
+    width: 20rem;
+    height: 15vmin;
+   
+}
+
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    width: 100vmin;
+    margin: auto;
+    margin-top: 10vmin;
+    margin-bottom: 10vmin;
+ }
+  
+  .card {
+    margin: 1.5vmin;
+    text-align: center;
+    height: 30vmin;
+    width: 30vmin;
+    background-color: rgba(155, 145, 145, 0.541);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+  .card:hover {
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.8);
+  }
+
+/* Button used to open the contact form */
+#newBook, #resetBooks {
+  background-color: black;
+  color: white;
+  
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  flex-grow: 1;
+  text-align: center;
+  width: 15vmin;
+  height: 15vmin;
+  margin: 1vmin;
+}
+#newBook:hover,
+ #resetBooks:hover {
+	background-color: green;
+	color: white;
+  }
+
+/* The popup form - hidden by default */
+.form-popup {
+   display: none;
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   border: 3px solid #f1f1f1;
+   z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=number] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.removeButton {
+  background-color: gray;
+  color: white;
+  width: 12vmin;
+  height: 10vmin;
+ margin-top: 4rem;
+  transition-duration: 0.4s;
+  
+}
+
+.removeButton:hover {
+  background-color: rgba(151, 23, 23, 0.733);
+  color: white;
+}
+
+.readStatusBtn {
+  background-color: gray;
+  color: white;
+  width: 12vmin;
+  height: 10vmin;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding:1rem 0rem;
+  text-align: center;
+  
+}
+
+.readStatusBtn:hover {
+  background-color: rgba(151, 23, 23, 0.733);
+  color: white;
+}
