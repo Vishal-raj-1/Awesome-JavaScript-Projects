@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 25px;
+}
+
+.main {
+    display:flex;
+    flex-direction:column;
+    width: 500px;
+    height: 200px;
+    margin-top: 1%;
+    margin-left: 37%;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.originalAmount, .originalAmount, .finalAmount {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.searchBox {
+    width:220px;
+    height:30px;
+    font-size:1.2rem;
+    padding:5px;
+}
+
+.conversion {
+    display:flex;
+    justify-content:space-around;
+    font-size:1.4rem;
+}
+
+.convert {
+    width:150px;
+    font-size:1.2rem;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+.finalAmount {
+    margin-top: 20px;
+}
