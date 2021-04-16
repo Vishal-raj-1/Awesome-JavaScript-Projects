@@ -468,8 +468,10 @@ let projectData = [
     projectName: "2048 Game",
     projectImage: "assets/GIFs/2048.gif",
     projectUrl: "public/2048.html",
+
   },
   {
+
     projectName: "PingPong Game",
     projectImage: "assets/GIFs/pingpong-image.gif",
     projectUrl: "public/pingpong.html",
@@ -504,7 +506,6 @@ let projectData = [
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
   },
-
   {
     projectName: "Live Code Editor",
     projectImage: "assets/GIFs/LiveEditor.gif.gif",
@@ -615,15 +616,6 @@ let projectData = [
     projectImage: "assets/GIFs/Animated_moving_car.gif",
     projectUrl: "public/Animated_moving_car.html",
   },
-
-  //   {
-  //     projectName: "DarkMode",
-  //     projectImage: {
-  //                     "assets/Images/DarkMode1.jpeg",
-  //                     "assets/Image/DarkMode2.jpeg",
-  //                   },
-  //     projectUrl: "public/DarkMode.html",
-  //    },
 
   //   {
   //     projectName: "DarkMode",
@@ -793,6 +785,7 @@ let projectData = [
     projectName: "JavaScript Dragon Game",
     projectImage: "assets/Images/JavaScript Dragon Game.png",
     projectUrl: "public/Dino game.html",
+
   },
   {
     projectName: "Giphy-Search",
@@ -855,6 +848,7 @@ let projectData = [
     projectUrl: "public/carAvoidanceGame.html",
   },
   {
+
     projectName: "New year crackers",
     projectImage: "assets/GIFs/newyearwish.gif",
     projectUrl: "public/newyearwish.html",
@@ -884,6 +878,7 @@ let projectData = [
     projectName: "Armstrong Checker",
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
     projectUrl: "public/ArmstrongNumber.html",
+
   },
 
   {
@@ -904,14 +899,26 @@ let projectData = [
   },
   {
 
+
     projectName: "Conway's Game of life",
     projectImage: "assets/Images/gameOfLife/demo.gif",
     projectUrl: "public/gameOfLife.html",
-  }
+  },{
+
+    projectName: "Phyllotaxis",
+    projectImage: "assets/Images/phyllotaxis.png",
+    projectUrl: "public/phyllotaxis.html",
+  },
+  {
+    projectName: "Avatar Maker",
+    projectImage: "assets/GIFs/avatarMaker-demo.gif",
+    projectUrl: "public/avatarMaker.html",
+  },{
 
     projectName: "Password Strength Checker",
     projectImage: "assets/GIFs/Password_Strength_Checker.gif",
     projectUrl: "public/Password_Strength_Checker.html",
+
   },
   { projectName: "Etch-a-Sketch",
     projectImage: "assets/GIfs/etch_sketch.png", 
@@ -944,7 +951,7 @@ function getProjects() {
   let output = "";
   projectData.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
