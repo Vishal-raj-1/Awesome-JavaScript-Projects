@@ -1,7 +1,6 @@
-
-
-* {
-	background-color:
+body {
+	background-image: url("../Images/image_editor_background.jpg");
+	background-attachment: fixed;
 }
 
 table {
@@ -9,7 +8,7 @@ table {
 	margin-top: 10%;
 	background-color: #ffe6e6;
 	padding: 20px;
-	border-radius: 10%;
+	border-radius: 50px;
 }
 
 table:hover {
@@ -24,24 +23,57 @@ table:hover {
 }
 
 #url {
-	width: 50%;
-	height: 30px;
-	margin: 10px;
-	padding: 2px;
-}
-
-#btn {
-	background-color: #ff9999;
+	box-sizing: content-box;
+	width: 55%;
+	margin: 15px 2.5%;
 	padding: 10px;
-	width: 40%;
+	outline: none;
+	border: 1px solid transparent;
+	border-radius: 2px;
+}
+#url:focus {
+	border-color: #ff7b7b;
+	box-shadow: 0 0 0 .2rem #ff7b7b5e !important;
+}
+.change {
+	box-sizing: border-box;
+	width: 29% !important;
+	margin: 15px 2.5%;
+}
+.btn {
+	background-color: #ff9999 !important;
+	padding: 10px;
+	width: 100%;
 	font-size: 15px;
+	border-color: #ff9999 !important;
+	outline: none;
+	border-width: 0px !important;
+	border-radius: 2px;
+}
+.btn:hover {
+    background-color: #ff7b7b !important;
+	border-color: #ff7b7b;
+}
+.btn:focus {
+    box-shadow: 0 0 0 .2rem #ff7b7b5e !important;
 }
 
 .slider {
 	-webkit-appearance: none;
 	background-color: #e7accf;
+	width: 100%;
 	cursor: pointer;
+	outline: none;
 }
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #db1169;
+	cursor: pointer;
+  }
 
 label {
 	font-size: 18px;
@@ -59,6 +91,10 @@ label {
 	form{
 		width:500px;
 		margin: auto;
+	}
+	#url {
+		width: 90%;
+		margin:15px 5%;
 	}
 	.btn{
 		width:60% !important;
@@ -128,8 +164,7 @@ label {
 		width: 100%;
 		margin: 0px;
 	}
-	.url{
-		margin: 0 !important;
+	#url{
 		font-size: 0.8rem;
 	}
 	.change{
