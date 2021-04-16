@@ -11,7 +11,7 @@ let projectData = [
   },
   {
     projectName: "JavaScript Interest Calculator",
-    projectImage: "assets/Images/InterestCalculator.png",
+    projectImage: "assets/Images/Interest_Calculator_Backcover.png",
     projectUrl: "public/InterestCalculator.html",
   },
   {
