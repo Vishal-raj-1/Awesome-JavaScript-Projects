@@ -57,7 +57,6 @@ i {
     border-color: tomato !important;
 }
 .btn-primary:focus {
-    /* background-color: tomato !important; */
     border-color: rgb(240, 64, 33) !important ;
     box-shadow: 0 0 0 .2rem rgb(224, 109, 88, 0.5) !important;
 }
@@ -71,7 +70,6 @@ i {
 
 /* Media Queries */
 
-/* Extra small devices (phones, 600px and down) */
 @media (max-width: 580px) {
     .circle1 {
         top: -900px;
@@ -87,8 +85,6 @@ i {
         bottom: 20px;
     }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 580px) and (max-width: 770px) {
     .circle1 {
         top: -600px;
@@ -140,7 +136,4 @@ i {
         right: 70px;
         bottom: 70px;
     }
-}
-@media (max-width: 995px) {
-    
 }
