@@ -351,7 +351,7 @@ let projectData = [
   },
   {
     projectName: "Puzzle quiz",
-    projectImage: "assets/Images/quiz",
+    projectImage: "assets/Images/quizImages/quiz",
     projectUrl: "public/quiz.html",
   },
 
