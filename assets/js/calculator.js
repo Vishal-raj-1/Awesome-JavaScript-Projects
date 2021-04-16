@@ -51,6 +51,7 @@ function calculateExpression(exp) {
              if(exp[i] != '(') {
                 if(isNumber(exp[i+1]) || exp[i+1] == '-') {
 
+
                     //console.log('add (', i+1);
                     exp.splice(i+1, 0, '(');
                     //console.log('test', exp.join(''), i);
@@ -61,6 +62,7 @@ function calculateExpression(exp) {
                 }                
             }
             if(isOperator > 0 && !next) {
+
                 exp.splice(i, 0, ')');
                 isOperator --;
                 i++;               
@@ -94,10 +96,13 @@ function calculateExpression(exp) {
     // exp = exp.split('P(').join('P(,');
 
 
+
+
     let movedValue = []; 
 
     for(let p=0; p<exp.length; p++) {
        }
+
 
     console.log('exp:', exp);
     try {
@@ -277,4 +282,3 @@ leftBrack.addEventListener('click', (event) => {
 rightBrack.addEventListener('click', (event) => {
     addKeyToInputContainer(')');
 });
-
