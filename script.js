@@ -916,6 +916,11 @@ let projectData = [
     projectImage: "assets/GIFs/TypingSpeed.gif",
     projectUrl: "public/TypingPractice.html",
   },
+  {
+    projectName: "Harry Potter characters",
+    projectImage: "assets/Images/harry.png",
+    projectUrl: "public/harry.html",
+  }
 ];
 
 let projectContainer = document.getElementById("js-projects");
