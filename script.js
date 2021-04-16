@@ -7,7 +7,7 @@ let projectData = [
   {
     projectName: "Gradient-Background Generator",
     projectImage: "assets/Images/gradientBackgroundGen.jpg",
-    projectUrl: "public/GradientBackgroundGen.html",
+    projectUrl: "public/gradientBackgroundGen.html",
   },
   {
     projectName: "JavaScript Interest Calculator",
@@ -721,6 +721,11 @@ let projectData = [
     projectUrl: "public/Pagination.html",
   },
   {
+    projectName: "Currency Converter",
+    projectImage: "assets/GIFs/currencyConverter.gif",
+    projectUrl: "public/currencyConverter.html",
+  },
+  {
     projectName: "Speech Recognization",
     projectImage: "assets/Images/speech-recognization.PNG",
     projectUrl: "public/speech-recognization.html",
@@ -894,6 +899,10 @@ let projectData = [
     projectName: "AmoungUs Game Move",
     projectImage: "assets/GIFs/amongus.gif",
     projectUrl: "public/amongus.html",
+  },
+  { projectName: "Etch-a-Sketch",
+    projectImage: "assets/GIfs/etch_sketch.png", 
+    projectUrl: "public/etch_sketch.html",
   },
   {
     projectName: "Progress Steps",
