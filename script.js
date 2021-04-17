@@ -667,6 +667,11 @@ let projectData = [
     projectUrl: "public/wordScramble.html",
   },
   {
+    projectName: "Puzzle quiz",
+    projectImage: "assets/Images/quiz/demo.png",
+    projectUrl: "public/quiz.html",
+  },
+  {
     projectName: "Image Gallery",
     projectImage: "assets/Images/imageGallery/images",
     projectUrl: "public/imageGallery.html",
@@ -785,7 +790,6 @@ let projectData = [
     projectName: "JavaScript Dragon Game",
     projectImage: "assets/Images/JavaScript Dragon Game.png",
     projectUrl: "public/Dino game.html",
-
   },
   {
     projectName: "Giphy-Search",
