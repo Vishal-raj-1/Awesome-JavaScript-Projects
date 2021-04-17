@@ -381,7 +381,7 @@ let projectData = [
   },
   {
     projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
+    projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   },
   {
@@ -683,7 +683,7 @@ let projectData = [
   },
   {
     projectName: "Flappy Bird",
-    projectImage: "assets/Images/FlappyBird/FlappyBirdDemo",
+    projectImage: "assets/Images/FlappyBird/FlappyBirdDemo.png",
     projectUrl: "public/flappybird.html",
   },
   {
