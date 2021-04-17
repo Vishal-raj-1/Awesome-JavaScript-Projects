@@ -1,0 +1,17 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+    overflow:hidden;
+    background:black;
+  }
+  canvas{
+    position:absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    right:0;
+  
+  }

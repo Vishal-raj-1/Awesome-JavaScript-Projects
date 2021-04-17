@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/Code_Converter.css">
+    
+    
+    <title>Code Converter</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-2">Code Converter</h1>
+    </header>
+    
+    <form autocomplete="off" id="convert-form">
+        <div class="select">
+            <span class="label">Choose a Converter:</span>
+            <select name="converter" id="convert-select">
+                <option value="">--Please choose an option--</option>
+                <option value="GrayToBinary">Gray Code to Binary Code</option>
+                <option value="BinaryToGray">Binary Code to Gray Code</option>
+            </select>
+        </div>
+        <br>
+        <br>
+       <div class="converter-container">
+        <input type="number" name="query" id="number">  
+        <button type="button" id= "convert-btn">Convert</button>
+       </div>
+
+        
+    </form>
+    <br>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Code Conversion Result</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+    </div>
+    
+
+    
+    <script src="../assets/js/Code_Converter.js"></script>
+</body>
+</html>
