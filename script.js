@@ -353,7 +353,7 @@ let projectData = [
   {
     projectName: "Document to Handwritting",
     projectImage: "assets/images/page.jpg",
-    projectUrl: "public/Document to Handwritting.html",
+    projectUrl: "public/DocumenttoHandwritting.html",
   },
 
 ];
