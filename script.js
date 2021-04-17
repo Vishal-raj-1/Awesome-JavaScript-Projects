@@ -914,7 +914,7 @@ let projectData = [
     projectName: "Typing Practice",
     projectImage: "assets/GIFs/TypingSpeed.gif",
     projectUrl: "public/TypingPractice.html",
-  };
+  },
   
 ];
 
