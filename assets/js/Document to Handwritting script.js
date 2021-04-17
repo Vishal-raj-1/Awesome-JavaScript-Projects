@@ -46,7 +46,7 @@ function darkLightToggle() {
         var link = document.createElement('link');  
         link.rel = 'stylesheet';  
         link.type = 'text/css'; 
-        link.href = 'assets/css/dark.css';  
+        link.href = 'assets/css/Document to Handwritting dark.css';  
         link.id = "darkcss";
         document.getElementsByTagName('head')[0].appendChild(link)
     } else {
