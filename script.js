@@ -369,26 +369,13 @@ let projectData = [
     projectImage: "assets/GIFs/Weather_app.gif",
     projectUrl: "public/Weather_app.html",
   },
-  {
-    projectName: "MemeUrl",
-    projectImage: "assets/GIFs/memeUrl.png",
-    projectUrl: "public/memeUrl.html",
-  },
-  {
-    projectName: "RGB Color Guessing Game",
-    projectImage: "assets/GIFs/RGB_Color.gif",
-    projectUrl: "public/RGB_Color_Guessing_Game.html",
-  },
+  
   {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   },
-  {
-    projectName: "MemeUrl",
-    projectImage: "assets/GIFs/memeUrl.png",
-    projectUrl: "public/memeUrl.html",
-  },
+  
   {
     projectName: "RGB Color Guessing Game",
     projectImage: "assets/GIFs/RGB_Color.gif",
@@ -506,11 +493,7 @@ let projectData = [
     projectImage: "assets/GIFs/loveCalculator.gif",
     projectUrl: "public/loveCalculator.html",
   },
-  {
-    projectName: "Live Code Editor",
-    projectImage: "assets/GIFs/LiveEditor.gif.gif",
-    projectUrl: "public/Live_Code_Editor.html",
-  },
+  
   {
     projectName: "love Calculator",
     projectImage: "assets/GIFs/loveCalculator.gif",

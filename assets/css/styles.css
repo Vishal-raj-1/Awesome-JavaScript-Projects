@@ -219,8 +219,8 @@ body::-webkit-scrollbar-thumb {
 .path p{
     color: #333;
 }
-
-body {margin:0;height:2000px;}
+/* removed height from body next to margin if require add it height:2000px; */
+body {margin:0;}
     
     .icon-bar {
       position: fixed;
