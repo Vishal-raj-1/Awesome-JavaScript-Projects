@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title>Playbeats-JS</title>
+    <link rel='stylesheet' href='/assets/css/playbeats-semantic.min.css'>
+    <link rel='stylesheet' href='/assets/css/playbeats-main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+
+<body id="soundcloud-player">
+
+    <div class="ui container col">
+        <div class="col-left js-playlist">
+            <div class="inner"></div>
+        </div>
+        <div class="col-right">
+            <div class="main">
+                <div class="ui massive icon input">
+                    <input type="text" placeholder="Search for a song or artist..." class="js-search input-search">
+                    <i class="search icon js-submit"></i>
+
+                </div>
+
+                <div class="search-results js-search-results ui cards">
+                    <h2>Please type in a search value!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+
+    <script src="/assets/js/playbeats-main.js"></script>
+</body>
+
+</html>
