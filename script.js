@@ -929,7 +929,11 @@ let projectData = [
     projectImage: "assets/GIFs/Progress_steps.gif",
     projectUrl: "public/Progress_Steps.html",
   },
-
+  {
+    projectName: "Birthday Greeting Card",
+    projectImage: "assets/GIFs/BirthdayGreeting.gif",
+    projectUrl: "public/BirthdayGreeting.html",
+  },
   {
     projectName: "Rose | Mathematics",
     projectImage: "assets/Images/rose-mathematics/icon.png",
@@ -940,6 +944,7 @@ let projectData = [
     projectImage: "assets/GIFs/TypingSpeed.gif",
     projectUrl: "public/TypingPractice.html",
   },
+  
 ];
 
 let projectContainer = document.getElementById("js-projects");
