@@ -7,7 +7,7 @@ function fun() {
 }
 let inputrange = document.querySelectorAll(".slider");
 console.log(inputrange);
-for (let i = 0; i < inputrange.length - 1; i++) {
+for (let i = 0; i < inputrange.length; i++) {
 	inputrange[i].addEventListener('input', edit)
 }
 
@@ -15,10 +15,14 @@ function edit() {
 	let blur = document.getElementById("blur").value;
 	let gs = document.getElementById("gs").value;
 	let sepiaval = document.getElementById("sepia").value;
-	let hr = document.getElementById("hr").value;
+	let hue = document.getElementById("hue-rotate").value;
 	let op = document.getElementById("op").value;
-
-	targetimg.style.filter = 'grayscale(' + gs + '%) blur(' + blur + 'px) sepia(' + sepiaval + '%) hue-rotate(' + hr + 'deg) opacity(' + op + '%)';
+	let br = document.getElementById("brightness").value;
+	let con = document.getElementById("contrast").value;
+	let inv = document.getElementById("invert").value;
+	let sat = document.getElementById("saturate").value;
+	
+	targetimg.style.filter = 'saturate(' + sat/10 + ') invert(' + inv + '%) contrast(' + con + '%) brightness(' + br + '%) grayscale(' + gs + '%) blur(' + blur + 'px) sepia(' + sepiaval + '%) hue-rotate(' + hue + 'deg) opacity(' + op + '%)';
 }
 
 let filterform = document.getElementById('filter');
