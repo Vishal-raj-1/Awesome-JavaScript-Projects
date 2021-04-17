@@ -809,3 +809,6 @@ footer a{
         border-radius: 5px;
     }
 }
+header{
+    height: 100vh;
+}
