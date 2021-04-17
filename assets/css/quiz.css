@@ -21,6 +21,7 @@ body{
     background-color: hsl(var(--hue), 100%, 20% );
 }
 
+
 body .correct{
     --hue:var(--hue-correct);
 }
@@ -30,7 +31,7 @@ body .wrong{
 }
 
 #photo{
-    width: 70%;
+    width: 60%;
     border-radius: 1.2rem;
     box-shadow: 2px 3px 7px gray;
 }
