@@ -640,7 +640,7 @@ let projectData = [
   },
   {
     projectName: "Flappy Bird",
-    projectImage: "assets/Images/FlappyBird/FlappyBirdDemo",
+    projectImage: "assets/Images/FlappyBird/FlappyBirdDemo.png",
     projectUrl: "public/flappybird.html",
   },
   {
