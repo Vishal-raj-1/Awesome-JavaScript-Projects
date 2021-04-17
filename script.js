@@ -349,6 +349,7 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
+  
   {
     projectName: "Document to Handwritting",
     projectImage: "assets/images/page.jpg",
