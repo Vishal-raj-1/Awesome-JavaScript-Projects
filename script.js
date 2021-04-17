@@ -782,12 +782,6 @@ let projectData = [
     projectUrl: "public/FallingBulletsAnimation.html",
   },
   {
-    projectName: "JavaScript Dragon Game",
-    projectImage: "assets/Images/JavaScript Dragon Game.png",
-    projectUrl: "public/Dino game.html",
-
-  },
-  {
     projectName: "Giphy-Search",
     projectImage: "assets/GIFs/Giphy-Search.gif",
     projectUrl: "public/Giphy-Search.html",
