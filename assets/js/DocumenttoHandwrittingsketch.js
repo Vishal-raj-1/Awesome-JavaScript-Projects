@@ -35,7 +35,7 @@ function draw(){
 
 function fontLoad(){
     for(var i = 0; i < myFonts; i++){
-        myFont.push(loadFont('fonts/font ('+str(i)+').ttf'));
+        myFont.push(loadFont('../assets/fonts/font ('+str(i)+').ttf'));
     }
 }
 
@@ -45,5 +45,5 @@ function changeFont(){
 }
 
 function loadPage(){
-    img = loadImage('pages/page (2).jpg');
+    img = loadImage('../assets/pages/page (2).jpg');
 }
