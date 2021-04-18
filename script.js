@@ -11,7 +11,7 @@ let projectData = [
   },
   {
     projectName: "Video Player",
-    projectImage: "assets/GIFs/video.gif",
+    projectImage: "assets/GIFs/video.png",
     projectUrl: "public/video.html",
   },
   {
