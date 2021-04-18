@@ -5,30 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/Coin-Toss.css">
+
+    <!-- GOOGLE-FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- TITLE -->
     <title>Coin Toss Game</title>
 </head>
 
 <body>
+    <!-- HEADING -->
+    <h1>FIRST PLAYER TO 5 POINTS WINS!</h1>
+
+    <!-- SCORE-CARD -->
+    <div class="score">
+        <!-- COMPUTER-SCORE -->
+        <div id="computer">COMPUTER: <span id="computer-score">0</span></div>
+        <!-- PLAYER-SCORE -->
+        <div id="player">PLAYER: <span id="player-score">0</span></div>
+    </div>
+    
+    <!-- CONTAINER-DIV -->
     <div class="canvas">
-        <h1>First Player to 5 Points Win!</h1>
-        <div class="selection">Player Selected: <span id="player-selection"></span></div>
-        <div class="selection">Computer Selected: <span id="computer-selection"></span></div>
+        <!-- COIN-IMAGE -->
         <div id="center">
             <div id="winner"></div>
             <div id="image"></div>
         </div>
 
-        <div>
-            <div id="player">Player: <span id="player-score">0</span></div>
-            <div id="computer">Computer: <span id="computer-score">0</span></div>
+        <!-- SECONDARY-DIV -->
+        <div class="secondary">
+            <!-- PLAYER-SELECTED -->
+            <div class="selection"><h3>Player Selected: </h3><span id="player-selection"></span></div>
+            <!-- COMPUTER-SELECTED -->
+            <div class="selection"><h3>Computer Selected: </h3><span id="computer-selection"></span></div>
+            
+            <!-- MAKE-A-SELECTION -->
+            <div>
+                <h2>Make a Selection</h2>
+                <button id="heads">HEADS</button>
+                <button id="tails">TAILS</button>
+            </div>
         </div>
-        <div>
-            <h2>Make a Selection</h2>
-            <button id="heads">Heads</button>
-            <button id="tails">Tails</button>
-        </div>
+        
+        
     </div>
+
+    <!-- JAVASCRIPT -->
     <script src="../assets/js/Coin_Toss.js"></script>
 </body>
 
