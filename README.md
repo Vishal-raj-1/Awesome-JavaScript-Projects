@@ -22,19 +22,20 @@ Do you want to contribute to some Awesome Javascript projects and showcase your 
 
 <p align="center"><img src="https://media.giphy.com/media/3oEjI8vagntG7EDxgQ/giphy.gif" width = 40%></p>
 
-Then, You got here right!! 
+Then, You got here right!!
 
 Awesome Javscript Projects Website contain many awesome Vanilla Javascript Projects in which each and every project will teach you some new and important javscript concepts. It includes concepts like Functional Components, Class Components, Math Objects, Arrow functions, APIs and many more.
 
 The Main Motive of this project is to make you fall❌ rise ✅ in love with Javascript. You will be in love with the beauty of Javascript.
 
-What we have for you here? 
+What we have for you here?
 
 <p align="center"><img src="https://media.giphy.com/media/36JlZFv9TrxNofgm5h/giphy.gif" width = 60%></p>
 
 So, What are you waiting for?
 
 # Tech-Stack :
+
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 
 # Contribution is fun! :green_heart:
@@ -45,12 +46,12 @@ Happy Submissions :slightly_smiling_face:
 
 ## Contribution Guidelines🏗
 
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
-To start contributing, follow the below guidelines: 
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better.
+To start contributing, follow the below guidelines:
 
-**1.**  Fork [this](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects) repository.
+**1.** Fork [this](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects) repository.
 
-**2.**  Clone your forked copy of the project.
+**2.** Clone your forked copy of the project.
 
 ```
 git clone https://github.com/<your_user_name>/awesome-javascript-projects.git
@@ -65,7 +66,7 @@ cd awesome-javascript-projects
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/vishal-raj-1/awesome-javascript-projects.git 
+git remote add upstream https://github.com/vishal-raj-1/awesome-javascript-projects.git
 ```
 
 **5.** Check the remotes for this repository.
@@ -91,7 +92,7 @@ git checkout -b <your_branch_name>
 **9.** Track your changes:heavy_check_mark: .
 
 ```
-git add . 
+git add .
 ```
 
 **10.** Commit your changes .
@@ -111,7 +112,6 @@ git push -u origin <your_branch_name>
 **13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
 
 **14.** Click on `Create Pull Request`.
-
 
 **15** Voila :exclamation: You have made a PR to the awesome-javascript-projects :boom: . Wait for your submission to be accepted and your PR to be merged.
 
@@ -138,6 +138,7 @@ git push -u origin <your_branch_name>
 </tbody></table>
 
 ## Our valuable Contributors👩‍💻👨‍💻 :
+
 <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=Vishal-raj-1/Awesome-JavaScript-Projects" />
-</a>
+</a>sachin is a great web developer and also a verified coder.
