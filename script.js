@@ -186,7 +186,7 @@ let projectData = [
   },
   {
     projectName: "Digital Clock",
-    projectImage: "assets/Images/digitalClock.jpg",
+    projectImage: "assets/Images/digitalClockupdated.png",
     projectUrl: "public/digitalClock.html",
   },
   {
@@ -256,7 +256,7 @@ let projectData = [
   },
   {
     projectName: "Digital Clock",
-    projectImage: "assets/Images/digitalClock.jpg",
+    projectImage: "assets/Images/digitalClockupdated.png",
     projectUrl: "public/digitalClock.html",
   },
   {
