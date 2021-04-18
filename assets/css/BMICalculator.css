@@ -10,7 +10,6 @@ body{
 /* CALCULATE BUTTON */
 button{
     background-color: #000000ee;
-    border-radius: px;
     border: 1px solid #1a78c0e7;
     box-shadow: 0 4px 8px 0 rgba(24, 24, 24, 0.3), 0 6px 20px 0 rgba(22, 22, 22, 0.3);
     color: #1a78c0e7;
@@ -132,7 +131,6 @@ h3 {
 
 /* FORM-INPUTS */
 #height, #weight {
-    border-radius: px;
     border: 1px solid gray;
     display: block;
     font-size: 1.2em;
@@ -150,8 +148,7 @@ h3 {
 #weight-guide{
     bottom:45px;
     left: 468px;
-    color: #299bf2;;
-    font-size: em;
+    color: #299bf2;
     margin: auto;
     padding:10px;
     position: absolute;
