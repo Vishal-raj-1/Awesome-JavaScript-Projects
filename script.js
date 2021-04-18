@@ -912,9 +912,9 @@ let projectData = [
     projectUrl: "public/TypingPractice.html",
   },
   {
-    projectName: "Expense Tracker",
-    projectImage: "assets/GIFs/expense_tracker.gif",
-    projectUrl: "public/expense_tracker.html",
+    projectName: "Hexadecimal to RGB Converter",
+    projectImage: "assets/GIFs/Hex_to_rgb.gif",
+    projectUrl: "public/Hexadecimal_to_RGB.html",
   },
 ];
 
