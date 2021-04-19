@@ -29,7 +29,7 @@ text-align: -webkit-center;
 }
 .txt{
 font-family: 'Roboto Slab', serif;
-font-size: xxx-large;
+font-size: x-large;
 }
 .container{
  padding: 0rem 1rem;
@@ -62,6 +62,6 @@ background-color: var(--minions);
 .footer-header{
 font-family: 'Roboto Slab', serif;
 text-align: center;
-max-width: 930px;
+max-width: 600px;
 margin: auto;
 }
