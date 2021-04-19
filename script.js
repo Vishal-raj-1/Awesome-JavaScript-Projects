@@ -42,7 +42,7 @@ let projectData = [
   {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",                
-    projectUrl: "public/note-app.html",
+    projectUrl: "public/note-app.html",              
   },
   {
     projectName: "Calculator",
