@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/gradientBackgroundGen.html",
   },
   {
+    projectName: "Pomodoro Timer",
+    projectImage: "assets/GIFs/Pomodoro.gif",
+    projectUrl: "public/Pomodoro.html",
+  },
+  {
     projectName: "JavaScript Interest Calculator",
     projectImage: "assets/GIFs/Interest_Calculator.gif",
     projectUrl: "public/InterestCalculator.html",
