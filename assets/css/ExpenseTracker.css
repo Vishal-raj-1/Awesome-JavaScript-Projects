@@ -178,3 +178,31 @@
   .list li:hover .delete-btn {
     opacity: 1;
   }
+  @media only screen and (max-width:1100px) {
+    img{
+      display: none;
+    }
+  }
+  @media only screen and (max-width:470px) {
+    .container{
+      width: 80%;
+       margin-left: 70px;
+       overflow-x: hidden;
+    }
+  }
+  @media only screen and (max-width:415px) {
+    .container{
+      width: 70%;
+       margin-left: 100px;
+       overflow-x: hidden;
+    }
+    .grid-container{
+      margin: 2rem 0;
+    }
+  }
+  @media only screen and (max-width:345px) {
+    .container{
+       margin-left: 120px;
+       overflow-x: hidden;
+    }
+  }

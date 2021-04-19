@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+ 
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: linear-gradient(25deg, #e91e63, #03a9f4);
+ overflow-x: hidden;
+}
+.container{
+    display: flex;
+    background-color:black;
+    width: 650px;
+    height: 400px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 40px 20px rgba(0, 0, 0, 0.4);
+}
+.text{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.inputs{
+    flex: 1;
+padding: 60px;
+margin-top: 20px;
+}
+.text h2{
+    width: 30px;
+    line-height: 35px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-left: 60px;
+    padding: 10px;
+    border-left: 2px solid #e91e63;
+    color: #03a9f4;
+}
+.inputs input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: transparent;
+
+}
+::placeholder{
+    font-weight: 800;
+    color: #fff
+}
+.inputs button{
+    padding: 10px 20px;
+    outline: none;
+    background: linear-gradient(25deg, #e91e63, #03a9f4);;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+#result{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+   text-align: center;
+}
+p{
+    font-size: 19px;
+    color: #fff;
+    
+}
+@media only screen and (max-width:500px) {
+    .container{
+        display:inline-block;
+        height: 650px;
+        padding: 2rem;
+        justify-content: center;
+        margin: 0px;
+    }
+    .inputs{
+        padding: 3rem 0;
+    }
+    #result{
+        font-size: 1.09rem;
+        justify-content: center;
+        text-align: center;
+        bottom: 60px;
+        left: 0;
+        margin:5%;
+    }
+    .inputs button{
+        margin-top: 30px;
+    }
+}
