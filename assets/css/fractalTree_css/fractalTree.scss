@@ -12,26 +12,33 @@
      width: 100vw;
      height: 100vh;
      overflow: hidden;
+     font-family: 'Raleway', sans-serif;
  }
 
- h2 {
-     margin: 4px;
+ h1 {
+     margin: 10px;
      width: 100%;
+     letter-spacing: 2px;
      text-align: center;
  }
 
- h6 {
+ footer,
+ h4 {
+     position: absolute;
+     bottom: 10px;
+     right: 4px;
      color: white;
-     text-indent: 20px;
  }
 
  canvas {
-     display: block;
-     position: relative;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
      margin: auto;
-     margin-top: 0;
-     margin-bottom: 0;
      background-color: #262626;
+     cursor: pointer;
  }
 
  hr {
@@ -40,4 +47,15 @@
      margin: auto;
      margin-top: 6px;
      background-color: white;
+ }
+
+ footer {
+     left: 5px;
+     font-size: small;
+
+     a {
+         text-decoration: none;
+         color: tomato;
+         outline: none;
+     }
  }
