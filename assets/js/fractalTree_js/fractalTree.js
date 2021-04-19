@@ -1,9 +1,9 @@
 let W, H;
-let len = 150, branch = 1, angle = 35;
+let len = 180, branch = 1, angle = 35, branchLimit = 8;
 
 // click function
 const increaseBranch = () => {
-    if (branch < 10) {
+    if (branch < branchLimit) {
         branch++;
         init();
     }
@@ -12,7 +12,7 @@ const increaseBranch = () => {
 const init = () => {
     //Some basic canvas work
     let canvas = document.querySelector('canvas');
-    canvas.height = H = 280;
+    canvas.height = H = 300;
     canvas.width = W = window.innerWidth;
 
     //To Draw
@@ -34,17 +34,29 @@ const init = () => {
             //drawing lines  
             c.moveTo(x1, y1);
             c.lineTo(x2, y2);
+            c.strokeStyle = "#fff";
+            c.lineWidth = 1;
             c.stroke();
+
+            // draw fruit
+            if (branch == 1) {
+                c.fillStyle = "tomato"
+                c.strokeStyle = "tomato";
+                c.beginPath();
+                c.arc(x2, y2, 4, 0, 2 * Math.PI);
+                c.fill();
+                c.lineWidth = 0.1;
+                c.stroke();
+            }
 
             //making recursions
             tree(x2, y2, branch - 1, len * 0.67, a + angle);
             tree(x2, y2, branch - 1, len * 0.67, a - angle);
-
         }
     }
 
     //to start the recursion
-    tree(0, 0, branch, len * 0.67, 0);
+    tree(0, 0, branch, len * 0.6, 0);
 
 }
 
