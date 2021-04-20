@@ -19,7 +19,7 @@ const addBook = (e) => {
     const isRead = document.getElementById("read-status").value;
     if(title.value !== "" && author.value!== ""){
         myLibrary.push(new Book(title.value,author.value,isRead));
-        //displayBooks();
+        displayBooks();
         title.value = "";
         author.value = "";
     }
@@ -30,3 +30,20 @@ addBookBtn.onclick = (e) => {
     e.preventDefault();
     addBook();
 }
+//To display table of books
+const displayBooks = () => {
+    let tbody = document.getElementById("table-body");
+    tbody.innerHTML = "";
+    myLibrary.forEach((book) => {
+        let row = tbody.insertRow();
+        let titlecell = row.insertCell(0);
+        titlecell.appendChild(document.createTextNode(book.title));
+        let authorcell = row.insertCell(1);
+        authorcell.appendChild(document.createTextNode(book.author));
+        let statuscell = row.insertCell(2);
+        statuscell.innerHTML = '<button class="is-read-btn">' + book.isRead +"</button>";
+        let deletecell = row.insertCell(3);
+        deletecell.innerHTML = '<button class="delete-btn">Delete</button>';
+    });    
+}
+displayBooks();
