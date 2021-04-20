@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgba(0, 0, 0, 0.205);
+    background-color: #d8e3e7;
 }
 :root{
     --font-style: 'Fira Sans', sans-serif;
@@ -12,12 +13,17 @@ body{
 nav{
     border-bottom: 1px solid rgba(0, 0, 0, 0.13);
     padding: 15px;
-    background-color: #fff;
+    background-color: #325288;
 }
 nav h3{
     text-align: center;
     font-family: var(--font-style);
     font-weight: 400;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.9);
+    letter-spacing: 2px;
+    word-spacing: 12px;
 }
 #section{
     margin: 0 8%;
@@ -36,7 +42,7 @@ nav h3{
     padding: 10px;
     border-radius: 10px;
     font-family: var(--font-style);
-    background-color: #fff;
+    background-color: rgba(50,82,136,0.16);
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
