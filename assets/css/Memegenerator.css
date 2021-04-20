@@ -1,0 +1,215 @@
+html {
+  height:100%;
+}
+body{
+      text-align: center;
+      margin: 0;
+			height: 100%;
+			background-image: url("https://i.pinimg.com/originals/ea/1d/97/ea1d9797c9bf3dda7a23b238e5e4b364.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background: #c2e59c;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+.setsize{
+    width: 90%;
+    height: 95%;
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+.maindiv{
+            margin-top: 8%;
+			animation: text 2s 1;
+			font-size: 1.5em;
+}
+.memeexpbtn,.memecreatebtn{
+    font-family: open-sans;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    width: 15rem;
+    margin: 1rem;
+    border-radius: 5rem ;
+    border: none;
+}
+.memecreatebtn:hover{
+    background-color: white;
+    color: black;
+}
+.memeexpbtn:hover{
+    background-color: white;
+    color: black;
+}
+#memecreate {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+#imageedit{
+  border: black solid 0.1rem;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+.memeimg{
+    height: 3rem;
+    width: 3rem;
+    border: black solid 0.2rem;
+}
+#edit{
+    align-items: center;
+    height: 100%;
+    width: 68%;
+}
+.child2{
+    width: 30%;
+    height: 100%;
+    float: right;
+    border-left: 0.1rem solid black;
+}
+.child{
+    height: 100%;
+    width: 70%;
+    float: left;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+#expandedImg{
+    border: 0.2rem solid black;
+    height: 80%;
+    width: 80%;
+
+}
+.closebtn{
+    font-size: 3rem;
+}
+#topText {
+  color: black;
+  font-size: large;
+  width: 10%;
+}
+#bottomText {
+  color: black;
+  font-size: large;
+  width: 10%;
+}
+#textbox{
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  background-color: transparent;
+  width: 22%;
+  height: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#textbox2{
+  position: absolute;
+  bottom: 15%;
+  left: 12%;
+  background-color: transparent;
+  width: 22%;
+  height: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+textarea{
+    margin: auto;
+}
+#textbtn{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 15px;
+}
+#memeexplore{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+#container2{
+      margin: auto;
+      width: 80%;
+      height: 80%;
+
+    }
+#image{
+      margin-top: 5%;
+      width:90%;
+      height:95%;
+      border:5px solid #fff;
+      box-sizing: border-box;
+    }
+
+#button{
+      margin-top: 1%;
+      width:25%;
+      height:10%;
+      border:none;
+      outline:none;
+      border-radius: 10px;
+      background-color:black;
+      color:white;
+      font-size:medium;
+    }
+    #button:hover{
+        background-color: white;
+        color: black;
+    }

@@ -1,0 +1,19 @@
+    body
+    {
+            background-image: radial-gradient(gray , #000);        
+    }
+    .container
+    {
+        background-color: cornsilk;
+        margin:10vh;
+        margin-left: 15vh;
+        border: 7px outset orangered ;
+    }
+    h1{
+        text-shadow: 0px 5px 5px grey;
+    }
+       
+    .btn
+    {
+        background-color:steelblue;
+    }

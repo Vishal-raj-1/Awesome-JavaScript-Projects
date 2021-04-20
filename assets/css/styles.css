@@ -8,9 +8,41 @@
     color: #fff;
     scroll-behavior: smooth;
 }
+   
+
+/* Sticky Navbar */
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a i {
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    background: white;
+    color: #37517e;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.icon-bar a i:hover {
+    background: #37517e;
+    color: white;
+}
 
 a{
-  text-decoration: none;  
+  text-decoration: none;
   color: #fff;
   transition: color .25s ease-in-out;
   outline: none;
@@ -43,7 +75,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-transform: rotateZ(45deg);
             transform: rotateZ(45deg);
   }
-  
+
   .sk-folding-cube .sk-cube {
     float: left;
     width: 50%;
@@ -51,7 +83,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
-            transform: scale(1.1); 
+            transform: scale(1.1);
   }
   .sk-folding-cube .sk-cube:before {
     content: '';
@@ -85,7 +117,7 @@ body::-webkit-scrollbar-thumb {
   }
   .sk-folding-cube .sk-cube3:before {
     -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s; 
+            animation-delay: 0.6s;
   }
   .sk-folding-cube .sk-cube4:before {
     -webkit-animation-delay: 0.9s;
@@ -95,31 +127,31 @@ body::-webkit-scrollbar-thumb {
     0%, 10% {
       -webkit-transform: perspective(140px) rotateX(-180deg);
               transform: perspective(140px) rotateX(-180deg);
-      opacity: 0; 
+      opacity: 0;
     } 25%, 75% {
       -webkit-transform: perspective(140px) rotateX(0deg);
               transform: perspective(140px) rotateX(0deg);
-      opacity: 1; 
+      opacity: 1;
     } 90%, 100% {
       -webkit-transform: perspective(140px) rotateY(180deg);
               transform: perspective(140px) rotateY(180deg);
-      opacity: 0; 
-    } 
+      opacity: 0;
+    }
   }
-  
+
   @keyframes sk-foldCubeAngle {
     0%, 10% {
       -webkit-transform: perspective(140px) rotateX(-180deg);
               transform: perspective(140px) rotateX(-180deg);
-      opacity: 0; 
+      opacity: 0;
     } 25%, 75% {
       -webkit-transform: perspective(140px) rotateX(0deg);
               transform: perspective(140px) rotateX(0deg);
-      opacity: 1; 
+      opacity: 1;
     } 90%, 100% {
       -webkit-transform: perspective(140px) rotateY(180deg);
               transform: perspective(140px) rotateY(180deg);
-      opacity: 0; 
+      opacity: 0;
     }
   }
   #spinner-wrapper {
@@ -139,7 +171,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
     bottom: 30px;
     right: 30px;
-    background-color: #1fa0db;    
+    background-color: #1fa0db;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -172,6 +204,14 @@ body::-webkit-scrollbar-thumb {
 .path p{
     color: #333;
 }
+
+body {margin:0;height:2000px;}
+
+    .typed{
+        color: #87CEEB;
+    }
+
+    
 header{
     background-color: #37517E;
     height: 80vh;
@@ -287,6 +327,12 @@ i#menuClose{
 .bannerIllustration img{
     width: 500px;
 }
+
+.shadow:hover{
+    text-shadow: 1px 1px 2.5px #87CEEB;
+
+}
+
 @-webkit-keyframes up-down{
     0%{
         transform: translateY(10px);
@@ -551,18 +597,30 @@ footer a{
 }
 .contact p textarea{
     padding: 10px;
+    resize: none;
 }
 .contactForm p input:focus,
 .contactForm p textarea:focus{
     box-shadow: 0 0 4px 4px #228abb9a;
     border: 0;
 }
-.contactForm p:last-child input{
+.contactForm p:last-child input, .contactForm p:last-child button{
     background-color: #1fa0db;
     color: #fff;
     border-radius: 4px;
     border: 0;
+    width: 45%;
     cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+#back-button{
+    
+    font-size: 1.1rem;
 }
 
 /* Responsiveness */
@@ -687,5 +745,11 @@ footer a{
         width: 350px;
         height: 200px;
         border-radius: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    .icon-bar {
+        display: none;
     }
 }

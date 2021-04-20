@@ -1,0 +1,226 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    padding: 0;
+    list-style-type: none;
+    height: 60vh;
+    
+    
+    /* width: 40%; */
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    /* background: #eee; */
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: justify;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  /* ul li:nth-child(odd) {
+    background: #f9f9f9;
+  } */
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #087ae4;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: rgb(245, 0, 0);
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #e40a5e;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #087ae4;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    border: 2Px solid black;
+    border-left: 0Px;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  /* toggle section */
+body{
+    /* background-color: #06a8ad; */
+    background-color: rgb(59, 131, 17);
+    /* background-color: #1C0C1C; */
+}
+
+
+  section{
+      background-color: #f3de21;
+      /* margin-top: -3%; */
+      border: 2Px solid black;
+      
+  }
+
+  #toggle-sec{
+      
+    /* display: inline-block; */
+    margin-top: 2%;
+    align-items: center;
+    font-size: 1rem;
+    width: 99.25%;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  h1{
+    background-color: deeppink;
+    margin-top: -2%;
+    border: 2Px solid black;
+    margin-left: -0.3%;
+    /* box-shadow: 7px 5Px 5px 5Px white; */
+    -webkit-box-shadow: 0 10px 100px white;
+        box-shadow: 0 100px 100px white;
+    font-size: 2rem;
+    height: 5%;
+    width: 100%;
+  }
+
+  h2{
+    text-decoration: underline;
+  }
+
+
+  /* the classes that the the pre-existing ids/classes shall be replaced with are defined here */
+
+  .dark-mode {
+    background-color: midnightblue;
+    color: white;
+  }
+
+  .darkbod-mode {
+    background-color: darkviolet;
+    color: white;
+  }
+  
+  #btn-box
+   {height: 5vh;
+    width: 10vw;
+    margin: 3% 0% 0% 0%;
+    /* border: 2Px solid black; */
+    background-color: white;
+    display: inline-block;
+   }
+  
+   #btn
+   {height: 75%;
+    width: 42%;
+    margin: 2%;
+    border: 2Px solid black;
+    background-color: black;
+    display: inline-block;
+   }
+  
+   .btn-new
+ {height: 90%;
+  width: 40%;
+  transform: translateX(125%);
+  margin: 2%;
+  border: 2Px solid black;
+  background-color: black;
+ }
+
+ h3{
+     display: inline-block;
+ }
+
+ .check-box{
+     display: flex;
+     flex-direction: row;
+     align-items: space-evenly;
+ } 
+
+ input{
+    border: 2Px solid black;
+ }
+
+ #mood-box{
+     width: 19%;
+     display: inline-block;
+ }
+
+ #header-box{
+    display: inline-block;
+    width: 79%;
+ }
