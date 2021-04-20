@@ -8,53 +8,38 @@
     color: #fff;
     scroll-behavior: smooth;
 }
+   
 
-    .icon-bar {
-      position: fixed;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
+/* Sticky Navbar */
 
-    .icon-bar a {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 20px;
-    }
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
-    .icon-bar a:hover {
-      background-color: #eeebdd;
-      color: #3B5998;
-    }
+.icon-bar a i {
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    background: white;
+    color: #37517e;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
 
-    .facebook {
-      background: #3B5998;
-      color: white;
-    }
-
-    .twitter {
-      background: #3B5998;
-      color: white;
-    }
-
-    .google {
-      background: #3B5998;
-      color: white;
-    }
-
-    .linkedin {
-      background: #3B5998;
-      color: white;
-    }
-
-    .youtube {
-      background: #3B5998;
-      color: white;
-    }
+.icon-bar a i:hover {
+    background: #37517e;
+    color: white;
+}
 
 a{
   text-decoration: none;
@@ -221,53 +206,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {margin:0;height:2000px;}
-    
-    .icon-bar {
-      position: fixed;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-    
-    .icon-bar a {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 20px;
-    }
-    
-    .icon-bar a:hover {
-      background-color: #eeebdd;
-      color: #3B5998;
-    }
-    
-    .facebook {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .twitter {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .google {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .linkedin {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .youtube {
-      background: #3B5998;
-      color: white;
-    }
 
     .typed{
         color: #87CEEB;
@@ -807,5 +745,11 @@ footer a{
         width: 350px;
         height: 200px;
         border-radius: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    .icon-bar {
+        display: none;
     }
 }
