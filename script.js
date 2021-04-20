@@ -954,10 +954,16 @@ let projectData = [
     projectUrl: "public/TypingPractice.html",
   },
   {
+    projectName: "Hexadecimal to RGB Converter",
+    projectImage: "assets/GIFs/Hex_to_rgb.gif",
+    projectUrl: "public/Hexadecimal_to_RGB.html",
+  },
+  {
     projectName: "Harry Potter characters",
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html",
   }
+
 ];
 
 let projectContainer = document.getElementById("js-projects");
