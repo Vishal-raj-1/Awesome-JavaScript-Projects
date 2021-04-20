@@ -47,3 +47,28 @@ const displayBooks = () => {
     });    
 }
 displayBooks();
+//Event listeners for table buttons
+const tableBody = document.querySelector('#table-body');
+tableBody.addEventListener("click",(e)=>{
+    let parentRow =  e.target.parentNode.parentNode.childNodes;
+    if(e.target.innerText === 'Delete'){
+        myLibrary.splice(myLibrary.findIndex(b => b.title === parentRow[0].innerText),1);
+        displayBooks();
+    }else if(e.target.innerText === 'Read'){
+        let currentBook = findBook(parentRow[0].innerText,parentRow[1].innerText)[0];
+        currentBook.isRead = 'Not Read';
+        e.target.innerText = 'Not Read';
+    }else if(e.target.innerText === 'Not Read'){
+        let currentBook = findBook(parentRow[0].innerText,parentRow[1].innerText)[0];
+        currentBook.isRead = 'Read';
+        e.target.innerText = 'Read';
+    }
+});
+
+//finding a book from myLibrary
+const findBook = (title,author) => {
+    let books = myLibrary.filter((book) => {
+       return book.title === title && book.author === author;
+    });
+    return books;
+}
