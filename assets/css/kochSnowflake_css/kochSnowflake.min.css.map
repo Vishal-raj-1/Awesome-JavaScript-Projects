@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAC,AAAA,CAAC,AAAC,CACE,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACzB,AAED,AAAA,IAAI,AAAC,CACD,gBAAgB,CAAE,OAAO,CACzB,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "kochSnowflake.scss"
+    ],
+    "names": [],
+    "file": "kochSnowflake.min.css"
+}
