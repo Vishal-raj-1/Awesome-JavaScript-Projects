@@ -2,10 +2,14 @@ const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 
 let w, h, balls = [];
+
+// will hold position of cursor
 let mouse = {
 	x: undefined,
 	y: undefined
 }
+
+// color array having rgb colors to provide to the balls
 let rgb = [
 	[26, 188, 156],
 	[46, 204, 113],
@@ -21,11 +25,13 @@ function init() {
 	animationLoop();
 }
 
+// setting height and width of canvas
 function resizeReset() {
 	w = canvas.width = window.innerWidth;
 	h = canvas.height = window.innerHeight;
 }
 
+// animating the ball generation process
 function animationLoop() {
 	ctx.clearRect(0, 0, w, h);
 	if (mouse.x !== undefined && mouse.y !== undefined) {
@@ -38,6 +44,7 @@ function animationLoop() {
 	requestAnimationFrame(animationLoop);
 }
 
+// function to show balls on canvas
 function drawBalls() {
 	for (let i = 0; i < balls.length; i++) {
 		balls[i].update();
@@ -45,20 +52,24 @@ function drawBalls() {
 	}
 }
 
+// function to get position of mouse movement
 function mousemove(e) {
 	mouse.x = e.x;
 	mouse.y = e.y;
 }
 
+// detect mouse release
 function mouseout() {
 	mouse.x = undefined;
 	mouse.y = undefined;
 }
 
+// random number generation
 function getRandomInt(min, max) {
 	return Math.round(Math.random() * (max - min)) + min;
 }
 
+// Ball class
 class Ball {
 	constructor() {
 		this.x = mouse.x + getRandomInt(-20, 20);
@@ -67,6 +78,8 @@ class Ball {
 		this.rgb = rgb[getRandomInt(0, rgb.length - 1)];
 		this.style = "rgba("+this.rgb[0]+","+this.rgb[1]+","+this.rgb[2]+",.5)";
 	}
+
+	// method to draw the ball on canvas
 	draw() {
 		ctx.fillStyle = this.style;
 		ctx.beginPath();
