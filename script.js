@@ -933,6 +933,7 @@ let projectData = [{
 }
 ]
 
+
 let projectContainer = document.getElementById("js-projects");
 console.log(projectContainer);
 
