@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Etch-Sketch</title>
+  </head>
+  <body>
+    <div class="canvasWrap">
+      <canvas width="1400" height="900" id="Etch-Sketch"></canvas>
+      <div>
+        <button class="shakes">Clear!</button>
+      </div>
+    </div>
+    <script src="../assets/js/etch_sketch.js"></script>
+    <style>
+      body {
+        display: grid;
+        background-image: url("../assets/Images/etch-a-sketch.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-items: center;
+      }
+      canvas {
+        border: 30px solid red;
+        border-radius: 10px;
+        width: 800px;
+        height: 500px;
+        background: white;
+      }
+      .shakes {
+        background-color: magenta;
+        width: 70px;
+        height: 30px;
+        color: white;
+        border: none;
+      }
+      .shake {
+        animation: shake 0.5s linear 1;
+      }
+      @keyframes shake {
+        10%,
+        90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+
+        20%,
+        80% {
+          transform: translate3d(2px, 0, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+
+        40%,
+        60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+    </style>
+  </body>
+</html>

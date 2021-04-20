@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Student</title>
+    <link rel="icon" type="image/png" href="../assets/Images/favicons/11.png">
+    <link rel="stylesheet" type="text/css" href="../assets/css/student.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="table">
+        <h4 class="title">Student Enrollment Form</h4>
+        <div class="container">
+          <div class="row main-table">
+            <div style="border-right:3px solid #00e699" class="col-md-6">
+              <form class="needs-validation" novalidate>
+                <div class="form-group row">
+                  <label for="inputName3" class="col-md-2 col-form-label">Name</label>
+                  <div class="col-md-10 input">
+                    <input type="text" class="form-control" id="inputName3" required>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-md-2 col-form-label">Email</label>
+                  <div class="col-md-10 input">
+                    <input type="email" class="form-control" id="inputEmail3" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid email.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputWebsite3" class="col-md-2 col-form-label">Website</label>
+                  <div class="col-md-10 input">
+                    <input type="text" class="form-control" id="inputWebsite3" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid website link.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputImageLink3" class="col-md-3 col-form-label">Image Link</label>
+                  <div class="col-md-9 image-link">
+                    <input type="text" class="form-control" id="inputImageLink3" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid image link.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-form-label col-md-2">Gender</div>
+                    <div class="col-md-10 radio">
+                      <div class="form-check">
+                        <input class="form-check-input radio" type="radio" name="gender" id="Male" value="Male" required>
+                        <label class="form-check-label" for="Male">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input radio" type="radio" name="gender" id="Female" value="Female" required>
+                        <label class="form-check-label" for="Female">
+                          Female
+                        </label>
+                      </div>
+                      <div class="invalid-feedback">Please select one of the genders.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-2">Skills</div>
+                  <div class="col-md-10">
+                    <div style="display: flex;justify-content: flex-start;">
+                      <span class="form-check">
+                      <input class="form-check-input checkbox" type="checkbox" id="gridCheck1" value="Java" required onchange="checkRequired();">
+                      <label class="form-check-label" for="gridCheck1">
+                        Java
+                      </label>
+                    </span>
+                    <span class="form-check">
+                      <input class="form-check-input checkbox" type="checkbox" id="gridCheck2" value="HTML" required onchange="checkRequired();">
+                      <label class="form-check-label" for="gridCheck2">
+                        HTML
+                      </label>
+                    </span>
+                    <span class="form-check">
+                      <input class="form-check-input checkbox" type="checkbox" id="gridCheck3" value="CSS" required onchange="checkRequired();">
+                      <label class="form-check-label" for="gridCheck3">
+                        CSS
+                      </label>
+                    </span>
+                    </div>
+                    <span id="check-feed">Please select at least one of the skills.</span>
+                  </div>
+                  
+                </div>
+                <div style="margin-top: 25px" class="hello">
+                  <div style="display: flex;justify-content: flex-start;" class="col-md-10">
+                    <button id="button-submit" type="submit" class="btn btn-primary">Enroll Student</button>
+                    <input type="button" id="button-clear" style="margin-left: 25px" class="btn btn-danger" value="Clear"></input>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <h5 style="text-align: center">Enrolled Students</h5>
+              <div style="margin:40px 0px;margin-left: 40px" class="table2">
+                <div style="border:1px solid #558000;max-height:28px;background-color: #88cc00;padding:2px 3px;color:#fff;font-weight: 600;padding: 0px 0px" class="row">
+                  <div class="col-md-8">
+                    <p>Description</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p>Image</p>
+                  </div>
+                </div>
+                <div class="userlists">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="../assets/js/student.js"></script>
+  </body>
+</html>

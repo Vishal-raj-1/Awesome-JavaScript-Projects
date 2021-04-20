@@ -1,134 +1,138 @@
+/* this is for the overall layout*/
 * {
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 2px;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Lobster", cursive;
-  background-color: yellow;
-}
-
-.container {
-  margin-top: 150px;
+  font-family: "Lobster", "cursive";
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #0b0c10;
 }
+/*this is for clock styling */
 
 .clock {
   display: flex;
-  flex-direction: row;
 }
 
 .clock div {
   position: relative;
-  margin: 20px 20px;
+  margin:0 5px;
+  width:200px;
+  height: 240px;
 }
 
 .clock div p {
   position: relative;
   display: flex;
   width: 200px;
-  height: 100px;
+  height: 160px;
   justify-content: center;
   align-items: center;
-  background-color: #f2ed6f;
+  background-color: #66fcf1;
   z-index: 1;
   font-size: 80px;
   border: none;
-  box-shadow: 0px 20px 25px 0px black;
+  box-shadow: 0px 34px 45px 0px rgba(4, 2, 3,5);
 }
 
 .clock div p:first-child {
   border-radius: 20px 20px 0 0;
-  background-color: rgba(0, 255, 0);
-  color: white;
 }
 
 .clock div p:last-child {
   font-size: 30px;
   height: 80px;
-  background-color: rgba(0, 255, 95);
+  background-color: #45a29e;
   border-radius: 0 0 20px 20px;
 }
+.clock div p:first-child{
+  border-radius:20px 20px 0 0;
 
-.clock div:first-child p {
-  background-color: Blue;
-  color: white;
 }
 
 .clock div:first-child p:last-child {
-  background-color: rgb(70, 80, 255);
+  background-color: #45a29e;
   color: black;
 }
 
 .clock div:last-child p {
-  background-color: red;
-  color: white;
+  background-color: #1f2833;
+  color:#c5c6c7;
 }
 
 .clock div:last-child p:last-child {
-  background-color: rgb(255, 55, 50);
-  color: black;
+  background-color:#7395ae;
+  color:white;
 }
-
-@media (max-width: 700px) {
-  .clock {
-  flex-direction: column;
-  }
-
-  .clock div p {
-    width: 170px;
-    height: 90px;
-    font-size: 70px;
-  }
-
-  .clock div p:last-child {
-    font-size: 20px;
-    height: 70px;
-  }
-
-  .container {
-    margin-top: 30px;
-  }
-}
-
+/* this is for button styling*/
 .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  text-shadow: #66fc8c;
 }
 
-.start,
-.stop {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
+.start{
+  width: 120px;
+  height: 50px;
+  border-radius: 35px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   margin: 0 10px;
-  border: 2px solid white;
-  box-shadow: 0px 10px 10px -3px black;
-  color: black;
+  border: 2px solid black;
+  box-shadow: 100px 10px 10px -3px black;
+  background-color: black;
+  transition: all 0.4s ease-in-out;
+  color: rgba(20, 228, 131, 0.89);
   font-weight: bold;
+}
+.stop {
+  width: 120px;
+  height: 50px;
+  border-radius: 45px;
+  position: relative;
+  z-index: 3;
+  margin: 1 10px;
+  border: 2px solid black;
+  /*box-shadow: 100px 10px 10px -3px black;*/
+  background-color: black;
+  color: rgba(20, 228, 131, 0.89);
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+  
 }
 
 .start:hover {
+  background-color: rgba(76, 49, 138, 0.699);
+  border-width: 10px;
+  color: rgba(20, 228, 131, 0.89);
   background-color: black;
   color: white;
 }
 
 .start:focus {
   outline: none;
+  color:black;
+  border-width: 10px;
+  background-color: #66fc8c;
 }
 
+.stop:hover {
+  background-color: rgba(76, 49, 138, 0.699);
+  border-width: 10px;
+  color: rgba(20, 228, 131, 0.89);
+}
 .stop:focus {
-  outline: none;
+  outline:none;
+  border-width: 10px;
+  color:black;
+  background-color: #66fc8c;
 }
-
 .stop:hover {
   background-color:black;
   color: white;
