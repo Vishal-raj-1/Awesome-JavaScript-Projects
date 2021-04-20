@@ -677,6 +677,11 @@ let projectData = [
     projectUrl: "public/wordScramble.html",
   },
   {
+    projectName: "Document to Handwritting",
+    projectImage: "assets/images/page.jpg",
+    projectUrl: "public/DocumenttoHandwritting.html",
+  },
+  {
     projectName: "Puzzle quiz",
     projectImage: "assets/Images/quiz/demo.png",
     projectUrl: "public/quiz.html",
