@@ -9,9 +9,7 @@ class Book{
     }
 }
 //Book Array
-let myLibrary = [
-    {title:"Alice in WonderLand",author: "Enid Blyton", isRead: "Read"}
-];
+let myLibrary = [];
 //Adding a new Book
 const addBook = (e) => {
     let title = document.getElementById("title");
@@ -44,9 +42,10 @@ const displayBooks = () => {
         statuscell.innerHTML = '<button class="is-read-btn">' + book.isRead +"</button>";
         let deletecell = row.insertCell(3);
         deletecell.innerHTML = '<button class="delete-btn">Delete</button>';
-    });    
+    });   
+    saveLocal(); 
 }
-displayBooks();
+
 //Event listeners for table buttons
 const tableBody = document.querySelector('#table-body');
 tableBody.addEventListener("click",(e)=>{
@@ -58,11 +57,14 @@ tableBody.addEventListener("click",(e)=>{
         let currentBook = findBook(parentRow[0].innerText,parentRow[1].innerText)[0];
         currentBook.isRead = 'Not Read';
         e.target.innerText = 'Not Read';
+        saveLocal();
     }else if(e.target.innerText === 'Not Read'){
         let currentBook = findBook(parentRow[0].innerText,parentRow[1].innerText)[0];
         currentBook.isRead = 'Read';
         e.target.innerText = 'Read';
+        saveLocal();
     }
+    
 });
 
 //finding a book from myLibrary
@@ -72,3 +74,13 @@ const findBook = (title,author) => {
     });
     return books;
 }
+//To save data to Local Storage
+const saveLocal = () => {
+    localStorage.setItem("myLibrary", JSON.stringify(myLibrary));
+} 
+
+const restoreLocal = () => {
+    myLibrary = JSON.parse(localStorage.getItem("myLibrary") || "[]");
+    displayBooks();
+}
+restoreLocal();
