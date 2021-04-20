@@ -7,6 +7,8 @@ html,
 body {
   min-height: 100vh;
   min-width: 500px;
+  font-family: 'Lato', sans-serif;
+  
 }
 .header {
   padding: 1rem;
@@ -23,6 +25,10 @@ body {
 }
 button {
   background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 5px;
 }
 input,
 select,
@@ -47,7 +53,11 @@ table {
   padding: 1rem;
   margin-top: 2rem;
 }
-
+th{
+  font-size: 18px;
+  background-color: #B2DFDB;
+  padding: 10px 0px;
+}
 td {
   text-align: center;
   padding-top: 20px;
@@ -56,7 +66,6 @@ td {
 .is-read-btn,
 .delete-btn {
   width: 50%;
-  height: 30px;
   border-radius: 2px;
   border: 2px #00796b solid;
   outline-color: #00796b;
