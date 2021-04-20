@@ -8,7 +8,7 @@ const backlogListEl = document.getElementById('backlog-list');
 const progressListEl = document.getElementById('progress-list');
 const completeListEl = document.getElementById('complete-list');
 const onHoldListEl = document.getElementById('on-hold-list');
-
+var clearList = document.getElementsByClassName("clear");
 // Items
 let updatedOnLoad = false;
 
@@ -132,10 +132,12 @@ function showInputBox(column) {
   addBtns[column].style.visibility = 'hidden';
   saveItemBtns[column].style.display = 'flex';
   addItemContainers[column].style.display = 'flex';
+  clearList[column].style.display="none";
 }
 
 // Hide Item Input Box
 function hideInputBox(column) {
+  clearList[column].style.display="block";
   addBtns[column].style.visibility = 'visible';
   saveItemBtns[column].style.display = 'none';
   addItemContainers[column].style.display = 'none';
@@ -197,3 +199,20 @@ function drop(e) {
 
 // On Load
 updateDOM();
+
+function clearBacklog(){
+  backlogListArray.pop();
+  updateDOM();
+}
+function clearInProgress(){
+  progressListArray.pop();
+  updateDOM();
+}
+function clearComplete(){
+  completeListArray.pop();
+  updateDOM();
+}
+function clearOnHold(){
+  onHoldListArray.pop();
+  updateDOM();
+}

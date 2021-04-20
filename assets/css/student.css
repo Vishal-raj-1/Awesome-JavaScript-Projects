@@ -1,0 +1,83 @@
+body{
+      padding:50px 30px;
+    }
+    .table{
+      width:100%;
+      min-height:200px;
+      border:1.5px solid black;
+    }
+    .title{
+      text-align: center;
+      color:#fff;
+      background-color: #00e699;
+      padding:10px 20px;
+      border-bottom: 1.5px solid black;
+    }
+    .form-control{
+      border:1px solid black;
+    }
+    .input{
+      margin-left: 45px;
+      max-width: 280px;
+    }
+    .form-check{
+      margin-left: 45px;
+    }
+    .form-group.row{
+      margin:10px 25px;
+    }
+    .form-group .row{
+      margin:15px 25px;
+    }
+   .hello{
+    margin:15px 25px; 
+   }
+   #check-feed{
+    display:none;
+    color:#dc3545;
+    font-size: 14px;
+    margin-left: 45px;
+   }
+   .users-item:nth-child(odd){
+    border:1px solid #558000;
+    background-color: #fff;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+   }
+   .users-item:nth-child(even){
+    border:1px solid #558000;
+    background-color: #e6ffb3;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+   }
+   .main-table{
+    margin:35px 40px;
+   }
+   .image-link{
+    margin-left:8.5px;
+    max-width: 280px;
+   }
+   @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+   @media screen and (max-width: 750px) {
+    .main-table{
+      margin:23px 20px;
+    }
+    .input{
+      margin-left: 25px;
+      max-width: 200px;
+    }
+    .form-check{
+      margin-left:25px;
+    }
+    .image-link{
+    margin-left:25px;
+    max-width: 200px;
+   }
+   }
