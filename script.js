@@ -957,6 +957,11 @@ let projectData = [
     projectName: "Harry Potter characters",
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html",
+  },
+  {
+    projectName: "Mouse Trails effect",
+    projectImage: "assets/GIFs/MouseTrails.gif",
+    projectUrl: "public/MouseTrails.html",
   }
 ];
 
