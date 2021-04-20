@@ -1,6 +1,6 @@
 /* TAG SELECTORS */
 body {
-  background-image: url("/assets/Images/money-bg.jpg");
+  background-image: url("../Images/money-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Montserrat";
@@ -52,6 +52,7 @@ select {
   font-size: 1.2rem;
   height: 50px;
   margin: 30px auto 0;
+  outline: none;
   transition: all 0.2s ease-in-out;
   width: 150px;
 }
@@ -60,6 +61,7 @@ select {
   background-color: #fff;
   border: 1px solid #1e6f5c;
   color: #1e6f5c;
+  cursor: pointer;
 }
 
 .container {
