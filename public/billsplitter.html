@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script  type="text/javascript" src="../assets/js/billsplit.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/billsplit.css">
+    <title>Bill Splitter</title>
+    <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+
+</head>
+<body style="overflow:hidden; margin:0">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <div class="content">
+<div class ="container">
+ 
+    
+    <h1>Bill Splitter and Tip Calculator</h1>
+
+    <form>
+      <p>Amount of Bill: </p>
+      <p>₹<input type="text" class="fillBox" id="amt" placeholder="Amount Of Bill"> </p>
+
+
+        <p>How was the service? </p>
+      <p><select id="service">
+        <option disabled selected value="0">Select an option</option>
+        <option value="0.15">Great 15%</option>
+        <option value="0.1">Good 10%</option>
+        <option value="0.07">OK 7%</option>
+        <option value="0.05">Poor 5%</option>
+        <option value="0.01">Horrible 1%</option></select>
+       </p>
+
+       <p>How many people are splitting the bill?</p>
+       <p><input type="text" class="fillBox" id="people" placeholder="Number of People"> </p>
+
+
+<button type="button" id="calculate" onclick = 'calculateTip()'> Calculate Totals</button>
+    </form>
+    <div id="totalArea">
+<div id="billSplit">
+  <sup>₹</sup><span id="split">0.00</span>
+  <small id="each">per person</small>
+</div>
+
+    <div id="totalTip">
+      <sup>₹</sup><span id="tip">0.00</span>
+      <small id="each2">per person</small>
+    </div>
+
+    <div id="grandTotal">
+      <sup>₹</sup><span id="grand">0.00</span>
+      <small id="each3">per person</small>
+    </div>
+  </div>
+    
+</div>
+</div>
+</body>
+</html>

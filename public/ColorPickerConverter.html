@@ -115,16 +115,24 @@
             <section id="selectByRangeGO">
             <div class="container RangeFinder-cont">
                 <h2>Select by RGB Range</h2>
-                <div class="row text-center">
-                <div class="col-md-4">
-                    <label for="RValue">R</label>
-                    <input type="range" max="255" min="0" id="RrInput" value="0" oninput="RangeSelector()">
-                    <label for="GValue">G</label>
-                    <input type="range" max="255" min="0" id="GrInput" value="0" oninput="RangeSelector()">
-                    <label for="BValue">B</label>
-                    <input type="range" max="255" min="0" id="BrInput" value="0" oninput="RangeSelector()">
+                <div class="row text-center range-selector">
+                <div class="col-12 mb-5">
+                    <div class="row edit">
+                        <div class="col-4">
+                            <label for="RValue">R</label>
+                            <input type="range" max="255" min="0" id="RrInput" value="0" oninput="RangeSelector()">    
+                        </div>
+                        <div class="col-4">
+                            <label for="GValue">G</label>
+                            <input type="range" max="255" min="0" id="GrInput" value="0" oninput="RangeSelector()">
+                        </div>
+                        <div class="col-4">
+                            <label for="BValue">B</label>
+                            <input type="range" max="255" min="0" id="BrInput" value="0" oninput="RangeSelector()">    
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-12">
                     <div id="range-color-box"></div>
                 </div>
                 </div>
