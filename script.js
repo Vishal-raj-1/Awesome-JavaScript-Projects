@@ -20,6 +20,11 @@ let projectData = [
     projectUrl: "public/video.html",
   },
   {
+    projectName: "Student Registration Validated Form",
+    projectImage: "assets/GIFs/student.gif",
+    projectUrl: "public/student.html",
+  },
+  {
     projectName: "JavaScript Interest Calculator",
     projectImage: "assets/GIFs/Interest_Calculator.gif",
     projectUrl: "public/InterestCalculator.html",
