@@ -8,6 +8,7 @@
     color: #fff;
     scroll-behavior: smooth;
 }
+   
 
     .icon-bar {
       position: fixed;
@@ -808,4 +809,4 @@ footer a{
         height: 200px;
         border-radius: 5px;
     }
-}
+    }

@@ -56,8 +56,8 @@ let projectData = [
   },
   {
     projectName: "Note App",
-    projectImage: "assets/GIFs/noteApp.gif",
-    projectUrl: "public/note-app.html",
+    projectImage: "assets/GIFs/noteApp.gif",                
+    projectUrl: "public/note-app.html",              
   },
   {
     projectName: "Calculator",
@@ -77,7 +77,7 @@ let projectData = [
   {
     projectName: "Dice Game",
     projectImage: "assets/GIFs/dice.gif.gif",
-    projectUrl: "public/dice.html",
+    projectUrl: "public/Dice.html",
   },
   {
     projectName: "Movie Seat Booking",
