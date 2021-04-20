@@ -626,19 +626,9 @@ let projectData = [
     projectImage: "assets/GIFs/Animated_moving_car.gif",
     projectUrl: "public/Animated_moving_car.html",
   },
-
-  //   {
-  //     projectName: "DarkMode",
-  //     projectImage: {
-  //                     "assets/Images/DarkMode1.jpeg",
-  //                     "assets/Image/DarkMode2.jpeg",
-  //                   },
-  //     projectUrl: "public/DarkMode.html",
-  //    },
-
   {
-    projectName: "DarkMode",
-    projectImage: "assets/Images/DarkMode2.jpeg",
+    projectName: "Dark Mode",
+    projectImage: "assets/GIFs/DarkMode.gif",
     projectUrl: "public/DarkMode.html",
   },
   {
