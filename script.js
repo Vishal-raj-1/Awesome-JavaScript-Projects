@@ -728,7 +728,7 @@ let projectData = [
   },
   {
     projectName: "Currency Converter",
-    projectImage: "assets/GIFs/currencyConverter.gif",
+    projectImage: "assets/GIFs/Currency_Converter_Backcover.gif",
     projectUrl: "public/currencyConverter.html",
   },
   {
