@@ -147,11 +147,9 @@ submitBtn.addEventListener('click', () => {
 
         } else {
             setTimeout(function () {
-
-            quiz.innerHTML = `
+                quiz.innerHTML = `
                 <h2>You answered ${score}/${maximumQuestions} questions correctly</h2>
-                <button onclick="location.reload()">Reload</button>
-            `
+                <button onclick="location.reload()">Reload</button>`
             }, 550)
 
         }
