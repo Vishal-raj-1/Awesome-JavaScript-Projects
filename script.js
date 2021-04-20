@@ -475,6 +475,11 @@ let projectData = [
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
   },
+  {
+    projectName: "Infix Expression Evaluator in JavaScript",
+    projectImage: "assets/GIFs/Infix-Evaluator-in-JavaScript.png",
+    projectUrl: "public/infixevaluator.html",
+  },
 
 ];
 
