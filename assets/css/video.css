@@ -1,0 +1,290 @@
+:root {
+  --primary-color: dodgerblue;
+  --font-color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e3e3e3;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234f4f51' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.fas {
+  color: var(--font-color);
+  font-size: 35px;
+}
+
+.player {
+  max-width: 80vw;
+  min-width: 800px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: black;
+  position: relative;
+  cursor: pointer;
+}
+
+video {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+/* Containers */
+.show-controls {
+  width: 100%;
+  height: 30%;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  cursor: default;
+}
+
+.controls-container {
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 95px;
+  margin-top: -95px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.5s ease-out 2s;
+}
+
+.show-controls:hover .controls-container {
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+
+.control-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls-left,
+.controls-right {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  top: 40px;
+}
+
+/* Progress Bar */
+.progress-range {
+  height: 8px;
+  width: calc(100% - 30px);
+  background: rgba(202, 202, 202, 0.5);
+  margin: auto;
+  border-radius: 10px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  cursor: pointer;
+  transition: height 0.1s ease-in-out;
+  z-index: 10;
+}
+
+.progress-range:hover {
+  height: 10px;
+}
+
+.progress-bar {
+  background: var(--primary-color);
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+/* Left Controls -------------------------- */
+
+.controls-left {
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+/* Play & Pause */
+.play-controls {
+  margin-right: 15px;
+}
+
+.fa-play:hover,
+.fa-pause:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Volume */
+.volume-icon {
+  cursor: pointer;
+}
+
+.volume-range {
+  height: 8px;
+  width: 100px;
+  background: rgba(70, 70, 70, 0.5);
+  border-radius: 10px;
+  position: relative;
+  top: -21px;
+  left: 50px;
+  cursor: pointer;
+}
+
+.volume-bar {
+  background: var(--font-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.2s ease-in;
+}
+
+.volume-bar:hover {
+  background: var(--primary-color);
+}
+
+/* Right Controls ---------------------------- */
+.controls-right {
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.speed,
+.time {
+  position: relative;
+  top: 10px;
+}
+
+/* Playback Speed */
+.speed {
+  margin-right: 15px;
+}
+
+select,
+option {
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  color: var(--font-color);
+  border: none;
+  font-size: 18px;
+  position: relative;
+  top: -2.5px;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+select > option {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  font-size: 14px;
+}
+
+/* Elapsed Time & Duration */
+.time {
+  margin-right: 15px;
+  color: var(--font-color);
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Fullscreen */
+.fullscreen {
+  cursor: pointer;
+}
+
+.video-fullscreen {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .player {
+    min-width: 0;
+    max-width: 95vw;
+  }
+
+  .fas {
+    font-size: 20px;
+  }
+
+  .controls-container {
+    height: 50px;
+  }
+
+  .control-group {
+    position: relative;
+    top: -25px;
+  }
+
+  .progress-range {
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+  }
+
+  .progress-bar {
+    border-radius: 0;
+  }
+
+  .volume-range {
+    width: 50px;
+    left: 30px;
+    top: -15px;
+  }
+
+  .speed,
+  .time {
+    top: 3px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+
+  .time {
+    font-size: 12px;
+  }
+}
+
+/* Media Query: Large Smartphone (Horizontal) */
+@media screen and (max-width: 900px) and (max-height: 500px) {
+  .player {
+    max-height: 95vh;
+    max-width: auto;
+  }
+
+  video {
+    height: 95vh;
+    object-fit: cover;
+  }
+
+  .video-fullscreen {
+    height: 97.5vh;
+    border-radius: 0;
+  }
+}
