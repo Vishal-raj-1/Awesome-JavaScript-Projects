@@ -11,6 +11,30 @@
     <header class="header">
         <h1>LIBRARY</h1>
     </header>
+    <form class="input-group">
+        <input type="text" placeholder="Book Name" id="title" name="title" required/>
+        <input type="text" placeholder="Author" id="author" name="author" required/>
+        <select name="status" id="read-status">
+            <option value="Not Read">Not Read</option>
+            <option value="Read">Read</option>
+        </select>
+        <input type="submit" value="Add" name="Add" id="add"/>
+    </form>
+    <main id="main">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </main>
     <script src="personal-library.js"></script>
 </body>
 
