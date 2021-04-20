@@ -42,7 +42,8 @@ select,
   border-radius: 2px;
   background-color: white;
   font-size: 1rem;
-  display: inline;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
 }
 #main {
   margin: 1rem;
