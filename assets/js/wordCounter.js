@@ -27,7 +27,7 @@ class WordCounter {
     let matches = str.match(/\s+/g);
     return {
       characters: str.length,
-      words: matches ? matches.length : 0,
+      words: matches ? matches.length + 1 : 0,
     };
   }
 }
