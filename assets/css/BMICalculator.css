@@ -1,18 +1,18 @@
 body{
-    background-image: url("../Images/bmi-bg.jpg");
+    background-image: url("../Images/bmi1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    font-family: "Roboto", sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
 }
 
 /* CALCULATE BUTTON */
 button{
-    background-color: #f25287;
-    border-radius: 50px;
-    border: none;
-    color: white;
+    background-color: #000000ee;
+    border: 1px solid #1a78c0e7;
+    box-shadow: 0 4px 8px 0 rgba(24, 24, 24, 0.3), 0 6px 20px 0 rgba(22, 22, 22, 0.3);
+    color: #1a78c0e7;
     font-size: 1.2rem;
     height: 55px;
     left: 15%;
@@ -24,9 +24,10 @@ button{
 
 }
 button:hover{
-    background-color: white;
-    border: 1px solid #f25287;
-    color: #f25287;
+    background-color: #1a78c0e7;
+    border: 1px solid #1a78c0e7;
+    box-shadow: 0 4px 8px 0 rgba(24, 24, 24, 0.3), 0 6px 20px 0 rgba(22, 22, 22, 0.3);
+    color: #ffffffee;
 }
 
 /* HEADINGS */
@@ -37,16 +38,16 @@ h1{
 }
 
 h2 {
-    color: #f25287;
-    font-size: 3rem;
+    color: #ffffff;
+    font-size: 2.8rem;
     margin-bottom: 30px;
     text-align: center;
 }
 
 h3 {
-    color: #f25287;
-    font-size: 1.8rem;
-    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 1rem 4rem;
 }
 
 /* BMI-IMAGE */
@@ -61,25 +62,26 @@ h3 {
 /* CONTAINER-DIV */
 .container {
     align-items: center;
-    background-color: #f9f3f3;
-    border-radius: 25px;
-    color: #f25287;
-    height:525px;
+    background-color: #000000;
+    box-shadow:  2px 4px 8px 4px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
+    color: #ffffff;
+    height:500px;
     padding: 3%;
     position: relative;
-    top: -25px;
+    top: -45px;
     width: 400px;
 }
 
 .details {
-    color: gray;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
     line-height: 0.7;
 }
 
 /* ERROR MESSAGE */
 .error {
-    color:#f25287;
+    color:#299bf2;
     font-size: 1.75rem;
     padding-top: 10px;
     text-align:center;
@@ -93,18 +95,22 @@ h3 {
 
 /* MAIN-DIV */
 .main {
-    background-color: white;
+    background-color: rgb(9, 9, 9);
+    opacity: 0.95;
     display: flex;
     flex-direction: row;
-    height:525px;
+    border-radius: 15px;
+    box-shadow:  2px 4px 8px 4px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    border: none;
+    height:490px;
     position: relative;
-    top: 80px;
-    width: 900px;
+    top: 75px;
+    width: 850px;
 }
 
 /* RESULTS-DIV */
 .results{
-    color: #f25287;
+    color: #1a78c0;
     font-size: 4rem;
     margin: auto;
     padding-top: 10px;
@@ -113,17 +119,18 @@ h3 {
 /* RESULTS BOX */
 .results-box {
     align-items: center;
-    background-color: #f9f3f3;
-    border-radius: 20px;
+    background-color: #181818;
+    border-radius: 12px;
+    
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     display: flex;
     height: 100px;
     margin: auto;
-    width: 300px;
+    width: 362px;
 }
 
 /* FORM-INPUTS */
 #height, #weight {
-    border-radius: 50px;
     border: 1px solid gray;
     display: block;
     font-size: 1.2em;
@@ -139,23 +146,29 @@ h3 {
 
 /* WEIGHT GUIDE DIV */
 #weight-guide{
-    bottom: 40px;
-    color: white;
+    bottom:45px;
+    left: 468px;
+    color: #299bf2;
     margin: auto;
     padding:10px;
     position: absolute;
-    width:max-content;
+    width:345px;
+    align-items: center;
+    background-color: #181818;
+    border-radius: 12px;
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* Code for responsive design */
 @media screen and (min-width: 374px) and (max-width: 921px) {
     body {
         background-image: none;
-        background-color: #F8C1D8;
+        background-color: #1a78c0e7;
     }
 
     h1 {
         font-size: 2.5rem;
+        font-family:'Times New Roman', Times, serif;
         /* margin: 10px auto; */
     }
 

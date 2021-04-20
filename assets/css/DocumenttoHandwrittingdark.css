@@ -1,0 +1,27 @@
+.navigation {
+  background: rgb(36, 36, 36);
+  border-bottom: 0.1rem solid rgb(71, 71, 71);
+}
+
+body {
+  color: rgb(185, 192, 198);
+  background-color: #1f1f1f;
+  background-image: none !important;
+}
+.navigation .navigation-title,
+.navigation .title {
+  color: rgb(185, 192, 198);
+}
+
+a {
+  color: rgb(199, 157, 226);
+}
+
+a:focus,
+a:hover {
+  color: rgb(185, 192, 198);
+}
+
+.navigation .img {
+  fill: rgb(199, 157, 226);
+}
