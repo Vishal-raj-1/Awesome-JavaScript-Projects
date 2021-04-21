@@ -30,7 +30,7 @@
         <!-- Added Header -->
         <header>
             <nav>
-                <h2><a href="index.html">Awesome JavaScript</a></h2>
+                <h2 class="shadow"><a href="index.html">Awesome JavaScript</a></h2>
                 <i class="fa fa-bars" aria-hidden="true" id="menuBar" onclick="menu()"></i>
                 <i class="fa fa-times" aria-hidden="true" id="menuClose" onclick="menuClose()"></i>
                 <ul id="menu">
@@ -38,6 +38,8 @@
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="signuplogin.html">Signup/Login</a></li>
+
                     <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank" class="github githubs"><i class="fa fa-github" aria-hidden="true"></i></a>
                 </ul>
             </nav>
@@ -68,33 +70,37 @@
         <!-- Path -->
         
         <!-- Added Contact -->
+
         <section class="body contact" id="contact">
             <h1>Contact Now</h1>
             <hr>
             <p>Be free to make your query solved with us. Contact Us Now. You can get the code on GitHub.</p>
+
             <div class="contactForm">
+
                 <form action="" post="">
                     <p>
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" placeholder ="Enter your First Name here" name="fname">
                     </p>
                     <p>
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname">
+                        <input type="text" id="lname" placeholder ="Enter your Last Name here" name="lname">
                     </p>
                     <p>
                         <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" placeholder ="Enter your Email id here" name="email">
                     </p>
                     <p>
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject">
+                        <input type="text" id="subject" placeholder ="Enter your Subject here" name="subject">
                     </p>
                     <p>
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="93" rows="10"></textarea>
+                        <textarea name="message" id="message" placeholder ="Enter your Message here" cols="93" rows="10"></textarea>
                     </p>
-                    <p>
+                    <p class="button-container">
+                    	<button id="back-button" type="button" onclick="window.history.back();">Back</button>
                         <input type="submit" id="submit" value="Send Message">
                     </p>
                 </form>
@@ -113,5 +119,51 @@
     </main>
 </body>
 <script src="./assets/js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+    <script>
+        const options = {
+            bottom: '100px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.9s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+    <style>
+        .darkmode-toggle {
+            position: absolute;
+        }
+        .darkmode-toggle {
+    background: #100f2c;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid rgb(236, 236, 243);
+    right: 32px;
+    bottom: 32px;
+    /* left: unset; */
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
 
 </html>

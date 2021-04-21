@@ -31,7 +31,7 @@
         <!-- Added Header -->
         <header>
             <nav>
-                <h2><a href="index.html">Awesome JavaScript</a></h2>
+                <h2 class="shadow"><a href="index.html">Awesome JavaScript</a></h2>
                 <i class="fa fa-bars" aria-hidden="true" id="menuBar" onclick="menu()"></i>
                 <i class="fa fa-times" aria-hidden="true" id="menuClose" onclick="menuClose()"></i>
                 <ul id="menu">
@@ -98,5 +98,51 @@
 </body>
 <script src="./assets/js/scripts.js"></script>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+    <script>
+        const options = {
+            bottom: '100px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.9s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+    <style>
+        .darkmode-toggle {
+            position: absolute;
+        }
+        .darkmode-toggle {
+    background: #100f2c;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid rgb(236, 236, 243);
+    right: 32px;
+    bottom: 32px;
+    /* left: unset; */
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
 
 </html>

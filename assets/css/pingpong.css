@@ -1,0 +1,29 @@
+
+
+#canvas {
+
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-right: 300px;
+}
+
+
+#image {
+    width: 1500px
+}
+
+
+body {
+    background-image: url('https://clipground.com/images/game-table-clipart-1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#canvas {
+    border-style: solid;
+    border-color: green;
+}

@@ -1,0 +1,81 @@
+body
+{
+background-color: #fff0c3;
+}
+.container-fluid
+{
+    background-color: #6f459e;
+    justify-content: center;
+}
+.navbar-brand mb-0 h1
+{
+    color: black;
+   
+}
+.navbar-light .navbar-brand
+{
+    color: white;
+}
+.navbar navbar-light bg-light
+{
+    width: 100%;
+    
+}
+.navbar
+{
+    padding: 0%;
+}
+.navbar-brand
+{
+    font-size: 1.8rem;
+}
+.navbar-light .navbar-brand:hover
+{
+    color: white;
+}
+.inputdata
+{
+   text-align: center;
+   margin-top:21vh;
+}
+.span1
+{
+    font-size: 2vw;
+    font-weight: 500;
+    color: black;
+}
+.input1
+{
+    width: 58vw;
+    text-align: center;
+    height: 3vw;
+    place-items: center;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 18px;
+    margin-top: 2vw;
+}
+.btn1
+{
+    border: wheat;
+    background-color: #6f459e;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 1.5vw;
+    width: 7vw;
+    height: 6vh;
+}
+button:hover
+{
+    background-color:#c694ff;
+}
+input:focus
+{
+    outline: none;
+}
+.output
+{
+    text-align: center;
+}
