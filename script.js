@@ -801,7 +801,7 @@ let projectData = [
     projectImage: "assets/GIFs/Infix-Evaluator-in-JavaScript.png",
     projectUrl: "public/infixevaluator.html",
   },
-
+  {
     projectName: "JavaScript Dragon Game",
     projectImage: "assets/Images/JavaScript-Dragon-Game.png",
     projectUrl: "public/Dino game.html",
