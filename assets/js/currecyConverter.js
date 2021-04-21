@@ -4,6 +4,7 @@ var convert = document.querySelector(".convert");
 var fromCurrecy = document.querySelector(".from");
 var toCurrecy = document.querySelector(".to");
 var finalValue = document.querySelector(".finalValue");
+var finalAmount = document.getElementById("finalAmount");
 var resultFrom;
 var resultTo;
 var searchValue;
@@ -35,4 +36,5 @@ function displayResults(currency){
     let fromRate = currency.rates[resultFrom];
     let toRate = currency.rates[resultTo];
     finalValue.innerHTML = ((toRate/fromRate)*searchValue).toFixed(2);
+    finalAmount.style.display = "block";
 }
