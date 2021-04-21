@@ -523,7 +523,7 @@ let projectData = [
   },
   {
     projectName: "Live Code Editor",
-    projectImage: "assets/GIFs/LiveEditor.gif.gif",
+    projectImage: "assets/GIFs/LiveEditor.gif",
     projectUrl: "public/Live_Code_Editor.html",
   },
   // {
