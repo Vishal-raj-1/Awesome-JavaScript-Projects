@@ -70,6 +70,11 @@ let projectData = [
     projectUrl: "public/note-app.html",              
   },
   {
+    projectName: "Ghost Text",
+    projectImage: "assets/GIFs/ghost.gif",                
+    projectUrl: "public/Ghost Text.html",              
+  },
+  {
     projectName: "Calculator",
     projectImage: "assets/GIFs/calculator.gif",
     projectUrl: "public/calculator.html",
