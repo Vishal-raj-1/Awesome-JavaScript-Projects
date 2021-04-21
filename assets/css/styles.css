@@ -811,6 +811,9 @@ footer a{
         border-radius: 5px;
     }
 }
+header{
+    height: 100vh;
+}
 
 @media (max-width: 700px) {
     .icon-bar {

@@ -15,7 +15,12 @@ let projectData = [
     projectUrl: "public/gradientBackgroundGen.html",
   },
   {
-    projectName: "Video Player",
+    projectName: "Pomodoro Timer",
+    projectImage: "assets/GIFs/Pomodoro.gif",
+    projectUrl: "public/Pomodoro.html",
+  },
+  {
+  projectName: "Video Player",
     projectImage: "assets/GIFs/video.png",
     projectUrl: "public/video.html",
   },
@@ -672,6 +677,11 @@ let projectData = [
     projectUrl: "public/wordScramble.html",
   },
   {
+    projectName: "Guess the song",
+    projectImage: "assets/Images/guess_song/view.png",
+    projectUrl: "public/guess_song.html",
+  },
+  {
     projectName: "Document to Handwritting",
     projectImage: "assets/images/page.jpg",
     projectUrl: "public/DocumenttoHandwritting.html",
@@ -728,7 +738,7 @@ let projectData = [
   },
   {
     projectName: "Currency Converter",
-    projectImage: "assets/GIFs/currencyConverter.gif",
+    projectImage: "assets/GIFs/Currency_Converter_Backcover.gif",
     projectUrl: "public/currencyConverter.html",
   },
   {
@@ -795,6 +805,11 @@ let projectData = [
     projectName: "Falling Bullets Animation JS",
     projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
     projectUrl: "public/FallingBulletsAnimation.html",
+  },
+  {
+    projectName: "Infix Expression Evaluator in JavaScript",
+    projectImage: "assets/GIFs/Infix-Evaluator-in-JavaScript.png",
+    projectUrl: "public/infixevaluator.html",
   },
   {
     projectName: "JavaScript Dragon Game",
@@ -972,7 +987,18 @@ let projectData = [
     projectName: "Harry Potter characters",
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html",
+  },
+  {
+    projectName: "Mouse Trails effect",
+    projectImage: "assets/GIFs/MouseTrails.gif",
+    projectUrl: "public/MouseTrails.html",
+  },{
+    projectName: "Guess The Number",
+    projectImage: "assets/Images/guess.png",
+    projectUrl: "public/guess.html",
+
   }
+
 
 ];
 
