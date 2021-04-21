@@ -33,8 +33,10 @@ function create(){
 b1.onclick=function(){
     var flag=0;
     input[i]=0;
+    playSound("red")
     // console.log(i);
     if(input[i]!==ans[i] && i<len){
+        playSound("wrong")
         alert("GAME OVER");
         i=0;
         len=1;
@@ -55,10 +57,12 @@ b1.onclick=function(){
     }
 };
 b2.onclick=function(){
+    playSound("yellow")
     var flag=0;
     input[i]=1;
     //console.log(i);
     if(input[i]!==ans[i] && i<len){
+        playSound("wrong")
         alert("GAME OVER");
         i=0;
         len=1;
@@ -79,10 +83,12 @@ b2.onclick=function(){
     }
 };
 b3.onclick=function(){
+    playSound("green")
     var flag=0;
     input[i]=2;
     console.log(i);
     if(input[i]!==ans[i] && i<len){
+        playSound("wrong")
         alert("GAME OVER");
         i=0;
         input=[];
@@ -103,10 +109,12 @@ b3.onclick=function(){
     }
 };
 b4.onclick=function(){
+    playSound("blue")
     var flag=0;
     input[i]=3;
     //console.log(i);
     if(input[i]!==ans[i] && i<len){
+        playSound("wrong")
         alert("GAME OVER");
         i=0;
         input=[];
@@ -127,5 +135,10 @@ b4.onclick=function(){
     }
 };
 
+function playSound(name) {
+    var audio = new Audio("../assets/sounds/" + name + ".mp3");
+    audio.play();
+  }
+  
 //executed on loading of the screen
 onload=create();
