@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weight Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/WeightConverter.css">
 </head>
+
 <body>
-    <div id="container">
-        <div class="heading"><span id="highlight-head" >Weight Converter</span></div>
-        <div class="box" id="kg">
-            <label id="label" for="kilogram"><span id="highlight" >Enter</span> weight in kilogram   &nbsp;:</label></label>
-            <input type="number" name="" id="input">
+
+    <div class="rect1"></div>
+
+    <h1 class="display-2 text-center">Weight Converter</h1>
+
+    <div class="container box">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Kilogram</span>
+            </div>
+            <input type="text" class="form-control" id="kg">
         </div>
-        <div class="box"  id="grams">
-            <label id="label" for="gram">weight in grams &nbsp;&nbsp;&nbsp; &nbsp;:</label></label>
-            <input type="text" name="" id="gram">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Grams</span>
+            </div>
+            <input type="text" class="form-control" id="g">
         </div>
-        <div class="box"  id="pounds">
-            <label id="label" for="pounds">weight in pounds  &nbsp;&nbsp; &nbsp;:</label></label>
-            <input type="text" name="" id="pound">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Pounds</span>
+            </div>
+            <input type="text" class="form-control" id="p">
         </div>
-        <div class="box"  id="miligram">
-            <label id="label"  for="milligram">weight in milligram&nbsp; :</label></label>
-            <input type="text" name="" id="milligram">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Miligram</span>
+            </div>
+            <input type="text" class="form-control" id="mg">
         </div>
-  
+
+        <div class="d-flex flex-wrap justify-content-center buttons">
+            <div class="m-2"><button class="btn btn-primary" onclick="convert()">Convert</button></div>
+            <div class="m-2"><button class="btn btn-primary" onclick="reset()">Reset</button></div>
+        </div>
+
     </div>
-    <div class="btn">
-        <button id="convert" onclick="check()">convert</button>
-        <button id="reset" onclick="fun()">reset</button>
-    </div>
-  
+
     <script src="/assets/js/WeightConverter.js"></script>
 </body>
+
 </html>
