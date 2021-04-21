@@ -797,6 +797,11 @@ let projectData = [
     projectUrl: "public/FallingBulletsAnimation.html",
   },
   {
+    projectName: "Infix Expression Evaluator in JavaScript",
+    projectImage: "assets/GIFs/Infix-Evaluator-in-JavaScript.png",
+    projectUrl: "public/infixevaluator.html",
+  },
+  {
     projectName: "JavaScript Dragon Game",
     projectImage: "assets/Images/JavaScript-Dragon-Game.png",
     projectUrl: "public/Dino game.html",
@@ -973,6 +978,7 @@ let projectData = [
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html",
   }
+
 
 ];
 
