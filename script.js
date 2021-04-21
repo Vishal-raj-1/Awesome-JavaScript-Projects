@@ -984,9 +984,14 @@ let projectData = [
     projectUrl: "public/harry.html",
   },
   {
+    projectName: "Mouse Trails effect",
+    projectImage: "assets/GIFs/MouseTrails.gif",
+    projectUrl: "public/MouseTrails.html",
+  },{
     projectName: "Guess The Number",
     projectImage: "assets/Images/guess.png",
     projectUrl: "public/guess.html",
+
   }
 
 
