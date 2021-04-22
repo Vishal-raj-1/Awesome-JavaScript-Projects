@@ -20,8 +20,8 @@ let projectData = [
     projectUrl: "public/Pomodoro.html",
   },
   {
-  projectName: "Video Player",
-    projectImage: "assets/GIFs/video.png",
+    projectName: "Video Player",
+    projectImage: "assets/Images/videoPlayer.png",
     projectUrl: "public/video.html",
   },
   {
@@ -71,8 +71,8 @@ let projectData = [
   },
   {
     projectName: "Note App",
-    projectImage: "assets/GIFs/noteApp.gif",                
-    projectUrl: "public/note-app.html",              
+    projectImage: "assets/GIFs/noteApp.gif",
+    projectUrl: "public/note-app.html",
   },
   {
     projectName: "Calculator",
@@ -483,10 +483,8 @@ let projectData = [
     projectName: "2048 Game",
     projectImage: "assets/GIFs/2048.gif",
     projectUrl: "public/2048.html",
-
   },
   {
-
     projectName: "PingPong Game",
     projectImage: "assets/GIFs/pingpong-image.gif",
     projectUrl: "public/pingpong.html",
@@ -891,7 +889,6 @@ let projectData = [
     projectName: "Meme Soundboard",
     projectImage: "assets/Images/meme_sound_icon.jpg",
     projectUrl: "public/meme_soundboard.html",
-
   },
   {
     projectName: "3D Cube",
@@ -902,7 +899,6 @@ let projectData = [
     projectName: "Armstrong Checker",
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
     projectUrl: "public/ArmstrongNumber.html",
-
   },
 
   // {
@@ -922,13 +918,11 @@ let projectData = [
     projectUrl: "public/amongus.html",
   },
   {
-
-
     projectName: "Conway's Game of life",
     projectImage: "assets/Images/gameOfLife/demo.gif",
     projectUrl: "public/gameOfLife.html",
-  },{
-
+  },
+  {
     projectName: "Phyllotaxis",
     projectImage: "assets/Images/phyllotaxis.png",
     projectUrl: "public/phyllotaxis.html",
@@ -937,15 +931,15 @@ let projectData = [
     projectName: "Avatar Maker",
     projectImage: "assets/GIFs/avatarMaker-demo.gif",
     projectUrl: "public/avatarMaker.html",
-  },{
-
+  },
+  {
     projectName: "Password Strength Checker",
     projectImage: "assets/GIFs/Password_Strength_Checker.gif",
     projectUrl: "public/Password_Strength_Checker.html",
-
   },
-  { projectName: "Etch-a-Sketch",
-    projectImage: "assets/GIFs/etch_sketch.PNG", 
+  {
+    projectName: "Etch-a-Sketch",
+    projectImage: "assets/GIFs/etch_sketch.PNG",
     projectUrl: "public/etch_sketch.html",
   },
   {
@@ -987,14 +981,12 @@ let projectData = [
     projectName: "Mouse Trails effect",
     projectImage: "assets/GIFs/MouseTrails.gif",
     projectUrl: "public/MouseTrails.html",
-  },{
+  },
+  {
     projectName: "Guess The Number",
     projectImage: "assets/Images/guess.png",
     projectUrl: "public/guess.html",
-
-  }
-
-
+  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
