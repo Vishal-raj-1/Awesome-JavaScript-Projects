@@ -13,14 +13,16 @@ html{
 *,
 *:before,
 *:active {
-    
+    /* box-sizing: inherit; */
+}
+
+.logo{
     margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 svg {
-   
     fill: white;
     background: rgba(0,0,0,0.1);
     padding: 20px;
@@ -76,7 +78,20 @@ svg {
   --fixed-width: 620px;
 }
 
-
+.refresh{
+    color:rgb(109, 109, 109);
+    float: right;
+    cursor: pointer;
+}
+.refresh:hover{
+    color:rgb(56, 56, 56);
+}
+.plates {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
 
 ul {
   list-style-type: none;
@@ -333,4 +348,16 @@ Grocery List
 }
 .clear-btn:hover {
   color: var(--clr-red-dark);
+}
+
+.delete{
+    font-size: 20px;
+    cursor: pointer;
+    color:#333333;
+}
+.delete path{
+    pointer-events: none;
+}
+.delete:hover{
+    color: rgba(201, 3, 3, 0.973);
 }

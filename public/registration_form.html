@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Hospital Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/registration_form.css">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row text-center"">
+        <div class="col-12 p-3 main-title">
+          <h1>Hospital Registration Form</h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12 p-2">
+          <h6>
+            (Fields with * at its end are compulsory to fill)
+          </h6>
+        </div>
+      </div>
+
+      <form name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="container mb-3 w-50 rounded bg-dark text-white">
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Photo</h5> 
+            </div>
+            <div class="col-12">
+              <input type = "file" name = "pic">
+            </div>
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Name<span>*</span></h5> 
+            </div>
+            <div class="col-12">
+              <input class="w-100" type="text" name="fname">
+            </div> 
+            <div class="col-12">
+              <p id = "msg1"> </p>
+            </div> 
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Middle Name</h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "mname" type = "text"> 
+            </div> 
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Last Name<span>*</span></h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "lname" type = "text"> 
+            </div> 
+            <div class="col-12">
+              <p id = "msg2"> </p>
+            </div> 
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Gender<span>*</span></h5>
+            </div>
+            <div class="col-12">
+              <h5><input type="radio" name="gender" value="male" checked> Male</h5>
+              <h5><input type="radio" name="gender" value="female"> Female</h5>
+              <h5><input type="radio" name="gender" value="other"> Other</h5>
+            </div> 
+          </div>
+        
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Date of Birth<span>*</span></h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "dob" type = "date"> 
+            </div>
+            <div class="col-12">
+              <p id = "msg3"> </p>
+            </div> 
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Phone Number<span>*</span></h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "pno" type = "tel" pattern = "[0-9]{10}"> 
+            </div>
+            <div class="col-12">
+              <p id = "msg4"> </p>
+            </div> 
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Address<span>*</span></h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" id = "add" type = "text"> 
+            </div>
+            <div class="col-12">
+              <p id = "msg5"> </p>
+            </div> 
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Email id</h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "eid" type = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"> 
+            </div>
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Emergency Contact<span>*</span></h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "econ" type = "tel" pattern = "[0-9]{10}"> 
+            </div>
+            <div class="col-12">
+              <p id = "msg6"> </p>
+            </div> 
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Nationality</h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "nat" type = "text">
+            </div>
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Insurance</h5>
+            </div>
+            <div class="col-12">
+              <h5><input name = "ins" type = "radio" value = "yes"> Yes</h5>
+              <h5><input name = "ins" type = "radio" value = "no"> No</h5>
+            </div>
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Are you allergic to any medicine</h5>
+            </div>
+            <div class="col-12">
+              <h5><input name = "all" type = "radio" value = "yes"> Yes</h5>
+              <h5><input name = "all" type = "radio" value = "no" > No</h5>
+            </div>
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>If yes Specify which Medicines</h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "med" type = "text">
+            </div>
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12">
+              <h5>Any Medical History you wish to Share</h5>
+            </div>
+            <div class="col-12">
+              <input class="w-100" name = "mhis" type = "text">
+            </div>
+          </div>
+
+          <div class="row p-4 text-center">
+            <div class="col-12">
+              <input class="btn btn-success btn-lg" type="submit" value="Submit">
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="../assets/js/registration_form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/bubbleSort.css">
+    <title>Bubble Sort</title>
+</head>
+    <body>
+        <section>
+            <div id="array_container"></div>
+        </section>
+
+        <section>
+            <div id="array_container2">
+                <button class="b1" onclick="Bsorting()">Bubble Sort</button>
+            </div>
+        </section>
+    
+        <section>
+            <div id="array_container3">
+                <label for="values">Number of values:</label>
+                <select name="values" id="values" onchange="changeN()">
+                    <option value="10" >10</option>
+                    <option value="20">20</option>
+                    <option value="50" selected>50</option>
+                    <option value="100">100</option>
+                </select>
+                <label for="speed">Speed:</label>
+                <select name="speed" id="speed" onchange="changeSpeed()">
+                    <option value="8">0.5x</option>
+                    <option value="4" selected>1x</option>
+                    <option value="3">1.5x</option>
+                    <option value="2">2x</option>
+                    <option value="1">4x</option>
+                </select>
+            </div>
+        </section>
+        <script src="../assets/js/bubbleSort.js"></script>
+    </body>
+</html>

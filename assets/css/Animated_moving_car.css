@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    overflow-y: hidden;
+}
+
+p{
+    text-align: center;
+    /* justify-content: center;
+    top: 10%; */
+    font-size: 22px;
+    color: white;
+    padding-top: 20px;
+}
+
+.night{
+    height: 80vh;
+    width: 70vw;
+    margin: 2rem auto 5rem auto;
+    background: url('../Images/Animated_moving_car/background.png');
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+    bottom: 9%;
+}
+
+.surface{
+    height: 140px;
+    width: 500%;
+    background: url('../Images/Animated_moving_car/tree.png');
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+}
+
+.car{
+    position: absolute;
+    bottom: 8%;
+    left: 24%;
+}
+
+/* Animation */
+
+@keyframes moveRight{
+    100%{
+        transform: translateX(-2950px);
+    }
+}
+
+@keyframes suspension{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.moveRight{
+    animation: moveRight 6s linear infinite;
+}
+
+.suspension{
+    animation: suspension 1s linear infinite;
+}
