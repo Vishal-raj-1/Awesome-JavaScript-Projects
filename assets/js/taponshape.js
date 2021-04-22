@@ -118,8 +118,8 @@ button.addEventListener('click', function(){
 
 $(document).ready(function(){
     $(".container").ripples({
-    resolution: 400,
-    perturbance: .050,
+    resolution: 800,
+    perturbance: .003,
     dropRadius: 20,
     interactive:true
 });

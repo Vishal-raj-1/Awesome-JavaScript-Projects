@@ -1,3 +1,5 @@
+
+
 .box{
     position: relative;
     border-radius: 50%;
@@ -11,7 +13,10 @@ body{
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    background-color: rgb(53, 218, 218);
+    color:white;
+    background-image:url(../Images/tapOnShape/bg1.jpg);
+    background-size:100% 100%;
+    background-color: black;
 }
 
 button{
