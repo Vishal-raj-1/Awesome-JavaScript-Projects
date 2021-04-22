@@ -115,3 +115,12 @@ button.addEventListener('click', function(){
 
     showBox();
 })
+
+$(document).ready(function(){
+    $(".container").ripples({
+    resolution: 400,
+    perturbance: .050,
+    dropRadius: 20,
+    interactive:true
+});
+});
