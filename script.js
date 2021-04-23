@@ -399,6 +399,11 @@ let projectData = [
     projectImage: "assets/GIFs/Text-voice.gif",
     projectUrl: "public/textToVoice.html",
   },
+  {
+    projectName: "Profile Card Generator",
+    projectImage: "assets/Images/Profilecard.png",
+    projectUrl: "public/profilecard.html",
+  },
   // {
   //   projectName: "MemeUrl",
   //   projectImage: "assets/GIFs/memeUrl.png",
