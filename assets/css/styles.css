@@ -8,53 +8,38 @@
     color: #fff;
     scroll-behavior: smooth;
 }
+   
 
-    .icon-bar {
-      position: fixed;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
+/* Sticky Navbar */
 
-    .icon-bar a {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 20px;
-    }
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
-    .icon-bar a:hover {
-      background-color: #eeebdd;
-      color: #3B5998;
-    }
+.icon-bar a i {
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    background: white;
+    color: #37517e;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
 
-    .facebook {
-      background: #3B5998;
-      color: white;
-    }
-
-    .twitter {
-      background: #3B5998;
-      color: white;
-    }
-
-    .google {
-      background: #3B5998;
-      color: white;
-    }
-
-    .linkedin {
-      background: #3B5998;
-      color: white;
-    }
-
-    .youtube {
-      background: #3B5998;
-      color: white;
-    }
+.icon-bar a i:hover {
+    background: #37517e;
+    color: white;
+}
 
 a{
   text-decoration: none;
@@ -63,6 +48,7 @@ a{
   outline: none;
 }
 ul{
+    
     list-style-type: none;
 }
 body::-webkit-scrollbar {
@@ -221,53 +207,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {margin:0;height:2000px;}
-    
-    .icon-bar {
-      position: fixed;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-    
-    .icon-bar a {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 20px;
-    }
-    
-    .icon-bar a:hover {
-      background-color: #eeebdd;
-      color: #3B5998;
-    }
-    
-    .facebook {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .twitter {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .google {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .linkedin {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .youtube {
-      background: #3B5998;
-      color: white;
-    }
 
     .typed{
         color: #87CEEB;
@@ -281,10 +220,12 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-nav{
+ nav{
+    
+    color: #fff;
     position: fixed;
     top: 0;
-    background-color: #37517e98;
+    background-color: #37517E;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -300,15 +241,75 @@ nav ul{
     align-items: center;
     color: #fff;
 }
-.active{
-    color: #47b2e4;
+
+ nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 10px 0px 5px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+nav ul li a{
+    position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-nav ul li a:hover{
-    color: #47b2e4;
+nav ul li a:after{
+    display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
 }
-nav ul li{
-    margin-right: 40px;
-}
+nav ul li a:hover:after {
+    
+    animation: circle 1.5s ease-in forwards;
+  }
+@keyframes circle {
+ 0% {
+     width: 1px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      z-index: -1;
+      background: #eee;
+      border-radius: 100%;
+    }
+100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+    }
+  }
+
 i#menuBar,
 i#menuClose{
     position: fixed;
@@ -321,6 +322,7 @@ i#menuClose{
     cursor: pointer;
 }
 i#menuClose{
+    
     color: #37517E;
 }
 
@@ -807,5 +809,14 @@ footer a{
         width: 350px;
         height: 200px;
         border-radius: 5px;
+    }
+}
+header{
+    height: 100vh;
+}
+
+@media (max-width: 700px) {
+    .icon-bar {
+        display: none;
     }
 }

@@ -1,12 +1,20 @@
 body {
+  margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-image:url('https://images.pexels.com/photos/2719301/pexels-photo-2719301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    
   text-align: center;
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 h1 {
   font-size: 28px;
   font-family: "Courier New", Courier, monospace;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   color: white;
 }
 
@@ -15,25 +23,28 @@ div {
 }
 
 span {
-  font-size: 5rem;
+  font-size: 8rem;
 }
 
 button {
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border-radius: 4%;
+  padding: 1.1rem;
+    margin: 1.0rem;
+    border-radius: 10%;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 #decrease {
-  background-color: #bce6eb;
-  border-color: #bce6eb;
+  background-color: #5ed1f5;
+  border-color: #d7edf0;
   color: #000;
-  outline: none;
+  outline: 1;
   transition: 0.3s linear;
 }
 
 #decrease:hover {
-  color: blueviolet;
+  color: rgb(181, 111, 247);
   transform: scale(0.95);
 }
 
@@ -49,8 +60,8 @@ button {
 }
 
 #increase {
-  background-color: #bce6eb;
-  border-color: #bce6eb;
+  background-color: #5ed1f5;
+  border-color: #d7edf0;
   outline: none;
   transition: 0.3s linear;
 }
@@ -61,7 +72,7 @@ button {
 }
 
 .container {
-  border: 4px solid rgb(10 19 61);
+  border: 6px solid rgb(10 19 61);
   background-image: linear-gradient(to right, rgb(10 19 61), rgb(255 0 151));
   padding: 23px;
   border-radius: 53px;
