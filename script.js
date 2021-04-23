@@ -25,6 +25,11 @@ let projectData = [
     projectUrl: "public/DragToDo.html",
   },
   {
+    projectName: "Grocery-List",
+    projectImage: "assets/GIFs/groceryList.gif",
+    projectUrl: "public/groceryList.html",
+  },
+  {
     projectName: "Note App",
     projectImage: "assets/GIFs/noteApp.gif",
     projectUrl: "public/note-app.html",
