@@ -48,6 +48,7 @@ a{
   outline: none;
 }
 ul{
+    
     list-style-type: none;
 }
 body::-webkit-scrollbar {
@@ -219,10 +220,12 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-nav{
+ nav{
+    
+    color: #fff;
     position: fixed;
     top: 0;
-    background-color: #37517e98;
+    background-color: #37517E;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -238,15 +241,75 @@ nav ul{
     align-items: center;
     color: #fff;
 }
-.active{
-    color: #47b2e4;
+
+ nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 10px 0px 5px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+nav ul li a{
+    position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-nav ul li a:hover{
-    color: #47b2e4;
+nav ul li a:after{
+    display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
 }
-nav ul li{
-    margin-right: 40px;
-}
+nav ul li a:hover:after {
+    
+    animation: circle 1.5s ease-in forwards;
+  }
+@keyframes circle {
+ 0% {
+     width: 1px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      z-index: -1;
+      background: #eee;
+      border-radius: 100%;
+    }
+100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+    }
+  }
+
 i#menuBar,
 i#menuClose{
     position: fixed;
@@ -259,6 +322,7 @@ i#menuClose{
     cursor: pointer;
 }
 i#menuClose{
+    
     color: #37517E;
 }
 
@@ -746,6 +810,9 @@ footer a{
         height: 200px;
         border-radius: 5px;
     }
+}
+header{
+    height: 100vh;
 }
 
 @media (max-width: 700px) {
