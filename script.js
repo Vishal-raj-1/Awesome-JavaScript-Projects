@@ -234,6 +234,11 @@ let projectData = [
     projectImage: "assets/GIFs/line-replacing-project-.gif",
     projectUrl: "public/line_replacing_project.html",
   },
+  {
+    projectName: "Lorem Ipsum Generator",
+    projectImage: "assets/Images/lorem.png",
+    projectUrl: "public/lorem.html",
+  },
   // {
   //   projectName: "Stop Watch",
   //   projectImage: "assets/GIFs/stopWatch.gif",
