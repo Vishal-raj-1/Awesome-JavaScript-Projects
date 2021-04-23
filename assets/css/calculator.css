@@ -1,80 +1,121 @@
-body{
-    background-color: #333;
-}
-
-.container{
-    text-align: center;
-    margin-top: 34px;
-}
-
-body{
-    background-color: #0f0f0f
-
-}
-
-table{
-    margin: auto;
-}
-
-input {
-    border-radius: 10px;
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #031323;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#FA9D74, #EB0069);
+    clip-path: polygon(30% 10%, 50% 40%, 30% 75%, 10% 40%);
+  }
+  
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#F50202, #1928F5);
+    clip-path: circle(20% at 70% 75%);
+  }
+  
+  .container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container .calculator {
+    position: relative;
+    display: grid;
+  }
+  
+  .container .calculator .value {
+    grid-column: span 4;
+    height: 140px;
+    width: 300px;
+    text-align: right;
     border: none;
-    font-size: 58px;
-    height: 90px;
-    width: 450px;
-    margin-bottom: 5px;
     outline: none;
-    background: #28f1ed96;
-    box-shadow: inset -3px -3px 7px #00f3fffa,
-                inset 2px 2px 5px #012d2ffc;
-}
-
-
-button{
-    font-size: 40px;
-    width: 100px;
-    height: 69px;
-    margin: 6px;
-    transform: scale(1);
-    outline: none;
-    border:none;
-    background: linear-gradient(315deg , #56d0c5, #89b0ad);
-    box-shadow: 3px 3px 8px 0px #224e4a, 
-               -3px -3px 8px 0px #4ac3bcf2;
-    border-radius: 8px;
-}
-
-
-
-button:hover{
-    transform: scale(0.9);
-    cursor: pointer;
-    background-color: #13caefc9;   
-}
-
-button:active:focus{
-    box-shadow: inset 3px 3px 8px 0px #224e4a,
-                -3px -3px 8px 0px #4ac3bcf2;
-}
-
-button:focus{
-    box-shadow: inset 3px 3px 5px 0px #224e4a,
-                inset -3px -3px 8px 0px #0bd1f98c;
-}
-
-.calculator{ 
-    background-image: linear-gradient(to right,
-                      rgb(30, 30, 30),
-                      rgb(42, 223, 220));
-    padding: 23px;
-    border-radius: 30px;
-    display: inline-block;
-    box-shadow: -5px -5px 10px #224c4e, 
-                 5px 5px 10px #224c4e;
-}
-
-h1{
+    padding: 10px;
     font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    color: aqua;
-}
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .container .calculator span {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 75px;
+    width: 75px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+  }
+  
+  .container .calculator span:hover {
+    transition: 0s;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .container .calculator span:active {
+    background: #14ff47;
+    color: #192f00;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .container .calculator .clear {
+    grid-column: span 2;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .container .calculator .plus {
+    grid-row: span 2;
+    height: 150px;
+  }
+  
+  .equal {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  @media (max-width: 768px) {
+    body::before {
+      max-width: 75vw;
+      max-height: 75vh;
+    }
+    
+  }
+  
+        
