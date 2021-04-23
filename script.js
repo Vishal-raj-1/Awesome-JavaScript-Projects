@@ -383,6 +383,12 @@ let projectData = [
     projectImage: "assets/Images/Pagination.png",
     projectUrl: "public/Pagination.html",
   },
+  {
+    projectName: "Infinite Scroll Image Gallery",
+    projectImage: "assets/GIFs/infiniteScroll.gif",
+    projectUrl: "public/infiniteScroll.html",
+
+  },
 ];
 
 let projectContainer = document.getElementById('js-projects');
