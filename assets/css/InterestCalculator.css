@@ -1,0 +1,139 @@
+body {
+    background-image: url("../Images/Interest_Calculator_Background.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.circle1 {
+    position: fixed;
+    background-color: tomato;
+    height: 1100px;
+    width: 2000px;
+    z-index: -200;
+    border-radius: 50%;
+    top: -600px;
+    left: 100px;
+}
+.circle2 {
+    position: fixed;
+    background-color: rgba(255, 99, 71, 0.4);
+    height: 900px;
+    width: 1500px;
+    z-index: -1000;
+    border-radius: 50%;
+    bottom: -500px;
+    left: 600px;
+}
+
+h1 {
+    margin: 50px auto;
+}
+
+.calculation {
+    margin-top: 100px;
+    padding: 0px 150px;
+}
+
+input {
+    padding-left: 50px !important;
+}
+i {
+    top: 39px;
+    left: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: rgb(240, 64, 33) !important;
+    border-color: rgb(240, 64, 33) !important;
+}
+.btn-primary:hover {
+    background-color: tomato !important;
+    border-color: tomato !important;
+}
+.btn-primary:focus {
+    border-color: rgb(240, 64, 33) !important ;
+    box-shadow: 0 0 0 .2rem rgb(224, 109, 88, 0.5) !important;
+}
+
+#simpleInterest {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    width: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 580px) {
+    .circle1 {
+        top: -900px;
+        left: -700px;
+    }
+    .circle2 {
+        bottom: -750px;
+        left: -450px;
+    }
+    #simpleInterest {
+        text-align: center !important;
+        left: 0;
+        bottom: 20px;
+    }
+}
+@media (min-width: 580px) and (max-width: 770px) {
+    .circle1 {
+        top: -600px;
+        left: 100px;
+    }
+    .circle2 {
+        bottom: -500px;
+        left: 200px;
+    }
+    #simpleInterest {
+        right: 70px;
+        bottom: 70px;
+    }
+}
+
+@media (max-width: 770px) {
+    h1 {
+        font-size: 50px !important;
+    }
+    .calculation {
+        margin-top: 50px;
+        padding: 0px;
+    }
+    #simpleInterest {
+        font-size: 30px !important;
+    }
+}
+@media (min-width: 770px) and (max-width: 995px) {
+    h1 {
+        font-size: 70px !important;
+    }
+    .circle2 {
+        bottom: -500px;
+        left: 300px;
+    }
+    #simpleInterest {
+        font-size: 40px !important;
+        right: 70px;
+        bottom: 70px;
+    }
+}
+@media (min-width: 995px) and (max-width: 1200px) {
+    .circle2 {
+        bottom: -500px;
+        left: 400px;
+    }
+    #simpleInterest {
+        font-size: 45px !important;
+        right: 70px;
+        bottom: 70px;
+    }
+}

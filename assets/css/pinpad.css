@@ -1,0 +1,114 @@
+body{
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background-image:url('https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  
+}
+
+
+.pad {
+  border: 12px solid rgb(20, 19, 18);
+  width: 600px;
+  max-width: 600px;
+  height: 573px;
+  border-radius: 10px;
+  background-image:url('https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+}
+
+.toppad{
+  
+  width:600px;
+  height:150px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.screen {
+  width: 500px;
+  height: 100px;
+  background-color: #5f5151ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #171513;
+  border-radius: 70px;
+}
+
+.screen p {
+  color: rgb(194, 184, 184);
+  font-size: 40px;
+  margin: 0;
+  padding: 18px 40px;
+  background-color: white;
+  text-align: center;
+  width: 400px;
+  border-radius: 50px;
+}
+
+.bottompad {
+width: 604px;
+height: 253px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.buttonholder {
+  padding: 10px;
+  height: 250px;
+  width: 483px;
+}
+
+.holder {
+display: flex;
+justify-content: space-evenly;
+width: 450px;
+height: 85px;
+padding: 9px 13px;
+}
+
+.button {
+width: 113px;
+height: 84px;
+border: 2px 8px solid rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(315deg, #ebfffd, #293333);
+box-shadow: 3px 3px 6px 0px #141f1e, -3px -3px 8px 0px #9ec1c0f2;
+color: white;
+font-size: 30px;
+border-radius: 3rem;
+}
+
+.button:hover{
+  background-color: #5bfc115d;
+  cursor:pointer;
+}
+
+.invalid{
+  font-size:10px;
+  color:red;
+}
+<style>
+.button {
+padding: 15px 25px;
+font-size: 24px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: #4CAF50;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+}
+
+.correct{
+  font-size:10px;
+}

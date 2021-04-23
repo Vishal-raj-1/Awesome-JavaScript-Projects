@@ -1,0 +1,178 @@
+<!--COPYRIGHT MOHD JAMIL
+    instagram:https://www.instagram.com/_mohdjamil
+    linkedin:https://www.linkedin.com/in/mohd-jamil-35508a1b9
+    github:https://www.github.com/mohammedjameel24
+
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>GetLocinfo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link type="image/x-icon" rel="icon" href="https://drive.google.com/uc?id=1GXl9MScYaz5eA8YGIWzQz01B5P0ElJbW">
+  <link rel="stylesheet" href="../assets/css/deviceInfo.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <div id="map" class="map">
+
+    </div>
+    <p id="info" class="info">
+      <img src="../assets/Images/deviceInfo.png" id="logo" class="info" />
+      <button id="check">check</button>
+
+    </p>
+    <div class="footer">
+      <div class="current"><strong>Country: </strong><span id="country"></span></div>
+      <div class="current"><strong>State: </strong><span id="state"></span></div>
+      <div class="current"><strong>City: </strong><span id="city"></span></div>
+      <div class="current"><strong>longitude: </strong><span id="longitude"></span></div>
+      <div class="current"><strong>latitude: </strong><span id="latitude"></span></div>
+      <div class="current"><strong>IP: </strong><span id="ip"></span></div>
+      <div id="Ptxt">
+        <b>Vulnerability Scale</b>
+      </div>
+      <div id="myProgress">
+        <div id="myBar">0%</div>
+
+      </div>
+      <div id="device" class="device">
+        <div class="device"><b>OS : </b><span id="osName"></span></div>
+        <div class="device"><b>OS Version : </b><span id="osVersion"></span></div>
+        <div class="device"><b>Browser : </b><span id="browserName"></span></div>
+        <div class="device"><b>Browser Version : </b><span id="browserVersion"></span></div>
+        <div class="device"><b>User Assets : </b><span id="appVersion"></span></div>
+        <div class="device"><b>User Platform : </b><span id="appPlatform"></span></div>
+        <div class="device"><b>User Vendor : </b><span id="appVendor"></span></div>
+      </div>
+    </div>
+  </main>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUdbiGaC7EIMfxrHfLP69w21ibKza2cQQ&callback=init"></script>
+
+
+  <script>
+    $.ajax({
+      url: "https://geolocation-db.com/jsonp",
+      jsonpCallback: "callback",
+      dataType: "jsonp",
+      success: function (location) {
+        $('#country').html(location.country_name);
+        $('#state').html(location.state);
+        $('#city').html(location.city);
+        $('#latitude').html(location.latitude);
+        $('#longitude').html(location.longitude);
+        $('#ip').html(location.IPv4);
+      }
+    });
+
+  </script>
+
+  <script src="../assets/js/deviceInfo.js"></script>
+
+  <script>
+
+    document.getElementById('check').onclick = function () {
+      move();
+      Disable();
+    }
+    var i = document.getElementById('osVersion').innerHTML;
+
+
+    function move() {
+      if (i <= 10 && i >= 9) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 0;
+        var id = setInterval(frame, 5);
+        function frame() {
+          if (width >= 30) {
+            clearInterval(id);
+            i = 0;
+          } else {
+            width++;
+            elem.style.width = width + "%";
+            elem.innerHTML = width + "%";
+          }
+        }
+      }
+      else if (i <= 9 && i >= 8) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 20;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (width >= 50) {
+            clearInterval(id);
+            i = 0;
+          } else {
+            width++;
+            elem.style.width = width + "%";
+            elem.innerHTML = width + "%";
+          }
+        }
+      }
+      else if (i <= 7 && i >= 6) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 20;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (width >= 70) {
+            clearInterval(id);
+            i = 0;
+          } else {
+            width++;
+            elem.style.width = width + "%";
+            elem.innerHTML = width + "%";
+          }
+        }
+      }
+      else if (i <= 5 && i >= 4) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 20;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (width >= 80) {
+            clearInterval(id);
+            i = 0;
+          } else {
+            width++;
+            elem.style.width = width + "%";
+            elem.innerHTML = width + "%";
+          }
+        }
+      }
+      else if (i < 3) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 20;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (width >= 99) {
+            clearInterval(id);
+            i = 0;
+          } else {
+            width++;
+            elem.style.width = width + "%";
+            elem.innerHTML = width + "%";
+          }
+        }
+      }
+    }
+    function Disable(check) {
+      document.getElementById("check").disabled = 'true';
+    }
+
+  </script>
+</body>
+
+</html>

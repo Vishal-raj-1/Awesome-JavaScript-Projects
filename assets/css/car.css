@@ -1,0 +1,31 @@
+#back {
+    background: url(../Images/cargame/back-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 700px;
+}
+
+#road {
+    background: url(../Images/cargame/road.jpg);
+}
+
+
+#img {
+    width: 260px;
+}
+
+#btn {
+    background-color: yellow;
+    width: 100px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+#dbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

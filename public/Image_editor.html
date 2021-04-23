@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Image Editor</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../assets/css/Image_editor.css">
+   </head>
+   <body>
+      <div id="top"></div>
+      <section class="container">
+         <div class="sec1">
+         <table cellpadding="10px">
+            <tr class="shift">
+               <form id="filter" class="filter">
+
+               <td>
+                  <div class="sec2">
+                        <p>
+                           <label for="brightness">Brightness</label><br>
+                           <input type="range" name="brightness" id="brightness" class="slider" min="0" value="100" max="200">
+                        </p>
+                        <p>
+                           <label>Contrast</label><br>
+                           <input type="range" name="grayscale" id="contrast" class="slider" min="0" max="250" value="100">
+                        </p>
+                        <p>
+                           <label>Invert</label><br>
+                           <input type="range" name="invert" id="invert" class="slider" min="0" max="100" value="0">
+                        </p>
+                        <p>
+                           <label>Saturate</label><br>
+                           <input type="range" name="saturate" id="saturate" class="slider" min="0" max="100" value="10">
+                        </p>
+                        <p>
+                           <label>Opacity</label><br>
+                           <input type="range" name="op" id="op" class="slider" min="50" max="100" value="100">
+                        </p>
+                  </div>
+               </td>
+
+               <td></td>
+               <td colspan="2" rowspan="2">
+                  
+                     <input type="text" placeholder="Enter Image URL" id="url" class="url">
+                     <input type="button" name="submit" value="Change image" onclick="fun()" id="btn" class="change btn">
+                     <!--<button type="submit">Change image</button>-->
+                  
+                  <div id="ss"class="ss">
+                  <img src="https://wallpaperaccess.com/full/36354.jpg" id="targetimg" alt="online-image"><br>
+                  <input type="button" id="btn" class="btn" name="download" value="Download Image" onclick="down()" style="width: 100%; margin-top: 10px;">
+                  <!--<a href="" id="download" onclick="down()" download="abc.jpg">Click here to download an original image !</a>-->
+               </div></td>
+                  <td></td>
+               <td>
+                  <div class="sec2">
+                     
+                        <p>
+                           <label for="blur">Blur</label><br>
+                           <input type="range" name="blur" id="blur" class="slider" min="0" value="0" max="">
+                        </p>
+                        <p>
+                           <label>Grayscale</label><br>
+                           <input type="range" name="grayscale" id="gs" class="slider" min="" max="100" value="0">
+                        </p>
+                        <p>
+                           <label>Sepia</label><br>
+                           <input type="range" name="sepia" id="sepia" class="slider" min="0" max="" value="0">
+                        </p>
+                        <p>
+                           <label>Hue-Rotate</label><br>
+                           <input type="range" name="hue-rotate" id="hue-rotate" class="slider" min="0" max="360" value="0">
+                        </p>
+                        <button type="reset" id="btn" class="btn" style="width: 100%;">Reset</button>
+                     
+                  </div>
+               </td>
+               
+            </form>
+            </tr>
+            <tr></tr>
+         </table>
+      </section>
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" integrity="sha512-k8F8QynmFNURwbUJC8drKA+fo3YfNvjqKzStdydD6au+MzvxBoRnxH8E31RJXwDY9DrnEiPhh9wBoDSIxhkyHQ==" crossorigin="anonymous"></script>
+      <script src="../assets/js/Image_editor.js"></script>
+   </body>
+</html>
+

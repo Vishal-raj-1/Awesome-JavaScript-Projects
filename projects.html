@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript Projects that can help you a lot in your journey. This projects are free for use. ">
+    <title>Projects | Awesome JavaScript</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/Images/favicons/faviconss.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <!--CSS Preloader-->
+    <div id="spinner-wrapper">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
+    </div>
+    <a id="goToTop" href="#top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    
+    <main id="top">
+        <!-- Added Header -->
+        <header>
+            <nav>
+                <h2 class="shadow"><a href="index.html">Awesome JavaScript</a></h2>
+                <i class="fa fa-bars" aria-hidden="true" id="menuBar" onclick="menu()"></i>
+                <i class="fa fa-times" aria-hidden="true" id="menuClose" onclick="menuClose()"></i>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank" class="github githubs"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </ul>
+            </nav>
+            <div class="bannerSection">
+                <div class="bannerText">
+                    <h1>JavaScript Projects</h1>
+                    <h2>The great collection of JavaScript projects, <br>just for you!!!</h2>
+                    <div class="buttonCenter">
+                        <a href="#project" class="commanBtn">Get Started</a>
+                        <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank" class="github" ><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                    </div>
+                </div>
+                <div class="bannerIllustration">
+                    <img src="./assets/Images/projectsaat.png" alt="Project Illustration">
+                </div>
+            </div>
+        </header>
+        <!-- Header Closed -->
+
+        <!-- Path -->
+        <div class="path">
+            <h2>Helping you, is our aim.</h2>
+            <p>
+                <a href="index.html">Home</a> / Projects
+            </p>
+        </div>
+
+        <!-- Path -->
+
+        <!-- Added Project -->
+
+
+        <section class="body" id= "project">
+            <h1>Awesome JavaScript Projects</h1>
+            <hr>
+            <!-- Add Serach Box here in future -->
+            
+
+            <!--  -->
+              <div class="project-section"  id="js-projects">
+                
+              </div>
+        </section>
+
+
+        <!-- Closed Projects -->
+
+        <!-- Added Footer -->
+        <footer>
+            <p>© <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script> Copyright. <b>Awesome JavaScript Project</b>. All Rights Reserved.</p>
+            <p>Design by <a href="https://cratonik.com" target="_blank" rel="follow">Cratonik</a></p>
+        </footer>
+        <!-- Closed Footer -->
+    </main>
+</body>
+<script src="./assets/js/scripts.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+    <script>
+        const options = {
+            bottom: '100px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.9s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+    <style>
+        .darkmode-toggle {
+            position: absolute;
+        }
+        .darkmode-toggle {
+    background: #100f2c;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid rgb(236, 236, 243);
+    right: 32px;
+    bottom: 32px;
+    /* left: unset; */
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/TextToSpeech.css" />
+    <title>Text To Speech</title>
+</head>
+<style>
+    #text-box {
+        display: url(../assets/Images/TextToSpeech/wave.gif);
+    }
+</style>
+
+
+<body>
+    <div class="container">
+
+
+
+        <h1>Text To Speech</h1>
+
+        <button id="toggle" class="btn btn-toggle">
+            Toggle Text Box
+        </button>
+        <div id="text-box" class="text-box form-group anim">
+            <div id="close" class="close">x</div>
+            <h3>Select Voice</h3>
+            <select id="voices">
+
+            </select>
+            <div class="form-group">
+                <label for="rate">Rate</label>
+                <div id="rate-value" class="badge badge-primary float-right">1</div>
+                <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+            </div>
+            <div class="form-group">
+                <label for="pitch">Pitch</label>
+                <div id="pitch-value" class="badge badge-primary float-right">1</div>
+                <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+            </div>
+            <textarea id="text" placeholder="Enter text too read...."></textarea>
+            <button class="btn" id="read">Read it out</button>
+        </div>
+
+        <main></main>
+    </div>
+    <script src="../assets/js/TextToSpeech.js"></script>
+</body>
+</html>

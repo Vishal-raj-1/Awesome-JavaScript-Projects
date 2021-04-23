@@ -1,0 +1,106 @@
+/* TAG SELECTORS */
+body {
+  background-image: url("../Images/money-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Montserrat";
+}
+
+h1 {
+  color: #184d47;
+  margin: 50px auto;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  width: 150px;
+}
+
+input {
+  background-color: rgba(204, 255, 189, 0.6);
+  border: none;
+  border-radius: 10px;
+  color: #1e6f5c;
+  font-size: 1.5rem;
+  height: 40px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  z-index: 10;
+} 
+
+p {
+  color: #ffffff;
+  text-align: center;
+}
+
+select {
+  background-color: #f4f3f3;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 100px;
+}
+
+/* CLASS SELECTORS */
+.btn {
+  background-color: #1e6f5c;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.2rem;
+  height: 50px;
+  margin: 30px auto 0;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  width: 150px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border: 1px solid #1e6f5c;
+  color: #1e6f5c;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.currency-1, .currency-2 {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+}
+
+.rate {
+  align-items: center;
+  background-color: rgba(230, 221, 59, 0.75);
+  color: #184d47;
+  display: flex;
+  font-size: 1.2rem;
+  height: 50px;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  top: -230px;
+  width: 250px;
+}
+
+.swap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: -325px;
+  z-index: 5;
+}
