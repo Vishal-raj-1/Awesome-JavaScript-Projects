@@ -992,6 +992,11 @@ let projectData = [
     projectImage: "assets/Images/guess.png",
     projectUrl: "public/guess.html",
 
+  },
+  {
+    projectName: "Colora",
+    projectImage: "assets/Images/colora.jpg",
+    projectUrl: "public/colora.html",
   }
 
 
