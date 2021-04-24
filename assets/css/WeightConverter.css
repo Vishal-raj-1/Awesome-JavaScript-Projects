@@ -1,83 +1,57 @@
-*{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #F4BE2C ;
+.rect1 {
+    height: 100vh;
+    width: 20vw;
+    background-color: rgba(216, 112, 112, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: -1000;
+}
+body {
+    background-image: url("../Images/WeightConverter.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+h1 {
+    margin: 50px auto 100px;
+    font-family: 'Original Surfer', cursive;
+}
+.box {
+    width: 50%;
+}
+input:focus {
+    border-color: #cc77df !important;
+    box-shadow: 0 0 0 .2rem #cc77df7a !important;
+}
+.btn {
+    width: 200px;
+}
+.btn-primary {
+    background-color: #cc77df !important;
+    border-color: #cc77df !important;
+}
+.btn-primary:hover {
+    background-color: #a208c5 !important;
+    border-color: #a208c5 !important;
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 .2rem #cc77df7a !important;
 }
 
-#container{
-    display: grid;
-    grid-row-gap: 5px;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: white;
-    width: 500px;
-    height: 600px;
-    margin-left: 35%;
-    box-shadow: black 14px 10px;
-    margin-top: 3%;
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .box {
+        width: 75%;
+    }
 }
-.box:hover{
-    height: 95px;
-    width: 395px !important;
-    transition: all 0.1s;
-}
-.box{
-    margin-top: -4rem;
-    width: 400px !important;
-    height: 80px;
-    background-color: turquoise;
-    width: 100px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: black 10px 5px;
-}
-#label{
-    background: transparent;
-}
-input{
-    background-color: white;
-    border: none;
-    margin-top: 6%;
-    text-align: center;
-    height: 30px;
-}
-.heading{
-    background-color: white;
-    border: none;
-    margin-top: 9%;
-    text-align: center;
-    height: 30px;
-    font-size: 25px;
-    font-weight: 900;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.btn{
-    margin-top: 1%;
-    margin-left: 43rem;
-}
-button{
-    margin-left: 0rem;
-    background-color: white;
-    width: 100px;
-    border: none;
-    height: 40px;
-    box-shadow: black 10px 5px;
-}
-button:active{
-    height: 30px;
-    width: 90px;
-    transition: all 0.1s;
-    border: none;
-}
-#highlight{
-    background-color: white;
-    padding: 2%;
-    border-radius: 5px;
-    box-shadow: black 2px 2px;
-}
-#highlight-head{
-    background-color:turquoise ;
-    padding: 3%;
-    border-radius: 5px;
-    box-shadow: black 10px 5px;
-    color: black;
+
+@media (max-width: 400px) {
+    .box {
+        width: 100%;
+    }
+    h1 {
+        font-size: 60px !important;
+    }
 }
