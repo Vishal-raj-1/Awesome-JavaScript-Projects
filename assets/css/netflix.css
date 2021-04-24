@@ -29,12 +29,12 @@ header img {
   border: 2px solid #303030;
   border-radius: 50px;
   font-family: inherit;
-  color: rgba(0, 0, 0, 0.774);
+  color: #eee;
   font-weight: bold;
   padding: 0.5rem 1rem;
 }
 .search::placeholder {
-  color: rgba(0, 0, 0, 0.705);
+  color: #eee;
 }
 
 .search:focus {
@@ -42,12 +42,12 @@ header img {
   outline: none;
 }
 
-#main {
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  margin: 0;
+
 }
 
 .movie {
@@ -95,7 +95,7 @@ header img {
 
 
 .overview {
-  background-color: rgba(221, 206, 206, 0.753);
+  background-color: #fff;
   padding: 2rem;
   position: absolute;
   max-height: 100%;
@@ -164,8 +164,4 @@ header img {
     width: 80%;
   }
 
-}
-
-.navbar{
-  top: 0%;
 }

@@ -11,16 +11,16 @@ function displaySelections(user, computer){
     const playerSelection = document.querySelector('#player-selection');
     const computerSelection = document.querySelector('#computer-selection');
     if (user === 'heads'){
-        playerSelection.style.color = '#74AC27';
+        playerSelection.style.color = 'green';
     }
     if (user === 'tails'){
-        playerSelection.style.color = '#FF8E1A';
+        playerSelection.style.color = 'blue';
     }
     if (computer === 'heads'){
-        computerSelection.style.color = '#74AC27';
+        computerSelection.style.color = 'green';
     }
     if (computer === 'tails'){
-        computerSelection.style.color = '#FF8E1A';
+        computerSelection.style.color = 'blue';
     }
     playerSelection.innerHTML = `${user}`;
     computerSelection.innerHTML = `${computer}`
