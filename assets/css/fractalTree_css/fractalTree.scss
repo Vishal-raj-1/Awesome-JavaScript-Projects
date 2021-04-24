@@ -1,0 +1,98 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ //  variables
+ $text-blue:#025D8C;
+ $green:#38ef7d;
+
+ body {
+     margin: 0;
+     padding: 0px;
+     background-color: #262626;
+     color: #fff;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+     font-family: 'Raleway', sans-serif;
+ }
+
+ h1 {
+     margin: 10px;
+     width: 100%;
+     letter-spacing: 2px;
+     text-align: center;
+ }
+
+ canvas {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+     background-color: #262626;
+     cursor: pointer;
+ }
+
+ hr {
+     width: 80%;
+     height: 1px;
+     margin: auto;
+     margin-top: 6px;
+     background-color: white;
+ }
+
+ .footer-holder {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     position: absolute;
+     margin: auto;
+     left: 0;
+     right: 0;
+     bottom: 4px;
+ }
+
+ footer {
+     margin-left: 5px;
+     font-size: small;
+
+     a {
+         text-decoration: none;
+         color: tomato;
+         outline: none;
+     }
+ }
+
+ span,
+ .slider {
+     outline: none;
+     width: 90%;
+     max-width: 200px;
+     cursor: pointer;
+     background: transparent;
+
+     &::-moz-range-progress {
+         background: $green;
+     }
+
+     &::-moz-range-track {
+         background: #efefef;
+         border-radius: 10px;
+     }
+
+     &::-moz-range-thumb {
+         width: 16px;
+         height: 16px;
+         border-radius: 50%;
+         background: $text-blue;
+         outline: none;
+         border: none;
+         cursor: pointer;
+     }
+ }
