@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/groceryList.html",
   },
   {
+    projectName: 'Temperature Converter',
+    projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
+    projectUrl: 'public/Temperature_Converter.html'
+  },
+  {
     projectName: 'Chess Game',
     projectImage: 'assets/GIFs/chess.gif',
     projectUrl: 'public/chess.html'
