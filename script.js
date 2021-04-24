@@ -1008,6 +1008,11 @@ let projectData = [
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
   }
+  , {
+    projectName: 'Music Generator',
+    projectImage: 'assets/Images/music_generator_ss.jpg',
+    projectUrl: 'public/music_generator.html'
+  }
 ]
 
 let projectContainer = document.getElementById("js-projects");
