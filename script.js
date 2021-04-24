@@ -1008,6 +1008,12 @@ let projectData = [
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
   }
+  ,
+  {
+    projectName: 'Dice it',
+    projectImage: 'assets/Images/dice_it.jfif',
+    projectUrl: 'public/diceit.html'
+  }
 ]
 
 let projectContainer = document.getElementById("js-projects");
