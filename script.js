@@ -392,12 +392,12 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
-  {
-    projectName: 'MemeUrl',
-    projectImage: 'assets/GIFs/memeUrl.png',
-    projectUrl: 'public/memeUrl.html'
-  }
-  ,
+  // {
+  //   projectName: 'MemeUrl',
+  //   projectImage: 'assets/GIFs/memeUrl.png',
+  //   projectUrl: 'public/memeUrl.html'
+  // }
+  // ,
   {
     projectName: 'RGB Color Guessing Game',
     projectImage: 'assets/GIFs/RGB_Color.gif',
