@@ -1,3 +1,4 @@
+
 * {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -57,8 +58,29 @@
     height: 140px;
     width: 300px;
     text-align: right;
+body{
+    background-color: #333;
+}
+
+.container{
+    text-align: center;
+    margin-top: 34px;
+}
+
+body{
+    background-color: #0f0f0f;
+
+}
+
+table{
+    margin: auto;
+}
+
+input {
+    border-radius: 10px;
     border: none;
     outline: none;
+
     padding: 10px;
     font-size: 30px;
     background: transparent;
@@ -118,4 +140,79 @@
     
   }
   
-        
+    background: #28f1ed96;
+    box-shadow: inset -3px -3px 7px #00f3fffa,
+                inset 2px 2px 5px #012d2ffc;
+}
+
+
+button{
+    font-size: 40px;
+    width: 100px;
+    height: 69px;
+    margin: 6px;
+    transform: scale(1);
+    outline: none;
+    border:none;
+    background: linear-gradient(315deg , #56d0c5, #89b0ad);
+    box-shadow: 3px 3px 8px 0px #224e4a,
+               -3px -3px 8px 0px #4ac3bcf2;
+    border-radius: 8px;
+}
+
+
+
+button:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    background-color: #13caefc9;
+}
+
+button:active:focus{
+    box-shadow: inset 3px 3px 8px 0px #224e4a,
+                -3px -3px 8px 0px #4ac3bcf2;
+}
+
+button:focus{
+    box-shadow: inset 3px 3px 5px 0px #224e4a,
+                inset -3px -3px 8px 0px #0bd1f98c;
+}
+
+.calculator{
+    background-image: linear-gradient(to right,
+                      rgb(30, 30, 30),
+                      rgb(42, 223, 220));
+    padding: 23px;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: -5px -5px 10px #224c4e,
+                 5px 5px 10px #224c4e;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aqua;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  table{
+  width: 80%;
+  }
+  input{
+    width: 90%;
+    font-size: 30px;
+    height: 50px;
+  }
+  button {
+    font-size: 25px;
+    width: 55px;
+    height: 40px;
+    margin: 4px;
+  }
+  .calculator{
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+

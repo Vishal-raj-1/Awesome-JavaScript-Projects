@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+*{
+  font-family: Lato, sans-serif;
+}
+
+body {
+  background-color: #E4E9FD;
+  background: radial-gradient(at 50% -20%, #ffe3fe, #b4aee8) fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #31326f;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  padding: 5px 75px 10px 30px;
+}
+
+#heading {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #A683E3;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.inputField {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 40px;
+}
+
+button.add-btn{
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  color: #f1faee;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+} 
+
+.add-btn {
+  opacity: 0.6;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.inputField button.add-btn:hover,
+.footer button.clearAll-btn:hover{
+  background: #721ce3;
+}
+
+.inputField button.add-btn.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.item {
+  position: relative;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #427f92;
+}
+
+.todo-list__label {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-list__label .checkbox {
+  opacity: 0;
+  appearance: none;
+}
+.todo-list__label .checkbox + .check {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #f1faee;
+  transition: 0.2s;
+}
+.todo-list__label .checkbox.completed + .check {
+  width: 25px;
+  height: 15px;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+}
+.todo-list__label .checkbox ~ span.todo-text {
+  position: relative;
+  left: 40px;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.todo-list__label .checkbox ~ span.todo-text::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f1faee;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.todo-list__label .checkbox.completed ~ span.todo-text {
+  color: #585b57;
+}
+.todo-list__label .checkbox.completed ~ span.todo-text::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.todoList li .trash{
+  position: absolute;
+  right: 2px;
+  width: 45px;
+  text-align: center;
+  color: #f1faee;
+  opacity: 0.5;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todoList li .trash:hover {
+  opacity: 1;
+}
+
+.box .footer{
+  display: flex;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  color: #f1faee;
+  min-height: 70px;
+  margin: 10px 0 10px 40px;
+}
+.footer button.clearAll-btn{
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #f1faee;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 100px;
+  background: #A683E3;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.footer button.clearAll-btn.active{
+  opacity: 1;
+  pointer-events: auto;
+}
