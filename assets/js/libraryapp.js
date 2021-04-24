@@ -113,6 +113,17 @@ function makeCard(bookToAdd)
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
+   var x= document.getElementsByClassName("starting");
+   x[0].style.display="none";
+   x[1].style.display="none";
+  
+}
+function startagain(){
+  var x= document.getElementsByClassName("starting");
+  x[0].style.display="block";
+  x[1].style.display="block";
+ 
+
 }
 
 function closeForm() {

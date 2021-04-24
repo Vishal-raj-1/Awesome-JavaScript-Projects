@@ -1,3 +1,7 @@
+
+body{
+    background-color: #37517E;
+}
 .header {
     display: flex;
     width: 100vmin;
@@ -16,14 +20,22 @@
  
 #newBook, #resetBooks {
 	flex-grow: 1;
-    
-    text-align: center;
-    width: 20rem;
-    height: 15vmin;
+  font-size:1rem;
+  border-radius: 50%; 
+  text-align: center;
+  width: 20rem;
+  height: 15vmin;
    
+}
+.bigcontainer{
+  background-color: #37517E;
+  
+  
 }
 
  .container {
+   background-color:  #62b7d1;
+   border:5px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; 
@@ -38,7 +50,7 @@
     text-align: center;
     height: 30vmin;
     width: 30vmin;
-    background-color: rgba(155, 145, 145, 0.541);
+    background-color:#37bd37;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     border-radius: 5px;
@@ -50,8 +62,10 @@
 
 /* Button used to open the contact form */
 #newBook, #resetBooks {
-  background-color: black;
-  color: white;
+  background-color: yellow;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
   
   border: none;
   cursor: pointer;
@@ -66,6 +80,15 @@
  #resetBooks:hover {
 	background-color: green;
 	color: white;
+  }
+.starting{
+  text-align: center;
+  margin:2rem 3rem;
+  
+  color:#111111;
+  font-size: 3rem;
+  
+
   }
 
 /* The popup form - hidden by default */
@@ -124,8 +147,8 @@
 }
 
 .removeButton {
-  background-color: gray;
-  color: white;
+  background-color: #96bd20;
+  color: black;
   width: 12vmin;
   height: 10vmin;
  margin-top: 4rem;
@@ -139,8 +162,8 @@
 }
 
 .readStatusBtn {
-  background-color: gray;
-  color: white;
+  background-color: #96bd20;
+  color: black;
   width: 12vmin;
   height: 10vmin;
   margin-left: 1rem;
