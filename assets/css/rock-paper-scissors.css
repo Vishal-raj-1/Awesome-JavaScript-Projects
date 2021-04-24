@@ -38,11 +38,11 @@ header h1{
 
 .score_board{
     border: 3px solid rgb(255, 255, 255);
-    width: 200px;
-    margin: 20px auto;
+    width:125px;
+    margin: 10px auto;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     border-radius: 5px;
     color: white;
@@ -51,16 +51,18 @@ header h1{
 .identity_card{
     background-color: red;
     font-size: 14px;
-    padding: 3px 3px;
+    padding:1px 1px;
 }
 
 #user_id{
+    justify-content: space-evenly;
     position: absolute;
     top: 10px;
     left:-20px;
 }
 
 #comp_id{
+    justify-content: space-evenly;
     position: absolute;
     top: 10px;
     right:-25px;
@@ -68,11 +70,11 @@ header h1{
 
 .result p{
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .choices{
@@ -105,18 +107,19 @@ header h1{
     margin-bottom: 20px;
 }
 
-.card{
-    margin-top: 20px;
-}
-
 .container{
     margin-top: 20px;
 }
 
 .card{
+    margin: 0 auto; 
+    float: none;
     background-color: rgb(243, 138, 0);
     border: 3px solid rgb(255, 255, 255);
     color: white;
+    margin: 0px auto;
+    float: none;
+    width: 12rem;
 }
 
 
@@ -137,14 +140,42 @@ h2{
 
 .col-md-3{
     border: 2px solid black;
-    text-align: center;
     
-}
-
-.card{
-    margin: 0px auto;
 }
 
 .col-md-6{
     border: 2px solid blue;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .card-body{
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    .score_board{
+        border: 3px solid rgb(255, 255, 255);
+        width:100px;
+        margin: 10px 50px;
+        margin-left: 50px;
+        margin-right: 0pxpx;
+    }   
+    .card{
+        width: 8rem;
+    }
+    .set{
+        position: relative;
+    }
+    .card_right{
+        position: absolute;
+        left: -20px;
+    }
 }
