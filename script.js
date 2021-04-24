@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Lorem Ipsum Generator",
+    projectImage: "assets/Images/lorem.png",
+    projectUrl: "public/lorem.html",
+  },
+  {
     projectName: "Ghost Text",
     projectImage: "assets/GIFs/ghost.gif",                
     projectUrl: "public/Ghost-Text.html",              
