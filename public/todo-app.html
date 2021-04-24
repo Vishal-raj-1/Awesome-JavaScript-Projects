@@ -1,131 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <link rel="stylesheet" href="../assets/css/todo-app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    
 </head>
 
 <body>
-
-    
-
-    <section id= "mood-box" style="background-color: #e40a5e;">
-        <!-- <div id= "mood"> -->
-            <!-- mood corner to toggle themes -->
-                <!-- <h5>THEME</h5><br> -->
-            <!-- </div> -->
-            
-            <h3>
-                <b>PLAY</b>
-            </h3>
-                
-                
-    
-            <div id= "btn-box">
-                <div id= "btn" style="color: white;">
-                    
-                </div>
-            </div>
-            <h3>
-                <b>WORK</b>
-            </h3>
-    </section>
-
-    <section id= "header-box" style="margin-top: 0.2%;">
-
-        <div id="myDIV" class="header">
-            <h2 style="color: black;">MY TO DO LIST</h2>
-            <input type="text" id="myInput" placeholder="Add task here...">
-            <span onclick="newElement()" class="addBtn">Add</span>
-          </div>
-    
-        </section>
-
-      
-    <main>
-    <section id= "toggle-sec">
-    
-    <!-- </section>
-
-    <section id= "input-sec"> -->
-        <ul id="myUL">
-            <li>Hit the gym</li>
-            <li class="checked">Pay bills</li>
-            <li>Meet George</li>
-            <li>Buy eggs</li>
-            <li>Read a book</li>
-            <li>Organize office</li>
-          </ul>
-        
-          <script src="../assets/js/todo-app.js"></script>
-
-    </section>
-
-    <section id= "output-sec-pseudo">
-
-
-                
-
-    </section>
-        </main>
-        <!-- inclusuion of the javascript file used for the toggle button and category backgrounds -->
-        <script type= "text/javascript" src="/javascript/javascript.js"></script>
-
+    <div id="heading">
+        <h1 class="date"></h1>
+    </div>
+    <div class="box">
+        <div class="inputField">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button class="add-btn" type="submit" disabled>+</button>
+        </div>
+        <ul class="todoList">
+        </ul>
+        <div class="footer">
+            <span>You have <span class="pendingTasks">0</span> pending tasks</span>
+            <button class="clearAll-btn">Clear All</button>
+        </div>
+    </div>
+    <script src="../assets/js/todo-app.js"></script>
 </body>
-
-<!--
- <body>
-    <div id="myDIV" class="header">
-        <h2>My To Do List</h2>
-        <input type="text" id="myInput" placeholder="Add task here...">
-        <span onclick="newElement()" class="addBtn">Add</span>
-      </div>
-
-    <main>
-        <section id= "toggle-sec">
-
-            <div id= "mood">
-            <!-- mood corner to toggle themes -->
-
-            <!--
-                <i>MOOD UPDATE CORNER: <br> Click on the box below for a theme change</i>
-            </div>
-        
-                <h5>SUBTLE</h5>
-                
-
-            <div id= "btn-box">
-                <div id= "btn">
-                </div>
-            </div>
-
-            <h5>BOLD</h5>
-            
-                
-        
-        <!-- </section> -->
-    <!-- </main> -->
-
-<!--
-      
-      <ul id="myUL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
-      </ul>
-    
-      <script src="../assets/js/todo-app.js"></script>
-
-    </section>
-    </main>
-  
-  </body>
-
-  -->
-  </html>
+</html>
 
 
