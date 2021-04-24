@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/quiz.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Quiz-App</title>
+</head>
+<body>
+  
+  <div class="container">
+  
+    <div id="question-container" class="hide">
+    <center>
+    
+      <div id="question">Question</div>
+      <img src="../assets/Images/quiz/puzzle-question.jpg" id="photo">
+      </center>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+    <div id="sol">
+    <h3>Solution:-</h3>
+    <p>Solution</p>
+    </div>
+    <button class="btn" style="border-radius: 10px; justify-content: center; align-items: center; margin-left: 45%; margin-top: 2rem;" id="stop">Stop Quiz</button>
+  </div>
+</body>
+<script defer src="../assets/js/quiz.js"></script>
+</html>
