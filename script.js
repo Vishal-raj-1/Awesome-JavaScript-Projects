@@ -1007,6 +1007,11 @@ let projectData = [
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
+  },
+  {
+    projectName: 'Personal Library',
+    projectImage: 'assets/Images/personal-library.png',
+    projectUrl: 'public/personal-library.html'
   }
 ]
 
