@@ -50,9 +50,9 @@ let projectData = [
   }
   ,
   {
-    projectName: 'Video Player',
-    projectImage: 'assets/GIFs/video.png',
-    projectUrl: 'public/video.html'
+    projectName: "Video Player",
+    projectImage: "assets/Images/videoPlayer.png",
+    projectUrl: "public/video.html",
   }
   ,
   {
