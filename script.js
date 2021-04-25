@@ -20,6 +20,11 @@ let projectData = [
     projectUrl: "public/Picture.html",
   },
   {
+    projectName: "Custom Countdown",
+    projectImage: "assets/GIFs/time.png",
+    projectUrl: "public/CustomCount.html",
+  },
+  {
     projectName: 'Chess Game',
     projectImage: 'assets/GIFs/chess.gif',
     projectUrl: 'public/chess.html'
