@@ -27,6 +27,12 @@ let projectData = [
   }
   ,
   {
+    projectName: 'Motorcycle Game',
+    projectImage: 'assets/GIFs/Bike.gif',
+    projectUrl: 'public/Motorcycle.html',
+  }
+  ,
+  {
     projectName: 'Gradient-Background Generator',
     projectImage: 'assets/Images/gradientBackgroundGen.jpg',
     projectUrl: 'public/gradientBackgroundGen.html'
