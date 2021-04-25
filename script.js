@@ -942,7 +942,7 @@ let projectData = [
     projectImage: "assets/GIFs/dragonfly.gif",
     projectUrl: "public/dragonfly.html",
   },
-  
+
   {
     projectName: "Conway's Game of life",
     projectImage: 'assets/Images/gameOfLife/demo.gif',
@@ -1056,6 +1056,11 @@ let projectData = [
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
+  }
+  , {
+    projectName: 'Personal Library',
+    projectImage: 'assets/Images/personal-library.png',
+    projectUrl: 'public/personal-library.html'
   }
 ]
 
