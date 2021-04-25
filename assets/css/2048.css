@@ -71,7 +71,7 @@ body {
   #score {
     font-size: 30px;
   }
-  @media only screen and (max-width:445px) {
+  @media only screen and (max-width:482px) {
     body{
       display: block;
     }
