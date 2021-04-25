@@ -380,6 +380,12 @@ let projectData = [
   }
   ,
   {
+    projectName: "Profile Card Generator",
+    projectImage: "assets/Images/Profilecard.png",
+    projectUrl: "public/profilecard.html",
+  },
+
+  {
     projectName: 'Day Of the Week',
     projectImage: 'assets/Images/DaysOfWeek.png',
     projectUrl: 'public/DaysOfWeek.html'
