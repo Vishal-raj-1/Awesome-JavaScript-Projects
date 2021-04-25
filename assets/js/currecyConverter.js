@@ -38,3 +38,7 @@ function displayResults(currency){
     finalValue.innerHTML = ((toRate/fromRate)*searchValue).toFixed(2);
     finalAmount.style.display = "block";
 }
+function clearVal(){
+   window.location.reload();
+	document.getElementsByClassName("finalValue").innerHTML = "";
+};

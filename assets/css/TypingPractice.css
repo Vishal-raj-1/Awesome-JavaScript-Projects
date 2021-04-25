@@ -25,7 +25,8 @@ body,
   width: 100%;
   /* width:700px;
     max-width: 90%; */
-  margin: 100px;
+  margin: 8%;
+  margin-top: 100px;
   box-shadow: 0 0 20px #38acec, 0 0 20px #38acec, 0 0 20px #38acec,
     0 0 20px #38acec, 0 0 20px #38acec, 0 0 20px #38acec, 0 0 20px #38acec;
 }
@@ -40,10 +41,11 @@ body,
   margin: auto;
 }
 .quote-display {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  font-size: 30;
-  text-align: justify;
+  margin-bottom: 1rem;
+  margin-left: 0px;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
 }
 .quote-author {
   margin-bottom: 30px;
@@ -60,7 +62,7 @@ body,
   height: 200px;
   padding: 20px;
   resize: none;
-  font-size: 20px;
+  font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -70,15 +72,16 @@ body,
 }
 .btn {
   width: 100%;
-  padding: 10px;
+  padding: 13px;
   /* background-color: red; */
-  text-align: right;
+  text-align: center;
 }
 
 #btnNext {
   border: 2px solid white;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 1.4rem;
+  margin: 7px;
 }
 #btnNext:hover {
   border: 2px solid #38acec;
@@ -89,7 +92,8 @@ body,
 #btnexit {
   border: 2px solid white;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 1.4rem;
+  margin: 7px;
 }
 #btnexit:hover {
   border: 2px solid #38acec;
