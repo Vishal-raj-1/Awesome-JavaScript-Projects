@@ -986,9 +986,26 @@ let projectData = [
   }
   ,
   {
+
+    projectName: "Mouse Trails effect",
+    projectImage: "assets/GIFs/MouseTrails.gif",
+    projectUrl: "public/MouseTrails.html",
+  },{
+    projectName: "Guess The Number",
+    projectImage: "assets/Images/guess.png",
+    projectUrl: "public/guess.html",
+
+  },
+  {
+    projectName: "Colora",
+    projectImage: "assets/Images/colora.jpg",
+    projectUrl: "public/colora.html",
+  },
+  {
     projectName: 'Typing Practice',
     projectImage: 'assets/GIFs/TypingSpeed.gif',
     projectUrl: 'public/TypingPractice.html'
+
   }
   ,
   {
