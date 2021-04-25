@@ -404,11 +404,19 @@ let projectData = [
   }
   ,
   {
+<<<<<<< HEAD
     projectName: 'MemeUrl',
     projectImage: 'assets/GIFs/memeUrl.png',
     projectUrl: 'public/memeUrl.html'
   }
   ,
+  {
+=======
+    projectName: "Yoga App",
+    projectImage: "assets/Images/yogascreen.png",
+    projectUrl: "public/yoga.html",
+  },
+>>>>>>> updating yoga app
   {
     projectName: 'RGB Color Guessing Game',
     projectImage: 'assets/GIFs/RGB_Color.gif',
