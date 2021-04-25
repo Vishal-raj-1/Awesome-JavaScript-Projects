@@ -932,6 +932,12 @@ let projectData = [
   }
   ,
   {
+    projectName: "Dragonfly Game",
+    projectImage: "assets/GIFs/dragonfly.gif",
+    projectUrl: "public/dragonfly.html",
+  },
+  
+  {
     projectName: "Conway's Game of life",
     projectImage: 'assets/Images/gameOfLife/demo.gif',
     projectUrl: 'public/gameOfLife.html'
