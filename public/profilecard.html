@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/profilecard.css">
+     
+    <title>ID CARD</title>
+</head>
+
+<body>
+    <div class="con">
+        <div class="details">
+
+            <h1>Generate your Profile Card </h1>
+            <H2>Enter your details here</H2>
+            <form id="details">
+                Upload your photo<br> <input type="file" id="fileupload" name="UploadFiles" accept="image/*"
+                    onchange="loadFile(event)"><br>
+                Your Good Name : <br><input type="text" id="name"><br>
+                Email : <br><input type="email" id="em"><br>
+                Phone : <br><input type="tel" id="tele"><br>
+                Date of Birth : <br><input type="date" id="date"><br>
+
+                <label for="gen">Gender :</label><br>
+                <select id="gen">
+                    <option disabled selected>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select><br>
+                Profession: <br> <input type="text" id="prof"><br>
+                <label for="lang">Language :</label><br>
+                <select id="lang">
+                    <option disabled selected>Select</option>
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>French</option>
+                    <option>Arabic</option>
+                </select><br>
+                <div class="but">
+                <button class="button" onclick="gene()" type="button">Generate</button>
+                <button class="button" onclick="res()" type="button">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="generate" id="Element" style="display: none;">
+            <div class="card">
+                <div class="card_title">
+                    <span class="text_title">Profile Card</span>
+                </div>
+                <div class="redline"></div>
+                <div class="photo">
+                    <img id="output" class="pro" src="">
+                </div>
+                <div class="card_row"><span class="text"></span></div>
+                <div class="blueline"></div>
+                <div class="card_row">
+                    <span id="n" class="text"><strong>Name: </strong></span>
+                </div>
+                <div class="blueline"></div>
+                <div class="card_row">
+                    <span id="e" class="text"> <strong>Email: </strong></span>
+                </div>
+                <div class="blueline"></div>
+                <div class="card_row">
+                    <span id="p" class="text"><strong>Phone: </strong></span>
+                </div>
+                <div class="blueline"></div>
+                <div class="card_row">
+                    <span class="text" id="d"> <strong>Date of Birth: </strong></span>
+                </div>
+                <div class="blueline"></div>
+                <div class="card_row">
+                    <span id="g" class="text"><strong>Gender: </strong></span>
+                </div>
+                <div class="blueline"></div>
+                <div class="card_row">
+                    <span id="pr" class="text"><strong>Profession: </strong></span></span>
+                </div>
+                <div class="blueline"></div>
+                <div class="card_row"><span id="l" class="text"><strong>Language: </strong></span></div>
+                <div class="blueline"></div>
+            </div>
+        </div>
+    </div>
+    <p style="text-align: center;">This website is intended to entertain.</p>
+    <script type="text/javascript" src="../assets/js/profilecard.js">
+    </script>
+</body>
+
+</html>
