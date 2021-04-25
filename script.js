@@ -6,8 +6,8 @@ let projectData = [
   },
   {
     projectName: "Ghost Text",
-    projectImage: "assets/GIFs/ghost.gif",                
-    projectUrl: "public/Ghost-Text.html",              
+    projectImage: "assets/GIFs/ghost.gif",
+    projectUrl: "public/Ghost-Text.html",
   },
   {
     projectName: "Grocery-List",
@@ -1018,6 +1018,10 @@ let projectData = [
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
+  }, {
+    projectName: 'Koch Snowflake',
+    projectImage: 'assets/Images/kochSnowflake/demo.png',
+    projectUrl: 'public/kochSnowflake.html'
   }
   , {
     projectName: 'Music Generator',
