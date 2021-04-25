@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/groceryList.html",
   },
   {
+    projectName: "Picture - Picture",
+    projectImage: "assets/Images/picture-picture.png",
+    projectUrl: "public/Picture.html",
+  },
+  {
     projectName: 'Chess Game',
     projectImage: 'assets/GIFs/chess.gif',
     projectUrl: 'public/chess.html'
@@ -24,6 +29,12 @@ let projectData = [
     projectName: 'Coin-Toss Game',
     projectImage: 'assets/Images/Coin-toss.jpg',
     projectUrl: 'public/CoinToss.html'
+  }
+  ,
+  {
+    projectName: 'Motorcycle Game',
+    projectImage: 'assets/GIFs/Bike.gif',
+    projectUrl: 'public/Motorcycle.html',
   }
   ,
   {
