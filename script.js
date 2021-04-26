@@ -6,8 +6,8 @@ let projectData = [
   },
   {
     projectName: "Ghost Text",
-    projectImage: "assets/GIFs/ghost.gif",                
-    projectUrl: "public/Ghost-Text.html",              
+    projectImage: "assets/GIFs/ghost.gif",
+    projectUrl: "public/Ghost-Text.html",
   },
   {
     projectName: "Grocery-List",
@@ -50,9 +50,9 @@ let projectData = [
   }
   ,
   {
-    projectName: 'Video Player',
-    projectImage: 'assets/GIFs/video.png',
-    projectUrl: 'public/video.html'
+    projectName: "Video Player",
+    projectImage: "assets/Images/videoPlayer.png",
+    projectUrl: "public/video.html",
   }
   ,
   {
@@ -379,6 +379,12 @@ let projectData = [
     projectUrl: 'public/quizapp.html'
   }
   ,
+  {
+    projectName: "Profile Card Generator",
+    projectImage: "assets/Images/Profilecard.png",
+    projectUrl: "public/profilecard.html",
+  },
+
   {
     projectName: 'Day Of the Week',
     projectImage: 'assets/Images/DaysOfWeek.png',
@@ -932,6 +938,12 @@ let projectData = [
   }
   ,
   {
+    projectName: "Dragonfly Game",
+    projectImage: "assets/GIFs/dragonfly.gif",
+    projectUrl: "public/dragonfly.html",
+  },
+  
+  {
     projectName: "Conway's Game of life",
     projectImage: 'assets/Images/gameOfLife/demo.gif',
     projectUrl: 'public/gameOfLife.html'
@@ -986,9 +998,26 @@ let projectData = [
   }
   ,
   {
+
+    projectName: "Mouse Trails effect",
+    projectImage: "assets/GIFs/MouseTrails.gif",
+    projectUrl: "public/MouseTrails.html",
+  },{
+    projectName: "Guess The Number",
+    projectImage: "assets/Images/guess.png",
+    projectUrl: "public/guess.html",
+
+  },
+  {
+    projectName: "Colora",
+    projectImage: "assets/Images/colora.jpg",
+    projectUrl: "public/colora.html",
+  },
+  {
     projectName: 'Typing Practice',
     projectImage: 'assets/GIFs/TypingSpeed.gif',
     projectUrl: 'public/TypingPractice.html'
+
   }
   ,
   {
@@ -1018,6 +1047,15 @@ let projectData = [
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
+  }, {
+    projectName: 'Koch Snowflake',
+    projectImage: 'assets/Images/kochSnowflake/demo.png',
+    projectUrl: 'public/kochSnowflake.html'
+  }
+  , {
+    projectName: 'Music Generator',
+    projectImage: 'assets/Images/music_generator_ss.jpg',
+    projectUrl: 'public/music_generator.html'
   }
 ]
 
