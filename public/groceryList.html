@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/groceryList.css">
+    <script src="https://kit.fontawesome.com/0615dc2069.js" crossorigin="anonymous"></script>
+    <title>GroceryList</title>
+    <style>
+        
+       .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            background-color: aliceblue;
+            margin-left: 30%;
+            margin-top: 30px;
+            }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Grocery List</h1><br>
+            <p>Create your list now!</p>
+        </div>
+
+        <div class="add_item" >
+            <div class="add">
+                    <input type="text" name="" class="add_input" placeholder="Add item name">
+                    <input type="number" name="" class="add_no" placeholder="Quantity" min="0">
+                    <button class="add_button">Add Item</button> 
+            </div>
+            <button type="submit" class="display-clear bt" >Clear All</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Listing the items -->
+        <div class="card">
+            <div class="item_list-display">      
+                <div class="display">
+                    <h2 class="display-title"> Your List</h2> 
+                    
+                    <div class="grocery-list center">
+                        <!--grocery item-->
+                        <!-- <div class="grocery-item" id="item-%id%">
+                            <div class="item_list">%item%</div>
+                            <div class="right clearfix">
+                                <div class="itemquant_list">%quantity%</div>
+                                <div class="item_delete">
+                                    <button class="item_delete--button">
+                                        <i class="icofont-close-circled"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!--End of grocery item-->
+                    </div>      
+                </div> 
+            </div>
+          </div>    
+    </div>
+
+<script language="javascript" src="../assets/js/groceryList.js"></script>
+</body>
+</html>
+
+
+
+
+
+ 
