@@ -1057,6 +1057,12 @@ let projectData = [
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
   }
+  ,
+   {
+    projectName: 'Postfix Expression Evaluator in JavaScript',
+    projectImage: 'assets/GIFs/postfix-evaluator.png',
+    projectUrl: 'public/postfixevaluator.html'
+  }
 ]
 
 let projectContainer = document.getElementById("js-projects");
