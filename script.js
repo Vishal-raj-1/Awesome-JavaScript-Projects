@@ -1057,6 +1057,11 @@ let projectData = [
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
   }
+  , {
+    projectName: 'Selection Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/selection-visualizing.jpg',
+    projectUrl: 'public/selectionsort.html'
+  }
 ]
 
 let projectContainer = document.getElementById("js-projects");
