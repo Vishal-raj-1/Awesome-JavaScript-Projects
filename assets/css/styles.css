@@ -820,3 +820,41 @@ header{
         display: none;
     }
 }
+
+
+/* Style for search bar */
+
+/* Style the search field */
+div.searchProject input[type=text] {
+    padding: 10px;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  div.searchProject button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #4667a0;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  div.searchProject button:hover {
+    background: #2e4b7e;
+  }
+  
+  /* Clear floats */
+  div.searchProject::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

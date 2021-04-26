@@ -1010,6 +1010,7 @@ let projectData = [
   }
 ]
 
+
 let projectContainer = document.getElementById("js-projects");
 console.log(projectContainer);
 
@@ -1036,9 +1037,56 @@ function getProjects() {
   );
 
   projectContainer.innerHTML = output;
-  console.log("projectContainer", projectContainer.innerHTML);
+   console.log("projectContainer", projectContainer.innerHTML);
 }
 
+// Search function starts
+let searchInput = document.getElementById('searchBar')
+let searchText='';
+
+searchInput.addEventListener('change',(e) => {
+  searchText= e.target.value  
+})
+
+
+let searchBtn = document.getElementById('searchBtn')
+
+searchBtn.addEventListener('click',(e) => {
+  var filterData=[]
+  if(searchText.length!==0){
+    projectData.forEach(obj => {
+       if(obj.projectName.toLowerCase().includes(searchText.toLowerCase())){
+        filterData.push(obj);
+       }
+    })
+    console.log(filterData)
+  }else{
+    filterData = [...projectData];
+    //console.log(filterData)
+  }
+  let filter = "";
+  filterData.forEach(
+    (data, item) =>
+    (filter += `
+    <div class="projectCard">
+    <a href=${data.projectUrl} class="hoverEffect" target="_blank">
+      <img
+        class="projectCardImg"
+        src=${data.projectImage}
+        alt="Card image cap"
+      />
+        <h5 class="projectCardTitle">${data.projectName}</h5>
+        <span class="computerLegs"></span>
+        <span class="computerBase"></span>
+    </a>
+  </div>
+  `)
+  );
+  projectContainer.innerHTML = filter;
+  
+})
+
+// search function ends
 window.onscroll = function () {
   myFunction();
 };
@@ -1053,3 +1101,5 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+
