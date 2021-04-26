@@ -548,13 +548,13 @@ let projectData = [
   }
   ,
   {
-    projectName: ' Key Event Code',
+    projectName: 'Key Event Code',
     projectImage: 'assets/GIFs/KeyEventCode.gif ',
     projectUrl: 'public/KeyEventCode.html'
   }
   ,
   {
-    projectName: ' Rotating Navigation',
+    projectName: 'Rotating Navigation',
     projectImage: 'assets/GIFs/RotatingNav.gif ',
     projectUrl: 'public/RotatingNav.html'
   }
@@ -1059,6 +1059,14 @@ let projectData = [
   }
 ]
 
+
+var projectDetails = projectData.slice(0);
+projectDetails.sort(function(a,b) {
+    var x = a.projectName.toLowerCase();
+    var y = b.projectName.toLowerCase();
+    return x < y ? -1 : x > y ? 1 : 0;
+});
+
 let projectContainer = document.getElementById("js-projects");
 console.log(projectContainer);
 
@@ -1066,7 +1074,7 @@ window.addEventListener("load", getProjects());
 
 function getProjects() {
   let output = "";
-  projectData.forEach(
+  projectDetails.forEach(
     (data, item) =>
     (output += `
     <div class="projectCard">
@@ -1082,11 +1090,13 @@ function getProjects() {
     </a>
   </div>
   `)
+
   );
 
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
 }
+
 
 window.onscroll = function () {
   myFunction();
