@@ -1,3 +1,4 @@
+/* NOTE: Almost all queries are arranged in alphabetical order */
 @keyframes spin {
   0% {
     background: url("../Images/heads.png");
@@ -20,44 +21,234 @@
   }
 }
 
-#image {
-  background: url("../Images/heads.png");
-  width: 227px;
-  height: 337px;
+body {
+  background-image: url(../Images/game-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family: "Exo 2";
+  align-items: center;
+}
+
+/* HEAD-TAILS BUTTON */
+button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  height: 75px;
+  outline: none;
+  width: 200px;
+  transition: all 0.25s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+}
+
+/* HEADING */
+h1 {
+  color: #81b214;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 25px 0 0;
+  padding: 1%;
+  text-align: center;
+}
+
+/* MAKE A SELECTION */
+h2 {
+  color: #e45826;
+  font-size: 3rem;
+}
+
+/* PLAYER-COMPUTER-SELECTED */
+h3 {
+  margin-bottom: 0;
 }
 
 .animate {
   background: url("../Images/heads.png");
-  width: 227px;
-  height: 337px;
+  width: 153px;
+  height: 153px;
   animation-name: spin;
   animation-iteration-count: 2;
   animation-duration: 1s;
 }
 
+/* CONTAINER-DIV */
 .canvas {
-  width: 800px;
-  height: 500px;
-  margin: 50px auto;
+  display: flex;
+  height: 450px;
+  justify-content: space-between;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
+  width: 900px;
 }
 
+/* SECONDARY-DIV containing buttons and player-computer selected */
+.secondary {
+  width: 70%;
+}
+
+/* PLAYER-COMPUTER-SELECTED */
+.selection {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #C84825;
+  display: inline-block;
+  height: 100px;
+  margin: 30px auto 0;
+  height: 192px;
+  width: 45%;
+}
+
+.score {
+   display: flex;
+}
+
+/* CENTER-DIV containing coin-image */
 #center {
-  width: 227px;
-  margin: 15px auto;
+  align-items: center;
+  background: rgba(254, 255, 222, 0.5);
+  border-radius: 50%;
+  display: flex;
+  height: fit-content;
+  margin: 100px 10px;
+  padding: 4%;
 }
 
-.selection,
+/* COMPUTER-SCORE */
+#computer {
+  background: linear-gradient(90deg, rgba(41, 187, 137, 0.2) 0%, rgba(40, 150, 114, 0.5) 100%);
+  border-radius: 0 0 0 20px;
+  color: #f58634;
+}
+
+#heading {
+  width: fit-content;
+}
+
+/* HEADS-TAILS HOVER */
+#heads:hover {
+  background-color: rgba(129, 178, 20, 0.75);
+}
+#tails:hover {
+  background-color: rgba(255, 142, 26, 0.75);
+}
+
+/* INITIAL-IMAGE */
+#image {
+  background: url("../Images/heads.png");
+  background-repeat: no-repeat;
+  width: 153px;
+  height: 153px;
+}
+
+/* SCORE-CARD-DIV */
 #player,
 #computer {
-  display: inline;
-  margin: 25px;
-  font-size: 1.3em;
+  padding: 1%;
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+  width: 300px;
 }
 
-button {
-  font-size: 1.2em;
-  border-radius: 5px;
+/* PLAYER-SCORE */
+#player {
+  background: linear-gradient(90deg, rgba(41, 187, 137, 0.2) 0%, rgba(40, 150, 114, 0.5) 100%);
+  border-radius: 0 0 20px 0;
+  display: inline-block;
+  color: #9ede73;
+}
+
+#player-selection, #computer-selection {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+/* RESPONSIVE-DESIGN FOR PHONES */
+@media screen and (min-width: 374px) and (max-width: 767px) {
+  html {
+    height: 100%;
+  }
+  body {
+    background-size: cover;
+    height: max-content;
+  }
+  button {
+    font-size: 1.5rem;
+    height: 50px;
+    width: 150px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin: 20px 0 10px;
+  }
+
+  .canvas {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+    width: fit-content;
+  }
+  .score {
+    font-size: 0.5rem;
+    width: 90%;
+  }
+  .secondary {
+    width: fit-content;
+  }
+  .selection {
+    height: 192px;
+  }
+
+  #center {
+    margin: 25px;
+    width: min-content;
+  }
+}
+
+/* RESPONSIVE-DESIGN FOR iPad */
+@media screen and (min-width: 768px) and (max-width: 1105px) {
+  body {
+    background-size: cover;
+    height: 1366px;
+    margin: 0;
+    padding: 3%;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  h3 {
+    padding: 0 3%;
+  }
+
+  .canvas {
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    padding-bottom: 25px;
+    width: fit-content;
+  }
+  .secondary {
+    width: fit-content;
+  }
+  .selection {
+    height: 192px;
+  }
+
+  #center {
+    margin: 25px;
+    width: min-content;
+  }
 }
