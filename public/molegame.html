@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-mole</title>
+    <link rel="stylesheet" href="../assets/css/molegame.css">
+    <script src="../assets/js/molegame.js" defer></script>
+</head>
+<body>
+  
+    <h1>Whack-a-mole! <span class="score">0</span></h1>
+  <button onClick="startGame()">Start!</button>
+  <h3 class="highscore">Highscore:<span class="hscore score">0</Highscore:span></h3>
+    <button onClick="resetHighScore()">Reset Highsscore!</button>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Whack A Mole!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="../assets/css/molegame.css">
-
-
-    </head>
-
-    <body>
-        <div class="center py-3">
-            <h1>Whack-a-mole! </h1>
-            <h3>Score <span class="score">0</span></h3>
-        </div>
-
-        <div class="center">
-            <button class="btn btn-primary button" id="btn" onClick="startGame()">Start!</button>
-        </div>
-
-        <div class="main">
-            <div class="game">
-                <div class="hole hole1">
-                    <div class="mole"></div>
-                </div>
-                <div class="hole hole2">
-                    <div class="mole"></div>
-                </div>
-                <div class="hole hole3">
-                    <div class="mole"></div>
-                </div>
-                <div class="hole hole4">
-                    <div class="mole"></div>
-                </div>
-                <div class="hole hole5">
-                    <div class="mole"></div>
-                </div>
-                <div class="hole hole6">
-                    <div class="mole"></div>
-                </div>
-            </div>
-        </div>
-
-        <script src="../assets/js/molegame.js"></script> 
-    </body>
-
+<div class="container">
+  <div class="game">
+    <div class="hole hole1">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole7">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole8">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole9">
+      <div class="mole"></div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
+
