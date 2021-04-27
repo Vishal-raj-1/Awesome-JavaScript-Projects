@@ -1039,18 +1039,6 @@ let projectData = [
   }
   ,
   {
-<<<<<<< HEAD
-    projectName: "Typing Practice",
-    projectImage: "assets/GIFs/TypingSpeed.gif",
-    projectUrl: "public/TypingPractice.html",
-  },
-  {
-    projectName: "Hexadecimal to RGB Converter",
-    projectImage: "assets/GIFs/Hex_to_rgb.gif",
-    projectUrl: "public/Hexadecimal_to_RGB.html",
-  },
-];
-=======
     projectName: 'Guess The Number',
     projectImage: 'assets/Images/guess.png',
     projectUrl: 'public/guess.html'
@@ -1068,9 +1056,13 @@ let projectData = [
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
+  },
+  {
+    projectName: 'Memory game',
+    projectImage: 'assets/Images/Memory_game/Mind_game.png',
+    projectUrl: 'public/Memory_game.html'
   }
 ]
->>>>>>> c7fe3ce13b3f41e8b86bfed1292d2127be75e9ae
 
 let projectContainer = document.getElementById("js-projects");
 console.log(projectContainer);
