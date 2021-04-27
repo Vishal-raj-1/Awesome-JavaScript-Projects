@@ -1067,6 +1067,12 @@ let projectData = [
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
   }
+  ,
+  {
+    projectName: 'Prefix Expression Evaluator in JavaScript',
+    projectImage: 'assets/GIFs/prefix-evaluator.png',
+    projectUrl: 'public/prefixevaluator.html'
+  }
   , {
     projectName: 'Insertion Sort Visualizer in JavaScript',
     projectImage: 'assets/GIFs/insertion-visualizer.png',
