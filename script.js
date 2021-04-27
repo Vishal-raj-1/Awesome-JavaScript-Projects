@@ -1067,6 +1067,11 @@ let projectData = [
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
   }
+  , {
+    projectName: 'Insertion Sort Visualizer in JavaScript',
+    projectImage: 'assets/GIFs/insertion-visualizer.png',
+    projectUrl: 'public/insertionsort.html'
+  }
   ,
    {
     projectName: 'Postfix Expression Evaluator in JavaScript',
