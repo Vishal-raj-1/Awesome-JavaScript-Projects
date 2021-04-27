@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Music Box",
+    projectImage: "assets/GIFs/Music-Box.gif",
+    projectUrl: "public/Music-box.html",
+  },
+  {
     projectName: "Lorem Ipsum Generator",
     projectImage: "assets/Images/lorem.png",
     projectUrl: "public/lorem.html",
@@ -18,6 +23,11 @@ let projectData = [
     projectName: "Picture - Picture",
     projectImage: "assets/Images/picture-picture.png",
     projectUrl: "public/Picture.html",
+  },
+  {
+    projectName: "Custom Countdown",
+    projectImage: "assets/GIFs/time.png",
+    projectUrl: "public/CustomCount.html",
   },
   {
     projectName: 'Chess Game',
@@ -548,13 +558,13 @@ let projectData = [
   }
   ,
   {
-    projectName: ' Key Event Code',
+    projectName: 'Key Event Code',
     projectImage: 'assets/GIFs/KeyEventCode.gif ',
     projectUrl: 'public/KeyEventCode.html'
   }
   ,
   {
-    projectName: ' Rotating Navigation',
+    projectName: 'Rotating Navigation',
     projectImage: 'assets/GIFs/RotatingNav.gif ',
     projectUrl: 'public/RotatingNav.html'
   }
@@ -1063,7 +1073,26 @@ let projectData = [
     projectImage: 'assets/GIFs/prefix-evaluator.png',
     projectUrl: 'public/prefixevaluator.html'
   }
+  , {
+    projectName: 'Insertion Sort Visualizer in JavaScript',
+    projectImage: 'assets/GIFs/insertion-visualizer.png',
+    projectUrl: 'public/insertionsort.html'
+  }
+  ,
+   {
+    projectName: 'Postfix Expression Evaluator in JavaScript',
+    projectImage: 'assets/GIFs/postfix-evaluator.png',
+    projectUrl: 'public/postfixevaluator.html'
+  }
 ]
+
+
+var projectDetails = projectData.slice(0);
+projectDetails.sort(function(a,b) {
+    var x = a.projectName.toLowerCase();
+    var y = b.projectName.toLowerCase();
+    return x < y ? -1 : x > y ? 1 : 0;
+});
 
 let projectContainer = document.getElementById("js-projects");
 console.log(projectContainer);
@@ -1072,7 +1101,7 @@ window.addEventListener("load", getProjects());
 
 function getProjects() {
   let output = "";
-  projectData.forEach(
+  projectDetails.forEach(
     (data, item) =>
     (output += `
     <div class="projectCard">
@@ -1088,11 +1117,13 @@ function getProjects() {
     </a>
   </div>
   `)
+
   );
 
   projectContainer.innerHTML = output;
   console.log("projectContainer", projectContainer.innerHTML);
 }
+
 
 window.onscroll = function () {
   myFunction();
