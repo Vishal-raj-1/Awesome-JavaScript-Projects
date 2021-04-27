@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag and Drop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <link rel="icon" type="image/png" href="../assets/Images/favicons/11.png">
     <link rel="stylesheet" href="../assets/css/DragToDo.css">
 </head>
@@ -25,6 +26,10 @@
                     <div class="add-btn" onclick="showInputBox(0)">
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
+                    </div>
+                    <div class="add-btn clear" onclick="clearBacklog()">
+                        <span class="minus-sign"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                        <span>Clear</span>
                     </div>
                     <div class="add-btn solid" onclick="hideInputBox(0)">
                         <span>Save Item</span>
@@ -49,6 +54,10 @@
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
+                    <div class="add-btn clear" onclick="clearInProgress()">
+                        <span class="minus-sign"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                        <span>Clear</span>
+                    </div>
                     <div class="add-btn solid" onclick="hideInputBox(1)">
                         <span>Save Item</span>
                     </div>
@@ -72,6 +81,10 @@
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
+                    <div class="add-btn clear" onclick="clearComplete()">
+                        <span class="minus-sign"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                        <span>Clear</span>
+                    </div>
                     <div class="add-btn solid" onclick="hideInputBox(2)">
                         <span>Save Item</span>
                     </div>
@@ -94,6 +107,10 @@
                     <div class="add-btn" onclick="showInputBox(3)">
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
+                    </div>
+                    <div class="add-btn clear" onclick="clearOnHold()">
+                        <span class="minus-sign"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                        <span>Clear</span>
                     </div>
                     <div class="add-btn solid" onclick="hideInputBox(3)">
                         <span>Save Item</span>

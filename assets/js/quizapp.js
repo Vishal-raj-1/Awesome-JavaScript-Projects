@@ -103,8 +103,9 @@ loadQuiz()
 function loadQuiz() {
     deselectAnswers()
 
+    currentQuiz = Math.floor(Math.random() * quizData.length);
     const currentQuizData = quizData[currentQuiz]
-     quizData.splice(currentQuiz, 1);
+
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
@@ -134,22 +135,21 @@ submitBtn.addEventListener('click', () => {
         if (answer === quizData[currentQuiz].correct) {
             score++
         }
-        currentQuiz++
         percent = (questionCounter / maximumQuestions) * 100
         progressBarWidth.style.display = 'block'
         progressBarWidth.style.width = percent + '%'
 
+        quizData.splice(currentQuiz, 1);
 
-        if (questionCounter <=maximumQuestions) {
+        if (questionCounter <maximumQuestions) {
             questionCounter++;
-            currentQuiz = Math.floor(Math.random() * quizData.length);
             loadQuiz()
+
         } else {
             setTimeout(function () {
                 quiz.innerHTML = `
-                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-                <button onclick="location.reload()">Reload</button>
-            `
+                <h2>You answered ${score}/${maximumQuestions} questions correctly</h2>
+                <button onclick="location.reload()">Reload</button>`
             }, 550)
 
         }

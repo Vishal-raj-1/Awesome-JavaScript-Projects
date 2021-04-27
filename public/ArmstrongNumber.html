@@ -28,14 +28,17 @@
       <div id="div2">
         <span class="span1">Check for Armstrong Number ? </span>
         <br>
-        <input type="text" placeholder="Enter the Number" id="inp" class="input1"/>
-        <br>
-        <button onclick="ArmstrongChecker()" class="btn1">Check</button>
-        <div class="output">
-        <span style="">
-          <span id="text" style="color: black; font-weight: 600"></span>
-        </span>
-      </div>
+        <form id="form" onsubmit="ArmstrongChecker()">
+          <input type="text" placeholder="Enter the Number" id="inp" class="input1"/>
+          <br>
+        </form>
+          <button onclick="ArmstrongChecker()" class="btn1">Check</button>
+          <button onclick="myFunction()" class="btn1">Reset</button>
+          <div class="output">
+            <span style="">
+              <span id="text" style="color: black; font-weight: 600"></span>
+            </span>
+          </div>
       </div>
       <br>
     </div>

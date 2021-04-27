@@ -7,10 +7,10 @@ padding: 0px;
 --button:#1D4ED8;
 --minions: #FCD34D;
 }
-img{
-max-width: 350px;
-display: block;
-margin: auto;  
+img {
+  max-width: 300px;
+  display: block;
+  margin: auto;
 }
 
 textarea {
@@ -24,12 +24,12 @@ padding: 1rem;
 background-color: var(--minions);
 color: black;
 padding: 2rem;
-text-align: center;
+text-align: -webkit-center;
 
 }
 .txt{
 font-family: 'Roboto Slab', serif;
-font-size: x-large;
+font-size: xxx-large;
 }
 .container{
  padding: 0rem 1rem;
@@ -62,6 +62,6 @@ background-color: var(--minions);
 .footer-header{
 font-family: 'Roboto Slab', serif;
 text-align: center;
-max-width: 600px;
+max-width: 930px;
 margin: auto;
 }
