@@ -189,6 +189,9 @@ ul {
   position: relative;
   top: -3px;
 }
+.minus-sign{
+  margin: 0.4rem;
+}
 
 .add-container {
   margin: 10px;
