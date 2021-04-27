@@ -193,16 +193,16 @@ h3 {
         display: flex;
         flex-direction: column;
         height: fit-content;
-        margin: 0 auto;
+        margin: 0 auto 30px;
         text-align: center;
-        width: 80%;
+        width: fit-content;
     }
 
     .main {
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: 1025px;
+        height: fit-content;
         margin: 0 auto;
         width: 75%;
     }
@@ -214,13 +214,18 @@ h3 {
 
     .results-box {
         display: flex;
+        margin-bottom: 30px;
         width: fit-content;
     }
 
     #weight-guide {
         bottom: 0;
+        display: flex;
+        flex-direction: column;
         height: fit-content;
+        left: 0;
+        margin: auto;
         position: relative;
-        width: auto;
+        width: 80%;
     }
 }
