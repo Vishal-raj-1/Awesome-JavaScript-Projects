@@ -1070,6 +1070,12 @@ let projectData = [
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
+  },
+  {
+    projectName: 'To-do0 app',
+    projectImage: 'assets/GIFs/todo.gif',
+    projectUrl: 'public/todoapp.html'
+
   }, {
     projectName: 'Koch Snowflake',
     projectImage: 'assets/Images/kochSnowflake/demo.png',
