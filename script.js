@@ -1103,6 +1103,12 @@ let projectData = [
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
   }
+  ,
+  {
+    projectName: 'Dice it',
+    projectImage: 'assets/Images/dice_it.jfif',
+    projectUrl: 'public/diceit.html'
+  }
 ]
 
 
