@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monsterrat", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+  margin: 10px 30%;
+}
+.image-container img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* Media Query for Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  .image-container {
+    margin: 10px;
+  }
+}
