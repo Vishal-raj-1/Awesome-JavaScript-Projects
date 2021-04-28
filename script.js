@@ -1,11 +1,15 @@
 let projectData = [
   {
-
+    projectName: "ACE_EYE",
+    projectImage: "assets/Images/ACE_EYE.png",
+    projectUrl: "public/ACE_EYE.html",
+  },
+  {
     projectName: "Sudoku Game",
     projectImage: "assets/Images/sudoku.png",
     projectUrl: "public/Sudoko.html"
-  }
-  ,
+  },
+
   {
     projectName: "Music Box",
     projectImage: "assets/GIFs/Music-Box.gif",
