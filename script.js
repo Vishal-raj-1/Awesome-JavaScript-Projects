@@ -1106,7 +1106,7 @@ let projectData = [
 
   , {
     projectName: 'Selection Sort Visualizer in JavaScript',
-    projectImage: 'assets/Images/selection-visualizing.jpg',
+    projectImage: 'assets/GIFs/selection-visualizing.jpg',
     projectUrl: 'public/selectionsort.html'
   }
   ,
