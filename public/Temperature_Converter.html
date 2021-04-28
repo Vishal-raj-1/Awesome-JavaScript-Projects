@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature converter</title>
+        
+        <link rel="icon" href="../assets/Images/Temperature_Converter_logo.png">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script> 
+
+        <link rel="stylesheet" href="../assets/css/Temperature_Converter.css">
+    </head>
+
+    <body>
+
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="text-center display-2">Temperature Converter</h1>
+        </div>
+
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="card border-info">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Convert Fahrenheit</h4>
+                        <p class="card-text">to Celsius : ℃ = ( ℉ - 32 ) / 1.8</p>
+                        <p class="card-text">to Kelvin : K = (( ℉ - 32 ) / 1.8 ) + 273.15</p>
+                        <button type="button" class="btn btn-outline-info" onclick="fahrenheit()">Convert</button>
+                    </div>
+                </div>
+
+                <div class="card border-warning">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Convert Celsius</h4>
+                        <p class="card-text">to Fahrenheit : ℉ = ( ℃ * 1.8 ) + 32</p>
+                        <p class="card-text">to Kelvin : K = ℃ + 273.15</p>
+                        <button type="button" class="btn btn-outline-warning" onclick="celsius()">Convert</button>
+                    </div>
+                </div>
+
+                <div class="card border-success">
+                    <div class="card-body">
+                        <h4 class="card-title text-success">Convert Kelvin</h4>
+                        <p class="card-text">to Fahrenheit : ℉ = (( K - 273.15 ) * 1.8 ) + 32</p>
+                        <p class="card-text">to Celsius : ℃ = K - 273.15</p>
+                        <button type="button" class="btn btn-outline-success" onclick="kelvin()">Convert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="d-flex flex-wrap justify-content-center">
+
+                <div id="fah" class="text-center text-info"></div>
+                <div id="cel" class="text-center text-warning"></div>
+                <div id="kel" class="text-center text-success"></div>
+            </div>
+
+        </div>
+
+        <p class="footer text-center">Made with <i class="fas fa-heart"></i> by <a href="https://github.com/AnshikaAgrawal5501">Anshika Agrawal</a></p>
+        
+
+        <script src="../assets/js/Temperature_Converter.js"></script>
+    </body>
+</html>

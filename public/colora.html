@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colora</title>
+    <link rel="icon"  href="../assets/Images/colora_favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../assets/css/colora.css">
+</head>
+<body>
+    <!-- Tool Bar -->
+    <div class="top-bar">
+        <!-- Active Tool -->
+        <div class="active-tool">
+            <span id="active-tool" title="Active Tool">Brush</span>
+        </div>
+        <!-- Brush -->
+        <div class="brush tool">
+            <i class="fas fa-brush" id="brush" title="Brush"></i>
+            <input  class="jscolor" value="a51dab" id="brush-color">
+            <span class="size" id="brush-size" title="Brush Size">10</span>
+            <input type="range" min="1" max="50" value="10" class="slider" id="brush-slider">
+        </div>
+        <!-- Bucket -->
+        <div class="bucket tool">
+            <i class="fas fa-fill-drip" title="Background Color"></i>
+            <input  class="jscolor" value="fff" id="bucket-color">
+        </div>
+        <!-- Eraser -->
+        <div class="tool">
+            <i class="fas fa-eraser" id="eraser" title="Eraser"></i>
+        </div>
+        <!-- Clear Canvas -->
+        <div class="tool">
+            <i class="fas fa-undo-alt" id="clear-canvas" title="Clear"></i>
+        </div>
+        <!-- Save Local Storage -->
+        <div class="tool">
+            <i class="fas fa-download" id="save-storage" title="Save Local Storage"></i>
+        </div>
+        <!-- Load Local Storage -->
+        <div class="tool">
+            <i class="fas fa-upload" id="load-storage" title="Load Local Storage"></i>
+        </div>
+        <!-- Clear Local Storage -->
+        <div class="tool">
+            <i class="fas fa-trash-alt" id="clear-storage" title="Clear Local Storage"></i>
+        </div>
+        <!-- Download Image -->
+        <div class="tool">
+            <a id="download">
+                <i class="far fa-save" title="Save Image File"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="mobile-message" >
+        <h2>Please use on larger screen.</h2>
+    </div>
+
+    <!-- Script -->
+    <script src="../assets/js/jscolor.js"></script>
+    <script src="../assets/js/colora.js"></script>
+</body>
+</html>
