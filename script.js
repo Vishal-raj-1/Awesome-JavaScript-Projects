@@ -37,6 +37,11 @@ let projectData = [
     projectUrl: 'public/Temperature_Converter.html'
   },
   {
+    projectName: 'Animated Background',
+    projectImage: 'assets/GIFs/Animated_Background.gif',
+    projectUrl: 'public/Animated_Background.html'
+  },
+  {
     projectName: "Picture - Picture",
     projectImage: "assets/Images/picture-picture.png",
     projectUrl: "public/Picture.html",
