@@ -72,11 +72,22 @@ let projectData = [
   }
   ,
   {
+
+    projectName: "Library-App",
+    projectImage: "assets/GIFs/libraryapp.gif",
+    projectUrl: "public/libraryapp.html",
+  },
+  {
+    projectName: "Counter",
+    projectImage: "assets/GIFs/counter.gif",
+    projectUrl: "public/counter.html",
+  },
     projectName: 'JavaScript Interest Calculator',
     projectImage: 'assets/GIFs/Interest_Calculator.gif',
     projectUrl: 'public/InterestCalculator.html'
   }
   ,
+
   {
     projectName: 'Car Game',
     projectImage: 'assets/GIFs/cargame.gif',
