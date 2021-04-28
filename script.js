@@ -28,6 +28,11 @@ let projectData = [
     projectUrl: "public/groceryList.html",
   },
   {
+    projectName: 'Temperature Converter',
+    projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
+    projectUrl: 'public/Temperature_Converter.html'
+  },
+  {
     projectName: "Picture - Picture",
     projectImage: "assets/Images/picture-picture.png",
     projectUrl: "public/Picture.html",
