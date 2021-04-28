@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="../assets/css/libraryapp.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>LIBRARY</h1>
+    </header>
+    <form class="input-group">
+        <input type="text" placeholder="Book Name" id="title" name="title" required/>
+        <input type="text" placeholder="Author" id="author" name="author" required/>
+        <select name="status" id="read-status">
+            <option value="Not Read">Not Read</option>
+            <option value="Read">Read</option>
+        </select>
+        <input type="submit" value="Add" name="Add" id="add"/>
+    </form>
+    <main id="main">
+        <table>
+            <thead>
+                <tr>
+                    <th>TITLE</th>
+                    <th>AUTHOR</th>
+                    <th>STATUS</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </main>
+    <script src="../assets/js/libraryapp.js"></script>
+</body>
+
+</html>

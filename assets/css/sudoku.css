@@ -1,0 +1,205 @@
+html {
+  position: relative;
+}
+
+body {
+  background-color: #e5ecf3;
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #497696;
+}
+
+.sudoku {
+  height: 60%;
+}
+
+table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  text-align: center;
+  border-spacing: none;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+td {
+  border: 2px solid #38702d;
+  padding: 0;
+}
+
+td td {
+  border: 1px solid #457c00;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: darkred;
+  z-index: 100;
+}
+
+.nums {
+  text-align: center;
+  height: 30px;
+  margin-bottom: 50px;
+  display: none;
+}
+
+.orig {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  font-size: 1.25em;
+  border: 2px solid #9999ee;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  //font-weight: bold;
+}
+
+.orig p {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+/*   z-index: 1; */
+}
+
+.btn {
+  width: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #497696;
+  margin: 0 auto;
+  text-align: center;
+  color: darkred;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #de4c35;
+  color: #497696;
+}
+
+#start {
+  width: 120px;
+}
+
+.target {
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  ms-transition: 0.2s linear;
+  moztransition: 0.2s linear;
+}
+
+
+/*//settings*/
+
+.settings {
+  position: absolute;
+  /*width: 40%;*/
+  top: -625px;
+  left: 20%;
+  right: 20%;
+  border: 10px solid lightgrey;
+  border-radius: 100px;
+  padding: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #00876b;
+  transition: 0.5s linear;
+  z-index: 10;
+}
+
+.settings h2 {
+  color: darkorange;
+}
+
+.settings h2,
+.settings h4,
+.settings h3 {
+  text-align: center;
+}
+
+.settings h4 {
+  color: darkgrey;
+}
+
+.settings legend {
+  color: #beffee;
+  border: 1px solid;
+  padding: 0 10px;
+}
+
+.settings fieldset {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border: 1px solid yellow;
+}
+
+.settings  label {
+  float: left;
+  width: 80px;
+  color: #ffff00;
+}
+.settings .setThree label {
+  width: 175px;
+  color: MISTYROSE;
+  font-weight: bold;
+}
+.settings .setThree input {
+  font-size: 1em;
+}
+
+.settings #min {
+  margin-bottom: 0;
+  color: darkgrey;
+  cursor: pointer;
+}
+
+.settings #min:hover {
+  color: orange;
+}
+
+.keypad {
+  visibility: hidden;
+  position: absolute;
+  width: 200px;
+  left: 45%;
+  top: 5%;
+  border: 5px solid grey;
+  text-align: center;
+  background: lightgreen;
+  border-radius: 5px;
+}
+
+.keypad div {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0px;
+  border: 1px solid lightgreen;
+  line-height: 60px;
+  font-size: 3em;
+  background: #74a4c0;
+  cursor: pointer;
+  color: yellow;
+}
+
+.keypad .close {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid orange;
+  line-height: 20px;
+  font-size: 20px;
+  color: tomato;
+  right: 0;
+  top: -18px;
+  background-color: steelblue;
+}
