@@ -1024,10 +1024,16 @@ let projectData = [
     projectUrl: "public/colora.html",
   },
   {
+    projectName: "Infinite Scroll Image Gallery",
+    projectImage: "assets/Images/infiniteScroll.png",
+    projectUrl: "public/infiniteScroll.html",
+
+  },
+  
+  {
     projectName: 'Typing Practice',
     projectImage: 'assets/GIFs/TypingSpeed.gif',
     projectUrl: 'public/TypingPractice.html'
-
   }
   ,
   {
