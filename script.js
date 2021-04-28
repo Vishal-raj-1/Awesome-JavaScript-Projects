@@ -74,7 +74,7 @@ let projectData = [
   {
 
     projectName: "Library-App",
-    projectImage: "assets/GIFs/libraryapp.gif",
+    projectImage: "assets/Images/libraryapp.png",
     projectUrl: "public/libraryapp.html",
   },
   {

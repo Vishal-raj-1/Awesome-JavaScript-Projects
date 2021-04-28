@@ -1,55 +1,43 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>LibraryApp</title>
-  <link rel="shortcut icon" href="#">
-  <link rel="stylesheet" href=" /assets/css/libraryapp.css">
+    <title>Library</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="../assets/css/libraryapp.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
+    <header class="header">
+        <h1>LIBRARY</h1>
+    </header>
+    <form class="input-group">
+        <input type="text" placeholder="Book Name" id="title" name="title" required/>
+        <input type="text" placeholder="Author" id="author" name="author" required/>
+        <select name="status" id="read-status">
+            <option value="Not Read">Not Read</option>
+            <option value="Read">Read</option>
+        </select>
+        <input type="submit" value="Add" name="Add" id="add"/>
+    </form>
+    <main id="main">
+        <table>
+            <thead>
+                <tr>
+                    <th>TITLE</th>
+                    <th>AUTHOR</th>
+                    <th>STATUS</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
 
-  <div class='bigcontainer'>
-
-    <div class='header'>
-      <h1 id='headerTitle'>Your Library</h1>
-      <div class='topButtons'>
-        <button type="button" id='newBook' onclick="openForm()">New Book</button>
-        <button type='button' id='resetBooks' onclick="startagain()">Reset Library</button>
-        <div class="form-popup" id="myForm">
-          <form  id='form' class="form-container">
-            <h1>New Book</h1>
-        
-            <label for="title"><b>Title</b></label>
-            <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
-        
-            <label for="author"><b>Author</b></label>
-            <input id='formAuthor' type="text" placeholder="Enter Author" name="author" required>
-        
-            <label for="pages"><b>Pages</b></label>
-            <input id='formPages' type="number" placeholder="Enter Number of Pages" name="pages" required>
-
-            <label for="isRead">Read?</label>
-            <input name='formRead' id='formIsRead' class="popup_radio" type='radio' value="Read" required>Read
-            <input name='formRead' id='formNotRead' class="popup_radio" type='radio' value="Not Read">Not Read
-            <button id='formSubmit' class="btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <div class='container'>
-    <h1 class="starting">Welcome To your Library!</h1>
-    <h2 class="starting">Click on above new button to add new book</h2>
-    </div>
-
-  </div>
-
-  <script src="/assets/js/libraryapp.js" ></script>
-
+            </tbody>
+        </table>
+    </main>
+    <script src="../assets/js/libraryapp.js"></script>
 </body>
+
 </html>
