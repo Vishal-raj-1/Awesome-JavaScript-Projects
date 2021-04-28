@@ -78,10 +78,6 @@ let projectData = [
     projectUrl: "public/libraryapp.html",
   },
   {
-    projectName: "Counter",
-    projectImage: "assets/GIFs/counter.gif",
-    projectUrl: "public/counter.html",
-  },
     projectName: 'JavaScript Interest Calculator',
     projectImage: 'assets/GIFs/Interest_Calculator.gif',
     projectUrl: 'public/InterestCalculator.html'
