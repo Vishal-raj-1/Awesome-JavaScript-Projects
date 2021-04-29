@@ -3,7 +3,7 @@ let projectData = [
 
 
     projectName: "Shopping Cart",
-    projectImage: "assets/GIFs/shopping-cart.gif",
+    projectImage: "assets/Images/shoppingcart.jpeg",
     projectUrl: "public/Shopping_cart.html",
   },
   {
