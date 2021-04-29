@@ -1125,6 +1125,11 @@ let projectData = [
     projectName: 'Dice it',
     projectImage: 'assets/Images/dice_it.jfif',
     projectUrl: 'public/diceit.html'
+  },
+  {
+    projectName: 'Amongus Minigame',
+    projectImage: 'assets/GIFs/amongusminigame.gif',
+    projectUrl: 'public/Amongusminigame.html'
   }
 ]
 
