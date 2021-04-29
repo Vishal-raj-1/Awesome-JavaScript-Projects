@@ -1126,6 +1126,12 @@ let projectData = [
     projectImage: 'assets/Images/dice_it.jfif',
     projectUrl: 'public/diceit.html'
   }
+  ,
+  {
+    projectName: 'Xylophone simulator',
+    projectImage: 'assets/GIFs/Xylophone.gif',
+    projectUrl: 'public/Xylophone.html'
+  }
 ]
 
 

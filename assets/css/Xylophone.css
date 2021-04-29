@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .header {
+    padding: 20px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .teal {
+    background-color: teal;
+  }
+  
+  .blue {
+    background-color: darkblue;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  #notes {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  #notes button {
+    flex: 1;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0);
+  }
+  
+  .pressed {
+    box-shadow: 0 3px 4px 0 #dbedf3;
+    opacity: 0.5;
+  }
+  
+  @media (min-width: 600px) {
+    #notes {
+      flex-direction: row;
+    }
+  }
+  
