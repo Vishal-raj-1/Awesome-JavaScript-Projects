@@ -1115,7 +1115,8 @@ let projectData = [
     projectName: 'Selection Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/selection-visualizing.png',
     projectUrl: 'public/selectionsort.html'
-  ,{
+  },
+  {
     projectName: "Minesweeper Game",
     projectImage: "assets/GIFs/minesweeper.gif",
     projectUrl: "public/Minesweeper.html",
