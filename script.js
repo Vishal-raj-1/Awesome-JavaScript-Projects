@@ -1165,7 +1165,8 @@ let projectData = [
   },
   {
     projectName: 'Math Trainer',
-    publicUrl:'public/math_trainer.html'
+    projectImage:'assets/Images/math_trainer.png',
+    projectUrl:'public/math_trainer.html'
   },
   {
 
