@@ -1,5 +1,12 @@
 let projectData = [
   {
+
+
+    projectName: "Shopping Cart",
+    projectImage: "assets/Images/shoppingcart.jpeg",
+    projectUrl: "public/Shopping_cart.html",
+  },
+  {
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html",
