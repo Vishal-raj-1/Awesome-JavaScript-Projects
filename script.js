@@ -450,12 +450,8 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
-  {
-    projectName: 'MemeUrl',
-    projectImage: 'assets/GIFs/memeUrl.png',
-    projectUrl: 'public/memeUrl.html'
-  }
-  ,
+  
+  
   
 
   {
@@ -500,12 +496,7 @@ let projectData = [
     projectUrl: 'public/Particle.html'
   }
   ,
-  {
-    projectName: 'Yoga App',
-    projectImage: 'assets/GIFs/yoga.gif',
-    projectUrl: 'public/yoga.html'
-  }
-  ,
+  
   {
     projectName: 'Flip Cards',
     projectImage: 'assets/GIFs/flipped.gif',
