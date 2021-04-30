@@ -1125,6 +1125,10 @@ let projectData = [
     projectName: 'Dice it',
     projectImage: 'assets/Images/dice_it.jfif',
     projectUrl: 'public/diceit.html'
+  },
+  {
+    projectName: 'Math Trainer',
+    publicUrl:'public/math_trainer.html'
   }
 ]
 
