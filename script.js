@@ -97,11 +97,6 @@ let projectData = [
     projectUrl: "public/length_converter.html",
   },
   {
-    projectName: "Pinpad",
-    projectImage: "assets/GIFs/pinpad.gif",
-    projectUrl: "public/pinpad.html",
-  },
-  {
     projectName: 'Pinpad',
     projectImage: 'assets/GIFs/pinpad.gif',
     projectUrl: 'public/pinpad.html'
