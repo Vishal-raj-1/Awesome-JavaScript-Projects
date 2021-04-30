@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/timeline.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="intro">
+        <div class="header">
+          <p>Create your Timeline...</p>
+        </div>
+    </section>
+
+    <section class="timeline">
+        <ul>
+            <li>
+                <div class="container">
+                    <button class="btn" onclick="addTimeline()">Click to add</button>
+                    <div id="main"></div>
+                </div>
+            </li>
+        </ul>
+        <footer>
+  			<p style="color:#EF7038">Author: Md Saifi Hassan</p>
+  			<p style="color:#EF7038"><a target="_blank" href="https://github.com/syedmdsaifihassan">Github</a></p>
+  			<i class="fa fa-github" aria-hidden="true"></i>
+		</footer>
+    </section>
+    
+
+
+    <!-- <div class="container">
+        <button onclick="addTimeline()">Add</button>
+        <div class="content" id="main"></div>
+    </div>     -->
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../assets/js/timeline.js"></script>
+    <script>
+        function addTimeline(){
+            document.getElementById("mainBox").remove();
+            var titleInput = prompt("Enter Title", "");
+            var descInput = prompt("Enter Description", "");
+            var today = new Date();
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date+' '+time;
+            var l={
+                "title":titleInput,
+                "description":descInput,
+                "date":dateTime
+            };
+            console.log(list);
+            list.push(l);
+            console.log(list)
+            render();
+        }
+        render();
+
+    </script>
+</body>
+</html>
