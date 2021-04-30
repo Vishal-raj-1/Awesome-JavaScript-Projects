@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-image: url("../Images/dragonfly_bg.jpg");
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: 100vw 100vh;
+    width:100%;
+}
+
+body{
+    overflow: hidden;
+}
+
+.dragon{
+    width: 329px;
+    height: 295px;
+    background-image: url("../GIFs/dragon.gif");
+    background-size: cover;
+    position: absolute;
+    bottom:0;
+    left:70px;
+
+}
+
+.obstacle{
+    width: 262px;
+    height: 254px;
+    background-image: url("../GIFs/obstacle.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 140px;
+}
+
+.animateDragon{
+    animation: dragon 0.8s linear;
+}
+
+@keyframes dragon {
+    0%{
+        bottom:0
+    }
+    50%{
+        bottom:400px;
+    }
+    100%{
+        bottom:0
+    }
+    
+}
+@keyframes obstacleAnimate{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+
+.obstacleAnimate{
+    animation: obstacleAnimate 5s linear infinite;
+}
+
+
+
+.gameOver{
+    position:relative;
+    top:58px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+    color: white;
+    font-size:55px;
+}
+
+#scoreCount{
+    position: absolute;
+    right:45px;
+    top:28px;
+    border:2px solid white;
+    border-radius: 10px;
+    padding:10px;
+    font-family:sans-serif;
+    font-size: 26px;
+    color:white;
+    font-weight:bold;
+
+}
