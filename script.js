@@ -1185,6 +1185,12 @@ let projectData = [
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   }
+  ,
+  {
+    projectName: "Proxy Pattern TwoWay Binding and Validation Sample",
+    projectImage: "assets/Images/SimpleTwoWayBindingAndValidator.PNG",
+    projectUrl: "public/SimpleTwoWayBindingAndValidator.html",
+  }
 ]
 
 
