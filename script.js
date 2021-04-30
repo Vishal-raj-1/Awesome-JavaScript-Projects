@@ -1115,7 +1115,13 @@ let projectData = [
     projectImage: 'assets/Images/selection-visualizing.png',
     projectUrl: 'public/selectionsort.html'
   }
-  ,{
+  , {
+    projectName: 'Purple Rain',
+    projectImage: 'assets/Images/purpleRain.gif',
+    projectUrl: 'public/purpleRain.html'
+  }
+
+  , {
     projectName: 'Bird Loader',
     projectImage: 'assets/GIFs/birdLoader.gif',
     projectUrl: 'public/birdLoader.html'
@@ -1141,6 +1147,11 @@ let projectData = [
     projectName: 'Postfix Expression Evaluator in JavaScript',
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
+  }
+  , {
+    projectName: 'Multiplation Table Calculator',
+    projectImage: 'assets/GIFs/multiplicationTableCalculator_ss.gif',
+    projectUrl: 'public/multiplicationTableCalculator.html'
   }
   ,
   {
