@@ -133,6 +133,11 @@ let projectData = [
   }
   ,
   {
+    projectName: "Length Unit Conversions",
+    projectImage: "assets/Images/length_banner.jfif",
+    projectUrl: "public/length_converter.html",
+  },
+  {
     projectName: 'Pinpad',
     projectImage: 'assets/GIFs/pinpad.gif',
     projectUrl: 'public/pinpad.html'
