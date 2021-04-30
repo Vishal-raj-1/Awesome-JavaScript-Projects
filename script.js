@@ -508,7 +508,7 @@ let projectData = [
   ,
   {
     projectName: 'Breakout!',
-    projectImage: 'assets/GIFs/breakout.gif',
+    projectImage: 'assets/GIFs/breakout.png',
     projectUrl: 'public/breakout.html'
   }
   ,
