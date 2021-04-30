@@ -1,0 +1,63 @@
+*{
+	margin: 0.1rem;
+	padding: 0.3rem;
+}
+body{
+	background-color: rgb(62, 64, 65);
+}
+
+.container {
+	position: relative; 
+	background-image: url('../Images/guess_song/dark1.jpg');
+	height: 95vh;
+	width: 80vw;
+	background-size: cover;
+	text-align: center;
+	border-radius: 2rem;
+	box-shadow: .5rem .8rem 1rem rgb(114, 113, 113);
+}
+
+
+input {
+	margin-top: 2rem;
+	border: none;
+	border-radius: .5rem;
+	font-family: 'Baloo 2', cursive;
+	color: #999;
+	
+}
+
+#gerateneBuchstaben{
+	font-size: 1em;
+	font-family: 'Baloo 2', cursive;
+	margin-top: 1.2em;
+	color: aliceblue;
+}
+
+#ratefeld {
+	margin-top: 15rem;
+	font-family: 'Baloo 2', cursive;
+	font-size: 3.0rem;
+	color: aliceblue;
+	opacity: .5;
+}
+
+.head {
+    font-size: 3rem;
+	color: aliceblue;
+    position: absolute;
+	font-family: 'Baloo 2', cursive;
+	letter-spacing: .3rem;
+    top: 20%;
+    left: 48%;
+    transform: translate(-40%, -50%) skew(-6deg);
+	text-shadow: .6rem .3rem .1rem grey;
+    transform-origin: bottom left;
+}
+
+  input:hover {
+    /* swap colors */
+    color: #141414;
+    cursor: pointer;
+   
+  }

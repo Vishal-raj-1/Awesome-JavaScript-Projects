@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Grenze+Gotisch&family=Iceland&family=Inconsolata&family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Kaushan+Script&family=Marck+Script&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500&family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bad+Script&family=Caveat&family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Cairo&family=Concert+One&family=Lora:ital,wght@1,500&family=Montserrat+Alternates&family=Playfair+Display&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+header section{
+    overflow-x: hidden;
+}
+
+
+:root{
+    --font-1: 'Montserrat Alternates', sans-serif;
+    --font-2: 'Grenze Gotisch', cursive;
+    --font-3: 'Montserrat Alternates', sans-serif;
+    --font-4: 'Montserrat Alternates', sans-serif;
+    --font-5: 'Montserrat Alternates', sans-serif;
+    --font-6: 'Pacifico', cursive;
+    --font-7: 'Architects Daughter', cursive;
+    --font-8: 'Dancing Script', cursive;
+    --font-9: 'Kaushan Script', cursive;
+    --font-10: 'Marck Script', cursive;
+    --font-11: 'Cedarville Cursive', cursive;
+    --font-12: 'Tangerine', cursive;
+    --font-13: 'Cormorant Upright', serif;
+    --font-14: 'Paprika', cursive;
+    --font-15: 'Montserrat Alternates', sans-serif;
+    --font-16: 'Cairo', sans-serif;
+    --font-17: 'Cairo', sans-serif;
+    --font-18: 'Just Another Hand', cursive;
+    --font-19: 'Alegreya', serif;
+    --font-20: 'Cairo', sans-serif;
+    --font-21: 'Concert One', cursive;
+    --font-22: 'Lora', serif;
+    --font-23: 'Montserrat Alternates', sans-serif;
+    --font-24: 'Playfair Display', serif;
+    --font-25: 'Montserrat Alternates', sans-serif;
+    --font-raleway: 'Cairo', sans-serif;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #c80303, #851919, #5f2a07, #ffca3a);
+    --bggradient1: linear-gradient(to bottom, #022410, #229954, #2ec96e, #8fe7a5);
+    --light-gray: rgba(255, 255, 255, 0.877)
+}
+
+
+body{
+    background: rgb(201, 165, 107);
+}
+
+.main-heading{
+  font-size: 5em;
+  font-family: var(--font-2);
+  
+}
+/* features-start */
+
+.features a{
+  text-decoration: none;
+}
+
+.features .col-md-4:hover{
+  transform: scale(1.15);
+  z-index: 99;
+}
+
+.features .text-center{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  min-height: 220px;
+  overflow: hidden;
+  padding: 10%;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  z-index: 9;
+  border-radius: 15px;
+  margin-bottom: 2vmin;
+  cursor: pointer;
+  background:  rgba(255, 0, 0, 1);
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.features .text-center::before, .features .text-center::after{
+  content: "";
+  height: 300%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120%;
+  z-index: -9;
+  transition: all 0.5s;
+  opacity: 0;
+  background: teal;
+}
+
+.features .text-center::before{
+  top: -40px;
+  left: 100%;
+}
+
+.features .text-center:hover:before{
+  left: -30px;
+  opacity: 1;
+}
+
+.features .text-center::after{
+  right: 100%;
+  opacity: 1;
+}
+
+.features .text-center:hover:after{
+  right: -30px;
+  opacity: 1;
+}
+
+.features .text-center:hover{
+  color: white;
+}
+
+.features .text-center h3{
+  font-family: var(--font-15);
+  font-weight: bold;
+  color: wheat;
+  font-size: 1.5rem;
+}
+
+.features .text-center p{
+  font-family: var(--font-raleway);
+  font-size: 1.5em;
+  color: #ffb805;
+  font-weight: 900;
+}
+
+.features .text-center:hover h3{
+  color: rgb(255, 211, 211);
+}
+
+
+.feature-heading{
+  text-align: center;
+  font-family: var(--font-23);
+  /* color: darkorange; */
+  margin-bottom: 5vmin;
+  margin-top: 2vmin;
+}
+
+/* features-end */
+
+
+/* random-picker-start */
+  
+.random-picker-button{
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    font-family: var(--font-7);
+    font-size: 2em;
+    background-color: #FFB80A;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.random-picker-h2{
+  text-align: center;
+  font-family: var(--font-16);
+  font-size: 4em;
+  margin-top: 5vmin;
+  color: gold;
+}
+
+.random-value-para{
+    text-align: center;
+    font-family: var(--font-7);
+    font-size: 4em;
+    font-weight: bold;
+    border-bottom-right-radius: 20px;
+}
+
+
+.random-picker{
+    border: 2px dashed slategray;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #f46075;
+    margin-bottom: 2vmin;
+}
+
+/* random-picker-end */
+
+
+/* range-start */
+
+.RangeFinder-cont{
+  margin-top: 10vmin;
+  margin-bottom: 5vmin;
+}
+
+.RangeFinder-cont h2{
+  margin-top: 3vmin;
+  margin-bottom: 5vmin;
+  font-family: var(--font-raleway);
+  font-size: 3em;
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.RangeFinder-cont .col-md-4{
+  cursor: pointer;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+  font-family: var(--font-raleway);
+  color: crimson;
+  font-size: 2em;
+  text-align: center;
+    
+}
+
+#range-color-box{
+  border: 1px solid saddlebrown;
+  height: 100px;
+  border-radius: 10px;
+  font-family: var(--font-raleway);
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+
+}
+
+/* range-end */
+
+
+/* hexToRgbConverter-start */
+
+.hexTrgbConv-cont{
+  margin-top: 10vmin;
+  margin-bottom: 5vmin;
+}
+
+.hexTrgbConv-cont .note{
+  color: rgb(78, 71, 5);
+  margin-bottom: 5vmin;
+  font-family: var(--font-25);
+  font-size: .2em;
+}
+
+.hexTrgbConv-cont .note span{
+  color: red;
+  font-weight: bold;
+}
+
+.hashSign{
+  font-size: 2em;
+}
+
+.hexTrgbConv-cont h2{
+  margin-top: 3vmin;
+  margin-bottom: 5vmin;
+  font-family: var(--font-20);
+  font-size: 3em;
+  color: steelblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hexTrgbConv-cont .col-md-6 input{
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+  font-family: var(--font-raleway);
+  border: 1px solid yellow;
+  border-radius: 10px;
+  color: darkred;
+  padding: 1vmin;
+  font-size: 1.4em;
+  
+}
+
+.hexTrgbConv-cont .col-md-6 a{
+  font-family: var(--font-25);
+  background-color: steelblue;
+  color: green;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+}
+
+.hexTrgbConv-cont .col-md-6 a:hover{
+  background-color: rgb(16, 54, 16);
+  color: greenyellow;
+}
+
+.hexConv-out-box{
+  color: orangered;
+  border-bottom: 2px double steelblue;
+  font-family: var(--font-24);
+  font-weight: bold;
+}
+
+/* hexToRgbConverter-end */
+
+
+/* RgbTohexConverter-start */
+.rgbThexConv-cont{
+  margin-top: 10vmin;
+  margin-bottom: 5vmin;
+}
+
+.rgbThexConv-cont h2{
+  margin-top: 3vmin;
+  margin-bottom: 5vmin;
+  font-family: var(--font-20);
+  font-size: 3em;
+  color: gold;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rgbThexConv-cont .col-md-6 input{
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+  font-family: var(--font-raleway);
+  border: 1px solid rgb(231, 120, 16);
+  border-radius: 10px;
+  color: darkred;
+  padding: 1vmin;
+  font-size: 1.4em;
+  
+}
+
+.rgbThexConv-cont .col-md-6 a{
+  font-family: var(--font-25);
+  background-color: rgb(216, 22, 22);
+  color: rgb(201, 188, 11);
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+}
+
+.rgbThexConv-cont .col-md-6 a:hover{
+  background-color: rgb(71, 6, 6);
+  color: rgb(201, 188, 11);
+}
+
+.rgbConv-out-box{
+  color: rgb(255, 0, 0);
+  border-bottom: 2px double steelblue;
+  font-family: var(--font-25);
+  font-weight: bold;
+}
+
+/* RgbTohexConverter-end */
+
+
+/* Footer */
+
+footer{
+  background: rgba(46, 46, 46, 0.8);
+  overflow-x: hidden;
+  margin-top: 5vmin;
+  text-align: center;
+  padding: 10vmin 10vmin;
+  color: rgb(2, 1, 1);
+}
+
+@media only screen and (max-width: 768px){
+    .features .text-center p{
+      font-size: 1em;
+    }
+    .hexFinder-cont .col-md-4 input{
+      font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .random-picker-h2{
+      font-size: 3em;
+    }
+    .random-value-para{
+      font-size: 2em;
+    }
+    .range-selector input{
+      width:90px;
+    }
+}
+.range-selector{
+  justify-content: center;
+}
+#range-color-box{
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+}
+.range-selector input{
+  padding:2px;
+  margin: px;
+}
+.range-selector label{
+  font-size: 20px;
+  margin: auto;
+}
+.edit{
+  overflow-x: hidden;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}

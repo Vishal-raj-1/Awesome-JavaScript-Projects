@@ -1,0 +1,82 @@
+body {
+  text-align: center;
+  background-color: #5a088c;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.a {
+ 
+}
+
+.b {
+
+}
+
+.c {
+
+}
+
+.d {
+
+}
+
+.e {
+
+}
+
+.f {
+
+}
+
+.g {
+
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  border-color: white;
+}
+
+.red {
+  color: white;
+}
+
+.piano {
+  outline: none;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  border-color: white;
+  line-height: 2;
+  font-weight: 900;
+  color: white;
+  border-radius: 15px;
+  display: inline-block;
+  width: 80px;
+  height: 200px;
+  text-align: center;
+  margin: 20px;
+  background-color: white;
+  background: #cd69f2;
+  box-shadow:  3px 3px 9px #ae59ce,
+             -3px -3px 9px #ec79ff;
+}

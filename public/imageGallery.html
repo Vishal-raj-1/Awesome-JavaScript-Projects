@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/imageGallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/js/imageGallery.js"></script>
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="container p-3">
+    <center><h1>IMAGE GALLERY</h1></center>
+        <div class="fg-gallery">
+            <img src="/assets/Images/imageGallery/images/1.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/2.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/3.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/4.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/5.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/6.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/7.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/8.jpg" alt="">
+        </div>
+
+        <div class="fg-gallery ns">
+            <img src="/assets/Images/imageGallery/images/1.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/2.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/3.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/4.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/5.jpg" alt="">
+            <img src="/assets/Images/imageGallery/images/6.jpg" alt="">
+        </div>
+
+    </div>
+
+    
+  
+    <script>
+        var a = new Gallery('.fg-gallery', {
+            cols: 4,
+            style: {
+                opacity:'0.8',
+                height: '150px',
+                borderRadius: '5px',
+                boxShadow: '0 10px 10px -5px grey',
+                
+            }
+        })
+
+        var a = new Gallery('.ns', {
+            cols: 3,
+            style: {
+                border: '0 solid grey',
+                height: '240px',
+                borderRadius: '5px',
+            }
+        })
+    </script>
+</body>
+</html>
