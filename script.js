@@ -1105,10 +1105,15 @@ let projectData = [
     projectImage: 'assets/Images/kochSnowflake/demo.png',
     projectUrl: 'public/kochSnowflake.html'
   }
-  , {
+  ,{
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
+  }
+  ,{
+    projectName: 'Selection Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/selection-visualizing.png',
+    projectUrl: 'public/selectionsort.html'
   }
   , {
     projectName: 'Purple Rain',
