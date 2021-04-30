@@ -1,75 +1,83 @@
-
-// make those pads pop //
-function playSound(e) {
-  let code;
-  if (e.keyCode) {
-    // it was a keypress, get the keycode as usual
-    code = e.keyCode;
-  } else {
-    // it was a click,read the keycode from the div that was clicked
-    code = this.dataset.key;
-  }
-// To instantiate audio
-  const audio = document.querySelector(`audio[data-key="${code}"]`);
-  if(!audio) return;
-  audio.play();
+window.addEventListener('keydown', function (e) {
+  console.log(e.keyCode);
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  console.log(audio);
+  if (!audio) return;
   audio.currentTime = 0;
-// To animate key clicked/pressed
-  const key = document.querySelector(`.key[data-key="${code}"]`);
-  key.classList.add('key-playing');
+  audio.play();
+});
+
+
+var numberOfButtons = document.querySelectorAll(".drum").length;
+
+for (var i = 0; i <= numberOfButtons; i++) {
+  document.querySelectorAll("button")[i].addEventListener("click", function () {
+    var buttonInnerHTML = this.innerHTML;
+
+    makeSound(buttonInnerHTML);
+
+    buttonAnimation(buttonInnerHTML);
+  });
 }
- // To remove animation on key clicked/pressed
-function removeTransition(e) {
-  if (e.propertyName !== "transform") return;
-  this.classList.remove("key-playing");
+
+function makeSound(key) {
+  switch (key) {
+    case "A":
+      var boom = new Audio("../assets/sounds/boom.wav");
+      boom.play();
+      break;
+
+    case "S":
+      var clap = new Audio("../assets/sounds/clap.wav");
+      clap.play();
+      break;
+
+    case "D":
+      var hihat = new Audio("../assets/sounds/hihat.wav");
+      hihat.play();
+      break;
+
+    case "F":
+      var boom = new Audio("../assets/sounds/boom.wav");
+      boom.play();
+      break;
+
+    case "G":
+      var openhat = new Audio("../assets/sounds/openhat.wav");
+      openhat.play();
+      break;
+
+    case "H":
+      var ride = new Audio("../assets/sounds/ride.wav");
+      ride.play();
+      break;
+
+    case "J":
+      var snare = new Audio("../assets/sounds/snare.wav");
+      snare.play();
+      break;
+
+    case "K":
+      var tink = new Audio("../assets/sounds/tink.wav");
+      tink.play();
+      break;
+
+    case "L":
+      var tom = new Audio("../assets/sounds/tom.wav");
+      tom.play();
+      break;
+
+    default:
+      console.log(key);
+  }
 }
 
-const keys = document.querySelectorAll('.key')
-for (let i=0, key; key = keys[i]; i++) {
-  key.addEventListener('transitionend', removeTransition);
-  key.addEventListener('click', playSound);
-  window.addEventListener("keydown", playSound);
+// To remove animation on key clicked
+function buttonAnimation(currentkey) {
+  var activeButton = document.querySelector("." + currentkey);
+  activeButton.classList.add("pressed");
+
+  setTimeout(function () {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }
-
-
-
-
-//theme 1
-const theme_1__background = "#cc0066";
-  const theme_1__text = "#ffcce6";
- //theme 2
-  const theme_2__background = "#000066";
-  const theme_2__text = "#e6e6ff";
-
-  const change_theme = (theme) => {
-    let root = document.documentElement
-    if(theme === "theme_1"){
-    root.style.setProperty('--background',theme_1__background)
-    root.style.setProperty('--text',theme_1__text)
-  }
-  else{
-    root.style.setProperty('--background',theme_2__background)
-    root.style.setProperty('--text',theme_2__text)
-  }
-  }
-
- var current_theme = "theme_1"
-
- const theme_changer = document.getElementById("util__button-theme")
- theme_changer.addEventListener("click",(e) => {
-  theme_changer.classList.add("change_theme__pressed")
-  setTimeout(()=> {
-    theme_changer.classList.remove("change_theme__pressed")
-  },200)
-
-  if(current_theme == "theme_1"){
-    change_theme("theme_2")
-    current_theme = "theme_2"
-  } else{
-    change_theme("theme_1")
-    current_theme = "theme_1"
-  }
-
- })
-
-

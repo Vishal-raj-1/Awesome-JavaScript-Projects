@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #0077b6;
+    --mainbody-color: #0000001e;
+    background-image: linear-gradient(315deg, #00000018 0%, #00000018 74%);
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: var(--mainbody-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.giveway-content, .giveway-img{
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    height: 100%;
+    overflow: hidden;
+ }
+
+.giveway-img img{
+    width: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.giveway-container{
+    margin: 0 10%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border-radius: 5px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+   
+}
+.giveway-heading{
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+.giveway-text{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 20px 0 ;
+}
+.giveway-dealine{
+    font-size: 0.7rem;
+    font-family: var(--font-family);
+    color: rgba(0, 0, 0, 0.459);
+    margin: 5px 0 8px 0;
+    font-family: 300;
+}
+ul{
+    list-style-type: none;
+    width: 100%
+}
+
+ul li{
+    background-color: var(--primary-color);
+    display: inline-block;
+    width: 60px;
+    padding: 5px 8px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    border-radius: 3px;
+}
+.giveway-count-container{
+    margin-top: 50px;
+}
+
+@media(max-width: 992px){
+    .giveway-container{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(2, auto);
+    }
+    .giveway-content{
+        margin-top: 0;
+    }
+     
+}

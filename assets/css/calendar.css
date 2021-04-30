@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../Images/calendar_background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.block {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* input field */ 
+.data {
+    margin: 40px 20px 20px;
+    width: auto;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 10px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-row {
+    width: 100%;
+    
+}
+
+.buttons {
+    width: 70%;
+}
+
+.btn {
+    width: 100%;
+}
+
+/* calendar display box */
+.box {
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    position: relative;
+    width: 80%;
+}
+
+/* arrow icons */
+i {
+    position: absolute;
+    cursor: pointer;
+}
+
+#prev {
+    top: 50px;
+    left: 10%;
+}
+
+#next {
+    top: 50px;
+    right: 10%;
+}
+
+i:hover {
+    transform: scale(2);
+}
+
+/* calendar */
+#cala {
+    border: 1px solid grey;
+}
+
+h1{
+    font-family: 'Dela Gothic One', cursive;
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    border-top: 2px solid grey;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+}
+
+tr {
+    width: 100%;
+}
+
+th, td {
+    border: 5px solid white;
+    border-collapse: collapse;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+th {
+    color: white;
+    background-color: black;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+td {
+    color: black;
+    /* 100%/7 */
+    width: 14.28%; 
+    border-radius: 20%;
+    background-color: rgba(199, 181, 181, 0.5);
+}
+
+/* highlights */
+#today {
+    background-color: rgba(96, 226, 96, 0.5);
+    color: green;
+    font-weight: bolder;
+}
+
+#goto {
+    background-color: rgba(245, 245, 51, 0.6);
+    color: brown;
+    font-weight: bolder;   
+}
+
+@media (max-width: 460px) {
+    .box {
+        width: 100%;
+    }
+
+    .month {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 800px) {
+    
+    .box {
+        width: 90%;
+    }
+    
+    .data {
+        width: 70%;
+    }
+}
