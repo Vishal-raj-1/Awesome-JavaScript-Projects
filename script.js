@@ -1110,6 +1110,11 @@ let projectData = [
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
   }
+  ,{
+    projectName: "Minesweeper Game",
+    projectImage: "assets/GIFs/minesweeper.gif",
+    projectUrl: "public/Minesweeper.html",
+  }
   ,
   {
     projectName: 'Prefix Expression Evaluator in JavaScript',
