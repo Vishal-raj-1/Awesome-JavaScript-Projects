@@ -1,5 +1,12 @@
 let projectData = [
   {
+
+
+    projectName: "Shopping Cart",
+    projectImage: "assets/Images/shoppingcart.jpeg",
+    projectUrl: "public/Shopping_cart.html",
+  },
+  {
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html",
@@ -443,12 +450,12 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
-  {
-    projectName: 'MemeUrl',
-    projectImage: 'assets/GIFs/memeUrl.png',
-    projectUrl: 'public/memeUrl.html'
-  }
-  ,
+  // {
+  //   projectName: 'MemeUrl',
+  //   projectImage: 'assets/GIFs/memeUrl.png',
+  //   projectUrl: 'public/memeUrl.html'
+  // }
+  // ,
   {
     projectName: 'RGB Color Guessing Game',
     projectImage: 'assets/GIFs/RGB_Color.gif',
@@ -1047,11 +1054,11 @@ let projectData = [
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html",
   },
+ 
   {
     projectName: "Infinite Scroll Image Gallery",
     projectImage: "assets/Images/infiniteScroll.png",
     projectUrl: "public/infiniteScroll.html",
-
   },
   
   {
@@ -1106,8 +1113,12 @@ let projectData = [
 
   , {
     projectName: 'Selection Sort Visualizer in JavaScript',
-    projectImage: 'assets/GIFs/selection-visualizing.jpg',
+    projectImage: 'assets/Images/selection-visualizing.png',
     projectUrl: 'public/selectionsort.html'
+  ,{
+    projectName: "Minesweeper Game",
+    projectImage: "assets/GIFs/minesweeper.gif",
+    projectUrl: "public/Minesweeper.html",
   }
   ,
   {
@@ -1131,6 +1142,22 @@ let projectData = [
     projectName: 'Dice it',
     projectImage: 'assets/Images/dice_it.jfif',
     projectUrl: 'public/diceit.html'
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  },
+  {    
+    projectName: "Timeline",
+    projectImage: "assets/GIFs/timeline.gif",
+    projectUrl: "public/timeline.html",
+  }
+  ,
+  {
+    projectName: "Google keep Clone",
+    projectImage: "assets/Images/keep.PNG",
+    projectUrl: "public/google_keep.html",
   }
 ]
 
