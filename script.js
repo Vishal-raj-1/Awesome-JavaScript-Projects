@@ -1047,11 +1047,11 @@ let projectData = [
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html",
   },
+ 
   {
     projectName: "Infinite Scroll Image Gallery",
     projectImage: "assets/Images/infiniteScroll.png",
     projectUrl: "public/infiniteScroll.html",
-
   },
   
   {
@@ -1125,6 +1125,12 @@ let projectData = [
     projectName: 'Dice it',
     projectImage: 'assets/Images/dice_it.jfif',
     projectUrl: 'public/diceit.html'
+  },
+  {
+
+    projectName: "Google keep Clone",
+    projectImage: "assets/Images/keep.PNG",
+    projectUrl: "public/google_keep.html",
   }
 ]
 
