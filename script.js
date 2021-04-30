@@ -1,5 +1,12 @@
 let projectData = [
   {
+
+
+    projectName: "Shopping Cart",
+    projectImage: "assets/Images/shoppingcart.jpeg",
+    projectUrl: "public/Shopping_cart.html",
+  },
+  {
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html",
@@ -125,6 +132,11 @@ let projectData = [
     projectUrl: 'public/todo-app.html'
   }
   ,
+  {
+    projectName: "Length Unit Conversions",
+    projectImage: "assets/Images/length_banner.jfif",
+    projectUrl: "public/length_converter.html",
+  },
   {
     projectName: 'Pinpad',
     projectImage: 'assets/GIFs/pinpad.gif',
@@ -443,12 +455,16 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
+  
+  
+  
+
   {
-    projectName: 'MemeUrl',
-    projectImage: 'assets/GIFs/memeUrl.png',
-    projectUrl: 'public/memeUrl.html'
-  }
-  ,
+    projectName: "Yoga App",
+    projectImage: "assets/Images/yogascreen.png",
+    projectUrl: "public/yoga.html",
+  },
+
   {
     projectName: 'RGB Color Guessing Game',
     projectImage: 'assets/GIFs/RGB_Color.gif',
@@ -485,12 +501,7 @@ let projectData = [
     projectUrl: 'public/Particle.html'
   }
   ,
-  {
-    projectName: 'Yoga App',
-    projectImage: 'assets/GIFs/yoga.gif',
-    projectUrl: 'public/yoga.html'
-  }
-  ,
+  
   {
     projectName: 'Flip Cards',
     projectImage: 'assets/GIFs/flipped.gif',
@@ -976,7 +987,7 @@ let projectData = [
     projectImage: "assets/GIFs/dragonfly.gif",
     projectUrl: "public/dragonfly.html",
   },
-  
+
   {
     projectName: "Conway's Game of life",
     projectImage: 'assets/Images/gameOfLife/demo.gif',
@@ -1036,7 +1047,7 @@ let projectData = [
     projectName: "Mouse Trails effect",
     projectImage: "assets/GIFs/MouseTrails.gif",
     projectUrl: "public/MouseTrails.html",
-  },{
+  }, {
     projectName: "Guess The Number",
     projectImage: "assets/Images/guess.png",
     projectUrl: "public/guess.html",
@@ -1047,11 +1058,11 @@ let projectData = [
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html",
   },
+ 
   {
     projectName: "Infinite Scroll Image Gallery",
     projectImage: "assets/Images/infiniteScroll.png",
     projectUrl: "public/infiniteScroll.html",
-
   },
   
   {
@@ -1098,10 +1109,31 @@ let projectData = [
     projectImage: 'assets/Images/kochSnowflake/demo.png',
     projectUrl: 'public/kochSnowflake.html'
   }
-  , {
+  ,{
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
+  }
+  ,{
+    projectName: 'Selection Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/selection-visualizing.png',
+    projectUrl: 'public/selectionsort.html'
+  }
+  , {
+    projectName: 'Purple Rain',
+    projectImage: 'assets/Images/purpleRain.gif',
+    projectUrl: 'public/purpleRain.html'
+  }
+
+  , {
+    projectName: 'Bird Loader',
+    projectImage: 'assets/GIFs/birdLoader.gif',
+    projectUrl: 'public/birdLoader.html'
+  }
+  ,{
+    projectName: "Minesweeper Game",
+    projectImage: "assets/GIFs/minesweeper.gif",
+    projectUrl: "public/Minesweeper.html",
   }
   ,
   {
@@ -1120,6 +1152,11 @@ let projectData = [
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
   }
+  , {
+    projectName: 'Multiplation Table Calculator',
+    projectImage: 'assets/GIFs/multiplicationTableCalculator_ss.gif',
+    projectUrl: 'public/multiplicationTableCalculator.html'
+  }
   ,
   {
     projectName: 'Dice it',
@@ -1129,6 +1166,23 @@ let projectData = [
   {
     projectName: 'Math Trainer',
     publicUrl:'public/math_trainer.html'
+  },
+  {
+
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice",
+    projectUrl: "public/textToVoice.html",
+  },
+  {    
+    projectName: "Timeline",
+    projectImage: "assets/GIFs/timeline.gif",
+    projectUrl: "public/timeline.html",
+  }
+  ,
+  {
+    projectName: "Google keep Clone",
+    projectImage: "assets/Images/keep.PNG",
+    projectUrl: "public/google_keep.html",
   }
 ]
 

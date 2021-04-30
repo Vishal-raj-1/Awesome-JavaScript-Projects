@@ -125,6 +125,16 @@
 
         const darkmode = new Darkmode(options);
         darkmode.showWidget();
+        window.onscroll = function()
+        {
+            if(pageYOffset >= 90)
+            {
+                document.getElementById('goToTop').style.visibility="visible";
+            }else
+            {
+                document.getElementById('goToTop').style.visibility="hidden";
+            }
+        };
     </script>
     <style>
         .darkmode-toggle {
