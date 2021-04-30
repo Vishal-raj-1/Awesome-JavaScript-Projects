@@ -983,7 +983,7 @@ let projectData = [
     projectImage: "assets/GIFs/dragonfly.gif",
     projectUrl: "public/dragonfly.html",
   },
-  
+
   {
     projectName: "Conway's Game of life",
     projectImage: 'assets/Images/gameOfLife/demo.gif',
@@ -1043,7 +1043,7 @@ let projectData = [
     projectName: "Mouse Trails effect",
     projectImage: "assets/GIFs/MouseTrails.gif",
     projectUrl: "public/MouseTrails.html",
-  },{
+  }, {
     projectName: "Guess The Number",
     projectImage: "assets/Images/guess.png",
     projectUrl: "public/guess.html",
@@ -1109,6 +1109,12 @@ let projectData = [
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
+  }
+
+  , {
+    projectName: 'Bird Loader',
+    projectImage: 'assets/GIFs/birdLoader.gif',
+    projectUrl: 'public/birdLoader.html'
   }
   ,{
     projectName: "Minesweeper Game",
