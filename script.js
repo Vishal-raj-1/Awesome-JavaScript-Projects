@@ -455,12 +455,16 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
-  // {
-  //   projectName: 'MemeUrl',
-  //   projectImage: 'assets/GIFs/memeUrl.png',
-  //   projectUrl: 'public/memeUrl.html'
-  // }
-  // ,
+  
+  
+  
+
+  {
+    projectName: "Yoga App",
+    projectImage: "assets/Images/yogascreen.png",
+    projectUrl: "public/yoga.html",
+  },
+
   {
     projectName: 'RGB Color Guessing Game',
     projectImage: 'assets/GIFs/RGB_Color.gif',
@@ -497,12 +501,7 @@ let projectData = [
     projectUrl: 'public/Particle.html'
   }
   ,
-  {
-    projectName: 'Yoga App',
-    projectImage: 'assets/GIFs/yoga.gif',
-    projectUrl: 'public/yoga.html'
-  }
-  ,
+  
   {
     projectName: 'Flip Cards',
     projectImage: 'assets/GIFs/flipped.gif',

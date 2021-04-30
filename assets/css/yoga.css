@@ -1,113 +1,92 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
-* {
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  background: #224941 url('../Images/bg2.jpg') no-repeat center center/cover;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  min-height: 100vh;
-  overflow: hidden;
+.yoga{
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.time-select, .sound-picker, .player-container{
+  height: 80%;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 0;
 }
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  height: 300px;
-  width: 300px;
+.player-container{
   position: relative;
-  transform: scale(1);
 }
-
-.circle {
-  background-color: #010f1c;
-  height: 100%;
+.player-container svg{
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none
+}
+.time-display{
+  position: absolute;
+  bottom: 10%;
+  color: black;
+  text-shadow: white;
+  font-size: 50px;
+}
+video{
+  position: fixed;
+  top: 0%;
+  left: 0%;
   width: 100%;
+  z-index: -10;
+}
+
+.time-select button, 
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.time-select button:hover{
+  color: black;
+  background: white;
+}
+
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  padding: 30px;
+  color:black;
+  background-color: white;
+}
+.sound-picker button {
+  background: white;
+  box-shadow: black;
+  opacity: 40%
+
+}
+.sound-picker button:hover{
+  background:grey;
 }
 
-.gradient-circle {
-  background: conic-gradient(
-    #b75555 0%,
-    #8a3c3c 40%,
-    rgba(255, 255, 255, 0.808) 40%,
-    rgba(255, 255, 255, 0.726) 60%,
-    #b62b2b 60%,
-    #701f1f 100%
-  );
-  height: 320px;
-  width: 320px;
-  z-index: -2;
-  border-radius: 50%;
-  position: absolute;
-  top: -10px;
-  left: -10px;
+
+.sound-picker button img{
+  height: 100%;
 }
-
-.pointer {
-  background-color: #fff;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  display: block;
-}
-
-.pointer-container {
-  position: absolute;
-  top: -40px;
-  left: 140px;
-  width: 20px;
-  height: 190px;
-  animation: rotate 7.5s linear forwards infinite;
-  transform-origin: bottom center;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container.grow {
-  animation: grow 3s linear forwards;
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.2);
-  }
-}
-
-.container.shrink {
-  animation: shrink 3s linear forwards;
-}
-
-@keyframes shrink {
-  from {
-    transform: scale(1.2);
-  }
-
-  to {
-    transform: scale(1);
-  }
+.play  {
+  position:absolute;
+  top:43%;
+  bottom:50%;
+  left:45%;
 }
