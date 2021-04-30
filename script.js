@@ -1110,6 +1110,11 @@ let projectData = [
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
   }
+  , {
+    projectName: 'Purple Rain',
+    projectImage: 'assets/Images/purpleRain.gif',
+    projectUrl: 'public/purpleRain.html'
+  }
 
   , {
     projectName: 'Bird Loader',
