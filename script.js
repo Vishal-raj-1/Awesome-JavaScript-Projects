@@ -1,8 +1,20 @@
 let projectData = [
   {
+    projectName: "ACE_EYE",
+    projectImage: "assets/Images/ACE_EYE.png",
+    projectUrl: "public/ACE_EYE.html",
+  },
+  {
+    projectName: "Sudoku Game",
+    projectImage: "assets/Images/sudoku.png",
+    projectUrl: "public/Sudoko.html"
+  },
+
+  {
     projectName: "Music Box",
     projectImage: "assets/GIFs/Music-Box.gif",
     projectUrl: "public/Music-box.html",
+
   },
   {
     projectName: "Lorem Ipsum Generator",
@@ -18,6 +30,11 @@ let projectData = [
     projectName: "Grocery-List",
     projectImage: "assets/GIFs/groceryList.gif",
     projectUrl: "public/groceryList.html",
+  },
+  {
+    projectName: 'Temperature Converter',
+    projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
+    projectUrl: 'public/Temperature_Converter.html'
   },
   {
     projectName: "Picture - Picture",
@@ -72,11 +89,18 @@ let projectData = [
   }
   ,
   {
+
+    projectName: "Library-App",
+    projectImage: "assets/Images/libraryapp.png",
+    projectUrl: "public/libraryapp.html",
+  },
+  {
     projectName: 'JavaScript Interest Calculator',
     projectImage: 'assets/GIFs/Interest_Calculator.gif',
     projectUrl: 'public/InterestCalculator.html'
   }
   ,
+
   {
     projectName: 'Car Game',
     projectImage: 'assets/GIFs/cargame.gif',
@@ -1023,11 +1047,17 @@ let projectData = [
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html",
   },
+ 
+  {
+    projectName: "Infinite Scroll Image Gallery",
+    projectImage: "assets/Images/infiniteScroll.png",
+    projectUrl: "public/infiniteScroll.html",
+  },
+  
   {
     projectName: 'Typing Practice',
     projectImage: 'assets/GIFs/TypingSpeed.gif',
     projectUrl: 'public/TypingPractice.html'
-
   }
   ,
   {
@@ -1057,6 +1087,12 @@ let projectData = [
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
+  },
+  {
+    projectName: 'To-do0 app',
+    projectImage: 'assets/GIFs/todo.gif',
+    projectUrl: 'public/todoapp.html'
+
   }, {
     projectName: 'Koch Snowflake',
     projectImage: 'assets/Images/kochSnowflake/demo.png',
@@ -1066,6 +1102,12 @@ let projectData = [
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
+  }
+  ,
+  {
+    projectName: 'Prefix Expression Evaluator in JavaScript',
+    projectImage: 'assets/GIFs/prefix-evaluator.png',
+    projectUrl: 'public/prefixevaluator.html'
   }
   , {
     projectName: 'Insertion Sort Visualizer in JavaScript',
@@ -1077,6 +1119,18 @@ let projectData = [
     projectName: 'Postfix Expression Evaluator in JavaScript',
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
+  }
+  ,
+  {
+    projectName: 'Dice it',
+    projectImage: 'assets/Images/dice_it.jfif',
+    projectUrl: 'public/diceit.html'
+  },
+  {
+
+    projectName: "Google keep Clone",
+    projectImage: "assets/Images/keep.PNG",
+    projectUrl: "public/google_keep.html",
   }
 ]
 
