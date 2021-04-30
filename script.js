@@ -1164,6 +1164,12 @@ let projectData = [
     projectUrl: 'public/diceit.html'
   },
   {
+    projectName: 'Math Trainer',
+    projectImage:'assets/Images/math_trainer.png',
+    projectUrl:'public/math_trainer.html'
+  },
+  {
+
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
