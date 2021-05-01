@@ -49,18 +49,18 @@ function create_callander(dd, mm, yyyy) {
     const day = new Date(yyyy, mm, 1).getDay();
     const totalday = new Date(yyyy, mm + 1, 0).getDate();
     var out = " "
-    out += `<h1>${get_month(mm)}  ${yyyy} </h1> <hr>`;
+    out += `<h1 class="month">${get_month(mm)}  ${yyyy} </h1> <hr>`;
 
-    out += `<table class="">
+    out += `<table>
     <tr>        
-    <th>Sunday</th>        
-    <th>Monday</th>        
-    <th>Tuesday</th>        
-    <th>Wednesday</th>       
-    <th>Thusday</th>       
-    <th>Friday</th>        
-    <th>Saturday</th>      
-    </tr> `
+    <th>Sun</th>        
+    <th>Mon</th>        
+    <th>Tue</th>        
+    <th>Wed</th>       
+    <th>Thu</th>       
+    <th>Fri</th>        
+    <th>Sat</th>      
+    </tr> `;
 
     var k = -1;
     var j = 0;

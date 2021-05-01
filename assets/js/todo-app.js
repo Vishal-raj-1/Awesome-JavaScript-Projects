@@ -1,76 +1,153 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+// To display current day and date
+const today = new Date();
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
+const options = {
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+};
 
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+document.querySelector(".date").innerHTML = today.toLocaleDateString(
+  "en-US",
+  options
+);
 
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
+// getting all required elements
+const inputBox = document.querySelector(".inputField input");
+const addBtn = document.querySelector(".inputField button.add-btn");
+var todoList = document.querySelector(".todoList");
+const deleteAllBtn = document.querySelector(".footer button.clearAll-btn");
+
+// onkeyup event
+inputBox.onkeyup = () => {
+  let userEnteredValue = inputBox.value; //getting user entered value
+
+  if (userEnteredValue.trim() != "") {
+    //if the user value is blank contain only space
+    addBtn.disabled = false;
+    addBtn.classList.add("active"); //active the add button
   } else {
-    document.getElementById("myUL").appendChild(li);
+    addBtn.disabled = true;
+    addBtn.classList.remove("active"); //unactive the add button
   }
-  document.getElementById("myInput").value = "";
+};
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+//Display new todo
+function newToDoItem(itemtext, index, completed) {
+  let newLiTag = "";
+  if (completed) {
+    newLiTag = `<li id=${index} class="item">
+    <label class="todo-list__label">
+    <input type="checkbox" class="checkbox completed" onclick="toggleToDoItemState(this)"/>
+    <i class="check"></i>
+    <span class="todo-text">${itemtext}</span>
+    <span class="trash" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span>
+    </label>
+    </li>`;
+  } else {
+    newLiTag = `<li id=${index} class="item">
+    <label class="todo-list__label">
+    <input type="checkbox" class="checkbox" onclick="toggleToDoItemState(this)"/>
+    <i class="check"></i>
+    <span class="todo-text">${itemtext}</span>
+    <span class="trash" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span>
+    </label>
+    </li>`;
+  }
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
+  todoList.innerHTML += newLiTag;
+
+  saveToDoItems();
+}
+
+// Add todo
+addBtn.onclick = () => {
+  var itemText = inputBox.value;
+  newToDoItem(itemText, todoList.children.length, false);
+  inputBox.value = "";
+  addBtn.classList.remove("active");
+  addBtn.disabled = true;
+};
+
+// Calculate and display number of pending task
+function pendingTask() {
+  completedNo = document.querySelectorAll(".completed").length;
+  const pendingTasksNumb = document.querySelector(".pendingTasks");
+
+  pendingTasksNumb.textContent = todoList.children.length - completedNo; //passing the array length in pendingtask
+}
+
+// Toggle completed
+function toggleToDoItemState(element) {
+  if (element.classList.contains("completed")) {
+    element.classList.remove("completed");
+  } else {
+    element.classList.add("completed");
+  }
+  saveToDoItems();
+}
+
+// delete todo
+function deleteTask(index) {
+  var toDoItems = todoList.children;
+
+  for (var i = 0; i < todoList.children.length; i++) {
+    if (toDoItems.item(i).id == index) {
+      toDoItems.item(i).remove();
     }
   }
+
+  saveToDoItems();
 }
 
-//code to toggle the colors of main and body
+// delete all todos
+deleteAllBtn.onclick = () => {
+  var toDoItems = todoList.children;
+  while (toDoItems.length > 0) {
+    toDoItems.item(0).remove();
+  }
+  saveToDoItems();
+};
 
-var elem = document.getElementById("btn");
-var elementsurprise= document.getElementById("btn-box");
-var element = document.getElementById("toggle-sec");
-var element2 = document.getElementById("output-sec-pseudo");
-// var element3 = document.getElementById("input-sec");
-var element3 = document.getElementById("myUL");
-var newbod= document.getElementsByTagName("body");
+// Update todo list and save to local storage
+function saveToDoItems() {
+  var toDos = [];
 
-function changeFunction()
-{
-  elem.classList.toggle("btn-new");
-  element.classList.toggle("dark-mode");
-  element2.classList.toggle("dark-mode");
-  element3.classList.toggle("dark-mode");
-  newbod.classList.toggle("darkbod-mode");
- }
+  for (var i = 0; i < todoList.children.length; i++) {
+    var toDo = todoList.children.item(i);
 
- elementsurprise.addEventListener('click', changeFunction);
+    var toDoInfo = {
+      task: toDo.querySelector(".todo-text").innerText,
+      completed: toDo
+        .querySelector(".checkbox")
+        .classList.contains("completed"),
+    };
+
+    toDos.push(toDoInfo);
+  }
+
+  localStorage.setItem("toDos", JSON.stringify(toDos));
+
+  pendingTask(); // update pending task total
+
+  if (toDos.length > 0) {
+    deleteAllBtn.classList.add("active"); //active the delete button
+  } else {
+    deleteAllBtn.classList.remove("active"); //unactive the delete button
+  }
+}
+
+// Initial display todos if present in local storage
+function loadList() {
+  if (localStorage.getItem("toDos") !== null) {
+    var toDos = JSON.parse(localStorage.getItem("toDos"));
+
+    for (var i = 0; i < toDos.length; i++) {
+      var toDo = toDos[i];
+      newToDoItem(toDo.task, i, toDo.completed);
+    }
+    pendingTask();
+  }
+}
+
+loadList();
