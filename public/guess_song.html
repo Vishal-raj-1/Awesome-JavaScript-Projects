@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess it or loose it!</title>
+    <link rel="stylesheet" href="../assets/css/guess_song.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+    <script src="../assets/js/guess_song.js"></script>
+</head>
+<body><center>
+    <div class="container">
+    <h1 class="head"> Guess the song </h1>
+    <br>
+      <p id="ratefeld"></p>
+      <form name="rateformular">
+      <input name="ratezeichen" type="text" size="5" maxlength="1">
+      <input name="ratebutton" type="button" value="Check" onClick="pruefeZeichen()">
+      <input name="ratebutton" type="button" onclick="show_hint()" value="Need help?" size="6">
+      <p id="gerateneBuchstaben">Word you should not type again : </p>
+      
+      <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+      </form>
+      </div></center>
+</body>
+</html>

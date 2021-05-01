@@ -2,130 +2,258 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- Favicon -->
-   <link rel="shortcut icon" type="image/jpg" href="./assets/Images/favicons/10.png">
-  <title>Awesome JavaScript Project</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Awesome JavaScript Projects, the platform which helps developer to get set go with their learning or making their life easier with premade projects.">
+    <title>Awesome JavaScript | Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/Images/favicons/faviconss.png">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="assets/typed.js/typed.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 
+<!-- CSS for footor fix -->
+<style>
+    body {
+        margin: 0;
+        height: 0;
+    }
+</style>
+
 <body>
-  <!-- Navbar -->
-  <nav id="Navbar" class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-    <div class="container-fluid">
-      <a class="navbar-brand text-light" href="#">Awesome Javascript</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#project">Projects</a>
-          </li>
-        </ul>
-        <div style="margin: 1%" class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-          </label>
-        </div>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
-  <section>
-    <div class="container pt-5">
-      <div class="row homeSection">
-        <div class="col col-8">
-          <img src="assets/Images/home.svg" class="img-fluid homeImg" alt="" />
-        </div>
-        <div class="col col-4 my-auto home">
-          <h1>Hello Fellas!!</h1>
-          <p class="homePara">Welcome to Awesome Javascript Projects</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="about" class="container about pb-5 pt-5">
-    <div class="row">
-      <div class="col col-5 about">
-        <div class="aboutSection overflow-auto my-5">
-          <h2 class="aboutHeader mx-auto">About Us</h2>
-          <p class="aboutPara">
-            This Platform is built by JavaScript Developers to make Learning
-            Javascript easy for the newbies . This website has so many
-            Beginner Friendly Projects which you should try your hands on. It
-            will help you learn each and every basic concept of Javascript and
-            you will keep a strong hold on Javascript
-          </p>
-        </div>
-      </div>
-      <div class="col col-7">
-        <img src="assets/Images/about.svg" class="aboutUsImg img-fluid" alt="" />
-      </div>
-    </div>
-  </section>
-
-  <section id="project">
-    <div class="container my-3 text-center">
-      <h1>Awesome Javascript Projects</h1>
-    </div>
-    <div class="container border py-4">
-      <div class="row row-cols-3" id="js-projects">
-
-      </div>
-    </div>
-  </section>
-  <div class="Scroll">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fa fa-chevron-circle-up" aria-hidden="true" id="icon"></i>
-    </button>
-  </div>
-  <script src="assets/js/Scroll.js"></script>
-  <footer class="bg-dark text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3 footer">
-      <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank"><i style="color:white;"
-          class="fab fa-github fa-2x"></i></a>
-      <p class="">
-        ©
-        <script type="text/javascript">
-          document.write(new Date().getFullYear());
-        </script>
-        Copyright |
-        <a href="https://vishal-raj-1.github.io/Awesome-JavaScript-Projects/"
-          style="color: white; text-decoration: none">AwesomeJavascript.com</a>
-      </p>
+    <!--Sticky Sidebar-->
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="envelop"><i class="fa fa-envelope"></i></a>
     </div>
 
-    <!-- Copyright -->
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  <script src="./assets/js/script.js"></script>
+    <!--CSS Preloader-->
+    <div id="spinner-wrapper">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <a id="goToTop" href="#top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <main id="top">
+        <!-- Header -->
+        <header>
+            <nav>
+                <h2 class="shadow"><a href="index.html">Awesome JavaScript</a></h2>
+                <i class="fa fa-bars" aria-hidden="true" id="menuBar" onclick="menu()"></i>
+                <i class="fa fa-times" aria-hidden="true" id="menuClose" onclick="menuClose()"></i>
+                <ul id="menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+
+                    <li><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank" class="github githubs"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+
+                    <li><a href="signuplogin.html">Signup/login</a></li>
+
+                    <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank" class="github githubs"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+
+                    <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank"
+                        class="github githubs"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </ul>
+            </nav>
+            <div class="bannerSection">
+                <div class="bannerText">
+                    <h1>JavaScript Projects <br> that you need!!</h1>
+                    <span class="typed"></span>
+                    <div class="buttonCenter">
+                        <a href="#about" class="commanBtn">Get Started</a>
+                        <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank"
+                            class="github"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                    </div>
+                </div>
+                <div class="bannerIllustration">
+                    <img src="./assets/Images/homeaat.png" alt="Main Banner Illustration">
+                </div>
+            </div>
+        </header>
+        <!-- Header Close -->
+
+        <!-- Added About -->
+
+        <section class="body" id= "about">
+          <h2>About Us</h2>
+        <section class="body" id="about">
+            <h1>About Us</h1>
+
+            <hr>
+            <div class="dualSections">
+                <div class="dualSectionsText">
+                    <p>
+
+                        This platform is built by passionate and talented JavaScript Developers around the world to make learning JavaScript fun and easy for the newbies!<br><br>
+
+                        With the plethora of open source, beginner friendly JavaScript projects available here, one can indulge in project-based learning and kickstart their JavaScript Development journey. This platform is a one stop destination to build your basics, clear your doubts, contribute to projects, build new projects and have a fun learning experience. We are glad to help you with your JavaScript needs!!
+
+                        This platform is build by JavaScript Developers around the world to make learning JavaScript
+                        easy for the newbies. <br> <br>
+                        This is the open source JavaScript project, which you can work on in GitHub.
+
+
+                        It will help you, clear your javascript doubts. You can use this projects for you fulfilling
+                        your need.
+
+                        It will help you, clear your javascript doubts. You can use this projects for you fulfilling your need.
+
+
+                    </p>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="dualSectionImg">
+                    <img src="./assets/Images/shortAbout.svg" alt="About Illustration">
+                </div>
+            </div>
+        </section>
+        <!-- About Close -->
+
+        <!-- Added Project -->
+        <section class="homeProjects">
+            <div class="projectArea">
+                <div class="projectCard">
+                    <a href="./public/Analogclock.html" class="hoverEffect" target="_blank">
+                        <img class="projectCardImg" src="./assets/GIFs/analogClock.gif" alt="Analogue Clock Project" />
+                        <h5 class="projectCardTitle">Analog Clock</h5>
+                        <span class="computerLegs"></span>
+                        <span class="computerBase"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="projectDescription">
+                <h2>JavaScript Projects</h2>
+                <hr>
+                <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript
+                    specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has
+                    curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                    <br><br>
+                    Click on the below given button top surf the Awesome JavaScript Projects, that can help you in many
+                    ways as per your need. So, get set go.
+                </p>
+                <a href="projects.html" class="button">More Projects</a>
+            </div>
+        </section>
+        <!-- Project Close -->
+
+        <!-- Added Call to Action -->
+        <div class="CTA">
+            <div class="ctaText">
+                <h1>Let's get started...</h1>
+                <p>Awesome JavaScript is the open source project that helps you in JavaScript Projects. Contact us if you want to suggest the project that can be implemented in order to add in the website.</p>
+            </div>
+            <div class="ctaButton">
+                <a href="contact.html">Contact Now</a>
+            </div>
+            <img src="./assets/Images/contactCTA.png" alt="Contact Man">
+        </div>
+        <!-- Closed Call to Action -->
+
+        <!-- Added Footer -->
+        <footer>
+
+            <p>© <script>
+
+
+
+
+
+            <p>© <script type="text/javascript">
+
+                document.write(new Date().getFullYear());
+              </script> Copyright. <b>Awesome JavaScript Project</b>. All Rights Reserved.</p>
+
+
+            <p>©
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> Copyright. <b>Awesome JavaScript Project</b>. All Rights Reserved.
+            </p>
+
+            <p>Design by <a href="https://cratonik.com" target="_blank" rel="follow">Cratonik</a></p>
+
+            
+        </footer>
+        <!-- Closed Footer -->
+    </main>
+
+    <script src="./assets/js/scripts.js"></script>    
 </body>
 
 </html>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+
+    <script>
+        const options = {
+            bottom: '100px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.9s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+    <style>
+       .darkmode-toggle {
+            position: absolute;
+        }
+        .darkmode-toggle {
+    background: #100f2c;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid rgb(236, 236, 243);
+    right: 32px;
+    bottom: 32px;
+    /* left: unset; */
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+
+</body>
+<script src="./assets/js/scripts.js"></script>
+</html>
+
+
+
