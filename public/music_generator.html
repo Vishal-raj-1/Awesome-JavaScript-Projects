@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Music Generator</title>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+  </head>
+
+  <body>
+
+    <style>
+      /* CSS goes here! */
+      h1 {text-align: center;
+      font-size: 70px;
+      }
+      
+
+      body {
+        background-image: url("../assets/Images/music_generator_bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+
+
+      button{
+        background-color: rgb(183, 0, 255);
+        border: none;
+        color: white;
+        padding: 85px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15.5px;
+        margin: 4px 2px;
+        transition: 1s;
+        box-shadow: 10px 10px 8px #888888;
+
+      }
+      button:hover{
+        transform: rotate(360deg);
+      }
+    </style>
+
+    <!-- Audio elements go here! -->
+    <audio id="harp">
+      <source src="../assets/sounds/harp.wav" type="audio/wav">
+      Hi, your browser does not support audio files.
+    </audio>
+
+    <audio id="bass-drum">
+      <source src="../assets/sounds/bass-drum.wav" type="audio/wav">
+      Hi, your browser does not support audio files.
+    </audio>
+
+    <audio id="drumroll">
+      <source src="../assets/sounds/drumroll.wav" type="audio/wav">
+      Hi, your browser does not support audio files.
+    </audio>
+
+    <audio id="chinese-gong">
+      <source src="../assets/sounds/chinese-gong.wav" type="audio/wav">
+      Hi, your browser does not support audio files.
+    </audio>
+
+    <audio id="military-drum">
+      <source src="../assets/sounds/military-drum.wav" type="audio/wav">
+      Hi, your browser does not support audio files.
+    </audio>
+
+    <audio id="bugle-call">
+      <source src="../assets/sounds/bugle-first-call.wav" type="audio/wav">
+      Hi, your browser does not support audio files.
+    </audio>
+  
+
+    <h1>Musical Instrument Soundboard</h1>
+    <!-- Create the soundboard buttons -->
+    <button onclick="toggleAudio('harp', 0)">Harp</button>
+    <button onclick="toggleAudio('bass-drum', 0)">Bass Drum</button>
+    <button onclick="toggleAudio('drumroll', 0)">Drumroll</button>
+    <button onclick="toggleAudio('chinese-gong', 0)">Chinese Gong</button>
+    <button onclick="toggleAudio('military-drum', 0)">Military Drum</button>
+    <button onclick="toggleAudio('bugle-call', 0)">Bugle Call</button>
+
+    <script>
+      // Create the playing boolean list
+
+      function toggleAudio(sound, number) {
+        var audio=document.getElementById(sound);
+        audio.play();
+        console.log("Audio toggled")
+      }
+    </script>
+
+  </body>
+</html>

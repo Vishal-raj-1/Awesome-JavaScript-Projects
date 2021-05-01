@@ -1,0 +1,57 @@
+.rect1 {
+    height: 100vh;
+    width: 20vw;
+    background-color: rgba(216, 112, 112, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: -1000;
+}
+body {
+    background-image: url("../Images/WeightConverter.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+h1 {
+    margin: 50px auto 100px;
+    font-family: 'Original Surfer', cursive;
+}
+.box {
+    width: 50%;
+}
+input:focus {
+    border-color: #cc77df !important;
+    box-shadow: 0 0 0 .2rem #cc77df7a !important;
+}
+.btn {
+    width: 200px;
+}
+.btn-primary {
+    background-color: #cc77df !important;
+    border-color: #cc77df !important;
+}
+.btn-primary:hover {
+    background-color: #a208c5 !important;
+    border-color: #a208c5 !important;
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 .2rem #cc77df7a !important;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .box {
+        width: 75%;
+    }
+}
+
+@media (max-width: 400px) {
+    .box {
+        width: 100%;
+    }
+    h1 {
+        font-size: 60px !important;
+    }
+}
