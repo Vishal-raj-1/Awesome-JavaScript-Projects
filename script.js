@@ -7,6 +7,11 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html",
   },
   {
+    projectName: "RESTAURANT WEBSITE",
+    projectImage: "assets/GIFs/Restaurant.gif",
+    projectUrl: "public/Restaurant.html",
+  },
+  {
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html",
