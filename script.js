@@ -1185,6 +1185,11 @@ let projectData = [
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   }
+  ,{
+    projectName: 'Quick Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/quick-visualizing.png',
+    projectUrl: 'public/quicksort.html'
+  }
 ]
 
 
