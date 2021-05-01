@@ -349,11 +349,6 @@ let projectData = [
     projectImage: "assets/GIFs/wordScramble.gif",
     projectUrl: "public/wordScramble.html",
   },
-  {
-    projectName: "Guess the song",
-    projectImage: "assets/Images/guess_song/view.png",
-    projectUrl: "public/guess_song.html",
-  },
 ];
 
 let projectContainer = document.getElementById("js-projects");
