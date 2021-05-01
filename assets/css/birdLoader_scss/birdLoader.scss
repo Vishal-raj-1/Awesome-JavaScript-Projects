@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #262626;
+}
+
+/* 
+Loader starts
+
+*/
+#container {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #18233E;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#outer-part {
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    border: 80px solid transparent;
+    border-top: 80px solid #A12A15;
+    border-left: 80px solid #A12A15;
+    transform: rotate(-45deg);
+    animation: rot1 2.5s ease infinite;
+    z-index: 11;
+}
+
+#inner1,
+#inner2,
+#upper-beak,
+#lower-beak {
+    position: absolute;
+    display: inner-block;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    border: 50px solid transparent;
+    border-top: 50px solid #FFF;
+}
+
+#inner1 {
+    border-left: 50px solid #FFF;
+    transform: rotate(-45deg);
+    animation: rot2 2.5s ease infinite;
+    z-index: 12;
+}
+
+#inner2 {
+    border-top-color: #E7E7E7;
+    transform: rotate(-135deg);
+    animation: rot3 2.5s ease infinite;
+    z-index: 13;
+}
+
+#upper-beak {
+    border-top-color: #F7CE42;
+    transform: rotate(45deg);
+    animation: rot4 2.5s ease infinite;
+    z-index: 14;
+}
+
+#lower-beak {
+    border-top-color: #F7A500;
+    border-width: 25px;
+    transform: rotate(135deg);
+    animation: rot5 2.5s ease infinite;
+    z-index: 10;
+}
+
+#eye {
+    position: absolute;
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: #18233E;
+    transform: translate(-12px, -12px);
+    animation: move 2.5s ease infinite;
+    z-index: 12;
+}
+
+@keyframes rot1 {
+    30% {
+        transform: rotate(-225deg);
+    }
+
+    40% {
+        transform: rotate(-225deg);
+    }
+
+    50% {
+        transform: rotate(-225deg);
+    }
+
+    80% {
+        transform: rotate(-45deg);
+
+    }
+
+    90% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes rot2 {
+    30% {
+        transform: rotate(-315deg);
+    }
+
+    40% {
+        transform: rotate(-315deg);
+    }
+
+    50% {
+        transform: rotate(-315deg);
+    }
+
+    80% {
+        transform: rotate(-405deg);
+    }
+
+    90% {
+        transform: rotate(-405deg);
+    }
+
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes rot3 {
+    30% {
+        transform: rotate(-225deg);
+    }
+
+    40% {
+        transform: rotate(-225deg);
+    }
+
+    50% {
+        transform: rotate(-225deg);
+    }
+
+    80% {
+        transform: rotate(-135deg);
+    }
+
+    90% {
+        transform: rotate(-135deg);
+    }
+
+    100% {
+        transform: rotate(-135deg);
+    }
+}
+
+@keyframes rot4 {
+    30% {
+        transform: rotate(-45deg);
+    }
+
+    40% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+
+    80% {
+        transform: rotate(45deg);
+    }
+
+    90% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rot5 {
+    30% {
+        transform: rotate(225deg);
+    }
+
+    40% {
+        transform: rotate(225deg);
+    }
+
+    50% {
+        transform: rotate(225deg);
+    }
+
+    80% {
+        transform: rotate(135deg);
+    }
+
+    90% {
+        transform: rotate(135deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes move {
+    30% {
+        margin-left: 25px;
+    }
+
+    40% {
+        margin-left: 25px;
+    }
+
+    50% {
+        margin-left: 25px;
+    }
+
+    80% {
+        margin-left: 0;
+    }
+
+    90% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+/*
+loader ends
+*/
+
+span,
+footer {
+    position: fixed;
+    color: white;
+    bottom: 10px;
+    left: 4px;
+    z-index: 12;
+    font-size: 12px;
+}
+
+span {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #F7A500;
+    text-decoration: none;
+}
