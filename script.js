@@ -133,6 +133,11 @@ let projectData = [
   }
   ,
   {
+    projectName: "Length Unit Conversions",
+    projectImage: "assets/Images/length_banner.jfif",
+    projectUrl: "public/length_converter.html",
+  },
+  {
     projectName: 'Pinpad',
     projectImage: 'assets/GIFs/pinpad.gif',
     projectUrl: 'public/pinpad.html'
@@ -450,12 +455,16 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
-  // {
-  //   projectName: 'MemeUrl',
-  //   projectImage: 'assets/GIFs/memeUrl.png',
-  //   projectUrl: 'public/memeUrl.html'
-  // }
-  // ,
+  
+  
+  
+
+  {
+    projectName: "Yoga App",
+    projectImage: "assets/Images/yogascreen.png",
+    projectUrl: "public/yoga.html",
+  },
+
   {
     projectName: 'RGB Color Guessing Game',
     projectImage: 'assets/GIFs/RGB_Color.gif',
@@ -492,12 +501,7 @@ let projectData = [
     projectUrl: 'public/Particle.html'
   }
   ,
-  {
-    projectName: 'Yoga App',
-    projectImage: 'assets/GIFs/yoga.gif',
-    projectUrl: 'public/yoga.html'
-  }
-  ,
+  
   {
     projectName: 'Flip Cards',
     projectImage: 'assets/GIFs/flipped.gif',
@@ -1160,6 +1164,12 @@ let projectData = [
     projectUrl: 'public/diceit.html'
   },
   {
+    projectName: 'Math Trainer',
+    projectImage:'assets/Images/math_trainer.png',
+    projectUrl:'public/math_trainer.html'
+  },
+  {
+
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
