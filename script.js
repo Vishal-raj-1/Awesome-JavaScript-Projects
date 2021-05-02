@@ -426,7 +426,7 @@ let projectData = [
   ,
   {
     projectName: 'Quiz App',
-    projectImage: 'assets/GIFs/quizApp.gif',
+    projectImage: 'assets/GIFs/quizapp_backcover.gif',
     projectUrl: 'public/quizapp.html'
   }
   ,
