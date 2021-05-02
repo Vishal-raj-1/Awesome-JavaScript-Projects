@@ -1,5 +1,32 @@
 let projectData = [
   {
+    projectName: "Shopping Cart",
+    projectImage: "assets/Images/shoppingcart.jpeg",
+    projectUrl: "public/Shopping_cart.html",
+  },
+  {
+    projectName: "RESTAURANT WEBSITE",
+    projectImage: "assets/GIFs/Restaurant.gif",
+    projectUrl: "public/Restaurant.html",
+  },
+  {
+    projectName: "ACE_EYE",
+    projectImage: "assets/Images/ACE_EYE.png",
+    projectUrl: "public/ACE_EYE.html",
+  },
+  {
+    projectName: "Sudoku Game",
+    projectImage: "assets/Images/sudoku.png",
+    projectUrl: "public/Sudoko.html"
+  },
+
+  {
+    projectName: "Music Box",
+    projectImage: "assets/GIFs/Music-Box.gif",
+    projectUrl: "public/Music-box.html",
+
+  },
+  {
     projectName: "Lorem Ipsum Generator",
     projectImage: "assets/Images/lorem.png",
     projectUrl: "public/lorem.html",
@@ -13,6 +40,16 @@ let projectData = [
     projectName: "Grocery-List",
     projectImage: "assets/GIFs/groceryList.gif",
     projectUrl: "public/groceryList.html",
+  },
+  {
+    projectName: 'Temperature Converter',
+    projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
+    projectUrl: 'public/Temperature_Converter.html'
+  },
+  {
+    projectName: 'Animated Background',
+    projectImage: 'assets/GIFs/Animated_Background.gif',
+    projectUrl: 'public/Animated_Background.html'
   },
   {
     projectName: "Picture - Picture",
@@ -375,7 +412,7 @@ let projectData = [
   ,
   {
     projectName: 'Quiz App',
-    projectImage: 'assets/GIFs/quizApp.gif',
+    projectImage: 'assets/GIFs/quizapp_backcover.gif',
     projectUrl: 'public/quizapp.html'
   }
   ,
