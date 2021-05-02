@@ -12,6 +12,11 @@ let projectData = [
     projectUrl: "public/Restaurant.html",
   },
   {
+    projectName: "BLOG WEBSITE",
+    projectImage: "assets/Images/blog-img/blog.png",
+    projectUrl: "public/blog.html",
+  },
+  {
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html",
