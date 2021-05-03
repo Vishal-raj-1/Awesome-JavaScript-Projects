@@ -1123,6 +1123,11 @@ let projectData = [
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
+  },
+  {
+    projectName: 'Memory game',
+    projectImage: 'assets/Images/Memory_game/Mind_game.png',
+    projectUrl: 'public/Memory_game.html'
   }
   ,{
     projectName: 'Selection Sort Visualizer in JavaScript',
