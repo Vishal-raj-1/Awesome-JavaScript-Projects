@@ -64,6 +64,11 @@ let projectData = [
     projectUrl: "public/Picture.html",
   },
   {
+    projectName: "Slider",
+    projectImage: "assets/GIFs/slider-js.gif",
+    projectUrl: "public/slider.html",
+  },
+  {
     projectName: "Custom Countdown",
     projectImage: "assets/GIFs/time.png",
     projectUrl: "public/CustomCount.html",
