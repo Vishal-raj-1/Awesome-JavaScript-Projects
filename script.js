@@ -7,6 +7,16 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html",
   },
   {
+    projectName: "RESTAURANT WEBSITE",
+    projectImage: "assets/GIFs/Restaurant.gif",
+    projectUrl: "public/Restaurant.html",
+  },
+  {
+    projectName: "BLOG WEBSITE",
+    projectImage: "assets/Images/blog-img/blog.png",
+    projectUrl: "public/blog.html",
+  },
+  {
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html",
@@ -44,9 +54,19 @@ let projectData = [
     projectUrl: 'public/Temperature_Converter.html'
   },
   {
+    projectName: 'Animated Background',
+    projectImage: 'assets/GIFs/Animated_Background.gif',
+    projectUrl: 'public/Animated_Background.html'
+  },
+  {
     projectName: "Picture - Picture",
     projectImage: "assets/Images/picture-picture.png",
     projectUrl: "public/Picture.html",
+  },
+  {
+    projectName: "Slider",
+    projectImage: "assets/GIFs/slider-js.gif",
+    projectUrl: "public/slider.html",
   },
   {
     projectName: "Custom Countdown",
@@ -421,7 +441,7 @@ let projectData = [
   ,
   {
     projectName: 'Quiz App',
-    projectImage: 'assets/GIFs/quizApp.gif',
+    projectImage: 'assets/GIFs/quizapp_backcover.gif',
     projectUrl: 'public/quizapp.html'
   }
   ,
@@ -570,7 +590,7 @@ let projectData = [
   ,
   {
     projectName: 'Breakout!',
-    projectImage: 'assets/GIFs/breakout.gif',
+    projectImage: 'assets/GIFs/breakout.png',
     projectUrl: 'public/breakout.html'
   }
   ,
@@ -1113,6 +1133,11 @@ let projectData = [
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
+  },
+  {
+    projectName: 'Memory game',
+    projectImage: 'assets/Images/Memory_game/Mind_game.png',
+    projectUrl: 'public/Memory_game.html'
   }
   ,{
     projectName: 'Selection Sort Visualizer in JavaScript',
@@ -1164,6 +1189,11 @@ let projectData = [
     projectUrl: 'public/diceit.html'
   },
   {
+    projectName: 'Amongus Minigame',
+    projectImage: 'assets/GIFs/amongusminigame.gif',
+    projectUrl: 'public/Amongusminigame.html'
+  },
+  {
     projectName: 'Math Trainer',
     projectImage:'assets/Images/math_trainer.png',
     projectUrl:'public/math_trainer.html'
@@ -1185,10 +1215,17 @@ let projectData = [
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   }
+
   ,{
     projectName: 'Quick Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/quick-visualizing.png',
     projectUrl: 'public/quicksort.html'
+  }
+  ,
+  {
+    projectName: 'Xylophone simulator',
+    projectImage: 'assets/GIFs/Xylophone.gif',
+    projectUrl: 'public/Xylophone.html'
   }
 ]
 
