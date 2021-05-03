@@ -7,6 +7,11 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html",
   },
   {
+    projectName: "RESTAURANT WEBSITE",
+    projectImage: "assets/GIFs/Restaurant.gif",
+    projectUrl: "public/Restaurant.html",
+  },
+  {
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html",
@@ -42,6 +47,11 @@ let projectData = [
     projectName: 'Temperature Converter',
     projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
     projectUrl: 'public/Temperature_Converter.html'
+  },
+  {
+    projectName: 'Animated Background',
+    projectImage: 'assets/GIFs/Animated_Background.gif',
+    projectUrl: 'public/Animated_Background.html'
   },
   {
     projectName: "Picture - Picture",
@@ -421,7 +431,7 @@ let projectData = [
   ,
   {
     projectName: 'Quiz App',
-    projectImage: 'assets/GIFs/quizApp.gif',
+    projectImage: 'assets/GIFs/quizapp_backcover.gif',
     projectUrl: 'public/quizapp.html'
   }
   ,
