@@ -1215,7 +1215,11 @@ let projectData = [
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   }
-
+  ,{
+    projectName: 'Counting Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/counting-visualizing.png',
+    projectUrl: 'public/countingsort.html'
+  }
   ,{
     projectName: 'Quick Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/quick-visualizing.png',
