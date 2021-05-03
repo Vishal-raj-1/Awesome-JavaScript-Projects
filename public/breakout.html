@@ -1,35 +1,17 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<meta charset="utf-8" />
-	<title>Breakout Game</title>
-	<link rel="stylesheet" href="../assets/css/Breakout.css">
-</head>
-
-
-<body>
-	<br>
-	<br>
-	<br>
-	<script src="../assets/js/Breakout.js"></script>
-	<div class="canvasDiv">
-		<canvas id="myCanvas" width="810" height="540"
-			style="background: url('../assets/Images/breakoutt.png')"></canvas>
-	</div>
-	<script>
-		{
-			var canvas = document.getElementById("myCanvas");
-			var ctx = canvas.getContext("2d");
-			ctx.font = "72px Roboto";
-			ctx.fillStyle = "#470C1E";
-			ctx.fillText("Breakout!", 245, 270);
-		}
-	</script>
-	<div id="startButtonContainer">
-		<button id="startButtonClassic" onclick="playClassic()">Lets Play!</button>
-	</div>
-</body>
-
+    <head>
+        <link rel="stylesheet" href="../assets/css/breakout.css" />
+        <title>
+            Brick Breaker
+        </title>
+       
+    </head>
+    <body>
+          <div class="message">
+             <p> <a href=""style="color:red;font-size:20px;">EXIT GAME</a>      |Click inside the box to start the game.| </p>
+          </div>
+         <canvas id="myCanvas" width="480" height="320"></canvas>
+         <script src="../assets/js/breakout.js"></script>
+    </body>
 </html>
