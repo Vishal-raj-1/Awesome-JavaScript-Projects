@@ -1195,6 +1195,13 @@ let projectData = [
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   }
+  ,
+  {
+    projectName: "Make Match Game",
+    projectImage: "assets/Images/make-match.PNG",
+    projectUrl: "public/makeMatchGame.html",
+  }
+  
 ]
 
 
