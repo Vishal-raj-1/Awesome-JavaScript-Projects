@@ -1198,7 +1198,7 @@ let projectData = [
   ,
   {
     projectName: "Make Match Game",
-    projectImage: "assets/Images/makeMatchGame/make-match.PNG",
+    projectImage: "assets/Images/makeMatchGame/make-match.png",
     projectUrl: "public/makeMatchGame.html",
   }
   
