@@ -1215,6 +1215,12 @@ let projectData = [
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   }
+  ,
+  {
+    projectName: 'Xylophone simulator',
+    projectImage: 'assets/GIFs/Xylophone.gif',
+    projectUrl: 'public/Xylophone.html'
+  }
 ]
 
 
