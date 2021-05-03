@@ -73,7 +73,7 @@ let shadesOfGrey=[
     "../assets/Images/makeMatchGame/shadesOfGrey/10.jpg",
     "../assets/Images/makeMatchGame/shadesOfGrey/11.jpg",
     "../assets/Images/makeMatchGame/shadesOfGrey/12.jpg",
-    "../../assets/Images/makeMatchGame/shadesOfGrey/13.jpg",
+    "../assets/Images/makeMatchGame/shadesOfGrey/13.jpg",
     "../assets/Images/makeMatchGame/shadesOfGrey/14.jpg",
     "../assets/Images/makeMatchGame/shadesOfGrey/15.jpg",
     "../assets/Images/makeMatchGame/shadesOfGrey/16.jpg",
