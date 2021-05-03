@@ -17,6 +17,11 @@ let projectData = [
     projectUrl: "public/blog.html",
   },
   {
+    projectName: "Budget App",
+    projectImage: "assets/GIFs/Budget.png",
+    projectUrl: "public/Budget.html",
+  },
+  {
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html",
