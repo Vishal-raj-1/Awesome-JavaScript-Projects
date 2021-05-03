@@ -465,9 +465,9 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
-  
-  
-  
+
+
+
 
   {
     projectName: "Yoga App",
@@ -511,7 +511,7 @@ let projectData = [
     projectUrl: 'public/Particle.html'
   }
   ,
-  
+
   {
     projectName: 'Flip Cards',
     projectImage: 'assets/GIFs/flipped.gif',
@@ -1068,13 +1068,13 @@ let projectData = [
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html",
   },
- 
+
   {
     projectName: "Infinite Scroll Image Gallery",
     projectImage: "assets/Images/infiniteScroll.png",
     projectUrl: "public/infiniteScroll.html",
   },
-  
+
   {
     projectName: 'Typing Practice',
     projectImage: 'assets/GIFs/TypingSpeed.gif',
@@ -1119,12 +1119,12 @@ let projectData = [
     projectImage: 'assets/Images/kochSnowflake/demo.png',
     projectUrl: 'public/kochSnowflake.html'
   }
-  ,{
+  , {
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
   }
-  ,{
+  , {
     projectName: 'Selection Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/selection-visualizing.png',
     projectUrl: 'public/selectionsort.html'
@@ -1140,7 +1140,7 @@ let projectData = [
     projectImage: 'assets/GIFs/birdLoader.gif',
     projectUrl: 'public/birdLoader.html'
   }
-  ,{
+  , {
     projectName: "Minesweeper Game",
     projectImage: "assets/GIFs/minesweeper.gif",
     projectUrl: "public/Minesweeper.html",
@@ -1157,7 +1157,7 @@ let projectData = [
     projectUrl: 'public/insertionsort.html'
   }
   ,
-   {
+  {
     projectName: 'Postfix Expression Evaluator in JavaScript',
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
@@ -1175,8 +1175,8 @@ let projectData = [
   },
   {
     projectName: 'Math Trainer',
-    projectImage:'assets/Images/math_trainer.png',
-    projectUrl:'public/math_trainer.html'
+    projectImage: 'assets/Images/math_trainer.png',
+    projectUrl: 'public/math_trainer.html'
   },
   {
 
@@ -1184,7 +1184,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   },
-  {    
+  {
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html",
@@ -1194,15 +1194,20 @@ let projectData = [
     projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
+  },
+  {
+    projectName: "Cardioid",
+    projectImage: "assets/Images/cardioid.PNG",
+    projectUrl: "public/cardioid.html",
   }
 ]
 
 
 var projectDetails = projectData.slice(0);
-projectDetails.sort(function(a,b) {
-    var x = a.projectName.toLowerCase();
-    var y = b.projectName.toLowerCase();
-    return x < y ? -1 : x > y ? 1 : 0;
+projectDetails.sort(function (a, b) {
+  var x = a.projectName.toLowerCase();
+  var y = b.projectName.toLowerCase();
+  return x < y ? -1 : x > y ? 1 : 0;
 });
 
 let projectContainer = document.getElementById("js-projects");
