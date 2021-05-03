@@ -1184,6 +1184,11 @@ let projectData = [
     projectUrl: 'public/diceit.html'
   },
   {
+    projectName: 'Amongus Minigame',
+    projectImage: 'assets/GIFs/amongusminigame.gif',
+    projectUrl: 'public/Amongusminigame.html'
+  },
+  {
     projectName: 'Math Trainer',
     projectImage:'assets/Images/math_trainer.png',
     projectUrl:'public/math_trainer.html'
