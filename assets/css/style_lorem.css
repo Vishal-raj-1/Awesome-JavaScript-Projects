@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-color: cornsilk;
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
+.container {
+    font-family: 'Montserrat', sans-serif;
+      margin: 0 auto;
+      padding: 25px 50px;
+    color:black;
+  }	
+  
+  .container h3 {
+    padding: 0;
+    margin: 0;
+  }
+  .btn  {
+    border-radius: 3px;
+    border: 1px solid black;
+    color:black;
+    
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight:100;
+    background-color: transparent;
+  }

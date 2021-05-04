@@ -1,19 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
-
-* {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
 
 body {
-  background-color: #b8c6db;
-  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url("../Images/quizapp_background.jpg");
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.box {
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
 }
 
 .quiz-container {
@@ -25,23 +18,23 @@ body {
 }
 
 .quiz-header {
-  padding: 4rem;
+  padding: 30px;
 }
 
 h2 {
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
+  padding: 20px 10px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 20px;
 }
 
 ul li {
-  font-size: 1.2rem;
-  margin: 1rem 0;
+  font-size: 20px;
+  margin: 5px 0;
 }
 
 ul li label {
@@ -55,9 +48,9 @@ button {
   display: block;
   width: 100%;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 20px;
   font-family: inherit;
-  padding: 1.3rem;
+  padding: 20px;
 }
 
 button:hover {
@@ -78,7 +71,25 @@ button:focus {
 
 .meter > span {
   width: 0%;
-  background-color: #8e44ad;
+  background-image: linear-gradient(to right, #8e44ad, #732d91, #5e3370);;
   height: 100%;
   transition: width 0.4s linear;
+}
+
+@media (max-width: 500px) {
+  .quiz-header {
+    padding: 15px;
+  }
+  h2 {
+    padding: 20px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 25px;
+  }
+  ul {
+    padding-left: 10px;
+  }
 }

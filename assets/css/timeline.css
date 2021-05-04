@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #FFFFFF;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+/* ---------------------------------------------- */
+.intro {
+    background: #EF7038;
+    padding: 70px;
+}
+.container {
+    width: fit-content;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    width: fit-content;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header p {
+    font-size: 3.5rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.content {
+    width: fit-content;
+    height: 20%;
+    border: 1px rgb(186, 186, 186) solid;
+    border-radius: 5%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #EF7038;
+}
+/*Button*/
+.btn{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+    line-height: normal;
+    background-color: #EF7038;
+    border: 2px solid #eb591a;
+    border-radius: 10% 10%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* margin: 2px 2px; */
+    cursor: pointer;
+  }
+/* ---------------------------------------------- */
+
+.timeline ul {
+  background: #F5AB78;
+  padding: 30px 0;
+}
+  
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 4px;
+  margin: 80px;
+  padding-top: 50px;
+  background: #fff;
+}
+  
+footer {
+  font-family: monospace;
+  font-size: 18px;
+}
+footer p {
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
