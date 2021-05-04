@@ -24,7 +24,7 @@ class WordCounter {
   }
   //get wordStat() method uses a regular expression
   getWordStat(str) {
-    let matches = str.match(/\s+/g);
+    let matches = str.match(/\S+/g);
     return {
       characters: str.length,
       words: matches ? matches.length : 0,
