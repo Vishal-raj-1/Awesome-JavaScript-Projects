@@ -1,0 +1,372 @@
+/*Importing google font*/
+@import url(https://fonts.googleapis.com/css?family=Nobile:400italic,700italic);
+
+body{
+	background-color: #9c9683;
+	
+}
+
+
+/*Background*/
+#table{
+	position: absolute;
+	background-color: #368fad;
+	height: 200px;
+	width: 270px;
+	border-radius: 50%;
+	left: 256px;
+	top: -56px;
+	border:3px solid black;
+	perspective: 10px;
+	border-bottom: 10px solid black;
+	z-index: -4;
+}
+
+#table2{
+	position: absolute;
+	background-color: #368fad;
+	height: 200px;
+	width: 270px;
+	border-radius: 50%;
+	left: 882px;
+	top: -60px;
+	border:3px solid black;
+	perspective: 10px;
+	border-bottom: 10px solid black;
+	z-index: -4;
+}
+
+#table3{
+	position: absolute;
+	background-color: #368fad;
+	height: 200px;
+	width: 270px;
+	border-radius: 50%;
+	left: 875px;
+	top: 590px;
+	border:3px solid black;
+	perspective: 10px;
+	z-index: -4;
+}
+
+#table4{
+	position:absolute;
+	background-color: #368fad;
+	height: 200px;
+	width: 270px;
+	border-radius: 50%;
+	left: 250px;
+	top: 590px;
+	border:3px solid black;
+	perspective: 10px;
+	z-index: -4;
+}
+
+#table5{
+	position:absolute;
+	background-color: #368fad;
+	height: 200px;
+	width: 270px;
+	border-radius: 50%;
+	left: 570px;
+	top: 275px;
+	border:3px solid black;
+	perspective: 10px;
+	z-index: -4;
+}
+
+/* Emergency button*/
+#emb{
+	position: relative;
+	left: 640px;
+	top: 180px;
+	z-index: -1;
+}
+
+
+
+
+
+
+/* For creating character*/
+.hand{
+	position: absolute;
+	background-color: red;
+	width: 20px;
+	height: 85px;
+	top: -35px;
+	left: 629px;
+	border-radius: 55px 0px 10px 55px;
+	border: 8px solid black;
+
+}
+#body{
+	position: absolute;
+	background-color: red;
+	width: 90px;
+	height: 150px;
+	top: -76px;
+	left: 660px;
+	border-radius: 70px 100px 70px 70px;
+	border: 8px solid black;
+	perspective: 20px;
+	
+
+}
+
+#lleg{
+	position: absolute;
+	background-color: red;
+	width: 25px;
+	height: 48px;
+	top: 61px;
+	left: 667px;
+	border: 8px solid black;
+	border-radius: 0px 0px 30px 30px;
+	border-left: 5px solid black;
+	z-index: -1;
+
+}
+#rleg{
+	position: absolute;
+	background-color: red;
+	width: 25px;
+	height: 48px;
+	top: 61px;
+	left: 724px;
+	border: 8px solid black;
+	border-radius: 0px 0px 30px 30px;
+	border-left: 5px solid black;
+	z-index: -1;
+	
+
+}
+
+.eye{
+	position: absolute;
+	background-color: #918f8e;
+	width: 55px;
+	height: 30px;
+	top: -35px;
+	left: 712px;
+	border-radius: 20px 30px 30px 20px;
+	border: 8px solid black;
+
+
+}
+
+#nameme{
+	font-size: 40px;
+	color: white;
+	text-shadow: -3px 3px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+	position: fixed;
+	left: 692px;
+	top: -120px;
+	transform: none !important;
+
+}
+
+/*Footer*/
+.foot{
+	position: absolute;
+	color: green;
+	font-size:20px;
+	left: 530px;
+	top: 700px;
+}
+
+.but1:hover{
+     color:white;
+}
+
+/*Kill Button*/
+#kill{
+	width : 300px;
+	height: 300px;
+	position: absolute;
+	left: 1170px;
+	top: 480px;
+	z-index: 5;
+	visibility: visible;
+
+}
+
+/*Sabotage Button*/
+#sab{
+	width : 150px;
+	height: 150px;
+	position: absolute;
+	left: 1250px;
+	top: 380px;
+	z-index: 5;
+
+}
+/*Sabotage Effect*/
+#saboo{
+	position: absolute;
+	top: 0px;
+	width : 1500px;
+	height: 800px;
+	background-color: red;
+	opacity: 0.5;
+	visibility: hidden;
+
+
+}
+
+
+/*For character 2*/
+
+.hand1{
+	position: absolute;
+	background-color: #08570c;
+	width: 20px;
+	height: 85px;
+	top: 360px;
+	left: 360px;
+	border-radius: 55px 0px 10px 55px;
+	border: 8px solid black;
+	z-index: -1;
+
+}
+#body1{
+	position: absolute;
+	background-color: #08570c;
+	width: 90px;
+	height: 150px;
+	top: 320px;
+	left: 390px;
+	border-radius: 70px 100px 70px 70px;
+	border: 8px solid black;
+	z-index: -1;
+	
+
+}
+
+#lleg1{
+	position: absolute;
+	background-color: #08570c;
+	width: 25px;
+	height: 48px;
+	top: 462px;
+	left: 397px;
+	border: 8px solid black;
+	border-radius: 0px 0px 30px 30px;
+	border-left: 5px solid black;
+	z-index: -2;
+
+}
+#rleg1{
+	position: absolute;
+	background-color: #08570c;
+	width: 29px;
+	height: 48px;
+	top: 462px;
+	left: 450px;
+	border: 8px solid black;
+	border-radius: 0px 0px 30px 30px;
+	border-left: 5px solid black;
+	z-index: -2;
+	
+
+}
+
+.eye1{
+	position: absolute;
+	background-color: #918f8e;
+	width: 55px;
+	height: 30px;
+	top: 363px;
+	left: 440px;
+	border-radius: 20px 30px 30px 20px;
+	border: 8px solid black;
+	z-index: -1;
+
+}
+
+#img{
+	perspective: 100px;
+
+}
+
+/* character name */
+#name1{
+	font-size: 40px;
+	color: white;
+	text-shadow: -3px 3px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+	position: absolute;
+	left: 410px;
+	top: 270px;
+	z-index: -1;
+}
+
+/*Touch Nav*/
+#upar{
+	background-color: #bfbfbf;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 160px;
+	top: 490px;
+	border: 2px solid black;
+	z-index: 5;
+}
+
+#dowar{
+	background-color: #bfbfbf;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 160px;
+	top: 640px;
+	border: 2px solid black;
+	z-index: 5;
+}
+
+#lefar{
+	background-color: #bfbfbf;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 80px;
+	top: 565px;
+	border: 2px solid black;
+	z-index: 5;
+}
+
+#rigar{
+	background-color: #bfbfbf;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 240px;
+	top: 565px;
+	border: 2px solid black;
+	z-index: 5;
+}
+
+#navcircle{
+	background-color: black;
+	width: 250px;
+	height: 250px;
+	border-radius:50%;
+	position: absolute;
+	top: 475px;
+	left: 70px;
+	z-index: 5;
+}
+
+/*Score*/
+#score{
+	position: absolute;
+	font-size: 50px;
+	background: black;
+	width: 200px;
+	border-radius: 30px;
+	padding: 10px;
+	font-family: sans-serif;
+	color: white;
+	left: 1150px;
+	top: 20px;
+
+}
