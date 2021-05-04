@@ -1,79 +1,140 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #ffc600;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  background: rgb(42, 184, 202);
   font-family: "Amatic SC", cursive;
-  height: 100vh;
-  /* overflow: hidden; */
 }
-
 h1 {
-  color: white;
-  margin: 3px auto;
-}
-
-.center {
-  margin: 0;
-  padding: auto;
-  position: relative;
   text-align: center;
+  font-size: 8rem;
+  line-height: 1;
+  margin-bottom: 20px;
 }
-
-#btn {
-  font-size: large;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
 }
-.main {
-  background-color: white;
-  margin: 10px auto;
-}
-
 .score {
   background: rgba(255, 255, 255, 0.2);
-  color: white;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
   line-height: 1;
   border-radius: 1rem;
-  border: 2px solid blue;
 }
-
 .game {
-  /* width: 600px; */
-  width: 90%;
-  height: 70vh;
+  /* border: 2px solid red; */
+  width: 700px;
+  height: 470px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
 }
-
 .hole {
   flex: 1 0 33.33%;
   overflow: hidden;
   position: relative;
 }
-
 .hole:after {
   display: block;
-  background: url('../Images/dirt.svg') bottom center no-repeat;
+  background: url(../Images/dirt.svg) bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
-  height: 90px;
+  height: 70px;
   position: absolute;
   z-index: 2;
-  bottom: -25px;
+  bottom: -30px;
 }
-
 .mole {
-  background: url('../Images/mole.svg') bottom center no-repeat;
-  background-size: 30%;
+  background: url("../Images/mole.svg") bottom center no-repeat;
+  background-size: 60%;
   position: absolute;
   top: 100%;
-  width: 100%;
-  height: 80%;
-  transition: all 0.8s;
+  width: 90%;
+  height: 116%;
+  transition: all 0.4s;
+}
+button {
+  background: none;
+  margin-left: 2rem;
+  border: 0;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-family: "Inconsolata", monospace;
+  transition: all 0.5s ease;
+}
+button:hover,
+button:focus {
+  background: rgba(0, 0, 0, 0.2);
+  outline: 0;
+  top: 2px;
+}
+button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.highscore {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  margin-left: 2rem;
 }
 
 .hole.up .mole {
   top: 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  button {
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: flex-start;
+    padding: 0.5rem;
+  }
+  .highscore {
+    font-size: 1.5rem;
+  }
+  .game {
+    height: 400px;
+  }
+  .mole {
+    background-size: 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .highscore {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .hole:after {
+    width: 115%;
+  }
+  .mole {
+    background-size: 60%;
+  }
 }

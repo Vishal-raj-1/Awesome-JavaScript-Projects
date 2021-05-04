@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Yellowtail&display=swap');
+*{
+margin: 0px;
+padding: 0px;
+}
+:root{
+--button:#1D4ED8;
+--minions: #FCD34D;
+}
+img {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+textarea {
+width: 80%;
+height: 10vh;
+display: block;
+margin: 1rem;
+padding: 1rem;
+}
+.navigation{
+background-color: var(--minions);
+color: black;
+padding: 2rem;
+text-align: -webkit-center;
+
+}
+.txt{
+font-family: 'Roboto Slab', serif;
+font-size: xxx-large;
+}
+.container{
+ padding: 0rem 1rem;
+}
+.container-center{
+  max-width: 600px;
+ margin: auto;
+}
+#output {
+border: 1px solid black;
+height: 10vh;
+width: 80%;
+margin: 1rem;
+padding: 1rem;
+}
+#btn-translate{
+color: white;
+font-size: large;
+background-color: var(--button);
+padding: 1.2rem 1.8rem;
+text-align: center;
+border-radius: 0.5rem;
+margin: 1.5rem;
+}
+footer{
+padding: 2rem 2rem;
+text-align: center;
+background-color: var(--minions);
+}
+.footer-header{
+font-family: 'Roboto Slab', serif;
+text-align: center;
+max-width: 930px;
+margin: auto;
+}

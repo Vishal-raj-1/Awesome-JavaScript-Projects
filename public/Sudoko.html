@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../assets/css/sudoku.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Cookie&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="settings">
+
+  <h2>Settings</h2>
+  <h4>Settings will apply next game</h4>
+
+  <div class="setOne">
+    <fieldset class="difficulty">
+      <legend>Difficulty</legend>
+
+      <p>
+        <label for="easy">Easy:</label>
+        <input type="radio" name="difficulty" id="easy" value="easy" />
+      </p>
+      <p>
+        <label for="medium">Medium:</label>
+        <input type="radio" name="difficulty" id="medium" value="medium" checked="checked" />
+      </p>
+      <p>
+        <label for="hard">Hard:</label>
+        <input type="radio" name="difficulty" id="hard" value="hard" />
+      </p>
+
+    </fieldset>
+
+  </div>
+  <div class="setTwo">
+    <fieldset class="display">
+      <legend>Display</legend>
+      <h6>under developement</h6>
+      <p>
+        <label for="desktop">Desktop:</label>
+        <input type="radio" name="display" id="desktop" value="desktop" />
+      </p>
+      <p>
+        <label for="mobile">Mobile:</label>
+        <input type="radio" name="display" id="mobile" value="mobile" checked="checked" />
+      </p>
+
+    </fieldset>
+  </div>
+  <div class="setThree">
+    <fieldset class="misc">
+      <legend>Misc</legend>
+      <label for="restart" id='restartLabel'>Warn Before Restarting?</label>
+      <input type="checkbox" name="restart" id="makeSure" />
+    </fieldset>
+  </div>
+  <h3 id="min" class="minimized topBar">MENU</h3>
+</div>
+
+
+<h1>Sudoku</h1>
+
+<div class="sudoku">
+  <table id='main'>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td class="target" draggable="true">1</td>
+            <td class="target" draggable="true">2</td>
+            <td class="target" draggable="true">3</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">4</td>
+            <td class="target" draggable="true">5</td>
+            <td class="target" draggable="true">6</td>
+          </tr>
+          <tr>
+            <td class="target" draggable="true">7</td>
+            <td class="target" draggable="true">8</td>
+            <td class="target" draggable="true">9</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="nums desktop">
+  <div class="orig" draggable="true">
+    <p>1</p>
+  </div>
+  <div class="orig" draggable="true">
+    <p>2</p>
+  </div>
+  <div class="orig" draggable="true">
+    <p>3</p>
+  </div>
+  <div class="orig" draggable="true">
+    <p>4</p>
+  </div>
+  <div class="orig" draggable="true">
+    <p>5</p>
+  </div>
+  <div class="orig" draggable="true">
+    <p>6</p>
+  </div>
+  <div class="orig" draggable="true">
+    <p>7</p>
+  </div>
+  <div class="orig" draggable="true">
+    <p>8</p>
+  </div>
+  <div class="orig" draggable="true">
+    <p>9</p>
+  </div>
+</div>
+<br>
+<p class="btn">Check</p>
+<br>
+<p class="btn" id="start">New Puzzle</p>
+
+<div class="keypad">
+  <div class="close">X</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+</div>
+    <script src="../assets/js/sudoku.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Interest Calculator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script> 
+
+    <link rel="stylesheet" href="../assets/css/InterestCalculator.css">
+    
+</head>
+
+<body>
+    
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="container">
+        <h1 class="display-3 text-center">JavaScript Interest Calculator</h1>
+
+        <div class="calculation">
+
+            <div class="form-group position-relative">
+                <label for="principal">Principal</label>
+                <input type="text" class="form-control " placeholder="0.00" id="p">
+                <i class="fas fa-dollar-sign position-absolute"></i>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group position-relative">
+                        <label for="rate">Rate of Interest</label>
+                        <input type="number" class="form-control" placeholder="0.00" id="r" min="0" step="0.1">
+                        <i class="fas fa-percent position-absolute icon"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group position-relative">
+                        <label for="time">Term of loan (in years)</label>
+                        <input type="number" class="form-control" placeholder="0.00" id="t" min="0" step="0.1">
+                        <i class="fas fa-hourglass-half position-absolute icon"></i>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 my-2">
+                    <button onclick="calculate()" class="btn btn-primary"> Submit </button> 
+                </div>
+                <div class="col-sm-3 my-2">
+                    <button onclick="reset()" class="btn btn-primary"> Reset</button>
+                </div>
+            </div>
+            
+            
+               
+            
+        </div>
+
+        <p id="simpleInterest" class="display-4 text-right"></p>
+    </div>
+       
+</body>
+<script src="../assets/js/InterestCalculator.js"></script>
+</html>
