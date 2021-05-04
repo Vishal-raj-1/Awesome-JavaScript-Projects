@@ -1237,6 +1237,11 @@ let projectData = [
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
   }
+  ,{
+    projectName: 'Heap Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/heap-visualizing.png',
+    projectUrl: 'public/heapsort.html'
+  }
 ]
 
 
