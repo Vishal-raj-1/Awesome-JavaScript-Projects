@@ -17,6 +17,11 @@ let projectData = [
     projectUrl: "public/blog.html",
   },
   {
+    projectName: "Brick Breaker Game",
+    projectImage: "assets/Images/BrickBreakergame.png",
+    projectUrl: "public/BrickBreakergame.html",
+  },
+  {
     projectName: "Budget App",
     projectImage: "assets/GIFs/Budget.png",
     projectUrl: "public/Budget.html",
@@ -591,12 +596,6 @@ let projectData = [
     projectName: 'Recipe Finder',
     projectImage: 'assets/GIFs/recipie.gif',
     projectUrl: 'public/Recipie_finder.html'
-  }
-  ,
-  {
-    projectName: 'Breakout!',
-    projectImage: 'assets/GIFs/breakout.png',
-    projectUrl: 'public/breakout.html'
   }
   ,
   {
