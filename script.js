@@ -1242,6 +1242,12 @@ let projectData = [
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
   }
+  ,
+  {
+    projectName: "Product Card",
+    projectImage: "assets/GIFs/ProductCard.gif",
+    projectUrl: "public/ProductCard.html",
+  }
 ]
 
 
