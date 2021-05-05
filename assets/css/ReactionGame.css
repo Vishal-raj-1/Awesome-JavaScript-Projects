@@ -1,0 +1,46 @@
+
+
+.box{
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(107, 5, 5);
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    text-align: center;
+    padding-top:110px ;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color:white;
+    background-image:url(../Images/ReactionGame/rg2.jpg);
+    background-size:100% 100%;
+    background-color: black;
+}
+
+button{
+    font-size: 1.5rem;
+    margin: 25px;
+    background-color: rgba(38, 8, 148, 0.829);
+    border: none;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1em;
+    cursor: pointer;
+}
+
+#winner{
+    color: green;
+}
+
+#loser{
+    color: red;
+}
+
+.results{
+    font-weight: bold;
+}

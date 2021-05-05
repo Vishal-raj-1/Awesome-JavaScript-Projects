@@ -1,0 +1,73 @@
+* {
+  padding: 0%;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  min-width: 600px;
+  font-family: 'Lato', sans-serif;
+
+}
+.header {
+  padding: 1rem;
+  border-bottom: 2px solid #00796b;
+  background-color: #009688;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.input-group {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 5px;
+}
+input,
+select,
+#add {
+  width: 300px;
+  height: 2.5rem;
+  margin: 1rem;
+  padding: 3px;
+  border: 2px #00796b solid;
+  outline-color: #00796b;
+  border-radius: 2px;
+  background-color: white;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+#main {
+  margin: 1rem;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+th{
+  font-size: 18px;
+  background-color: #B2DFDB;
+  padding: 10px 0px;
+}
+td {
+  text-align: center;
+  padding-top: 20px;
+  color: #212121;
+}
+.is-read-btn,
+.delete-btn {
+  width: 50%;
+  border-radius: 2px;
+  border: 2px #00796b solid;
+  outline-color: #00796b;
+}

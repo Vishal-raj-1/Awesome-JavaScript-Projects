@@ -1,85 +1,109 @@
-.btn{
-    /* border: 5px solid green; */
-}
-.container{
-    /* border: 5px solid purple; */
-}
-.card{
-    /* border: 5px solid lime; */
-}
-.col{
-    /* border: 5px solid red; */
-}
-/*main heading*/
 body{
-    /* background: #ffee00; */
-    background:rgb(139, 3, 139);
-    font-family:  cursive;
+    background: linear-gradient(#eb126c, #10daf5,#7b10f5);
+    margin:20px auto;
+    
 }
-h1{
-    color:#ffee00;
-    font-family: cursive;
+li{
+    list-style-type: none;
 }
-/*adding title & text part */
-.card{
-    border: 5px solid #ffc600;
+ul{
+    padding: 0px !important;
 }
-h3{
-    font-family:cursive;
-    color:purple;
+a{
+    text-decoration: none!important;
 }
-#addTitle{
-    font-size:28px ;
-    font-family: cursive;
-    /* font-family: 'Caveat'; */
+nav .nav-link{
+    width: 15%;
 }
-#addTxt{
+nav .navbar-toggler{
+    color: #fff;
+}
+.navbar-brand{
+    letter-spacing: 1px;
+    opacity: 1;
+}
+#thetarget li a{
+    color: #fff;
+    padding-left: 20px;
+}
+.nav-link{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    font-family: cursive;
-    /* font-family: 'Caveat'; */
+    color: #32216A!important;
+    padding-left: 50px!important;
 }
-/*navbar*/
-.navbar{
-    background-color: #ffee00;
+.nav-link:hover{
+    color: #52418F!important;
 }
-.navtag{
-    color: purple;
-    text-decoration: none;
+#sBtn{
+    border: 2px solid #1D253F;
+    color: #1D253F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    flex:none;
-    padding:10px;
+    padding: 3px 8px;
 }
-
-
-
-/* button styling */
-.btn{
-    color: purple;
-    font-size: 20px;
-    font-family: 'Caveat', cursive;
-    font-weight: bold;
-    background-color: #ffee00;
-    border:2px solid #ffee00;
+#sBtn:hover{
+    background-color: #1D253F;
+    color: #fff;
+}
+.title1{
+    font-family: 'Oswald', sans-serif;
+}
+.card{
+    width:inherit;
+    background: linear-gradient( #A79EC5,#A36B9B);
+    border:2px solid rgb(216, 212, 248);
     border-radius: 5px;
-    padding:10px;
+    border-style: outset;
+    padding: 10px;
 }
-.btn:hover, .btn:active{
-    background-color: #ffc600;
-    color:purple;
-    border:3px solid #ffc600
+
+.card-title{
+    font-family: 'Ubuntu', sans-serif;
 }
-/* note-card styling */
-#notes{
-    /* border: 2px solid black; */
-    font-family: 'Caveat', cursive;
+
+#noteTitle{
+    font-family: 'merriweather', sans-serif;
+}
+
+#noteText{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.jsBtn{
+    background-color: #1d1731;
+    color: #fff;
+    font-size: 15px;
+}
+
+.jsBtn:hover{
+    background-color: #A79EC5;
+    color: #1d1731;
+}
+
+#addBtn, #saveBtn{
+    background-color: #1D253F;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 30px;
+}
+
+#addBtn:hover{
+    background-color: #BFC7E2;
+    color: #1D253F;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 7px 29px;
+}
+
+.form-control{
+    background-color:white;
+    border-radius: 5px;
+}
+
+.card-title{
     font-size: 30px;
-}
-.noteCard{
-    border: 5px solid #ffc600;
-    background-color: #ffff8b;
-}
-h2{
-    color:purple;
-    font-weight: 400;
+    padding-bottom: 10px;
 }

@@ -15,28 +15,32 @@
     <link href="../assets/css/ArmstrongNumber.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
+    <!-- <nav class="navbar navbar-light bg-light">
       <div class="container-fluid" style="justify-content: center">
         <span class="navbar-brand mb-0 h1">Enter the Number</span>
       </div>
-    </nav>
-    <div class="inputdata">
-      <span class="span1">Enter the Number</span>
-      <br />
-      <input
-        type="text"
-        placeholder="Enter the Number"
-        id="inp"
-        class="input1"
-      />
-      <br />
-      <button onclick="ArmstrongChecker()" class="btn1">Convert</button>
-    </div>
-    <br />
-    <div class="output">
-      <span style="font-size: 1.4vw; font-size: 2.2vw">
-        <span id="text" style="color: black; font-weight: 600"></span>
-      </span>
+    </nav> -->
+    <div class="container">
+      <h1 class="heading">Armstrong Checker</h1>
+      <p>
+        <h2>Armstrong number is a number that is equal to the sum of cubes of its digits.</h2>
+      </p>
+      <div id="div2">
+        <span class="span1">Check for Armstrong Number ? </span>
+        <br>
+        <form id="form" onsubmit="ArmstrongChecker()">
+          <input type="text" placeholder="Enter the Number" id="inp" class="input1"/>
+          <br>
+        </form>
+          <button onclick="ArmstrongChecker()" class="btn1">Check</button>
+          <button onclick="myFunction()" class="btn1">Reset</button>
+          <div class="output">
+            <span style="">
+              <span id="text" style="color: black; font-weight: 600"></span>
+            </span>
+          </div>
+      </div>
+      <br>
     </div>
   </body>
 </html>

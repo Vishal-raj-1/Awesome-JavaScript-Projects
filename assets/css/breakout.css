@@ -1,28 +1,31 @@
-* {
-	padding: 0;
-	margin: 0;
-}
 body {
-	background-color: rgb(49, 6, 27);
+    margin-left:280px;
+    margin-top:30px;
+    background: linear-gradient(-45deg, #141414e1,  white, #110010e8, #f3eded);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+  
 }
-div {
-	text-align: center;
-}
-canvas {
-	background: #000;
-	display: block;
-	margin: 0 auto;
-}
-#startButtonClassic {
-	padding: 10px 30px;
-	border: 0px;
-	margin: 4px;
-	background-color: rgb(255, 255, 255);
-	font-family: Roboto;
-	border-radius: 20px;
-	font-size: 18px;
-	color: rgb(49, 6, 27);
-}
-#startButtonClassic:active {
-	background-color: #959595;
+canvas { 
+    background-image: url("../Images/breakout2.jpg");  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 80vh;
+    width: 60vw;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+  
+} 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

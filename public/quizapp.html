@@ -4,38 +4,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../assets/css/quizapp.css" />
   <title>Quiz App</title>
 </head>
 
 <body>
-  <div class="quiz-container" id="quiz">
-    <div class="meter"><span></span></div>
-    <div class="quiz-header">
-      <h2 id="question">Question text</h2>
-      <ul> 
-        <li>
-          <input type="radio" name="answer" id="a" class="answer">
-          <label for="a" id="a_text">Question</label>
-        </li>
 
-        <li>
-          <input type="radio" name="answer" id="b" class="answer">
-          <label for="b" id="b_text">Question</label>
-        </li>
+  <div class="container">
+    <div class="box d-flex justify-content-center align-items-center">
 
-        <li>
-          <input type="radio" name="answer" id="c" class="answer">
-          <label for="c" id="c_text">Question</label>
-        </li>
+      <div class="quiz-container" id="quiz">
 
-        <li>
-          <input type="radio" name="answer" id="d" class="answer">
-          <label for="d" id="d_text">Question</label>
-        </li>
-      </ul>
+        <div class="meter"><span></span></div>
+
+        <div class="quiz-header">
+          <h2 class="text-center" id="question">Question text</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Question</label>
+            </li>
+          </ul>
+        </div>
+
+        <button id="submit">Submit</button>
+      </div>
+
     </div>
-    <button id="submit">Submit</button>
   </div>
   <script src="../assets/js/quizapp.js"></script>
 </body>

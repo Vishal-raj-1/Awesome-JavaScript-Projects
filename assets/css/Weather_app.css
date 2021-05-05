@@ -88,19 +88,19 @@ main{
     text-transform: uppercase;
     text-decoration: none;
     background: white;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-left: 5px;
-    padding: 11px;
-    border: 2px solid #494949;
+    padding: 12px;
+    border: 5px lavender red;
     display: inline-block;
     transition: all 0.4 ease 0s;
 }
 #search-button:hover{
 
-color: #ffffff;
-background: #ff6768;
-border-color: #ff6768;
-transition: all 0.4s ease 0s;
+color: wheat;
+background: rgb(73, 97, 173);
+border-color: gray;
+transition: all 0.0s ease 0s;
 
 
 
@@ -109,18 +109,19 @@ transition: all 0.4s ease 0s;
 #search-input
 {
     width: 260px;
-    overflow: hidden;
+    overflow: visible;
     font-size: 20px;
-    margin: 8px 0;
+    margin: 8px 0 ;
     padding: 8px 0;
-    border-bottom: 3px solid #ff6768;
-    color: white;
+    border-radius: 15px;
+    border: 2px solid ;
+    color: rgb(0, 0, 0);
     outline: none;
-    background: none;
+    background: whitesmoke;
 }
 input
 {
-    border: none;
+    border: visible;
 }
 
 
