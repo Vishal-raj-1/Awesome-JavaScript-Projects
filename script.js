@@ -1242,6 +1242,12 @@ let projectData = [
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
   }
+  ,
+  {
+    projectName: "Kanban Board",
+    projectImage: "assets/GIFs/KanbanBoard_ss.gif",
+    projectUrl: "public/KanbanBoard.html",
+  }
 ]
 
 
