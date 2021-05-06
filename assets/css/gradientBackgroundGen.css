@@ -1,0 +1,50 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  /* text-transform: uppercase; */
+  /* top: 15%; */
+  background: linear-gradient(to right, red, yellow); /* Standard syntax */
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+.lable {
+  display: inline-block;
+}
+input {
+  margin: 0.5em 0.5em 0.5em 0em;
+  width: 50px;
+  height: 30px;
+}
+button {
+  padding: 1em;
+  width: 200px;
+  height: 65px;
+  font-size: 1em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+footer {
+  padding: 2rem;
+  margin: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer > a {
+  text-decoration: none;
+}

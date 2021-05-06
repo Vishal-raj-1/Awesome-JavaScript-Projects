@@ -1,223 +1,215 @@
-const rulesBtn = document.getElementById('rules-btn');
-const closeBtn = document.getElementById('close-btn');
-const rules = document.getElementById('rules');
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-
-let score = 0;
-
-const brickRowCount = 9;
-const brickColumnCount = 5;
-
-// Create ball props
-const ball = {
-  x: canvas.width / 2,
-  y: canvas.height / 2,
-  size: 10,
-  speed: 4,
-  dx: 4,
-  dy: -4
-};
-
-// Create paddle props
-const paddle = {
-  x: canvas.width / 2 - 40,
-  y: canvas.height - 20,
-  w: 80,
-  h: 10,
-  speed: 8,
-  dx: 0
-};
-
-// Create brick props
-const brickInfo = {
-  w: 70,
-  h: 20,
-  padding: 10,
-  offsetX: 45,
-  offsetY: 60,
-  visible: true
-};
-
-// Create bricks
-const bricks = [];
-for (let i = 0; i < brickRowCount; i++) {
-  bricks[i] = [];
-  for (let j = 0; j < brickColumnCount; j++) {
-    const x = i * (brickInfo.w + brickInfo.padding) + brickInfo.offsetX;
-    const y = j * (brickInfo.h + brickInfo.padding) + brickInfo.offsetY;
-    bricks[i][j] = { x, y, ...brickInfo };
-  }
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var ballRadius = 5;
+var x = canvas.width/2;
+var y = canvas.height-30;
+var dx = 5;
+var dy = -5;
+var paddleHeight = 10;
+var paddleWidth = 75;
+var paddleX = (canvas.width-paddleWidth)/2;
+var rightPressed = false;
+var leftPressed = false;
+var brickRowCount = 5;
+var brickColumnCount = 3;
+var brickWidth = 75;
+var brickHeight = 20;
+var brickPadding = 10;
+var brickOffsetTop = 30;
+var brickOffsetLeft = 30;
+var score = 0;
+var lives = 3;
+var grd = ctx.createLinearGradient(0, 0, 420, 0);
+grd.addColorStop(0, "crimson");
+grd.addColorStop(1, "white");
+var mySound;
+ var urSound;
+ var overSound;
+var bricks = [];
+for(var c=0; c<brickColumnCount; c++) {
+bricks[c] = [];
+for(var r=0; r<brickRowCount; r++) {
+    bricks[c][r] = { x: 0, y: 0, status: 1 };
+}
 }
 
-// Draw ball on canvas
-function drawBall() {
-  ctx.beginPath();
-  ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-  ctx.fillStyle = '#0095dd';
-  ctx.fill();
-  ctx.closePath();
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+document.addEventListener("mousemove", mouseMoveHandler, false);
+canvas.addEventListener("click",draw,false);
+
+
+
+
+function keyDownHandler(e) {
+    if(e.key == "Right" || e.key == "ArrowRight") {
+        rightPressed = true;
+    }
+    else if(e.key == "Left" || e.key == "ArrowLeft") {
+        leftPressed = true;
+    }
 }
 
-// Draw paddle on canvas
-function drawPaddle() {
-  ctx.beginPath();
-  ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-  ctx.fillStyle = '#0095dd';
-  ctx.fill();
-  ctx.closePath();
+function keyUpHandler(e) {
+    if(e.key == "Right" || e.key == "ArrowRight") {
+        rightPressed = false;
+    }
+    else if(e.key == "Left" || e.key == "ArrowLeft") {
+        leftPressed = false;
+    }
 }
 
-// Draw score oon canvas
-function drawScore() {
-  ctx.font = '20px Arial';
-  ctx.fillText(`Score: ${score}`, canvas.width - 100, 30);
+function mouseMoveHandler(e) {
+var relativeX = e.clientX - canvas.offsetLeft;
+if(relativeX > 0 && relativeX < canvas.width) {
+    paddleX = relativeX - paddleWidth/2;
 }
-
-// Draw bricks on canvas
-function drawBricks() {
-  bricks.forEach(column => {
-    column.forEach(brick => {
-      ctx.beginPath();
-      ctx.rect(brick.x, brick.y, brick.w, brick.h);
-      ctx.fillStyle = brick.visible ? '#0095dd' : 'transparent';
-      ctx.fill();
-      ctx.closePath();
-    });
-  });
 }
-
-// Move paddle on canvas
-function movePaddle() {
-  paddle.x += paddle.dx;
-
-  // Wall detection
-  if (paddle.x + paddle.w > canvas.width) {
-    paddle.x = canvas.width - paddle.w;
-  }
-
-  if (paddle.x < 0) {
-    paddle.x = 0;
-  }
-}
-
-// Move ball on canvas
-function moveBall() {
-  ball.x += ball.dx;
-  ball.y += ball.dy;
-
-  // Wall collision (right/left)
-  if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
-    ball.dx *= -1; // ball.dx = ball.dx * -1
-  }
-
-  // Wall collision (top/bottom)
-  if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
-    ball.dy *= -1;
-  }
-
-  // console.log(ball.x, ball.y);
-
-  // Paddle collision
-  if (
-    ball.x - ball.size > paddle.x &&
-    ball.x + ball.size < paddle.x + paddle.w &&
-    ball.y + ball.size > paddle.y
-  ) {
-    ball.dy = -ball.speed;
-  }
-
-  // Brick collision
-  bricks.forEach(column => {
-    column.forEach(brick => {
-      if (brick.visible) {
-        if (
-          ball.x - ball.size > brick.x && // left brick side check
-          ball.x + ball.size < brick.x + brick.w && // right brick side check
-          ball.y + ball.size > brick.y && // top brick side check
-          ball.y - ball.size < brick.y + brick.h // bottom brick side check
-        ) {
-          ball.dy *= -1;
-          brick.visible = false;
-
-          increaseScore();
+function collisionDetection() {
+for(var c=0; c<brickColumnCount; c++) {
+    for(var r=0; r<brickRowCount; r++) {
+    var b = bricks[c][r];
+    if(b.status == 1) {
+        if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
+        dy = -dy;
+        b.status = 0;
+        mySound.play();
+        score++;
+        if(score == brickRowCount*brickColumnCount) {
+            
+            ctx.rect(0, 0, canvas.width,canvas.height);
+            ctx.fillStyle = "rgba(0,0,0,1)";
+            ctx.fill();
+    
+            ctx.font = "20px Arial";
+        ctx.fillStyle = "white";
+            ctx.textAlign = "center";
+            ctx.fillText("CONGRATS YOU WIN! YOUR SCORE IS  " +score, canvas.width / 2,canvas.height / 2);
+            urSound.play();
+        clearInterval(animateInterval);
+    
         }
-      }
-    });
-  });
-
-  // Hit bottom wall - Lose
-  if (ball.y + ball.size > canvas.height) {
-    showAllBricks();
-    score = 0;
-  }
+        }
+    }
+    }
+}
 }
 
-// Increase score
-function increaseScore() {
-  score++;
-
-  if (score % (brickRowCount * brickRowCount) === 0) {
-    showAllBricks();
-  }
+function drawBall() {
+ctx.beginPath();
+ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+ctx.fillStyle = grd;
+ctx.fill();
+ctx.closePath();
+}
+function drawPaddle() {
+ctx.beginPath();
+ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+ctx.fillStyle = grd;
+ctx.fill();
+ctx.closePath();
+}
+function drawBricks() {
+for(var c=0; c<brickColumnCount; c++) {
+    for(var r=0; r<brickRowCount; r++) {
+    if(bricks[c][r].status == 1) {
+        var brickX = (r*(brickWidth+brickPadding))+brickOffsetLeft;
+        var brickY = (c*(brickHeight+brickPadding))+brickOffsetTop;
+        bricks[c][r].x = brickX;
+        bricks[c][r].y = brickY;
+        ctx.beginPath();
+        ctx.rect(brickX, brickY, brickWidth, brickHeight);
+        ctx.fillStyle = grd;
+        ctx.fill();
+        ctx.closePath();
+    }
+    }
+}
+}
+function drawScore() {
+ctx.font = "16px Arial";
+ctx.fillStyle = "white";
+ctx.fillText("Score: "+score, 8, 20);
+}
+function drawLives() {
+ctx.font = "16px Arial";
+ctx.fillStyle = "white";
+ctx.fillText("Lives: "+lives, canvas.width-65, 20);
+}
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+        this.sound.play();
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }    
 }
 
-// Make all bricks appear
-function showAllBricks() {
-  bricks.forEach(column => {
-    column.forEach(brick => (brick.visible = true));
-  });
-}
 
-// Draw everything
 function draw() {
-  // clear canvas
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+drawBricks();
+drawBall();
+drawPaddle();
+drawScore();
+drawLives();
+collisionDetection();
+mySound=new sound("../assets/sounds/IOS (Notification).mp3");
+urSound=new sound("../assets/sounds/Avengers Notification Tone.mp3");
+overSound=new sound("../assets/sounds/Game Over.mp3");
+// liv=new sound("percussion-sound.mp3");
 
-  drawBall();
-  drawPaddle();
-  drawScore();
-  drawBricks();
+if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+    dx = -dx;
+}
+if(y + dy < ballRadius) {
+    dy = -dy;
+}
+else if(y + dy > canvas.height-ballRadius) {
+    if(x > paddleX && x < paddleX + paddleWidth) {
+    dy = -dy;
+    }
+    else {
+    lives--;
+    //liv.play();
+    if(lives<=0) {
+        ctx.rect(0, 0, canvas.width,canvas.height);
+    
+        ctx.fillStyle = "rgba(0,0,0,1)";
+        ctx.fill();
+
+        ctx.font = "30px Arial";
+        ctx.fillStyle = "white";
+        ctx.textAlign = "center";
+
+        ctx.fillText("GAME OVER SCORE IS  " +score, canvas.width / 2,canvas.height / 2);
+        overSound.play();
+        clearInterval(animateInterval);
+    }
+    else {
+        x = canvas.width/2;
+        y = canvas.height-30;
+        dx = 3;
+        dy = -3;
+        paddleX = (canvas.width-paddleWidth)/2;
+    }
+    }
 }
 
-// Update canvas drawing and animation
-function update() {
-  movePaddle();
-  moveBall();
-
-  // Draw everything
-  draw();
-
-  requestAnimationFrame(update);
+if(rightPressed && paddleX < canvas.width-paddleWidth) {
+    paddleX += 7;
+}
+else if(leftPressed && paddleX > 0) {
+    paddleX -= 7;
 }
 
-update();
-
-// Keydown event
-function keyDown(e) {
-  if (e.key === 'Right' || e.key === 'ArrowRight') {
-    paddle.dx = paddle.speed;
-  } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
-    paddle.dx = -paddle.speed;
-  }
+x += dx;
+y += dy;
+requestAnimationFrame(draw);
 }
-
-// Keyup event
-function keyUp(e) {
-  if (
-    e.key === 'Right' ||
-    e.key === 'ArrowRight' ||
-    e.key === 'Left' ||
-    e.key === 'ArrowLeft'
-  ) {
-    paddle.dx = 0;
-  }
-}
-
-// Keyboard event handlers
-document.addEventListener('keydown', keyDown);
-document.addEventListener('keyup', keyUp);
-
-// Rules and close event handlers
-rulesBtn.addEventListener('click', () => rules.classList.add('show'));
-closeBtn.addEventListener('click', () => rules.classList.remove('show'));

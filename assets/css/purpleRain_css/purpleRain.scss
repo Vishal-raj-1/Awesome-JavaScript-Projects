@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: gray;
+    opacity: 0.2;
+    margin: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bolder;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 6px;
+    left: 4px;
+    color: #fff;
+    margin-left: 5px;
+    font-size: small;
+
+    a {
+        text-decoration: none;
+        color: tomato;
+        outline: none;
+    }
+}
