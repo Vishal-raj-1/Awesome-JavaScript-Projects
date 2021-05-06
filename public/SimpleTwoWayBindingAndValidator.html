@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <h1>Hello:<span id="msg"></h1>
+    <h1>Hello:<span id="msg"></span></h1>
+    <h2>Your age:<span id="ageMsg"></span></h2>
     <div>
         <h3>Enter Your Name</h3>
         <input type="text" id="txtName" onkeyup="nameChanged(this);" />
@@ -28,13 +29,19 @@
                     document.getElementById("msg").textContent = value;
 
                 if (prop == "age") {
+                    document.getElementById("ageMsg").textContent = "";
+
                     if (!isNumeric(value)) {
                         alert('The age is not an integer');
+                        return;
                     }
+                    
                     if (value > 130) {
                         alert('The age seems invalid');
+                        return;
                     }
-                    return;
+
+                    document.getElementById("ageMsg").textContent = value;
                 }
 
                 obj[prop] = value;

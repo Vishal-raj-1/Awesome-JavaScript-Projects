@@ -1188,7 +1188,7 @@ let projectData = [
   ,
   {
     projectName: "Proxy Pattern TwoWay Binding and Validation Sample",
-    projectImage: "assets/Images/SimpleTwoWayBindingAndValidator.PNG",
+    projectImage: "assets/Images/SimpleTwoWayBindingAndValidator.jpg",
     projectUrl: "public/SimpleTwoWayBindingAndValidator.html",
   }
 ]
