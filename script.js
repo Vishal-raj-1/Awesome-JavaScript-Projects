@@ -559,6 +559,11 @@ let projectData = [
     projectName: "Factorial Calculator",
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
+  },
+  {
+    projectName: "Music Player App",
+    projectImage: "assets/Images/MusicPlayerByVishal.gif",
+    projectUrl: "public/MusicApp.html",
   }
 
 
