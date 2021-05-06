@@ -1,0 +1,147 @@
+body {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")
+      center center no-repeat;
+    background-size: cover;
+  }
+  .con {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    height: 850px;
+    width: 500px;
+    background: lightcoral;
+    border: 10px solid rgb(214, 145, 145);
+    position: relative;
+    left: 32%;
+    right: 30%;
+  }
+  
+  input {
+    margin: 10px;
+    width: 90%;
+    height: 30px;
+    border: solid black;
+  }
+  select {
+    margin: 10px;
+    width: 93%;
+    height: 35px;
+    border: solid black;
+    cursor: pointer;
+  }
+  button {
+    margin: 10px;
+    width: 50%;
+    height: 30px;
+    border: solid black;
+    display: block;
+    background: burlywood;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+  }
+  form {
+    display: block;
+    text-align: left;
+  }
+  .but{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .card {
+    background: #fdf7ef;
+    box-shadow: 6px 6px 5px gray;
+    width: 490px;
+    height: 600px;
+    padding: 5px;
+  }
+  .card_title {
+    height: 60px;
+    width: 100%;
+    position: relative;
+  }
+  .pro {
+    width: 150px;
+    height: 150px;
+    left: 175px;
+    right: 175px;
+    top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .card_row {
+    height: 40px;
+    width: 100%;
+    position: relative;
+  }
+  .redline {
+    width: 100%;
+    background-color: red;
+    height: 4px;
+  }
+  .blueline {
+    width: 100%;
+    background-color: steelblue;
+    height: 2px;
+  }
+  .text_title {
+    font-family: "Seaweed Script", cursive;
+    font-size: 2em;
+    bottom: 0;
+    left: 100px;
+    right: 100px;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+  }
+  .text {
+    font-family: "Seaweed Script", cursive;
+    font-size: 1.5em;
+    bottom: 0;
+    left: 30px;
+    position: absolute;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body{
+      font-size: 10px;
+    }
+    .con{
+    height: 650px;
+    width: 300px;
+    left: 0;
+    right: 0;
+    padding-left: 20px;
+    }
+    input, button{
+      height: 20px;
+    }
+    select{
+      height: 25px;
+    }
+    .card{
+      width: 280px;
+      height: 500px;
+      font-size: 1em;
+    }
+    .card_row{
+      height: 30px;
+    }
+    .text_title{
+      left: 50px;
+      right: 50px;
+    }
+    .pro{
+      left: 70px;
+      right: 50px;
+    }
+  }
