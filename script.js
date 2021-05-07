@@ -1247,7 +1247,6 @@ let projectData = [
     projectUrl: "public/ReactionGame.html",
   }
   ,{
-
     projectName: 'Bucket Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/bucket-visualizing.png',
     projectUrl: 'public/bucketsort.html'
@@ -1261,6 +1260,11 @@ let projectData = [
     projectName: 'Bubble Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
+  }
+    ,{
+    projectName: 'Linear Search Visualization in JavaScript',
+    projectImage: 'assets/Images/linearsearch-visualizing.png',
+    projectUrl: 'public/linearsearch.html'
   }
 ]
 
