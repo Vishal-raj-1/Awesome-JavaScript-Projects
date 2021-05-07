@@ -1248,6 +1248,11 @@ let projectData = [
   }
   ,{
 
+    projectName: 'Bucket Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/bucket-visualizing.png',
+    projectUrl: 'public/bucketsort.html'
+  },
+  {
     projectName: 'Heap Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/heap-visualizing.png',
     projectUrl: 'public/heapsort.html'
