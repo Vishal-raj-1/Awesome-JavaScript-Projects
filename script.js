@@ -1248,7 +1248,7 @@ let projectData = [
   },
   {
     projectName: "Smooth Scroll",
-    projectImage: "assets/GIFs/Smooth_scroll ",
+    projectImage: "assets/GIFs/Smooth_scroll.gif ",
     projectUrl: "public/Smooth_scroll.html",
   }
 ]
