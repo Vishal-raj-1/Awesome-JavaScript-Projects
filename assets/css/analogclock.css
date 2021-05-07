@@ -11,6 +11,14 @@ body{
     min-height: 100vh;
     background: rgb(2, 45, 88);
 }
+header{
+   
+    margin-bottom: 5vw;
+    font-size: 3vw;
+    transition: opacity .2s ease-in-out;
+   color: #fff;
+   
+}
 footer{
     position: fixed;
     bottom: 20px;
@@ -105,3 +113,13 @@ h3 a{
     z-index: 12;
     border-radius: 6px  6px 0 0;
 }
+@media screen and (max-width: 500px) {
+    header{
+        position: fixed;
+        margin-bottom: 130vw;
+        font-size: 6vw;
+        transition: opacity .2s ease-in-out;
+       
+        border: 2px solid #f9b52e;
+    }
+  }

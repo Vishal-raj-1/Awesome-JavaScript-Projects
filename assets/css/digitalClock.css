@@ -16,6 +16,13 @@ body {
 .clock {
   display: flex;
 }
+.heading{
+  color: #372713;
+  font-size: 55px;
+  text-decoration: underline;
+  text-align-last: center;
+  margin: 1vw;
+}
 
 .clock div {
   position: relative;

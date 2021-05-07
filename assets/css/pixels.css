@@ -9,7 +9,14 @@ body{
 }
 
 
-
+.heading{
+    color: rgb(201 87 211);
+    margin-top: 5vw;
+    font-size: 7vw;
+    text-decoration: underline;
+    text-align-last: center;
+  }
+  
 #start-button{
     border-radius: 10%;
     width:178px;

@@ -25,7 +25,12 @@ body {
     background-image: linear-gradient(-45deg, none, none none);
     transition: 2s;
 }
-
+.heading{
+    color: rgb(201 87 211);
+  
+    text-decoration: underline;
+    text-align-last: center;
+  }
 .sidenav {
     width:110px;
     height: 600px;

@@ -15,7 +15,12 @@ body {
   overflow: hidden;
   margin: 0;
 }
-
+.heading{
+  color: rgb(201 87 211);
+ 
+  text-decoration: underline;
+  text-align-last: center;
+}
 .quiz-container {
   background-color: #fff;
   border-radius: 10px;

@@ -17,7 +17,13 @@ body {
   user-select: none;
   
 }
-
+.heading{
+  color: black;
+  font-size: 55px;
+  text-decoration: underline;
+  text-align-last: center;
+  margin: 1vw;
+}
 .size-wrapper {
   position: absolute;
   top: 87%;

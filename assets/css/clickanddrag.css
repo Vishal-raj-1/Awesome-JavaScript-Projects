@@ -13,7 +13,13 @@
     width: 100%;
     overflow: hidden;
   }
-  
+  .heading{
+    color: #372713;
+    font-size: 55px;
+    text-decoration: underline;
+    text-align-last: center;
+    
+}
   .slider-container {
     height: 100vh;
     display: inline-flex;

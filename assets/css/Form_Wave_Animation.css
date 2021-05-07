@@ -13,6 +13,13 @@
     font-family: cursive;
     color: white;
   }
+  .heading{
+    color: #372713;
+    
+    text-decoration: underline;
+    text-align-last: center;
+    margin: 1vw;
+  }
   
   .container{
       background-color:rgb(0, 0, 0,0.2) ;

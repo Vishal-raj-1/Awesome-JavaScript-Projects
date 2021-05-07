@@ -19,7 +19,14 @@ html {
   backdrop-filter: blur(10px);
   position: relative;
 }
+.heading{
+  color: #372713;
+ 
+  text-decoration: underline;
+  text-align-last: center;
+  
 
+}
 #instruction {
   width: 300px;
   left: 260px;

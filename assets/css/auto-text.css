@@ -16,6 +16,20 @@ h1{
     padding:0;
     color: transparent;
 }
+header{
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    text-transform: uppercase;
+    font-family: consolas;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin: 0;
+    display: flex;
+    font-size: 5vw;
+    padding: 0;
+    color: aquamarine;
+}
 h1:before{
 content: attr(data-text);
 position: absolute;

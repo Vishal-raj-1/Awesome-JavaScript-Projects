@@ -18,7 +18,12 @@
     left: 40%;
     z-index: 2;
 }
-
+.heading{
+    color: black;
+   
+    text-decoration: underline;
+    text-align-last: center;
+  }
 #ball{
     color: rgb(74, 218, 86);
     font-size:50px;

@@ -12,6 +12,13 @@ h1{
     padding: 0px;
     box-sizing: border-box;
     
+}  
+.heading{
+    color: #372713;
+    font-size: 60px;
+    text-decoration: underline;
+    text-align-last: center;
+    margin: 3vw;
 }
 
 table {

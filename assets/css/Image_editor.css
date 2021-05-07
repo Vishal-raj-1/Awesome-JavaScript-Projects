@@ -1,17 +1,25 @@
 
 
-* {
-	background-color:
+*{
+	background-color: white
 }
+
 
 table {
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 5%;
 	background-color: #ffe6e6;
 	padding: 20px;
 	border-radius: 10%;
 }
-
+.heading{
+    color: #372713;
+    font-size: 3vw;
+	top: 10px;
+    text-decoration: underline;
+    text-align-last: center;
+    margin: 0;
+}
 table:hover {
 	box-shadow: 0 0 5px #e7accf, 0 0 50px #e7accf, 0 0 25px #e7accf, 0 0 5px #e7accf;
 }

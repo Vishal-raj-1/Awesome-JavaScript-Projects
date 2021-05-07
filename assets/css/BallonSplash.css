@@ -8,7 +8,11 @@ body{
     background-repeat: repeat;
     font-family: 'Dela Gothic One', cursive;
 }
-
+.heading{
+    color: bisque;
+    font-size: 60px;
+    text-decoration: underline;
+}
 
 /* For Scroll Bar  */
 /* width */

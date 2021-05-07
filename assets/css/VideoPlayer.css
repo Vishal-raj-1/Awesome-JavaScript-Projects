@@ -3,6 +3,10 @@ body{
     text-align: center;
     background-color: #171717;
 }
+.heading{
+    color: white;
+  
+  }
 #volume-change{
     color: #1F51FF;
 }

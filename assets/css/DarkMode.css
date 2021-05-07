@@ -17,9 +17,15 @@
     transition-duration: 1s;
     margin-left: 1px;
 }
-
+.heading{
+    color: #372713;
+    font-size: 2vw;
+    text-decoration: underline;
+    text-align-last: center;
+    
+}
 h1 {
-    font-size: 5rem;
+    font-size: 2rem;
     margin: 100px auto;
     text-align: center;
 }
@@ -30,4 +36,5 @@ h1 {
 
 .bck-color-black {
     background-color: black;
+    
 }

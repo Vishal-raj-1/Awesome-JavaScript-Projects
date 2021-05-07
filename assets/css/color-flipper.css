@@ -13,7 +13,13 @@ h1 {
     padding:10px;
 
 }
-
+.heading{
+    color: #372713;
+    font-size: 55px;
+    text-decoration: underline;
+    text-align-last: center;
+    
+}
 button{
     padding: .7rem;
     background-color: transparent;

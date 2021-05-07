@@ -14,7 +14,13 @@ body {
     justify-content: center;
     margin: 2rem;
 }
-
+.heading{
+    color: #372713;
+    font-size: 55px;
+    text-decoration: underline;
+    text-align-last: center;
+    
+}
 .draggable {
     height: 5rem;
     width: 5rem;

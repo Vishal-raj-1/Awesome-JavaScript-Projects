@@ -12,7 +12,14 @@
      margin: 0;
      background-repeat: repeat;
 }
-
+.heading{
+    color: #372713;
+    font-size: 3vw;
+	top: 10px;
+    text-decoration: underline;
+    text-align-last: center;
+    margin: 0;
+}
 #gameOver {
     background-color: lightgray;
     margin: auto;

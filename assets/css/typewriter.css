@@ -16,7 +16,12 @@ body {
   height: 100%;
   padding: 0 2rem;
 }
-
+.heading{
+  color: black;
+ 
+  text-decoration: underline;
+  text-align-last: center;
+}
 h1,
 h2 {
   font-weight: 200;

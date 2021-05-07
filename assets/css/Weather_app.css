@@ -7,7 +7,11 @@ body{
     height: 100px;
     background-color: #131c2c;
 }
-
+.heading{
+    color: white;
+    text-decoration: underline;
+    text-align-last: center;
+  }
 #search-form
 {
     display: flex;
