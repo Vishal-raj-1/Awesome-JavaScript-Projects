@@ -1245,6 +1245,11 @@ let projectData = [
     projectName: "Reaction Game",
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
+  },
+  {
+    projectName: "Javascript Calendar",
+    projectImage: "assets/Images/calendar.jpg",
+    projectUrl: "public/Javascript_calendar.html",
   }
 ]
 
