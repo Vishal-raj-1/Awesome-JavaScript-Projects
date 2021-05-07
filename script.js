@@ -1246,6 +1246,11 @@ let projectData = [
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
   }
+  ,{
+    projectName: 'Bubble Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/bubble-visualizing.png',
+    projectUrl: 'public/bubblevisualiser.html'
+  }
 ]
 
 
