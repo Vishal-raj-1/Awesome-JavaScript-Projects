@@ -22,6 +22,11 @@ let projectData = [
     projectUrl: "public/covid-19.html",
   },
   {
+    projectName: "Catch the Robber Game",
+    projectImage: "assets/GIFs/robber.gif",
+    projectUrl: "public/robber.html",
+  },
+  {
     projectName: "BLOG WEBSITE",
     projectImage: "assets/Images/blog-img/blog.png",
     projectUrl: "public/blog.html",
