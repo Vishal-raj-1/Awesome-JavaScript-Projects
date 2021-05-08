@@ -17,6 +17,11 @@ let projectData = [
     projectUrl: "public/formvalidate.html",
   },
   {
+    projectName: "Drink Water Reminder",
+    projectImage: "assets/GIFs/drink.gif",
+    projectUrl: "public/drink.html",
+  },
+  {
     projectName: "BBC NEWS FEED",
     projectImage: "assets/Images/bbc-news.png",
     projectUrl: "public/bbc-news-feed.html",
