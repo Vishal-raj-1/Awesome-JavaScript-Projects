@@ -1240,7 +1240,7 @@ let projectData = [
   ,
   {
     projectName: "Click Shape Game",
-    projectImage: "assets/Images/ClickCirclesJavaScriptGame.jpg",
+    projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
     projectUrl: "public/click_shape.html",
   }
 ]
