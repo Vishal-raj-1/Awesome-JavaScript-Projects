@@ -1261,6 +1261,12 @@ let projectData = [
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
   }
+  ,
+  {
+    projectName: "Click Shape Game",
+    projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
+    projectUrl: "public/click_shape.html",
+  }
   ,{
     projectName: 'Bucket Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/bucket-visualizing.png',
