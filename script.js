@@ -10,6 +10,11 @@ let projectData = [
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
+  },  
+  {
+    projectName: "FORM VALIDATE",
+    projectImage: "assets/Images/formvalidate.png",
+    projectUrl: "public/formvalidate.html",
   },
   {
     projectName: "BBC NEWS FEED",
