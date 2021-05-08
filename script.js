@@ -1286,7 +1286,12 @@ let projectData = [
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-  }
+   } ,
+   {
+     projectName: 'Captcha Validator',
+     projectImage: 'assets/Images/CaptchaValidator.png',
+     projectUrl: 'public/CaptchaValidator.html'
+   }
 ]
 
 
