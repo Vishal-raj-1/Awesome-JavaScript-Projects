@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Zen+Dots&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../assets/css/makeMatchGame.css">
+    <title>makeMatchGame</title>
+</head>
+<body>
+    <header><h1>...MAke MAtch GAme...</h1><i class="material-icons" onclick="opn()">
+        featured_play_list
+    </i> </header>
+
+    <div class="container">
+        <div class="dimensions">
+            <button class="game-size one">4X4</button>
+            <button class="game-size two">4X6</button>
+            <button class="game-size three">4X8</button>
+            <button class="game-size four">6X8</button>
+        </div>
+        <div class="display">
+            <div id="count-moves"><h3>Moves : <p id="mov"></p></h3></div>
+            <div class="playground"></div>
+            <div class="new-game">
+                <button class="play-again" onclick="playAgain()">Play Again!</button>
+            </div>
+        </div>
+        <div class="card-match">
+            <button class="two-same">2 card game</button>
+            <button class="four-same">4 card game</button>
+        </div>
+    </div>
+
+
+    <div class="card-design">
+        <button  ><img class="anime" src="../assets/Images/makeMatchGame/carddesign/anime.jpg" alt="anime" ></button>
+        <button  ><img class="shadesOfGrey" src="../assets/Images/makeMatchGame/carddesign/shadesOfGrey.png" alt="shadesOfGrey" ></button>
+        <button  ><img class="color" src="../assets/Images/makeMatchGame/carddesign/color.jpg" alt="color" ></button>
+        <button  ><img class="shinchan" src="../assets/Images/makeMatchGame/carddesign/shinchan.png" alt="shinchan" ></button>
+        <button  ><img class="books" src="../assets/Images/makeMatchGame/carddesign/books.jpeg" alt="books" ></button>
+        <button  ><img class="webSeries" src="../assets/Images/makeMatchGame/carddesign/webSeries.jpg" alt="webSeries" ></button>
+    </div>
+
+    <div id="instructions">
+        <i class="material-icons" style="position: relative; left: 415px; top: -10px;" onclick="clos()">
+            highlight_off
+        </i>
+        <h1 style="text-align: center;">How To Play!</h1><br><hr><br>Make match of cards having same pattern-print. You win if you are able to <b>open all cards present in the game</b>.<br>To make your game :-<br>
+        <ol>
+            <li> Select one of the four <em>dimension buttons</em> i.e. 4X4, 4X6, 4X8, 6X8.</li>
+            <li>Choose from <em>2 card game or 4 card game</em>, 2 card implies that there are two cards in the game with same print and so open two cards at a time. Similar is the case with 4 card game also.</li> 
+            <li>Add design to your cards with options below "play again" button.</li>
+            <li><b>Start your game by clicking on cards to reveal them.</b></li>
+        </ol> <br><hr><br><p style="text-align: center;">Play this memory game and challenge your friends with time taken and number of moves you succeeded in.</p> 
+    </div>
+
+
+    <script src="../assets/js/makeMatchGame.js"></script>
+</body>
+</html>
