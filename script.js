@@ -1250,6 +1250,11 @@ let projectData = [
     projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
+  },
+  {
+    projectName: "Random Name Generator",
+    projectImage:"assets/Images/random_name_generator.png",
+    projectUrl:"public/random_name_generator.html"
   }
   ,
   {
