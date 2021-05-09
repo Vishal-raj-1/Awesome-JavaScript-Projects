@@ -1198,7 +1198,7 @@ let projectData = [
   {
     projectName: "Cardioid",
     projectImage: "assets/Images/cardioid.PNG",
-    projectUrl: "public/cardioid.html",
+    projectUrl: "assets/Images/cardioid.html",
   }
 ]
 
