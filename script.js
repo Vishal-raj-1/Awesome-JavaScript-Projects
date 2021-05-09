@@ -269,11 +269,11 @@ let projectData = [
     projectImage: 'assets/GIFs/counter.gif',
     projectUrl: 'public/counter.html'
   }
-  ,
-  {
-    projectName: 'Local Storage',
-    projectImage: 'assets/GIFs/localstorage.gif',
-    projectUrl: 'public/localstorage.html'
+  , 
+  { 
+    projectName: "Local Storage",
+    projectImage: "assets/Images/localstorage.png",
+    projectUrl: "public/localstorage.html"
   }
   ,
   {
@@ -510,16 +510,12 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
-  
-  
-  
-
   {
     projectName: "Yoga App",
     projectImage: "assets/Images/yogascreen.png",
     projectUrl: "public/yoga.html",
-  },
-
+  }
+  ,
   {
     projectName: 'RGB Color Guessing Game',
     projectImage: 'assets/GIFs/RGB_Color.gif',
@@ -1112,8 +1108,8 @@ let projectData = [
     projectName: "Infinite Scroll Image Gallery",
     projectImage: "assets/Images/infiniteScroll.png",
     projectUrl: "public/infiniteScroll.html",
-  },
-  
+  }
+  ,
   {
     projectName: 'Typing Practice',
     projectImage: 'assets/GIFs/TypingSpeed.gif',
@@ -1143,48 +1139,57 @@ let projectData = [
     projectImage: 'assets/Images/guess.png',
     projectUrl: 'public/guess.html'
   }
-  , {
+  , 
+  {
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
-  },
+  }
+  ,
   {
     projectName: 'To-do0 app',
     projectImage: 'assets/GIFs/todo.gif',
     projectUrl: 'public/todoapp.html'
 
-  }, {
+  }
+  , 
+  {
     projectName: 'Koch Snowflake',
     projectImage: 'assets/Images/kochSnowflake/demo.png',
     projectUrl: 'public/kochSnowflake.html'
   }
-  ,{
+  ,
+  {
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
-  },
+  }
+  ,
   {
     projectName: 'Memory game',
     projectImage: 'assets/Images/Memory_game/Mind_game.png',
     projectUrl: 'public/Memory_game.html'
   }
-  ,{
+  ,
+  {
     projectName: 'Selection Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/selection-visualizing.png',
     projectUrl: 'public/selectionsort.html'
   }
-  , {
+  , 
+  {
     projectName: 'Purple Rain',
     projectImage: 'assets/Images/purpleRain.gif',
     projectUrl: 'public/purpleRain.html'
   }
-
-  , {
+  , 
+  {
     projectName: 'Bird Loader',
     projectImage: 'assets/GIFs/birdLoader.gif',
     projectUrl: 'public/birdLoader.html'
   }
-  ,{
+  ,
+  {
     projectName: "Minesweeper Game",
     projectImage: "assets/GIFs/minesweeper.gif",
     projectUrl: "public/Minesweeper.html",
@@ -1206,7 +1211,8 @@ let projectData = [
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
   }
-  , {
+  , 
+  {
     projectName: 'Multiplation Table Calculator',
     projectImage: 'assets/GIFs/multiplicationTableCalculator_ss.gif',
     projectUrl: 'public/multiplicationTableCalculator.html'
@@ -1216,7 +1222,8 @@ let projectData = [
     projectName: 'Dice it',
     projectImage: 'assets/Images/dice_it.jfif',
     projectUrl: 'public/diceit.html'
-  },
+  }
+  ,
   {
     projectName: 'Amongus Minigame',
     projectImage: 'assets/GIFs/amongusminigame.gif',
@@ -1244,12 +1251,14 @@ let projectData = [
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   }
-  ,{
+  ,
+  {
     projectName: 'Counting Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/counting-visualizing.png',
     projectUrl: 'public/countingsort.html'
   }
-  ,{
+  ,
+  {
     projectName: 'Quick Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/quick-visualizing.png',
     projectUrl: 'public/quicksort.html'
