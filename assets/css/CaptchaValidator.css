@@ -1,0 +1,69 @@
+
+body {
+ background-color:  #f0134d;
+ font-family: 'Krona One', sans-serif;
+}
+
+.captchaBackground {
+ height: 35rem;
+ width: 50rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.captchaHeading {
+ color: #ffffff;
+ font-size: 3rem;
+}
+
+.captcha {
+ height: 80%;
+ width: 80%;
+ font-size: 30px;
+ letter-spacing: 3px;
+ margin: auto;
+ display: block;
+ top: 10;
+ bottom: 10;
+ left: 10;
+ right: 10;
+}
+
+.center {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.btn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color:  #f0134d;
+  font-size: 19px;
+  background:#e3f6f5 ;
+  padding: 10px 23px 12px 22px;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.btn:hover {
+  background: #f5c0c0;
+  text-decoration: none;
+}
+
+.textBox {
+ height: 2.5rem;
+ margin-bottom:  3rem;
+}
+
+.incorrectCaptcha {
+ color: #000000;
+}
+
+.correctCaptcha {
+ color: #ffffff;
+}

@@ -12,25 +12,28 @@
     
 </head>
 <body>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid" style=" justify-content: center;">
-      <span class="navbar-brand mb-0 h1">Infix Evaluator in JavaScript</span>
+  <div class="m-1 p-3 text-center">
+    <div class="text-center mt-5 text"style=" justify-content: center;">
+      <span class="navbar-brand mb-0 h1"><h1 style="text-decoration: underline;">Infix Evaluator</h1></span>
     </div>
-  </nav>
-  <div class="inputdata">
-    <span class="span1">Enter Valid Infix Expression</span>
-    <br>
-    <input type="text" placeholder="Infix Expression" id="infixvalue" class="input1" >
-    <br>
-    <button  onclick="InfixtoPostfix()"  class ="btn1">
-      Convert</button>   
-  </div>
-  <br>
-  <div class="output">
-    <span style="font-size:1.4vw;  font-size: 2.2vw;"> 
-        Evaluated Value:-
-        <span id="text" style="color: black; font-weight: 600;" ></span>
-    </span>
+    <div class="bg-white w-60 container content" style="box-shadow: 12px 15px rgb(163, 162, 162); margin:auto">
+      <div class="inputdata">
+        <span class="span1 p-1"><h2>Enter Infix Expression</h2></span>
+        <br>
+        <input type="text" placeholder="Infix Expression" id="infixvalue" class="input1 p-2" >
+        <br>
+        <button  onclick="InfixtoPostfix()"  class ="btn1 p-2">Convert</button>   
+        <button  onclick="clearVal()"  class ="btn1 p-2">Reset</button>
+      </div>
+      <br>
+      <div class="output">
+        <span class="mb-1"style="font-size: 2.2vw;"> 
+            <!-- <h2>Evaluated Value:-</h2> -->
+            <span id="text" style="color: black; font-weight: 600;" ></span>
+        </span>
+      </div>
+      <br>
+    </div>
   </div>
 </body>
 </html>
