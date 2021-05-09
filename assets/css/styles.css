@@ -841,14 +841,18 @@ div.searchProject input[type=text] {
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 80%;
+    width: 25%;
     background: #f1f1f1;
-  }
+    margin-left: 35%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;  
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;  
+}
   
   /* Style the submit button */
   div.searchProject button {
     float: left;
-    width: 20%;
+    width: 5%;
     padding: 10px;
     background: #4667a0;
     color: white;
@@ -856,15 +860,29 @@ div.searchProject input[type=text] {
     border: 1px solid grey;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
-  }
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
   
   div.searchProject button:hover {
     background: #2e4b7e;
-  }
+}
   
   /* Clear floats */
   div.searchProject::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
+  div.searchProject input[type=text]:focus {
+    width: 40%;
+    margin-left: 25%;
+}
+  @media (max-width: 976px) {
+    div.searchProject input[type=text] {
+        width: 35%;
+        margin-left: 26%;
+    }
+    div.searchProject button {
+        width: 10%;
+    }
+}
