@@ -1253,6 +1253,12 @@ let projectData = [
   }
   ,
   {
+    projectName: "Proxy Pattern TwoWay Binding and Validation Sample",
+    projectImage: "assets/Images/SimpleTwoWayBindingAndValidator.jpg",
+    projectUrl: "public/SimpleTwoWayBindingAndValidator.html",
+  }
+  ,
+  {
     projectName: 'Counting Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/counting-visualizing.png',
     projectUrl: 'public/countingsort.html'
