@@ -1288,6 +1288,13 @@ let projectData = [
   }
   ,
   {
+
+    projectName: "Product Card",
+    projectImage: "assets/GIFs/ProductCard.gif",
+    projectUrl: "public/ProductCard.html",
+  }
+  ,
+  {
     projectName: "Make Match Game",
     projectImage: "assets/Images/makeMatchGame/make-match.png",
     projectUrl: "public/makeMatchGame.html",
