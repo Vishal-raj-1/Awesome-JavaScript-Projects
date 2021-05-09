@@ -99,6 +99,11 @@ let projectData = [
     projectUrl: "public/slider.html",
   },
   {
+    projectName: "Space Invaders Game",
+    projectImage: "assets/GIFs/space-invaders.gif",
+    projectUrl: "public/space-invaders.html",
+  },
+  {
     projectName: "Custom Countdown",
     projectImage: "assets/GIFs/time.png",
     projectUrl: "public/CustomCount.html",
