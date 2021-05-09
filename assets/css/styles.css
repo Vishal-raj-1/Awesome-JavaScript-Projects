@@ -879,10 +879,15 @@ div.searchProject input[type=text] {
 }
   @media (max-width: 976px) {
     div.searchProject input[type=text] {
-        width: 35%;
-        margin-left: 26%;
+        width: 50%;
+        margin-left: 20%;
     }
     div.searchProject button {
         width: 10%;
     }
+    div.searchProject input[type=text]:focus {
+        width: 70%;
+        margin-left: 10%;
+    }
+    
 }
