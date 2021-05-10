@@ -1293,8 +1293,8 @@ let projectData = [
     projectUrl: "public/FactorialCalculator.html",
   },
   {
-    projectName: "Music Player App",
-    projectImage: "assets/Images/MusicPlayerByVishal.gif",
+    projectName: "Audio Player App",
+    projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
     projectUrl: "public/MusicApp.html",
 
   },
