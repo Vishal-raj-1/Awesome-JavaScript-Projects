@@ -32,6 +32,11 @@ let projectData = [
     projectUrl: "public/bbc-news-feed.html",
   },
   {
+    projectName: "Doodle Jump",
+    projectImage: "assets/Images/doodle-jump/doodle-jump.png",
+    projectUrl: "public/doodle-jump.html",
+  },
+  {
     projectName: "COVID-19 WEBSITE",
     projectImage: "assets/Images/covid-19/covid-19.png",
     projectUrl: "public/covid-19.html",
