@@ -1310,7 +1310,7 @@ let projectData = [
   ,
   {
     projectName: "Shooting Game",
-    projectImage: "assets/Images/shooting_game.jpg",
+    projectImage: "assets/Images/shooting_game.png",
     projectUrl: "public/shooting_game.html",
   },
   {
