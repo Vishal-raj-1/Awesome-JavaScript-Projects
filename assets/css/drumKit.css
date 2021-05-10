@@ -25,7 +25,9 @@ body {
 }
 
 header {
-  margin: 1em;
+  
+  margin: 7em;
+  margin-bottom: 8.2em;
 }
 
 header img {
