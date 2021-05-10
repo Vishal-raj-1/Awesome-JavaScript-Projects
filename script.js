@@ -15,7 +15,12 @@ let projectData = [
     projectName: "ECOMMERCE WEBSITE",
     projectImage: "assets/GIFs/ecommerce_website.gif",
     projectUrl: "public/ecommerce.html",
-  }, 
+  },
+  {
+    projectName: "Voice Lock",
+    projectImage: "assets/GIFs/voicelock.gif",
+    projectUrl: "public/voicelocker.html",
+  },
   {
     projectName: "FORM VALIDATE",
     projectImage: "assets/Images/formvalidate.png",
