@@ -1303,7 +1303,17 @@ let projectData = [
   }
   ,
   {
-
+    projectName: "Click Shape Game",
+    projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
+    projectUrl: "public/click_shape.html",
+  }
+  ,
+  {
+    projectName: "Shooting Game",
+    projectImage: "assets/Images/shooting_game.png",
+    projectUrl: "public/shooting_game.html",
+  },
+  {
     projectName: "Product Card",
     projectImage: "assets/GIFs/ProductCard.gif",
     projectUrl: "public/ProductCard.html",
@@ -1334,10 +1344,12 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-    ,{
+   ,
+  {
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
+  
    } ,
    {
      projectName: 'Captcha Validator',
