@@ -10,16 +10,36 @@ let projectData = [
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
-  },  
+  }, 
+  {
+    projectName: "ECOMMERCE WEBSITE",
+    projectImage: "assets/GIFs/ecommerce_website.gif",
+    projectUrl: "public/ecommerce.html",
+  },
+  {
+    projectName: "Voice Lock",
+    projectImage: "assets/GIFs/voicelock.gif",
+    projectUrl: "public/voicelocker.html",
+  },
   {
     projectName: "FORM VALIDATE",
     projectImage: "assets/Images/formvalidate.png",
     projectUrl: "public/formvalidate.html",
   },
   {
+    projectName: "Drink Water Reminder",
+    projectImage: "assets/GIFs/drink.gif",
+    projectUrl: "public/drink.html",
+  },
+  {
     projectName: "BBC NEWS FEED",
     projectImage: "assets/Images/bbc-news.png",
     projectUrl: "public/bbc-news-feed.html",
+  },
+  {
+    projectName: "Doodle Jump",
+    projectImage: "assets/Images/doodle-jump/doodle-jump.png",
+    projectUrl: "public/doodle-jump.html",
   },
   {
     projectName: "COVID-19 WEBSITE",
@@ -1294,6 +1314,17 @@ let projectData = [
   }
   ,
   {
+    projectName: "Click Shape Game",
+    projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
+    projectUrl: "public/click_shape.html",
+  }
+  ,
+  {
+    projectName: "Shooting Game",
+    projectImage: "assets/Images/shooting_game.png",
+    projectUrl: "public/shooting_game.html",
+  },
+  {
     projectName: "Product Card",
     projectImage: "assets/GIFs/ProductCard.gif",
     projectUrl: "public/ProductCard.html",
@@ -1324,10 +1355,12 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-    ,{
+   ,
+  {
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
+  
    } ,
    {
      projectName: 'Captcha Validator',
