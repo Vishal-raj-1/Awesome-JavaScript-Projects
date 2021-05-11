@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Game joystick
+        </title>
+        <link rel="stylesheet" href="../assets/css/joystick.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script type="text/javascript" src="../assets/js/joystick.js"></script>
+    </head>
+    <body onkeydown='getKeyAndMove(event)'>
+        
+        <div id="water"></div>
+        <div id="charr">
+            <div id = "inv">
+            <div id="heady"><img src="../assets/Images/joystick/head.png" width="100px" height="100px"> </div>
+            <div id="bodyy"></div>
+            <div id="lhand"></div>
+            <div id="rhand"></div>
+            <div id="lleg"></div>
+            <div id="rleg"></div>
+            </div>
+        </div>
+       
+        <div id="shoot"></div>
+        
+
+
+        <div id="joy">
+          <div id="round1"></div>
+          <div id="round2"></div>
+          <div id="rect"></div>
+          <div id="upar" onclick="moveUp()"><i style="font-size: 50px; color:white;" class='bx bxs-chevron-up'></i></div>
+          <div id="dowar" onclick="moveDown()"><i style="font-size: 50px; color:white;" class='bx bxs-chevron-down' ></i></div>
+          <div id="lefar" onclick="moveLeft()"><i style="font-size: 50px; color:white;" class='bx bxs-chevron-left' ></i></div>
+          <div id="rigar" onclick="moveRight()"><i style="font-size: 50px; color:white;" class='bx bxs-chevron-right' ></i></div>
+
+          <div id="upar1" onclick="goWater()"> Y</div>
+          <div id="dowar1" onclick="goJump()">C</div>
+          <div id="lefar1" onclick="goInvi()">X</div>
+          <div id="rigar1" onclick="goShoot()">B</div>
+        </div>
+
+        <img id="contro" src="../assets/Images/joystick/controls.png">
+
+
+
+    </body>
+</html>
