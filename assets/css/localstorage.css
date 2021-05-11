@@ -1,39 +1,15 @@
-html{
-    box-sizing: border-box;
-    background: url("../Images/oh-la-la.jpeg") center no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family:  Futura, "Trebuchet MS", Arial, sans-serif;*/
-}
-
-*,
-*:before,
-*:active {
-    /* box-sizing: inherit; */
-}
-
-.logo{
-    margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-svg {
-    fill: white;
-    background: rgba(0,0,0,0.1);
-    padding: 20px;
-    border-radius: 50%;
-    width: 200px;
-    margin-bottom: 50px;
-    margin-left: 45%;
-    margin-top: 8rem;
-}
-
+/*
+=============== 
+Fonts
+===============
+*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
 
 :root {
   /* dark shades of primary color*/
@@ -78,19 +54,53 @@ svg {
   --fixed-width: 620px;
 }
 
-.refresh{
-    color:rgb(109, 109, 109);
-    float: right;
-    cursor: pointer;
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.refresh:hover{
-    color:rgb(56, 56, 56);
+
+html{
+    background: url("../Images/oh-la-la.jpeg") center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
-.plates {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    list-style: none;
+
+body {
+  font-family: var(--ff-secondary);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container {
+  margin: 2rem;
+}
+
+svg {
+    fill: white;
+    background: rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 50%;
+    width: 200px;
+    /* margin-bottom: 50px;
+    margin-left: 45%;
+    margin-top: 8rem; */
 }
 
 ul {
@@ -98,9 +108,6 @@ ul {
 }
 a {
   text-decoration: none;
-}
-img:not(.logo) {
-  width: 100%;
 }
 img {
   display: block;
@@ -141,7 +148,6 @@ p {
   }
   h3 {
     font-size: 1.75rem;
-    text-decoration: underline;
   }
   h4 {
     font-size: 1rem;
@@ -181,14 +187,14 @@ p {
   padding: 5rem 0;
 }
 
-.section-center {
+.todo-container {
   width: 90vw;
-  margin: 0 auto;
-  max-width: 40rem;
-  margin-top: 8rem;
+  /* margin: 0 auto; */
+  max-width: 35rem;
+  margin: 2rem;
 }
 @media screen and (min-width: 992px) {
-  .section-center {
+  .todo-container {
     width: 95vw;
   }
 }
@@ -202,14 +208,14 @@ main {
 Grocery List
 ===============
 */
-.section-center {
+.todo-container {
   background: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   transition: var(--transition);
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
 }
-.section-center:hover {
+.todo-container:hover {
   box-shadow: var(--dark-shadow);
 }
 .alert {
@@ -270,8 +276,6 @@ Grocery List
   content: var(--clr-primary-5);
   transition: var(--transition);
   font-size: 0.85rem;
-  height: 3rem;
-  
 }
 .submit-btn:hover {
   background: var(--clr-primary-5);
@@ -348,16 +352,4 @@ Grocery List
 }
 .clear-btn:hover {
   color: var(--clr-red-dark);
-}
-
-.delete{
-    font-size: 20px;
-    cursor: pointer;
-    color:#333333;
-}
-.delete path{
-    pointer-events: none;
-}
-.delete:hover{
-    color: rgba(201, 3, 3, 0.973);
 }
