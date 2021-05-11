@@ -17,6 +17,11 @@ let projectData = [
     projectUrl: "public/ecommerce.html",
   },
   {
+    projectName: "Record Player",
+    projectImage: "assets/GIFs/recordplayer.gif",
+    projectUrl: "public/recordplayer.html",
+  },
+  {
     projectName: "Dynamic Pie Chart",
     projectImage: "assets/GIFs/graphpie.gif",
     projectUrl: "public/graphpie.html",
