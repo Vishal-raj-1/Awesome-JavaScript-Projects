@@ -1371,7 +1371,13 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
-   }
+  }
+  ,
+  {
+    projectName: 'Button Generator',
+    projectImage: 'assets/Images/ButtonGenerator.png',
+    projectUrl: 'public/ButtonGenerator.html'
+  }
 ]
 
 
