@@ -1372,6 +1372,12 @@ let projectData = [
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
    }
+   ,{
+    projectName: 'Binary Search Visualization in JavaScript',
+    projectImage: 'assets/Images/binarysearch-visualizing.png',
+    projectUrl: 'public/binarysearch.html'
+  
+   }
 ]
 
 
