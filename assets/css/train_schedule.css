@@ -1,0 +1,67 @@
+body{
+    margin: 40px;
+    margin-bottom: 300px;
+    font-size: 15px;;
+}
+
+#heading{
+    font-family: 'Russo One', sans-serif;
+    font-size: 35px;
+}
+
+#form-panel{
+    height: 550px;
+
+}
+
+.form-panel-body{
+    height: 580px;
+    border: 5px dotted black; 
+    background-color:rgb(208, 219, 223) ;
+}
+
+.form-panel-update{
+    height: 580px;
+    border: 5px  dotted red; 
+    background-color:rgb(208, 219, 223) ;
+
+}
+
+#form-field{
+    margin-top: 100px;
+}
+#table-panel{
+    height: 550px;
+    border: 5px dotted black; 
+    text-align: center;
+    background-color:rgb(208, 219, 223) ;
+
+}
+#table-display{
+    overflow: auto;
+    height: 400px;
+    /* border: 1px solid black; */
+}
+
+#table-header td{
+    border: 1px solid black;
+    background-color: darkslategray;
+    border: 2px solid black;
+    color:white;
+    font-size: 15px;
+    }
+#table{
+    /* border: 1px solid black; */
+    /* margin-top: -10px; */
+    height: 120px;
+    line-height: 100px;
+}
+
+#table-body{
+    border: 2px solid white;
+}
+
+#table-body td {
+    border: 2px solid black;
+}
+
