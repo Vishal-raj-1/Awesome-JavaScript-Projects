@@ -1372,6 +1372,13 @@ let projectData = [
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
    }
+   ,
+   {
+     projectName: 'Ternary Search Visualization in JavaScript',
+     projectImage: 'assets/Images/ternarysearch-visualizing.png',
+     projectUrl: 'public/ternarysearch.html'
+   
+    } 
 ]
 
 
