@@ -81,7 +81,31 @@ let projectData = [
     projectImage: "assets/Images/sudoku.png",
     projectUrl: "public/Sudoko.html"
   },
-
+  {
+    projectName: "Spock Game",
+    projectImage: "assets/Images/spock-game.png",
+    projectUrl: "public/spock-game.html"
+  },
+  {
+    projectName: "Math Sprinter Game",
+    projectImage: "assets/Images/math-sprinter-game.png",
+    projectUrl: "public/math-sprinter-game.html"
+  },
+  {
+    projectName: "Animated Navbar",
+    projectImage: "assets/GIFs/animated-navbar.gif",
+    projectUrl: "public/animated-navbar.html"
+  },
+  {
+    projectName: "Joke Teller",
+    projectImage: "assets/GIFs/joke-teller-robot.gif",
+    projectUrl: "public/joke-teller.html"
+  },
+  {
+    projectName: "Nasa APOD",
+    projectImage: "assets/GIFs/nasa-apod.gif",
+    projectUrl: "public/nasa-apod.html"
+  },
   {
     projectName: "Music Box",
     projectImage: "assets/GIFs/Music-Box.gif",
