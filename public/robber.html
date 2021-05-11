@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>web_sites</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Modak', cursive;
+}
+* {
+  user-select: none;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  transition: filter 3s 0.75s;
+}
+.wrap.active {
+  filter: grayscale(100%);
+}
+h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 3em;
+  font-weight: normal;
+}
+.man {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(90px at var(--x) var(--y));
+}
+.init .man {
+  opacity: 0.2;
+}
+.man img {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+.wrap:not(.init) .man img {
+  animation: run 3s infinite alternate;
+}
+.wrap:not(.init) .man img.active {
+  animation-play-state: paused;
+}
+.shot {
+  position: fixed;
+  top: -90px;
+  left: -90px;
+  width: 180px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  opacity: 0.25;
+  transition: opacity 0.5s;
+}
+.shot:before, .shot:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.shot:after {
+  transform: rotate(90deg);
+}
+.init .shot {
+  opacity: 0;
+}
+.active .shot {
+  animation: none;
+  background-color: rgba(255, 99, 71, 0.9);
+}
+.shot--active {
+  opacity: 1;
+  animation: shot-active 1s infinite;
+}
+@keyframes shot-active {
+  to {
+    background-color: rgba(255, 0, 0, 0.9);
+  }
+}
+@keyframes run {
+  10% {
+    transform: translate(-223px, 11px);
+  }
+  20% {
+    transform: translate(-84px, -130px);
+  }
+  30% {
+    transform: translate(270px, 155px);
+  }
+  40% {
+    transform: translate(135px, 35px);
+  }
+  50% {
+    transform: translate(171px, 102px);
+  }
+  60% {
+    transform: translate(216px, -25px);
+  }
+  70% {
+    transform: translate(-174px, -281px);
+  }
+  80% {
+    transform: translate(-258px, -104px);
+  }
+  90% {
+    transform: translate(-39px, 131px);
+  }
+  100% {
+    transform: translate(-19px, 237px);
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+<div class="wrap init">
+    <div class="shot"></div>
+    <div class="man"><img src="https://image.flaticon.com/icons/svg/864/864582.svg" alt="thief" /></div>
+    <h1>"Click" to Catch The Thief!</h1>
+</div>
+
+  <script>
+
+console.clear();
+
+const man = document.querySelector('.man');
+const manImg = document.querySelector('.man img');
+const shot = document.querySelector('.shot');
+const wrap = document.querySelector('.wrap');
+
+function showClipContent(e) {
+  x = e.clientX;
+  y = e.clientY;
+  shot.style.transform = `translate(${x}px, ${y}px)`;
+  man.style.setProperty('--x',(x)+'px');
+  man.style.setProperty('--y',(y)+'px');
+}
+
+document.addEventListener('mousemove', showClipContent);
+document.onmouseover = function() {
+  wrap.classList.remove('init');
+}
+
+manImg.onmouseover = function () {
+  shot.classList.add('shot--active');
+}
+manImg.onmouseleave = function() {
+  shot.classList.remove('shot--active');
+}
+document.onclick = function(e) {
+  if (e.target == manImg) {
+    e.target.classList.add('active');
+  document.querySelector('h1').textContent = 'Catched!!! :D';
+  wrap.classList.add('active');
+  } else {
+    document.querySelector('h1').textContent = 'Almost there!!!';
+  }
+}
+  </script>
+</body>
+</html>
