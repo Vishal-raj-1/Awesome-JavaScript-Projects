@@ -17,6 +17,11 @@ let projectData = [
     projectUrl: "public/ecommerce.html",
   },
   {
+    projectName: "Dynamic Pie Chart",
+    projectImage: "assets/GIFs/graphpie.gif",
+    projectUrl: "public/graphpie.html",
+  },
+  {
     projectName: "Voice Lock",
     projectImage: "assets/GIFs/voicelock.gif",
     projectUrl: "public/voicelocker.html",
