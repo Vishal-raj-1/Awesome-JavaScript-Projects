@@ -1240,7 +1240,7 @@ let projectData = [
   , 
   {
     projectName: "Calorie Calculator",
-    projectImage: "assets/GIFs/CalorieCalculator.gif",
+    projectImage: "assets/Images/CalorieCalculator.png",
     projectUrl: "public/calorie_calculator.html",
   }
 ]
