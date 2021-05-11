@@ -548,6 +548,12 @@ let projectData = [
   }
   ,
   {
+    projectName: 'RGB TO HEX CONVERTER',
+    projectImage: 'assets/Images/RGB_HEX.png',
+    projectUrl: 'public/RGB_HEX.html'
+  }
+  ,
+  {
     projectName: 'Text to Voice Generator',
     projectImage: 'assets/GIFs/Text-voice.gif',
     projectUrl: 'public/textToVoice.html'
