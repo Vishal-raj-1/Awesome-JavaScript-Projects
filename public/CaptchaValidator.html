@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../assets/css/CaptchaValidator.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="center">
+
+    <h1 id="captchaHeading" class="captchaHeading">Captcha Validator</h1>
+
+    <div id="captchaBackground" class="captchaBackground">
+
+      <canvas id="captcha" class="captcha">captcha text</canvas>
+      <input id="textBox" class="textBox" type="text" name="text">
+
+      <div id="buttons">
+
+        <input id="submitButton" class="btn" type="submit">
+        <button id="refreshButton" class="btn" type="submit">Refresh</button>
+
+      </div>
+
+        <span id="output"></span>
+
+    </div>
+
+  </div>
+
+  <script src="../assets/js/CaptchaValidator.js"></script>
+
+</body>
+
+</html>

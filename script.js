@@ -10,11 +10,71 @@ let projectData = [
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
+  }, 
+  {
+    projectName: "ECOMMERCE WEBSITE",
+    projectImage: "assets/GIFs/ecommerce_website.gif",
+    projectUrl: "public/ecommerce.html",
+  },
+  {
+    projectName: "Record Player",
+    projectImage: "assets/GIFs/recordplayer.gif",
+    projectUrl: "public/recordplayer.html",
+  },
+  {
+    projectName: "Dynamic Pie Chart",
+    projectImage: "assets/GIFs/graphpie.gif",
+    projectUrl: "public/graphpie.html",
+  },
+  {
+    projectName: "Voice Lock",
+    projectImage: "assets/GIFs/voicelock.gif",
+    projectUrl: "public/voicelocker.html",
+  },
+  {
+    projectName: "FORM VALIDATE",
+    projectImage: "assets/Images/formvalidate.png",
+    projectUrl: "public/formvalidate.html",
+  },
+  {
+    projectName: "Drink Water Reminder",
+    projectImage: "assets/GIFs/drink.gif",
+    projectUrl: "public/drink.html",
+  },
+  {
+    projectName: "BBC NEWS FEED",
+    projectImage: "assets/Images/bbc-news.png",
+    projectUrl: "public/bbc-news-feed.html",
+  },
+  {
+    projectName: "Doodle Jump",
+    projectImage: "assets/Images/doodle-jump/doodle-jump.png",
+    projectUrl: "public/doodle-jump.html",
+  },
+  {
+    projectName: "COVID-19 WEBSITE",
+    projectImage: "assets/Images/covid-19/covid-19.png",
+    projectUrl: "public/covid-19.html",
+  },
+  {
+    projectName: "Catch the Robber Game",
+    projectImage: "assets/GIFs/robber.gif",
+    projectUrl: "public/robber.html",
   },
   {
     projectName: "BLOG WEBSITE",
     projectImage: "assets/Images/blog-img/blog.png",
     projectUrl: "public/blog.html",
+  },
+  {
+    projectName: "Brick Breaker Game",
+    projectImage: "assets/Images/BrickBreakergame.png",
+    projectUrl: "public/BrickBreakergame.html",
+  },
+  {
+    projectName: "Budget App",
+    projectImage: "assets/GIFs/Budget.png",
+    projectUrl: "public/Budget.html",
   },
   {
     projectName: "ACE_EYE",
@@ -67,6 +127,11 @@ let projectData = [
     projectName: "Slider",
     projectImage: "assets/GIFs/slider-js.gif",
     projectUrl: "public/slider.html",
+  },
+  {
+    projectName: "Space Invaders Game",
+    projectImage: "assets/GIFs/space-invaders.gif",
+    projectUrl: "public/space-invaders.html",
   },
   {
     projectName: "Custom Countdown",
@@ -234,11 +299,11 @@ let projectData = [
     projectImage: 'assets/GIFs/counter.gif',
     projectUrl: 'public/counter.html'
   }
-  ,
-  {
-    projectName: 'Local Storage',
-    projectImage: 'assets/GIFs/localstorage.gif',
-    projectUrl: 'public/localstorage.html'
+  , 
+  { 
+    projectName: "Local Storage",
+    projectImage: "assets/Images/localstorage.png",
+    projectUrl: "public/localstorage.html"
   }
   ,
   {
@@ -475,16 +540,12 @@ let projectData = [
     projectUrl: 'public/Weather_app.html'
   }
   ,
-  
-  
-  
-
   {
     projectName: "Yoga App",
     projectImage: "assets/Images/yogascreen.png",
     projectUrl: "public/yoga.html",
-  },
-
+  }
+  ,
   {
     projectName: 'RGB Color Guessing Game',
     projectImage: 'assets/GIFs/RGB_Color.gif',
@@ -586,12 +647,6 @@ let projectData = [
     projectName: 'Recipe Finder',
     projectImage: 'assets/GIFs/recipie.gif',
     projectUrl: 'public/Recipie_finder.html'
-  }
-  ,
-  {
-    projectName: 'Breakout!',
-    projectImage: 'assets/GIFs/breakout.png',
-    projectUrl: 'public/breakout.html'
   }
   ,
   {
@@ -1063,6 +1118,12 @@ let projectData = [
   }
   ,
   {
+    projectName: 'Mousehover Effect',
+    projectImage: 'assets/Images/Mousehover.png',
+    projectUrl: 'public/Mousehover.html'
+  }
+  ,
+  {
 
     projectName: "Mouse Trails effect",
     projectImage: "assets/GIFs/MouseTrails.gif",
@@ -1083,8 +1144,8 @@ let projectData = [
     projectName: "Infinite Scroll Image Gallery",
     projectImage: "assets/Images/infiniteScroll.png",
     projectUrl: "public/infiniteScroll.html",
-  },
-  
+  }
+  ,
   {
     projectName: 'Typing Practice',
     projectImage: 'assets/GIFs/TypingSpeed.gif',
@@ -1114,48 +1175,57 @@ let projectData = [
     projectImage: 'assets/Images/guess.png',
     projectUrl: 'public/guess.html'
   }
-  , {
+  , 
+  {
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
     projectUrl: 'public/fractalTree.html'
-  },
+  }
+  ,
   {
     projectName: 'To-do0 app',
     projectImage: 'assets/GIFs/todo.gif',
     projectUrl: 'public/todoapp.html'
 
-  }, {
+  }
+  , 
+  {
     projectName: 'Koch Snowflake',
     projectImage: 'assets/Images/kochSnowflake/demo.png',
     projectUrl: 'public/kochSnowflake.html'
   }
-  ,{
+  ,
+  {
     projectName: 'Music Generator',
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
-  },
+  }
+  ,
   {
     projectName: 'Memory game',
     projectImage: 'assets/Images/Memory_game/Mind_game.png',
     projectUrl: 'public/Memory_game.html'
   }
-  ,{
+  ,
+  {
     projectName: 'Selection Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/selection-visualizing.png',
     projectUrl: 'public/selectionsort.html'
   }
-  , {
+  , 
+  {
     projectName: 'Purple Rain',
     projectImage: 'assets/Images/purpleRain.gif',
     projectUrl: 'public/purpleRain.html'
   }
-
-  , {
+  , 
+  {
     projectName: 'Bird Loader',
     projectImage: 'assets/GIFs/birdLoader.gif',
     projectUrl: 'public/birdLoader.html'
   }
-  ,{
+  ,
+  {
     projectName: "Minesweeper Game",
     projectImage: "assets/GIFs/minesweeper.gif",
     projectUrl: "public/Minesweeper.html",
@@ -1177,7 +1247,8 @@ let projectData = [
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
   }
-  , {
+  , 
+  {
     projectName: 'Multiplation Table Calculator',
     projectImage: 'assets/GIFs/multiplicationTableCalculator_ss.gif',
     projectUrl: 'public/multiplicationTableCalculator.html'
@@ -1187,7 +1258,8 @@ let projectData = [
     projectName: 'Dice it',
     projectImage: 'assets/Images/dice_it.jfif',
     projectUrl: 'public/diceit.html'
-  },
+  }
+  ,
   {
     projectName: 'Amongus Minigame',
     projectImage: 'assets/GIFs/amongusminigame.gif',
@@ -1214,13 +1286,26 @@ let projectData = [
     projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
+  },
+  {
+    projectName: "Random Name Generator",
+    projectImage:"assets/Images/random_name_generator.png",
+    projectUrl:"public/random_name_generator.html"
   }
-  ,{
+  ,
+  {
+    projectName: "Proxy Pattern TwoWay Binding and Validation Sample",
+    projectImage: "assets/Images/SimpleTwoWayBindingAndValidator.jpg",
+    projectUrl: "public/SimpleTwoWayBindingAndValidator.html",
+  }
+  ,
+  {
     projectName: 'Counting Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/counting-visualizing.png',
     projectUrl: 'public/countingsort.html'
   }
-  ,{
+  ,
+  {
     projectName: 'Quick Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/quick-visualizing.png',
     projectUrl: 'public/quicksort.html'
@@ -1243,7 +1328,7 @@ let projectData = [
     projectImage: "assets/Images/AppleGame/screenshot.png",
     projectUrl: "public/apple.html",
   }
-]
+
 
 
 var projectDetails = projectData.slice(0);
@@ -1280,10 +1365,56 @@ function getProjects() {
   );
 
   projectContainer.innerHTML = output;
-  console.log("projectContainer", projectContainer.innerHTML);
+   console.log("projectContainer", projectContainer.innerHTML);
 }
 
+// Search function starts
+let searchInput = document.getElementById('searchBar')
+let searchText='';
 
+searchInput.addEventListener('change',(e) => {
+  searchText= e.target.value  
+})
+
+
+let searchBtn = document.getElementById('searchBtn')
+
+searchBtn.addEventListener('click',(e) => {
+  var filterData=[]
+  if(searchText.length!==0){
+    projectData.forEach(obj => {
+       if(obj.projectName.toLowerCase().includes(searchText.toLowerCase())){
+        filterData.push(obj);
+       }
+    })
+    console.log(filterData)
+  }else{
+    filterData = [...projectData];
+    //console.log(filterData)
+  }
+  let filter = "";
+  filterData.forEach(
+    (data, item) =>
+    (filter += `
+    <div class="projectCard">
+    <a href=${data.projectUrl} class="hoverEffect" target="_blank">
+      <img
+        class="projectCardImg"
+        src=${data.projectImage}
+        alt="Card image cap"
+      />
+        <h5 class="projectCardTitle">${data.projectName}</h5>
+        <span class="computerLegs"></span>
+        <span class="computerBase"></span>
+    </a>
+  </div>
+  `)
+  );
+  projectContainer.innerHTML = filter;
+  
+})
+
+// search function ends
 window.onscroll = function () {
   myFunction();
 };
@@ -1298,3 +1429,5 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+
