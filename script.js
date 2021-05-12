@@ -1118,6 +1118,12 @@ let projectData = [
   }
   ,
   {
+    projectName: 'Mousehover Effect',
+    projectImage: 'assets/Images/Mousehover.png',
+    projectUrl: 'public/Mousehover.html'
+  }
+  ,
+  {
 
     projectName: "Mouse Trails effect",
     projectImage: "assets/GIFs/MouseTrails.gif",
