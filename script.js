@@ -1383,6 +1383,12 @@ let projectData = [
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
    }
+   ,
+   {
+     projectName: 'Dinosaur Game',
+     projectImage: 'assets/GIFs/DinosaurGame.gif',
+     projectUrl: 'public/DinosaurGame.html'
+   }
 ]
 
 
