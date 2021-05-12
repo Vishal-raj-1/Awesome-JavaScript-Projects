@@ -129,6 +129,11 @@ let projectData = [
     projectUrl: "public/math-sprinter-game.html",
   },
   {
+    projectName: "Animated Navbar",
+    projectImage: "assets/GIFs/animated-navbar.gif",
+    projectUrl: "public/animated-navbar.html",
+  },
+  {
     projectName: 'Temperature Converter',
     projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
     projectUrl: 'public/Temperature_Converter.html'
