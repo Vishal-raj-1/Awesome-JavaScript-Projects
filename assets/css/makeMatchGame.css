@@ -1,0 +1,172 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg,rgba(0, 195, 255, 0.74),rgb(9, 9, 177));
+    text-align: center;
+    font-family:'Zen Dots', cursive; 
+}
+header{
+    display: inline-flex;
+    margin: 50px ;
+}
+i{
+    position: absolute;
+    right: 50px;
+    cursor:pointer;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin:20px 0px 20px 0px;    
+    
+}
+.dimensions{
+    display: flex;
+    flex-direction: column;
+}
+.game-size{
+    width: 200px;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.game-size:hover{
+    border: groove rgb(49, 39, 39);
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#mov{
+    margin-left: 15px;
+    float: right;
+}
+.playground{
+    text-align: center;
+    min-height: 450px;
+}
+.row{
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: rgb(152, 207, 255);
+
+}
+.card > img{
+    height: 100px;
+    width: 100px;
+    border: none;
+    cursor: default;
+}
+.card:hover{
+    border: solid;
+    
+    cursor: grab;
+}
+.card:hover[ a="1"]{
+    border: none;
+}
+
+.card-match{
+    display: flex;
+    flex-direction: column;
+}
+.two-same, .four-same {
+    
+    width: 200px;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 1px 1px 5px rgb(56, 56, 56);
+    cursor: pointer;
+}
+.two-same{
+    border: 1.0mm rgb(61, 53, 53);
+    border-style: groove;
+}
+.play-again{
+    padding: 5px;
+    background: black;
+    color: white; 
+    cursor: pointer;
+    box-shadow: 1px 2px 3px whitesmoke;
+}
+button{
+    font-family:'Zen Dots', cursive; 
+}
+.card-design{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.card-design > button{
+    height: 250px;
+    width :150px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+img{
+    box-shadow: inset 5px 5px 7px rgba(5, 73, 94, 0.74);
+    height: 245px;
+    width :145px;
+    border-radius: 10px;
+}
+
+
+.disable{
+    background-image:linear-gradient(120deg, rgb(221, 212, 212),rgba(165, 163, 141, 0.993));
+    
+    color: rgb(126, 126, 119);
+    box-shadow: none;
+    
+    cursor:not-allowed;
+    border:groove ;
+    border-style: inset;
+}
+.selected{
+    border:  rgb(31, 29, 29);
+    border-style:solid;
+    box-shadow: 1px 2px 5px rgb(37, 37, 37);
+}
+.disable:hover{
+    border:groove ;
+    border-style: inset;
+}
+.disabled {
+    background-image:linear-gradient(120deg, rgb
+(221, 212, 212),rgba(165, 163, 141, 0.993));
+opacity: 0.5;
+border: none;
+
+cursor:not-allowed;
+
+}
+#instructions{
+    display: none;
+    right: 35%;
+    left: auto;
+    position: absolute;
+    top: 185px;
+    padding: 19px;
+    text-align: justify;
+    background-color: rgb(252, 245, 236);
+    font-family: 'Antonio', sans-serif;
+    border-radius: 10px;
+    width: 470px;
+    min-height:390px ;
+
+}
