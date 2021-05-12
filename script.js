@@ -1371,6 +1371,11 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
+   },
+   {
+     projectName: 'Battery Indicator',
+     projectImage: 'assets/GIFs/BatteryIndicator.gif',
+     projectUrl: 'public/BatteryIndicator.html'
    }
 ]
 
