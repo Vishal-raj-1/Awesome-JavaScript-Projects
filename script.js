@@ -124,6 +124,11 @@ let projectData = [
     projectUrl: "public/nasa-apod.html",
   },
   {
+    projectName: "Math Sprinter",
+    projectImage: "assets/Images/math-sprinter-game.png",
+    projectUrl: "public/math-sprinter-game.html",
+  },
+  {
     projectName: 'Temperature Converter',
     projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
     projectUrl: 'public/Temperature_Converter.html'
