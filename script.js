@@ -20,6 +20,11 @@ let projectData = [
     projectUrl: "public/ecommerce.html",
   },
   {
+    projectName: "Chore Door Game",
+    projectImage: "assets/GIFs/choredoor.gif",
+    projectUrl: "public/choredoor.html",
+  },
+  {
     projectName: "Record Player",
     projectImage: "assets/GIFs/recordplayer.gif",
     projectUrl: "public/recordplayer.html",
