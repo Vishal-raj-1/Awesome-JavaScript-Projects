@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../src/cool-background.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.d1{
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.d2{
+    margin-left: 200px;
+    margin-top: -700px;
+}
+.d3{
+    margin-top: -650px;
+}
+.d4{
+    margin-top: -1050px;
+}
+.d5{
+    margin-top: -1400px;
+    margin-left: 400px;
+}
