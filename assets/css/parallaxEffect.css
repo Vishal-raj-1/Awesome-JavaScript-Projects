@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url(../src/cool-background.png);
+    background-image: url(../Images/parallexEffect-img/BG.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
