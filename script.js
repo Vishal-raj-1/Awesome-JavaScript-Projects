@@ -360,6 +360,12 @@ let projectData = [
   }
   ,
   {
+    projectName: 'Image Puzzle Game',
+    projectImage: 'assets/Images/imagePuzzleGame.png',
+    projectUrl: 'public/imagePuzzleGame.html'
+  }
+  ,
+  {
     projectName: 'Bubble Sort',
     projectImage: 'assets/GIFs/bubbleSort.gif',
     projectUrl: 'public/bubbleSort.html'
