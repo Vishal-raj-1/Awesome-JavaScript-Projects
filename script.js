@@ -699,7 +699,7 @@ let projectData = [
   ,
   {
     projectName: 'Document to Handwritting',
-    projectImage: 'assets/images/page.jpg',
+    projectImage: 'assets/Images/page.jpg',
     projectUrl: 'public/DocumenttoHandwritting.html'
   }
   ,
@@ -711,7 +711,7 @@ let projectData = [
   ,
   {
     projectName: 'Image Gallery',
-    projectImage: 'assets/Images/imageGallery/images',
+    projectImage: 'assets/Images/imageGallery.png',
     projectUrl: 'public/imageGallery.html'
   }
   ,
