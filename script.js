@@ -1329,7 +1329,7 @@ let projectData = [
     projectUrl: "public/calorie_calculator.html",
   }
 
-
+]
 
 
 var projectDetails = projectData.slice(0);
