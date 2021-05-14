@@ -1329,7 +1329,7 @@ let projectData = [
     projectUrl: "public/train_schedule.html",
   }
 
-
+]
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function(a,b) {
