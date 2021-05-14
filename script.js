@@ -1229,6 +1229,11 @@ let projectData = [
     projectImage: "assets/Images/CaptchaValidator.png",
     projectUrl: "public/CaptchaValidator.html",
   },
+  {
+    projectName: "Merge Sort Visualizer in JavaScript",
+    projectImage: "assets/Images/merge-visualizing.png",
+    projectUrl: "public/mergesort.html",
+  }
 ]
 
 
