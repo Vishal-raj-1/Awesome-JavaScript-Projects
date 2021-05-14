@@ -1198,6 +1198,12 @@ let projectData = [
     projectImage: "assets/Images/CaptchaValidator.png",
     projectUrl: "public/CaptchaValidator.html",
   },
+  {
+    projectName: "Text-Style CSS",
+    projectImage: "assets/Images/text-style.png",
+    projectUrl: "public/text-style.html",
+  },
+
 ];
 
 var projectDetails = projectData.slice(0);
