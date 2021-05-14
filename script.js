@@ -1237,12 +1237,13 @@ let projectData = [
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
   }
-  , 
+  ,
   {
     projectName: "Calorie Calculator",
-    projectImage: "assets/GIFs/CalorieCalculator.gif",
+    projectImage: "assets/Images/CalorieCalculator.png",
     projectUrl: "public/calorie_calculator.html",
   }
+
 ]
 
 
