@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/PigGame.html",
   },
   {
+    projectName: "Work Time Tracker",
+    projectImage: "assets/GIFs/timetracker.gif",
+    projectUrl: "public/timetracker.html",
+  },
+  {
     projectName: "Fortune Teller",
     projectImage: "assets/GIFs/fortune.gif",
     projectUrl: "public/fortune.html",
