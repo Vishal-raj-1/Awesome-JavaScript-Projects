@@ -1243,6 +1243,7 @@ let projectData = [
     projectImage: "assets/Images/CalorieCalculator.png",
     projectUrl: "public/calorie_calculator.html",
   }
+  
 
 ]
 
