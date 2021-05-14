@@ -1170,12 +1170,6 @@ let projectData = [
   }
   ,
   {
-    projectName: 'Mouse Trails effect',
-    projectImage: 'assets/GIFs/MouseTrails.gif',
-    projectUrl: 'public/MouseTrails.html'
-  }
-  ,
-  {
     projectName: 'Guess The Number',
     projectImage: 'assets/Images/guess.png',
     projectUrl: 'public/guess.html'
@@ -1205,12 +1199,7 @@ let projectData = [
     projectImage: 'assets/Images/music_generator_ss.jpg',
     projectUrl: 'public/music_generator.html'
   },
-  {
-    projectName: 'Memory game',
-    projectImage: 'assets/Images/Memory_game/Mind_game.png',
-    projectUrl: 'public/Memory_game.html'
-  }
-  ,
+  
   {
     projectName: 'Memory game',
     projectImage: 'assets/Images/Memory_game/Mind_game.png',
@@ -1360,13 +1349,9 @@ let projectData = [
     projectName: "Make Match Game",
     projectImage: "assets/Images/makeMatchGame/make-match.png",
     projectUrl: "public/makeMatchGame.html",
-  },
+  }  
+  ,
   {
-    projectName: "Click Shape Game",
-    projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
-    projectUrl: "public/click_shape.html",
-  }
-  ,{
     projectName: 'Bucket Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/bucket-visualizing.png',
     projectUrl: 'public/bucketsort.html'
