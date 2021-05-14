@@ -8,23 +8,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/StopWatch.css">
+    <link rel="icon" href="https://icon2.cleanpng.com/20180204/iuw/kisspng-stopwatch-timer-clip-art-stopwatch-cliparts-5a76b356e17881.1075154915177285989235.jpg" type="image/x-icon">
     <title>StopWatch</title>
+    
 </head>
 <!-- body -->
 
-<body>
-    <div class="container">
-        <h1 class="heading text-center">Stop Watch</h1>
-        <div class="stopwatch text-center">00:00:00</div>
+<body>      
+
+    <div class="wrap">
+      <h1 class="heading text-center">STOP WATCH</h1>
+      <div id="timing">
+      <p class="para">Your time begins here</p>
+      <div class="stopwatch text-center">00:00:00</div>
         <div class="controls text-center">
-            <button id="start" onclick="start()" class="btn">Start</button>
-            <button id="stop" onclick="stop()" class="btn hidden">Stop</button>
-            <button id="reset" onclick="reset()" class="btn hidden">Reset</button>
+            <button id="start" onclick="start()" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="50" fill="darkblue" class="bi bi-play-fill" viewBox="0 0 16 18">
+              <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+            </svg>Start</button>
+            <button id="stop" onclick="stop()" class="btn "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="white" class="bi bi-stop-fill" viewBox="0 0 16 18">
+              <path d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+            </svg>Stop</button>
+            <button id="reset" onclick="reset()" class="btn "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="50" fill="darkblue" class="bi bi-arrow-clockwise" viewBox="0 0 16 18">
+              <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+              <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+            </svg>Reset</button>
             <button id="lap" onclick="lap()" class="btn hidden">Lap</button>
             <button id="resetlaps" onclick="resetlaps()" class="btn hidden">Reset Laps</button>
         </div>
         <ul class="laps text-center font-weight-bold my-2"></ul>
     </div>
+  </div>
     <!-- JavaScript -->
     <script src="../assets/js/StopWatch.js"></script>
 </body>

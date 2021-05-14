@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <title>BLOG WEBSITE</title>
+
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="main_heading">Blogs</h1>
+            <p class="main_heading__para">Welcome to my <span class="text-capitalize bg-dark text-white py-2 px-3">World
+                    of Blog</span></p>
+        </div>
+        <!-- ---Main Images--- -->
+        <div class="main_header__div d-flex align-items-start justify-content-center pl-5 flex-column shadow">
+            <p>Blog</p>
+            <h2 class="animatedWord">
+                <span>He is</span>
+                <div>
+                    <ul class="flip">
+                        <li>a Traveller</li>
+                        <li>a Blogger</li>
+                        <li>a Youtuber</li>
+                        <li>a Influencer</li>
+                    </ul>
+                </div>
+            </h2>
+            <button class="text-uppercase"> Get Started</button>
+        </div>
+    </header>
+
+    <!-- ---Header End------ -->
+    <!-- ---Two side div --- -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- to get the left and right side div space -->
+            <div class="col-xl-10 col-lg-10 col-md-11 col-11 mx-auto my-5">
+                <div class="row gx-5 mx-sm-auto">
+                    <!-- --to get the left side of the diiv space--- -->
+                    <div class="col-lg-8 col-md-11 mx-auto">
+                        <div class="row gy-5">
+                            <!-- our first post -->
+                            <div class="col-12 card p-4 shadow blog_left_div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1>Best Place In Delhi</h1>
+                                    <p class="blog-title"><span class="font-weight-bold"> Title
+                                            description,</span>description Apr 2, 2021</p>
+                                </div>
+                                <figure class="right_side__img mb-5">
+                                    <img src="../assets/Images/blog-img/india-gate.jpg" class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold">Loren Ipsum</span>
+                                    India Gate, official name Delhi Memorial, originally called All-India War Memorial,
+                                    monumental sandstone arch in New Delhi, dedicated to the troops of British India who
+                                    died in wars fought between 1914 and 1919. India Gate, which is located at the
+                                    eastern end of the Rajpath (formerly called the Kingsway), is about 138 feet (42
+                                    metres) in height.</p>
+                                <p>India Gate is one of many British monuments built by order of the Imperial War Graves
+                                    Commission (later renamed Commonwealth War Graves Commission). The architect was Sir
+                                    Edwin Lutyens, an Englishman who designed numerous other war memorials and was also
+                                    the principal planner of New Delhi. The cornerstone was laid in 1921 by the duke of
+                                    Connaught, third son of Queen Victoria. Construction of the All-India War Memorial,
+                                    as it was originally known, continued until 1931, the year of the formal dedication
+                                    of New Delhi as the capital of India.</p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div__like" id="like_btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="left_div__reply" onclick="reply('reply1')">
+                                            Replies <badge class="bg-white text-dark p-2">1</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="replies" id="reply1">
+                                    <div
+                                        class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="../assets/Images/blog-img/avatar.png">
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-600"> Lorem, </span> Apr 04, 2021, 4.20PM
+                                            </p>
+                                            <P>Awesome, Bro I Love that Place. </P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 card p-4 shadow blog_left_div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1>Best Place In Kerla</h1>
+                                    <p class="blog-title"><span class="font-weight-bold"> Title
+                                            description,</span>description Apr 22, 2021</p>
+                                </div>
+                                <figure class="right_side__img mb-5">
+                                    <img src="../assets/Images/blog-img/kerla1.jpg" class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold">Loren Ipsum</span>
+                                    There is the whole of Kerala in one side, and then there is this heavenly tourist
+                                    destination called Alappuzha or Alleppey! Esteemed as the ‘Backwater Capital of
+                                    India’ or the ‘Venice of the East’, Alleppey is known for its silent backwaters and
+                                    bountiful beauty!</p>
+                                <p>Seated on the banks of the azure Vembanad Lake, it is in fact one of the most popular
+                                    backwater destinations in Kerala and one of the highest sought-aftertourist places
+                                    in Kerala. Visit this paradise; enjoy houseboat cruise and stay, village walks,
+                                    Ayurvedic therapies and lot more!</p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div__like" id="like_btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="left_div__reply" onclick="reply('reply2')">
+                                            Replies <badge class="bg-white text-dark p-2">2</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="replies" id="reply2">
+                                    <div
+                                        class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="../assets/Images/blog-img/avatar.png">
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-600"> Lorem, </span> Apr 04, 2021, 4.20PM
+                                            </p>
+                                            <P>Awesome, Bro I Love that Place. </P>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="../assets/Images/blog-img/avatar.png">
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-600"> Lorem, </span> Apr 04, 2021, 4.20PM
+                                            </p>
+                                            <P>Awesome</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 card p-4 shadow blog_left_div">
+                                <div class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5">
+                                    <h1>Best Place In Bihar</h1>
+                                    <p class="blog-title"><span class="font-weight-bold"> Title
+                                            description,</span>description May 2, 2021</p>
+                                </div>
+                                <figure class="right_side__img mb-5">
+                                    <img src="../assets/Images/blog-img/gaya.jpg" class="img-fluid shadow">
+                                </figure>
+                                <p><span class="font-weight-bold">Loren Ipsum</span>
+                                    Amongst the most famous places in Bihar is Gaya, which is a Hindu pilgrimage hub and
+                                    a transit point for Buddhist pilgrimage centre of Bodhgaya. It is believed that it
+                                    was here under the tree that Buddha attained enlightenment. Gaya is a busy city
+                                    situated on the bank of River Phalgu and it is replete with many temples and
+                                    historic sites dating back to different eras that stand as the evidence to the
+                                    successful rule of Maurya and Gupta dynasty here. The glory of Gaya was extended so
+                                    much so that even Hiuen Tsang could not resist mentioning it in his travelogues.</p>
+                                <p>A city of ancient historical and mythological significance, Gaya is one of the main
+                                    tourist attractions in Bihar and the second largest city in the state. It is 100 km
+                                    from Patna, the capital of Bihar and one of the major pilgrimage sites for Hindus
+                                    and Buddhists. Its natural surroundings, narrow by lanes and its age old buildings
+                                    make it special. </p>
+                                <div class="d-flex justify-content-between left_div_btns">
+                                    <div>
+                                        <button class="left_div__like" id="like_btn">
+                                            <i class="fas fa-thumbs-up"></i> Like
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="left_div__reply" onclick="reply('reply3')">
+                                            Replies <badge class="bg-white text-dark p-2">3</badge>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="replies" id="reply3">
+                                    <div
+                                        class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="../assets/Images/blog-img/avatar.png">
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-600"> Lorem, </span> Apr 04, 2021, 4.20PM
+                                            </p>
+                                            <P>I will visit gaya soon </P>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="../assets/Images/blog-img/avatar.png">
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-600"> Lorem, </span> Apr 04, 2021, 4.20PM
+                                            </p>
+                                            <P>I will visit gaya soon </P>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-start flex-row align-self-center card reply_card py-3">
+                                        <div class="reply_img mx-2 align-items-center">
+                                            <img src="../assets/Images/blog-img/avatar.png">
+                                        </div>
+                                        <div class="reply_text_left">
+                                            <p class="blog_title">
+                                                <span class="font-weight-600"> Lorem, </span> Apr 04, 2021, 4.20PM
+                                            </p>
+                                            <P>I will visit gaya soon </P>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--  to get the right side of the div space -->
+
+                    <div class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto">
+                        <div class="row gy-5 left_div_blog">
+                            <div class="col-12 about_me_div shadow">
+                                <p>Lorem Ipsum</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="popular_post">
+                                <div class="right_div_title py-4 pl-2">
+                                    <h2>Popular Posts</h2>
+                                </div>
+                                <div class="right_sub_div shadow">
+                                    <div class="row">
+                                        <div class="col-3 popular_post__img1 py-2 pl-2">
+
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Bill Gates</h3>
+                                            <p>CEO of Microsoft</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 popular_post__img2 py-2 pl-2">
+
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Mark Zuckerberg</h3>
+                                            <p class="text-capitalize">CEO of Facebook</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 popular_post__img3 py-2 pl-2">
+
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Jeff Bezos</h3>
+                                            <p class="text-capitalize">Owner of Amazon</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 popular_post__img4 py-2 pl-2">
+
+                                        </div>
+                                        <div class="col-9">
+                                            <h3>Elon Musk</h3>
+                                            <p class="text-capitalize">CEO of Tesla</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center py-4 bg-light">Design with love by Mrinal Anand</p>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../assets/js/blog.js"></script>
+
+</body>
+
+</html>
