@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/PigGame.html",
   },
   {
+    projectName: "Fortune Teller",
+    projectImage: "assets/GIFs/fortune.gif",
+    projectUrl: "public/fortune.html",
+  },
+  {
     projectName: "ECOMMERCE WEBSITE",
     projectImage: "assets/GIFs/ecommerce_website.gif",
     projectUrl: "public/ecommerce.html",
