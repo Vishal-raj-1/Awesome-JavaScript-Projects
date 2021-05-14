@@ -1180,6 +1180,29 @@ let projectData = [
     projectUrl: "public/bucketsort.html",
   },
   {
+    projectName: 'Bubble Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/bubble-visualizing.png',
+    projectUrl: 'public/bubblevisualiser.html'
+  }
+   ,
+  {
+    projectName: 'Linear Search Visualization in JavaScript',
+    projectImage: 'assets/Images/linearsearch-visualizing.png',
+    projectUrl: 'public/linearsearch.html'
+  
+   } ,
+   {
+     projectName: 'Captcha Validator',
+     projectImage: 'assets/Images/CaptchaValidator.png',
+     projectUrl: 'public/CaptchaValidator.html'
+   }
+   ,{
+    projectName: 'Binary Search Visualization in JavaScript',
+    projectImage: 'assets/Images/binarysearch-visualizing.png',
+    projectUrl: 'public/binarysearch.html'
+  
+   },
+  {
     projectName: "Heap Sort Visualizer in JavaScript",
     projectImage: "assets/Images/heap-visualizing.png",
     projectUrl: "public/heapsort.html",
@@ -1199,7 +1222,8 @@ let projectData = [
     projectImage: "assets/Images/CaptchaValidator.png",
     projectUrl: "public/CaptchaValidator.html",
   },
-];
+]
+
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
