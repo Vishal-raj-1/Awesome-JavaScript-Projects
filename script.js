@@ -1234,6 +1234,11 @@ let projectData = [
     projectImage: "assets/Images/CaptchaValidator.png",
     projectUrl: "public/CaptchaValidator.html",
   },
+  {
+    projectName: "Shell Sort Visualizer in JavaScript",
+    projectImage: "assets/Images/shell-visualizing.png",
+    projectUrl: "public/shellsort.html",
+  }
 ]
 
 
