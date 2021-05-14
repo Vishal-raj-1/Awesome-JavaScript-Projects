@@ -1235,11 +1235,6 @@ let projectData = [
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
    },
-   {
-    projectName: "Re-Create Giphy",
-    projectImage: "assets/Images/giphy.png",
-    projectUrl: "public/Giphy.html",
-   },
   {
     projectName: "Heap Sort Visualizer in JavaScript",
     projectImage: "assets/Images/heap-visualizing.png",
