@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple Event Binding and Validator by Proxy Pattern</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <h1>Hello:<span id="msg"></span></h1>
+    <h2>Your age:<span id="ageMsg"></span></h2>
+    <div>
+        <h3>Enter Your Name</h3>
+        <input type="text" id="txtName" onkeyup="nameChanged(this);" />
+
+        <h3>Enter Your Age</h3>
+        <input type="text" id="txtAge" onkeyup="ageChanged(this);" />
+    </div>
+
+    <script type="text/javascript">
+
+        var person = { name: "", age: 0 };
+
+        var handler = {
+            set: function (obj, prop, value) {
+                if (prop == "name")
+                    document.getElementById("msg").textContent = value;
+
+                if (prop == "age") {
+                    document.getElementById("ageMsg").textContent = "";
+
+                    if (!isNumeric(value)) {
+                        alert('The age is not an integer');
+                        return;
+                    }
+                    
+                    if (value > 130) {
+                        alert('The age seems invalid');
+                        return;
+                    }
+
+                    document.getElementById("ageMsg").textContent = value;
+                }
+
+                obj[prop] = value;
+                return true;
+            }
+        };
+
+        var frm = new Proxy(person, handler);
+
+        function nameChanged(e) {
+            frm.name = e.value;
+        }
+
+        function ageChanged(e) {
+            frm.age = e.value;
+        }
+
+        function isNumeric(n) {
+            return !isNaN(parseFloat(n)) && isFinite(n);
+        }
+    </script>
+</body>
+
+</html>
