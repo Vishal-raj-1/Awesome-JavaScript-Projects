@@ -723,7 +723,7 @@ let projectData = [
   },
   {
     projectName: "Document to Handwritting",
-    projectImage: "assets/images/page.jpg",
+    projectImage: "assets/Images/page.jpg",
     projectUrl: "public/DocumenttoHandwritting.html",
   },
   {
@@ -733,7 +733,7 @@ let projectData = [
   },
   {
     projectName: "Image Gallery",
-    projectImage: "assets/Images/imageGallery/images",
+    projectImage: "assets/Images/imageGallery.png",
     projectUrl: "public/imageGallery.html",
   },
   {
@@ -1154,11 +1154,6 @@ let projectData = [
     projectUrl: "public/KanbanBoard.html",
   },
   {
-    projectName: "Click Shape Game",
-    projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
-    projectUrl: "public/click_shape.html",
-  },
-  {
     projectName: "Shooting Game",
     projectImage: "assets/Images/shooting_game.png",
     projectUrl: "public/shooting_game.html",
@@ -1172,7 +1167,8 @@ let projectData = [
     projectName: "Make Match Game",
     projectImage: "assets/Images/makeMatchGame/make-match.png",
     projectUrl: "public/makeMatchGame.html",
-  },
+  }  
+  ,
   {
     projectName: "Click Shape Game",
     projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
