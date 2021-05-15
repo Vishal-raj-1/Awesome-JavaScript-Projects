@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/PigGame.html",
   },
   {
+    projectName: "Work Time Tracker",
+    projectImage: "assets/GIFs/timetracker.gif",
+    projectUrl: "public/timetracker.html",
+  },
+  {
     projectName: "Fortune Teller",
     projectImage: "assets/GIFs/fortune.gif",
     projectUrl: "public/fortune.html",
@@ -126,9 +131,19 @@ let projectData = [
     projectUrl: "public/groceryList.html",
   },
   {
-    projectName: "Temperature Converter",
-    projectImage: "assets/GIFs/Temperature_Converter_Backcover.gif",
-    projectUrl: "public/Temperature_Converter.html",
+    projectName: "Joke Teller",
+    projectImage: "assets/GIFs/joke-teller-robot.gif",
+    projectUrl: "public/joke-teller.html",
+  },
+  {
+    projectName: "Spock Lizards Game",
+    projectImage: "assets/Images/spock.png",
+    projectUrl: "public/spock-game.html",
+  },
+  {
+    projectName: 'Temperature Converter',
+    projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
+    projectUrl: 'public/Temperature_Converter.html',
   },
   {
     projectName: "Animated Background",
@@ -1149,6 +1164,23 @@ let projectData = [
     projectUrl: "public/ReactionGame.html",
   },
   {
+    projectName: "Smooth Scroll",
+    projectImage: "assets/GIFs/Smooth_scroll.gif ",
+    projectUrl: "public/Smooth_scroll.html",
+  }
+  ,
+  
+  {
+    projectName: "Apple Collector game",
+    projectImage: "assets/Images/AppleGame/screenshot.png",
+    projectUrl: "public/apple.html",
+  },
+  {
+    projectName: "Calorie Calculator",
+    projectImage: "assets/Images/CalorieCalculator.png",
+    projectUrl: "public/calorie_calculator.html",
+  },
+  {
     projectName: "Kanban Board",
     projectImage: "assets/GIFs/KanbanBoard_ss.gif",
     projectUrl: "public/KanbanBoard.html",
@@ -1184,13 +1216,7 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-   ,
-  {
-    projectName: 'Linear Search Visualization in JavaScript',
-    projectImage: 'assets/Images/linearsearch-visualizing.png',
-    projectUrl: 'public/linearsearch.html'
-  
-   } ,
+  ,
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
@@ -1200,6 +1226,10 @@ let projectData = [
     projectName: 'Box-Shadow Css ',
     projectImage: 'assets/GIFs/box-shadow.gif',
     projectUrl: 'public/box-shadow.html'
+   },{
+    projectName: 'Px/Rem Converter',
+    projectImage: 'assets/GIFs/px-rem.gif',
+    projectUrl: 'public/px-rem.html'
    }
    ,
    {
@@ -1228,11 +1258,6 @@ let projectData = [
     projectName: "Linear Search Visualization in JavaScript",
     projectImage: "assets/Images/linearsearch-visualizing.png",
     projectUrl: "public/linearsearch.html",
-  },
-  {
-    projectName: "Captcha Validator",
-    projectImage: "assets/Images/CaptchaValidator.png",
-    projectUrl: "public/CaptchaValidator.html",
   },
 ]
 
