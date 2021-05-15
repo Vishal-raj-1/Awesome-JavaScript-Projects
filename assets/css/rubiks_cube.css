@@ -1,0 +1,204 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+button {
+  border: 0 none;
+  box-size: border-box;
+  padding: 0;
+  width: 100%;    
+}
+button:focus {
+  opacity: .5;
+}
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+html, body, #container {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%; }
+
+#container {
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+#ctrl {
+  position: absolute;
+  z-index: 100;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5); }
+  #ctrl p {
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    background: #fff;
+    line-height: 1;
+    vertical-align: top; }
+    #ctrl p input {
+      line-height: 1; }
+
+#btnDemo {
+  position: absolute;
+  z-index: 1000;
+  padding: 5px; }
+  #btnDemo > div {
+    display: inline-block; }
+
+#stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 1000px;
+  perspective: 1000px; }
+  #stage * {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+
+.Object3D {
+  position: absolute;
+  left: 50%;
+  top: 50%; }
+
+.rubikcube {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+  width: 150px;
+  height: 150px; }
+
+.line {
+  position: absolute;
+  border-top: solid 1px blue;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 0; }
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 8px; }
+  .face.on {
+    z-index: 100; }
+    .face.on .controller {
+      display: block; }
+  .face .controller {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%; }
+    .face .controller > div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.65; }
+    .face .controller .up {
+      top: -99%;
+      background: url(http://jsrun.it/assets/p/G/o/w/pGowz.png) center center no-repeat; }
+    .face .controller .down {
+      bottom: -99%;
+      background: url(http://jsrun.it/assets/o/4/g/G/o4gGv.png) center center no-repeat; }
+    .face .controller .left {
+      left: -99%;
+      background: url(http://jsrun.it/assets/a/7/w/S/a7wS7.png) center center no-repeat; }
+    .face .controller .right {
+      right: -99%;
+      background: url(http://jsrun.it/assets/3/s/Q/v/3sQvb.png) center center no-repeat; }
+  .face .faceBgColor {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    display: block;
+    background-color: #000;
+    border-radius: 8px; }
+  .face .faceColor {
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    display: block;
+    background-color: #ccc;
+    border-radius: 8px;
+    opacity: 0.8; }
+  .face:hover .faceColor {
+    opacity: 1 !important; }
+
+.cube {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px; }
+  .cube.on {
+    z-index: 100; }
+  .cube p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px; }
+
+.timer {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #111; }

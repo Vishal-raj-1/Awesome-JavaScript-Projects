@@ -5,6 +5,11 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html",
   },
   {
+    projectName: "Rubik's Cube",
+    projectImage: "assets/GIFs/rubiks_cube.gif",
+    projectUrl: "public/rubiks_cube.html",
+  },
+  {
     projectName: "Binary Circle Animation",
     projectImage: "assets/GIFs/binary_circle.gif",
     projectUrl: "public/binary_circle.html",
