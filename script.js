@@ -1245,6 +1245,11 @@ let projectData = [
     projectImage: "assets/Images/linearsearch-visualizing.png",
     projectUrl: "public/linearsearch.html",
   },
+  {
+    projectName: "Pacman game",
+    projectImage: "assets/Images/Pacman.png",
+    projectUrl: "public/Pacman.html",
+  },
 ]
 
 
