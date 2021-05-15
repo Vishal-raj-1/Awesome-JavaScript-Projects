@@ -1,131 +1,88 @@
-*{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-}
 body{
-    /* height: 100px;
-    background-color: #131c2c; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
     height: 100vh;
-    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url(https://source.unsplash.com/1600x900/?landscape);
+    font-size: 120%;
 }
 
-#search-form
-{
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    justify-content: center;
 }
 
-::placeholder {
-    color: whitesmoke;
-    opacity: 0.9; /* Firefox */
-  }
-
-#temp
-{
-text-align: center;
-}
-
-#temp #temp-unit
-{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2rem;
-    color: #ffffff;
-}
-#temp #temp-value
-{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2rem;
-    color: #ffffff;
-    
-}
-#climate
-{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.5rem;
-    color: #ffffff;
-    text-align: center;
-}
-#location
-{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.5rem;
-    color: #ffffff;
-    text-align: center;
-}
-
-
-
-#temp-icon
-{
-    margin: 1rem;
-    width: 40%;
-    height: auto;
-}
-
-
-main{
-
-    padding: 20px;
-    margin-top: 10px;
-    background-color: #2b4472;
-    border-radius: 20px;
-    width: 360px;
-    height: 360px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 10px 10px 20px 10px rgba(8, 7, 7, 0.2);
-
-}
-
-
-#search-button
-{
-    color: #494949;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: white;
-    border-radius: 15px;
-    margin-left: 5px;
-    padding: 12px;
-    border: 5px lavender red;
-    display: inline-block;
-    transition: all 0.4 ease 0s;
-}
-#search-button:hover{
-
-color: wheat;
-background: rgb(73, 97, 173);
-border-color: gray;
-transition: all 0.0s ease 0s;
-
-
-
-}
-
-#search-input
-{
-    width: 260px;
-    overflow: visible;
-    font-size: 20px;
-    margin: 8px 0 ;
-    padding: 8px 0;
-    border-radius: 15px;
-    border: 2px solid ;
-    color: rgb(0, 0, 0);
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
     outline: none;
-    background: whitesmoke;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
 }
-input
-{
-    border: visible;
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+h1.temp{
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
 }
 
 
+.description{
+    text-transform:capitalize;
+    margin-left: 8px;
+}
 
+.weather .loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
 
 
 
