@@ -1162,6 +1162,11 @@ let projectData = [
     projectName: "Reaction Game",
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
+  },
+  {
+    projectName: "Smooth Scroll",
+    projectImage: "assets/GIFs/Smooth_scroll.gif ",
+    projectUrl: "public/Smooth_scroll.html",
   }
   ,
   
