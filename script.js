@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/PigGame.html",
   },
   {
+    projectName: "Step Progress Bar",
+    projectImage: "assets/GIFs/progress.gif",
+    projectUrl: "public/progress.html",
+  },
+  {
     projectName: "Work Time Tracker",
     projectImage: "assets/GIFs/timetracker.gif",
     projectUrl: "public/timetracker.html",
