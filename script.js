@@ -1287,6 +1287,11 @@ let projectData = [
     projectUrl: "public/linearsearch.html",
   },
   {
+    projectName: "Pacman game",
+    projectImage: "assets/Images/Pacman.png",
+    projectUrl: "public/Pacman.html",
+  },
+  {
     projectName: "Captcha Validator",
     projectImage: "assets/Images/CaptchaValidator.png",
     projectUrl: "public/CaptchaValidator.html",
@@ -1295,6 +1300,7 @@ let projectData = [
     projectName: "Balloon Pop Game",
     projectImage: "assets/Images/BalloonPopGame.png",
     projectUrl: "public/BalloonPopGame.html",
+
   },
 ]
 
