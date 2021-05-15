@@ -1162,6 +1162,13 @@ let projectData = [
     projectName: "Reaction Game",
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
+  }
+  ,
+  
+  {
+    projectName: "Apple Collector game",
+    projectImage: "assets/Images/AppleGame/screenshot.png",
+    projectUrl: "public/apple.html",
   },
   {
     projectName: "Calorie Calculator",
@@ -1204,13 +1211,7 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-   ,
-  {
-    projectName: 'Linear Search Visualization in JavaScript',
-    projectImage: 'assets/Images/linearsearch-visualizing.png',
-    projectUrl: 'public/linearsearch.html'
-  
-   } ,
+  ,
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
