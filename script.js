@@ -1311,11 +1311,17 @@ let projectData = [
     projectUrl: "public/CaptchaValidator.html",
   },
   {
+    projectName: "Shell Sort Visualizer in JavaScript",
+    projectImage: "assets/Images/shell-visualizing.png",
+    projectUrl: "public/shellsort.html",
+  },
+  {
     projectName: "Balloon Pop Game",
     projectImage: "assets/Images/BalloonPopGame.png",
     projectUrl: "public/BalloonPopGame.html",
 
   },
+
 ]
 
 
