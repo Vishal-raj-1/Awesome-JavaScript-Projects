@@ -15,6 +15,16 @@ let projectData = [
     projectUrl: "public/PigGame.html",
   },
   {
+    projectName: "Work Time Tracker",
+    projectImage: "assets/GIFs/timetracker.gif",
+    projectUrl: "public/timetracker.html",
+  },
+  {
+    projectName: "Fortune Teller",
+    projectImage: "assets/GIFs/fortune.gif",
+    projectUrl: "public/fortune.html",
+  },
+  {
     projectName: "ECOMMERCE WEBSITE",
     projectImage: "assets/GIFs/ecommerce_website.gif",
     projectUrl: "public/ecommerce.html",
@@ -121,9 +131,19 @@ let projectData = [
     projectUrl: "public/groceryList.html",
   },
   {
-    projectName: "Temperature Converter",
-    projectImage: "assets/GIFs/Temperature_Converter_Backcover.gif",
-    projectUrl: "public/Temperature_Converter.html",
+    projectName: "Joke Teller",
+    projectImage: "assets/GIFs/joke-teller-robot.gif",
+    projectUrl: "public/joke-teller.html",
+  },
+  {
+    projectName: "Spock Lizards Game",
+    projectImage: "assets/Images/spock.png",
+    projectUrl: "public/spock-game.html",
+  },
+  {
+    projectName: 'Temperature Converter',
+    projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
+    projectUrl: 'public/Temperature_Converter.html',
   },
   {
     projectName: "Animated Background",
@@ -749,7 +769,7 @@ let projectData = [
   },
   {
     projectName: "Document to Handwritting",
-    projectImage: "assets/images/page.jpg",
+    projectImage: "assets/Images/page.jpg",
     projectUrl: "public/DocumenttoHandwritting.html",
   },
   {
@@ -759,7 +779,7 @@ let projectData = [
   },
   {
     projectName: "Image Gallery",
-    projectImage: "assets/Images/imageGallery/images",
+    projectImage: "assets/Images/imageGallery.png",
     projectUrl: "public/imageGallery.html",
   },
   {
@@ -1184,16 +1204,23 @@ let projectData = [
     projectName: "Reaction Game",
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html",
+  }
+  ,
+  
+  {
+    projectName: "Apple Collector game",
+    projectImage: "assets/Images/AppleGame/screenshot.png",
+    projectUrl: "public/apple.html",
+  },
+  {
+    projectName: "Calorie Calculator",
+    projectImage: "assets/Images/CalorieCalculator.png",
+    projectUrl: "public/calorie_calculator.html",
   },
   {
     projectName: "Kanban Board",
     projectImage: "assets/GIFs/KanbanBoard_ss.gif",
     projectUrl: "public/KanbanBoard.html",
-  },
-  {
-    projectName: "Click Shape Game",
-    projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
-    projectUrl: "public/click_shape.html",
   },
   {
     projectName: "Shooting Game",
@@ -1209,7 +1236,8 @@ let projectData = [
     projectName: "Make Match Game",
     projectImage: "assets/Images/makeMatchGame/make-match.png",
     projectUrl: "public/makeMatchGame.html",
-  },
+  }  
+  ,
   {
     projectName: "Click Shape Game",
     projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
@@ -1230,10 +1258,24 @@ let projectData = [
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
    } ,
+
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
+   }
+   ,
+   {
+     projectName: 'Ternary Search Visualization in JavaScript',
+     projectImage: 'assets/Images/ternarysearch-visualizing.png',
+     projectUrl: 'public/ternarysearch.html'
+   
+    } 
+   ,{
+    projectName: 'Binary Search Visualization in JavaScript',
+    projectImage: 'assets/Images/binarysearch-visualizing.png',
+    projectUrl: 'public/binarysearch.html'
+  
    },
   {
     projectName: "Heap Sort Visualizer in JavaScript",
@@ -1250,12 +1292,8 @@ let projectData = [
     projectImage: "assets/Images/linearsearch-visualizing.png",
     projectUrl: "public/linearsearch.html",
   },
-  {
-    projectName: "Captcha Validator",
-    projectImage: "assets/Images/CaptchaValidator.png",
-    projectUrl: "public/CaptchaValidator.html",
-  },
-];
+]
+
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
