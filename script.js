@@ -24,6 +24,11 @@ let projectData = [
     projectImage: "assets/GIFs/PigGame.gif",
     projectUrl: "public/PigGame.html",
   },
+   {
+    projectName: "3D Racing Game",
+    projectImage: "assets/GIFs/hue_jump.png",
+    projectUrl: "public/hue_jump.html",
+  },
   {
     projectName: "Step Progress Bar",
     projectImage: "assets/GIFs/progress.gif",
