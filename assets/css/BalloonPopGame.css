@@ -1,0 +1,75 @@
+body{
+    font-family:sans-serif;
+    padding: 30px;
+    background:#a3d2ca;
+}
+
+.wrapper{
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.blue {
+    color:#723881;
+}
+
+h1{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #f21170;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+#balloon-gallery div{
+    background: #723881;
+    height: 121px;
+    width: 119px;
+    text-align: center;
+    color: #723881;
+    font-size: 40px;
+    font-family: sans-serif, arial;
+    border-radius: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    /* float: left; */
+    margin: 2.5px 5px 2.5px 0px;
+}
+
+#balloon-gallery div:nth-child(3n){
+    background: #ffce00;
+    color: #ffce00;
+}
+
+#balloon-gallery div:nth-child(3n-1){
+    background:#4aa96c;
+    color:#4aa96c;
+}
+
+#balloon-gallery div:nth-child(5n){
+    background:#ff165d;
+    color:#ff165d;
+}
+
+#balloon-gallery div:nth-child(13n){
+    background:#ff165d;
+    color:#ff165d;
+}
+
+#balloon-gallery div:nth-child(10n){
+    background:#723881;
+    color: #723881;
+}
+
+#balloon-gallery div:nth-child(4n){
+    clear:right;
+}
+
+#yay-no-balloons {
+    display:none;
+    color:#723881;
+    font-size:100px;
+    text-align: center;
+}
