@@ -115,6 +115,11 @@ let projectData = [
     projectUrl: "public/blog.html",
   },
   {
+    projectName: "Animated Navbar",
+    projectImage: "assets/GIFs/animated-navbar.gif",
+    projectUrl: "public/animated-navbar.html",
+  },
+  {
     projectName: "Brick Breaker Game",
     projectImage: "assets/Images/BrickBreakergame.png",
     projectUrl: "public/BrickBreakergame.html",
