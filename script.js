@@ -1291,6 +1291,11 @@ let projectData = [
     projectUrl: "public/linearsearch.html",
   },
   {
+    projectName: "Text-Style CSS",
+    projectImage: "assets/Images/text-style.png",
+    projectUrl: "public/text-style.html",
+  },
+  {
     projectName: "Pacman game",
     projectImage: "assets/Images/Pacman.png",
     projectUrl: "public/Pacman.html",
