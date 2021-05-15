@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>Rubik's Cube</title>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/rubiks_cube.css'>
+   <link rel="apple-touch-icon" href="http://jsrun.it/assets/a/V/5/V/aV5Vz.png" />
+</head>
+
+    <body>
+
+        <div id="container">
+            <div id="stage"></div>
+        </div>
+        
+        <script id="template-face" type="text/x-template">
+            <button class="faceBgColor"><span class="faceColor"></span></button>
+        </script>
+        
+        <script id="template-face-controller" type="text/x-template">
+            <div class="controller">
+                <div data-dir="up" class="up"></div>
+                <div data-dir="down" class="down"></div>
+                <div data-dir="left" class="left"></div>
+                <div data-dir="right" class="right"></div>
+            </div>
+        </script>
+        
+        <script id="template-cube" type="text/x-template">
+            <div class="face top"><span class="faceBgColor"><button class="faceColor">T</button></span></div>
+            <div class="face bottom"><span class="faceBgColor"><button class="faceColor">Bo</button></span></div>
+            <div class="face left"><span class="faceBgColor"><button class="faceColor">L</button></span></div>
+            <div class="face right"><span class="faceBgColor"><button class="faceColor">R</button></span></div>
+            <div class="face front"><span class="faceBgColor"><button class="faceColor">F</button></span></div>
+            <div class="face back"><span class="faceBgColor"><button class="faceColor">Ba</button></span></div>
+        </script>
+        <script src='../assets/js/rubiks_cube.js'></script>
+</body>
+
+</html>
