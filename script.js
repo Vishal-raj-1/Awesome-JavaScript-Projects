@@ -5,14 +5,44 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html",
   },
   {
+    projectName: "Rubik's Cube",
+    projectImage: "assets/GIFs/rubiks_cube.gif",
+    projectUrl: "public/rubiks_cube.html",
+  },
+  {
+    projectName: "Binary Circle Animation",
+    projectImage: "assets/GIFs/binary_circle.gif",
+    projectUrl: "public/binary_circle.html",
+  },
+  {
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
   },
   {
+    projectName: "Alaska Cartoon",
+    projectImage: "assets/GIFs/alaska_cartoon.png",
+    projectUrl: "public/alaska_cartoon.html",
+  },
+  {
     projectName: "Pig Game",
     projectImage: "assets/GIFs/PigGame.gif",
     projectUrl: "public/PigGame.html",
+  },
+   {
+    projectName: "3D Racing Game",
+    projectImage: "assets/GIFs/hue_jump.png",
+    projectUrl: "public/hue_jump.html",
+  },
+  {
+    projectName: "Step Progress Bar",
+    projectImage: "assets/GIFs/progress.gif",
+    projectUrl: "public/progress.html",
+  },
+  {
+    projectName: "Work Time Tracker",
+    projectImage: "assets/GIFs/timetracker.gif",
+    projectUrl: "public/timetracker.html",
   },
   {
     projectName: "Fortune Teller",
@@ -131,6 +161,17 @@ let projectData = [
     projectUrl: "public/joke-teller.html",
   },
   {
+    projectName: "Spock Lizards Game",
+    projectImage: "assets/Images/spock.png",
+    projectUrl: "public/spock-game.html",
+  },
+  {
+    projectName: "NASA APOD",
+    projectImage: "assets/GIFs/nasa-apod.gif",
+    projectUrl: "public/nasa-apod.html",
+  },
+  {
+
     projectName: 'Temperature Converter',
     projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
     projectUrl: 'public/Temperature_Converter.html',
@@ -712,6 +753,11 @@ let projectData = [
     projectUrl: "public/ExchangeRate.html",
   },
   {
+    projectName: "CGPA Calculator",
+    projectImage: "assets/Images/cgpaCalculator.png",
+    projectUrl: "public/cgpaCalculator.html",
+  },
+  {
     projectName: "Mapping Earthquake Data",
     projectImage: "assets/Images/earthquake.png",
     projectUrl: "public/map_earthquake_data.html",
@@ -1154,6 +1200,23 @@ let projectData = [
     projectUrl: "public/ReactionGame.html",
   },
   {
+    projectName: "Smooth Scroll",
+    projectImage: "assets/GIFs/Smooth_scroll.gif ",
+    projectUrl: "public/Smooth_scroll.html",
+  }
+  ,
+  
+  {
+    projectName: "Apple Collector game",
+    projectImage: "assets/Images/AppleGame/screenshot.png",
+    projectUrl: "public/apple.html",
+  },
+  {
+    projectName: "Calorie Calculator",
+    projectImage: "assets/Images/CalorieCalculator.png",
+    projectUrl: "public/calorie_calculator.html",
+  },
+  {
     projectName: "Kanban Board",
     projectImage: "assets/GIFs/KanbanBoard_ss.gif",
     projectUrl: "public/KanbanBoard.html",
@@ -1189,17 +1252,20 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-   ,
-  {
-    projectName: 'Linear Search Visualization in JavaScript',
-    projectImage: 'assets/Images/linearsearch-visualizing.png',
-    projectUrl: 'public/linearsearch.html'
-  
-   } ,
+  ,
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
+   },
+   {
+    projectName: 'Box-Shadow Css ',
+    projectImage: 'assets/GIFs/box-shadow.gif',
+    projectUrl: 'public/box-shadow.html'
+   },{
+    projectName: 'Px/Rem Converter',
+    projectImage: 'assets/GIFs/px-rem.gif',
+    projectUrl: 'public/px-rem.html'
    }
    ,
    {
@@ -1230,6 +1296,16 @@ let projectData = [
     projectUrl: "public/linearsearch.html",
   },
   {
+    projectName: "Text-Style CSS",
+    projectImage: "assets/Images/text-style.png",
+    projectUrl: "public/text-style.html",
+  },
+  {
+    projectName: "Pacman game",
+    projectImage: "assets/Images/Pacman.png",
+    projectUrl: "public/Pacman.html",
+  },
+  {
     projectName: "Captcha Validator",
     projectImage: "assets/Images/CaptchaValidator.png",
     projectUrl: "public/CaptchaValidator.html",
@@ -1238,7 +1314,14 @@ let projectData = [
     projectName: "Shell Sort Visualizer in JavaScript",
     projectImage: "assets/Images/shell-visualizing.png",
     projectUrl: "public/shellsort.html",
-  }
+  },
+  {
+    projectName: "Balloon Pop Game",
+    projectImage: "assets/Images/BalloonPopGame.png",
+    projectUrl: "public/BalloonPopGame.html",
+
+  },
+
 ]
 
 
