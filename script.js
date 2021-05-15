@@ -1328,6 +1328,12 @@ let projectData = [
     projectImage: "assets/Images/train_schedule.png",
     projectUrl: "public/train_schedule.html",
   }
+  ,
+  {
+    projectName: "break The Blocks",
+    projectImage: "assets/Images/break_blocks/breakblock.png",
+    projectUrl: "public/break_the_blocks.html",
+  }
 
 ]
 
