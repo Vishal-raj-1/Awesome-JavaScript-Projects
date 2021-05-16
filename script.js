@@ -636,10 +636,6 @@ let projectData = [
     projectName: 'Math Quiz for kids 🙂 ',
     projectImage: 'assets/Images/MathQuiz.jpg',
     projectUrl: 'public/MathQuiz.html',
-
-    projectName: "Math Quiz for kids 🙂 ",
-    projectImage: "assets/Images/MathQuiz.jpg",
-    projectUrl: "public/MathQuiz.html",
   },
   {
     projectName: "Text to Voice Generator",
@@ -651,11 +647,6 @@ let projectData = [
     projectName: 'Expanding Card',
     projectImage: 'assets/GIFs/ExpandingCard.gif',
     projectUrl: 'public/ExpandingCard.html'
-  }
-  ,{
-    projectName: "Expanding Card",
-    projectImage: "assets/GIFs/ExpandingCard.gif",
-    projectUrl: "public/ExpandingCard.html",
   },
   {
     projectName: "Background Slider",
