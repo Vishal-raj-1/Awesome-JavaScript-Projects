@@ -5,14 +5,29 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html",
   },
   {
+    projectName: "Rubik's Cube",
+    projectImage: "assets/GIFs/rubiks_cube.gif",
+    projectUrl: "public/rubiks_cube.html",
+  },
+  {
     projectName: "Binary Circle Animation",
     projectImage: "assets/GIFs/binary_circle.gif",
     projectUrl: "public/binary_circle.html",
   },
   {
+    projectName: "Restaurant Menu",
+    projectImage: "assets/GIFs/menu.gif",
+    projectUrl: "public/menu.html",
+  },
+  {
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
+  },
+  {
+    projectName: "Math Sprinter Game",
+    projectImage: "assets/Images/math-sprinter-game.png",
+    projectUrl: "public/math-sprinter-game.html",
   },
   {
     projectName: "Alaska Cartoon",
@@ -108,6 +123,11 @@ let projectData = [
     projectName: "BLOG WEBSITE",
     projectImage: "assets/Images/blog-img/blog.png",
     projectUrl: "public/blog.html",
+  },
+  {
+    projectName: "Animated Navbar",
+    projectImage: "assets/GIFs/animated-navbar.gif",
+    projectUrl: "public/animated-navbar.html",
   },
   {
     projectName: "Brick Breaker Game",
@@ -1254,6 +1274,17 @@ let projectData = [
     projectUrl: "public/calorie_calculator.html",
   },
   {
+    projectName: "Train_Schedule Manager",
+    projectImage: "assets/Images/train_schedule.png",
+    projectUrl: "public/train_schedule.html",
+  }
+  ,
+  {
+    projectName: "break The Blocks",
+    projectImage: "assets/Images/break_blocks/breakblock.png",
+    projectUrl: "public/break_the_blocks.html",
+  },
+  {
     projectName: "Kanban Board",
     projectImage: "assets/GIFs/KanbanBoard_ss.gif",
     projectUrl: "public/KanbanBoard.html",
@@ -1355,7 +1386,12 @@ let projectData = [
   {
     projectName: "Re-Create Giphy",
     projectImage: "assets/Images/giphy.png",
-    projectUrl: "public/Giphy.html",
+    projectUrl: "public/Giphy.html
+  },
+  {
+    projectName: "Shell Sort Visualizer in JavaScript",
+    projectImage: "assets/Images/shell-visualizing.png",
+    projectUrl: "public/shellsort.html",
   },
   {
     projectName: "Balloon Pop Game",
@@ -1364,7 +1400,6 @@ let projectData = [
 
   },
 ]
-
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
