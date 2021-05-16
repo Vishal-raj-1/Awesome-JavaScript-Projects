@@ -25,6 +25,11 @@ let projectData = [
     projectUrl: "public/Restaurant.html",
   },
   {
+    projectName: "Math Sprinter Game",
+    projectImage: "assets/Images/math-sprinter-game.png",
+    projectUrl: "public/math-sprinter-game.html",
+  },
+  {
     projectName: "Alaska Cartoon",
     projectImage: "assets/GIFs/alaska_cartoon.png",
     projectUrl: "public/alaska_cartoon.html",
