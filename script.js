@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/binary_circle.html",
   },
   {
+    projectName: "Laptop Portfolio",
+    projectImage: "assets/GIFs/lappor.gif",
+    projectUrl: "public/menu.html",
+  },
+  {
     projectName: "Restaurant Menu",
     projectImage: "assets/GIFs/menu.gif",
     projectUrl: "public/menu.html",
