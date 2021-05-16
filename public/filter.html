@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Image Filter</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+
+body {
+  background-color: gray;
+  font-size: 16px;
+  
+  * {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+#app > #info-box
+{
+  left: 250px;
+  transform: translateX(-100%);
+  opacity: 0;
+  
+  &.show
+  {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  h1::after
+  {
+    content: "Info";
+    transform: translate(-15%, -25%);
+    top: 0;
+    left: 0;
+  }
+  
+  h3
+  {
+    font-weight: bold;
+    color: rgba(180, 180, 180, 1);
+  }
+  
+  .text
+  {
+    color: rgba(180, 180, 180, 1);
+    line-height: 1.5em;
+    
+    li
+    {
+      padding: 10px;
+      list-style: none;
+      
+      a {
+        font-weight: bold;
+        color: rgba(180, 180, 180, 1);
+      }
+    }
+  }
+}
+
+#controls, #info-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  padding: 0 20px;
+  box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+ 
+  z-index: 2;
+  transition: all 0.2s ease-in;
+
+  /* iOS Safari */
+  -webkit-touch-callout: none;
+  /* Safari */
+  -webkit-user-select: none;
+  /* Konqueror HTML */
+  -khtml-user-select: none;
+  /* Firefox */
+  -moz-user-select: none; 
+  /* Internet Explorer/Edge */
+  -ms-user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+  user-select: none;
+
+  &:hover { 
+    opacity: 1;
+  }
+  
+  &.transparent:not(:hover):not(.info)
+  {
+   opacity: 0.05;
+  }
+  
+  #reset {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    padding: 5px 10px;
+    font-size: 0.7em;
+    color: #e74c3c;
+    border: 1px solid darken(#e74c3c, 5%);
+    border-radius: 5px;
+    z-index: 5;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+       background-color: #e74c3c;
+      color: white;
+    }
+  }
+
+  #info {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    padding: 5px 10px;
+    font-size: 0.7em;
+    background-color: #3498DB;
+    color: white;
+    border: 1px solid darken(#3498DB, 5%);
+    border-radius: 5px;
+    z-index: 5;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+    &:hover {
+      background-color: lighten(#3498DB, 10%);
+    }
+  }
+  
+  h1 {
+    position: relative;
+    margin: 40px 0 60px 0;
+    color: darken(#3498db, 25%);
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2em;
+    &::after {
+      content: "Filter Playground";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 1.7em;
+      line-height: 1em;
+      transform: translate(-50%, -50%);
+      opacity: 0.1;
+      font-weight: bold;
+      color: transparentize(#3498db, 0.1);
+    }
+  }
+  
+  h3
+  {
+      width: 100%;
+      text-align: left;
+      text-transform: capitalize;
+      font-size: 1em;
+      color: rgba(180, 180, 180, 0.5);
+      text-indent: 5%;
+      margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .control {
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 40px;
+    
+    .title {
+      width: 100%;
+      text-align: left;
+      text-transform: capitalize;
+      display: inline-block;
+      font-size: 1em;
+      position: absolute;
+      top: 0%;
+      color: rgba(180, 180, 180, 0.5);
+      text-indent: 10%;
+      pointer-events: none;
+      transition: all 0.2s;
+      z-index: -1;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+
+    .amount {
+      width: 20%;
+      display: inline-flex;
+      font-size: 0.7em;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .range {
+      width: 75%;
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+}
+
+.show-effects {
+  position: fixed;
+  left: 50%;
+  z-index: 1;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+  img {
+    max-width: 100%;
+  }
+}
+
+#css {
+  position: fixed;
+  bottom: 1vh;
+  width: calc(90vw - 235px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1vw / 2vh;
+  right: 5vw; 
+  display: flex;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: black;
+  z-index: 1;
+  line-height: 1.5em;
+  opacity: 0.3;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/* Range element */
+
+input[type="range"] {
+  $thumb: #3498db;
+  $size: 10px;
+  $width: 100%;
+  $height: 3px;
+  $track-color: #ddd;
+  $track-focus: lighten($thumb, 15%);
+
+  /* fix for FF unable to apply focus style bug  */
+  border: 1px solid transparent;
+
+  /*required for proper track sizing in FF*/
+  width: 100%;
+
+  /* Webkit */
+  -webkit-appearance: none;
+
+  &::-webkit-slider-runnable-track {
+    width: $width;
+    height: $height;
+    background: $track-color;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s;
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    background: $thumb;
+    margin-top: -4px;
+  }
+
+  &:focus {
+    outline: none;
+
+    &::-moz-range-track {
+      background: $track-focus;
+    }
+
+    &::-webkit-slider-runnable-track {
+      background: $track-focus;
+    }
+
+    &::-ms-fill-lower {
+      background: $track-focus;
+    }
+
+    &::-ms-fill-upper {
+      background: $track-focus;
+    }
+  }
+
+  /* FF */
+  &::-moz-range-track {
+    width: $width;
+    height: $height;
+    background: $track-color;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s;
+    z-index: 2;
+  }
+
+  &::-moz-range-thumb {
+    border: none;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    background: $thumb;
+    z-index: 2;
+  }
+
+  /*hide the outline behind the border*/
+  &:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+  }
+
+  /* IE*/
+  &::-ms-track {
+    width: $width;
+    height: $height;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+  }
+  &::-ms-fill-lower {
+    background: $track-color;
+    border-radius: 10px;
+  }
+  &::-ms-fill-upper {
+    background: $track-color;
+    border-radius: 10px;
+  }
+  &::-ms-thumb {
+    border: none;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    background: $thumb;
+    transform: translateY(20%);
+  }
+}
+
+// Transition
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+  </style>
+  <body>
+    <div id="app">
+
+  <div id='info-box' :class="{ show: showInfo}"> 
+    <h1>
+      Info
+    </h1>
+    <h3>Tips</h3>
+    <div class='text'>
+      <li>Use mousehweel on image to zoom-in / zoom-out.</li>
+     <li> Use mousehweel on range elements to get a precise reduction / increment value. </li>
+      <li> Controls and CSS Style box become translucent and will show on hover. </li>
+    </div>
+     <h3>Projects</h3>
+    <div class='text'>
+      <li>Check my other projects at <a href='https://codepen.io/khr2003/' target=_blank>CodePen</a></li>
+    
+    </div>
+  </div>
+  <div id='controls' :class="{ transparent: hideonout, info : showInfo }" @click="hideonout = true"> 
+    <div id='reset' @click='resetControls'>
+      RESET
+    </div>
+     <div id='info' @click="showInfo = !showInfo">
+      INFO
+    </div>
+    <h1>
+      Filter Playground
+    </h1>
+
+    <range v-for="(filter, index) in filterStyle" :filter='filter' @update="handleUpdate(filter, index)"></range>
+    <h3>Drop Shadow</h3>
+    <range v-for="(filter, index) in dropshadow" :filter='filter' @update="handleUpdate(filter, index)"></range>
+
+  </div>
+
+  <div class='show-effects' :style="style" @wheel="zoom">
+    <img src='https://source.unsplash.com/1600x900/?nature,water'> 
+  </div>
+  <transition name="fade">
+    <div id='css' v-show='style.filter != ""'>
+      filter: {{style.filter}};
+    </div>
+  </transition>
+
+</div>
+
+<template id='range'>
+  <div class='control' @wheel="handleScroll">
+  <span class='title'>{{filter.name}}</span>
+  <span class='range'><input type="range" :min="filter.min" :max="filter.max" :step ='filter.step' v-model='filter.amount'  @input="$emit('update')"/></span>
+    <span class='amount'>{{filter.amount}}{{filter.unit}}</span>
+
+  </div>
+</template>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+    <script>
+      Vue.component("range", {
+  template: "#range", 
+  props: ["filter"],
+  methods: {
+    handleScroll: function(e) {
+      var max = this.filter.max;
+      var min = this.filter.min || 0;
+      var current = parseFloat(this.filter.amount);
+      var step = parseFloat(this.filter.step);
+      // Scrolling up
+      if (e.deltaY < 0) {
+        if (current < max) this.filter.amount = current + step;
+        this.$emit("update");
+      }
+      // Scrolling down
+      if (e.deltaY > 0) {
+        if (current > min) this.filter.amount = current - step;
+        this.$emit("update");
+      }
+    }
+  }
+});
+
+new Vue({
+  el: "#app",
+  data() {
+    return {
+      style: { filter: "", width: "100vw", shadow: "" },
+      hideonout: false,
+      showInfo: false,
+      styleObj: {},
+      dropshadow: [
+        {
+          name: "x-offset",
+          amount: 0,
+          max: 100,
+          min: -100,
+          unit: "px",
+          step: 1
+        },
+        {
+          name: "y-offset",
+          amount: 0,
+          max: 100,
+          min: -100,
+          unit: "px",
+          step: 1
+        },
+        {
+          name: "blur",
+          amount: 0,
+          max: 100,
+          min: 0,
+          unit: "px",
+          step: 1
+        }
+      ],
+      filterStyle: [
+        {
+          name: "blur",
+          amount: 0,
+          max: 100,
+          unit: "px",
+          step: 1
+        },
+        {
+          name: "brightness",
+          amount: 1,
+          max: 10,
+          unit: "",
+          step: 0.25
+        },
+        {
+          name: "contrast",
+          amount: 1,
+          max: 10,
+          unit: "",
+          step: 0.25
+        },
+        {
+          name: "grayscale",
+          amount: 0,
+          max: 100,
+          unit: "%",
+          step: 1
+        },
+        {
+          name: "hue-rotate",
+          amount: 0,
+          max: 360,
+          unit: "deg",
+          step: 1
+        },
+        {
+          name: "invert",
+          amount: 0,
+          max: 100,
+          unit: "%",
+          step: 1
+        },
+        {
+          name: "saturate",
+          amount: 1,
+          max: 10,
+          unit: "",
+          step: 0.25
+        },
+        {
+          name: "sepia",
+          amount: "0",
+          max: 100,
+          unit: "%",
+          step: 1
+        },
+        {
+          name: "opacity",
+          amount: "100",
+          max: 100,
+          unit: "%",
+          step: 1
+        }
+      ]
+     
+    };
+  },
+  methods: {
+    handleUpdate: function(filter, index, event) {
+      var newValue = filter.amount;
+      filter.changed = true;
+      this.filterStyle[index].changed = true;
+    },
+    zoom: function(e) {
+      var max = 150;
+      var current = parseInt(this.style.width);
+
+      // Scrolling up
+      if (e.deltaY < 0) {
+        if (current < max) this.style.width = current + 1 + "vw";
+      }
+      // Scrolling down
+      if (e.deltaY > 0) {
+        if (current > 50) this.style.width = current - 1 + "vw";
+      }
+    },
+    resetControls: function(e) {
+      Object.assign(this.$data, this.$options.data.apply(this));
+    },
+    flattenStyle: function(array) {
+      var final = [];
+      for (const filter in this.styleObj)
+        final.push(filter + "(" + this.styleObj[filter] + ")");
+
+      return final.join(" ");
+    }
+  },
+  watch: {
+    filterStyle: {
+      handler: function() {
+        var final = [];
+        this.filterStyle.forEach(filter => {
+          if (filter.changed != true) return;
+
+          var filterObj = { [filter.name]: filter.amount + filter.unit };
+          this.styleObj[filter.name] = filter.amount + filter.unit;
+        });
+
+        this.style.filter = this.flattenStyle();
+      }, 
+      deep: true
+    },
+    dropshadow: {
+      handler: function() {
+        var final = [];
+        this.dropshadow.forEach(filter => {
+          final.push(filter.amount + filter.unit);
+        });
+        final.push("black");
+
+        this.styleObj["drop-shadow"] = final.join(" ");
+        this.style.filter = this.flattenStyle();
+      },
+      deep: true
+    }
+  }
+});
+
+    </script>
+    
+  </body>
+</html>
