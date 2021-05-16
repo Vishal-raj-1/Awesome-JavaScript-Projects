@@ -1217,6 +1217,17 @@ let projectData = [
     projectUrl: "public/calorie_calculator.html",
   },
   {
+    projectName: "Train_Schedule Manager",
+    projectImage: "assets/Images/train_schedule.png",
+    projectUrl: "public/train_schedule.html",
+  }
+  ,
+  {
+    projectName: "break The Blocks",
+    projectImage: "assets/Images/break_blocks/breakblock.png",
+    projectUrl: "public/break_the_blocks.html",
+  },
+  {
     projectName: "Kanban Board",
     projectImage: "assets/GIFs/KanbanBoard_ss.gif",
     projectUrl: "public/KanbanBoard.html",
@@ -1321,9 +1332,7 @@ let projectData = [
     projectUrl: "public/BalloonPopGame.html",
 
   },
-
 ]
-
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
