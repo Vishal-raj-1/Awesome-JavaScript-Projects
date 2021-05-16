@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chore Door!</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+  </head>
+  <style>
+    body {
+  background-color: #010165;
+  margin: 0px;
+}
+.header{
+  background-color: #00ffff;
+  text-align: center;
+}
+.title-row{
+  margin-top: 42px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.instructions-title{
+  display: inline;
+  font-size: 18px;
+  font-family: 'Work Sans';
+  color: #00ffff;
+}
+.instructions-row{
+  margin: 0 auto;
+  width: 400px;
+}
+.instructions-number, .instructions-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin:0;
+  font-family: 'Work Sans';
+}
+.instructions-number {
+  width: 10%;
+  font-size: 36px;
+  color: #00ffff;
+}
+.instructions-text{
+  width: 89%;
+  font-size: 14px;
+  color: #ffffff;
+}
+.door-row{
+  text-align: center;
+}
+.door-frame{
+  cursor: pointer;
+  padding: 10px;
+}
+.start-row{
+  margin: auto;
+width : 120px;
+height : 43px;
+font-family : 'Work Sans';
+background-color : #eb6536;
+padding-top : 18px;
+font-size : 18px;
+text-align : center;
+color : #010165;
+margin-bottom : 21px;
+cursor : pointer;
+}
+  </style>
+  <body>
+    <div class="header">
+      <img src= "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/logo.svg">
+    </div>
+    <div class="title-row">
+    <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+      <p class="instructions-title">Instructions</p>
+      <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+    </div>
+      <div class="instructions-row">
+    <div class="instructions-number">1</div>
+    <div class="instructions-text">Hiding behind one of these doors is the ChoreBot.</div>
+  </div>
+  <div class="instructions-row">
+    <div class="instructions-number">2</div>
+    <div class="instructions-text">Your mission is to open all of the doors without running into the ChoreBot.</div>
+  </div>
+  <div class="instructions-row">
+    <div class="instructions-number">3</div>
+    <div class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door, you win!
+    </div>
+  </div>
+  <div class="instructions-row">
+    <div class="instructions-number">4</div>
+    <div class="instructions-text">See if you can score a winning streak!</div>
+  </div>
+<div class ="door-row">
+  <img id= "door1" class= "door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+  <img id= "door2" class ="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+  <img id= "door3" class ="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+    </div>
+    <div id="start" class="start-row">Good luck!</div>
+    <script>
+      var doorImage1 = document.getElementById("door1");
+var doorImage2 = document.getElementById("door2");
+var doorImage3 = document.getElementById("door3");
+var numClosedDoors= 3;
+var openDoor1;
+var openDoor2;
+var openDoor3;
+var startButton = document.getElementById("start");
+var closedDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg';
+var currentlyPlaying = true;
+
+const isBot = (door) => {
+  if(door.src === botDoorPath){
+    return true;
+  }
+  else {return false;}
+}
+const isClicked = (door) => {
+  if(door.src ===closedDoorPath){
+    return false;
+  }
+  else {return true;}
+}
+const playDoor = (door) => {
+  numClosedDoors--;
+  if(numClosedDoors === 0){
+    gameOver('win');
+  }
+  else if(isBot(door)==true){
+    gameOver();
+  }
+}
+const randomChoreDoorGenerator = () => {
+  var choreDoor = Math.floor(Math.random() * numClosedDoors);
+  if(choreDoor === 1){
+     openDoor1 = botDoorPath;
+     openDoor2 = beachDoorPath;
+     openDoor3 = spaceDoorPath;
+     }
+  else if(choreDoor === 2){
+     openDoor2 = botDoorPath;
+     openDoor1 = beachDoorPath;
+     openDoor3 = spaceDoorPath;
+     }
+   else if(choreDoor === 3){
+     openDoor3 = botDoorPath;
+     openDoor1 = beachDoorPath;
+     openDoor2 = spaceDoorPath;
+     }
+}
+var botDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg';
+var beachDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg';
+var spaceDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg';
+door1.onclick = () => {
+  if(currentlyPlaying && !isClicked(doorImage1)){
+      doorImage1.src = openDoor1;
+  }
+  playDoor(door1);
+}
+
+door2.onclick = () => {
+  if(currentlyPlaying && !isClicked(doorImage2)){
+     doorImage2.src = openDoor2;
+  }
+ playDoor(door2);
+}
+door3.onclick = () => {
+  if(currentlyPlaying && !isClicked(doorImage3)){
+    doorImage3.src = openDoor3;
+  }
+  playDoor(door3);
+}
+
+const startRound = () => {
+  doorImage1.src = closedDoorPath;
+  doorImage2.src = closedDoorPath;
+  doorImage3.src = closedDoorPath;
+  numClosedDoors = 3;
+  startButton.innerHTML = 'Good luck!';
+  currentlyPlaying = true;
+  randomChoreDoorGenerator();
+}
+
+ startButton.onclick = () => {
+ if(!currentlyPlaying){   
+  startRound();
+  }
+}
+const gameOver = (str) => {
+  if(str === 'win'){
+    startButton.innerHTML = 'You win! Play again?';
+  }
+  else { startButton.innerHTML = 'Game over! Play     again?';
+       }
+ currentlyPlaying = false;
+}
+startRound();
+
+    </script>
+  </body>
+</html>
