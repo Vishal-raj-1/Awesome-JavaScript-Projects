@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>px/rem converter</title>
+    <link rel="stylesheet" href="../assets/css/px-rem.css">
+</head>
+<body>
+    <h1 class="heading">PX/REM CONVERTER</h1>
+    <hr>
+
+    <div class="converter">
+        
+        <div class="base-size row">
+          <div class="w12">
+            <input id="base-size" class="input" type="number" placeholder="Base size in px. Default 16." value="">
+          </div>
+        </div>
+        
+      
+        <div class="px-to-rem row">
+          <div class="w6">
+            <label for="ptr">px</label>
+            <input id="ptr" class="input" type="number" placeholder="px to rem">
+          </div>
+          <div class="w6">
+            <label for="rem-output">rem</label>
+            <input id="rem-output" type="text" readonly class="output" value=""  placeholder="0rem">
+          </div>
+        </div>
+      
+        <div class="rem-to-px row">
+          <div class="w6">
+            <label for="rtp">rem</label>
+            <input id="rtp" class="input" type="number" placeholder="rem to px">
+          </div>
+          <div class="w6">
+            <label for="px-output">px</label>
+            <input id="px-output" type="text" readonly class="output" value=""  placeholder="0px">
+          </div>
+        </div>
+      
+      </div>    <script src="../assets/js/px-rem.js"></script>
+</body>
+</html>
