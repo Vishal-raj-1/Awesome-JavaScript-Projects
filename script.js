@@ -692,9 +692,32 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
-    projectName: "Expanding Card",
-    projectImage: "assets/GIFs/ExpandingCard.gif",
-    projectUrl: "public/ExpandingCard.html",
+
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice.gif",
+    projectUrl: "public/textToVoice.html",
+  },
+  {
+    projectName: "Randam User Finder",
+    projectImage: "assets/GIFs/Random_User.gif",
+    projectUrl: "public/Randomuser.html",
+  },
+  {
+    projectName: 'Math Quiz for kids 🙂 ',
+    projectImage: 'assets/Images/MathQuiz.jpg',
+    projectUrl: 'public/MathQuiz.html',
+  },
+  {
+    projectName: 'Expanding Card',
+    projectImage: 'assets/GIFs/ExpandingCard.gif',
+    projectUrl: 'public/ExpandingCard.html'
+  },
+  
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/textToVoice.gif",
+    projectUrl: "public/textToVoice.html",
+
   },
   {
     projectName: "Background Slider",
@@ -1205,7 +1228,18 @@ let projectData = [
     projectUrl: "public/timeline.html",
   },
   {
-    projectName: "Google keep Clone",
+    projectName: "Factorial Calculator",
+    projectImage: "assets/Images/FactorialCalculator.jpg",
+    projectUrl: "public/FactorialCalculator.html",
+  },
+  {
+    projectName: "Audio Player App",
+    projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
+    projectUrl: "public/MusicApp.html",
+
+  },
+  {
+  projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   },
@@ -1304,7 +1338,12 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-  ,
+    ,{
+    projectName: 'Linear Search Visualization in JavaScript',
+    projectImage: 'assets/Images/linearsearch-visualizing.png',
+    projectUrl: 'public/linearsearch.html'
+   } ,
+
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
