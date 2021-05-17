@@ -1315,7 +1315,12 @@ let projectData = [
     projectUrl: 'public/px-rem.html'
    }
    ,
-
+   {
+     projectName: 'Dinosaur Game',
+     projectImage: 'assets/GIFs/DinosaurGame.gif',
+     projectUrl: 'public/DinosaurGame.html'
+   }
+  ,
    {
      projectName: 'Ternary Search Visualization in JavaScript',
      projectImage: 'assets/Images/ternarysearch-visualizing.png',
