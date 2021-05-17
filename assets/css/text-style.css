@@ -1,0 +1,135 @@
+body {
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 5em;
+    color: #325288;
+    background-image: url("https://img.freepik.com/free-vector/condensation-water-drops-transparent_107791-6308.jpg?size=338&ext=jpg");
+  }
+  h1 {
+    font-size: 4em;
+  }
+  .para {
+    color: #325288;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .hard-shadow {
+    font-size: 3.5em;
+    margin: 0;
+    padding: 0.25em;
+    text-align: center;
+    border-radius: 2rem;
+    background: #121212;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #121212;
+    letter-spacing: 5px;
+    text-shadow: -2px 4px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac,
+      -1px -1px 0 #c6c23f;
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  
+    display: inline-block;
+  }
+  @-webkit-keyframes up-down {
+    0% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes up-down {
+    0% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  body > p {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 0;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  
+  li {
+    border-radius: 6px;
+    padding: 0.5em;
+    margin: 1em;
+    flex: 0 0 17.3vw;
+    height: 17.3vw;
+    display: block;
+    background: #fff;
+    transition: all 300ms;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    font-size: 1em !important;
+  }
+  
+  li:not(.copied):hover {
+    cursor: pointer;
+  }
+  
+  li:not(.copied):hover :not(.credits) {
+    text-decoration: none;
+  }
+  h1:hover {
+    transform: scale(1.5);
+  }
+  
+  li.copied {
+    cursor: pointer;
+  }
+  
+  @media all and (min-width: 375px) {
+    li {
+      flex: 0 0 70vw;
+      height: 22vw;
+    }
+  }
+  
+  @media all and (min-width: 768px) {
+    ul {
+      padding: 1em 0;
+    }
+  
+    li {
+      margin: 1em;
+      padding: 0.25em;
+      flex: 0 0 70vw;
+      height: 130px;
+    }
+    h1:hover {
+      transform: scale(1.2);
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    li {
+      margin: 1em;
+      padding: 0.25em;
+      flex: 0 0 70vw;
+      height: 130px;
+    }
+    h1 {
+      font-size: 2.75em !important;
+    }
+  }
+  
