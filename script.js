@@ -1160,6 +1160,7 @@ let projectData = [
     projectUrl: "public/multiplicationTableCalculator.html",
   },
   {
+
     projectName: "Dice it",
     projectImage: "assets/Images/dice_it.jfif",
     projectUrl: "public/diceit.html",
@@ -1200,6 +1201,7 @@ let projectData = [
     projectUrl: "public/SimpleTwoWayBindingAndValidator.html",
   },
   {
+
     projectName: "Counting Sort Visualizer in JavaScript",
     projectImage: "assets/Images/counting-visualizing.png",
     projectUrl: "public/countingsort.html",
