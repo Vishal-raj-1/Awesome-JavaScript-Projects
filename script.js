@@ -1394,15 +1394,6 @@ let projectData = [
     projectImage: "assets/Images/linearsearch-visualizing.png",
     projectUrl: "public/linearsearch.html",
   },
-<<<<<<< HEAD
-  {
-    projectName: "Pacman game",
-    projectImage: "assets/Images/Pacman.png",
-    projectUrl: "public/Pacman.html",
-  },
-]
-=======
->>>>>>> caf858e99a9064b84475afcbeb99a87d6d8d59cd
 
   {
     projectName: "Text-Style CSS",
@@ -1443,7 +1434,12 @@ let projectData = [
     projectName: "Cardioid",
     projectImage: "assets/Images/cardioid.png",
     projectUrl: "public/cardioid.html",
-  }
+  },
+  {
+    projectName: "8 Ball Pool",
+    projectImage: "assets/Images/8_ball_pool/demo.png",
+    projectUrl: "public/8_ball_pool.html",
+  },
 ]
 
 var projectDetails = projectData.slice(0);
