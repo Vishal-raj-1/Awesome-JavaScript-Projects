@@ -1,0 +1,963 @@
+<html>
+    <head>
+        <title>Tara BigBow</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet">
+            <!-- <link href="https://fonts.googleapis.com/css?family=Aldrich|Open+Sans" rel="stylesheet"> -->
+            <link rel="stylesheet" type="text/css" href="static/styles.css">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <style>
+      body {
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Baloo Tamma', cursive;
+}
+
+
+#full-screen {
+    background-color: #333333;
+    height: 340px;
+    width: 645px;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+
+}
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 305px solid rgba(220,220,220, 0.5);
+    border-left: 625px solid transparent;
+}
+.sections {
+    vertical-align: auto;
+    display: inline-block;
+}
+#body {
+    height:95%;
+    width:100%;
+
+}
+#intro {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-left: 10px;
+
+}
+
+#about-me {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: none;
+    color: white;
+    background: #333333;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#about-me img {
+    height: 200px;
+    float: left;
+    margin: 15px;
+}
+
+#about-me li {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2em;
+}
+
+#profile-pic img {
+    border-radius: 70px;
+    
+}
+
+#profile-pic {
+    display: inline-block;
+    margin: 0 auto;
+
+}
+
+#projects {
+    height: 100%;
+    width: 100%;
+  /*  overflow-y: hidden;*/
+    overflow-x: hidden;
+    display: none;
+    background: #333333;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#project-font {
+    font-family: 'Baloo Tamma', cursive;
+}
+
+#project-table {
+   text-align: center;
+}
+
+#project-table li {
+    padding: 0;
+}
+
+.project-photo img {
+    height: 100px;
+
+}
+#contact {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: none;
+    color: white;
+    background: #333333;
+}
+#logos {
+    margin: 80px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    height: 250px;
+    width: 700px;
+}
+.logos img{
+    display: inline-block;
+    height: 150px;
+    margin: 50px auto;
+}
+
+#email {
+    text-align: center
+}
+
+.headers {
+    text-align: center;
+    background-color: #6AC4FB;
+    padding: 5px;
+}
+
+#header {
+    height: 10px;
+}
+
+#toolbar {
+    background-color: #F3FFFF;
+    height: 5%;
+    font-size: 8px;
+}
+
+.nav-links {
+    display: inline-block;
+    margin-left: 30%;
+    float: right;
+    padding: 5px 10px 0 10px;
+
+}
+
+.links {
+    margin: 0 5px;
+}
+
+
+.circle {
+    border-radius: 50%;
+    height: 70%;
+    width: 2%;
+    position: relative;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+}
+
+.red-circle {
+     background-color: red;
+}
+
+.yellow-circle {
+    background-color: #FFD700;
+}
+.green-circle {
+    background-color: green;
+}
+
+#keyboard {
+    background-color: gray;
+    height: 250px;
+    width: 760px;
+    margin: -30px auto 10px auto;
+    border-radius: 5px;
+    -webkit-transform: perspective(300px) rotateX(25deg);
+}
+
+#keyboard-bottom {
+    background-color: #696969;
+    height: 15px;
+    width: 920px;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+#keyboard-tab {
+    background-color: #F5F5F5;
+    height: 10px;
+    width: 80px;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+}
+.empty-row {
+    height: 10px;
+}
+#ventilation {
+    height: 10px;
+    width: 600px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+#keyboard-grid {
+    height: 200px;
+    background-color: gray;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+.keys {
+    background-color: black;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+.keys p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    margin: 0 auto;
+    padding-top: 4px;
+}
+
+.keyboard-link {
+    border-color: white;
+    webkit-box-shadow:0 0 20px white; 
+    -moz-box-shadow: 0 0 20px white; 
+    box-shadow:0 0 20px white;
+
+/*text-shadow: 0px  -1px 0px rgba(0,0,0,.5);        
+-webkit-box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);
+-moz-box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);
+box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);*/
+
+}
+
+.keyboard-link:hover { 
+    background-color: lime;
+
+}
+
+.keyboard-link:hover a {
+    color: black;
+}
+
+.keyboard-link a {
+    font-size:11px;
+    padding-top: 1px;
+    color: lime;
+}
+
+.small-text p {
+    padding-top: 0;
+}
+
+
+.row-one {
+    height: 15px;
+    width: 40px;
+    margin: 0 3px;
+}
+
+.row-two {
+    height: 20px;
+    width: 39px;
+    margin: 0 3px;
+}
+
+.small-key {
+    height: 20px;
+    width: 51px;
+    margin: 0 3px;
+}
+
+.row-three {
+    height: 20px;
+    width: 39px;
+    margin: 0 3px;
+}
+
+.medium-key {
+    height: 20px;
+    width: 55px;
+    margin: 0 3px;
+}
+ .row-four {
+    height: 20px;
+    width: 39px;
+    margin: 0 3px;
+ }
+
+ .large-key {
+    height: 20px;
+    width: 71px;
+    margin: 0 3px;
+
+ }
+
+ .row-five {
+    height: 20px;
+    width: 39px;
+    margin: 0 3px;
+}
+
+.extra-large-key {
+    height: 20px;
+    width: 96px;
+    margin: 0 3px;
+}
+
+.row-six {
+    height: 20px;
+    width: 33px;
+    margin: 0 3px;
+}
+
+.space-bar {
+    height: 20px;
+    width: 275px;
+    margin: 0 3px;
+}
+
+.command-key {
+    height: 20px;
+    width: 50px;
+    margin: 0 3px;
+}
+
+.left-right-arrow {
+    height: 10px;
+    width: 40px;
+    margin: 0;
+}
+
+.up-down-arrow {
+    height: 20px;
+    width: 35px;
+    margin: 0;
+}
+
+.touchpad {
+    height: 60px;
+    width: 150px;
+    border-color: black;
+    border-style: solid;
+    background-color: gray;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.css-typing p {
+  font-family: "Courier";
+  width: 50em;
+  white-space: nowrap;
+  overflow: hidden;
+  color: lime; 
+  font-size: 20px;
+  -webkit-animation: type 5s steps(40, end);
+  animation: type 5s steps(40, end);
+
+}
+
+.css-typing p:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-animation: type 5s steps(40, end);
+  animation: type2 5s steps(40, end);
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-animation: type 5s steps(40, end);
+  animation: type3 5s steps(40, end);
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(4) {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-animation: type 5s steps(40, end);
+  animation: type4 5s steps(40, end);
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+#cursor-1 {
+  animation: blink 1s infinite;
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#cursor-2 {
+  animation: blink 1s infinite;
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
+
+#about-me-terminal {
+    display: none;
+    font-family: "Courier";
+    width: 50em;
+    white-space: nowrap;
+    overflow: hidden;
+    color: lime; 
+    font-size: 20px;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type 5s steps(40, end);
+
+}
+
+#project-terminal {
+    display: none;
+    /*.css-typing p:nth-child(4) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type3 5s steps(40, end);
+    -webkit-animation-delay: 6s;
+    animation-delay: 9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
+
+}
+
+#contact-terminal {
+    display: none;
+    /*.css-typing p:nth-child(4) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type3 5s steps(40, end);
+    -webkit-animation-delay: 6s;
+    animation-delay: 9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
+
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes type4 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type4 {
+  0% {
+    width: 0;
+  }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+    </style>
+            
+        <body>
+            <div class="container-fluid">
+                <div id="header"></div>
+                <div id="full-screen">
+                    <div id="toolbar">
+                        <div class="circle red-circle">x</div>
+                        <div class="circle yellow-circle">-</div>
+                        <div class="circle green-circle"><></div>
+                        <div class="nav-links">
+                            <a class="links" id="intro-reroute-btn" href="#intro">Intro Screen</a>
+                            <a class="links" id="about-me-reroute-btn" href="#about-me">About Me</a>
+                            <a class="links" id="projects-reroute-btn" href="#projects">My Projects</a>
+                            <a class="links" id="contact-reroute-btn" href="#contact">Contact Me</a>
+                        </div>
+                    </div>
+                    <div id="body">
+                    
+                <!-- <div id="triangle-bottomright"></div> --> 
+                     
+                        <div id="intro" class="sections">
+                            <div class="css-typing">
+                                <p>taraneh: ~ $ Hello I am Taraneh</p>
+                                <p>taraneh: ~ $ I live in San Francisco</p>
+                                <p>taraneh: ~ $ I am a software engineer
+                                <!-- <p>taraneh: ~ $ Click About Me, My Projects or Contact -->
+                                <span id="cursor-1"> | </span></p>
+                                <div class="terminal">
+                                    <p id="about-me-terminal" >taraneh: cd home/about-me</p>
+                                    <p id="project-terminal" >taraneh: cd home/projects</p>
+                                    <p id="contact-terminal" >taraneh: cd home/contact</p>
+                                    <span id="cursor-2"> | </span>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <div id="about-me" class="sections">
+                            <div class="row">
+                                <div class="col-xs-3" id="profile-pic">
+                                    <img src="https://www.dropbox.com/s/kpr1echcmt4rf5y/profile-pic.jpg?raw=1"/>
+                                    <h3>Hi, I am Taraneh <br>(but you can call me Tara)</h3>
+                                </div>
+                                <div class="col-xs-9" id="about-me-speech">
+                                    <div class="headers">
+                                        <h1>Hello There!</h1>
+                                    </div>
+                                    <ul>
+                                        <li>I am so excited you're here! </li><br><br>
+                                        <li>I am from Oklahoma and am very proud to be half Native American from the Kiowa Tribe. There aren't a lot of Natives in tech and one of my biggest goals is to get more exposure to the natives of all tribes so a career in tech can become possible!</li>
+                                        <br><br>
+
+                                        <li>I was awarded a full scholarship from Facebook and I have graduated from Hackbright in September 2016.</li>
+                                        <br><br>
+
+                                        <li>I am very passionate about the backend and am focused learning as much as I can. However, the frontend is pretty amazing. I had so much fun creating this site!</li><br><br>
+                                       
+                                        <li>Feel free to reach out. Virtual high fives</li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="projects" class="sections">
+                            <div class="headers">
+                                <h1 id="project-font">My Projects</h1>
+                            </div>
+                            <div id="project-table" class="row">
+                                <div id="warn-me-sooner" class="col-xs-6">
+                                    <div class="project-title">
+                                        <h3>Warn me Sooner</h3>
+                                    </div>
+                                    <div class="project-photo">
+                                        <img src="https://www.dropbox.com/s/rpjuo3vac90g3gk/warn-me-sooner.png?raw=1"/>
+                                        <p>Warn Me Sooner is my first project built as a Hackbright Student. It is a social networking site for weather updates in Oklahoma.</p>
+                                        <p>Severe storms are very common in Oklahoma. The best way to get the most current update is by texting with friends on their current location and status, and gauging from there what to expect. Many times, updates from your Facebook page are more accurate than listening to the news. <br><br>Warn Me, Sooner allows users to add friends and post their location and their current weather based status. Location can be easily changed and each user's status update records the time and location that it was posted. Google Maps will show a marker where each status was taken and shows not just the user's friends but everyone who posted an update. An alerts page shows current weather and current weather warning alerts if any have been issued for their location.</p>
+
+                                        <!-- <p>Tech Stack</p>
+                                        <ul>
+                                            <li>Postgres database</li>
+                                            <li>Python in the backend</li>
+                                            <li>Javascript in the frontend</li>
+                                        </ul>
+
+                                        <p>API's used</p>
+                                        <ul>
+                                            <li>Zipasaur</li>
+                                            <li>Google Maps</li>
+                                            <li>Forcast IO</li>
+                                            <li>Dark Sky</li>
+                                            <li>Wunderground</li>
+                                        </ul> -->
+
+                                        <a href="https://github.com/tarzioo/weather_app"><p>Github Repo</p></a>
+                                    </div>
+                                </div>
+                                <div id="factcrunch" class="col-xs-6">
+                                    <div class="project-title">
+                                        <h3>Factcrunch</h3>
+                                    </div>
+                                    <div class="project-photo">
+                                        <img src="https://www.dropbox.com/s/adykj7ntp4m9e78/factcrunch.png?raw=1"/>
+                                        <p>Factcrunch was built by a team of 4 during the 2016 SF TechCrunch hackathon.</p>
+
+                                        <p>This was my first hackathon. I am very happy that I was able to join a team that had great communication and encouragement. I really enjoyed the opportunity to work as a team</p>
+
+                                        <p>We used IBM's Watson to convert speech to text to process statements being made in real time. Using Amazon Alexa, we created a trigger for users to initiate a search on the most recent thing they heard. Alexa then communicates with an API service we built with nodeJS and express, that queries trusted and vetted news articles from Politifact with a custom google searrch to determine a ruling for the statement. Alexa's voice then instantly responds with a ruling and summary of the statement.
+
+                                        <!-- <p>API's used</p>
+                                        <ul>
+                                            <li>Amazon Alexa</li>
+                                            <li>IBM Watson</li>
+                                        </ul>   -->
+                                        <a href="http://devpost.com/software/factcrunch"><p>More info on Devpost</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="contact" class="sections">
+                            <div class="headers">
+                                <h1>Say Hi Or Keep in Contact</h1>
+                            </div>
+                            <div id="logos" class="logos">
+                                <a href="https://github.com/tarzioo"><img src="https://www.dropbox.com/s/4fboovqksmvnub0/github.png?raw=1"/></a>
+                                <a href="https://www.linkedin.com/in/ttayaran"><img src="https://www.dropbox.com/s/l8fgx34umvgmwzo/linkedin.png?raw=1"/></a>
+                                <a href="https://www.instagram.com/tarzioo/"><img src="https://www.dropbox.com/s/t6sw1pcyqnuhrmn/instagram.png?raw=1"/></a>
+                                <a href="https://twitter.com/tarzioo"><img src="https://www.dropbox.com/s/11osqbne7eftvdz/twitter_final.png?raw=1"/></a>
+                            </div>
+                            <div id="email"><h3>taraneh.bigbow@gmail.com</h3></div>
+                        </div>
+                    </div>                         
+                </div>
+
+                <div id="keyboard">
+                    <div class="empty-row">
+                        <div id="ventilation"></div>
+                    </div>
+                    <div id="keyboard-grid">
+                        <div class="keys row-one small-text"><p>esc</p></div>
+                        <div class="keys row-one small-text"><p>☀</p></div>
+                        <div class="keys row-one small-text"><p>☼</p></div>
+                        <div class="keys row-one small-text"><p>▫▫▫</p></div>
+                        <div class="keys row-one small-text"><p>☷</p></div>
+                        <div class="keys row-one small-text"><p>☼</p></div>
+                        <div class="keys row-one small-text"><p>☼</p></div>
+                        <div class="keys row-one small-text"><p>◂◂</p></div>
+                        <div class="keys row-one small-text"><p>▸</p></div>
+                        <div class="keys row-one small-text"><p>▸▸</p></div>
+                        <div class="keys row-one small-text"><p>🔇</p></div>
+                        <div class="keys row-one small-text"><p>🔊</p></div>
+                        <div class="keys row-one small-text"><p>🔈</p></div>
+                        <div class="keys row-one small-text"><p>⊗</p></div>
+
+                        <div class="keys row-two"><p>~ `</p></div>
+                        <div class="keys row-two"><p>1 !</p></div>
+                        <div class="keys row-two"><p>2 @</p></div>
+                        <div class="keys row-two"><p>3 #</p></div>
+                        <div class="keys row-two"><p>4 $</p></div>
+                        <div class="keys row-two"><p>5 %</p></div>
+                        <div class="keys row-two"><p>6 ^</p></div>
+                        <div class="keys row-two"><p>7 &amp;</p></div>
+                        <div class="keys row-two"><p>8 *</p></div>
+                        <div class="keys row-two"><p>9 (</p></div>
+                        <div class="keys row-two"><p>0 )</p></div>
+                        <div class="keys row-two"><p>- _</p></div>
+                        <div class="keys row-two"><p>+ =</p></div>
+                        <div class="keys row-two small-key"><p>delete</p></div>
+
+                        <div class="keys row-three medium-key"><p>tab</p></div>
+                        <div class="keys row-three"><p>Q</p></div>
+                        <div class="keys row-three"><p>W</p></div>
+                        <div class="keys row-three"><p>E</p></div>
+                        <div class="keys row-three"><p>R</p></div>
+                        <div class="keys row-three"><p>T</p></div>
+                        <div class="keys row-three"><p>Y</p></div>
+                        <div class="keys row-three"><p>U</p></div>
+                        <div class="keys row-three"><p>I</p></div>
+                        <div class="keys row-three"><p>O</p></div>
+                        <div class="keys row-three"><p>P</p></div>
+                        <div class="keys row-three"><p>{ [</p></div>
+                        <div class="keys row-three"><p>} ]</p></div>
+                        <div class="keys row-three"><p>\ |</p></div>
+
+                        <div class="keys row-four large-key keyboard-link"><p><a id="project-btn" href="#projects">Projects</a></p></div>
+                        <div class="keys row-four"><p>A</p></div>
+                        <div class="keys row-four"><p>S</p></div>
+                        <div class="keys row-four"><p>D</p></div>
+                        <div class="keys row-four"><p>F</p></div>
+                        <div class="keys row-four"><p>G</p></div>
+                        <div class="keys row-four"><p>H</p></div>
+                        <div class="keys row-four"><p>J</p></div>
+                        <div class="keys row-four"><p>K</p></div>
+                        <div class="keys row-four"><p>L</p></div>
+                        <div class="keys row-four"><p>; :</p></div>
+                        <div class="keys row-four"><p>" '</p></div>
+                        <div class="keys row-four large-key"><p>return</p></div>
+
+                        <div class="keys row-five extra-large-key"><p>shift</p></div>
+                        <div class="keys row-five"><p>Z</p></div>
+                        <div class="keys row-five"><p>X</p></div>
+                        <div class="keys row-five"><p>C</p></div>
+                        <div class="keys row-five"><p>V</p></div>
+                        <div class="keys row-five"><p>B</p></div>
+                        <div class="keys row-five"><p>N</p></div>
+                        <div class="keys row-five"><p>M</p></div>
+                        <div class="keys row-five"><p>&lt; ,</p></div>
+                        <div class="keys row-five"><p>&gt; .</p></div>
+                        <div class="keys row-five"><p>? /</p></div>
+                        <div class="keys row-five extra-large-key keyboard-link"><p><a id="contact-btn" href="#contact">Contact Me</a></p></div>
+
+                        <div class="keys row-six"><p>fn</p></div>
+                        <div class="keys row-six"><p>control</p></div>
+                        <div class="keys row-six"><p>option</p></div>
+                        <div class="keys row-six command-key"><p>⌘</p></div>
+                        <div class="keys row-six space-bar keyboard-link"><p><a id="about-me-btn" href="#about-me">About Me</a></p></div>
+                        <div class="keys row-six command-key"><p>⌘</p></div>
+                        <div class="keys row-six"><p>option</p></div>
+                        <div class="keys row-six left-right-arrow small-text"><p>◄</p></div>
+                        <div class="keys row-six up-down-arrow "><p>▲▼</p></div>
+                        <div class="keys row-six left-right-arrow small-text"><p>►</p></div>
+                        <div class="touchpad"></div>
+                    </div>
+                </div>
+                <div id="keyboard-bottom">
+                    <div id="keyboard-tab"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="static/computer.js"></script>
+        <script>
+          "use strict";
+
+$('#about-me-btn').click(function() {
+    console.log("entered function"); 
+
+    // document.getElementById("cursor-1").style.display = 'none';
+    // document.getElementById("cursor-2").style.display = '';
+    
+    // setTimeout(function(){
+
+        
+    
+    $('#about-me').show('slow', function() {
+    document.getElementById("intro").style.display = 'none';
+    document.getElementById("keyboard").style.display = 'none';
+    document.getElementById("keyboard-bottom").style.display = 'none';
+    document.getElementById("full-screen").style.height = '620px';
+    document.getElementById("full-screen").style.width = '1000px';
+    document.getElementById("toolbar").style.fontSize = '15px';
+
+  });
+
+// }, 5000);
+
+  
+});
+
+$('#contact-btn').click(function() {
+    console.log("entered function");
+  $('#contact').show('slow', function() {
+    document.getElementById("intro").style.display = 'none';
+    document.getElementById("keyboard").style.display = 'none';
+    document.getElementById("keyboard-bottom").style.display = 'none';
+    document.getElementById("full-screen").style.height = '620px';
+    document.getElementById("full-screen").style.width = '1000px';
+    document.getElementById("toolbar").style.fontSize = '15px';
+
+  });
+});
+
+$('#project-btn').click(function() {
+    console.log("entered function");
+  $('#projects').show('slow', function() {
+    document.getElementById("intro").style.display = 'none';
+    document.getElementById("keyboard").style.display = 'none';
+    document.getElementById("keyboard-bottom").style.display = 'none';
+    document.getElementById("full-screen").style.height = '620px';
+    document.getElementById("full-screen").style.width = '1000px';
+    document.getElementById("toolbar").style.fontSize = '15px';
+
+  });
+});
+
+$('#about-me-reroute-btn').click(function() {
+    console.log("entered function");
+  $('#about-me').show('slow', function() {
+    document.getElementById("intro").style.display = 'none';
+    document.getElementById("projects").style.display = 'none';
+    document.getElementById("contact").style.display = 'none';
+    document.getElementById("keyboard").style.display = 'none';
+    document.getElementById("keyboard-bottom").style.display = 'none';
+    document.getElementById("full-screen").style.height = '620px';
+    document.getElementById("full-screen").style.width = '1000px';
+    document.getElementById("toolbar").style.fontSize = '15px';
+
+  });
+});
+
+$('#projects-reroute-btn').click(function() {
+    console.log("entered function");
+  $('#projects').show('slow', function() {
+    document.getElementById("intro").style.display = 'none';
+    document.getElementById("contact").style.display = 'none';
+    document.getElementById("about-me").style.display = 'none';
+    document.getElementById("keyboard").style.display = 'none';
+    document.getElementById("keyboard-bottom").style.display = 'none';
+    document.getElementById("full-screen").style.height = '620px';
+    document.getElementById("full-screen").style.width = '1000px';
+    document.getElementById("toolbar").style.fontSize = '15px';
+
+  });
+});
+
+$('#contact-reroute-btn').click(function() {
+    console.log("entered function");
+  $('#contact').show('slow', function() {
+    document.getElementById("intro").style.display = 'none';
+    document.getElementById("projects").style.display = 'none';
+    document.getElementById("about-me").style.display = 'none';
+    document.getElementById("keyboard").style.display = 'none';
+    document.getElementById("keyboard-bottom").style.display = 'none';
+    document.getElementById("full-screen").style.height = '620px';
+    document.getElementById("full-screen").style.width = '1000px';
+    document.getElementById("toolbar").style.fontSize = '15px';
+
+  });
+});
+
+$('#intro-reroute-btn').click(function() {
+    console.log("entered function");
+  $('#intro').show('fast', function() {
+    document.getElementById("about-me").style.display = 'none';
+    document.getElementById("projects").style.display = 'none';
+    document.getElementById("contact").style.display = 'none';
+    document.getElementById("keyboard").style.display = '';
+    document.getElementById("keyboard-bottom").style.display = '';
+    document.getElementById("full-screen").style.height = '340px';
+    document.getElementById("full-screen").style.width = '645px';
+    document.getElementById("toolbar").style.fontSize = '8px';
+
+  });
+});
+
+        </script>
+        
+    </body>
+</html>

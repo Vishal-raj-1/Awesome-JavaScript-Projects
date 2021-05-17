@@ -1,0 +1,112 @@
+/* basic css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  /* body css part */
+  
+  body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../Images/cgpaCalculator.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* cgpa container css part */
+  .cgpa_container{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.03),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* cgpa container > cgpa_title css part */
+  .cgpa_container > .cgpa_title{
+    width: 100%;
+    height: 50px;
+    background-color: #2500fa;
+    text-align: center;
+    line-height: 50px;
+    font-family: Bahnschrift SemiBold;
+    font-size: 24px;
+    color:rgb(211, 235, 127);
+    border-radius: 10px 10px 0px 0px ;
+  }
+  /* cgpa_container > cgpa_input css part */
+  .cgpa_container > input{
+    border: none;
+    background-color: #fff;
+    outline: none;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    text-align: center;
+    font-family: tahoma;
+    font-weight: bold;
+    color:#242627;
+    margin: 10px;
+  }
+  
+  /* cgpa_container > cgpa_input placeholder css part */
+  ::placeholder{
+    color:#242627;
+    font-size: 15px;
+  }
+  
+  /* cgpa_container cgpa_output css part*/
+  .cgpa_container .cgpa_output{
+    width: 100%;
+    margin-left: 19px;
+  }
+  /* cgpa_container cgpa_output h1 css part*/
+  .cgpa_container .cgpa_output h1{
+    font-family: arial;
+    font-size: 25px;
+    margin-top: 25px;
+    color:#fff;
+  }
+  /* cgpa_container cgpa_output > btn_re css part*/
+  /* cgpa_container cgpa_output > btn_sub css part*/
+  .cgpa_container .cgpa_output #btn_re,
+  .cgpa_container .cgpa_output #btn_sub {
+    border: none;
+    background-color: #2500fa;
+    outline: none;
+    font-size: 20px;
+    font-family: roboto slab;
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 25px 0px 25px 0px;
+    color:#fff;
+    box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.03),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+     4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  padding: 5px 20px;
+  }
+  .cgpa_container .cgpa_output #btn_re{
+    margin-right: 15px;
+  }
+  /* cgpa_container cgpa_output > btn_re:active css part*/
+  /* cgpa_container cgpa_output > btn_sub:active css part*/
+  
+  .cgpa_container .cgpa_output #btn_re:active,
+  .cgpa_container .cgpa_output #btn_sub:active{
+    box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.03),
+    inset 7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+    inset 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  }
