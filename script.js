@@ -402,10 +402,17 @@ let projectData = [
     projectUrl: "public/animatedCounter.html",
   },
   {
-    projectName: "Bubble Sort",
-    projectImage: "assets/GIFs/bubbleSort.gif",
-    projectUrl: "public/bubbleSort.html",
-  },
+    projectName: 'Image Puzzle Game',
+    projectImage: 'assets/Images/imagePuzzleGame.png',
+    projectUrl: 'public/imagePuzzleGame.html'
+  }
+  ,
+  {
+    projectName: 'Bubble Sort',
+    projectImage: 'assets/GIFs/bubbleSort.gif',
+    projectUrl: 'public/bubbleSort.html'
+  }
+  ,
   {
     projectName: "Music Player",
     projectImage: "assets/GIFs/musicplayer.gif",
