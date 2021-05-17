@@ -1374,7 +1374,7 @@ let projectData = [
    },
    {
      projectName: 'Battery Indicator',
-     projectImage: 'assets/GIFs/BatteryIndicator.gif',
+     projectImage: 'assets/Images/BatteryIndicator.png',
      projectUrl: 'public/BatteryIndicator.html'
    }
 ]
