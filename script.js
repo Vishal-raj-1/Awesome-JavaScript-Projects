@@ -1351,7 +1351,11 @@ let projectData = [
     projectImage: "assets/Images/BalloonPopGame.png",
     projectUrl: "public/BalloonPopGame.html",
 
-  },
+  },{
+    projectName: "Cardioid",
+    projectImage: "assets/Images/cardioid.png",
+    projectUrl: "public/cardioid.html",
+  }
 ]
 
 var projectDetails = projectData.slice(0);
