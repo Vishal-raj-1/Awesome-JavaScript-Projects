@@ -1290,17 +1290,20 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
+
    },
    {
     projectName: 'Box-Shadow Css ',
     projectImage: 'assets/GIFs/box-shadow.gif',
     projectUrl: 'public/box-shadow.html'
-   },{
+   },
+   {
     projectName: 'Px/Rem Converter',
     projectImage: 'assets/GIFs/px-rem.gif',
     projectUrl: 'public/px-rem.html'
    }
    ,
+
    {
      projectName: 'Ternary Search Visualization in JavaScript',
      projectImage: 'assets/Images/ternarysearch-visualizing.png',
@@ -1328,6 +1331,7 @@ let projectData = [
     projectImage: "assets/Images/linearsearch-visualizing.png",
     projectUrl: "public/linearsearch.html",
   },
+
   {
     projectName: "Text-Style CSS",
     projectImage: "assets/Images/text-style.png",
@@ -1352,7 +1356,11 @@ let projectData = [
     projectName: "Balloon Pop Game",
     projectImage: "assets/Images/BalloonPopGame.png",
     projectUrl: "public/BalloonPopGame.html",
-
+  },
+   {
+    projectName: 'JoyStick Controls',
+    projectImage: 'assets/GIFs/joystick.gif',
+    projectUrl: 'public/joystick.html'
   },{
     projectName: "Cardioid",
     projectImage: "assets/Images/cardioid.png",
