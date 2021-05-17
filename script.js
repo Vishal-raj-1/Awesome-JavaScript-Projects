@@ -17,7 +17,7 @@ let projectData = [
   {
     projectName: "Laptop Portfolio",
     projectImage: "assets/GIFs/lappor.gif",
-    projectUrl: "public/menu.html",
+    projectUrl: "public/lappor.html",
   },
   {
     projectName: "Restaurant Menu",
