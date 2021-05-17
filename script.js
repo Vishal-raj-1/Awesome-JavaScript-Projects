@@ -1243,6 +1243,7 @@ let projectData = [
     projectImage: "assets/Images/product_counter.png",
     projectUrl: "public/product_counter.html",
   }
+ 
 ]
 
 
