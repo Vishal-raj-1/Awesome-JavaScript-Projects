@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/binary_circle.html",
   },
   {
+    projectName: "Laptop Portfolio",
+    projectImage: "assets/GIFs/lappor.gif",
+    projectUrl: "public/lappor.html",
+  },
+  {
     projectName: "Restaurant Menu",
     projectImage: "assets/GIFs/menu.gif",
     projectUrl: "public/menu.html",
@@ -23,6 +28,11 @@ let projectData = [
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
+  },
+  {
+    projectName: "Math Sprinter Game",
+    projectImage: "assets/Images/math-sprinter-game.png",
+    projectUrl: "public/math-sprinter-game.html",
   },
   {
     projectName: "Alaska Cartoon",
@@ -1150,6 +1160,7 @@ let projectData = [
     projectUrl: "public/multiplicationTableCalculator.html",
   },
   {
+
     projectName: "Dice it",
     projectImage: "assets/Images/dice_it.jfif",
     projectUrl: "public/diceit.html",
@@ -1190,6 +1201,7 @@ let projectData = [
     projectUrl: "public/SimpleTwoWayBindingAndValidator.html",
   },
   {
+
     projectName: "Counting Sort Visualizer in JavaScript",
     projectImage: "assets/Images/counting-visualizing.png",
     projectUrl: "public/countingsort.html",
@@ -1349,6 +1361,10 @@ let projectData = [
     projectName: 'JoyStick Controls',
     projectImage: 'assets/GIFs/joystick.gif',
     projectUrl: 'public/joystick.html'
+  },{
+    projectName: "Cardioid",
+    projectImage: "assets/Images/cardioid.png",
+    projectUrl: "public/cardioid.html",
   }
 ]
 
