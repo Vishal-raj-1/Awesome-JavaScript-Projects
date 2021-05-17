@@ -638,15 +638,16 @@ let projectData = [
     projectUrl: 'public/MathQuiz.html',
   },
   {
+    projectName: 'Expanding Card',
+    projectImage: 'assets/GIFs/ExpandingCard.gif',
+    projectUrl: 'public/ExpandingCard.html'
+  },
+  
+  {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
 
-  },
-  {
-    projectName: 'Expanding Card',
-    projectImage: 'assets/GIFs/ExpandingCard.gif',
-    projectUrl: 'public/ExpandingCard.html'
   },
   {
     projectName: "Background Slider",
