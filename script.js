@@ -1375,7 +1375,7 @@ let projectData = [
   ,
   {
     projectName: 'Button Generator',
-    projectImage: 'assets/Images/ButtonGenerator.png',
+    projectImage: 'assets/Images/button.png',
     projectUrl: 'public/ButtonGenerator.html'
   }
 ]
