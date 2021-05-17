@@ -1385,7 +1385,7 @@ let projectData = [
    } ,
    {
      projectName: '3D Image Gallery',
-     projectImage: 'assets/GIFs/3DImageGallery.gif',
+     projectImage: 'assets/Images/3DImageGallery.png',
      projectUrl: 'public/3DImageGallery.html'
    }
 ]
