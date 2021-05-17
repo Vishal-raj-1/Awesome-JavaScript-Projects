@@ -1,6 +1,7 @@
 body
 {
-    background-image: url(/assets/Images/bg-infix.jpg);
+    /* CORRECTED THE IMAGE PATH */
+    background-image: url(../Images/bg-infix.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
