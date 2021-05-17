@@ -1245,10 +1245,11 @@ let projectData = [
   }
   ,
   {
-    projectName: "Virtual Keyboard",
+    projectName:"Virtual Keyboard",
     projectImage: "assets/Images/virtual_keyboard.png",
     projectUrl: "public/virtual_keyboard.html",
   }
+
 ]
 
 
