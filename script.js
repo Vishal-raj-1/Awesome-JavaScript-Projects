@@ -1435,6 +1435,19 @@ let projectData = [
     projectImage: "assets/Images/cardioid.png",
     projectUrl: "public/cardioid.html",
   }
+  ,
+  {
+    projectName: "Product Counter",
+    projectImage: "assets/Images/product_counter.png",
+    projectUrl: "public/product_counter.html",
+  }
+  ,
+  {
+    projectName:"Virtual Keyboard",
+    projectImage: "assets/Images/virtual_keyboard.png",
+    projectUrl: "public/virtual_keyboard.html",
+  }
+
 ]
 
 var projectDetails = projectData.slice(0);
