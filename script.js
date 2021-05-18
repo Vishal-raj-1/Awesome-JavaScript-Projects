@@ -10,7 +10,7 @@ let projectData = [
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
-  }, 
+  },
   {
     projectName: "ECOMMERCE WEBSITE",
     projectImage: "assets/GIFs/ecommerce_website.gif",
@@ -304,8 +304,8 @@ let projectData = [
     projectImage: 'assets/GIFs/counter.gif',
     projectUrl: 'public/counter.html'
   }
-  , 
-  { 
+  ,
+  {
     projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.png",
     projectUrl: "public/localstorage.html"
@@ -587,7 +587,7 @@ let projectData = [
     projectUrl: 'public/Particle.html'
   }
   ,
-  
+
   {
     projectName: 'Flip Cards',
     projectImage: 'assets/GIFs/flipped.gif',
@@ -877,6 +877,12 @@ let projectData = [
   }
   ,
   {
+    projectName: 'Ludo Game',
+    projectImage: 'assets/Images/ludo/ludo.png',
+    projectUrl: 'public/ludo.html'
+  }
+  ,
+  {
     projectName: 'AwesomeSnakeGame',
     projectImage: 'assets/GIFs/AwesomeSnakeGame.gif',
     projectUrl: 'public/AwesomeSnakeGame.html'
@@ -1144,7 +1150,7 @@ let projectData = [
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html",
   },
- 
+
   {
     projectName: "Infinite Scroll Image Gallery",
     projectImage: "assets/Images/infiniteScroll.png",
@@ -1180,7 +1186,7 @@ let projectData = [
     projectImage: 'assets/Images/guess.png',
     projectUrl: 'public/guess.html'
   }
-  , 
+  ,
   {
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
@@ -1193,7 +1199,7 @@ let projectData = [
     projectUrl: 'public/todoapp.html'
 
   }
-  , 
+  ,
   {
     projectName: 'Koch Snowflake',
     projectImage: 'assets/Images/kochSnowflake/demo.png',
@@ -1217,13 +1223,13 @@ let projectData = [
     projectImage: 'assets/Images/selection-visualizing.png',
     projectUrl: 'public/selectionsort.html'
   }
-  , 
+  ,
   {
     projectName: 'Purple Rain',
     projectImage: 'assets/Images/purpleRain.gif',
     projectUrl: 'public/purpleRain.html'
   }
-  , 
+  ,
   {
     projectName: 'Bird Loader',
     projectImage: 'assets/GIFs/birdLoader.gif',
@@ -1247,12 +1253,12 @@ let projectData = [
     projectUrl: 'public/insertionsort.html'
   }
   ,
-   {
+  {
     projectName: 'Postfix Expression Evaluator in JavaScript',
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
   }
-  , 
+  ,
   {
     projectName: 'Multiplation Table Calculator',
     projectImage: 'assets/GIFs/multiplicationTableCalculator_ss.gif',
@@ -1272,8 +1278,8 @@ let projectData = [
   },
   {
     projectName: 'Math Trainer',
-    projectImage:'assets/Images/math_trainer.png',
-    projectUrl:'public/math_trainer.html'
+    projectImage: 'assets/Images/math_trainer.png',
+    projectUrl: 'public/math_trainer.html'
   },
   {
 
@@ -1281,7 +1287,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   },
-  {    
+  {
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html",
@@ -1294,8 +1300,8 @@ let projectData = [
   },
   {
     projectName: "Random Name Generator",
-    projectImage:"assets/Images/random_name_generator.png",
-    projectUrl:"public/random_name_generator.html"
+    projectImage: "assets/Images/random_name_generator.png",
+    projectUrl: "public/random_name_generator.html"
   }
   ,
   {
@@ -1361,7 +1367,7 @@ let projectData = [
     projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
     projectUrl: "public/click_shape.html",
   }
-  ,{
+  , {
     projectName: 'Bucket Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/bucket-visualizing.png',
     projectUrl: 'public/bucketsort.html'
@@ -1376,26 +1382,26 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-   ,
+  ,
   {
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-  
-   } ,
-   {
-     projectName: 'Captcha Validator',
-     projectImage: 'assets/Images/CaptchaValidator.png',
-     projectUrl: 'public/CaptchaValidator.html'
-   }
+
+  },
+  {
+    projectName: 'Captcha Validator',
+    projectImage: 'assets/Images/CaptchaValidator.png',
+    projectUrl: 'public/CaptchaValidator.html'
+  }
 ]
 
 
 var projectDetails = projectData.slice(0);
-projectDetails.sort(function(a,b) {
-    var x = a.projectName.toLowerCase();
-    var y = b.projectName.toLowerCase();
-    return x < y ? -1 : x > y ? 1 : 0;
+projectDetails.sort(function (a, b) {
+  var x = a.projectName.toLowerCase();
+  var y = b.projectName.toLowerCase();
+  return x < y ? -1 : x > y ? 1 : 0;
 });
 
 let projectContainer = document.getElementById("js-projects");
@@ -1425,30 +1431,30 @@ function getProjects() {
   );
 
   projectContainer.innerHTML = output;
-   console.log("projectContainer", projectContainer.innerHTML);
+  console.log("projectContainer", projectContainer.innerHTML);
 }
 
 // Search function starts
 let searchInput = document.getElementById('searchBar')
-let searchText='';
+let searchText = '';
 
-searchInput.addEventListener('change',(e) => {
-  searchText= e.target.value  
+searchInput.addEventListener('change', (e) => {
+  searchText = e.target.value
 })
 
 
 let searchBtn = document.getElementById('searchBtn')
 
-searchBtn.addEventListener('click',(e) => {
-  var filterData=[]
-  if(searchText.length!==0){
+searchBtn.addEventListener('click', (e) => {
+  var filterData = []
+  if (searchText.length !== 0) {
     projectData.forEach(obj => {
-       if(obj.projectName.toLowerCase().includes(searchText.toLowerCase())){
+      if (obj.projectName.toLowerCase().includes(searchText.toLowerCase())) {
         filterData.push(obj);
-       }
+      }
     })
     console.log(filterData)
-  }else{
+  } else {
     filterData = [...projectData];
     //console.log(filterData)
   }
@@ -1471,7 +1477,7 @@ searchBtn.addEventListener('click',(e) => {
   `)
   );
   projectContainer.innerHTML = filter;
-  
+
 })
 
 // search function ends
