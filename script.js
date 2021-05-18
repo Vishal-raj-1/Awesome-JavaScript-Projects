@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/binary_circle.html",
   },
   {
+    projectName:"Emoji Feedback Form",
+    projectImage: "assets/GIFs/feedback.gif",
+    projectUrl: "public/feedback.html",
+  },
+  {
     projectName: "Upload Image",
     projectImage: "assets/GIFs/uploadimg.gif",
     projectUrl: "public/uploadimg.html",
