@@ -562,11 +562,6 @@ let projectData = [
     projectUrl: "public/Randomuser.html",
   },
   {
-    projectName: "Math Quiz for kids � ",
-    projectImage: "assets/Images/MathQuiz.jpg",
-    projectUrl: "public/MathQuiz.html",
-  },
-  {
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
@@ -642,7 +637,7 @@ let projectData = [
     projectImage: 'assets/GIFs/ExpandingCard.gif',
     projectUrl: 'public/ExpandingCard.html'
   },
-  
+
   {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
