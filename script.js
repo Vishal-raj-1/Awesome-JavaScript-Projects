@@ -502,14 +502,9 @@ let projectData = [
     projectImage: 'assets/Images/tip-calc.png',
     projectUrl: 'public/tip-calculator.html'
   }
+ 
   ,
   {
-    projectName: 'DragNDrop',
-    projectImage: 'assets/GIFs/DragNDrop.gif',
-    projectUrl: 'public/DragNDrop.html'
-  }
-  ,
-
     projectName: "DragNDrop",
     projectImage: "assets/GIFs/DragNDrop.gif",
     projectUrl: "public/DragNDrop.html",
