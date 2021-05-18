@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Calibri, Arial;
+    margin:0;
+    padding: 0px;
+    background-color: #dbdada;
+}
+
+h2{
+    font-weight:bold;
+    text-align:center;
+    font-family: cursive;
+}
+
+h3{
+    font-weight:normal;
+    margin:3px 0px;
+    text-align:center;
+    font-family: cursive;
+}
+
+#collage hr{
+    border:none;
+    border-top:2px solid #f5f2f2;
+    height:1px;
+}
+
+#collage #playPanel {
+    background-color:#b4d4f5;
+    padding:10px 0px;
+    margin: 10px auto;
+    max-width:800px;
+    width:95%;
+}
+
+#collage #actualImageBox {
+    display: inline-block;
+    font-size:0.8em;
+    margin: 10px 10px;
+    vertical-align: top;
+    width:280px;
+}
+
+#collage #stepBox, #collage #timeBox {
+    display:inline-block;
+    width:48%;
+}
+
+#collage #stepBox div {
+    display:inline-block;
+    padding:1px 4px;
+    margin: 0px auto;
+    max-width:800px;
+}
+
+#collage img#actualImage{
+    border:5px solid #393939;
+    height:280px;
+    width:280px;
+}
+
+#collage #sortable {
+    border:5px solid #393939;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    width: 400px;
+}
+
+    #collage #sortable li {
+        background-size: 400% 400%;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 100px;
+        height: 100px;
+    }
+
+#collage button  {
+    background-color:#f5f2f2;
+    border:1px solid #cce;
+    display: inline;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    padding: 3px 8px;
+}
+
+#newPhoto{
+    cursor: pointer;
+    font-family: serif;
+}
+
+#newPhoto:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+#playAgain{
+    cursor: pointer;
+}
+
+#playAgain:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+#devop{
+    width: 200px;
+    height: 75px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

@@ -8,7 +8,7 @@
     color: #fff;
     scroll-behavior: smooth;
 }
-   
+
 
 /* Sticky Navbar */
 
@@ -48,7 +48,7 @@ a{
   outline: none;
 }
 ul{
-    
+
     list-style-type: none;
 }
 body::-webkit-scrollbar {
@@ -212,7 +212,7 @@ body::-webkit-scrollbar-thumb {
         color: #87CEEB;
     }
 
-    
+
 header{
     background-color: #37517E;
     height: 80vh;
@@ -221,7 +221,7 @@ header{
     justify-content: space-around;
 }
  nav{
-    
+
     color: #fff;
     position: fixed;
     top: 0;
@@ -280,7 +280,7 @@ nav ul li a:after{
   background: transparent;
 }
 nav ul li a:hover:after {
-    
+
     animation: circle 1.5s ease-in forwards;
   }
 @keyframes circle {
@@ -322,7 +322,7 @@ i#menuClose{
     cursor: pointer;
 }
 i#menuClose{
-    
+
     color: #37517E;
 }
 
@@ -587,7 +587,7 @@ a.button:hover{
     color: #37517E;
 }
 .ctaButton{
-    flex-basis: 30%;
+    flex-basis: 40%;
     text-align: center;
 }
 .ctaButton a{
@@ -693,7 +693,7 @@ footer a{
 }
 
 #back-button{
-    
+
     font-size: 1.1rem;
 }
 
@@ -830,3 +830,41 @@ header{
         display: none;
     }
 }
+
+
+/* Style for search bar */
+
+/* Style the search field */
+div.searchProject input[type=text] {
+    padding: 10px;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  /* Style the submit button */
+  div.searchProject button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #4667a0;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+  div.searchProject button:hover {
+    background: #2e4b7e;
+  }
+
+  /* Clear floats */
+  div.searchProject::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
