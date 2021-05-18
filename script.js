@@ -1439,8 +1439,13 @@ let projectData = [
     projectName: "Cardioid",
     projectImage: "assets/Images/cardioid.png",
     projectUrl: "public/cardioid.html",
-  }
-  ,
+
+  },
+  {
+    projectName: "8 Ball Pool",
+    projectImage: "assets/Images/8_ball_pool/demo.png",
+    projectUrl: "public/8_ball_pool.html",
+  },
   {
     projectName: "Product Counter",
     projectImage: "assets/Images/product_counter.png",
@@ -1452,6 +1457,7 @@ let projectData = [
     projectImage: "assets/Images/virtual_keyboard.png",
     projectUrl: "public/virtual_keyboard.html",
   }
+
 
 ]
 

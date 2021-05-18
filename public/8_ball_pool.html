@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>8 ball pool game</title>
+    </head>
+    <body>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+        <div class="container">
+        <canvas id = "screen" width="1500" height="825"></canvas> 
+        </div>
+        <script src = "../assets/js/8_ball_pool/Vector2.js"></script>  
+        <script src = "../assets/js/8_ball_pool/input/ButtonState.js"></script>
+        <script src = "../assets/js/8_ball_pool/input/Mouse.js"></script>
+        <script src = "../assets/js/8_ball_pool/Canvas.js"></script> 
+        <script src = "../assets/js/8_ball_pool/Tools.js"></script> 
+        <script src = "../assets/js/8_ball_pool/Game.js"></script> 
+        <script src = "../assets/js/8_ball_pool/Stick.js"></script>
+        <script src = "../assets/js/8_ball_pool/GameWorld.js"></script> 
+        <script src = "../assets/js/8_ball_pool/Ball.js"> </script> 
+        <script src = "../assets/js/8_ball_pool/Color.js"></script>
+        <script src = "../assets/js/8_ball_pool/Constants.js"></script>
+        <script>
+        loadAssets(PoolGame.start); 
+        </script>
+    </body>
+</html>
