@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scallable=no">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Aleo|Poppins|Slabo+27px" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins|Slabo+27px" rel="stylesheet" />
     <link rel="stylesheet" href="./../assets/css/bridgeNtorch.css">
     <script src="./../assets/js/bridgeNtorch.js"></script>
     <title>Bridge n Torch</title>
@@ -19,7 +19,8 @@
 
     <div id="entry">
         <input type="number" id="input" placeholder="Enter number of people..."
-            oninput='document.getElementById("errorMsg").innerText="Hit Enter to get Results!",document.getElementById("errorMsg").style.boxShadow="box-shadow:0 0 10px 2px #00b8ee"' />
+            oninput='document.getElementById("errorMsg").innerText="Hit Enter to get Results!",document.getElementById("errorMsg").style.boxShadow="box-shadow:0 0 10px 2px #00b8ee"'
+            autofocus="true" />
         <button id="btn" onclick="cross()">
             <div id="icon"></div>
         </button>
@@ -38,10 +39,11 @@
             <b>For example:</b><br>
             Input: 4 <br>
             Output: 11<br><br>i.e<br>
-            <i>1-3 cross(3), 1 returns(1)<i /><br>
-                <i>1-4 cross(4), 1 returns(1)</i><br>
-                <i>1-2 cross(2)</i><br>
-                <i>SUM : 3 + 1 + 4 + 1 + 2 = 11</i><br>
+            <i>1-3 cross(3), 1 returns(1)</i>
+            <br>
+            <i>1-4 cross(4), 1 returns(1)</i><br>
+            <i>1-2 cross(2)</i><br>
+            <i>SUM : 3 + 1 + 4 + 1 + 2 = 11</i><br>
 
         </p>
     </div>
