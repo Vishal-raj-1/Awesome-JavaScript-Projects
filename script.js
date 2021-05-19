@@ -1249,6 +1249,12 @@ let projectData = [
     projectImage: "assets/Images/fibonacci/fibo1.png",
     projectUrl: "public/fibonacci.html",
   }
+  ,
+  {
+    projectName: "Dynamic Time message",
+    projectImage: "assets/Images/dynamic_message.png",
+    projectUrl: "public/dynamic_message.html",
+  }
 
  
 ]
