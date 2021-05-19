@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Find Day of Week with a Date</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/doomsday.js"></script>
+  <link rel="stylesheet" href="../assets/css/doomsday.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Container used to unify styling -->
+    <div class="jumbotron">
+      <!-- Center my title -->
+      <h1 class="text-center">Enter Date to Get Day</h1>
+      <br />
+      <!-- Style and place form elements in a row -->
+      <form class="form-inline">
+        <!-- Set height as 100% -->
+        <div class="container h-100">
+          <!-- Place elements in a row justified to the center -->
+          <div class="row justify-content-center h-100">
+            <!-- Prepend Month to the label -->
+            <div class="input-group p-2">
+              <div class="input-group-prepend">
+                <label class="input-group-text">Month</label>
+              </div>
+              <!-- Create a Select element and style it with 
+                        form-control -->
+              <select class="form-control form-control-lg" id="month"></select>
+            </div>
+            <div class="input-group p-2">
+              <div class="input-group-prepend">
+                <label class="input-group-text">Day</label>
+              </div>
+              <select class="form-control form-control-lg" id="day"></select>
+            </div>
+            <div class="input-group p-2">
+              <div class="input-group-prepend">
+                <label class="input-group-text">Year</label>
+              </div>
+              <select class="form-control form-control-lg" id="year"></select>
+            </div>
+            <button type="button" class="btn btn-primary" id="calcbut">
+              Calculate
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="form-group">
+        <h3>Results</h3>
+        <textarea class="form-control" id="results" rows="11"></textarea>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -15,7 +15,7 @@ let projectData = [
     projectUrl: "public/binary_circle.html",
   },
   {
-    projectName:"Emoji Feedback Form",
+    projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html",
   },
@@ -54,7 +54,7 @@ let projectData = [
     projectImage: "assets/GIFs/PigGame.gif",
     projectUrl: "public/PigGame.html",
   },
-   {
+  {
     projectName: "3D Racing Game",
     projectImage: "assets/GIFs/hue_jump.png",
     projectUrl: "public/hue_jump.html",
@@ -201,10 +201,9 @@ let projectData = [
     projectUrl: "public/nasa-apod.html",
   },
   {
-
-    projectName: 'Temperature Converter',
-    projectImage: 'assets/GIFs/Temperature_Converter_Backcover.gif',
-    projectUrl: 'public/Temperature_Converter.html',
+    projectName: "Temperature Converter",
+    projectImage: "assets/GIFs/Temperature_Converter_Backcover.gif",
+    projectUrl: "public/Temperature_Converter.html",
   },
   {
     projectName: "Animated Background",
@@ -412,17 +411,15 @@ let projectData = [
     projectUrl: "public/animatedCounter.html",
   },
   {
-    projectName: 'Image Puzzle Game',
-    projectImage: 'assets/Images/imagePuzzleGame.png',
-    projectUrl: 'public/imagePuzzleGame.html'
-  }
-  ,
+    projectName: "Image Puzzle Game",
+    projectImage: "assets/Images/imagePuzzleGame.png",
+    projectUrl: "public/imagePuzzleGame.html",
+  },
   {
-    projectName: 'Bubble Sort',
-    projectImage: 'assets/GIFs/bubbleSort.gif',
-    projectUrl: 'public/bubbleSort.html'
-  }
-  ,
+    projectName: "Bubble Sort",
+    projectImage: "assets/GIFs/bubbleSort.gif",
+    projectUrl: "public/bubbleSort.html",
+  },
   {
     projectName: "Music Player",
     projectImage: "assets/GIFs/musicplayer.gif",
@@ -585,17 +582,15 @@ let projectData = [
     projectUrl: "public/RGB_Color_Guessing_Game.html",
   },
   {
-    projectName: 'RGB TO HEX CONVERTER',
-    projectImage: 'assets/Images/RGB_HEX.png',
-    projectUrl: 'public/RGB_HEX.html'
-  }
-  ,
+    projectName: "RGB TO HEX CONVERTER",
+    projectImage: "assets/Images/RGB_HEX.png",
+    projectUrl: "public/RGB_HEX.html",
+  },
   {
-    projectName: 'Text to Voice Generator',
-    projectImage: 'assets/GIFs/Text-voice.gif',
-    projectUrl: 'public/textToVoice.html'
-  }
-  ,
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/Text-voice.gif",
+    projectUrl: "public/textToVoice.html",
+  },
   {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/Text-voice.gif",
@@ -702,7 +697,6 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
-
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
@@ -713,21 +707,20 @@ let projectData = [
     projectUrl: "public/Randomuser.html",
   },
   {
-    projectName: 'Math Quiz for kids 🙂 ',
-    projectImage: 'assets/Images/MathQuiz.jpg',
-    projectUrl: 'public/MathQuiz.html',
+    projectName: "Math Quiz for kids 🙂 ",
+    projectImage: "assets/Images/MathQuiz.jpg",
+    projectUrl: "public/MathQuiz.html",
   },
   {
-    projectName: 'Expanding Card',
-    projectImage: 'assets/GIFs/ExpandingCard.gif',
-    projectUrl: 'public/ExpandingCard.html'
+    projectName: "Expanding Card",
+    projectImage: "assets/GIFs/ExpandingCard.gif",
+    projectUrl: "public/ExpandingCard.html",
   },
-  
+
   {
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
-
   },
   {
     projectName: "Background Slider",
@@ -1212,7 +1205,6 @@ let projectData = [
     projectUrl: "public/multiplicationTableCalculator.html",
   },
   {
-
     projectName: "Dice it",
     projectImage: "assets/Images/dice_it.jfif",
     projectUrl: "public/diceit.html",
@@ -1246,10 +1238,9 @@ let projectData = [
     projectName: "Audio Player App",
     projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
     projectUrl: "public/MusicApp.html",
-
   },
   {
-  projectName: "Google keep Clone",
+    projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html",
   },
@@ -1264,7 +1255,6 @@ let projectData = [
     projectUrl: "public/SimpleTwoWayBindingAndValidator.html",
   },
   {
-
     projectName: "Counting Sort Visualizer in JavaScript",
     projectImage: "assets/Images/counting-visualizing.png",
     projectUrl: "public/countingsort.html",
@@ -1288,9 +1278,7 @@ let projectData = [
     projectName: "Smooth Scroll",
     projectImage: "assets/GIFs/Smooth_scroll.gif ",
     projectUrl: "public/Smooth_scroll.html",
-  }
-  ,
-  
+  },
   {
     projectName: "Apple Collector game",
     projectImage: "assets/Images/AppleGame/screenshot.png",
@@ -1305,8 +1293,7 @@ let projectData = [
     projectName: "Train_Schedule Manager",
     projectImage: "assets/Images/train_schedule.png",
     projectUrl: "public/train_schedule.html",
-  }
-  ,
+  },
   {
     projectName: "break The Blocks",
     projectImage: "assets/Images/break_blocks/breakblock.png",
@@ -1331,8 +1318,7 @@ let projectData = [
     projectName: "Make Match Game",
     projectImage: "assets/Images/makeMatchGame/make-match.png",
     projectUrl: "public/makeMatchGame.html",
-  }  
-  ,
+  },
   {
     projectName: "Click Shape Game",
     projectImage: "assets/Images/ClickCirclesJavaScript_Game.jpg",
@@ -1344,51 +1330,46 @@ let projectData = [
     projectUrl: "public/bucketsort.html",
   },
   {
-    projectName: 'Bubble Sort Visualizer in JavaScript',
-    projectImage: 'assets/Images/bubble-visualizing.png',
-    projectUrl: 'public/bubblevisualiser.html'
-  }
-    ,{
-    projectName: 'Linear Search Visualization in JavaScript',
-    projectImage: 'assets/Images/linearsearch-visualizing.png',
-    projectUrl: 'public/linearsearch.html'
-   } ,
+    projectName: "Bubble Sort Visualizer in JavaScript",
+    projectImage: "assets/Images/bubble-visualizing.png",
+    projectUrl: "public/bubblevisualiser.html",
+  },
+  {
+    projectName: "Linear Search Visualization in JavaScript",
+    projectImage: "assets/Images/linearsearch-visualizing.png",
+    projectUrl: "public/linearsearch.html",
+  },
 
-   {
-     projectName: 'Captcha Validator',
-     projectImage: 'assets/Images/CaptchaValidator.png',
-     projectUrl: 'public/CaptchaValidator.html'
-
-   },
-   {
-    projectName: 'Box-Shadow Css ',
-    projectImage: 'assets/GIFs/box-shadow.gif',
-    projectUrl: 'public/box-shadow.html'
-   },
-   {
-    projectName: 'Px/Rem Converter',
-    projectImage: 'assets/GIFs/px-rem.gif',
-    projectUrl: 'public/px-rem.html'
-   }
-   ,
-   {
-     projectName: 'Dinosaur Game',
-     projectImage: 'assets/GIFs/DinosaurGame.gif',
-     projectUrl: 'public/DinosaurGame.html'
-   }
-  ,
-   {
-     projectName: 'Ternary Search Visualization in JavaScript',
-     projectImage: 'assets/Images/ternarysearch-visualizing.png',
-     projectUrl: 'public/ternarysearch.html'
-   
-    } 
-   ,{
-    projectName: 'Binary Search Visualization in JavaScript',
-    projectImage: 'assets/Images/binarysearch-visualizing.png',
-    projectUrl: 'public/binarysearch.html'
-  
-   },
+  {
+    projectName: "Captcha Validator",
+    projectImage: "assets/Images/CaptchaValidator.png",
+    projectUrl: "public/CaptchaValidator.html",
+  },
+  {
+    projectName: "Box-Shadow Css ",
+    projectImage: "assets/GIFs/box-shadow.gif",
+    projectUrl: "public/box-shadow.html",
+  },
+  {
+    projectName: "Px/Rem Converter",
+    projectImage: "assets/GIFs/px-rem.gif",
+    projectUrl: "public/px-rem.html",
+  },
+  {
+    projectName: "Dinosaur Game",
+    projectImage: "assets/GIFs/DinosaurGame.gif",
+    projectUrl: "public/DinosaurGame.html",
+  },
+  {
+    projectName: "Ternary Search Visualization in JavaScript",
+    projectImage: "assets/Images/ternarysearch-visualizing.png",
+    projectUrl: "public/ternarysearch.html",
+  },
+  {
+    projectName: "Binary Search Visualization in JavaScript",
+    projectImage: "assets/Images/binarysearch-visualizing.png",
+    projectUrl: "public/binarysearch.html",
+  },
   {
     projectName: "Heap Sort Visualizer in JavaScript",
     projectImage: "assets/Images/heap-visualizing.png",
@@ -1421,7 +1402,6 @@ let projectData = [
     projectUrl: "public/CaptchaValidator.html",
   },
   {
-
     projectName: "Merge Sort Visualizer in JavaScript",
     projectImage: "assets/Images/merge-visualizing.png",
     projectUrl: "public/mergesort.html",
@@ -1436,15 +1416,15 @@ let projectData = [
     projectImage: "assets/Images/BalloonPopGame.png",
     projectUrl: "public/BalloonPopGame.html",
   },
-   {
-    projectName: 'JoyStick Controls',
-    projectImage: 'assets/GIFs/joystick.gif',
-    projectUrl: 'public/joystick.html'
-  },{
+  {
+    projectName: "JoyStick Controls",
+    projectImage: "assets/GIFs/joystick.gif",
+    projectUrl: "public/joystick.html",
+  },
+  {
     projectName: "Cardioid",
     projectImage: "assets/Images/cardioid.png",
     projectUrl: "public/cardioid.html",
-
   },
   {
     projectName: "8 Ball Pool",
@@ -1455,35 +1435,38 @@ let projectData = [
     projectName: "Product Counter",
     projectImage: "assets/Images/product_counter.png",
     projectUrl: "public/product_counter.html",
-  }
-  ,
+  },
   {
-    projectName:"Virtual Keyboard",
+    projectName: "Virtual Keyboard",
     projectImage: "assets/Images/virtual_keyboard.png",
     projectUrl: "public/virtual_keyboard.html",
-  }
-  ,
+  },
   {
     projectName: "product Counter",
     projectImage: "assets/Images/product_counter.png",
     projectUrl: "public/product_counter.html",
-  }
+  },
+  {
+    projectName: "Doomsday Algorithm",
+    projectImage: "assets/Images/doomsday.png",
+    projectUrl: "public/doomsday.html",
+  },
 ]
 
-var projectDetails = projectData.slice(0);
+var projectDetails = projectData.slice(0)
 projectDetails.sort(function (a, b) {
-  var x = a.projectName.toLowerCase();
-  var y = b.projectName.toLowerCase();
-  return x < y ? -1 : x > y ? 1 : 0;
-});
+  var x = a.projectName.toLowerCase()
+  var y = b.projectName.toLowerCase()
+  return x < y ? -1 : x > y ? 1 : 0
+})
 
-let projectContainer = document.getElementById("js-projects");
-console.log(projectContainer);
+let projectContainer = document.getElementById("js-projects")
+console.log(projectContainer)
 
-window.addEventListener("load", getProjects());
+window.addEventListener("load", getProjects())
 
 function getProjects() {
-  let output = "";
+  let output = ""
   projectDetails.forEach(
     (data, item) =>
       (output += `
@@ -1500,36 +1483,36 @@ function getProjects() {
     </a>
   </div>
   `)
-  );
+  )
 
-  projectContainer.innerHTML = output;
-  console.log("projectContainer", projectContainer.innerHTML);
+  projectContainer.innerHTML = output
+  console.log("projectContainer", projectContainer.innerHTML)
 }
 
 // Search function starts
-let searchInput = document.getElementById("searchBar");
-let searchText = "";
+let searchInput = document.getElementById("searchBar")
+let searchText = ""
 
 searchInput.addEventListener("change", (e) => {
-  searchText = e.target.value;
-});
+  searchText = e.target.value
+})
 
-let searchBtn = document.getElementById("searchBtn");
+let searchBtn = document.getElementById("searchBtn")
 
 searchBtn.addEventListener("click", (e) => {
-  var filterData = [];
+  var filterData = []
   if (searchText.length !== 0) {
     projectData.forEach((obj) => {
       if (obj.projectName.toLowerCase().includes(searchText.toLowerCase())) {
-        filterData.push(obj);
+        filterData.push(obj)
       }
-    });
-    console.log(filterData);
+    })
+    console.log(filterData)
   } else {
-    filterData = [...projectData];
+    filterData = [...projectData]
     //console.log(filterData)
   }
-  let filter = "";
+  let filter = ""
   filterData.forEach(
     (data, item) =>
       (filter += `
@@ -1546,22 +1529,22 @@ searchBtn.addEventListener("click", (e) => {
     </a>
   </div>
   `)
-  );
-  projectContainer.innerHTML = filter;
-});
+  )
+  projectContainer.innerHTML = filter
+})
 
 // search function ends
 window.onscroll = function () {
-  myFunction();
-};
+  myFunction()
+}
 
-var navbar = document.getElementById("Navbar");
-var sticky = navbar.offsetTop;
+var navbar = document.getElementById("Navbar")
+var sticky = navbar.offsetTop
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
+    navbar.classList.add("sticky")
   } else {
-    navbar.classList.remove("sticky");
+    navbar.classList.remove("sticky")
   }
 }

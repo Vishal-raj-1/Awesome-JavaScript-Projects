@@ -1,0 +1,10 @@
+html {
+  font-size: 1em;
+}
+body {
+  background-color: rgb(37, 35, 124);
+}
+.jumbotron {
+  background-color: rgb(37, 35, 124);
+  color: white;
+}
