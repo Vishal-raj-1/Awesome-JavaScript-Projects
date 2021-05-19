@@ -1243,6 +1243,12 @@ let projectData = [
     projectImage: "assets/Images/product_counter.png",
     projectUrl: "public/product_counter.html",
   }
+  ,
+  {
+    projectName: "Fibonacci Series Generator",
+    projectImage: "assets/Images/fibonacci/fibo1.png",
+    projectUrl: "public/fibonacci.html",
+  }
 
  
 ]
