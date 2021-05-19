@@ -229,7 +229,7 @@ input[type="number"] {
 #output {
     font-family: 'Merienda', cursive;
     padding: 7px;
-    overflow: scroll;
+    overflow-x: hidden;
     height: 70px;
     width: 85%;
     margin: 8%;
