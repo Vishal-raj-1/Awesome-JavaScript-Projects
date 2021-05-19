@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Fortune Teller</title>
+  </head>
+  <style>
+    body
+{
+  background: darkorchid;
+  background: linear-gradient(to right, midnightblue, darkorchid);
+  color: white;
+  font-family: TrebuchetMS, Verdana;
+  //text-shadow: 2px 2px purple;
+}
+
+#container
+{
+  border: 2px dotted white;
+  background-color:orchid;
+  margin: 20px;
+  padding: 10px;
+}
+
+#fortune
+{
+  border: 2px solid white;
+  background-color: darkslateblue;
+  padding: 20px;
+}
+
+h1
+{
+  text-shadow:3px 3px purple;
+}
+
+  </style>
+  <body>
+    <div id="container">
+
+  <h1>Discover Your Fortune!</h1>
+
+  <button onclick="tellFortune()">Press to find out your fortune!</button>
+
+  <button onclick="reset()">Reset</button>
+
+  <br/><br/>
+
+  <!--This is where the random text will go-->
+  <div id="fortune"></div>
+  
+  <br/><br/><br/>
+  
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script>
+      var fortunes = [
+  // add more array items here if you want, make sure you put a comma between each one. You can use HTML here! Just remember that if it contains quotes, they need to be escaped, like this: \"
+  "You will win a <em>million</em> dollars! Yay!",
+  "You will step on a piece of gum.",
+  "You will be attacked by a fluffy bunny."
+];
+
+function tellFortune() {
+  
+  // generate a random number between 0 and the number of the array items
+  var randomNumber = Math.floor(Math.random() * fortunes.length);
+
+  // print the random number to the console log to make sure it's working
+  console.log("random number: " + randomNumber);
+
+  // take the fortune at the random spot in the array and insert it into the "fortune" div
+ document.getElementById("fortune").innerHTML = fortunes[randomNumber];
+}
+
+function reset() {
+  // what goes here? (hint: make the fortune div contain an empty string)
+  
+}
+    </script>
+    
+  </body>
+</html>

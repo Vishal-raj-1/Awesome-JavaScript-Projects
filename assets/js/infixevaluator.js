@@ -35,7 +35,7 @@ function postfixevaluator(evalst)
            }
        }
    }
-   document.getElementById("text").innerHTML=(pop());
+   document.getElementById("text").innerHTML=("Evaluated value :- " + pop());
 }
 
 function push(e)
@@ -163,4 +163,6 @@ function InfixtoPostfix()
     }
    postfixevaluator(st);
  }
- 
+ function clearVal(){
+     window.location.reload();
+ }

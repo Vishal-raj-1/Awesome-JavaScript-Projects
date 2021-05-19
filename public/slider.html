@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JS Slider</title>
+	<meta name="description" content="Js slider is a tiny javascript plugin for creating sliding drawers in web apps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Js Slider" />
+	<meta property="og:image" content="https://oncebot.github.io/pushbar.js/meta.png" />
+	<meta property="og:site_name" content="Pushbar.js" />
+	<meta property="og:description"
+		content="Pushbar.js is a tiny javascript plugin for creating sliding drawers in web apps" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+	<link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/slider.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/sliderDemo.css">
+</head>
+
+<body>
+	<aside data-pushbar-id="left" data-pushbar-direction="left">
+		<div class="title"><span data-pushbar-close class="close push_right"></span> Left sidebar menu</div>
+		<ul class="menu">
+			<li>Home</li>
+			<li>Products</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Github</li>
+		</ul>
+	</aside>
+	<aside data-pushbar-id="right" data-pushbar-direction="right">
+		<div class="title"><span data-pushbar-close class="close push_right"></span> Right</div>
+        <ul class="menu">
+			<li>Home</li>
+			<li>Products</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Github</li>
+		</ul>
+	</aside>
+	<aside data-pushbar-id="top" data-pushbar-direction="top">
+		<div class="title"><span data-pushbar-close class="close push_right"></span> Top</div>
+		<ul class="menu">
+			<li>Home</li>
+			<li>Products</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Github</li>
+		</ul>
+	</aside>
+	<aside data-pushbar-id="bottom" data-pushbar-direction="bottom">
+		<div class="title"><span data-pushbar-close class="close push_right"></span> Bottom</div>
+        <ul class="menu">
+			<li>Home</li>
+			<li>Products</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Github</li>
+		</ul>
+	</aside>
+	<main class="pushbar_main_content">
+		<div class="wrapper">
+			<div class="card">
+				<div class="card_title">
+					<div style="display: flex; align-items: center;">
+						<span style="flex:1;">JS Slider</span>
+						<a href="https://www.linkedin.com/in/anushree-chatterjee-95990316a/" style="color:white;" target="_blank">Get in touch </a>
+					</div>
+					<div class="small" style="margin-top: 10px;">JS Slider is a javascript project to add animation in your navigation bars. 
+					</div>
+					<div class="small">One can use it as sidebar menus or option drawers.
+					</div>
+					<div><a href="https://github.com/anushree71199/sliderJavascript" target="_blank" class="button getBtn">Get the code</a>
+					</div>
+				</div>
+				<div class="card_content">
+					<div><button data-pushbar-target="left">Left Slider</button></div>
+					<div><button data-pushbar-target="right">Right Slider</button></div>
+					<div><button data-pushbar-target="top">Top Slider</button></div>
+					<div><button data-pushbar-target="bottom">Bottom Slider</button></div>
+					<pre><code>
+						<strong>API used:</strong>
+						<br>
+						<br>
+
+							Open and close slider pushbar with api
+							<textarea disabled style="min-height: 300px;">
+								<script type="text/javascript">
+									const pushbar = & nbsp new Pushbar({
+                     	& nbsp & nbsp	blur: true,
+                     	& nbsp & nbsp	overlay: true,
+                     	& nbsp });
+
+									//open a pushbar
+									pushbar.open('mypushbar1');
+									//close all pushbars
+									pushbar.close();	
+								</script>
+							</textarea>
+						
+					</code></pre>
+					<pre><code>
+						<strong>Events</strong>
+						<br>
+						<br>
+
+							<p>'pushbar_opening': when a slider pushbar is opening, it will emit 'pushbar_opening' event with an object { element, id }, where element will be the current pushbar element and the id is the current pushbar id.</p>
+							<p>'pushbar_closing': when a slider pushbar is closing, it will emit 'pushbar_closing' event with an object { element, id }, Where element will be the current pushbar element and the id is the current pushbar id.</p>
+						
+					</code></pre>
+				</div>
+			</div>
+	</main>
+	<script type="text/javascript" src="../assets/js/slider.js"></script>
+	<script type="text/javascript">
+		const pushbar = new Pushbar({
+			blur: true,
+			overlay: true,
+		});
+	</script>
+</body>
+
+</html>
