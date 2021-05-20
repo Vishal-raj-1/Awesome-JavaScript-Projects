@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Restaurant Menu</title>
+  </head>
+  <style>
+    body {background-color: #fefefe}
+
+#footer a:link{color:pink;}
+#footer a:visited{color:tomato;}
+#footer a:hover{color:yellowgreen;}
+
+.bg { 
+    /* The image used */
+    background-image: url("https://burst.shopifycdn.com/photos/salad-with-chicken_373x.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  </style>
+  <body class="bg">
+    <div class="global-wrapper" ng-app="myApp">
+
+  <!-- nav section -->
+  <nav class="navbar navbar-default" ng-controller="navCtrl">
+    <h1>Restaurant</h1>
+  </nav>
+    
+  <div class="container">
+    <div class="row panel panel-primary" ng-controller="homeCtrl">
+      <div class="panel-heading">
+        <h2 class="panel-title">Menu</h2>
+      </div>
+      
+
+      <!--     food list     -->
+      <div class="col-xs-5 panel-body">
+        <ul class="list-group">
+          <li class="list-group-item"> <h4>Catalogue:</h4>
+            <input class="form-control" placeholder="Search a meal" type="text" ng-model="searchText">
+            <contact class="list-group-item" ng-repeat="contact in contacts | orderBy: 'name' | filter: searchText "></contact>
+          </li>
+        </ul> 
+      </div>
+      
+      <!--   ng-view below       -->
+      <div class="col-xs-7">
+        <div class="list-group panel-body">
+          <div ng-view></div>
+        </div>
+      </div>
+      
+      <!-- footer -->
+      <div class="panel-heading">
+        <div class="row text-center" id="footer"> <!-- for footer -->
+      <div class="col-xs-6">
+      <h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria</a> | <a href="https://codepen.io/EleftheriaBatsou" target="_blank">Projects</a> | <a href="https://www.youtube.com/channel/UCC-WwYv3DEW7Nkm_IP6VeQQ" target="_blank"> Coding videos </a></h5>
+      </div>
+      <!-- social media -->
+      <div class="col-xs-6 text-primary">
+        <a href="https://twitter.com/BatsouElef" target="_blank">
+     <img src="https://left.gr/sites/all/themes/newleft/images/socialicons/twitter.png" 
+      style="text-align:center" alt="twitter"> 
+    </a>
+         <a href="https://github.com/EleftheriaBatsou" target="_blank">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSttU57LZvtB2Y77j2E2EkC6qgiTbYjVK75XU2SOzUXz2EFjX" 
+      style="text-align:center" alt="github"> 
+    </a>
+        <a href="https://www.youtube.com/channel/UCC-WwYv3DEW7Nkm_IP6VeQQ" target="_blank">
+     <img src="http://mx1.salsacycles.com/images/template_images/icons/icon-youtube.png" 
+       style="text-align:center" alt="youtube"> 
+    </a>
+      </div>
+    </div> <!-- end footer -->
+      </div>
+        
+    </div>
+  </div>
+
+    <!--  html templates used by angular, usually in separate files -->
+    <script type="text/ng-template" id="default.html">
+      <div class="alert alert-success text-center" ng-class="{hidden : !removed}"> {{removed}}</div>
+      <div class="list-group-item text-center">Please select a meal to view</div>
+    </script>
+
+    <!--  template for displaying a contacts info  -->
+    <script type="text/ng-template" id="contact_info.html">
+      <div class="list-group-item">
+        <h3 class="text-center">{{currentContact.name}}</h3>
+        <p>calories: <a ng-href="{{currentContact.calories}}">{{currentContact.calories}}</a></p>
+        <p>ingredients: {{currentContact.ingredients}}</p>
+        <p>more info: <a ng-href="{{currentContact.url}}">{{currentContact.url}}</a></p>
+        <p>photo:</p>
+        <p><img ng-src="{{currentContact.img}}"></p>
+      </div>
+    </script>
+
+
+
+<!--      template used for the ng-repeat in the contact list        -->
+    <script type="text/ng-template" id="contact.html">
+      <a ng-href="#/contact-info/{{contacts.indexOf(contact)}}">
+        {{contact.name}}
+      </a>
+    </script>
+  </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+    <script>
+      var myApp = angular.module('myApp', ['ngRoute'])
+
+//ng-route config
+.config(function ($routeProvider, $locationProvider){
+  $routeProvider
+    .when('/home', {
+      templateUrl: 'default.html',
+    })
+    .when('/contact-info/:contact_index', {
+      templateUrl: 'contact_info.html',
+      controller: 'contactInfoCtrl'
+    })
+    
+    .otherwise({redirectTo: '/home'});
+})
+
+// controllers
+.controller('navCtrl', function ($scope) {
+  $scope.nav = {
+    navItems: ['home', 'add'],
+    selectedIndex: 0,
+    navClick: function ($index) {
+      $scope.nav.selectedIndex = $index;
+    }
+  };
+})
+
+.controller('homeCtrl', function ($scope, ContactService){
+  $scope.contacts = ContactService.getContacts();
+})
+
+.controller('contactInfoCtrl', function ($scope, $routeParams){
+  var index = $routeParams.contact_index;
+  $scope.currentContact = $scope.contacts[index];
+})
+
+
+
+// directives
+.directive('contact', function () {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: 'contact.html'
+  }
+})
+
+// services
+.factory('ContactService', [function () {
+  var factory = {};
+
+  factory.getContacts = function () {
+    return contactList;
+  }
+
+  // contact list, usually would be a separate database
+  var contactList = [
+    {id: 0, name: 'Green Salad', calories: '200', ingredients: 'cucamber, brocoli', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/green-apples_373x.jpg'},
+    {id: 1, name: 'Red meat', calories: '234', ingredients: 'red meat with sauce and potatoes', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/sloppy-joe_373x.jpg'},
+    {id: 2, name: 'Chicken', calories: '167', ingredients: 'chicken with rice', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/asian-chicken-with-rice_373x.jpg'},
+    {id: 3, name: 'Vegetable meatballs', calories: '94', ingredients: 'beans, corn, oats...', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/healthy-beet-juice_373x.jpg'},
+    {id: 4, name: 'Meatballs', calories: '104', ingredients: 'read meat', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/meatball-appetizers_373x.jpg'},
+    {id: 5, name: 'Corn', calories: '50', ingredients: 'corn, salt', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/watermelon-slice-enamel-pin-denim_373x.jpg'},
+    {id: 6, name: 'Eggs', calories: '78', ingredients: 'eggs, olive oil, bread', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/pizza-muffin-popover_373x.jpg'},
+    {id: 7, name: 'Kinoa', calories: '120', ingredients: 'kinoa, rice', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/spinache-quiche_373x.jpg'},
+    {id: 8, name: 'Tuna', calories: '213', ingredients: 'tuna with tomatoes', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/savory-breakfast-roll_373x.jpg'},
+    {id: 9, name: 'Soup', calories: '167', ingredients: 'soup with chicken and potatoes', url: 'www.google.com', img: 'https://burst.shopifycdn.com/photos/healthy-chili_373x.jpg'}
+  ];
+  
+  return factory;
+}]);
+
+
+    </script>
+    
+  </body>
+</html>

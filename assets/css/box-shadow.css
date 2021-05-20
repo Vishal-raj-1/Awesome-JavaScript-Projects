@@ -1,0 +1,92 @@
+body {
+  background: #fff;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 5em;
+  color: #325288;
+}
+
+.para {
+  color: #325288;
+  font-size: 3em;
+}
+
+.hard-shadow {
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0.25em;
+  text-align: center;
+  border-radius: 2rem;
+  background: #ca8a8b;
+  color: white;
+  text-shadow: -2px 4px 0 rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+body > p {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+a {
+  color: #000;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4em 0;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+li {
+  border-radius: 6px;
+  padding: 1em;
+  margin: 2em;
+  flex: 0 0 17.3vw;
+  height: 17.3vw;
+  display: block;
+  background: #fff;
+  transition: all 300ms;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+li:not(.copied):hover {
+  cursor: pointer;
+}
+
+li:not(.copied):hover :not(.credits) {
+  text-decoration: underline;
+}
+
+li.copied {
+  cursor: pointer;
+}
+
+@media all and (min-width: 375px) {
+  li {
+    flex: 0 0 22vw;
+    height: 22vw;
+  }
+}
+
+@media all and (min-width: 768px) {
+  ul {
+    padding: 4em 0;
+  }
+
+  li {
+    margin: 2.7em;
+    padding: 1em;
+    flex: 0 0 110px;
+    height: 110px;
+  }
+}
