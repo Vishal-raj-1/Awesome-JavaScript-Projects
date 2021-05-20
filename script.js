@@ -1505,8 +1505,12 @@ let projectData = [
     projectImage: "assets/Images/dynamic_message.png",
     projectUrl: "public/dynamic_message.html",
   }
-
- 
+  ,
+  {
+    projectName: "Fibonacci Series Generator",
+    projectImage: "assets/Images/fibonacci/fibo1.png",
+    projectUrl: "public/fibonacci.html",
+  }
 ]
 
 var projectDetails = projectData.slice(0);
