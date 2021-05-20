@@ -1,0 +1,252 @@
+body{
+    background-color: black;
+}
+
+/* Character*/
+#heady{
+	position:absolute;
+	left: 720px;
+	z-index: 5;
+}
+
+#bodyy{
+	width:1px;
+	height: 80px;
+	background-color:white;
+	position: absolute;
+	left: 770px;
+	top: 80px;
+	z-index: 5;
+}
+ #lhand{
+	 width:1px;
+	 height:50px;
+	 background-color:white;
+	 position: absolute;
+	 left: 750px;
+	 top: 80px;
+	 transform: rotate(40deg);
+	 z-index: 5;
+
+ }
+
+ #rhand{
+	width:1px;
+	height:50px;
+	background-color:white;
+	position: absolute;
+	left: 790px;
+	top: 80px;
+	transform: rotate(-40deg);
+	z-index: 5;
+
+}
+
+#lleg{
+	width:1px;
+	height:50px;
+	background-color:white;
+	position: absolute;
+	left: 750px;
+	top: 150px;
+	transform: rotate(40deg);
+	z-index: 5;
+
+}
+
+#rleg{
+	width:1px;
+	height:50px;
+	background-color:white;
+	position: absolute;
+	left: 790px;
+	top: 150px;
+	transform: rotate(-40deg);
+	z-index: 5;
+
+}
+
+
+
+/* Joystick*/
+#round1{
+    background-color: #03fc07;
+    height:280px;
+    width:280px;
+    border-radius:50%;
+    position: absolute;
+    top : 300px;
+    left: 330px;
+    
+}
+
+#round2{
+    background-color: #03fc07;
+    height:280px;
+    width:280px;
+    border-radius:50%;
+    position: absolute;
+    top : 300px;
+    left: 730px;
+    
+    
+}
+
+#rect{
+    background-color: #09de0d;
+    height:200px;
+    width: 550px;
+    position: absolute;
+    top : 330px;
+    left: 390px;
+    z-index: -1;
+    
+}
+
+#upar{
+	background-color: black;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 430px;
+	top: 330px;
+	border: 2px solid black;
+    text-align: center;
+	
+}
+
+#dowar{
+	background-color: black;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 430px;
+	top: 480px;
+	border: 2px solid black;
+    text-align: center;
+
+}
+
+#lefar{
+	background-color: black;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 350px;
+	top: 405px;
+	border: 2px solid black;
+    text-align: center;
+	
+}
+
+#rigar{
+	background-color: black;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 510px;
+	top: 405px;
+	border: 2px solid black;
+    text-align: center;
+	
+}
+
+#upar1{
+	background-color: black;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 830px;
+	top: 330px;
+	border: 2px solid black;
+    border-radius:50px;
+    font-size: 50px;
+    color: yellow;
+    border-color: yellow;
+    text-align: center;
+}
+
+#dowar1{
+	background-color: black;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 830px;
+	top: 480px;
+	border: 2px solid black;
+    border-radius:50px;
+    font-size: 50px;
+    color: green;
+    border-color: green;
+    text-align: center;
+}
+
+#lefar1{
+	background-color: black;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 750px;
+	top: 405px;
+	border: 2px solid black;
+    border-radius:50px;
+    font-size: 50px;
+    color: blue;
+    border-color: blue;
+    text-align: center;
+}
+
+#rigar1{
+	background-color: black;
+	height:70px;
+	width: 70px;
+	position: absolute;
+	left: 910px;
+	top: 405px;
+	border: 2px solid black;
+    border-radius:50px;
+    font-size: 50px;
+    color:red;
+    border-color: red;
+    text-align: center;
+}
+
+/*Shoot */
+
+#shoot{
+	background-color: red;
+	animation-name: example;
+	animation-duration: 4s;
+	position: absolute;
+	visibility: hidden;
+	z-index: 4;
+}
+
+/* Water */
+
+#water{
+	position: absolute;
+	top: 0px;
+	width : 4000px;
+	height: 800px;
+	background-color: blue;
+	opacity: 0.5;
+	visibility: hidden;
+	z-index: -2;
+
+
+}
+
+/* Controls banner */
+
+#contro{
+	position: absolute;
+	top: 300px;
+	left: 1050px;
+	width: 390px;
+	height:300px;
+}
+
+
+
+

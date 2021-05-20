@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+    <title>Progress Bar</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6F7FB;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: .4s ease;
+}
+
+.progress-container::before {
+  content: ' ';
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.circle {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e0e0e0;
+  font-size: 14px;
+  height: 30px;
+  width: 30px;
+  transition: .4s ease;
+}
+
+.circle.active {
+  border-color: #3498db;
+  color: #111;
+}
+
+.btn {
+  background-color: #3498db;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 30px;
+  margin: 5px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+  transform: translateX(-10px);
+}
+
+.social-panel { 
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
+  border: 5px solid #001F61;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Muli';
+  position: relative;
+  height: 169px;  
+  width: 370px;
+  max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+  border: 0;
+  color: #97A5CE;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+  outline: none;
+}
+
+.social-panel p {
+  background-color: #001F61;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 2px 17px 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 235px;
+}
+
+.social-panel p i {
+  margin: 0 5px;
+}
+
+.social-panel p a {
+  color: #FF7500;
+  text-decoration: none;
+}
+
+.social-panel h4 {
+  margin: 20px 0;
+  color: #97A5CE; 
+  font-family: 'Muli';  
+  font-size: 14px;  
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.social-panel ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-panel ul li {
+  margin: 0 10px;
+}
+
+.social-panel ul li a {
+  border: 1px solid #DCE1F2;
+  border-radius: 50%;
+  color: #001F61;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+  border-color: #FF6A00;
+  box-shadow: 0 9px 12px -9px #FF6A00;
+}
+
+.floating-btn {
+  border-radius: 26.5px;
+  background-color: #001F61;
+  border: 1px solid #001F61;
+  box-shadow: 0 16px 22px -17px #03153B;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.floating-btn:hover {
+  background-color: #ffffff;
+  color: #001F61;
+}
+
+.floating-btn:focus {
+  outline: none;
+}
+
+.floating-text {
+  background-color: #001F61;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-family: 'Muli';
+  padding: 7px 15px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 998;
+}
+
+.floating-text a {
+  color: #FF7500;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+  .social-panel-container.visible {
+    transform: translateX(0px);
+  }
+  
+  .floating-btn {
+    right: 10px;
+  }
+}
+  </style>
+  <body>
+    
+    <div class="container">
+  <div class="progress-container">
+    <div class="progress" id="progress"></div>
+    <div class="circle active">1</div>
+    <div class="circle">2</div>
+    <div class="circle">3</div>
+    <div class="circle">4</div>
+  </div>
+  
+  <button class="btn" id="prev" disabled>Prev</button>
+  <button class="btn" id="next">Next</button>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      const progress = document.getElementById('progress');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+const circles = document.querySelectorAll('.circle');
+
+let currentActive = 1;
+
+prev.addEventListener('click', () => {
+  currentActive--;
+  
+  // keep it withing boundaries
+  if(currentActive < 1) {
+    currentActive = 1;
+  }
+  
+  update();
+});
+
+next.addEventListener('click', () => {
+  currentActive++;
+  
+  // keep it withing boundaries
+  if(currentActive > circles.length) {
+    currentActive = circles.length;
+  }
+  
+  update();
+});
+
+function update() {
+  // set and remove active class dependent of the currentActive index
+  circles.forEach((circle, idx) => {
+    if(idx < currentActive) {
+      circle.classList.add('active');
+    } else {
+      circle.classList.remove('active');
+    }
+  });
+  
+  // get all the 'active' circles
+  const actives = document.querySelectorAll('.active');
+  
+  // get the % width for the progress bar
+  // remove one from actives and circles in order to have steps like: 0%, 50%, 100%
+  progress.style.width = `${(actives.length - 1) / (circles.length - 1) * 100}%`;
+  
+  if(currentActive === 1) {
+    // hide prev
+    prev.disabled = true;
+  } else if (currentActive === circles.length) {
+    // hide next
+    next.disabled = true;
+  } else {
+    // show prev and next
+    prev.disabled = false;
+    next.disabled = false;
+  }
+}
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+  social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+  social_panel_container.classList.remove('visible')
+});
+    </script>
+  </body>
+</html>
