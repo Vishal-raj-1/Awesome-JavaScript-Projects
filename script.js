@@ -1499,6 +1499,14 @@ let projectData = [
     projectImage: "assets/Images/product_counter.png",
     projectUrl: "public/product_counter.html",
   }
+  ,
+  {
+    projectName: "Dynamic Time message",
+    projectImage: "assets/Images/dynamic_message.png",
+    projectUrl: "public/dynamic_message.html",
+  }
+
+ 
 ]
 
 var projectDetails = projectData.slice(0);
