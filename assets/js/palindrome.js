@@ -22,10 +22,10 @@ function fun() {
 		temp = temp.join("");
 		console.log(temp);
 		if (val == temp) {
-			document.getElementById("result").innerHTML = "It is a Palindrome !";
+			document.getElementById("result").innerHTML = "Yup,It's a Palindrome !";
 			return false;
 		} else {
-			document.getElementById("result").innerHTML = "It is not a Palindrome !";
+			document.getElementById("result").innerHTML = "Oh,no it's not a Palindrome!";
 			return false;
 		}
 	}
@@ -35,4 +35,3 @@ function myFunction() {
 	document.getElementById("form").reset();
 	document.getElementById("result").innerHTML = "";
 }
-
