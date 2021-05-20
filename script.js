@@ -1186,6 +1186,11 @@ let projectData = [
     projectUrl: "public/Memory_game.html",
   },
   {
+    projectName: "Glittering background animation",
+    projectImage: "assets/Images/Glittering_background.png",
+    projectUrl: "public/glittering_background_animation.html",
+  },
+  {
     projectName: "Selection Sort Visualizer in JavaScript",
     projectImage: "assets/Images/selection-visualizing.png",
     projectUrl: "public/selectionsort.html",
