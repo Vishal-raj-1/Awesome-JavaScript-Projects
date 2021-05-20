@@ -10,7 +10,7 @@ let projectData = [
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
-  }, 
+  },
   {
     projectName: "ECOMMERCE WEBSITE",
     projectImage: "assets/GIFs/ecommerce_website.gif",
@@ -20,6 +20,11 @@ let projectData = [
     projectName: "Chore Door Game",
     projectImage: "assets/GIFs/choredoor.gif",
     projectUrl: "public/choredoor.html",
+  },
+  {
+    projectName: "Match_Four_Game",
+    projectImage: "assets/Images/Match_Four_Game.png",
+    projectUrl: "public/Match_Four_Game.html",
   },
   {
     projectName: "Record Player",
@@ -304,8 +309,8 @@ let projectData = [
     projectImage: 'assets/GIFs/counter.gif',
     projectUrl: 'public/counter.html'
   }
-  , 
-  { 
+  ,
+  {
     projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.png",
     projectUrl: "public/localstorage.html"
@@ -587,7 +592,7 @@ let projectData = [
     projectUrl: 'public/Particle.html'
   }
   ,
-  
+
   {
     projectName: 'Flip Cards',
     projectImage: 'assets/GIFs/flipped.gif',
@@ -1144,7 +1149,7 @@ let projectData = [
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html",
   },
- 
+
   {
     projectName: "Infinite Scroll Image Gallery",
     projectImage: "assets/Images/infiniteScroll.png",
@@ -1180,7 +1185,7 @@ let projectData = [
     projectImage: 'assets/Images/guess.png',
     projectUrl: 'public/guess.html'
   }
-  , 
+  ,
   {
     projectName: 'Fractal Tree',
     projectImage: 'assets/Images/fractalTree/fractalTree.gif',
@@ -1193,7 +1198,7 @@ let projectData = [
     projectUrl: 'public/todoapp.html'
 
   }
-  , 
+  ,
   {
     projectName: 'Koch Snowflake',
     projectImage: 'assets/Images/kochSnowflake/demo.png',
@@ -1217,13 +1222,13 @@ let projectData = [
     projectImage: 'assets/Images/selection-visualizing.png',
     projectUrl: 'public/selectionsort.html'
   }
-  , 
+  ,
   {
     projectName: 'Purple Rain',
     projectImage: 'assets/Images/purpleRain.gif',
     projectUrl: 'public/purpleRain.html'
   }
-  , 
+  ,
   {
     projectName: 'Bird Loader',
     projectImage: 'assets/GIFs/birdLoader.gif',
@@ -1252,7 +1257,7 @@ let projectData = [
     projectImage: 'assets/GIFs/postfix-evaluator.png',
     projectUrl: 'public/postfixevaluator.html'
   }
-  , 
+  ,
   {
     projectName: 'Multiplation Table Calculator',
     projectImage: 'assets/GIFs/multiplicationTableCalculator_ss.gif',
@@ -1281,7 +1286,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   },
-  {    
+  {
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html",
@@ -1381,7 +1386,7 @@ let projectData = [
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-  
+
    } ,
    {
      projectName: 'Captcha Validator',
@@ -1433,7 +1438,7 @@ let searchInput = document.getElementById('searchBar')
 let searchText='';
 
 searchInput.addEventListener('change',(e) => {
-  searchText= e.target.value  
+  searchText= e.target.value
 })
 
 
@@ -1471,7 +1476,7 @@ searchBtn.addEventListener('click',(e) => {
   `)
   );
   projectContainer.innerHTML = filter;
-  
+
 })
 
 // search function ends
@@ -1489,5 +1494,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-
