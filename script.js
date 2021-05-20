@@ -30,6 +30,11 @@ let projectData = [
     projectUrl: "public/lappor.html",
   },
   {
+    projectName: "Fall In Game",
+    projectImage: "assets/GIFs/fall-in-game.gif",
+    projectUrl: "public/fall-game.html",
+  },
+  {
     projectName: "Restaurant Menu",
     projectImage: "assets/GIFs/menu.gif",
     projectUrl: "public/menu.html",
