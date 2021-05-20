@@ -1,18 +1,18 @@
 body {
   text-align: center;
-  background-color: #5a088c;
+  background-color: #121213;
 }
 
 h1 {
   font-size: 5rem;
-  color: #DBEDF3;
+  color: #30383b;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  text-shadow: 3px 0 #f8f1f4;
 
 }
 
 footer {
-  color: #DBEDF3;
+  color: #01080a;
   font-family: sans-serif;
 }
 
@@ -48,17 +48,36 @@ footer {
   margin: 10% auto;
 }
 
+button.click {outline: none;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  border-color: white;
+  line-height: 2;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  display: inline-block;
+  width: 80px;
+  height: 200px;
+  text-align: center;
+  margin: 20px;
+  background-color: rgb(8, 8, 8);
+  background: #585555;
+  box-shadow:  3px 3px 9px #120118,
+             -3px -3px 9px #000000;}
+
 .game-over {
-  background-color: red;
+  background-color: rgb(116, 9, 9);
   opacity: 0.8;
 }
 
 .pressed {
   border-color: white;
+
 }
 
 .red {
-  color: white;
+  color: rgb(156, 55, 55);
 }
 
 .piano {
@@ -68,15 +87,15 @@ footer {
   border-color: white;
   line-height: 2;
   font-weight: 900;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 15px;
   display: inline-block;
   width: 80px;
   height: 200px;
   text-align: center;
   margin: 20px;
-  background-color: white;
-  background: #cd69f2;
-  box-shadow:  3px 3px 9px #ae59ce,
-             -3px -3px 9px #ec79ff;
+  background-color: rgb(8, 8, 8);
+  background: #ffffff;
+  box-shadow:  3px 3px 9px #120118,
+             -3px -3px 9px #000000;
 }
