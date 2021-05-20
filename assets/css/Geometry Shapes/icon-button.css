@@ -1,0 +1,32 @@
+/* ============================================================ */
+/* This is the stylehseet of the "icon button"                  */
+/* An icon button is a button that contains icon and text       */
+/* ============================================================ */
+
+button.icon_button {
+	display: flex;
+	flex-direction: row;
+	padding: 0.5rem;
+	background-color: var(--color-light-foreground);
+	border-radius: 8px;
+	color: var(--color-light-shadow);
+	fill: var(--color-light-shadow);
+	border: 0;
+	cursor: pointer;
+	transition-duration: 100ms;
+}
+
+button.icon_button p,
+button.icon_button svg {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+button.icon_button p {
+	margin-left: 0.5rem;
+}
+
+button.icon_button:hover {
+	color: var(--color-light-theme-light);
+	fill: var(--color-light-theme-light);
+}

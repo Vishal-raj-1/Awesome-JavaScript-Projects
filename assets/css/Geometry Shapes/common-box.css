@@ -1,0 +1,19 @@
+/* ============================================================ */
+/* This is the stylehseet of the "common box"                   */
+/* A common box is a box that contains other elements           */
+/* ============================================================ */
+div.common_box {
+	background-color: var(--color-light-theme-light);
+	border-radius: 8px;
+	padding: 1rem;
+	box-shadow: 0px 0px 2px var(--color-light-theme-dark);
+	color: var(--color-light-foreground);
+}
+
+div.common_box_white {
+	background-color: var(--color-light-foreground);
+	border-radius: 8px;
+	padding: 1rem;
+	box-shadow: 0px 0px 2px var(--color-light-shadow);
+	color: var(--color-light-foreground);
+}

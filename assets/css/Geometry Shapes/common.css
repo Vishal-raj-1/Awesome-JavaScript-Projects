@@ -1,0 +1,18 @@
+/* ============================================================ */
+/* VARIABLES                                                    */
+/* ============================================================ */
+:root {
+	--color-light-theme-light: #dc143c;
+	--color-light-theme-dark: #960e29;
+	--color-light-background: whitesmoke;
+	--color-light-foreground: white;
+	--color-light-shadow: gray;
+}
+
+/* ============================================================ */
+/* MAIN FONT                                                    */
+/* ============================================================ */
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../fonts/noto-sans/NotoSans-Regular.ttf');
+}

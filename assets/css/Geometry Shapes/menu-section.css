@@ -1,0 +1,82 @@
+/* ============================================================ */
+/* This is the stylehseet of the "menu section"                 */
+/* The menu section is the container that contains the shape    */
+/* selector and additional stuff                                */
+/* ============================================================ */
+
+@media (orientation: landscape) {
+	#menu_section {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: max-content auto max-content;
+		gap: 0.5rem;
+	}
+
+	#shape_buttons_box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#settings_box {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, auto);
+		gap: 0.5rem;
+	}
+
+	#title_box p:nth-child(1) {
+		font-size: 24pt;
+		margin-bottom: 0.25rem;
+	}
+}
+
+@media (orientation: portrait) {
+	#menu_section {
+		display: grid;
+		grid-template-columns: max-content auto;
+		grid-template-rows: auto;
+		gap: 0.5rem;
+		overflow-x: auto;
+	}
+
+	#shape_buttons_box {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#settings_box {
+		display: none;
+	}
+}
+
+#shape_buttons_box button {
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: row;
+	fill: var(--color-light-foreground);
+	color: var(--color-light-foreground);
+	background-color: var(--color-light-theme-light);
+	border: 0;
+	cursor: pointer;
+}
+
+#shape_buttons_box button p,
+#shape_buttons_box button svg {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#shape_buttons_box button p {
+	margin-left: 0.5rem;
+}
+
+#shape_buttons_box button:active,
+#shape_buttons_box button.active {
+	fill: var(--color-light-theme-light);
+	color: var(--color-light-theme-light);
+	background-color: var(--color-light-foreground);
+}
+
+#title_box a {
+	color: var(--color-light-foreground);
+}

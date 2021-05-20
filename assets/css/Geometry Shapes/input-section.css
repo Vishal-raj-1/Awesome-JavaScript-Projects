@@ -1,0 +1,73 @@
+/* ============================================================ */
+/* This is the stylehseet of the "input section"                */
+/* The input section contains the inputs                        */
+/* for the shape's dimension                                    */
+/* ============================================================ */
+
+#input_section {
+	padding: 1rem;
+	background-color: var(--color-light-foreground);
+	box-shadow: 0px 0px 2px var(--color-light-shadow);
+	border-radius: 8px;
+	color: var(--color-light-theme-light);
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(3, max-content);
+	gap: 1rem;
+	font-size: 12pt;
+}
+
+#input_section * {
+	color: var(--color-light-theme-light);
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#input_section #input_title {
+	font-size: 24pt;
+}
+
+#input_section input {
+	border: 1px solid var(--color-light-theme-light);
+}
+
+#input_section #button_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+#input_section #button_container button:first-child {
+	margin-right: 0.5rem;
+}
+
+#input_section button {
+	padding: 0.5rem;
+	background-color: var(--color-light-foreground);
+	border: 0;
+	transition-duration: 100ms;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	padding: 4px;
+	-moz-appearance: textfield;
+}
+
+#input_section button:hover {
+	color: var(--color-light-foreground);
+	background-color: var(--color-light-theme-light);
+	box-shadow: 0px 0px 2px var(--color-light-theme-dark);
+}
+
+#input_section button:active {
+	background-color: var(--color-light-theme-dark);
+	box-shadow: 0;
+}
