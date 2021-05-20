@@ -1,0 +1,18 @@
+.display{
+    border: 10px solid gray;
+    height: 200px;
+    width: 99%;
+    background-color: #e6e6e6 ;
+    margin:auto;
+    font-size: 30px;
+}
+.keyboard{
+    background-color: #993300;
+}
+.center{
+    margin: auto;
+    width: 50%;
+    border: 5px black;
+    padding: 10px;
+}
+
