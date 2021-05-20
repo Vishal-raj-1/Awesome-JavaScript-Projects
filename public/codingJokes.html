@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>#CodingJokes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Merienda" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../assets/css/codingJokes.css">
+    <script src="./../assets/js/codingJokes.js"></script>
+
+</head>
+
+<body onload='document.getElementById("cont").style.visibility="hidden"'>
+
+    <!-- Loader -->
+    <div id="cont">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <br><br><br>
+            Loading....
+        </div>
+    </div>
+
+    <center>
+        <h1 style="color:'#efefef'">Coding &nbsp Jokes</h1>
+        <hr>
+    </center>
+
+
+    <!--  joke  -->
+    <center>
+        <div id="jokes">
+
+            <sup><i class="fas fa-quote-left"></i></sup>
+            <div id="joke">Eight bytes walk into a bar.  The bartender asks, “Can I get you anything?” “Yeah,” reply the
+                bytes.  “Make us a double.”</div>
+            <sup><i class="fas fa-quote-right"></i></sup>
+
+        </div>
+    </center>
+
+    <div id="next" onclick="next()">Next <i class="fas fa-angle-double-right" style="margin-left:4px;"></i></div>
+    <div id="share" onclick="share()">
+        <b>SHARE : </b><i class="fab fa-whatsapp" id="whatsapp"></i>
+    </div>
+
+
+    <!--  To get the clicking sound -->
+    <audio id="click">
+        <source src="https://dl-web.dropbox.com/s/2pzgfyss56j9c4e/Click.mp3?dl=0" type="audio/mp3">
+
+    </audio>
+
+</body>
+
+</html>
