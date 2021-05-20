@@ -35,6 +35,11 @@ let projectData = [
     projectUrl: "public/fall-game.html",
   },
   {
+    projectName: "Webpage Printing",
+    projectImage: "assets/GIFs/web.gif",
+    projectUrl: "public/web-page.html",
+  },
+  {
     projectName: "Restaurant Menu",
     projectImage: "assets/GIFs/menu.gif",
     projectUrl: "public/menu.html",
@@ -45,6 +50,11 @@ let projectData = [
     projectUrl: "public/Restaurant.html",
   },
   {
+    projectName: "Block Ninja",
+    projectImage: "assets/GIFs/block_ninja.gif",
+    projectUrl: "public/block_ninja.html",
+  },
+  {
     projectName: "Math Sprinter Game",
     projectImage: "assets/Images/math-sprinter-game.png",
     projectUrl: "public/math-sprinter-game.html",
@@ -53,6 +63,7 @@ let projectData = [
     projectName: "Alaska Cartoon",
     projectImage: "assets/GIFs/alaska_cartoon.png",
     projectUrl: "public/alaska_cartoon.html",
+
   },
   {
     projectName: "Pig Game",
@@ -454,6 +465,11 @@ let projectData = [
     projectUrl: "public/netflix.html",
   },
   {
+    projectName: "Mortgage Loan Calculator",
+    projectImage: "assets/Images/mortgage_loan_calculator.png",
+    projectUrl: "public/mortgage_loan_calculator.html",
+  },
+  {
     projectName: "Analog Clock",
     projectImage: "assets/GIFs/analogClock.gif",
     projectUrl: "public/Analogclock.html",
@@ -539,10 +555,19 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html",
   },
   {
+
+    projectName: 'Tip Calculator',
+    projectImage: 'assets/Images/tip-calc.png',
+    projectUrl: 'public/tip-calculator.html'
+  }
+ 
+  ,
+  {
     projectName: "DragNDrop",
     projectImage: "assets/GIFs/DragNDrop.gif",
     projectUrl: "public/DragNDrop.html",
   },
+
   {
     projectName: "Typing Speed Tester",
     projectImage: "assets/GIFs/typing_speed_test.gif",
@@ -1363,6 +1388,24 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
+   } ,
+   {
+     projectName: '3D Image Gallery',
+     projectImage: 'assets/Images/3DImageGallery.PNG',
+     projectUrl: 'public/3DImageGallery.html'
+
+  }
+  ,
+  {
+    projectName: 'Button Generator',
+    projectImage: 'assets/Images/button.PNG ',
+    projectUrl: 'public/ButtonGenerator.html'
+
+   },
+   {
+     projectName: 'Battery Indicator',
+     projectImage: 'assets/Images/BatteryIndicator.PNG',
+     projectUrl: 'public/BatteryIndicator.html'
 
    },
    {
@@ -1426,7 +1469,6 @@ let projectData = [
     projectUrl: "public/CaptchaValidator.html",
   },
   {
-
     projectName: "Merge Sort Visualizer in JavaScript",
     projectImage: "assets/Images/merge-visualizing.png",
     projectUrl: "public/mergesort.html",
@@ -1472,6 +1514,18 @@ let projectData = [
     projectName: "product Counter",
     projectImage: "assets/Images/product_counter.png",
     projectUrl: "public/product_counter.html",
+  }
+  ,
+  {
+    projectName: "Dynamic Time message",
+    projectImage: "assets/Images/dynamic_message.png",
+    projectUrl: "public/dynamic_message.html",
+  }
+  ,
+  {
+    projectName: "Fibonacci Series Generator",
+    projectImage: "assets/Images/fibonacci/fibo1.png",
+    projectUrl: "public/fibonacci.html",
   }
 ]
 
