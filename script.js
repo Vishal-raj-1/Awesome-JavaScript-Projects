@@ -1367,12 +1367,20 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
+
   }
   ,
   {
     projectName: 'Button Generator',
-    projectImage: 'assets/Images/button.png',
+    projectImage: 'assets/Images/button.PNG ',
     projectUrl: 'public/ButtonGenerator.html'
+
+   },
+   {
+     projectName: 'Battery Indicator',
+     projectImage: 'assets/Images/BatteryIndicator.PNG',
+     projectUrl: 'public/BatteryIndicator.html'
+
    },
    {
     projectName: 'Box-Shadow Css ',
@@ -1383,6 +1391,7 @@ let projectData = [
     projectName: 'Px/Rem Converter',
     projectImage: 'assets/GIFs/px-rem.gif',
     projectUrl: 'public/px-rem.html'
+
    }
    ,
    {
