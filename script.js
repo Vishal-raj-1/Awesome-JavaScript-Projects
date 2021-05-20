@@ -25,8 +25,8 @@ let projectData = [
     projectUrl: "public/feedback.html",
   },
   {
-    projectName: "Upload Image",
-    projectImage: "assets/GIFs/uploadimg.gif",
+    projectName: "Profile Upload Image",
+    projectImage: "assets/GIFs/profilepic.gif",
     projectUrl: "public/uploadimg.html",
   },
   {
