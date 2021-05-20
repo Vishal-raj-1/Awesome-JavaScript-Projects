@@ -40,6 +40,11 @@ let projectData = [
     projectUrl: "public/Restaurant.html",
   },
   {
+    projectName: "Block Ninja",
+    projectImage: "assets/GIFs/block_ninja.gif",
+    projectUrl: "public/block_ninja.html",
+  },
+  {
     projectName: "Math Sprinter Game",
     projectImage: "assets/Images/math-sprinter-game.png",
     projectUrl: "public/math-sprinter-game.html",
@@ -48,6 +53,7 @@ let projectData = [
     projectName: "Alaska Cartoon",
     projectImage: "assets/GIFs/alaska_cartoon.png",
     projectUrl: "public/alaska_cartoon.html",
+
   },
   {
     projectName: "Pig Game",
