@@ -534,10 +534,19 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html",
   },
   {
+
+    projectName: 'Tip Calculator',
+    projectImage: 'assets/Images/tip-calc.png',
+    projectUrl: 'public/tip-calculator.html'
+  }
+ 
+  ,
+  {
     projectName: "DragNDrop",
     projectImage: "assets/GIFs/DragNDrop.gif",
     projectUrl: "public/DragNDrop.html",
   },
+
   {
     projectName: "Typing Speed Tester",
     projectImage: "assets/GIFs/typing_speed_test.gif",
