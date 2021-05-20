@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,600);
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  display: inline-block;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+p {
+  margin: 0;
+}
+.info {
+  font-size: 10px;
+  padding: 1px 5px;
+  background-color: yellow;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+input {
+  height: 40px;
+  width: 200px;
+  font-size: 14px;
+  padding: 0;
+  padding-left: 5px;
+  margin-top: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid;
+}
+
+button {
+  cursor: pointer;
+  height: 43px;
+  font-size: 14px;
+}
+
+.result {
+  font-size: 30px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  padding: 25px;
+}
