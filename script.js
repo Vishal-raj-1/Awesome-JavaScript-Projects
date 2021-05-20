@@ -454,6 +454,11 @@ let projectData = [
     projectUrl: "public/netflix.html",
   },
   {
+    projectName: "Mortgage Loan Calculator",
+    projectImage: "assets/Images/mortgage_loan_calculator.png",
+    projectUrl: "public/mortgage_loan_calculator.html",
+  },
+  {
     projectName: "Analog Clock",
     projectImage: "assets/GIFs/analogClock.gif",
     projectUrl: "public/Analogclock.html",
@@ -539,10 +544,19 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html",
   },
   {
+
+    projectName: 'Tip Calculator',
+    projectImage: 'assets/Images/tip-calc.png',
+    projectUrl: 'public/tip-calculator.html'
+  }
+ 
+  ,
+  {
     projectName: "DragNDrop",
     projectImage: "assets/GIFs/DragNDrop.gif",
     projectUrl: "public/DragNDrop.html",
   },
+
   {
     projectName: "Typing Speed Tester",
     projectImage: "assets/GIFs/typing_speed_test.gif",
@@ -1177,6 +1191,11 @@ let projectData = [
     projectUrl: "public/Memory_game.html",
   },
   {
+    projectName: "Glittering background animation",
+    projectImage: "assets/Images/Glittering_background.png",
+    projectUrl: "public/glittering_background_animation.html",
+  },
+  {
     projectName: "Selection Sort Visualizer in JavaScript",
     projectImage: "assets/Images/selection-visualizing.png",
     projectUrl: "public/selectionsort.html",
@@ -1363,6 +1382,24 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
+   } ,
+   {
+     projectName: '3D Image Gallery',
+     projectImage: 'assets/Images/3DImageGallery.PNG',
+     projectUrl: 'public/3DImageGallery.html'
+
+  }
+  ,
+  {
+    projectName: 'Button Generator',
+    projectImage: 'assets/Images/button.PNG ',
+    projectUrl: 'public/ButtonGenerator.html'
+
+   },
+   {
+     projectName: 'Battery Indicator',
+     projectImage: 'assets/Images/BatteryIndicator.PNG',
+     projectUrl: 'public/BatteryIndicator.html'
 
    },
    {
@@ -1426,7 +1463,6 @@ let projectData = [
     projectUrl: "public/CaptchaValidator.html",
   },
   {
-
     projectName: "Merge Sort Visualizer in JavaScript",
     projectImage: "assets/Images/merge-visualizing.png",
     projectUrl: "public/mergesort.html",
