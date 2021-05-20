@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Record Player</title>
+  </head>
+  <style>
+    body {
+  margin: 0;
+  background: lightgrey;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: lightgrey;
+  margin: 50px auto;
+  padding: 10px;
+  position: relative;
+  z-index: 1; 
+}
+
+.base {
+  z-index: 2;
+  width: 540px;
+  height: 420px;
+  border-radius: 8px;
+  background: #A67C52;
+  margin: 20px auto;
+  position: relative;
+  border: 1px solid black;
+    background: 
+    linear-gradient(135deg,#A67C52 81%, #7D5D3E 81%);
+}
+
+.base:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  border-radius: 200px;
+  width: 400px;
+  height: 400px;
+  background: black;
+  background: radial-gradient(white 5%, gray 50%, black 80%); /* Standard syntax */
+  background:
+-webkit-radial-gradient(white 5%, gray 50%, black 80%); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(white 5%, gray 50%, black 80%); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(white 5%, gray 50%, black 80%);
+  left: 10px;
+  top:10px;
+  box-shadow:
+    0px 0px 55px black inset;
+}
+
+.slider {
+  position: absolute;
+  height: 130px;
+  width: 5px;
+  background: #333333;
+  border: 1px solid black;
+  border-radius: 7px;
+  bottom: 30px;
+  right: 30px;
+}
+
+.slider:after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 40px;
+  background: #1C1C1C;
+  border: 1px solid black;
+  border-radius: 3px;
+  left: -18px;
+  top: 20px;
+}
+
+.buttons {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #CCCCCC;
+  border-radius: 3px;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  border: 1px solid black;
+  background: 
+    linear-gradient(135deg,#BCBCBC 60%, #9B9B9B 60%);
+  cursor: pointer;
+}
+
+.toneArm {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 60px; 
+  border-radius: 20px 20px 60px 60px;
+  background: 
+    linear-gradient(black 10%, #9b9b9b 10%);
+  z-index: 100;
+  transform: 
+    translateX(60px)
+    translateY(-15px);
+  box-shadow:
+    0 0 0 1px black;
+  z-index: 5;
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    background: #9b9b9b;
+    z-index: 100;
+    transform: 
+      translateY(80px)
+      translateX(-15px)
+      rotate(10deg);
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+}
+
+.toneArmTwo {
+  display: block;
+  position: absolute;
+  height: 280px;
+  width: 15px;
+  background: #9b9b9b;
+  border: 1px solid black;
+  transform:
+    translateY(40px)
+    translateX(71px);
+  z-index: 100;
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 100;
+    height: 80px;
+    width: 30px;
+    border: 1px solid black;
+    background: #626063;
+    background: linear-gradient(#626063 20%, #464447 80%);
+    transform:
+      translateY(250px)
+      translateX(-8px);
+  }
+}
+
+
+
+.buttons:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 30px;
+  background: #CCCCCC;
+  left: 50px;
+  top: 29px;
+  border-radius: 2px;
+  border: 1px solid black;
+  background: 
+    linear-gradient(135deg,#BCBCBC 60%, #9B9B9B 60%); 
+}
+
+.shader {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #7d5d3e;
+  border-radius: 8px;
+  bottom: 0;
+  right: 0;
+}
+
+.platter:after{
+  position: absolute;
+  content: "";
+  z-index: 0;
+  width: 115px;
+  height: 115px;
+  border-radius: 57.5px;
+  background: #FFFFCC;
+  top: 115px;
+  left: 115px;
+/*   boxShadow */
+  box-shadow:
+    0px 0px 2px 0px black,
+    0 0 10px black inset,
+    0px 0px 0px 20px #1A1A1A,
+    2px 0px 0px 20px darkgrey,
+    0 0 0 40px #1A1A1A,
+    -1px -1px 0px 40px darkgrey,
+    0 0 0 70px #1A1A1A,
+    -1px 1px 0 70px darkgrey,
+    0 0 0 100px #1A1A1A,
+    1px 1px 0 100px darkgrey;
+   -wbekit-box-shadow:
+    0px 0px 2px 0px black,
+    0 0 10px black inset,
+    0px 0px 0px 20px #1A1A1A,
+    2px 0px 0px 20px darkgrey,
+    0 0 0 40px #1A1A1A,
+    -1px -1px 0px 40px darkgrey,
+    0 0 0 70px #1A1A1A,
+    -1px 1px 0 70px darkgrey,
+    0 0 0 100px #1A1A1A,
+    1px 1px 0 100px darkgrey;
+      -o-box-shadow:
+    0px 0px 2px 0px black,
+    0 0 10px black inset,
+    0px 0px 0px 20px #1A1A1A,
+    2px 0px 0px 20px darkgrey,
+    0 0 0 40px #1A1A1A,
+    -1px -1px 0px 40px darkgrey,
+    0 0 0 70px #1A1A1A,
+    -1px 1px 0 70px darkgrey,
+    0 0 0 100px #1A1A1A,
+    1px 1px 0 100px darkgrey;
+   -moz-box-shadow:
+    0px 0px 2px 0px black,
+    0 0 10px black inset,
+    0px 0px 0px 20px #1A1A1A,
+    2px 0px 0px 20px darkgrey,
+    0 0 0 40px #1A1A1A,
+    -1px -1px 0px 40px darkgrey,
+    0 0 0 70px #1A1A1A,
+    -1px 1px 0 70px darkgrey,
+    0 0 0 100px #1A1A1A,
+    1px 1px 0 100px darkgrey;
+}
+
+.platter:before {
+  position: absolute;
+  content: "";
+  z-index: 30;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background: black;
+  top: 165px;
+  left: 165px;
+  
+/*   Gradient */
+  background: -webkit-radial-gradient(darkgrey, black); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(darkgrey, black); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(darkgrey 5%, black 40%); /* Standard syntax */  
+}
+
+.platter{
+  position: absolute;
+  content: "";
+  z-index: 10;
+  height: 350px;
+  width: 350px;
+  border-radius: 175px;
+  background: #1A1A1A;
+  border: 3px solid lightgrey;
+  top: 32px;
+  left: 32px;
+  transition: transform 2s ease-out;
+}
+
+.platter-spin {
+  // transform: rotate(1000deg);
+  animation: easePlatter 2s ease-in,
+    rotatePlatter 1s infinite linear;
+  transition: transform 2s ease-out;
+}
+
+.toneBase{
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  border-radius: 100px;
+  background: #4D4D4D;
+  border: 1px solid black;
+  right: 12px;
+  top: 20px;
+  background: 
+    linear-gradient(135deg,#4D4D4D 60%, #333333 60%);
+  transition: transform 3s ease-in-out;
+  z-index: 100;
+}
+
+.tonearm-movement {
+  animation: tone-move 10s ease-in-out;
+}
+
+.toneBase:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background: #B3B3B3;
+  left: 28px;
+  top: 27px;
+  border: 3px double black;
+}
+
+.notches {
+  position: absolute;
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #666666;
+  right: 75px;
+  top: 21px;
+}
+
+.notches:after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #999999;
+  right: 0px;
+  top: 0px;
+  transform: rotate(30deg);
+}
+
+.notches:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #666666;
+  right: 0px;
+  top: 0px;
+  transform: rotate(60deg);
+}
+
+.notches2 {
+  position: absolute;
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #999999;
+  right: 75px;
+  top: 21px;
+  transform: rotate(-30deg);
+}
+
+.notches2:after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #999999;
+  right: 0px;
+  top: 0px;
+  transform: rotate(120deg);
+}
+
+.notches2:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 115px;
+  border: 1px solid black;
+  background: #666666;
+  right: 0px;
+  top: 0px;
+  transform: rotate(150deg);
+}
+
+.instructions {
+  display: block;
+  margin: 20px;
+  padding-top: 10px;
+  text-align: center;
+  
+  h2 { font-size: 01.3em; }
+  a {
+    text-decoration: none;
+    color: tomato;
+    &:hover {
+      color: grey;
+    }
+  }
+}
+
+//Key Frame Animations
+@keyframes rotatePlatter {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes easePlatter {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes tone-move {
+  0% { transform: rotate(0); }
+  20% { transform: rotate(30deg); }
+  80% { transform: rotate(36deg); }
+  100% { transform: rotate(0); }
+}
+  </style>
+  <body>
+    <div class="wrapper">
+
+  <div class="base">
+    <div class="platter"></div>
+    <div class="slider"></div>
+    <div class="buttons"></div>
+    <div class="toneBase">
+      <div class="toneArmTwo"></div>
+      <div class="toneArm"></div>
+    <div class="notches"></div>
+    <div class="notches2"></div>
+    </div>
+  </div>
+  
+  <div class="instructions">
+    <h2>Click the Square button to turn on the record</h2>
+    <h2>Click the tone arm to put the needle to the record.</h2>
+    
+
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+      // This is finally done-ish. Slowly worked on this for a while, and just came back to it yesterday to finish it up.
+
+$( document ).ready(function() {
+  
+  $('.buttons').click(function(){
+    $('.platter').toggleClass('platter-spin');
+  })
+  
+  $('.toneArmTwo').click(function(){
+    $('.toneBase').toggleClass('tonearm-movement')
+  })
+  
+});
+    </script>
+    
+  </body>
+</html>
