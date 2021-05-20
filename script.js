@@ -30,6 +30,16 @@ let projectData = [
     projectUrl: "public/lappor.html"
   },
   {
+    projectName: "Fall In Game",
+    projectImage: "assets/GIFs/fall-in-game.gif",
+    projectUrl: "public/fall-game.html",
+  },
+  {
+    projectName: "Webpage Printing",
+    projectImage: "assets/GIFs/web.gif",
+    projectUrl: "public/web-page.html",
+  },
+  {
     projectName: "Restaurant Menu",
     projectImage: "assets/GIFs/menu.gif",
     projectUrl: "public/menu.html"
@@ -38,6 +48,11 @@ let projectData = [
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html"
+  },
+  {
+    projectName: "Block Ninja",
+    projectImage: "assets/GIFs/block_ninja.gif",
+    projectUrl: "public/block_ninja.html",
   },
   {
     projectName: "Math Sprinter Game",
@@ -1478,7 +1493,6 @@ let projectData = [
     projectImage: "assets/Images/snow.jpg",
     projectUrl: "public/snow.html"
   },
-  ,
   {
     projectName: "Virtual Keyboard",
     projectImage: "assets/Images/virtual_keyboard.png",
@@ -1488,8 +1502,19 @@ let projectData = [
     projectName: "product Counter",
     projectImage: "assets/Images/product_counter.png",
     projectUrl: "public/product_counter.html"
+  },
+  {
+    projectName: "Dynamic Time message",
+    projectImage: "assets/Images/dynamic_message.png",
+    projectUrl: "public/dynamic_message.html",
   }
-];
+  ,
+  {
+    projectName: "Fibonacci Series Generator",
+    projectImage: "assets/Images/fibonacci/fibo1.png",
+    projectUrl: "public/fibonacci.html",
+  }
+]
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
