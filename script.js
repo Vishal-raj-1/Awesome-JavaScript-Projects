@@ -1367,6 +1367,11 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
+   } ,
+   {
+     projectName: '3D Image Gallery',
+     projectImage: 'assets/Images/3DImageGallery.PNG',
+     projectUrl: 'public/3DImageGallery.html'
 
   }
   ,
@@ -1391,7 +1396,6 @@ let projectData = [
     projectName: 'Px/Rem Converter',
     projectImage: 'assets/GIFs/px-rem.gif',
     projectUrl: 'public/px-rem.html'
-
    }
    ,
    {
