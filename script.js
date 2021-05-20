@@ -449,6 +449,11 @@ let projectData = [
     projectUrl: "public/netflix.html",
   },
   {
+    projectName: "Mortgage Loan Calculator",
+    projectImage: "assets/Images/mortgage_loan_calculator.png",
+    projectUrl: "public/mortgage_loan_calculator.html",
+  },
+  {
     projectName: "Analog Clock",
     projectImage: "assets/GIFs/analogClock.gif",
     projectUrl: "public/Analogclock.html",
