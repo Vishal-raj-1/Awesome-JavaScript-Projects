@@ -1,44 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Flipper</title>
-    <style>
-        body {
-            text-align: center;
-            vertical-align: center;
-        }
-
-        h1 {
-            background-color: black;
-            color: white;
-        }
-
-        button{
-            padding: .7rem;
-            background-color: transparent;
-            border-radius: 8%;
-            background-color: black !important;
-            color: white;
-            box-shadow: 2px 3px 3px rgba(199, 234, 240, 0.7);
-
-        }
-        button:hover{
-            border: 3px solid white;
-            box-shadow: 3px 5px 3px #8888;
-        }
-    </style>
-</head>
-
-<body>
-    <div>
-        <h1>Background Color : <span id="color">#111</span></h1>
-        <button id="btn">Click Me</button>
-    </div>
+<html>
+    <head>
+        <link rel="stylesheet" href="../assets/css/color-flipper.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Background Color : <span id="color">#111</span></h1>
+            <br>
+            <button id="btn">Click Me</button>
+        </div>
+        <section>
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </section>
 
     <script src="../assets/js/color-flipper.js"></script>
-</body>
-
+    </body>
 </html>

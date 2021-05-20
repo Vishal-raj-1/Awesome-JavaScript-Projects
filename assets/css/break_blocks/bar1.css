@@ -1,0 +1,201 @@
+label
+{
+	color: #33AB3D;
+	line-height: 20px;
+	text-align: center;
+	font-weight:bold;
+	
+
+}
+body
+{
+
+}
+#goals
+{
+position:fixed;
+		
+	
+}
+#target
+{
+	position:fixed;
+	
+	color: BROWN;
+	
+	
+	font-weight:bold;
+}
+
+#canvas
+{
+	margin:35px 15px 0 0;
+	
+	
+	background-image:url("tennis_ground.png");
+	border-style:solid;
+	border-color:white;
+	border-width:5px;
+	
+	
+}
+#gs select option
+{
+color:blue;	
+display:block;
+background:red;
+}
+#gs
+{
+color: DARKBLUE;
+	line-height: 30px;
+	text-align: center;
+	font-weight:bold;
+}
+label:hover
+{
+	font-size:110%;
+	color: GREEN;	
+}
+
+#players span{
+position:fixed;
+display:block;
+font-size:120%;
+font-weight:bold;
+}
+#player1
+{
+color:#72D474;
+}
+#player2
+{
+color:#8C9DFF;
+}
+
+#game{
+background:white;
+padding:20px 100px 100px 60px;;
+border-radius: 10px;
+border : solid 2px black;
+position:fixed;
+/*top:180px;
+left:400px;*/
+}
+
+#win
+{
+position:fixed;top:10px;
+/*left:425px;*/
+	color: #F50C3F;
+		
+	text-weight:bold;
+	color: #0F0F0F;
+		font-size:150%;
+text-shadow:  1px 1px #808080;
+}
+#over
+{
+position:fixed;top:90px;left:450px;
+	color: #FacC3F;
+		
+	font-weight:bold;
+	color: #0F0F0F;
+		font-size:180%;
+		text-shadow:  1px 1px #808080;
+
+}#draw
+{
+position:fixed;top:10px;
+/*left:450px;*/
+	
+		border-radius:2px;
+	text-wight:bold;
+	color: #0F0F0F;
+		font-size:150%;
+		font-weight:bold;
+text-shadow:  1px 1px #808080;
+}
+
+#score
+{
+position:fixed;top:5px;right:20px;
+background: #8C9DFF;
+padding:5px 20px;
+border-radius:2px;
+			color: white;
+			font-weight:bold;
+		font-size:100%;
+}
+
+#score1
+{
+position:fixed;top:5px;left:10px;
+background: #72D474;
+padding:5px 20px;
+border-radius:2px;
+			color: white;
+		font-size:100%;
+font-weight:bold;		
+}
+
+#chance
+{
+position:fixed;bottom:5px;right:20px;
+background: #8C9DFF;
+padding:5px 20px;
+border-radius:2px;
+			color: white;
+			font-weight:bold;
+		font-size:100%;
+}
+
+
+#chance1
+{
+position:fixed;bottom:5px;left:10px;
+background: #72D474;
+padding:5px 20px;
+border-radius:2px;
+			color: white;
+			font-weight:bold;
+		font-size:100%;
+}
+
+
+
+#btn1
+{
+cursor: pointer;
+	
+	position:fixed;
+	/*top:300px;left:485px;*/
+	width: 85px;
+	height: 35px;
+	
+	
+	background: black;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	
+	margin: 0 7px 11px 0;
+	
+	color: white;
+	line-height: 36px;
+	text-align: center;
+	text-weight:bold;
+	
+	/* prevent selection of text inside keys */
+	user-select: none;
+	
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.5s ease;
+}
+#btn1:hover {
+background: lightgray;
+border : 1 px;
+	box-shadow: 0px 4px black;
+	color: black;
+	
+	
+	}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="../assets/css/bucketsort.css" />
+</head>
+
+<body>
+	<section class="head">Bucket Sort Visualizer</section>
+   <section class="data-container"></section> 
+
+	<div id="array"></div>
+
+	<div style="display: flex; justify-content: space-evenly">
+		<div class="bucket">
+			<div id="one" class="bucket2"></div>
+			<br />
+			<h3 style="text-align: center">[1-5]</h3>
+		</div>
+
+		<div class="bucket">
+			<div id="two" class="bucket2"></div>
+			<br />
+			<h3 style="text-align: center">[6-10]</h3>
+		</div>
+
+		<div class="bucket">
+			<div id="three" class="bucket2"></div>
+			<br />
+			<h3 style="text-align: center">[11-15]</h3>
+		</div>
+		
+		<div class="bucket">
+			<div id="four" class="bucket2"></div>
+			<br />
+			<h3 style="text-align: center">[16-20]</h3>
+		</div>
+	</div>
+    <br>
+    <!-- "Generate New Array" button -->
+   <button  class="btn1" onclick="generate()" id="Button1" >
+    Generate New Array</button>   
+    
+  <!-- "Bucket Sort" button -->
+  <button class="btn2" 
+          onclick="CountingSort(),disable()" id="Button2" >
+    Bucket Sort</button>
+	<script src="../assets/js/bucketsort.js"></script>
+</body>
+
+</html>

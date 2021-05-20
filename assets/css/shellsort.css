@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(255, 235, 211);
+    font-family: Verdana, sans-serif;
+}
+.head {
+    margin-top: 20px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    text-align: center;
+    font-size: 30px;
+    background-color: #6f459e;
+    color: white;
+    border-radius: 19px;
+    font-weight: bolder;
+}
+.head-title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.form-btn {
+    display: block;
+    margin: 40px auto;
+}
+.form-btn button:hover {
+    cursor: pointer;
+}
+.form-btn button {
+    padding: 5px 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-sort {
+    text-align: center;
+    margin-top: 7vw;
+}
+.form-sort input {
+    width: 5%;
+    margin: 10px;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.form-more {
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: sub;
+}
+.form-more:hover {
+    cursor: pointer;
+}
+
+/* Animation */
+.animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.2, 1.2, .3);
+        transform: scale3d(1.2, 1.2, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.2, 1.2, .3);
+        transform: scale3d(1.2, 1.2, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    font-weight: bold;
+}
+
+/* End of Sort*/
+.shell-body input {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    font-weight: bold;
+}
+.btn1 {
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+    margin-left: 37vw;
+    margin-top: 4vw;
+    margin-right: 1vw;
+}
+.btn {
+    padding: 12px;
+    font-weight: bolder;
+    background-color: #6f459e;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+}
