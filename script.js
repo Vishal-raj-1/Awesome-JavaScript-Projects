@@ -611,11 +611,14 @@ let projectData = [
   }
   ,
   {
+<<<<<<< Updated upstream
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/Text-voice.gif",
     projectUrl: "public/textToVoice.html",
   },
   {
+=======
+>>>>>>> Stashed changes
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html",
@@ -656,11 +659,14 @@ let projectData = [
     projectUrl: "public/Randomuser.html",
   },
   {
+<<<<<<< Updated upstream
     projectName: "Math Quiz for kids � ",
     projectImage: "assets/Images/MathQuiz.jpg",
     projectUrl: "public/MathQuiz.html",
   },
   {
+=======
+>>>>>>> Stashed changes
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
@@ -716,12 +722,15 @@ let projectData = [
     projectUrl: "public/RotatingNav.html",
   },
   {
+<<<<<<< Updated upstream
 
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   },
   {
+=======
+>>>>>>> Stashed changes
     projectName: "Randam User Finder",
     projectImage: "assets/GIFs/Random_User.gif",
     projectUrl: "public/Randomuser.html",
@@ -736,6 +745,7 @@ let projectData = [
     projectImage: 'assets/GIFs/ExpandingCard.gif',
     projectUrl: 'public/ExpandingCard.html'
   },
+<<<<<<< Updated upstream
   
   {
     projectName: "Text to Voice Generator",
@@ -743,6 +753,8 @@ let projectData = [
     projectUrl: "public/textToVoice.html",
 
   },
+=======
+>>>>>>> Stashed changes
   {
     projectName: "Background Slider",
     projectImage: "assets/GIFs/BackgroundSlider.gif",
@@ -999,11 +1011,14 @@ let projectData = [
     projectUrl: "public/Play-Beats.html",
   },
   {
+<<<<<<< Updated upstream
     projectName: "Factorial Calculator",
     projectImage: "assets/Images/FactorialCalculator.jpg",
     projectUrl: "public/FactorialCalculator.html",
   },
   {
+=======
+>>>>>>> Stashed changes
     projectName: "Hospital Registration Form",
     projectImage: "assets/GIFs/registration_form.gif",
     projectUrl: "public/registration_form.html",
@@ -1115,6 +1130,7 @@ let projectData = [
     projectUrl: "public/Mousehover.html",
   },
   {
+<<<<<<< Updated upstream
     projectName: "Mouse Trails effect",
     projectImage: "assets/GIFs/MouseTrails.gif",
     projectUrl: "public/MouseTrails.html",
@@ -1125,6 +1141,8 @@ let projectData = [
     projectUrl: "public/guess.html",
   },
   {
+=======
+>>>>>>> Stashed changes
     projectName: "Colora",
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html",
@@ -1216,11 +1234,14 @@ let projectData = [
     projectUrl: "public/insertionsort.html",
   },
   {
+<<<<<<< Updated upstream
     projectName: "Postfix Expression Evaluator in JavaScript",
     projectImage: "assets/GIFs/postfix-evaluator.png",
     projectUrl: "public/postfixevaluator.html",
   },
   {
+=======
+>>>>>>> Stashed changes
     projectName: "Multiplation Table Calculator",
     projectImage: "assets/GIFs/multiplicationTableCalculator_ss.gif",
     projectUrl: "public/multiplicationTableCalculator.html",
@@ -1242,11 +1263,14 @@ let projectData = [
     projectUrl: "public/math_trainer.html",
   },
   {
+<<<<<<< Updated upstream
     projectName: "Text to Voice Generator",
     projectImage: "assets/GIFs/textToVoice",
     projectUrl: "public/textToVoice.html",
   },
   {
+=======
+>>>>>>> Stashed changes
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html",
@@ -1358,26 +1382,14 @@ let projectData = [
     projectUrl: "public/bucketsort.html",
   },
   {
-    projectName: 'Bubble Sort Visualizer in JavaScript',
-    projectImage: 'assets/Images/bubble-visualizing.png',
-    projectUrl: 'public/bubblevisualiser.html'
-  }
-    ,{
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-   } ,
-
-   {
-     projectName: 'Captcha Validator',
-     projectImage: 'assets/Images/CaptchaValidator.png',
-     projectUrl: 'public/CaptchaValidator.html'
-   } ,
-   {
-     projectName: '3D Image Gallery',
-     projectImage: 'assets/Images/3DImageGallery.PNG',
-     projectUrl: 'public/3DImageGallery.html'
-
+  },
+  {
+    projectName: '3D Image Gallery',
+    projectImage: 'assets/Images/3DImageGallery.PNG',
+    projectUrl: 'public/3DImageGallery.html'
   }
   ,
   {
@@ -1421,6 +1433,34 @@ let projectData = [
     projectUrl: 'public/binarysearch.html'
   
    },
+<<<<<<< Updated upstream
+=======
+  {
+    projectName: "Box-Shadow Css ",
+    projectImage: "assets/GIFs/box-shadow.gif",
+    projectUrl: "public/box-shadow.html"
+  },
+  {
+    projectName: "Px/Rem Converter",
+    projectImage: "assets/GIFs/px-rem.gif",
+    projectUrl: "public/px-rem.html"
+  },
+  {
+    projectName: "Dinosaur Game",
+    projectImage: "assets/GIFs/DinosaurGame.gif",
+    projectUrl: "public/DinosaurGame.html"
+  },
+  {
+    projectName: "Ternary Search Visualization in JavaScript",
+    projectImage: "assets/Images/ternarysearch-visualizing.png",
+    projectUrl: "public/ternarysearch.html"
+  },
+  {
+    projectName: "Binary Search Visualization in JavaScript",
+    projectImage: "assets/Images/binarysearch-visualizing.png",
+    projectUrl: "public/binarysearch.html"
+  },
+>>>>>>> Stashed changes
   {
     projectName: "Heap Sort Visualizer in JavaScript",
     projectImage: "assets/Images/heap-visualizing.png",
@@ -1491,7 +1531,16 @@ let projectData = [
   {
     projectName:"Virtual Keyboard",
     projectImage: "assets/Images/virtual_keyboard.png",
+<<<<<<< Updated upstream
     projectUrl: "public/virtual_keyboard.html",
+=======
+    projectUrl: "public/virtual_keyboard.html"
+  },
+  {
+    projectName: "Dynamic Time message",
+    projectImage: "assets/Images/dynamic_message.png",
+    projectUrl: "public/dynamic_message.html",
+>>>>>>> Stashed changes
   }
   ,
   {
