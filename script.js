@@ -1467,6 +1467,11 @@ let projectData = [
     projectName: "product Counter",
     projectImage: "assets/Images/product_counter.png",
     projectUrl: "public/product_counter.html",
+  },
+  {
+    projectName: "Hand Cricket",
+    projectImage: "assets/GIFs/handcricket.gif",
+    projectUrl: "public/handcricket.html",
   }
 ]
 
