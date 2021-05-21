@@ -20,6 +20,11 @@ let projectData = [
     projectUrl: "public/feedback.html",
   },
   {
+    projectName:"Interactive Flashlight",
+    projectImage: "assets/Images/flashlight.png",
+    projectUrl: "public/flashlight.html",
+  },
+  {
     projectName: "Profile Upload Image",
     projectImage: "assets/GIFs/profilepic.gif",
     projectUrl: "public/uploadimg.html",
