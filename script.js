@@ -20,6 +20,11 @@ let projectData = [
     projectUrl: "public/feedback.html",
   },
   {
+    projectName:"MooD SlideR",
+    projectImage: "assets/Images/mood-slider.png",
+    projectUrl: "public/mood-slider.html",
+  },
+  {
     projectName: "Profile Upload Image",
     projectImage: "assets/GIFs/profilepic.gif",
     projectUrl: "public/uploadimg.html",
