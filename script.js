@@ -772,6 +772,11 @@ let projectData = [
     projectUrl: "public/pixels-game.html"
   },
   {
+    projectName: "Vertical Timeline",
+    projectImage: "assets/GIFs/pixels.gif",
+    projectUrl: "public/vertical_timeline.html"
+  },
+  {
     projectName: "PIN Code Tracker",
     projectImage: "assets/GIFs/pinCodeSearch.gif",
     projectUrl: "public/pinCodeSearch.html"
