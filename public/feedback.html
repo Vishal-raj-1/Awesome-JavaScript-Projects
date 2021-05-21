@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Feedback</title>
+  </head>
+  <style>
+      @import url(https://fonts.googleapis.com/css2?family=Merriweather:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+:root {
+  --dark: #110c22;
+  --bg: #dcdee9;
+  --primary: hsl(224, 100%, 62%);
+  --primary-dark: hsl(224, 100%, 65%);
+  --primary-light: hsl(224, 100%, 90%);
+  --primary-lighter: hsl(224, 100%, 95%);
+  --white: #ffffff;
+  --grey: hsl(0, 0%, 95%);
+  --grey-dark: hsl(0, 0%, 85%);
+  --grey-light: hsl(0, 0%, 97%);
+  --grey-lighter: hsl(0, 0%, 98%);
+  --green: hsl(153, 100%, 22%);
+  --green-light: hsl(153, 100%, 95%);
+  --red: hsl(0, 97%, 37%);
+  --red-light: hsl(0, 97%, 95%);
+  --ff-titles: "Merriweather", serif;
+  --ff-body: "IBM Plex Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--ff-body);
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  color: var(--dark);
+  min-height: 100vh;
+  background: var(--bg);
+  display: grid;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+  flex-direction: column;
+  margin: 32px auto;
+  /* background: var(--white); */
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 20px 55px -29px hsl(0, 0%, 80%); */
+  max-width: 1024px;
+  width: 100%;
+}
+
+header {
+  background: #0f0f6d;
+  width: 100%;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  font-family: var(--ff-body);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--dark);
+  text-align: left;
+}
+
+li:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+a.link {
+  text-decoration: none;
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+a.link:hover {
+  text-decoration: none;
+  color: var(--primary);
+  border-bottom: 1px solid transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 16px;
+}
+
+.pageTitle {
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+}
+
+button {
+  font-size: 16px;
+  /* padding: 24px 32px; */
+  padding: 24px;
+  margin: 16px 8px 16px 0;
+  line-height: 0;
+  width: 100%;
+  vertical-align: top;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-family: var(--ff-body);
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  min-width: 150px;
+  max-width: max-content;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  color: var(--white);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  box-shadow: 0px 21px 21px -6px transparent;
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--primary);
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: 0px 21px 21px -6px var(--primary-light);
+}
+
+.btn-outline {
+  background: var(--white);
+  border: 2px solid #dcdee9;
+  /* border-radius: 50px; */
+}
+
+.btn-outline:hover {
+  background: var(--grey);
+  color: var(--dark);
+  box-shadow: 0px 21px 21px -6px var(--grey);
+}
+
+.btn-dark {
+  border-radius: 50px;
+  padding: 24px;
+  background: var(--dark);
+  color: var(--white);
+  border: 1px solid transparent;
+}
+
+.btn-dark:hover {
+  color: var(--dark);
+  background: var(--white);
+  border: 1px solid var(--dark);
+}
+
+input:not([type="radio"]) {
+  background: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  padding: 16px 24px;
+  min-width: 300px;
+  width: 100%;
+  font: normal 1em var(--ff-body);
+}
+
+input {
+  font: 400 18px var(--ff-body);
+}
+
+.card-layout {
+  position: relative;
+  background: var(--white);
+  box-shadow: 0px 22px 20px -17px rgba(41, 50, 100, 0.146715);
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: var(--ff-titles);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 160%;
+  margin: 16px 0;
+  color: var(--dark);
+}
+
+.title-medium {
+  color: var(--dark);
+  font-family: var(--ff-titles);
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 28px; */
+  /* line-height: 160%; */
+  text-align: left;
+  width: 100%;
+}
+
+p {
+  font-family: var(--ff-body);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.design-credits {
+  margin: 32px 0;
+  color: hsl(0 0% 70% / 1);
+  text-align: center;
+}
+
+.design-credits > a {
+  border-bottom: 1px solid #000;
+}
+
+.spacer {
+  height: 100px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #000;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid;
+}
+
+footer a:hover {
+  border-bottom: 1px transparent;
+}
+
+/* Extra  */
+
+.flex-center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-small {
+  width: 380px;
+  height: 250px;
+}
+
+.layout-medium {
+  width: 550px;
+  height: auto;
+}
+
+.layout-medium .content {
+  align-items: flex-start;
+  padding: 32px;
+}
+
+.layout-large {
+  max-width: 760px;
+  width: 100%;
+  height: 380px;
+  padding: 48px;
+}
+
+.close-button:hover {
+  background: var(--red-light);
+  color: var(--red);
+}
+
+.close-button {
+  cursor: pointer;
+  background: var(--grey-dark);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5em;
+}
+
+.emojis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 32px;
+}
+
+.eachEmoji {
+  position: relative;
+  font-size: 2em;
+  margin: 20px;
+  z-index: 100;
+  vertical-align: middle;
+  cursor: pointer;
+  filter: grayscale(1);
+  opacity: 0.8;
+}
+
+.eachEmoji:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.eachEmoji::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: -10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* background: var(--grey); */
+}
+
+.eachEmoji:hover::before {
+  cursor: pointer;
+  background: var(--grey);
+}
+
+#users-feedback {
+  max-width: 400px;
+  width: 100%;
+  min-height: 150px;
+  height: auto;
+  padding: 16px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+}
+
+.follow-up-options > label {
+  margin-right: 32px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.follow-up-options > label > input[type="radio"] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.radio-circle {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: var(--white);
+  border: 1px solid var(--primary);
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.follow-up-options > label:hover .radio-circle {
+  background: var(--primary-light);
+}
+
+.follow-up-options > label > input:checked ~ .radio-circle::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+}
+
+.user-actions {
+  margin: 32px 0 0;
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    padding: 16px;
+    margin: 0;
+  }
+
+  .layout-medium {
+    width: 90%;
+  }
+
+  .layout-medium .content {
+    padding: 16px;
+  }
+  .pageTitle {
+    font-size: 100%;
+  }
+
+  .eachEmoji {
+    font-size: 1em;
+  }
+
+  .eachEmoji::before {
+    width: 45px;
+    height: 45px;
+  }
+
+  .follow-up-options {
+    margin: 16px auto;
+  }
+
+  .user-actions {
+    margin-top: 16px;
+  }
+}
+
+  </style>
+  <body>
+    <main>
+      <div class="card-layout layout-medium">
+        <div class="content">
+
+          <h1 class="title">
+            Give feedback
+          </h1>
+          <p>
+            What do you think of the editing tool?
+          </p>
+
+          <div class="emojis">
+            <span class="eachEmoji">😥</span>
+            <span class="eachEmoji">😔</span>
+            <span class="eachEmoji">😐</span>
+            <span class="eachEmoji">😀</span>
+            <span class="eachEmoji">😇</span>
+          </div>
+          <h3>
+            Do you have any thoughts you’d like to share?
+          </h3>
+          <textarea name="users-feedback" id="users-feedback"></textarea>
+
+          <h3>
+            May we follow you up on your feedback?
+          </h3>
+
+          <div class="follow-up-options">
+            <label class="button">
+              <input type="radio" name="follow-up" id="follow-up-yes" checked>
+              <span class="radio-circle"></span>
+              Yes
+            </label>
+            <label class="button">
+              <input type="radio" name="follow-up" id="follow-up-no">
+              <span class="radio-circle"></span>
+              No
+            </label>
+
+          </div>
+
+          <div class="user-actions">
+            <button class="btn-primary send">
+              Send
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script>
+          $('.eachEmoji').click(function(){
+            $('.eachEmoji').each(function(index,value){
+              $(this).css('filter','grayscale(1)');
+            });
+            $(this).css('filter','grayscale(0)');
+          })
+
+          $('.send').click(function(){
+            $('.eachEmoji').each(function(index,value){
+              $(this).css('filter','grayscale(1)');
+            });
+            $('#users-feedback').val('');
+            $('#follow-up-yes').prop("checked",false);
+            $('#follow-up-no').prop("checked",false);
+          })
+        </script>
+    
+  </body>
+</html>
