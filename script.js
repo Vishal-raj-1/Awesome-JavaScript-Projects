@@ -973,6 +973,11 @@ let projectData = [
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html",
   }
+  {
+    projectName: "WorldClock",
+    projectImage: "assets/Images/worldtime.png",
+    projectUrl: "public/worldclock.html",
+  }
 
 ];
 
