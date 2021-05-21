@@ -5,6 +5,11 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html"
   },
   {
+    projectName: "Weather App",
+    projectImage: "assets/Images/weatherApp/Image.PNG",
+    projectUrl: "public/weatherApp.html"
+  },
+  {
     projectName: "Rubik's Cube",
     projectImage: "assets/GIFs/rubiks_cube.gif",
     projectUrl: "public/rubiks_cube.html"
@@ -15,7 +20,7 @@ let projectData = [
     projectUrl: "public/binary_circle.html"
   },
   {
-    projectName:"Emoji Feedback Form",
+    projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html",
   },
@@ -556,7 +561,7 @@ let projectData = [
     projectImage: 'assets/Images/tip-calc.png',
     projectUrl: 'public/tip-calculator.html'
   }
- 
+
   ,
   {
     projectName: "DragNDrop",
@@ -1363,21 +1368,21 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-    ,{
+  , {
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-   } ,
+  },
 
-   {
-     projectName: 'Captcha Validator',
-     projectImage: 'assets/Images/CaptchaValidator.png',
-     projectUrl: 'public/CaptchaValidator.html'
-   } ,
-   {
-     projectName: '3D Image Gallery',
-     projectImage: 'assets/Images/3DImageGallery.PNG',
-     projectUrl: 'public/3DImageGallery.html'
+  {
+    projectName: 'Captcha Validator',
+    projectImage: 'assets/Images/CaptchaValidator.png',
+    projectUrl: 'public/CaptchaValidator.html'
+  },
+  {
+    projectName: '3D Image Gallery',
+    projectImage: 'assets/Images/3DImageGallery.PNG',
+    projectUrl: 'public/3DImageGallery.html'
 
   }
   ,
@@ -1386,12 +1391,12 @@ let projectData = [
     projectImage: 'assets/Images/button.PNG ',
     projectUrl: 'public/ButtonGenerator.html'
 
-   },
-   {
-     projectName: 'Battery Indicator',
-     projectImage: 'assets/Images/BatteryIndicator.PNG',
-     projectUrl: 'public/BatteryIndicator.html'
-   },
+  },
+  {
+    projectName: 'Battery Indicator',
+    projectImage: 'assets/Images/BatteryIndicator.PNG',
+    projectUrl: 'public/BatteryIndicator.html'
+  },
   {
     projectName: "Captcha Validator",
     projectImage: "assets/Images/CaptchaValidator.png",
@@ -1532,7 +1537,7 @@ function getProjects() {
   let output = "";
   projectDetails.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
@@ -1578,7 +1583,7 @@ searchBtn.addEventListener("click", (e) => {
   let filter = "";
   filterData.forEach(
     (data, item) =>
-      (filter += `
+    (filter += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
