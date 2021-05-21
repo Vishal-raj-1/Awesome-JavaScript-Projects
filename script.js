@@ -36,6 +36,11 @@ let projectData = [
     projectUrl: "public/uploadimg.html",
   },
   {
+    projectName: "Expanding Menu Bar",
+    projectImage: "assets/Images/expanding-menubar.png",
+    projectUrl: "public/expanding-menu.html",
+  },
+  {
     projectName: "Laptop Portfolio",
     projectImage: "assets/GIFs/lappor.gif",
     projectUrl: "public/lappor.html"
