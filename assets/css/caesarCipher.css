@@ -1,0 +1,335 @@
+body {
+    font-family: sans-serif;
+    background-image: -webkit-linear-gradient(left, #43cae2, #185a9d);
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    user-select: none;
+}
+
+.loader {
+    display: block;
+    margin-top: 60%;
+    margin-left: 38%;
+
+}
+
+#cont {
+    display: block;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+    background-image: -webkit-linear-gradient(left, #43cae2, #185a9d);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+
+}
+
+.loader span {
+    display: inline-block;
+    height: 35px;
+    width: 10px;
+    background-color: #fff;
+    margin: 1px;
+    transform: scaleY(1);
+    animation: load .9s ease-in-out infinite;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: .09s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: .18s;
+}
+
+.loader span:nth-child(4) {
+    animation-delay: .27s;
+}
+
+.loader span:nth-child(5) {
+    animation-delay: .36s;
+}
+
+
+@keyframes load {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1, 2.5);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+}
+
+
+
+@media only screen and (min-width:500px) {
+    .loader {
+        margin-top: 20%;
+        margin-left: 41%;
+    }
+}
+
+
+.icon {
+    color: #fff;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    padding: 6px;
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: 8px 0px 3px 8px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#nosee {
+    margin-top: -35px;
+    visibility: hidden;
+}
+
+#see {
+    visibility: visible;
+}
+
+#ab {
+    position: absolute;
+    visibility: hidden;
+    background-color: #fff;
+    width: 90%;
+    height: 460px;
+    margin-left: 5%;
+    font-family: 'Merienda', cursive;
+    z-index: 10;
+}
+
+#abj {
+    width: 90%;
+    height: 340px;
+    overflow-y: scroll;
+    margin-left: 5%;
+}
+
+#img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 7px;
+    box-shadow: 3px 3px 5px black;
+    outline: none;
+    margin-left: 13px;
+
+}
+
+#shift {
+    font-family: 'Slabo 27px', serif;
+    color: #000;
+    font-size: 24px;
+    margin: -20px 3px 3px 8%;
+}
+
+h2 {
+    padding-top: 6px;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Slabo 27px', serif;
+}
+
+h3 {
+    padding: 5px;
+    font-size: 30px;
+    border: 3px dashed #000;
+    color: #000;
+    text-align: center;
+    margin: 5%;
+    font-family: 'Slabo 27px', serif;
+}
+
+#top {
+    display: grid;
+    grid-template-columns: 35% 64%;
+    padding: 3px 3px 3px 3px;
+    border-radius: 8px;
+    margin: 0px 0px 50px 10px;
+    border: 4px;
+    border-color: cyan;
+}
+
+input[type="text"] {
+    width: 85%;
+    height: 42px;
+    background: transparent;
+    font-family: 'Merienda', cursive;
+    outline: none;
+    color: #000;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-width: 0px 0px 5px 0px;
+    user-select: auto;
+}
+
+input[type="number"] {
+    display: inline-block;
+    background: transparent;
+    font-family: 'Slabo 27px', serif;
+    outline: none;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    border: 3px solid #fff;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.function,
+.function1 {
+    height: 30px;
+    width: 85%;
+    font-family: 'Slabo 27px', serif;
+    position: relative;
+    margin: 5% 0 10% 10.5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #fff;
+
+}
+
+.function1 {
+    margin: 3% 20px 0px 0px;
+}
+
+.fun {
+    border-style: solid;
+    height: 25px;
+    width: 115px;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    border-radius: 25px;
+    border-color: cyan;
+    font-weight: bolder;
+    transition: .6 ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.fun:active {
+    transform: scale(0.8);
+
+}
+
+#output {
+    font-family: 'Merienda', cursive;
+    padding: 7px;
+    overflow-x: hidden;
+    height: 70px;
+    width: 85%;
+    margin: 8%;
+    user-select: auto;
+}
+
+@media only screen and (min-width:500px) {
+
+    .function,
+    .function1 {
+        margin-left: 15%;
+    }
+
+    h2 {
+        font-size: 35px;
+        padding-top: -130px;
+        margin-bottom: -10%;
+    }
+}
+
+#modal {
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
+}
+
+.close {
+    height: 15px;
+    width: 18px;
+    padding: 1px 0px 5px 6px;
+    background-color: white;
+    margin: 10px 0px 2px 89%;
+}
+
+#image_modal {
+    margin: 15% 0 0 4%;
+    height: 260px;
+    width: 90%;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+    }
+
+    34% {
+        transform: scale(1);
+    }
+
+    66% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.popup {
+    background-color: #fff;
+    width: 90%;
+    position: absolute;
+    border-radius: 10px;
+    margin: 4%;
+    padding: 1%;
+    top: calc(42% - 130px);
+    z-index: 20;
+}
+
+#ok {
+    width: 50px;
+    padding: 13px;
+    color: #fff;
+    margin: 20px;
+    border-radius: 2px;
+    outline: none;
+    background-color: #3498db;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+img {
+    height: 190px;
+    width: 270px;
+    border-radius: 10px;
+    margin: 8px 12px 12px 6px;
+}

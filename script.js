@@ -15,7 +15,7 @@ let projectData = [
     projectUrl: "public/binary_circle.html"
   },
   {
-    projectName:"Emoji Feedback Form",
+    projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html",
   },
@@ -1368,12 +1368,11 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-    ,{
+  , {
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-   } ,
-
+  },
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
@@ -1519,6 +1518,12 @@ let projectData = [
     projectImage: "assets/Images/fibonacci/fibo1.png",
     projectUrl: "public/fibonacci.html",
   }
+  ,
+  {
+    projectName: "Caesar Cipher",
+    projectImage: "assets/Images/caesarCipher.png",
+    projectUrl: "public/caesarCipher.html",
+  }
 ]
 
 var projectDetails = projectData.slice(0);
@@ -1537,7 +1542,7 @@ function getProjects() {
   let output = "";
   projectDetails.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
@@ -1583,7 +1588,7 @@ searchBtn.addEventListener("click", (e) => {
   let filter = "";
   filterData.forEach(
     (data, item) =>
-      (filter += `
+    (filter += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
