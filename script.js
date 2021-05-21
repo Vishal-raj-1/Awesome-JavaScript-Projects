@@ -56,6 +56,11 @@ let projectData = [
     projectUrl: "public/fall-game.html",
   },
   {
+    projectName: "Blob Maker",
+    projectImage: "assets/Images/blob-maker.png",
+    projectUrl: "public/blob-maker.html",
+  },
+  {
     projectName: "Webpage Printing",
     projectImage: "assets/GIFs/web.gif",
     projectUrl: "public/web-page.html",
