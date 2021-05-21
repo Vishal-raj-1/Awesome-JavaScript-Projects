@@ -10,7 +10,7 @@ let projectData = [
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
     projectUrl: "public/Restaurant.html",
-  },  
+  },
   {
     projectName: "FORM VALIDATE",
     projectImage: "assets/Images/formvalidate.png",
@@ -1328,7 +1328,12 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
-   }
+   },
+   {
+    projectName: "Filterable Image Gallery",
+    projectImage: "assets/Images/Filterable_Image_Gallery.jpg",
+    projectUrl: "public/Filterable_Image_Gallery.html",
+  }
 ]
 
 
