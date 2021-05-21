@@ -773,7 +773,7 @@ let projectData = [
   },
   {
     projectName: "Vertical Timeline",
-    projectImage: "assets/GIFs/pixels.gif",
+    projectImage: "assets/Images/vertical_timeline/Screenshot.png",
     projectUrl: "public/vertical_timeline.html"
   },
   {
