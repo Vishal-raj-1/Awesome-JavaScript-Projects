@@ -1471,7 +1471,8 @@ let projectData = [
     projectName: 'JoyStick Controls',
     projectImage: 'assets/GIFs/joystick.gif',
     projectUrl: 'public/joystick.html'
-  },{
+  },
+  {
     projectName: "Cardioid",
     projectImage: "assets/Images/cardioid.png",
     projectUrl: "public/cardioid.html",
