@@ -10,26 +10,26 @@ let frames=0;
 
 // images loading
 let sprite=new Image(); //image object creation
-sprite.src="../Images/FlappyBird/sprite.png";
+sprite.src="../assets/Images/FlappyBird/sprite.png";
 
 let cricket=new Image();
-cricket.src="../Images/FlappyBird/virus.png";
+cricket.src="../assets/Images/FlappyBird/virus.png";
 
 //load sound
 let flap=new Audio();
-flap.src="../sounds/flap.wav";
+flap.src="../assets/sounds/flap.wav";
 
 let point=new Audio();
-point.src="../sounds/point.wav";
+point.src="../assets/sounds/point.wav";
 
 let hit=new Audio();
-hit.src="../sounds/hit.wav";
+hit.src="../assets/sounds/hit.wav";
 
 let die=new Audio();
-die.src="../sounds/die.wav";
+die.src="../assets/sounds/die.wav";
 
 let swooshing=new Audio();
-swooshing.src="../sounds/swooshing.wav";
+swooshing.src="../assets/sounds/swooshing.wav";
 
 
 //State Object
