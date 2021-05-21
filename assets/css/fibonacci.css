@@ -1,0 +1,21 @@
+body{background-color: #f4f4f4;color: #555555;font: normal 16px Arial, Helvetica, sans-serif;line-height: 1.6em;margin: 0;}
+
+.button{background-color: #333;color:#fff;padding: 10px 15px;border:none;font: bold 16px Arial, Helvetica, sans-serif;}
+
+.button:hover{background-color: red;color: #fff;}
+
+.container{width: 80%;margin: auto;text-align: center;}
+
+.gameDiv{margin: 20px 0;border: 2px dotted #ccc;padding: 20px;border-radius: 20px;}
+
+#dialogoverlay{display: none;opacity: .8;position: fixed;top: 0px;left: 0px;background: #fff;width: 100%;z-index: 10;}
+
+#dialogbox{display: none;position: fixed;background: #000;border-radius: 7px;width: 550px;z-index: 10; }
+
+#dialogbox > div{background: #fff; margin: 8px;}
+
+#dialogbox > div > #dialogboxhead{background: #666;font-size: 19px;padding: 10px;color: #ccc;}
+
+#dialogbox > div > #dialogboxbody{background: #333;padding: 20px;color: #fff;overflow: scroll;}
+
+#dialogbox > div > #dialogboxfoot{background: #666;padding: 10px;text-align: right;}
