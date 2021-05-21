@@ -604,17 +604,7 @@ let projectData = [
     projectUrl: 'public/RGB_HEX.html'
   }
   ,
-  {
-    projectName: 'Text to Voice Generator',
-    projectImage: 'assets/GIFs/Text-voice.gif',
-    projectUrl: 'public/textToVoice.html'
-  }
-  ,
-  {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/Text-voice.gif",
-    projectUrl: "public/textToVoice.html",
-  },
+
   {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
@@ -716,11 +706,7 @@ let projectData = [
     projectImage: "assets/GIFs/textToVoice.gif",
     projectUrl: "public/textToVoice.html",
   },
-  {
-    projectName: "Randam User Finder",
-    projectImage: "assets/GIFs/Random_User.gif",
-    projectUrl: "public/Randomuser.html",
-  },
+
   {
     projectName: 'Math Quiz for kids 🙂 ',
     projectImage: 'assets/Images/MathQuiz.jpg',
@@ -732,12 +718,7 @@ let projectData = [
     projectUrl: 'public/ExpandingCard.html'
   },
   
-  {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice.gif",
-    projectUrl: "public/textToVoice.html",
 
-  },
   {
     projectName: "Background Slider",
     projectImage: "assets/GIFs/BackgroundSlider.gif",
@@ -1145,16 +1126,7 @@ let projectData = [
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html",
   },
-  {
-    projectName: "Mouse Trails effect",
-    projectImage: "assets/GIFs/MouseTrails.gif",
-    projectUrl: "public/MouseTrails.html",
-  },
-  {
-    projectName: "Guess The Number",
-    projectImage: "assets/Images/guess.png",
-    projectUrl: "public/guess.html",
-  },
+
   {
     projectName: "Fractal Tree",
     projectImage: "assets/Images/fractalTree/fractalTree.gif",
@@ -1236,21 +1208,13 @@ let projectData = [
     projectImage: "assets/Images/math_trainer.png",
     projectUrl: "public/math_trainer.html",
   },
-  {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
-    projectUrl: "public/textToVoice.html",
-  },
+
   {
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html",
   },
-  {
-    projectName: "Factorial Calculator",
-    projectImage: "assets/Images/FactorialCalculator.jpg",
-    projectUrl: "public/FactorialCalculator.html",
-  },
+
   {
     projectName: "Audio Player App",
     projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
@@ -1297,8 +1261,7 @@ let projectData = [
     projectName: "Smooth Scroll",
     projectImage: "assets/GIFs/Smooth_scroll.gif ",
     projectUrl: "public/Smooth_scroll.html",
-  }
-  ,
+  },
   
   {
     projectName: "Apple Collector game",
@@ -1442,11 +1405,7 @@ let projectData = [
     projectImage: "assets/Images/Pacman.png",
     projectUrl: "public/Pacman.html",
   },
-  {
-    projectName: "Captcha Validator",
-    projectImage: "assets/Images/CaptchaValidator.png",
-    projectUrl: "public/CaptchaValidator.html",
-  },
+
   {
     projectName: "Re-Create Giphy",
     projectImage: "assets/Images/giphy.png",
