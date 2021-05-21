@@ -1394,6 +1394,12 @@ let projectData = [
     projectUrl: "public/shellsort.html",
   },
   {
+    projectName: "Audio Player App",
+    projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
+    projectUrl: "public/MusicApp.html",
+
+  },
+  {
     projectName: "Balloon Pop Game",
     projectImage: "assets/Images/BalloonPopGame.png",
     projectUrl: "public/BalloonPopGame.html",
