@@ -14,6 +14,11 @@ let projectData = [
     projectImage: "assets/GIFs/PigGame.gif",
     projectUrl: "public/PigGame.html",
   },
+   {
+    projectName: "Credit Card Payment Form",
+    projectImage: "assets/GIFs/credit_card.png",
+    projectUrl: "public/credit_card.html",
+  },
   {
     projectName: "Work Time Tracker",
     projectImage: "assets/GIFs/timetracker.gif",
