@@ -175,6 +175,11 @@ let projectData = [
     projectUrl: "public/ACE_EYE.html"
   },
   {
+    projectName: "GAME_OF_LIFE",
+    projectImage: "assets/Images/GAME_OF_LIFE.png",
+    projectUrl: "public/GAME_OF_LIFE.html",
+  },
+  {
     projectName: "Sudoku Game",
     projectImage: "assets/Images/sudoku.png",
     projectUrl: "public/Sudoko.html"
