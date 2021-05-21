@@ -21,6 +21,7 @@ let projectData = [
   },
   {
     projectName:"Emoji Feedback Form",
+    projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html",
   },
@@ -178,6 +179,11 @@ let projectData = [
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html"
+  },
+  {
+    projectName: "GAME_OF_LIFE",
+    projectImage: "assets/Images/GAME_OF_LIFE.png",
+    projectUrl: "public/GAME_OF_LIFE.html",
   },
   {
     projectName: "Sudoku Game",
@@ -1368,12 +1374,11 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-    ,{
+  , {
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-   } ,
-
+  },
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
@@ -1519,6 +1524,18 @@ let projectData = [
     projectImage: "assets/Images/fibonacci/fibo1.png",
     projectUrl: "public/fibonacci.html",
   }
+  ,
+  {
+    projectName: "Bridge N Torch",
+    projectImage: "assets/Images/bridgeNtorch.png",
+    projectUrl: "public/bridgeNtorch.html",
+  }
+,{
+    projectName: "Caesar Cipher",
+    projectImage: "assets/Images/caesarCipher.png",
+    projectUrl: "public/caesarCipher.html",
+
+  }
 ]
 
 var projectDetails = projectData.slice(0);
@@ -1537,7 +1554,7 @@ function getProjects() {
   let output = "";
   projectDetails.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
@@ -1583,7 +1600,7 @@ searchBtn.addEventListener("click", (e) => {
   let filter = "";
   filterData.forEach(
     (data, item) =>
-      (filter += `
+    (filter += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img

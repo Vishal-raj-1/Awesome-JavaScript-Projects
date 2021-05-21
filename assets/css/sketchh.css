@@ -1,0 +1,15 @@
+.game{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    color:rgb(255, 223, 108);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    background-size: 40;
+    
+}
+*
+{
+    background-color: black;
+}
