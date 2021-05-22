@@ -56,15 +56,6 @@ function clearOutput() {
 	outputBox.innerHTML = null;
 }
 
-// Function to go to the project repository at Github
-function viewRepo() {
-	window.location = 'https://github.com/hildergill/area-calculator';
-}
-
-// Function to go to the "licenses.html" page
-function viewLicense() {
-	window.location = './licenses.html';
-}
 
 // Function to clear all inputs
 function clearInputs() {
@@ -76,12 +67,9 @@ function generateMenuTitleBox() {
 		authorTitleLink = document.createElement('a'),
 		titleBoxElements = [document.createElement('p'), document.createElement('p')];
 
-	authorTitleLink.href = 'https://github.com/hildergill';
-	authorTitleLink.innerHTML = 'hildergill';
 
 	titleBoxElements[0].innerHTML = 'Area Calculator';
-	titleBoxElements[1].innerHTML = 'By ';
-	titleBoxElements[1].appendChild(authorTitleLink);
+
 
 	menuSectionElement.appendChild(generateCommonBox(titleBoxElements, 'title_box'));
 }
