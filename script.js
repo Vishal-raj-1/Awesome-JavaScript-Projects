@@ -1556,6 +1556,11 @@ let projectData = [
     projectUrl: "public/caesarCipher.html",
 
   }
+  ,{
+    projectName: "Decimal To Binary Converter",
+    projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
+    projectUrl: "public/DecimalToBinaryConverter.html",
+  }
 ]
 
 var projectDetails = projectData.slice(0);
