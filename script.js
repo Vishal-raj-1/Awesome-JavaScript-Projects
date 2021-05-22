@@ -1542,12 +1542,16 @@ let projectData = [
     projectName: "Dynamic Time message",
     projectImage: "assets/Images/dynamic_message.png",
     projectUrl: "public/dynamic_message.html",
-  }
-  ,
+  },
   {
     projectName: "Fibonacci Series Generator",
     projectImage: "assets/Images/fibonacci/fibo1.png",
     projectUrl: "public/fibonacci.html",
+  },
+  {
+    projectName: "Script Detection",
+    projectImage: "assets/GIFs/scriptDetection.gif",
+    projectUrl: "public/scriptDetection.html"
   }
   ,
   {
