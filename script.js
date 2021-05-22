@@ -224,6 +224,12 @@ let projectData = [
   }
   ,
   {
+    projectName: 'Random Maze Generator',
+    projectImage: 'assets/GIFs/Mazegenerator.gif',
+    projectUrl: 'public/mazeGenerator.html'
+  }
+  ,
+  {
     projectName: 'Music Player',
     projectImage: 'assets/GIFs/Music_Player.gif',
     projectUrl: 'public/MusicPlayer.html'
