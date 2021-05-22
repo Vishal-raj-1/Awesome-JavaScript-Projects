@@ -1562,14 +1562,18 @@ let projectData = [
     projectName: "Script Detection",
     projectImage: "assets/GIFs/scriptDetection.gif",
     projectUrl: "public/scriptDetection.html"
-  }
-  ,
+  },
+  {
+    projectName: "Canvas Text",
+    projectImage: "assets/GIFs/canvasText.gif",
+    projectUrl: "public/canvasText.html"
+  },
   {
     projectName: "Bridge N Torch",
     projectImage: "assets/Images/bridgeNtorch.png",
     projectUrl: "public/bridgeNtorch.html",
-  }
-,{
+  },
+  {
     projectName: "Caesar Cipher",
     projectImage: "assets/Images/caesarCipher.png",
     projectUrl: "public/caesarCipher.html",
