@@ -621,11 +621,6 @@ let projectData = [
     projectUrl: "public/textToVoice.html"
   },
   {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/Text-voice.gif",
-    projectUrl: "public/textToVoice.html"
-  },
-  {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
     projectUrl: "public/github_finder.html"
@@ -660,16 +655,7 @@ let projectData = [
     projectImage: "assets/Images/calendar_backcover.png",
     projectUrl: "public/calendar.html"
   },
-  {
-    projectName: "Randam User Finder",
-    projectImage: "assets/GIFs/Random_User.gif",
-    projectUrl: "public/Randomuser.html"
-  },
-  {
-    projectName: "Math Quiz for kids � ",
-    projectImage: "assets/Images/MathQuiz.jpg",
-    projectUrl: "public/MathQuiz.html"
-  },
+ 
   {
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
@@ -734,17 +720,6 @@ let projectData = [
     projectName: "Randam User Finder",
     projectImage: "assets/GIFs/Random_User.gif",
     projectUrl: "public/Randomuser.html"
-  },
-  {
-
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice.gif",
-    projectUrl: "public/textToVoice.html",
-  },
-  {
-    projectName: "Randam User Finder",
-    projectImage: "assets/GIFs/Random_User.gif",
-    projectUrl: "public/Randomuser.html",
   },
   {
     projectName: 'Math Quiz for kids 🙂 ',
@@ -1013,11 +988,6 @@ let projectData = [
     projectUrl: "public/Play-Beats.html"
   },
   {
-    projectName: "Factorial Calculator",
-    projectImage: "assets/Images/FactorialCalculator.jpg",
-    projectUrl: "public/FactorialCalculator.html"
-  },
-  {
     projectName: "Hospital Registration Form",
     projectImage: "assets/GIFs/registration_form.gif",
     projectUrl: "public/registration_form.html"
@@ -1164,16 +1134,7 @@ let projectData = [
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html"
   },
-  {
-    projectName: "Mouse Trails effect",
-    projectImage: "assets/GIFs/MouseTrails.gif",
-    projectUrl: "public/MouseTrails.html"
-  },
-  {
-    projectName: "Guess The Number",
-    projectImage: "assets/Images/guess.png",
-    projectUrl: "public/guess.html"
-  },
+  
   {
     projectName: "Fractal Tree",
     projectImage: "assets/Images/fractalTree/fractalTree.gif",
@@ -1254,12 +1215,7 @@ let projectData = [
     projectImage: "assets/Images/math_trainer.png",
     projectUrl: "public/math_trainer.html"
   },
-  {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice",
-    projectUrl: "public/textToVoice.html"
-  },
-  {
+   {
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html"
@@ -1273,17 +1229,6 @@ let projectData = [
     projectName: "Audio Player App",
     projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
     projectUrl: "public/MusicApp.html"
-  },
-  {
-    projectName: "Factorial Calculator",
-    projectImage: "assets/Images/FactorialCalculator.jpg",
-    projectUrl: "public/FactorialCalculator.html",
-  },
-  {
-    projectName: "Audio Player App",
-    projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
-    projectUrl: "public/MusicApp.html",
-
   },
   {
   projectName: "Google keep Clone",
@@ -1409,11 +1354,6 @@ let projectData = [
      projectUrl: 'public/BatteryIndicator.html'
    },
   {
-    projectName: "Captcha Validator",
-    projectImage: "assets/Images/CaptchaValidator.png",
-    projectUrl: "public/CaptchaValidator.html"
-  },
-  {
     projectName: "Box-Shadow Css ",
     projectImage: "assets/GIFs/box-shadow.gif",
     projectUrl: "public/box-shadow.html"
@@ -1444,17 +1384,6 @@ let projectData = [
     projectUrl: "public/heapsort.html"
   },
   {
-    projectName: "Bubble Sort Visualizer in JavaScript",
-    projectImage: "assets/Images/bubble-visualizing.png",
-    projectUrl: "public/bubblevisualiser.html"
-  },
-  {
-    projectName: "Linear Search Visualization in JavaScript",
-    projectImage: "assets/Images/linearsearch-visualizing.png",
-    projectUrl: "public/linearsearch.html"
-  },
-
-  {
     projectName: "Text-Style CSS",
     projectImage: "assets/Images/text-style.png",
     projectUrl: "public/text-style.html"
@@ -1463,11 +1392,6 @@ let projectData = [
     projectName: "Pacman game",
     projectImage: "assets/Images/Pacman.png",
     projectUrl: "public/Pacman.html"
-  },
-  {
-    projectName: "Captcha Validator",
-    projectImage: "assets/Images/CaptchaValidator.png",
-    projectUrl: "public/CaptchaValidator.html"
   },
   {
     projectName: "Merge Sort Visualizer in JavaScript",
@@ -1483,12 +1407,6 @@ let projectData = [
     projectName: "Shell Sort Visualizer in JavaScript",
     projectImage: "assets/Images/shell-visualizing.png",
     projectUrl: "public/shellsort.html"
-  },
-  {
-    projectName: "Audio Player App",
-    projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
-    projectUrl: "public/MusicApp.html",
-
   },
   {
     projectName: "Balloon Pop Game",
@@ -1525,12 +1443,7 @@ let projectData = [
     projectImage: "assets/Images/virtual_keyboard.png",
     projectUrl: "public/virtual_keyboard.html"
   },
-  {
-    projectName: "product Counter",
-    projectImage: "assets/Images/product_counter.png",
-    projectUrl: "public/product_counter.html"
-  },
-  {
+    {
     projectName: "Dynamic Time message",
     projectImage: "assets/Images/dynamic_message.png",
     projectUrl: "public/dynamic_message.html",
