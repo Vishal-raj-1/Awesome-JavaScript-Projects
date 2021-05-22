@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/binary_circle.html"
   },
   {
+    projectName: "Shoot Target Game",
+    projectImage: "assets/GIFs/shoot.png",
+    projectUrl: "public/shoot.html",
+  },
+  {
     projectName: "Etch Sketch Game",
     projectImage: "assets/GIFs/etch.png",
     projectUrl: "public/etch.html",
