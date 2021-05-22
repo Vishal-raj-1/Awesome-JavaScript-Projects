@@ -1569,7 +1569,13 @@ let projectData = [
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
+  },
+  {
+    projectName: "Pokemon Pokedex",
+    projectImage: "assets/Images/pokemon.png",
+    projectUrl: "public/pokemon.html"
   }
+
 ]
 
 var projectDetails = projectData.slice(0);
