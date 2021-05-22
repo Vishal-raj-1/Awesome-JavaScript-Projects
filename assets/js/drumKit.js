@@ -1,10 +1,14 @@
 window.addEventListener('keydown', function (e) {
-  console.log(e.keyCode);
+  console.log(e.key);
+  var key=e.key;
+  var k_key=key.toLocaleUpperCase();
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   console.log(audio);
   if (!audio) return;
   audio.currentTime = 0;
   audio.play();
+  buttonAnimation(k_key);
+
 });
 
 
@@ -80,4 +84,18 @@ function buttonAnimation(currentkey) {
   setTimeout(function () {
     activeButton.classList.remove("pressed");
   }, 100);
+}
+
+// to change the theme 
+
+document.getElementById('change-theme-btn')
+.addEventListener('click', function () {
+  let darkThemeEnabled = document.body.classList.toggle('dark-theme');
+  localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
+  
+});
+
+if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
+  document.body.classList.add('dark-theme');
+  
 }
