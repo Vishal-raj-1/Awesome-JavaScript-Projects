@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shell Sort</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/css/shellsort.css" />
+</head>
+<body>
+
+    <section class="head">Shell Sort Visualizer</section>
+   <section class="data-container"></section> 
+
+    <form class="form-sort">
+        <input type="text" id="f-1" />
+        <input type="text" id="f-2" />
+        <input type="text" id="f-3" />
+        <input type="text" id="f-4" />
+        <input type="text" id="f-5" />
+        <input type="text" id="f-6" />
+        <input type="text" id="f-7" />
+        <input type="text" id="f-8" />
+        <input type="text" id="f-9" />
+        <input type="text" id="f-10" />
+        <span class="form-more"> + </span>
+        
+    </form>
+<!-- "Generate New Array" button -->
+<button  class="btn1" onclick="generate()" id="Button1" >
+    Generate New Array</button>   
+    
+  <!-- "Shell Sort" button -->
+  <button class="btn" 
+          onclick="SelectionSort(),disable()" id="Button2" >
+    Shell Sort</button>
+<script type="text/javascript" src="../assets/js/shellsort.js"></script>
+</body>
+</html>

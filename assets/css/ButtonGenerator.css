@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --white: #ffffff;
+  --bgColor: #f8f8ff;
+  --h1Color: #fc6351;
+  --propertiesBgColor: #ffce54;
+  --buttonBgColor: #ccd1d9;
+  --codeNameColor: #d8334a;
+  --codeColor: #434a54;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto" sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.container {
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  height: 100vh;
+}
+
+h1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  color: var(--h1Color);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.properties,
+.button {
+  height: 83vh;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  height: 40vh;
+}
+
+.properties {
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+label {
+  margin-right: 30px;
+  font-size: 1.2rem;
+  color: #434154;
+}
+
+input,
+select {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: none;
+  margin-top: 15px;
+}
+
+input[type="radio"] {
+  width: 30px;
+}
+
+input[name="border"]:last-child {
+  margin-left: 40px;
+}
+
+input[type="number"] {
+  width: 47%;
+  display: inline-block;
+}
+
+#border {
+  opacity: 0;
+}
+
+.left {
+  margin: 0;
+}
+
+.right {
+  margin-left: 18px;
+}
+
+input:first-child {
+  margin-top: 0;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.button {
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons a {
+  text-decoration: none;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  border-radius: 50px;
+  color: var(--white);
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+.html,
+.css {
+  color: var(--codeNameColor);
+  opacity: 0;
+}
+
+.html {
+  padding-top: 10px;
+}
+
+#html-code,
+#css-code {
+  padding-left: 20px;
+  color: var(--codeColor);
+}
+
+.css {
+  margin-top: 30px;
+  padding-top: 10px;
+}

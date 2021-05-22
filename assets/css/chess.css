@@ -1,47 +1,55 @@
-html,
+
 body {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(https://wallup.net/wp-content/uploads/2016/03/09/336862-abstract-cube.jpg);
+}
+html
+{
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background-color: #fad387;
-}
+    }
 
 div * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box ;
+    }
 
 h1 {
     justify-content: center;
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 4rem;
-    color: firebrick;
+    padding: 0;
+    font-size: 100px;
+    color: whitesmoke;
+    margin-bottom: 10PX;
 }
 
 #turn {
-    max-width: 451px;
     max-height: 30px;
     width: 100%;
     height: 100%;
     position: relative;
     float: right;
-    border-radius: 5px;
-    border: 1px solid rgb(0, 0, 0);
-    border-style: inset;
+    border-radius: 100px;
+    border: 5px solid rgb(101, 71, 236);
+    border-style:double;
     text-align: center;
-    padding: 5px 0 0 0;
-    background: #fff;
+    padding: 5px 1 0 0;
+    background: rgb(68, 245, 236);
+   margin-top: 10PX;
     transition: .85s linear;
 }
 
 .turnhighlight {
-    background: #5cb85c !important;
-    color: #fff;
+    background: #92ee92 !important;
+    color: rgb(247, 247, 247);
 }
 
 #game {
@@ -51,6 +59,7 @@ h1 {
     height: 100%;
     position: relative;
     margin: 20px auto;
+    background:linear-gradient(to left , #d373c3 , #efefef);
 }
 
 .cellprefix {
@@ -60,7 +69,11 @@ h1 {
     max-height: 50px;
     float: left;
     margin: 3px;
-    padding: 15px 0 0 20px;
+    padding: 16px 0 0 20px;
+    background-color: rgb(19, 15, 19);
+    border-radius: 100px;
+    text-shadow:pink ;
+    color: white;
 }
 
 .gamecell {
@@ -80,8 +93,8 @@ h1 {
 }
 
 .gamecell:hover {
-    color: #fff;
-    background: rgba(37, 88, 228, 0.712);
+    color: rgb(7, 6, 6);
+    background: rgba(132, 152, 230, 0.712);
     z-index: 2;
     transform: translate(10px, -10px);
     animation: neonBlueText 1.5s ease-in-out infinite alternate;
@@ -92,9 +105,10 @@ h1 {
     color: white;
 }
 
+
 .green {
     /*background: green !important;*/
-    background: rgb(65, 161, 73) !important;
+    background: rgb(65, 221, 112) !important;
 }
 
 .neonblue_txt {
