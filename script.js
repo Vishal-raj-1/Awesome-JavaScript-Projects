@@ -15,14 +15,35 @@ let projectData = [
     projectUrl: "public/binary_circle.html"
   },
   {
+    projectName: "Circus Game",
+    projectImage: "assets/GIFs/circus.png",
+    projectUrl: "public/circus.html",
+  },
+  {
     projectName:"Emoji Feedback Form",
+    projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html",
+  },
+  {
+    projectName:"MooD SlideR",
+    projectImage: "assets/Images/mood-slider.png",
+    projectUrl: "public/mood-slider.html",
+  },
+  {
+    projectName:"Interactive Flashlight",
+    projectImage: "assets/Images/flashlight.png",
+    projectUrl: "public/flashlight.html",
   },
   {
     projectName: "Profile Upload Image",
     projectImage: "assets/GIFs/profilepic.gif",
     projectUrl: "public/uploadimg.html",
+  },
+  {
+    projectName: "Expanding Menu Bar",
+    projectImage: "assets/Images/expanding-menubar.png",
+    projectUrl: "public/expanding-menu.html",
   },
   {
     projectName: "Laptop Portfolio",
@@ -33,6 +54,11 @@ let projectData = [
     projectName: "Fall In Game",
     projectImage: "assets/GIFs/fall-in-game.gif",
     projectUrl: "public/fall-game.html",
+  },
+  {
+    projectName: "Blob Maker",
+    projectImage: "assets/Images/blob-maker.png",
+    projectUrl: "public/blob-maker.html",
   },
   {
     projectName: "Webpage Printing",
@@ -173,6 +199,11 @@ let projectData = [
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html"
+  },
+  {
+    projectName: "GAME_OF_LIFE",
+    projectImage: "assets/Images/GAME_OF_LIFE.png",
+    projectUrl: "public/GAME_OF_LIFE.html",
   },
   {
     projectName: "Sudoku Game",
@@ -1325,7 +1356,7 @@ let projectData = [
     projectImage: 'assets/Images/bubble-visualizing.png',
     projectUrl: 'public/bubblevisualiser.html'
   }
-    ,{
+  , {
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
@@ -1454,6 +1485,18 @@ let projectData = [
     projectImage: "assets/Images/fibonacci/fibo1.png",
     projectUrl: "public/fibonacci.html",
   }
+  ,
+  {
+    projectName: "Bridge N Torch",
+    projectImage: "assets/Images/bridgeNtorch.png",
+    projectUrl: "public/bridgeNtorch.html",
+  }
+,{
+    projectName: "Caesar Cipher",
+    projectImage: "assets/Images/caesarCipher.png",
+    projectUrl: "public/caesarCipher.html",
+
+  }
 ]
 
 var projectDetails = projectData.slice(0);
@@ -1472,7 +1515,7 @@ function getProjects() {
   let output = "";
   projectDetails.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
@@ -1518,7 +1561,7 @@ searchBtn.addEventListener("click", (e) => {
   let filter = "";
   filterData.forEach(
     (data, item) =>
-      (filter += `
+    (filter += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
