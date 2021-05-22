@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif; 
+    height: 100%;
+    margin: 0;
+}
+body {
+  background: linear-gradient(-45deg,  #ee7752, #e73c7e, #23a6d5, #23d5ab ); 
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.hero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/groceryList.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;    
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.right{float: right;}
+
+  input[type=text] {
+    width: 30%;
+    padding: 12px 20px ;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+  }
+
+  input[type=number] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+  }
+
+ .item_list{
+  float: left;
+} 
+
+ .itemquant_list{
+  float: left;
+  transition: transform 0.3s;
+} 
+
+.item_delete{
+  float: left;
+}
+
+.item_delete--button{
+  color:red; 
+  font-size: 24px;
+  border:none;
+  background:none;
+  cursor: pointer;
+  line-height: 1; 
+  display: none;
+  vertical-align: middle;
+}
+
+.item_delete--button:focus { outline: none; }
+.item_delete--button:active { transform: translateY(2px); }
+
+.grocery-item:hover .item_delete--button { display: block; }
+.grocery-item:hover .itemquant_list { transform: translateX(-20px); }
+
+.grocery-item {
+  padding: 25px;
+  border-bottom: 1px solid #000000;
+} 
+
+.add_item{
+  padding-top: 200px;
+}
+.add{
+  padding-left: 35%;
+}
+
+.add_button{
+  background-color: rgb(122,32,72) ;
+  color: white;
+  padding:12px ;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.display-clear{
+  background-color: rgb(122,32,72) ;
+  color: white;
+  padding:15px ;
+  margin-left: 47%;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.display-title{
+  text-align: center;
+  padding-top: 5px;
+}

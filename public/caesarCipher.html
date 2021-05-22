@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/caesarCipher.css">
+    <script src="./../assets/js/caesarCipher.js"></script>
+
+    <title>CAESAR CIPHER</title>
+</head>
+
+<body bgcolor="cyan" onload='document.getElementById("cont").style.visibility="hidden"'>
+    <!-- Loader -->
+    <div id="cont">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <br><br><br>
+            Loading....
+        </div>
+    </div>
+
+
+    <div class="popup" id="warning" style='visibility:hidden'>
+        <center><i class="fas fa-exclamation-circle" style='color:red;font-size:42px;margin-top:24px'></i></center>
+        <center>
+            <h2 style='color:#474787' id="txt">Warning</h2>
+        </center>
+        <center>
+            <div id="ok" onclick="ok()"><b>OK</b></div>
+        </center>
+    </div>
+    <div id="info">
+        <div class="icon" id="see"
+            onclick="document.getElementById('ab').style.visibility='visible',document.getElementById('see').style.visibility='hidden',document.getElementById('nosee').style.visibility='visible'">
+            <i class="fas fa-info"></i>
+        </div>
+        <div class="icon" id="nosee"
+            onclick="document.getElementById('ab').style.visibility='hidden',document.getElementById('see').style.visibility='visible',document.getElementById('nosee').style.visibility='hidden'">
+            <i class="fas fa-times"></i></i></i>
+        </div>
+
+    </div>
+    <div id="ab">
+        <h3>Julius Caesar</h3>
+
+        <div id="abj">
+            <center><img onclick="modal(0)" src="https://dl.dropbox.com/s/qsh7unwj5rl6vrl/julius-caesar.jpg?dl=0"
+                    alt="Flower" /></center>
+            <p>The <i>Caesar cipher</i> is named after Julius Caesar, who, according to <b>Suetonius</b>, used it with a
+                shift of <b><i>three</i></b> to protect messages of military significance. While Caesar's was the first
+                recorded use of this scheme, other substitution ciphers are known to have been used earlier. <br> <br>
+                <i>"If he had anything confidential to say, he wrote it in cipher, that is, by so changing the order of
+                    the letters of the alphabet, that not a word could be made out. If anyone wishes to decipher these,
+                    and get at their meaning, he must substitute the fourth letter of the alphabet, namely D, for A, and
+                    so with the others."
+                </i>
+                <center><b><i>-Suetonius</i></b></center><br><small>Source : From Wikipedia</small>
+            </p>
+        </div>
+
+    </div>
+
+    <a href="https://www.sololearn.com/learn/13844/?ref=app">
+        <div id="top" class="section">
+            <img id="img" src="https://dl.dropbox.com/s/u8mpt9wln3orx6t/Caesar%20Cipher.png?dl=0" alt="logo" />
+            <div>
+                <h2><b><u>CAESAR CIPHER</u></b></h2>
+            </div>
+        </div>
+    </a>
+
+    <center>
+        <pre align="center"><input type="text" id="input"  placeholder="Enter a string" ></center><br>
+
+<div id="shift"><b>SHIFT BY :  </b><input type="number" id="key" value = "1" /></div>
+
+ <div class="function">
+    <div class="fun" onclick="encrypt()" >Encrypt</div>
+    <div class="fun" onclick="decrypt()">Decrypt</div>
+   </div>
+  
+<div id="output" ></div>
+<div id="modal" >
+     
+     <div class="close" onclick="document.getElementById('modal').style.visibility='hidden',document.getElementById('image_modal').style.animation= 'none';">&times;</div>
+     
+     <img  id="image_modal" />
+     
+   </div>
+
+<script>
+    function modal(i) {
+        var img = document.getElementsByTagName('img')[i]; document.getElementById('image_modal').src = img.src;
+        document.getElementById('image_modal').style.animation = 'zoom 1s ease'; document.getElementById('modal').style.visibility = 'visible';
+    }
+</script>
+<audio id="click">
+    <source src="https://dl-web.dropbox.com/s/cjafboqg1rra9ne/Error%20Sound.mp3?dl=0" 
+    type = "audio/mp3">
+
+</audio>
+
+
+    </body>
+</html>

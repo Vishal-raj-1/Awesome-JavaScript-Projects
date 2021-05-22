@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
+    <title>Voice Lock</title>
+  </head>
+  <style>
+    /*
+
+  Padlock design inspired by Chris Cacioppe on Dribbble:
+
+  https://dribbble.com/shots/4009114-Unlock-Animation
+
+  */
+
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+
+  body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: "Roboto", Arial, sans-serif;
+      font-weight: 700;
+      text-align: center;
+      color: #eee;
+      background-color: #8077e7;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 50px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+  }
+
+  h1 span {
+      font-size: 52px;
+      color: #77e7ad;
+  }
+
+  h2 {
+      font-size: 17px;
+      margin-bottom: 35px;
+  }
+
+  .heard {
+      font-size: 35px;
+      margin-top: 25px;
+  }
+
+  .heard-output {
+      color: #77e7ad;
+  }
+
+  .padlock {
+      position: relative;
+      width: 260px;
+      height: 200px;
+      background-image: linear-gradient(
+          to bottom right,
+          #f2bc23 49.9%,
+          #eab02a 50%
+      );
+      border-radius: 20px 20px 100px 100px;
+      margin-top: 125px;
+      cursor: pointer;
+  }
+
+  .padlock.unlock::before {
+      transform: translate(-50%, -60%);
+  }
+
+  .padlock.unlock::after {
+      transform: translate(-50%, calc(-50% - 15px)) rotate(90deg);
+  }
+
+  .padlock::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      z-index: -1;
+      width: 200px;
+      height: 250px;
+      border-radius: 125px;
+      border: 40px solid #dbe1e4;
+      transform: translate(-50%, -50%);
+      transition: transform 300ms cubic-bezier(0.17, 0.67, 0.65, 1.52);
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 50% 65%, 50% 57%, 22% 57%, 22% 51%, 15% 51%, 14% 52%, 14% 53%, 15% 54%, 22% 54%, 18% 57%, 2% 57%, 0% 55%);
+              clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 50% 65%, 50% 57%, 22% 57%, 22% 51%, 15% 51%, 14% 52%, 14% 53%, 15% 54%, 22% 54%, 18% 57%, 2% 57%, 0% 55%);
+  }
+
+  .padlock::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      width: 20px;
+      height: 100px;
+      background-image: linear-gradient(to right, #ccc 49.9%, #aaa 50%);
+      border-radius: 10px;
+      transform: translate(-50%, calc(-50% - 15px));
+      transition: transform 180ms;
+  }
+
+  .keyhole {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      background-color: #2d3237;
+      border-radius: 50%;
+      transform: translate(-50%, calc(-50% - 15px));
+  }
+
+  .keyhole::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      background-color: #3d464d;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .keyhole::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      width: 30px;
+      height: 35px;
+      background-color: inherit;
+      transform: translateX(-50%);
+  }
+
+  </style>
+  <body>
+    <!-- 
+
+    Please enable your microphone.
+
+    Please close any other tabs/windows containing speech API projects, even if only showing the preview window. 
+
+    -->
+
+    <h1>Say Either:<br><span>'Lock'</span> or <span>'Unlock'</span></h1>
+    <h2>(or just click the padlock 🔒)</h2>
+
+    <div class="padlock">
+        <div class="keyhole"></div>
+    </div>
+
+    <p class="heard">Heard: <span class="heard-output">nothing</span></p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script>
+      //DOM load event
+window.addEventListener("DOMContentLoaded", () => {
+    
+    //Set speech recognition
+    window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const recognition = new SpeechRecognition(),
+          padlock = document.querySelector('.padlock'),
+          heardOutput = document.querySelector('.heard-output'),
+          openPadlock = () => {
+              padlock.classList.add('unlock');
+          },
+          closePadlock = () => {
+              padlock.classList.remove('unlock');
+          };
+
+    //Start speech recognition
+    recognition.start();
+
+    //Listen for when the user finishes talking
+    recognition.addEventListener('result', e => {
+
+        //Get transcript of user speech
+        const transcript = e.results[0][0].transcript.toLowerCase().replace(/\s/g, '');
+
+        //Output transcript
+        heardOutput.textContent = transcript;
+
+        //Check if transcript is valid
+        if (transcript === 'unlock' && !padlock.classList.contains('unlock')) {
+            openPadlock();
+        } else {
+            if (transcript === 'lock' && padlock.classList.contains('unlock')) {
+                closePadlock();
+            }
+        }
+    });
+
+    //Restart speech recognition after user has finished talking
+    recognition.addEventListener('end', recognition.start);
+
+    //Click padlock to open/close
+    padlock.addEventListener('click', () => padlock.classList.contains('unlock') ? closePadlock() : openPadlock());
+    
+});
+
+    </script>
+
+  </body>
+</html>

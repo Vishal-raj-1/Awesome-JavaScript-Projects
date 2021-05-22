@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../assets/css/linearsearch.css" />
+</head>
+
+<body>
+	<section class="head">Linear Search Visualization</section>
+   <section class="data-container"></section> 
+
+	<div id="array"></div>
+	<br /><br />
+
+	<div style="text-align: center">
+	<label for="fname">
+		Number to be Searched:
+	</label>
+	<input type="text" id="fname" name="fname" />
+	<div id="text"></div>
+	</div>
+    <!-- "Generate New Array" button -->
+   <button  class="btn1" onclick="generate()" id="Button1" >
+	Generate New Array</button>   
+	
+  <!-- "Linear Search" button -->
+  <button class="btn2" 
+		  onclick="LinearSearch(),disable()" id="Button2" >
+	Linear Search</button>
+	<script src="../assets/js/linearsearch.js"></script>
+</body>
+</html>
