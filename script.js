@@ -367,8 +367,8 @@ let projectData = [
     projectUrl: "public/note-app.html"
   },
   {
-    projectName: "Calculator",
-    projectImage: "assets/GIFs/calculator.gif",
+    projectName: "Scientific Calculator",
+    projectImage: "assets/Images/Calculator.png",
     projectUrl: "public/calculator.html"
   },
   {
