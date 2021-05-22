@@ -89,6 +89,7 @@ function gameEnd(winningPlayer) {
     for (var row = 0; row < 7; row++) {
       $('h5').fadeOut('fast');
       $('h3').fadeOut('fast');
+      $('table').fadeOut('fast');
       $('h2').text(winningPlayer+" has won! Refresh your browser to play again!").css("fontSize", "30px")
     }
   }
