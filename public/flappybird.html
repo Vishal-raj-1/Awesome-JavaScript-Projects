@@ -4,32 +4,14 @@
         <meta charset="utf-8">
         <title> Flappy Bird </title>
         <link rel="stylesheet" href="../assets/css/flappybird.css">
-        <script src="../assets/js/flappybird.js" charset="utf-8">
-    
-        </script>
+        
     </head>
     <body>        
-        <div class="border-left">
-            <button class = "start">START</button>
-            <button class = "restart" onClick="window.location.reload();">RESTART</button>
-        </div>
-        <div class="game-container">
-            <div class = "border-top"></div>
-            <div class="sky">
-                <div class = "bird">
-                
-                </div>
-            <div class = "ground"></div>
-        </div>
-        <div class="border-right"></div>
-        <div class="scoreboard">
-            <h1>Flappy Bird - Press ↑ to fly</h1>
-            <h1>Score:</h1>
-            <h1 id = "score"></h1>
-            <h1 id = "over">GAME OVER</h1>
-        </div>
+         <div class="fire" id="fire1"></div>
+        <div class="fire" id="fire2"></div>
+        <div class="ending" id="ending1"></div>
+        <canvas height="715" width="1520" id="canvas">
+        </canvas>  
+         <script src="../assets/js/flappybird.js"></script>
     </body>
-    <footer>
-        <h3>Made with ❤️ by <a href="https://github.com/deeptea22" target="_blank">Deepthi M</a></h3>
-    </footer>
 </html>

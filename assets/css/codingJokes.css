@@ -1,0 +1,159 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    background-image: -webkit-linear-gradient(right, #13547a, #80d0c7);
+
+}
+
+h1 {
+    user-select: none;
+}
+
+hr {
+    width: 88%;
+    height: 3.5px;
+    outline: none;
+    border: none;
+    background-image: -webkit-linear-gradient(right, #06beb6, #48b1bf);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.3);
+    margin-top: -12px;
+    margin-bottom: 6%;
+}
+
+#joke,
+#jokes {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0;
+    margin: 16px;
+    margin-top: -8px;
+    text-align: center;
+    text-shadow: 3px 3px 2px gray;
+    color: white;
+    font-family: 'Merienda', cursive;
+}
+
+#jokes {
+    display: block;
+    padding: 0;
+    margin-bottom: 7px;
+    text-shadow: 0px 0px black;
+    color: #fff1d0;
+    width: 90%;
+    max-width: 600px;
+}
+
+#next {
+    display: block;
+    width: 85px;
+    font-size: 19px;
+    padding: 9px;
+    margin: auto;
+    font-weight: bolder;
+    text-align: center;
+    justify-item: center;
+    font-style: italic;
+    border-radius: 5px;
+    color: #efefef;
+    ;
+    background-image: -webkit-linear-gradient(right, #06beb6, #48b1bf);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+
+}
+
+#next:active {
+    box-shadow: 0px 0px black;
+    transform: scale(0.92);
+}
+
+.loader {
+    display: block;
+    margin-top: 60%;
+    margin-left: 38%;
+    font-size: 24px;
+
+}
+
+#cont {
+    display: block;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+    background-image: -webkit-linear-gradient(right, #13547a, #80d0c7);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+
+}
+
+.loader span {
+    display: inline-block;
+    height: 35px;
+    width: 10px;
+    background-color: #fff;
+    margin: 1px;
+    transform: scaleY(1);
+    animation: load .9s ease-in-out infinite;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: .09s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: .18s;
+}
+
+.loader span:nth-child(4) {
+    animation-delay: .27s;
+}
+
+.loader span:nth-child(5) {
+    animation-delay: .36s;
+}
+
+
+@keyframes load {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1, 2.5);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+}
+
+
+
+@media only screen and (min-width:500px) {
+    .loader {
+        margin-top: 20%;
+        margin-left: 41%;
+    }
+}
+
+#share {
+    display: block;
+    position: relative;
+    margin: 15px;
+    margin-bottom: 5px;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+}
+
+#whatsapp {
+    font-size: 30px;
+    margin: 5px;
+    text-decoration: none;
+}

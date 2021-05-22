@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD</title>
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <!-- Default Favicon -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+    <style>
+        html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: whitesmoke;
+  overflow-x: hidden;
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+/* Loader */
+.loader {
+  background: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation */
+.navigation-container {
+  position: fixed;
+  top: -20px;
+  border-top: 20px solid whitesmoke;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  background: whitesmoke;
+  height: 60px;
+  z-index: -1;
+}
+
+.clickable {
+  color: dodgerblue;
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickable:hover {
+  color: rgb(0, 99, 199);
+}
+
+/* Images Container */
+.images-container {
+  width: 800px;
+  margin-top: 50px;
+}
+
+.card {
+  background: white;
+  margin: 10px 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 10px auto;
+  font-size: 24px;
+}
+
+/* Save Confirmation */
+.save-confirmed {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Large Smartphone (Vertical) */
+@media screen and (max-width: 800px) {
+  body {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .images-container {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .save-confirmed {
+    right: 25px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader hidden">
+        <img src="../assets/svg/rocket.svg" alt="Rocket Loading Animation">
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navigation-container">
+            <span class="background"></span>
+            <!-- Results Nav -->
+            <span class="navigation-items" id="resultsNav">
+                <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNasaPictures()">Load More</h3>
+            </span>
+            <!-- Favorites Nav -->
+            <span class="navigation-items hidden" id="favoritesNav">
+                <h3 class="clickable" onclick="getNasaPictures()">Load More NASA Images</h3>
+            </span>
+        </div>
+        <!-- Images Container -->
+        <div class="images-container"></div>
+    </div>
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden>
+        <h1>ADDED!</h1>
+    </div>
+    <!-- Script -->
+    <script>
+        const resultsNav = document.getElementById('resultsNav');
+const favoritesNav = document.getElementById('favoritesNav');
+const imagesContainer = document.querySelector('.images-container');
+const saveConfirmed = document.querySelector('.save-confirmed');
+const loader = document.querySelector('.loader');
+
+// NASA API
+const count = 10;
+const apiKey = 'DEMO_KEY';
+const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${count}`;
+
+let resultsArray = [];
+let favorites = {};
+
+// Scroll To Top, Remove Loader, Show Content
+function showContent(page) {
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  loader.classList.add('hidden');
+  if (page === 'results') {
+    resultsNav.classList.remove('hidden');
+    favoritesNav.classList.add('hidden');
+  } else {
+    resultsNav.classList.add('hidden');
+    favoritesNav.classList.remove('hidden');
+  }
+}
+
+function createDOMNodes(page) {
+  // Load ResultsArray or Favorites
+  const currentArray = page === 'results' ? resultsArray : Object.values(favorites);
+  currentArray.forEach((result) => {
+    // Card Container
+    const card = document.createElement('div');
+    card.classList.add('card');
+    // Link
+    const link = document.createElement('a');
+    link.href = result.hdurl;
+    link.title = 'View Full Image';
+    link.target = '_blank';
+    // Image
+    const image = document.createElement('img');
+    image.src = result.url;
+    image.alt = 'NASA Picture of the Day';
+    image.loading = 'lazy';
+    image.classList.add('card-img-top');
+    // Card Body
+    const cardBody = document.createElement('div');
+    cardBody.classList.add('card-body');
+    // Card Title
+    const cardTitle = document.createElement('h5');
+    cardTitle.classList.add('card-title');
+    cardTitle.textContent = result.title;
+    // Save Text
+    const saveText = document.createElement('p');
+    saveText.classList.add('clickable');
+    if (page === 'results') {
+      saveText.textContent = 'Add To Favorites';
+      saveText.setAttribute('onclick', `saveFavorite('${result.url}')`);
+    } else {
+      saveText.textContent = 'Remove Favorite';
+      saveText.setAttribute('onclick', `removeFavorite('${result.url}')`);
+    }
+    // Card Text
+    const cardText = document.createElement('p');
+    cardText.textContent = result.explanation;
+    // Footer Container
+    const footer = document.createElement('small');
+    footer.classList.add('text-muted');
+    // Date
+    const date = document.createElement('strong');
+    date.textContent = result.date;
+    // Copyright
+    const copyrightResult = result.copyright === undefined ? '' : result.copyright;
+    const copyright = document.createElement('span');
+    copyright.textContent = ` ${copyrightResult}`;
+    // Append
+    footer.append(date, copyright);
+    cardBody.append(cardTitle, saveText, cardText, footer);
+    link.appendChild(image);
+    card.append(link, cardBody);
+    imagesContainer.appendChild(card);
+  });
+}
+
+function updateDOM(page) {
+  // Get Favorites from localStorage
+  if (localStorage.getItem('nasaFavorites')) {
+    favorites = JSON.parse(localStorage.getItem('nasaFavorites'));
+  }
+  // Reset DOM, Create DOM Nodes, Show Content
+  imagesContainer.textContent = '';
+  createDOMNodes(page);
+  showContent(page);
+}
+
+// Get 10 images from NASA API
+async function getNasaPictures() {
+  // Show Loader
+  loader.classList.remove('hidden');
+  try {
+    const response = await fetch(apiUrl);
+    resultsArray = await response.json();
+    updateDOM('results');
+  } catch (error) {
+    // Catch Error Here
+  }
+}
+
+// Add result to Favorites
+function saveFavorite(itemUrl) {
+  // Loop through Results Array to select Favorite
+  resultsArray.forEach((item) => {
+    if (item.url.includes(itemUrl) && !favorites[itemUrl]) {
+      favorites[itemUrl] = item;
+      // Show Save Confirmation for 2 seconds
+      saveConfirmed.hidden = false;
+      setTimeout(() => {
+        saveConfirmed.hidden = true;
+      }, 2000);
+      // Set Favorites in localStorage
+      localStorage.setItem('nasaFavorites', JSON.stringify(favorites));
+    }
+  });
+}
+
+// Remove item from Favorites
+function removeFavorite(itemUrl) {
+  if (favorites[itemUrl]) {
+    delete favorites[itemUrl];
+    // Set Favorites in localStorage
+    localStorage.setItem('nasaFavorites', JSON.stringify(favorites));
+    updateDOM('favorites');
+  }
+}
+
+// On Load
+getNasaPictures();
+
+    </script>
+</body>
+</html>
