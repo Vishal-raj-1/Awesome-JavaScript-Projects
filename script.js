@@ -1583,7 +1583,12 @@ let projectData = [
   {
     projectName: "Array Methods",
     projectImage: "assets/Images/arrayMethods.png",
-    projectUrl: "public/arrayMethods.html"
+    projectUrl: "public/arrayMethods.html",
+  },
+  {
+    projectName: "Pokemon Pokedex",
+    projectImage: "assets/Images/pokemon.png",
+    projectUrl: "public/pokemon.html"
   }
 ]
 
