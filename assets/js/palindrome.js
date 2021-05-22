@@ -34,4 +34,4 @@ function fun() {
 function myFunction() {
 	document.getElementById("form").reset();
 	document.getElementById("result").innerHTML = "";
-}
+ }
