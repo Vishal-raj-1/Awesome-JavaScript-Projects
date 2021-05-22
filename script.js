@@ -110,6 +110,11 @@ let projectData = [
     projectImage: "assets/GIFs/temp_slider.gif",
     projectUrl: "public/temp_slider.html",
   },
+   {
+    projectName: "Credit Card Payment Form",
+    projectImage: "assets/GIFs/credit_card.png",
+    projectUrl: "public/credit_card.html",
+  },
   {
     projectName: "Work Time Tracker",
     projectImage: "assets/GIFs/timetracker.gif",
