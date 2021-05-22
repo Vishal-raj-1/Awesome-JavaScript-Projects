@@ -908,6 +908,11 @@ let projectData = [
     projectUrl: "public/wordScramble.html"
   },
   {
+    projectName: "Photo Details Teller",
+    projectImage: "assets/Images/photoDetails.png",
+    projectUrl: "public/photoDetails.html"
+  },
+  {
     projectName: "Guess the song",
     projectImage: "assets/Images/guess_song/view.png",
     projectUrl: "public/guess_song.html"
