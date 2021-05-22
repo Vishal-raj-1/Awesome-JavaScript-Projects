@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Fall</title>
+    <style>
+        canvas {
+            display: block;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="snowCanvas"></canvas>
+    <script src="../assets/js/snow.js"></script>
+    <script>
+        window.onload = _snowCanvas({
+            el: document.getElementById("snowCanvas"),
+            snowColor: "#a6a6a6",
+            background: "black",
+            maxSpeed: 4,
+            minSpeed: 1,
+            width: "",
+            height: "",
+            amount: 150,
+            rMax: 4,
+            rMin: 1
+        });
+    </script>
+</body>
+
+</html>
