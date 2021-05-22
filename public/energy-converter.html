@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<style>
+		@media all and (max-width: 576px) {
+
+			.calc2 input[type=text],
+			.calc2 input[type=number] {
+				width: 100%;
+				padding: 5px;
+			}
+
+			.calc2 tr td:nth-child(2) {
+				width: 160px;
+				width: calc(100% - 140px);
+			}
+
+			.calc2 tr td:nth-child(3) {
+				width: 45px;
+			}
+		}
+
+		#form {
+			padding-top: 50px;
+			border-color: white;
+			border-radius: 5px solid white;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="lcol" class="d-flex justify-content-center">
+
+		<div id="doc" class="bg-info align-content-center">
+			<h1 class="text-center">Energy Conversion</h1>
+			<p class="text-center">Energy conversion calculator - convert energy units.</p>
+
+			<h2 class="text-center">kWh, Wh, MWh, BTU, kBTU, J, kJ, MJ, GJ conversion calculator</h2>
+			<p class="text-center">Enter the energy in one of the text boxes and press the <i>Convert</i>
+				button:</p>
+			<center>
+				<form name="calcform" autocomplete="off" class="p-3">
+					<table class="calc2 text-light">
+						<tbody>
+							<tr class="p-1">
+								<td><label for="wh">Enter watt-hour:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="wh" name="wh" autofocus
+										tabindex="1"></td>
+								<td class="mathsymbol">Wh</td>
+								<td><input onclick="Convert_Wh()" type="button" value="Convert" tabindex="2"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><label for="kwh">Enter kilowatt-hour:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="kwh" name="kwh"
+										tabindex="3"></td>
+								<td class="mathsymbol">kWh</td>
+								<td><input onclick="Convert_kWh()" type="button" value="Convert" tabindex="4"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><label for="mwh">Enter megawatt-hour:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="mwh" name="mwh"
+										tabindex="5"></td>
+								<td class="mathsymbol">MWh</td>
+								<td><input onclick="Convert_MWh()" type="button" value="Convert" tabindex="6"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><label for="btu">Enter BTU:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="btu" name="btu"
+										tabindex="7"></td>
+								<td class="mathsymbol">BTU<sub><span style="font-size: 0.7em">IT</span></sub></td>
+								<td><input onclick="Convert_BTU()" type="button" value="Convert" tabindex="8"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><label for="kbtu">Enter kiloBTU:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="kbtu" name="kbtu"
+										tabindex="9"></td>
+								<td class="mathsymbol">kBTU<sub><span style="font-size: 0.7em">IT</span></sub></td>
+								<td><input onclick="Convert_kBTU()" type="button" value="Convert" tabindex="10"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><label for="j">Enter joules:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="j" name="j" tabindex="11">
+								</td>
+								<td class="mathsymbol">J</td>
+								<td><input onclick="Convert_J()" type="button" value="Convert" tabindex="12"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><label for="kj">Enter kilojoules:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="kj" name="kj"
+										tabindex="13"></td>
+								<td class="mathsymbol">kJ</td>
+								<td><input onclick="Convert_kJ()" type="button" value="Convert" tabindex="14"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><label for="mj">Enter megajoules:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="mj" name="mj"
+										tabindex="15"></td>
+								<td class="mathsymbol">MJ</td>
+								<td><input onclick="Convert_MJ()" type="button" value="Convert" tabindex="16"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><label for="gj">Enter gigajoules:</label></td>
+								<td class="math"><input type="number" min="0" step="any" id="gj" name="gj"
+										tabindex="17"></td>
+								<td class="mathsymbol">GJ</td>
+								<td><input onclick="Convert_GJ()" type="button" value="Convert" tabindex="18"
+										class="btn btn-success m-1"></td>
+							</tr>
+							<tr class="p-1">
+								<td><input type="reset" value="Reset" class="btn btn-warning"></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</center>
+		</div>
+	</div>
+	<script>
+		function setfocus() {
+			document.calcform.kwh.focus();
+		}
+		function Round(x, res) {
+			y = parseFloat(x);
+			res = Math.pow(10, res);
+			y = Math.round(y * res) / res;
+			return y;
+		}
+		function Convert_Wh() {
+			wh = document.calcform.wh.value;
+			if (wh == "")
+				return;
+			wh = parseFloat(wh);
+			document.calcform.kwh.value = Round(wh / 1e3, 10);
+			document.calcform.mwh.value = Round(wh / 1e6, 10);
+			document.calcform.btu.value = Round(wh * 3.41214163312794, 10);
+			document.calcform.kbtu.value = Round(wh * 3.41214163312794e-3, 10);
+			document.calcform.j.value = Round(wh * 3.6e3, 10);
+			document.calcform.kj.value = Round(wh * 3.6, 10);
+			document.calcform.mj.value = Round(wh * 3.6e-3, 10);
+			document.calcform.gj.value = Round(wh * 3.6e-6, 10);
+		}
+		function Convert_kWh() {
+			kwh = document.calcform.kwh.value;
+			if (kwh == "")
+				return;
+			kwh = parseFloat(kwh);
+			document.calcform.wh.value = Round(kwh * 1e3, 10);
+			document.calcform.mwh.value = Round(kwh / 1e3, 10);
+			document.calcform.btu.value = Round(kwh * 3412.14163312794, 10);
+			document.calcform.kbtu.value = Round(kwh * 3.41214163312794, 10);
+			document.calcform.j.value = Round(kwh * 3.6e6, 10);
+			document.calcform.kj.value = Round(kwh * 3.6e3, 10);
+			document.calcform.mj.value = Round(kwh * 3.6, 10);
+			document.calcform.gj.value = Round(kwh * 3.6e-3, 10);
+		}
+		function Convert_MWh() {
+			mwh = document.calcform.mwh.value;
+			if (mwh == "")
+				return;
+			mwh = parseFloat(mwh);
+			document.calcform.wh.value = Round(mwh * 1e6, 10);
+			document.calcform.kwh.value = Round(mwh * 1e3, 10);
+			document.calcform.btu.value = Round(mwh * 3.41214163312794e6, 10);
+			document.calcform.kbtu.value = Round(mwh * 3.41214163312794e3, 10);
+			document.calcform.j.value = Round(mwh * 3.6e9, 10);
+			document.calcform.kj.value = Round(mwh * 3.6e6, 10);
+			document.calcform.mj.value = Round(mwh * 3.6e3, 10);
+			document.calcform.gj.value = Round(mwh * 3.6, 10);
+		}
+		function Convert_BTU() {
+			btu = document.calcform.btu.value;
+			if (btu == "")
+				return;
+			btu = parseFloat(btu);
+			document.calcform.wh.value = Round(btu / 3.41214163312794, 10);
+			document.calcform.kwh.value = Round(btu / 3.41214163312794e3, 10);
+			document.calcform.mwh.value = Round(btu / 3.41214163312794e6, 10);
+			document.calcform.kbtu.value = Round(btu / 1e3, 10);
+			document.calcform.j.value = Round(btu * 1055.05585262, 10);
+			document.calcform.kj.value = Round(btu * 1055.05585262e-3, 10);
+			document.calcform.mj.value = Round(btu * 1055.05585262e-6, 10);
+			document.calcform.gj.value = Round(btu * 1055.05585262e-9, 10);
+		}
+		function Convert_kBTU() {
+			kbtu = document.calcform.kbtu.value;
+			if (kbtu == "")
+				return;
+			kbtu = parseFloat(kbtu);
+			document.calcform.wh.value = Round(kbtu / 3.41214163312794e-3, 10);
+			document.calcform.kwh.value = Round(kbtu / 3.41214163312794, 10);
+			document.calcform.mwh.value = Round(kbtu / 3.41214163312794e3, 10);
+			document.calcform.btu.value = Round(kbtu * 1e3, 10);
+			document.calcform.j.value = Round(kbtu * 1055.05585262e3, 10);
+			document.calcform.kj.value = Round(kbtu * 1055.05585262, 10);
+			document.calcform.mj.value = Round(kbtu * 1055.05585262e-3, 10);
+			document.calcform.gj.value = Round(kbtu * 1055.05585262e-6, 10);
+		}
+		function Convert_J() {
+			j = document.calcform.j.value;
+			if (j == "")
+				return;
+			j = parseFloat(j);
+			document.calcform.wh.value = Round(j / 3.6e3, 10);
+			document.calcform.kwh.value = Round(j / 3.6e6, 10);
+			document.calcform.mwh.value = Round(j / 3.6e9, 10);
+			document.calcform.btu.value = Round(j / 1055.05585262, 10);
+			document.calcform.kbtu.value = Round(j / 1055.05585262e3, 10);
+			document.calcform.kj.value = Round(j / 1e3, 10);
+			document.calcform.mj.value = Round(j / 1e6, 10);
+			document.calcform.gj.value = Round(j / 1e9, 10);
+		}
+		function Convert_kJ() {
+			kj = document.calcform.kj.value;
+			if (kj == "")
+				return;
+			kj = parseFloat(kj);
+			document.calcform.wh.value = Round(kj / 3.6, 10);
+			document.calcform.kwh.value = Round(kj / 3.6e3, 10);
+			document.calcform.mwh.value = Round(kj / 3.6e6, 10);
+			document.calcform.btu.value = Round(kj / 1055.05585262e-3, 10);
+			document.calcform.kbtu.value = Round(kj / 1055.05585262, 10);
+			document.calcform.j.value = Round(kj * 1e3, 10);
+			document.calcform.mj.value = Round(kj / 1e3, 10);
+			document.calcform.gj.value = Round(kj / 1e6, 10);
+		}
+		function Convert_MJ() {
+			mj = document.calcform.mj.value;
+			if (mj == "")
+				return;
+			mj = parseFloat(mj);
+			document.calcform.wh.value = Round(mj / 3.6e-3, 10);
+			document.calcform.kwh.value = Round(mj / 3.6, 10);
+			document.calcform.mwh.value = Round(mj / 3.6e3, 10);
+			document.calcform.btu.value = Round(mj / 1055.05585262e-6, 10);
+			document.calcform.kbtu.value = Round(mj / 1055.05585262e-3, 10);
+			document.calcform.j.value = Round(mj * 1e6, 10);
+			document.calcform.kj.value = Round(mj * 1e3, 10);
+			document.calcform.gj.value = Round(mj / 1e3, 10);
+		}
+		function Convert_GJ() {
+			gj = document.calcform.gj.value;
+			if (gj == "")
+				return;
+			gj = parseFloat(gj);
+			document.calcform.wh.value = Round(gj / 3.6e-6, 10);
+			document.calcform.kwh.value = Round(gj / 3.6e-3, 10);
+			document.calcform.mwh.value = Round(gj / 3.6, 10);
+			document.calcform.btu.value = Round(gj / 1055.05585262e-9, 10);
+			document.calcform.kbtu.value = Round(gj / 1055.05585262e-6, 10);
+			document.calcform.j.value = Round(gj * 1e9, 10);
+			document.calcform.kj.value = Round(gj * 1e6, 10);
+			document.calcform.mj.value = Round(gj * 1e3, 10);
+		}
+		//-->
+	</script>
+</body>
+
+</html>
