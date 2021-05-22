@@ -1,0 +1,154 @@
+/*
+    
+font-family: "Poppins", sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: "Slabo 27px", serif;    
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #efefef;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+::selection {
+    color: #fff;
+    background-color: #4abdac;
+}
+
+h1 {
+    display: block;
+    position: relative;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Slabo 27px", serif;
+}
+
+#entry {
+    display: flex;
+    position: relative;
+    margin: auto;
+    margin-top: 35px;
+    background-color: #fff;
+    height: 62px;
+    width: 62px;
+    border-radius: 10px;
+    max-width: 700px;
+    transition-duration: .83s;
+    cursor: pointer;
+}
+
+#entry:hover {
+    box-shadow: 0 0 10px 2px #00b8ee;
+}
+
+#input {
+    display: flex;
+    position: relative;
+    height: 42px;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px;
+    left: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+    transition-duration: 1.65s;
+    opacity: 0;
+}
+
+#btn {
+    display: inline-block;
+    position: absolute;
+    background-color: #4abdac;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 54px;
+    width: 54px;
+    top: 4px;
+    right: 4px;
+    font-size: 20px;
+    font-weight: lighter;
+    transition-duration: 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.87);
+    box-shadow: none;
+}
+
+#errorMsg {
+    font-size: 14px;
+    margin: 10px 5px -30px 5px;
+    text-align: center;
+    color: red;
+}
+
+#output {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    margin: 10px auto 10px auto;
+    background-color: transparent;
+    width: 80vw;
+    max-width: 500px;
+    font-size: 20px;
+    user-select: auto;
+    padding: 7px;
+}
+
+p {
+    color: gray;
+    font-size: 22px;
+}
+
+p>i {
+    font-size: 20px;
+}
+
+#sec {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#icon {
+    display: block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    left: calc(50% - 13px);
+    background-color: transparent;
+    border: 3px solid white;
+    transform: translateY(-3px);
+}
+
+#icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transform: rotate(-45deg) translate(3.5px, 24px);
+
+}

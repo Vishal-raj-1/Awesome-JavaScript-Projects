@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blob Maker</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+   <style>
+       *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto Mono",monospace;
+    font-weight: 400;
+    color: #010120;
+}
+body{
+    background-color: #008dff;
+}
+.wrapper{
+    background-color: #ffffff;
+    width: 45%;
+    min-width: 550px;
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+}
+.output{
+    background-color: #eef3f8;
+    width: 100%;
+    min-height: 250px;
+    padding: 20px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+#blob{
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(
+        #44a2f0,
+        #025eaa
+    );
+    box-shadow: 15px 20px 30px rgba(0,0,0,0.15);
+}
+.dimensions{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0 40px 0;
+}
+label{
+    font-weight: 500;
+}
+input[type="number"]{
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #a0a0b0;
+    border-radius: 3px;
+}
+input[type="number"]:focus{
+    background-color: #f1f5fa;
+    border-color: #025eaa;
+    color: #025eaa;
+}
+.sliders{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+input[type="text"]{
+    width: 82%;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    background-color: #f1eff9;
+    border-radius: 3px;
+}
+button{
+    width: 12%;
+    margin-left: 4%;
+    padding: 10px 0;
+    background-color: #0075ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 12px;
+}
+   </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 5rem; font-size: 60px; color: white;">Blob Maker</h1>
+    <div class="wrapper">
+        <div class="output">
+            <div id="blob"></div>
+        </div>
+        <div class="dimensions">
+            <div>
+                <label for="blob-height">
+                    Height
+                </label>
+                <input type="number" value="200" id="blob-height">
+            </div>
+            <div>
+                <label for="blob-width">
+                    Width
+                </label>
+                <input type="number" value="200" id="blob-width">
+            </div>
+        </div>
+        <div class="sliders">
+            <input type="range" value="30">
+            <input type="range" value="80">
+            <input type="range" value="60">
+            <input type="range" value="40">
+        </div>
+        <input type="text" id="css-code" readonly>
+        <button id="copy">Copy</button>
+    </div>
+    <!--Script-->
+    <script>
+        let outputCode = document.getElementById("css-code");
+
+let sliders = document.querySelectorAll("input[type='range']");
+sliders.forEach(function(slider){
+    slider.addEventListener("input",createBlob);
+});
+
+let inputs = document.querySelectorAll("input[type='number']");
+inputs.forEach(function(inp){
+    inp.addEventListener("change",createBlob);
+});
+
+function createBlob(){
+    let radiusOne = sliders[0].value;
+    let radiusTwo = sliders[1].value;
+    let radiusThree = sliders[2].value;
+    let radiusFour = sliders[3].value;
+
+    let blobHeight = inputs[0].value;
+    let blobWidth = inputs[1].value;
+
+    let borderRadius = `${radiusOne}% ${100 - radiusOne}% ${100 - radiusThree}% ${radiusThree}% / ${radiusFour}% ${radiusTwo}% ${100 - radiusTwo}% ${100 - radiusFour}%`;
+
+    document.getElementById("blob").style.cssText = `border-radius: ${borderRadius}; height: ${blobHeight}px; width: ${blobWidth}px`;
+
+    outputCode.value = `border-radius: ${borderRadius};`
+}
+
+document.getElementById("copy").addEventListener("click", function(){
+    outputCode.select();
+    document.execCommand('copy');
+    alert('Code Copied');
+});
+
+createBlob();
+    </script>
+</body>
+</html>

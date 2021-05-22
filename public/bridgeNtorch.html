@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scallable=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Poppins|Slabo+27px" rel="stylesheet" />
+    <link rel="stylesheet" href="./../assets/css/bridgeNtorch.css">
+    <script src="./../assets/js/bridgeNtorch.js"></script>
+    <title>Bridge n Torch</title>
+</head>
+
+<body id="nothing">
+
+    <h1><i><span style='color:#4abdac'>B</span>ridge <span style='color:gray;'>--</span> Torc<span
+                style='color:#4abdac;'>h</span></i></h1>
+
+    <div id="entry">
+        <input type="number" id="input" placeholder="Enter number of people..."
+            oninput='document.getElementById("errorMsg").innerText="Hit Enter to get Results!",document.getElementById("errorMsg").style.boxShadow="box-shadow:0 0 10px 2px #00b8ee"'
+            autofocus="true" />
+        <button id="btn" onclick="cross()">
+            <div id="icon"></div>
+        </button>
+    </div>
+
+    <div id="errorMsg"></div>
+    <div id="output"><br>
+        <p><br><b>PROBLEM : <br> Crossing the bridge</b><br><br>
+            Write a program to print the minimum time taken to get N people from one side of a bridge to the other if
+            <br><br>
+            <b>a)</b><i>The bridge can only hold two people at a time.</i><br><br>
+            <b>b)</b><i>It's dark and the only flashlight must be carried while crossing.</i><br><br>
+            <b>c)</b><i>People are numbered from 1 to N. The k-th person takes k seconds to cross the
+                bridge.</i><br><br>
+            <b>d)</b><i> A pair crosses at the speed of the slowest member.</i><br><br>
+            <b>For example:</b><br>
+            Input: 4 <br>
+            Output: 11<br><br>i.e<br>
+            <i>1-3 cross(3), 1 returns(1)</i>
+            <br>
+            <i>1-4 cross(4), 1 returns(1)</i><br>
+            <i>1-2 cross(2)</i><br>
+            <i>SUM : 3 + 1 + 4 + 1 + 2 = 11</i><br>
+
+        </p>
+    </div>
+</body>
+
+</html>
