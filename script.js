@@ -1579,6 +1579,11 @@ let projectData = [
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
+  },
+  {
+    projectName: "Array Methods",
+    projectImage: "assets/Images/arrayMethods.png",
+    projectUrl: "public/arrayMethods.html"
   }
 ]
 
