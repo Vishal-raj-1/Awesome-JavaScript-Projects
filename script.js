@@ -967,6 +967,11 @@ let projectData = [
     projectName: "Harry Potter characters",
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html",
+  },
+  {
+    projectName:"WebDevelopmentCourse webpage",
+    projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
+    projectUrl:"public/WebDevelopmentCourse.html",
   }
 
 ];
