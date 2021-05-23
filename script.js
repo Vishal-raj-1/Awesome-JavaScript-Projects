@@ -25,6 +25,11 @@ let projectData = [
     projectUrl: "public/circus.html",
   },
   {
+    projectName: "Pixelated Image",
+    projectImage: "assets/Images/pixelated-img/pixelated-img.png",
+    projectUrl: "public/pixelated.html",
+  },
+  {
     projectName:"Emoji Feedback Form",
     projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
