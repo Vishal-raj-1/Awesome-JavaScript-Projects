@@ -20,6 +20,11 @@ let projectData = [
     projectUrl: "public/etch.html",
   },
   {
+    projectName: "Physics Engine Game",
+    projectImage: "assets/Images/physics-engine.png",
+    projectUrl: "public/physics-engine.html",
+  },
+  {
     projectName: "Circus Game",
     projectImage: "assets/GIFs/circus.png",
     projectUrl: "public/circus.html",
