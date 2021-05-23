@@ -1600,10 +1600,10 @@ let projectData = [
     projectUrl: "public/pokemon.html"
   },
   {
-    projectName: "Angry Birds",
-    projectImage: "assets/Images/Angry_bird/demo.png",
-    projectUrl: "public/Angry_bird.html"
-  }
+    projectName: "GST Calculator",
+    projectImage: "assets/Images/GST_Calculator.png",
+    projectUrl: "public/GST_Calculator.html"
+  },
 ]
 
 var projectDetails = projectData.slice(0);
