@@ -1331,7 +1331,7 @@ let projectData = [
    },
    {
     projectName: "Filterable Image Gallery",
-    projectImage: "assets/Images/Filterable_Image_Gallery.jpg",
+    projectImage: "assets/Images/Filterable_Image_Gallery/Filterable_Image_Gallery.png",
     projectUrl: "public/Filterable_Image_Gallery.html",
   }
 ]
