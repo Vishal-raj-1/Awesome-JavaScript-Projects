@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/binary_circle.html"
   },
   {
+    projectName: "Etch Sketch Game",
+    projectImage: "assets/GIFs/etch.png",
+    projectUrl: "public/etch.html",
+  },
+  {
     projectName: "Circus Game",
     projectImage: "assets/GIFs/circus.png",
     projectUrl: "public/circus.html"
@@ -104,6 +109,16 @@ let projectData = [
     projectName: "Step Progress Bar",
     projectImage: "assets/GIFs/progress.gif",
     projectUrl: "public/progress.html"
+  },
+  {
+    projectName: "Smart Temperature Slider",
+    projectImage: "assets/GIFs/temp_slider.gif",
+    projectUrl: "public/temp_slider.html",
+  },
+   {
+    projectName: "Credit Card Payment Form",
+    projectImage: "assets/GIFs/credit_card.png",
+    projectUrl: "public/credit_card.html",
   },
   {
     projectName: "Work Time Tracker",
@@ -922,7 +937,7 @@ let projectData = [
   },
   {
     projectName: "Flappy Bird",
-    projectImage: "assets/GIFs/flappy-bird.gif",
+    projectImage: "assets/GIFs/flappy-bird.png",
     projectUrl: "public/flappybird.html"
   },
   {
@@ -1536,12 +1551,17 @@ let projectData = [
   {
     projectName: "Dynamic Time message",
     projectImage: "assets/Images/dynamic_message.png",
-    projectUrl: "public/dynamic_message.html"
+    projectUrl: "public/dynamic_message.html",
   },
   {
     projectName: "Fibonacci Series Generator",
     projectImage: "assets/Images/fibonacci/fibo1.png",
-    projectUrl: "public/fibonacci.html"
+    projectUrl: "public/fibonacci.html",
+  },
+  {
+    projectName: "Script Detection",
+    projectImage: "assets/GIFs/scriptDetection.gif",
+    projectUrl: "public/scriptDetection.html"
   },
   {
     projectName: "Bridge N Torch",
@@ -1551,8 +1571,20 @@ let projectData = [
   {
     projectName: "Caesar Cipher",
     projectImage: "assets/Images/caesarCipher.png",
-    projectUrl: "public/caesarCipher.html"
+    projectUrl: "public/caesarCipher.html",
+
+  },
+  {
+    projectName: "Barcode Generator",
+    projectImage: "assets/Images/barcodeGenerator.png",
+    projectUrl: "public/barcodeGenerator.html"
+  },
+  {
+    projectName: "Pokemon Pokedex",
+    projectImage: "assets/Images/pokemon.png",
+    projectUrl: "public/pokemon.html"
   }
+
 ];
 
 var projectDetails = projectData.slice(0);

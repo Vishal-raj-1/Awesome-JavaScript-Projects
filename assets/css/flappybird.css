@@ -1,117 +1,50 @@
-body{
-    display: flex;
-}
-html {
-    zoom: 0.7;
-    -moz-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
-    text-align: center;
-    transform-origin: 0% 0%;
-}
-.game-container{
-    width:750px;
-    height: 730px;
-    position:absolute;
-    left: 880px;
-    top:150px;
+/*     background-image: url('../Images/FlappyBird/flappybird-pipe.png'); */
+/* ../Images/FlappyBird/fire1.gif */
 
+body
+{
+    margin:0;
 }
-
-.sky{
-    background-image: url('../Images/FlappyBird/fb-game-background.png');
-    width:750px;
-    height:580px;
-    position:absolute;    
+ canvas
+{
+    border :1px solid #000;
+} 
+#fire1
+{
+    background-image: url("../Images/FlappyBird/fire1.gif");
+    left:300px;
+    top:100px;
 }
-.ground{
-    background-image: url('../Images/FlappyBird/bottom-background.png');
-    width: 750px;
-    height: 150px;
-    position:absolute;    
-    top:580px;
-    z-index: +1;
+#fire2
+{
+    background-image: url("../Images/FlappyBird/fire2.gif");
+    left:900px;
+    top:200px;
 }
-.bird{
-    background-image: url('../Images/FlappyBird/flappy-bird.png');
+.fire
+{
     position: absolute;
-    height: 45px;
-    width: 60px;
-}
-.border-left {
-    width: 872px;
-    height: 872px;
-    position:  absolute;
-    background-color: white;
-    z-index: +2;
-}
-
-.border-top {
-    width: 665px;
-    height: 151px;
-    position:  absolute;
-    background-color: white;
-    z-index: +2;
-    top: -150px;
-}
-
-.obstacle {
-    background-image: url('../Images/FlappyBird/flappybird-pipe.png');
-    width: 60px;
+    width: 300px;
     height: 300px;
-    position: absolute;
+    /* top:200px; */
+    background-position: center center;
+    background-size: cover;
+    display: none;
 }
-
-.topObstacle {
-    background-image: url('../Images/FlappyBird/flappybird-pipe.png');
-    transform: rotate(180deg);
-    width: 60px;
+.ending
+{
+    position: absolute;
+    width: 300px;
     height: 300px;
-    position: absolute;
+    /* top:200px; */
+    background-position: center center;
+    background-size: cover; 
+    display: none; 
 }
-
-.start{
-    background-color: teal;
-    color: white;
-    width: 200px;
-    height: 100px;
-    margin-top: 450px;
-    margin-left: 300px;
-    font-size: 25px;
+#ending1
+{
+    background-image: url("../Images/FlappyBird/end3.gif");
+    top:300px;
+    left:400px;
 }
-.restart{
-    background-color: teal;
-    color: white;
-    width: 200px;
-    height: 100px;
-    margin-top: 50px;
-    margin-left: 300px;
-    font-size: 25px;
-}
-#over{
-    visibility: hidden;
-}
-.scoreboard{
-    width:700px;
-    height:730px;
-    text-align: center;
-    margin-left:800px;
-    margin-top:-40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-size: 30px;
-    color:rebeccapurple;
-    background-color:thistle;
-}
-#score{
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
-footer{
-    background:thistle;
-    overflow-x: hidden;
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(2, 1, 1);
-  }
 
