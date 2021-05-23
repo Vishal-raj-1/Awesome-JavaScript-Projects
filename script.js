@@ -1281,14 +1281,8 @@ let projectData = [
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
   }
-  ,
-  {
-    projectName: 'Dice it',
-    projectImage: 'assets/Images/dice_it.jfif',
-    projectUrl: 'public/diceit.html'
-  }
-]
-
+  
+];
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function(a,b) {
@@ -1328,7 +1322,8 @@ function getProjects() {
 }
 
 // Search function starts
-let searchInput = document.getElementById('searchBar')
+
+let searchInput = document.getElementById('searchBar');
 let searchText='';
 
 searchInput.addEventListener('change',(e) => {
@@ -1338,7 +1333,10 @@ searchInput.addEventListener('change',(e) => {
 
 let searchBtn = document.getElementById('searchBtn')
 
+
 searchBtn.addEventListener('click',(e) => {
+  let sugHide = document.querySelector(".autocom-box");
+  sugHide.innerHTML = '';
   var filterData=[]
   if(searchText.length!==0){
     projectData.forEach(obj => {
@@ -1374,6 +1372,72 @@ searchBtn.addEventListener('click',(e) => {
 })
 
 // search function ends
+
+//suggestion start
+
+
+let size = projectData.length;
+var i;
+var myArray = [];
+var myUrl = [];
+var saveUrl = [];
+for(i=0; i<size; i++){
+  myArray[i] = projectData[i].projectName;
+  myUrl[i] = projectData[i].projectUrl;
+
+}
+
+
+const searchWrapper = document.querySelector(".searchProject");
+const inputBox = searchWrapper.querySelector("input");
+const suggBox = searchWrapper.querySelector(".autocom-box");
+
+inputBox.onkeyup = (e) => {
+  let userData =  e.target.value;
+  let emptyArray = [];
+  if(userData){
+    emptyArray = myArray.filter((data)=>{
+      return data.toLowerCase().startsWith(userData.toLowerCase());
+    });
+    emptyArray = emptyArray.map((data)=>{
+      var indexx = myArray.indexOf(data)
+      console.log("index: ", indexx);
+      console.log("array: ", myArray);
+      console.log("data: ", data);
+      return data = `<li onclick="location.href='${myUrl[indexx]}';">${data}</li>`;
+
+    });
+    searchWrapper.classList.add("active");
+  }else{
+
+  }
+  showSuggestions(emptyArray);
+}
+
+function showSuggestions(list){
+  let listData;
+  if(!list.length){
+
+  }else{
+    listData = list.join('');
+  }
+  suggBox.innerHTML = listData;
+}
+
+
+let searchBtn2 = document.getElementById('searchBtn')
+
+
+searchBtn2.addEventListener('click', ()=>{
+  var del = document.getElementsByClassName("autocom-box");
+  console.log("del:", del);
+  var del2 = del.getElementsByTagName("div");
+  console.log(del2);
+  del2.removeAttributeNode("autocom-box");
+});
+//suggestion ends
+
+
 window.onscroll = function () {
   myFunction();
 };

@@ -868,3 +868,42 @@ div.searchProject input[type=text] {
     clear: both;
     display: table;
   }
+
+
+  /* styel for suggestions */
+.searchProject .autocom-box{
+    padding: 10px 8px;
+    max-height: 280px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+.autocom-box li{
+      list-style: none;
+      display: none;
+      padding: 10px 8px;
+      width: 100%;
+      cursor: pointer;
+      color: #228abb;
+      border-radius: 3px;
+      display: none;
+      text-align: left;
+  }
+  .autocom-box li a{
+      color: #228abb;
+  }
+  .autocom-box li:hover{
+      background: #efefef;
+    
+  }
+
+  .searchProject.active .autocom-box {
+      padding: 10px 8px;
+      opacity: 1;
+      pointer-events: auto;
+  }
+  .searchProject.active .autocom-box li{
+      display: block;
+  }
+
+  /* syle for suggestion ends */
