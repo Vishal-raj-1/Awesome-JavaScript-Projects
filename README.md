@@ -119,6 +119,21 @@ git push -u origin <your_branch_name>
 
 **15** Voila :exclamation: You have made a PR to the awesome-javascript-projects :boom: . Wait for your submission to be accepted and your PR to be merged.
 
+#### If you want make an upadate even on you main branch in your forked repository
+
+**16** First switch to main branch
+
+```
+git switch main
+```
+
+**17** Now push all the files which you have pulled from upstream's main branch to your main branch
+
+```
+git push origin main
+```
+
+
 ### This Project is a part of the following Open Source Program
 
 <p align="center">
