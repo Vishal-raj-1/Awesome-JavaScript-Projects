@@ -1598,7 +1598,13 @@ let projectData = [
     projectName: "Pokemon Pokedex",
     projectImage: "assets/Images/pokemon.png",
     projectUrl: "public/pokemon.html"
+  },
+  {
+    projectName: "Preloader Projects",
+    projectImage: "assets/Images/preloader.png",
+    projectUrl: "public/preloader.html"
   }
+
 ]
 
 var projectDetails = projectData.slice(0);
