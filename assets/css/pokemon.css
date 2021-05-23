@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(#c2f3ff, #d2f2c2, #f7cdf7, #ffd1b5, #eae3ff);
+  }
+  
+  .poke_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding-inline-start: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .card {
+    width: 300px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 10px;
+    border: none;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: #16697a;
+  }
+  
+  .card:hover {
+    border: none;
+    transform: scale(0.8);
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+  }
+  
+  .pokemon-img {
+    height: 180px;
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  }
+  
+  .image-container {
+    border-radius: 50%;
+    border: 2px solid #f2f6f8;
+    background-color: #f2f6f8;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  @keyframes up-down {
+    0% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px, rgba(0, 0, 0, 0.1) 0px 8px 13px,
+      rgba(0, 0, 0, 0.1) 0px 18px 23px;
+    letter-spacing: normal;
+  }
+  
+  .number,
+  .name,
+  .type {
+    color: #f2f6f8;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px,
+                 rgba(0, 0, 0, 0.1) 0px 8px 13px,
+                rgba(0, 0, 0, 0.1) 0px 18px 23px;
+  }
+  @media all and (max-width: 632px) {
+    .card {
+      width: 80vw;
+    }
+    .pokemon-img {
+      height: 250px;
+    }
+  }
+  

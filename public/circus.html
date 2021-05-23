@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Circus game</title>
+  </head>
+  <style>
+    * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#canvas {
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: none;
+}
+
+/*Game Menu Stuff*/
+#game-menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-card {
+  background-color: white;
+  border-radius: 5px;
+  width: 500px;
+  height: 185px;
+  text-align: center;
+  color: black;
+}
+
+#menu-card h1 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+#menu-card button {
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #00ace6;
+  cursor: pointer;
+  padding: 10px 20%;
+  border-radius: 40px;
+  font-size: 40px;
+}
+
+#score-menu {
+  margin: 0 auto;
+  width: 600px;
+}
+
+#score-menu div {
+  display: inline-block;
+  text-align: center;
+}
+
+#score-menu div:nth-child(1) {
+  margin-left: 40px;
+}
+
+#score-menu div:nth-child(2) {
+  margin-left: 300px;
+}
+
+#score-menu div p {
+  font-size: 30px;
+  margin: 0;
+}
+
+#score-menu div span {
+  font-size: 20px;
+}
+  </style>
+  <body>
+    <h1>Circus Game</h1>
+    <section id="score-menu">
+      <div>
+        <p>Score</p>
+        <span id="score-text">0</span>
+      </div>
+      <div>
+        <p>Lives</p>
+        <span id="lives-text">3</span>
+      </div>
+    </section>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <section id="game-menu">
+      <div id="menu-card">
+        <h1>Circus</h1>
+        <button>Play</button>
+      </div>
+    </section>
+    <!--Script. Do not touch-->
+
+    <!--This file is just for loading the sprites & SFX-->
+    <script src="assets.js"></script>
+    <!--This file contains the global functions & variables-->
+    <script src="global.js"></script>
+    <!--This file contains our player and balloon classes-->
+    <script src="classes.js"></script>
+    <!--This file draws the canvases background-->
+    <script src="background.js"></script>
+    <!--This file is the game state functions (game over, respawn, score, etc.)-->
+    <script src="gameState.js"></script>
+    <!--This file is where we handle all of our collision detection-->
+    <script src="collisionDetection.js"></script>
+    <!--This file is the actual game logic-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      //ASSETS BEGIN
+//SPRITES
+let blueBalloon = new Image();
+blueBalloon.src = "https://raw.githubusercontent.com/lukechopper/Circus-Canvas-Game/master/assets/blue-baloon.png";
+let greenBalloon = new Image();
+greenBalloon.src = "https://raw.githubusercontent.com/lukechopper/Circus-Canvas-Game/master/assets/green-baloon.png";
+let yellowBalloon = new Image();
+yellowBalloon.src = "https://raw.githubusercontent.com/lukechopper/Circus-Canvas-Game/master/assets/yellow-baloon.png";
+//Player sprite sheet & sprite locations
+let spriteSheet = new Image();
+spriteSheet.src = "https://raw.githubusercontent.com/lukechopper/Circus-Canvas-Game/master/assets/sprites/spritesheet.png";
+//Created from 'Free Sprite Sheet Packer'
+const fallSprites = [
+    {
+        x: 1,
+        y: 1,
+        w: 83,
+        h: 83
+    },
+    {
+        x: 86,
+        y: 1,
+        w: 83,
+        h: 83
+    },
+    {
+        x: 171,
+        y: 1,
+        w: 83,
+        h: 83
+    }
+]
+const flySprites = [
+    {
+        x: 256,
+        y: 1,
+        w: 83,
+        h: 83
+    },
+    {
+        x: 341,
+        y: 1,
+        w: 83,
+        h: 83
+    },
+    {
+        x: 426,
+        y: 1,
+        w: 83,
+        h: 83
+    },
+    {
+        x: 511,
+        y: 1,
+        w: 83,
+        h: 83
+    },
+    {
+        x: 596,
+        y: 1,
+        w: 83,
+        h: 83
+    }
+]
+const standSprite = {
+    x: 681,
+    y: 1,
+    w: 47,
+    h: 83
+}
+const walkSprites = [
+    {
+        x: 730,
+        y: 1,
+        w: 60,
+        h: 88
+    },
+    {
+        x: 792,
+        y: 1,
+        w: 49,
+        h: 88
+    }
+]
+
+//AUDIO
+let gameSound = new Audio("https://github.com/lukechopper/Circus-Canvas-Game/blob/master/assets/sfx/gameSound.mp3?raw=true");
+let hitBalloonSound = new Audio("https://github.com/lukechopper/Circus-Canvas-Game/blob/master/assets/sfx/hitBalloon.mp3?raw=true");
+let seeSawJumpSound = new Audio("https://github.com/lukechopper/Circus-Canvas-Game/blob/master/assets/sfx/seeSawJump.mp3?raw=true");
+
+
+//ASSETS END
+
+//GLOBAL BEGIN
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+//HTML elements
+let gameMenu = document.getElementById("game-menu");
+let menuBtn = document.querySelector("#menu-card button");
+let scoreText = document.getElementById("score-text");
+let livesText = document.getElementById("lives-text");
+
+//Global Vars
+let canStartGame = false;
+let mousePos = null;
+let seeSawCanCollide = true; //seeSaw collision cooldown Boolean
+let gravity = 0.4;
+let friction = 0.008;
+//The next 3 Booleans relate to changing the paddles X velocity based on the mouse positioning
+let frameCount = 0;
+let prevMouseXPos = 0;
+let velocityXDiff = 0;
+let canSlowDownFromPlatform = true; //Player & Platform collision cooldown period Boolean
+let numOfCollisions = 0;
+//Gameplay
+let score = 0;
+let lives = 3;
+//Will eventually be assigned to the getAnimationFrame function
+let animationId = null;
+
+canvas.addEventListener("mousemove", e => {
+    mousePos = {
+        x: e.clientX - canvas.offsetLeft,
+        y: (e.clientY - canvas.offsetTop) + scrollY
+    }
+    
+});
+
+//Make it so user cannot move seeSaw outside of canvas
+function sortMouseXPos(mouseXPos) {
+    let newXPos = mouseXPos;
+    if(mouseXPos - 70 < 0){
+        newXPos = 70;
+    }else if(mouseXPos + 70 > canvas.width){
+        newXPos = canvas.width - 70;
+    }
+    return newXPos;
+}
+//GLOBAL END
+
+//CLASSES BEGIN
+class Person {
+    constructor(x,y,flipped,state){
+        this.state = state;
+        this.x = x;
+        this.origX = x;
+        this.y = y;
+        this.sprite = walkSprites[0];
+        this.walkSpeed = 0.3;
+        this.walkSpeedStore = 0; //Used to sort out jumping position when flipped
+        this.startJump = false;
+        this.shouldSpin = false;
+        this.spinNum = 270;
+        this.velocityX = 1.5;
+        this.velocityY = 7.5;
+        this.spriteFrame = 0;
+        this.frameWait = 0; //Used to make sprite animations look good
+        this.flipped = flipped;
+        this.width = 30;
+        this.height = 50;
+    }
+
+    newState(velocityX, width) {
+        this.velocityX = velocityX;
+        this.velocityY = 7.5;
+        this.spriteFrame = 0;
+        this.frameWait = 0;
+        this.shouldSpin = false; //Make it so player can no longer spin
+        this.spinNum = 270;
+        this.width = width;
+    }
+
+    stand(){
+        this.sprite = standSprite;
+        let xPos = 190;
+        if(p1Cord.flipped === 1){ //Player is on the right of see saw when other player is unflipped
+            xPos = 190; //This is if the seeSaw has not been moved with mouse
+            if(mousePos) xPos = sortMouseXPos(mousePos.x) + 40;
+        }else{
+            xPos = 80;
+            if(mousePos) xPos = sortMouseXPos(mousePos.x) - 70;
+        }
+        
+        this.x = xPos;
+        this.y = 545;
+        this.draw();
+    }
+
+    walk(){
+        this.flipped === 1 ? this.x += this.walkSpeed : this.x -= this.walkSpeed;
+        this.walkSpeedStore += this.walkSpeed; //This is so flipped sprite can be put into the correct position
+        let spriteNum = this.spriteFrame % 2; //Modulus is 2 because that is number of sprites in walk animation
+        this.sprite = walkSprites[spriteNum];
+        this.frameWait++;
+        this.draw();
+        //Only change sprite once every 10 frames (keeps the animation from playing too fast)
+        if(this.frameWait >= 10){
+            this.spriteFrame++;
+            this.frameWait = 0;
+        }
+        //Check to see if jump should happen now
+        if(this.x > this.origX + 35 || this.x < this.origX - 35){
+            //The player should jump now
+            this.newState(1.5, 50);
+            //Sort Width Out
+            this.state = "JUMP";
+            this.startJump = true;
+            //Need to revert coordinates because player has been walking in reverse
+            if(this.flipped === 0){
+                this.x -= this.walkSpeedStore; 
+            }
+        }
+    }
+
+    spin(){
+        //Work out the centre points of the player first
+        let midX = this.x + (this.width / 2);
+        let midY = this.y + (this.height / 2);
+        ctx.translate(midX,midY);
+        ctx.rotate(this.spinNum * Math.PI / 180);
+        ctx.translate(-midX,-midY);
+        if(this.frameWait >= 10) this.spinNum += 90; //Increment. Make it 11 so that rotation can only happen on new sprite.
+        if(this.spinNum > 270) this.spinNum = 0;
+    }
+
+    jump(){
+        let spriteNum = this.spriteFrame % 4; //Modulus is 4 because that is the number of sprites in jump animation
+        this.sprite = flySprites[spriteNum];
+        if(!this.shouldSpin){
+            if(this.startJump || this.y > 350) this.sprite = flySprites[0]; //Show the sprite on first 10 frames & when player is coming down
+        }
+        this.frameWait++;
+        //Do Velocity Stuff
+        this.flipped === 1 ? this.x += this.velocityX : this.x -= this.velocityX ;
+        this.y -= this.velocityY; //Minus makes the player travel upwards
+        //Sort out gravity & friction
+        this.velocityY -= gravity;
+        this.velocityX = this.velocityX - (this.velocityX*friction);
+        this.draw();
+        //Only change sprite once every 10 frames (keeps the animation from playing too fast)
+        if(this.frameWait >= 10){
+            this.spriteFrame++;
+            this.frameWait = 0;
+            this.startJump = false;
+        }
+    }
+
+    fail(){
+        let spriteNum = this.spriteFrame % 3;
+        this.sprite = fallSprites[spriteNum];
+        if(this.sprite !== fallSprites[2]) this.frameWait++;
+        this.draw();
+        //Only change sprite once every 10 frames (keeps the animation from playing too fast)
+        if(this.frameWait >= 10){
+            this.spriteFrame++;
+            this.frameWait = 0;
+        }
+    }
+
+    draw() {
+        ctx.save();
+        //Flip horizontally
+        if(this.flipped === 0 && this.state === "WALK") {
+            ctx.translate(this.x, this.y );
+            ctx.scale(-1, 1); //This is what rotates sprite horizontally
+            ctx.drawImage(spriteSheet, this.sprite.x, this.sprite.y, this.sprite.w, this.sprite.h, 0, 0, this.width, this.height); //0 position. We will let translate do the work instead.
+        }else{
+            if(this.shouldSpin) this.spin();
+            ctx.drawImage(spriteSheet, this.sprite.x, this.sprite.y, this.sprite.w, this.sprite.h, this.x, this.y, this.width, this.height);
+        }
+        ctx.restore();
+    }
+}
+
+//Player can be spawned on any one of the four platforms
+function spawnPlayer() {
+    //Considering that the height of the player is 50px
+    let choice = Math.floor(Math.random() * 4) + 1;
+    switch(choice){
+        case 1:
+            return {x: -15, y: 200, flipped: 1}
+        case 2:
+            return {x: canvas.width + 15, y: 200, flipped: 0}
+        case 3:
+            return {x: -15, y: 350, flipped: 1}
+        case 4:
+            return {x: canvas.width + 15 , y: 350, flipped: 0}
+    }
+}
+
+let p1Cord = spawnPlayer();
+let person1 = new Person(p1Cord.x, p1Cord.y, p1Cord.flipped, "WALK");
+let person2 = new Person(200,200,1,"STAND");
+//So we can loop through & apply the same code to both of our player objects
+let people = [person1, person2];
+
+class Balloon {
+    constructor(x, y, dx, image) {
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.image = image;
+        this.width = 22;
+        this.height = 30;
+    }
+
+    draw() {
+        this.x += this.dx;
+        ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
+    }
+}
+
+class BlueBalloon extends Balloon {
+    constructor(x, y){
+        super(x, y, -1, blueBalloon);
+    }
+    //Based on left edge of canvas
+    restartCycle(){
+        if((this.x + this.width) < 0){
+            this.x = (canvas.width);
+        }
+    }
+}
+
+class GreenBalloon extends Balloon {
+    constructor(x, y){
+        super(x, y, 1.2, greenBalloon);
+    }
+    //Based on right edge of canvas
+    restartCycle(){
+        if(this.x > canvas.width){
+            this.x = -(this.width);
+        }
+    }
+}
+
+class YellowBalloon extends Balloon {
+    constructor(x, y){
+        super(x, y, -1, yellowBalloon);
+    }
+    //Based on left side of canvas
+    restartCycle(){
+        if((this.x + this.width) < 0){
+            this.x = (canvas.width);
+        }
+    }
+}
+
+//Balloon Store
+let balloonStore = [];
+
+//Load Balloons Into Array
+function loadBalloons() {
+    //Starting ball position
+    let ballPos = 5;
+    /*We render out the balloons into the Array like this because we 
+    want the balloons to be stacked on top of one another like different layers in the game*/
+    for(let i = 0; i < 48; i++){
+        if(ballPos > 590){
+            ballPos = 5;
+        }
+        if(i < 16){
+            balloonStore.push(new BlueBalloon(ballPos, 5));
+        }else if(i > 15 && i < 32){
+            balloonStore.push(new GreenBalloon(ballPos, 45));
+        }else if(i > 31){
+            balloonStore.push(new YellowBalloon(ballPos, 85));
+        }
+        
+        ballPos += 39;
+    }
+}
+//CLASSES END
+
+//BACKGROUND STRART
+//The 4 platforms that the person can spawn on
+function drawPlatforms() {
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.moveTo(0,250);
+    ctx.lineTo(55,250);
+    ctx.moveTo(canvas.width,250);
+    ctx.lineTo(canvas.width - 55,250);
+    ctx.moveTo(0,400);
+    ctx.lineTo(55,400);
+    ctx.moveTo(canvas.width,400);
+    ctx.lineTo(canvas.width - 55,400);
+    ctx.stroke();
+}
+
+function drawSeeSaw() {
+    let originPoint = 150;
+    if(mousePos) originPoint = sortMouseXPos(mousePos.x);
+    //Top Of See Saw
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    if(p1Cord.flipped === 1){ //The other player is not flipped. There should be a person on the right side of seeSaw
+        ctx.moveTo(originPoint - 70,570);
+        ctx.lineTo(originPoint + 70,598);
+    }else{ //The other player is flipped.
+        ctx.moveTo(originPoint - 70,598);
+        ctx.lineTo(originPoint + 70,570);
+    }
+    ctx.stroke();
+    //SeeSaw Stand
+    ctx.beginPath();
+    ctx.moveTo(originPoint,584);
+    ctx.lineTo(originPoint - 20,600);
+    ctx.lineTo(originPoint + 20,600);
+    ctx.closePath();
+    ctx.fill();
+}
+
+//Player can collide with platform again but only when cooldown period has finished.
+function resetPlatform() {
+    canSlowDownFromPlatform = false;
+    setTimeout(() => {
+        canSlowDownFromPlatform = true;
+    }, 1000);
+}
+
+
+//BACKGROUND END
+
+//GAME STATE BEGIN
+//The user has missed the see Saw. Depending on how many lives are left, the game either ends of the player respawns
+function playerRespawns() {
+    lives--;
+    if(lives < 0){
+        endGame();
+        return;
+    }
+    seeSawCanCollide = true;
+    numOfCollisions = 0;
+    livesText.textContent = lives;
+    //Handle player respawn
+    p1Cord = spawnPlayer();
+    person1 = new Person(p1Cord.x, p1Cord.y, p1Cord.flipped, "WALK");
+    person2 = new Person(200,200,1,"STAND");
+    people = [person1, person2];
+}
+
+//The game is over because all lives have been depleted
+function endGame() {
+    document.querySelector("#menu-card h1").textContent = "Game Over!";
+    menuBtn.textContent = "Restart?";
+    gameMenu.style.display = "flex";
+}
+
+//Function that restarts the game
+function restartGame(){
+    balloonStore = [];
+    loadBalloons();
+    seeSawCanCollide = true;
+    numOfCollisions = 0;
+    score = 0;
+    lives = 3;
+    livesText.textContent = lives;
+    scoreText.textContent = score;
+    p1Cord = spawnPlayer();
+    person1 = new Person(p1Cord.x, p1Cord.y, p1Cord.flipped, "WALK");
+    person2 = new Person(200,200,1,"STAND");
+    people = [person1, person2];
+}
+
+//Function that loads the next level
+function newLevel() {
+    balloonStore = [];
+    loadBalloons();
+    seeSawCanCollide = true;
+    numOfCollisions = 0;
+    p1Cord = spawnPlayer();
+    person1 = new Person(p1Cord.x, p1Cord.y, p1Cord.flipped, "WALK");
+    person2 = new Person(200,200,1,"STAND");
+    people = [person1, person2];
+}
+
+//Check to see if the player has cleared all of the balls & a new level can be loaded
+function checkToSeeIfAllBallsAreCleared() {
+    setTimeout(() => {
+        if(balloonStore.length <= 0){
+            gameSound.play();
+            cancelAnimationFrame(animationId);
+            setTimeout(() => {
+                newLevel();
+            }, 2000);
+        }
+    }, 10);
+}
+
+//Increase score
+function increaseScore(amount) {
+    score += amount;
+    scoreText.textContent = score;
+}
+//GAME STATE END
+
+//COLLISION DETECTION BEGIN
+//See if the player has hit the see saw or has missed
+function playerHitSeeSaw(person) {
+    let xPos = sortMouseXPos(mousePos.x);
+    if(p1Cord.flipped === 1) { //Needs to hit left side of seeSaw
+        return(person.x > (xPos - 120) && 
+        person.x + person.width < xPos + 50);
+    }else{
+        return(person.x + person.width < (xPos + 120) &&
+            person.x > xPos - 50);
+    }
+}
+
+//See if player has hit the edge of the canvas
+function playerHitCanvasEdge(person) {
+    if(person.x + person.width > canvas.width){ //right side collision
+        person.x = canvas.width - person.width;
+        person.velocityX *= -1;
+        person.shouldSpin = true;
+        skipToNextSprite(person);
+    }else if(person.x < 0){ //left side collision
+        person.x = 0;
+        person.velocityX *= -1;
+        person.shouldSpin = true;
+        skipToNextSprite(person);
+    }else if(person.y < 0){ //top collision
+        person.y = 0;
+        person.velocityY *= -1;
+        skipToNextSprite(person);
+    }
+}
+
+//Skip to next sprite so collision looks good.
+function skipToNextSprite(person) {
+    person.spriteFrame++;
+    person.frameWait = 0;
+}
+
+//Player hits top of the platforms
+function playerHitTopOfPlatform(person) {
+    if(person.velocityY < -5){ //Check to see that player is falling
+
+    if(person.y + person.height > 250 &&
+        person.y + person.height < 300 &&
+        person.x < 56){ //Top Left Platform Collision
+            console.log("Top Left Platform Collision");
+            person.velocityY += 5; //Slow down the velocity on the Y
+            resetPlatform();
+    }else if(person.y + person.height > 250 &&
+        person.y + person.height < 300 &&
+        person.x + person.width > canvas.width - 56){ //Top Right Platform Collision
+            person.velocityY += 5; //Slow down the velocity on the Y
+            console.log("Top Right Platform Collision");
+            resetPlatform();
+    }else if(person.y + person.height > 400 &&
+        person.y + person.height < 450 &&
+        person.x < 56){//Bottom left platform collision
+            person.velocityY += 5; //Slow down the velocity on the Y
+            console.log("Bottom Left Platform Collision");
+            resetPlatform();
+    }else if(person.y + person.height > 400 &&
+        person.y + person.height < 450 &&
+        person.x + person.width > canvas.width - 56){
+            person.velocityY += 5; //Slow down the velocity on the Y
+            console.log("Bottom Right Platform Collision");
+            resetPlatform();
+    }
+}
+}
+
+
+//So that collision with balloons looks good
+function generatePlayerHitBox(person){
+    let centerXPoint = person.x + (person.width / 2);
+    let leftSide = centerXPoint - 6.5; //We are checking to see if body has collided not the arms
+    let rightSide = centerXPoint + 6.5;
+    return {
+        leftSide,
+        y: person.y,
+        rightSide,
+        height: person.height
+    }
+}
+
+//Check to see if player has collided with balloon on any side
+function hasPlayerHitBalloon(person, balloon){
+    let personHitBox = generatePlayerHitBox(person);
+    /*5.5 is used because we want to get a small portion of the players midsection. 16.5 is used because we want to incorporate half of the space between the balloons
+    (39) into the balloons collision box. This means that the player will not be able to pass through a complete line of balloons without a collision*/
+    return !(
+        personHitBox.leftSide>balloon.x+balloon.width || //Person is to the right of balloon
+        personHitBox.rightSide<balloon.x || //Person is to the left of balloon
+        personHitBox.y>balloon.y+balloon.height || //Person is below the balloon
+        person.y+person.height<balloon.y || //Person is above the balloon
+        personHitBox.leftSide + 5.5 < balloon.x - 16.5 && personHitBox.rightSide - 5.5 > balloon.x + balloon.width + 16.5 //Means the top of player cannot pass through a complete line of balloons without collision
+    );
+}
+
+
+
+//Do something when collision between player & ball has occured
+function playerHasHitBalloon(person, balloon){
+    let index = balloonStore.indexOf(balloon);
+    let personHitBox = generatePlayerHitBox(person);
+    if(personHitBox.y < balloon.y + balloon.height && personHitBox.y > balloon.y + 25 && //Top of player has collided with bottom of balloon
+            personHitBox.leftSide + 5.5 > balloon.x - 16.5 && personHitBox.rightSide - 5.5 < balloon.x + balloon.width + 16.5){
+        person.velocityY *= -1;
+        person.velocityX *= -1;
+        removeBalloon(index);
+    }else if(personHitBox.y < balloon.y - 40 && personHitBox.y + personHitBox.height > balloon.y &&
+            personHitBox.leftSide + 5.5 > balloon.x - 16.5 && personHitBox.rightSide - 5.5 < balloon.x + balloon.width + 16.5){ //Bottom of player has collided with bottom of balloon
+        person.velocityY *= -1;
+        person.velocityX *= -1;
+        removeBalloon(index);
+    }else if(personHitBox.leftSide < balloon.x + balloon.width ){ //Collision between left of player & right of balloon
+        person.velocityX *= -1;
+        person.shouldSpin = true;
+        removeBalloon(index);
+    }else if(personHitBox.rightSide > balloon.x){ //Collision between right of player & left of balloon
+        person.velocityX *= -1;
+        person.shouldSpin = true;
+        removeBalloon(index);
+    }
+}
+
+//Remove Balloon on collision & increase the score according to what colour balloon they popped
+function removeBalloon(index) {
+    let balloon = balloonStore[index];
+    switch(balloon.image){
+        case yellowBalloon:
+            increaseScore(20);
+            break;
+        case greenBalloon:
+            increaseScore(50);
+            break;
+        case blueBalloon:
+            increaseScore(100);
+            break;
+    }
+    //Play the audio
+    hitBalloonSound.play();
+    setTimeout(() => {
+        balloonStore.splice(index, 1);
+        //Check to see if all the balloons have been cleared
+        checkToSeeIfAllBallsAreCleared();
+    }, 0)
+}
+
+
+//COLLISION DETECTION END
+
+//SCRIPT BEGIN
+//We either start the game or restart the game when the user clicks on the button
+menuBtn.addEventListener("click", e => {
+    gameMenu.style.display = "none";
+    if(canStartGame & lives > 0){
+        loadBalloons();
+        animate();
+        //Initialise mousePos. User may have clicked the button without moving the mouse
+        mousePos = {
+            x: e.clientX - canvas.offsetLeft,
+            y: e.clientY - canvas.offsetTop
+        }
+    }
+    if(lives < 0){
+        restartGame();
+    }
+});
+
+//so the 'animate' function will only be called when all images have been successfully loaded.
+function loadSprites() {
+    blueBalloon.onload = loadAssets;
+    greenBalloon.onload = loadAssets;
+    yellowBalloon.onload = loadAssets;
+    //Player Sprites
+    spriteSheet.onload = loadAssets;
+}
+
+//The only function to get called on initial document load
+loadSprites();
+
+
+//Temporarily alter the velocity on the first few jumps depending on what platform the player spawned on. This is to make the game feel better
+function sortVelocityStore(velocityYStore){
+    if(p1Cord.y === 350 && numOfCollisions < 3){
+        velocityYStore -= 1;
+    }else if(p1Cord.y === 200 && numOfCollisions < 2){
+        velocityYStore += 1;
+    }
+    return -velocityYStore;
+}
+
+//Limit change in X velocity. This is to prevent the player from going way to fast.
+//We also add some default velocity to the player. This is to prevent a straight jump.
+function limitChangeXVelocity(changeXVelocity, personJump){
+    if(changeXVelocity < -35){
+        changeXVelocity = -35;
+    }else if(changeXVelocity > 35){
+        changeXVelocity = 35;
+    }else if(changeXVelocity === 0 && people.indexOf(personJump) === 0){
+        changeXVelocity = 1.5;
+    }else if(changeXVelocity === 0 && people.indexOf(personJump) === 1){
+        changeXVelocity = -1.5;
+    }
+    return changeXVelocity;
+}
+
+function animate() {
+    animationId = requestAnimationFrame(animate);
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    //See how much mouse has moved over the past 5 frames
+    if(frameCount >= 15 && mousePos){
+        frameCount = 0;
+        velocityXDiff = (mousePos.x - prevMouseXPos) / 4;
+    }
+
+    if(frameCount <= 0 && mousePos){
+        prevMouseXPos = mousePos.x;
+    }
+
+    //Draw platforms
+    drawPlatforms();
+    //seeSaw
+    drawSeeSaw();
+
+    //Draw People
+    people.forEach((person, index) => {
+
+        //Handle collision detection for the player that is currently jumping
+        if(person.state === "JUMP"){
+            playerHitCanvasEdge(person);
+            if(canSlowDownFromPlatform && !person.startJump && person.flipped !== 0){
+                playerHitTopOfPlatform(person);
+            } 
+        }
+
+        //See if person has hit seeSaw when they are far down enough
+        if(mousePos && (person.y + person.height) > 597 && seeSawCanCollide){
+            seeSawCanCollide = false;
+            let hasPlayerHit = playerHitSeeSaw(person);
+            if(!hasPlayerHit){
+                person.state = "FAIL";
+                person.y = canvas.height - person.height;
+                person.newState(0, 50);
+                //Play audio
+                gameSound.play();
+                //Wait 2 seconds before respawning the player
+                setTimeout(() => {
+                    playerRespawns();
+                }, 2000)
+            }else{
+                //Play audio
+                seeSawJumpSound.play();
+                increaseScore(10); //Increase score by 10 for landing properly
+                p1Cord.flipped === 1 ? p1Cord.flipped = 0 : p1Cord.flipped = 1; //flip the seeSaw to the opposite side
+                let velocityYStore = person.velocityY; // Store the velocity before it is reset with 'newState'
+                person.newState(0, 30);
+                person.state = "STAND";
+                let personJump = null;
+                if(index === 0){
+                    personJump = people[1];
+                }else{
+                    personJump = people[0];
+                }
+                    personJump.state = "JUMP";
+                    //So they jump in the right direction
+                    if(personJump.flipped === 0){
+                        personJump.flipped = 1;
+                    }
+                    personJump.newState(0, 50);
+                    personJump.velocityX = limitChangeXVelocity(velocityXDiff, personJump);
+                    personJump.velocityY = sortVelocityStore(velocityYStore);
+                    personJump.startJump = true;
+                    //Increment seeSaw collisions
+                    numOfCollisions++;
+                    setTimeout(() => {
+                        seeSawCanCollide = true;
+                    }, 300);
+            }   
+        }
+
+
+        //Call the relevant method based on the state of the player object
+        switch(person.state){
+            case "WALK":
+                person.walk();
+                break;
+            case "STAND":
+                person.stand();
+                break;
+            case "JUMP":
+                person.jump();
+                break;
+            case "FAIL":
+                person.fail();
+                break;
+        }
+    });
+
+    //Draw balloon images to canvas
+    balloonStore.forEach(balloon => {
+        //Check to see if player has hit balloon
+        let jumpPlayer = people.find(person => person.state === "JUMP");
+        if(jumpPlayer){ //Only when there is a player that is currently jumping
+            if(hasPlayerHitBalloon(jumpPlayer, balloon)){
+                playerHasHitBalloon(jumpPlayer, balloon);
+            }
+        }
+        balloon.restartCycle();
+        balloon.draw();
+    });
+
+
+    if(mousePos) frameCount++; //Frame has been successfully drawn. Used for the seeSaw velocity change!
+}
+
+
+let numberOfImages = 4;
+function loadAssets() {
+    //Countdown until all images are loaded
+    if(--numberOfImages > 0) return;
+    //By this point, all assets should been have loaded
+    //Load Balloons into Array
+    canStartGame = true;
+}
+
+
+
+//SCRIPT END
+    </script>
+  </body>
+</html>
