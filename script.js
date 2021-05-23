@@ -1549,6 +1549,11 @@ let projectData = [
     projectUrl: "public/product_counter.html"
   },
   {
+    projectName: "Gray Scale Cursor",
+    projectImage: "assets/Images/grayCursor.png",
+    projectUrl: "public/grayCursor.html"
+  },
+  {
     projectName: "Dynamic Time message",
     projectImage: "assets/Images/dynamic_message.png",
     projectUrl: "public/dynamic_message.html",
@@ -1581,10 +1586,11 @@ let projectData = [
     projectUrl: "public/barcodeGenerator.html"
   },
   {
-    projectName: "Gray Scale Cursor",
-    projectImage: "assets/Images/grayCursor.png",
-    projectUrl: "public/grayCursor.html"
+    projectName: "Pokemon Pokedex",
+    projectImage: "assets/Images/pokemon.png",
+    projectUrl: "public/pokemon.html"
   }
+
 ]
 
 var projectDetails = projectData.slice(0);
