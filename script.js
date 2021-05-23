@@ -92,7 +92,7 @@ let projectData = [
   },
   {
     projectName: "Face Detector",
-    projectImage: "assets/Images/Face Detector.png",
+    projectImage: "assets/Images/Face_Detector.png",
     projectUrl: "public/face_detector.html"
   },
   {
