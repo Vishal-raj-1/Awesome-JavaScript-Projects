@@ -111,9 +111,7 @@ footer p {
 /* for smaller devices*/
 
 @media (max-width: 766px) {
-  header {
-    margin: 2em;
-  }
+ 
 
 .drum span {
     font-size: 0.7em;
@@ -124,6 +122,12 @@ footer p {
   }
 }
 
+@media (max-width: 400x) {
+header img {
+  width: 300px !important;
+}
+
+}
 /* theme styling  */
 
 body.dark-theme {
