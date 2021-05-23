@@ -1549,6 +1549,11 @@ let projectData = [
     projectUrl: "public/product_counter.html"
   },
   {
+    projectName: "Gray Scale Cursor",
+    projectImage: "assets/Images/grayCursor.png",
+    projectUrl: "public/grayCursor.html"
+  },
+  {
     projectName: "Dynamic Time message",
     projectImage: "assets/Images/dynamic_message.png",
     projectUrl: "public/dynamic_message.html",
@@ -1564,9 +1569,14 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Canvas Text",
+    projectImage: "assets/GIFs/canvasText.gif",
+    projectUrl: "public/canvasText.html"
+  },
+  {
     projectName: "Bridge N Torch",
     projectImage: "assets/Images/bridgeNtorch.png",
-    projectUrl: "public/bridgeNtorch.html"
+    projectUrl: "public/bridgeNtorch.html",
   },
   {
     projectName: "Caesar Cipher",
@@ -1580,12 +1590,17 @@ let projectData = [
     projectUrl: "public/barcodeGenerator.html"
   },
   {
+    projectName: "Array Methods",
+    projectImage: "assets/Images/arrayMethods.png",
+    projectUrl: "public/arrayMethods.html",
+  },
+  {
     projectName: "Pokemon Pokedex",
     projectImage: "assets/Images/pokemon.png",
     projectUrl: "public/pokemon.html"
   }
+]
 
-];
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
