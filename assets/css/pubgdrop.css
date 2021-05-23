@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #99ccff !important;
+}
+
+.containerr{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    top: 10px;
+}
+
+.cloud-1{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    height: 100px;
+}
+
+.cloud-2{
+    height: 100px;
+    position:absolute ;
+    left: 70%;
+    top: 70%;
+}
+
+#plane {
+    visibility: hidden;
+}
+
+#plane{
+    height: 400px;
+    position:absolute ;
+    bottom: 0%;
+    left: -30%;
+    animation: planeAnim 12s infinite linear;
+    animation-play-state: paused;
+}
+img{
+    height: 400px;
+}
+
+@keyframes planeAnim{
+    0%{
+        bottom: 0%;
+        left: -30%;
+    }
+    /* left value will be constant at 45% to 55% */
+    45%{
+        left: 30%;
+    }55%{
+        left: 30%;
+    }
+    100%{
+        left: 110%;
+        bottom: 50%;
+    }
+}
+
+
+
+#airdrop {
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    visibility: hidden;
+    animation: airdropAnim 12s linear infinite 6s;
+    animation-play-state: paused;
+}
+
+#img1{
+    height: 150px;
+}
+
+@keyframes airdropAnim{
+    0%{
+        top: 60%;
+        visibility: visible;
+    }100%{
+        top: 110%;
+    }
+}
+
+
+#button{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #ff3b3b;
+    text-align: center;
+    font-family: serif;
+    font-size: 50px;
+    border: 1px solid black;
+    padding-bottom: 5px;
+
+
+
+}
+
+#button:hover{
+    background-color: #f06262;
+}
+
+#write{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
