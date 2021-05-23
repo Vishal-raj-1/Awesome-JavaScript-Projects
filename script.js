@@ -1598,6 +1598,11 @@ let projectData = [
     projectName: "Pokemon Pokedex",
     projectImage: "assets/Images/pokemon.png",
     projectUrl: "public/pokemon.html"
+  },
+  {
+    projectName: "Check Multiple Checkboxes",
+    projectImage: "assets/GIFs/checkboxes.gif",
+    projectUrl: "public/checkboxes.html"
   }
 ]
 
