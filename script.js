@@ -1598,6 +1598,11 @@ let projectData = [
     projectName: "Pokemon Pokedex",
     projectImage: "assets/Images/pokemon.png",
     projectUrl: "public/pokemon.html"
+  },
+  {
+    projectName: "Angry Birds",
+    projectImage: "assets/Images/Angry_bird/demo.png",
+    projectUrl: "public/Angry_bird.html"
   }
 ]
 
