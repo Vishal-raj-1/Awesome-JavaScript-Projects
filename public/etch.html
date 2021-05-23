@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+   <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ -->
+    <title>Etch Sketch!</title>
+  </head>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Dancing Script", cursive;
+  background-color: #708090;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #708090;
+  border: 1px solid  #708090;
+  height: 100%;
+  width: 100%;
+ 
+}
+
+.header {
+  height: 29%;
+  width: 100%;
+}
+
+#wrapper {
+  display: grid;
+  height: 67%;
+  width: 500px;
+  margin: 0 auto;
+  background-color: #dcdcdc;
+}
+
+.footer {
+  height: 7%;
+  width: 100%;
+}
+
+h1 {
+  width: 278px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 50px;
+  color: #ff8080;
+  text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  color: #400080;
+}
+
+h6 {
+  width: 200px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  color: #ff8080;
+}
+
+#control {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  display: inline;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  justify-content: center;
+  color: white;
+  background-color: #333333;
+  border: 1px solid #333333;
+}
+
+button:hover {
+  background-color: #696969;
+}
+
+.box {
+  display: grid;
+  border: 1px solid #696969;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.space {
+  display: grid;
+  border: 1px solid #696969;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Media queries*/
+
+@media screen and (max-width: 1024px) {
+  #wrapper {
+    width: 80%;
+    height: 67%;
+    margin-top: 30px;
+  }
+
+  .footer {
+    height: 7%;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  h1 {
+    width: 278px;
+  }
+
+  #control {
+    width: 80%;
+  }
+
+  button {
+    width: 65px;
+  }
+}
+
+  </style>
+  <body>
+    <div class="flex-container">
+    <div class="header">
+      <h1>Etch-a-sketch</h1>
+      <p>A sketch a day, keeps sadness away!!!</p><br>
+      <div id="control">
+        <button id="btn">Reset</button>
+        <button id="btnone">Black</button>
+        <button id="btntwo">Random</button>
+        <button id="btnthree">Eraser</button>
+      </div>
+    </div>
+    <br>
+    <div id="wrapper"></div>
+    
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      let gridnumber;
+let inputnumber;
+let fill;
+let i;
+let nodeview;
+
+function mainGrid() {
+  inputnumber = 256;
+  for (i = 0; i < 256; i++) {
+    let wrapper = document.createElement("div");
+    wrapper.className = "box";
+    document.getElementById("wrapper").appendChild(wrapper);
+    document.getElementById("wrapper").style.gridTemplateColumns =
+      "repeat(16,auto)";
+  }
+}
+
+window.addEventListener("load", mainGrid);
+
+function gridSize() {
+  gridnumber = Number(prompt("Fill in number between 1 and 100"));
+  while (isNaN(gridnumber) === true || gridnumber < 1 || gridnumber > 100) {
+    gridnumber = prompt("Only number between 1 and 100 is allowed!!!");
+  }
+}
+
+document.getElementById("btn").addEventListener("click", gridSize);
+
+function gridBasis() {
+  if (
+    document.getElementById("wrapper").contains(document.querySelector(".box"))
+  ) {
+    // Method to remove every child element in a parent div in next line
+    document.querySelectorAll(".box").forEach((element) => element.remove());
+    inputnumber = gridnumber * gridnumber;
+    fill = gridnumber;
+    for (i = 0; i < inputnumber; i++) {
+      let wrapper = document.createElement("div");
+      wrapper.className = "space";
+      document.getElementById("wrapper").appendChild(wrapper);
+      document.getElementById("wrapper").style.gridTemplateColumns =
+        "repeat(" + fill + ", auto)";
+    }
+  } else if (
+    document
+      .getElementById("wrapper")
+      .contains(document.querySelector(".space"))
+  ) {
+    // Method to remove every child element in a parent div in next line
+    document.querySelectorAll(".space").forEach((element) => element.remove());
+    inputnumber = gridnumber * gridnumber;
+    fill = gridnumber;
+    for (i = 0; i < inputnumber; i++) {
+      let wrapper = document.createElement("div");
+      wrapper.className = "box";
+      document.getElementById("wrapper").appendChild(wrapper);
+      document.getElementById("wrapper").style.gridTemplateColumns =
+        "repeat(" + fill + ", auto)";
+    }
+  }
+}
+
+document.getElementById("btn").addEventListener("click", gridBasis);
+
+nodeview = document.getElementById("wrapper");
+
+function random(e) {
+  e.target.style.backgroundColor = colorCreator();
+}
+
+nodeview.addEventListener("mouseover", random, false);
+
+function colorCreator() {
+  let red = Math.floor(Math.random() * (255 - 0 + 1) + 0);
+  let green = Math.floor(Math.random() * (255 - 0 + 1) + 0);
+  let black = Math.floor(Math.random() * (255 - 0 + 1) + 0);
+  return `rgb( ${red} , ${green}, ${black})`;
+}
+
+function black(e) {
+  e.target.style.backgroundColor = "black";
+}
+
+document.getElementById("btnone").addEventListener("click", function () {
+  nodeview.removeEventListener("mouseover", random);
+  nodeview.removeEventListener("mouseover", white);
+  nodeview.addEventListener("mouseover", black, false);
+});
+
+function random(e) {
+  e.target.style.backgroundColor = colorCreator();
+}
+
+document.getElementById("btntwo").addEventListener("click", function () {
+  nodeview.removeEventListener("mouseover", black);
+  nodeview.removeEventListener("mouseover", white);
+  nodeview.addEventListener("mouseover", random, false);
+});
+
+function white(e) {
+  e.target.style.backgroundColor = "white";
+}
+
+document.getElementById("btnthree").addEventListener("click", function () {
+  nodeview.removeEventListener("mouseover", black);
+  nodeview.removeEventListener("mouseover", random);
+  nodeview.addEventListener("mouseover", white, false);
+});
+
+    </script>
+  </body>
+</html>
