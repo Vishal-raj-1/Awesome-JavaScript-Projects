@@ -55,6 +55,11 @@ html {
   align-items: center;
   justify-content: center;
 }
+.set {
+  margin: 2% auto;
+  width: 90vw;
+  text-align: center;
+}
 
 .key {
   border: 0.4rem solid black;
@@ -87,4 +92,12 @@ kbd {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #ffc600;
+}
+button{
+  padding: 0%;
+  border: 3px;
+  border: 0.4rem solid black;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 10px;
 }
