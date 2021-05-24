@@ -25,18 +25,18 @@ let projectData = [
     projectUrl: "public/circus.html",
   },
   {
-    projectName:"Emoji Feedback Form",
+    projectName: "Emoji Feedback Form",
     projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html",
   },
   {
-    projectName:"MooD SlideR",
+    projectName: "MooD SlideR",
     projectImage: "assets/Images/mood-slider.png",
     projectUrl: "public/mood-slider.html",
   },
   {
-    projectName:"Interactive Flashlight",
+    projectName: "Interactive Flashlight",
     projectImage: "assets/Images/flashlight.png",
     projectUrl: "public/flashlight.html",
   },
@@ -115,7 +115,7 @@ let projectData = [
     projectImage: "assets/GIFs/temp_slider.gif",
     projectUrl: "public/temp_slider.html",
   },
-   {
+  {
     projectName: "Credit Card Payment Form",
     projectImage: "assets/GIFs/credit_card.png",
     projectUrl: "public/credit_card.html",
@@ -557,6 +557,11 @@ let projectData = [
     projectUrl: "public/line_replacing_project.html"
   },
   {
+    projectName: "Line Through Effect",
+    projectImage: "assets/Images/line-through.png",
+    projectUrl: "public/line_through.html"
+  },
+  {
     projectName: "Password Generator",
     projectImage: "assets/GIFs/passwordGenerator.gif",
     projectUrl: "public/passwordGenerator.html"
@@ -602,7 +607,7 @@ let projectData = [
     projectImage: 'assets/Images/tip-calc.png',
     projectUrl: 'public/tip-calculator.html'
   }
- 
+
   ,
   {
     projectName: "DragNDrop",
@@ -1414,15 +1419,15 @@ let projectData = [
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
   },
-   {
-     projectName: 'Captcha Validator',
-     projectImage: 'assets/Images/CaptchaValidator.png',
-     projectUrl: 'public/CaptchaValidator.html'
-   } ,
-   {
-     projectName: '3D Image Gallery',
-     projectImage: 'assets/Images/3DImageGallery.PNG',
-     projectUrl: 'public/3DImageGallery.html'
+  {
+    projectName: 'Captcha Validator',
+    projectImage: 'assets/Images/CaptchaValidator.png',
+    projectUrl: 'public/CaptchaValidator.html'
+  },
+  {
+    projectName: '3D Image Gallery',
+    projectImage: 'assets/Images/3DImageGallery.PNG',
+    projectUrl: 'public/3DImageGallery.html'
 
   }
   ,
@@ -1431,12 +1436,12 @@ let projectData = [
     projectImage: 'assets/Images/button.PNG ',
     projectUrl: 'public/ButtonGenerator.html'
 
-   },
-   {
-     projectName: 'Battery Indicator',
-     projectImage: 'assets/Images/BatteryIndicator.PNG',
-     projectUrl: 'public/BatteryIndicator.html'
-   },
+  },
+  {
+    projectName: 'Battery Indicator',
+    projectImage: 'assets/Images/BatteryIndicator.PNG',
+    projectUrl: 'public/BatteryIndicator.html'
+  },
   {
     projectName: "Captcha Validator",
     projectImage: "assets/Images/CaptchaValidator.png",
