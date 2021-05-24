@@ -14,8 +14,6 @@ const setUpCamera = () => {
 
 const detectFaces = async () => {
   const prediction = await model.estimateFaces(video, false);
-  console.log("hiii")
-  console.log(prediction);
   ctx.drawImage(video, 0, 0, 600, 400)
   prediction.forEach((e) => {
     ctx.beginPath();
@@ -43,7 +41,6 @@ document.getElementById("btn").addEventListener("click", () => {
     const tracks = mediaStream.getTracks();
     tracks.forEach(track => track.stop())
     document.getElementById("btn").innerHTML = "Open Webcam";
-    console.log(document.getElementById("btn").style);
   }
   else if (document.getElementById("btn").innerHTML == "Open Webcam") {
     document.getElementById("btn").innerText = "Wait for a few seconds...";
@@ -51,8 +48,16 @@ document.getElementById("btn").addEventListener("click", () => {
     video.addEventListener("loadeddata", async () => {
       canvas.style.display = "block";
       model = await blazeface.load();
+      
       setInterval(detectFaces, 40);
+      await sleep(1000);
+      console.log("hello again");
       document.getElementById("btn").innerText = "Close Webcam";
-    });
+    })
+     
   }
 });
+const sleep = (milliseconds) => {
+  console.log("sleep for 100 sec in case of slow system");
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
