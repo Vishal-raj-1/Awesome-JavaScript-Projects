@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flashlight</title>
+    <!-- Linking Stylesheet -->
+    <style>
+		body{
+	background-color: #333333;
+	margin: 0;
+	padding: 0;
+}
+.flashlight{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left:0;
+	bottom: 145px;
+}
+.upper{
+	background-color: #8c8c8c;
+	height: 50px;
+	width: 180px;
+}
+.lower{
+	height: 0px;
+	width: 120px;
+	border-top:80px solid #595959;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+}
+.body{
+	height: 310px;
+	width: 120px;
+	background-color: #8c8c8c;
+	position: relative;
+	left: 30px;
+	border-radius: 0px 0px 20px 20px;
+}
+#button{
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	position: relative;
+	top:80px;
+	left:40px;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+	box-shadow: 0px 5px #666666;
+}
+#light{
+	height: 0px;
+	width: 160px;
+	border-top:300px solid rgba(255,255,51,0.9);
+	border-left:70px solid transparent;
+	border-right:70px solid transparent;
+	position: relative;
+	bottom: 740px;
+	right: 60px;
+	visibility: hidden;
+
+}
+.s1,.s2{
+	background-color: white;
+	height: 15px;
+	width: 100%;
+	position: relative;
+}
+.s1{
+	height:22px;
+	top:13px; 
+}
+.s2{
+	top:210px;
+}
+
+	</style>
+    <!-- Linking Script -->
+    <script>
+		var i;
+i=0; //indicating light is off initially
+function glow(){
+    if(i==0){
+    document.getElementById("light").style.visibility = "visible";
+        i=1; //indicating light is now on
+        document.getElementById("button").style.top="85px";
+        document.getElementById("button").style.boxShadow="none";
+    }
+    else{
+        document.getElementById("light").style.visibility = "hidden";
+        document.getElementById("button").style.top="80px";
+        document.getElementById("button").style.boxShadow="0px 5px #666666";
+        i=0; //indicating light is now off
+    }
+}
+	</script>
+</head>
+<body>
+	<h1 style="color:yellow; font-size: 60px; text-align: center; margin-top: 3rem;">Interactive Flashlight</h1>
+	<div class="flashlight">
+		<div class="upper">
+			<div class="s1"></div>
+		</div>
+		<div class="lower"></div>
+		<div class="body">
+			<button type="button" id="button" onclick="glow()"></button>
+			<div class="s2"></div>
+		</div>
+		<div id="light"></div>
+	</div>
+</body>
+</html>
