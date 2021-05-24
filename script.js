@@ -1574,6 +1574,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Scratch-Off to reveal",
+    projectImage: "assets/GIFs/scratchOff.gif",
+    projectUrl: "public/scratchOff.html"
+  },
+  {
     projectName: "Canvas Text",
     projectImage: "assets/GIFs/canvasText.gif",
     projectUrl: "public/canvasText.html"
