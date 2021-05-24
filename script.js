@@ -647,6 +647,11 @@ let projectData = [
     projectUrl: "public/Weather_app.html"
   },
   {
+    projectName: "Whack a Mole Game",
+    projectImage: "assets/Images/whack-a-mole.png",
+    projectUrl: "public/whack-a-mole.html"
+  },
+  {
     projectName: "Yoga App",
     projectImage: "assets/Images/yogascreen.png",
     projectUrl: "public/yoga.html"
