@@ -1549,6 +1549,11 @@ let projectData = [
     projectUrl: "public/product_counter.html"
   },
   {
+    projectName: "Reading progress Bar",
+    projectImage: "assets/Images/readBar.png",
+    projectUrl: "public/readBar.html"
+  },
+  {
     projectName: "Gray Scale Cursor",
     projectImage: "assets/Images/grayCursor.png",
     projectUrl: "public/grayCursor.html"
