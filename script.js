@@ -1549,6 +1549,11 @@ let projectData = [
     projectUrl: "public/product_counter.html"
   },
   {
+    projectName: "Reading progress Bar",
+    projectImage: "assets/Images/readBar.png",
+    projectUrl: "public/readBar.html"
+  },
+  {
     projectName: "Gray Scale Cursor",
     projectImage: "assets/Images/grayCursor.png",
     projectUrl: "public/grayCursor.html"
@@ -1569,6 +1574,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Scratch-Off to reveal",
+    projectImage: "assets/GIFs/scratchOff.gif",
+    projectUrl: "public/scratchOff.html"
+  },
+  {
     projectName: "Canvas Text",
     projectImage: "assets/GIFs/canvasText.gif",
     projectUrl: "public/canvasText.html"
@@ -1586,6 +1596,11 @@ let projectData = [
 
   },
   {
+    projectName: "DOM Node",
+    projectImage: "assets/Images/domNode.png",
+    projectUrl: "public/domNode.html"
+  },
+  {
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
@@ -1601,9 +1616,14 @@ let projectData = [
     projectUrl: "public/pokemon.html"
   },
   {
+    projectName: "Check Multiple Checkboxes",
+    projectImage: "assets/GIFs/checkboxes.gif",
+    projectUrl: "public/checkboxes.html"
+  },
+  {
     projectName:"WebDevelopmentCourse webpage",
     projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
-    projectUrl:"public/WebDevelopmentCourse.html",
+    projectUrl:"public/WebDevelopmentCourse.html"
   }
 ]
 
