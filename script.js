@@ -357,6 +357,11 @@ let projectData = [
     projectUrl: "public/todo-app.html"
   },
   {
+    projectName: "Relaxer Application",
+    projectImage: "assets/Images/relaxerApplication.png",
+    projectUrl: "public/relaxerApplication.html"
+  },
+  {
     projectName: "Length Unit Conversions",
     projectImage: "assets/Images/length_banner.jfif",
     projectUrl: "public/length_converter.html"
