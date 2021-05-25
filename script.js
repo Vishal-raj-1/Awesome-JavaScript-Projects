@@ -701,7 +701,7 @@ let projectData = [
     projectImage: "assets/Images/calendar_backcover.png",
     projectUrl: "public/calendar.html"
   },
- 
+
   {
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
@@ -758,12 +758,7 @@ let projectData = [
     projectUrl: "public/RotatingNav.html"
   },
   {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/textToVoice.gif",
-    projectUrl: "public/textToVoice.html"
-  },
-  {
-    projectName: "Randam User Finder",
+    projectName: "Random User Finder",
     projectImage: "assets/GIFs/Random_User.gif",
     projectUrl: "public/Randomuser.html"
   },
@@ -1145,16 +1140,6 @@ let projectData = [
     projectUrl: "public/Mousehover.html"
   },
   {
-    projectName: "Mouse Trails effect",
-    projectImage: "assets/GIFs/MouseTrails.gif",
-    projectUrl: "public/MouseTrails.html"
-  },
-  {
-    projectName: "Guess The Number",
-    projectImage: "assets/Images/guess.png",
-    projectUrl: "public/guess.html"
-  },
-  {
     projectName: "Colora",
     projectImage: "assets/Images/colora.jpg",
     projectUrl: "public/colora.html"
@@ -1261,7 +1246,9 @@ let projectData = [
     projectImage: "assets/Images/math_trainer.png",
     projectUrl: "public/math_trainer.html"
   },
-   {
+
+  {
+
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html"
@@ -1496,6 +1483,11 @@ let projectData = [
     projectUrl: "public/product_counter.html"
   },
   {
+    projectName: "Reading progress Bar",
+    projectImage: "assets/Images/readBar.png",
+    projectUrl: "public/readBar.html"
+  },
+  {
     projectName: "Gray Scale Cursor",
     projectImage: "assets/Images/grayCursor.png",
     projectUrl: "public/grayCursor.html"
@@ -1516,6 +1508,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Scratch-Off to reveal",
+    projectImage: "assets/GIFs/scratchOff.gif",
+    projectUrl: "public/scratchOff.html"
+  },
+  {
     projectName: "Canvas Text",
     projectImage: "assets/GIFs/canvasText.gif",
     projectUrl: "public/canvasText.html"
@@ -1532,6 +1529,11 @@ let projectData = [
 
   },
   {
+    projectName: "DOM Node",
+    projectImage: "assets/Images/domNode.png",
+    projectUrl: "public/domNode.html"
+  },
+  {
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
@@ -1545,6 +1547,11 @@ let projectData = [
     projectName: "Pokemon Pokedex",
     projectImage: "assets/Images/pokemon.png",
     projectUrl: "public/pokemon.html"
+  },
+  {
+    projectName: "Check Multiple Checkboxes",
+    projectImage: "assets/GIFs/checkboxes.gif",
+    projectUrl: "public/checkboxes.html"
   }
 ]
 
