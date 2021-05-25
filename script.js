@@ -146,6 +146,11 @@ let projectData = [
     projectUrl: "public/choredoor.html"
   },
   {
+    projectName: "Match_Four_Game",
+    projectImage: "assets/Images/Match_Four_Game.png",
+    projectUrl: "public/Match_Four_Game.html",
+  },
+  {
     projectName: "Record Player",
     projectImage: "assets/GIFs/recordplayer.gif",
     projectUrl: "public/recordplayer.html"
@@ -602,7 +607,7 @@ let projectData = [
     projectImage: 'assets/Images/tip-calc.png',
     projectUrl: 'public/tip-calculator.html'
   }
- 
+
   ,
   {
     projectName: "DragNDrop",
@@ -1196,7 +1201,7 @@ let projectData = [
   {
     projectName: "Memory game",
     projectImage: "assets/Images/Memory_game/Mind_game.png",
-    projectUrl: "public/Memory_game.html"
+    projectUrl: "public/Memory_game.html",
   },
   {
     projectName: "Selection Sort Visualizer in JavaScript",
@@ -1607,8 +1612,13 @@ function getProjects() {
 }
 
 // Search function starts
-let searchInput = document.getElementById("searchBar");
-let searchText = "";
+let searchInput = document.getElementById('searchBar')
+let searchText='';
+
+searchInput.addEventListener('change',(e) => {
+  searchText= e.target.value
+})
+
 
 searchInput.addEventListener("change", (e) => {
   searchText = e.target.value;
