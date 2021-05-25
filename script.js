@@ -15,14 +15,40 @@ let projectData = [
     projectUrl: "public/binary_circle.html"
   },
   {
+    projectName: "Etch Sketch Game",
+    projectImage: "assets/GIFs/etch.png",
+    projectUrl: "public/etch.html",
+  },
+  {
+    projectName: "Circus Game",
+    projectImage: "assets/GIFs/circus.png",
+    projectUrl: "public/circus.html",
+  },
+  {
     projectName:"Emoji Feedback Form",
+    projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html",
+  },
+  {
+    projectName:"MooD SlideR",
+    projectImage: "assets/Images/mood-slider.png",
+    projectUrl: "public/mood-slider.html",
+  },
+  {
+    projectName:"Interactive Flashlight",
+    projectImage: "assets/Images/flashlight.png",
+    projectUrl: "public/flashlight.html",
   },
   {
     projectName: "Profile Upload Image",
     projectImage: "assets/GIFs/profilepic.gif",
     projectUrl: "public/uploadimg.html",
+  },
+  {
+    projectName: "Expanding Menu Bar",
+    projectImage: "assets/Images/expanding-menubar.png",
+    projectUrl: "public/expanding-menu.html",
   },
   {
     projectName: "Laptop Portfolio",
@@ -33,6 +59,11 @@ let projectData = [
     projectName: "Fall In Game",
     projectImage: "assets/GIFs/fall-in-game.gif",
     projectUrl: "public/fall-game.html",
+  },
+  {
+    projectName: "Blob Maker",
+    projectImage: "assets/Images/blob-maker.png",
+    projectUrl: "public/blob-maker.html",
   },
   {
     projectName: "Webpage Printing",
@@ -78,6 +109,16 @@ let projectData = [
     projectName: "Step Progress Bar",
     projectImage: "assets/GIFs/progress.gif",
     projectUrl: "public/progress.html"
+  },
+  {
+    projectName: "Smart Temperature Slider",
+    projectImage: "assets/GIFs/temp_slider.gif",
+    projectUrl: "public/temp_slider.html",
+  },
+   {
+    projectName: "Credit Card Payment Form",
+    projectImage: "assets/GIFs/credit_card.png",
+    projectUrl: "public/credit_card.html",
   },
   {
     projectName: "Work Time Tracker",
@@ -173,6 +214,11 @@ let projectData = [
     projectName: "ACE_EYE",
     projectImage: "assets/Images/ACE_EYE.png",
     projectUrl: "public/ACE_EYE.html"
+  },
+  {
+    projectName: "GAME_OF_LIFE",
+    projectImage: "assets/Images/GAME_OF_LIFE.png",
+    projectUrl: "public/GAME_OF_LIFE.html",
   },
   {
     projectName: "Sudoku Game",
@@ -867,7 +913,7 @@ let projectData = [
   },
   {
     projectName: "Flappy Bird",
-    projectImage: "assets/GIFs/flappy-bird.gif",
+    projectImage: "assets/GIFs/flappy-bird.png",
     projectUrl: "public/flappybird.html"
   },
   {
@@ -1313,10 +1359,20 @@ let projectData = [
     projectUrl: "public/bucketsort.html"
   },
   {
+    projectName: 'Bubble Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/bubble-visualizing.png',
+    projectUrl: 'public/bubblevisualiser.html'
+  }
+  , {
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-   },
+  },
+   {
+     projectName: 'Captcha Validator',
+     projectImage: 'assets/Images/CaptchaValidator.png',
+     projectUrl: 'public/CaptchaValidator.html'
+   } ,
    {
      projectName: '3D Image Gallery',
      projectImage: 'assets/Images/3DImageGallery.PNG',
@@ -1442,15 +1498,75 @@ let projectData = [
     projectUrl: "public/product_counter.html"
   },
   {
+    projectName: "Reading progress Bar",
+    projectImage: "assets/Images/readBar.png",
+    projectUrl: "public/readBar.html"
+  },
+  {
+    projectName: "Gray Scale Cursor",
+    projectImage: "assets/Images/grayCursor.png",
+    projectUrl: "public/grayCursor.html"
+  },
+  {
     projectName: "Dynamic Time message",
     projectImage: "assets/Images/dynamic_message.png",
     projectUrl: "public/dynamic_message.html",
-  }
-  ,
+  },
   {
     projectName: "Fibonacci Series Generator",
     projectImage: "assets/Images/fibonacci/fibo1.png",
     projectUrl: "public/fibonacci.html",
+  },
+  {
+    projectName: "Script Detection",
+    projectImage: "assets/GIFs/scriptDetection.gif",
+    projectUrl: "public/scriptDetection.html"
+  },
+  {
+    projectName: "Scratch-Off to reveal",
+    projectImage: "assets/GIFs/scratchOff.gif",
+    projectUrl: "public/scratchOff.html"
+  },
+  {
+    projectName: "Canvas Text",
+    projectImage: "assets/GIFs/canvasText.gif",
+    projectUrl: "public/canvasText.html"
+  },
+  {
+    projectName: "Bridge N Torch",
+    projectImage: "assets/Images/bridgeNtorch.png",
+    projectUrl: "public/bridgeNtorch.html",
+  },
+  {
+    projectName: "Caesar Cipher",
+    projectImage: "assets/Images/caesarCipher.png",
+    projectUrl: "public/caesarCipher.html",
+
+  },
+  {
+    projectName: "DOM Node",
+    projectImage: "assets/Images/domNode.png",
+    projectUrl: "public/domNode.html"
+  },
+  {
+    projectName: "Barcode Generator",
+    projectImage: "assets/Images/barcodeGenerator.png",
+    projectUrl: "public/barcodeGenerator.html"
+  },
+  {
+    projectName: "Array Methods",
+    projectImage: "assets/Images/arrayMethods.png",
+    projectUrl: "public/arrayMethods.html",
+  },
+  {
+    projectName: "Pokemon Pokedex",
+    projectImage: "assets/Images/pokemon.png",
+    projectUrl: "public/pokemon.html"
+  },
+  {
+    projectName: "Check Multiple Checkboxes",
+    projectImage: "assets/GIFs/checkboxes.gif",
+    projectUrl: "public/checkboxes.html"
   }
 ]
 
@@ -1470,7 +1586,7 @@ function getProjects() {
   let output = "";
   projectDetails.forEach(
     (data, item) =>
-      (output += `
+    (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
@@ -1516,7 +1632,7 @@ searchBtn.addEventListener("click", (e) => {
   let filter = "";
   filterData.forEach(
     (data, item) =>
-      (filter += `
+    (filter += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
