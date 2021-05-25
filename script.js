@@ -386,11 +386,6 @@ let projectData = [
     projectUrl: "public/counter.html"
   },
   {
-    projectName: 'Counter',
-    projectImage: 'assets/GIFs/counter.gif',
-    projectUrl: 'public/counter.html'
-  },
-  {
     projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.png",
     projectUrl: "public/localstorage.html"
@@ -566,7 +561,7 @@ let projectData = [
     projectImage: 'assets/Images/tip-calc.png',
     projectUrl: 'public/tip-calculator.html'
   }
- 
+
   ,
   {
     projectName: "DragNDrop",
@@ -644,12 +639,6 @@ let projectData = [
     projectName: "Rode Slider Game",
     projectImage: "assets/GIFs/rodeslidergame.gif",
     projectUrl: "public/rodeslider.html"
-  },
-  {
-
-    projectName: 'Particle JS Project',
-    projectImage: 'assets/GIFs/Particle.gif',
-    projectUrl: 'public/Particle.html'
   },
   {
     projectName: "User list filter",
@@ -1180,12 +1169,6 @@ let projectData = [
     projectUrl: "public/MouseTrails.html"
   },
   {
-
-    projectName: 'Guess The Number',
-    projectImage: 'assets/Images/guess.png',
-    projectUrl: 'public/guess.html'
-  },
-  {
     projectName: "Guess The Number",
     projectImage: "assets/Images/guess.png",
     projectUrl: "public/guess.html"
@@ -1194,12 +1177,6 @@ let projectData = [
     projectName: "Fractal Tree",
     projectImage: "assets/Images/fractalTree/fractalTree.gif",
     projectUrl: "public/fractalTree.html"
-  },
-  {
-    projectName: 'To-do0 app',
-    projectImage: 'assets/GIFs/todo.gif',
-    projectUrl: 'public/todoapp.html'
-
   },
   {
     projectName: "To-do0 app",
@@ -1222,21 +1199,6 @@ let projectData = [
     projectUrl: "public/Memory_game.html",
   },
   {
-    projectName: 'Selection Sort Visualizer in JavaScript',
-    projectImage: 'assets/Images/selection-visualizing.png',
-    projectUrl: 'public/selectionsort.html'
-  },
-  {
-    projectName: 'Purple Rain',
-    projectImage: 'assets/Images/purpleRain.gif',
-    projectUrl: 'public/purpleRain.html'
-  },
-  {
-    projectName: "Glittering background animation",
-    projectImage: "assets/Images/Glittering_background.png",
-    projectUrl: "public/glittering_background_animation.html",
-  },
-  {
     projectName: "Selection Sort Visualizer in JavaScript",
     projectImage: "assets/Images/selection-visualizing.png",
     projectUrl: "public/selectionsort.html"
@@ -1255,22 +1217,6 @@ let projectData = [
     projectName: "Minesweeper Game",
     projectImage: "assets/GIFs/minesweeper.gif",
     projectUrl: "public/Minesweeper.html"
-  },
-  {
-    projectName: 'Prefix Expression Evaluator in JavaScript',
-    projectImage: 'assets/GIFs/prefix-evaluator.png',
-    projectUrl: 'public/prefixevaluator.html'
-  }
-  , {
-    projectName: 'Insertion Sort Visualizer in JavaScript',
-    projectImage: 'assets/GIFs/insertion-visualizer.png',
-    projectUrl: 'public/insertionsort.html'
-  }
-  ,
-   {
-    projectName: 'Postfix Expression Evaluator in JavaScript',
-    projectImage: 'assets/GIFs/postfix-evaluator.png',
-    projectUrl: 'public/postfixevaluator.html'
   },
   {
     projectName: "Prefix Expression Evaluator in JavaScript",
@@ -1658,9 +1604,7 @@ searchBtn.addEventListener("click", (e) => {
   `)
   );
   projectContainer.innerHTML = filter;
-
 });
-
 
 // search function ends
 window.onscroll = function () {
