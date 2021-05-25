@@ -706,6 +706,7 @@ let projectData = [
     projectImage: "assets/Images/calendar_backcover.png",
     projectUrl: "public/calendar.html"
   },
+
   {
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
@@ -767,15 +768,16 @@ let projectData = [
     projectUrl: "public/Randomuser.html"
   },
   {
-    projectName: "Math Quiz for kids 🙂 ",
-    projectImage: "assets/Images/MathQuiz.jpg",
-    projectUrl: "public/MathQuiz.html"
+    projectName: 'Math Quiz for kids 🙂 ',
+    projectImage: 'assets/Images/MathQuiz.jpg',
+    projectUrl: 'public/MathQuiz.html',
   },
-  {
-    projectName: "Expanding Card",
-    projectImage: "assets/GIFs/ExpandingCard.gif",
-    projectUrl: "public/ExpandingCard.html"
-  },
+   {
+    projectName: 'Expanding Card',
+    projectImage: 'assets/GIFs/ExpandingCard.gif',
+    projectUrl: 'public/ExpandingCard.html'
+  }
+ ,
   {
     projectName: "Background Slider",
     projectImage: "assets/GIFs/BackgroundSlider.gif",
@@ -1168,16 +1170,7 @@ let projectData = [
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html"
   },
-  {
-    projectName: "Mouse Trails effect",
-    projectImage: "assets/GIFs/MouseTrails.gif",
-    projectUrl: "public/MouseTrails.html"
-  },
-  {
-    projectName: "Guess The Number",
-    projectImage: "assets/Images/guess.png",
-    projectUrl: "public/guess.html"
-  },
+  
   {
     projectName: "Fractal Tree",
     projectImage: "assets/Images/fractalTree/fractalTree.gif",
@@ -1258,7 +1251,9 @@ let projectData = [
     projectImage: "assets/Images/math_trainer.png",
     projectUrl: "public/math_trainer.html"
   },
+
   {
+
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html"
@@ -1274,7 +1269,7 @@ let projectData = [
     projectUrl: "public/MusicApp.html"
   },
   {
-    projectName: "Google keep Clone",
+  projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html"
   },
@@ -1372,7 +1367,7 @@ let projectData = [
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
-  },
+   } ,
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
@@ -1427,17 +1422,6 @@ let projectData = [
     projectUrl: "public/heapsort.html"
   },
   {
-    projectName: "Bubble Sort Visualizer in JavaScript",
-    projectImage: "assets/Images/bubble-visualizing.png",
-    projectUrl: "public/bubblevisualiser.html"
-  },
-  {
-    projectName: "Linear Search Visualization in JavaScript",
-    projectImage: "assets/Images/linearsearch-visualizing.png",
-    projectUrl: "public/linearsearch.html"
-  },
-
-  {
     projectName: "Text-Style CSS",
     projectImage: "assets/Images/text-style.png",
     projectUrl: "public/text-style.html"
@@ -1448,14 +1432,14 @@ let projectData = [
     projectUrl: "public/Pacman.html"
   },
   {
-    projectName: "Captcha Validator",
-    projectImage: "assets/Images/CaptchaValidator.png",
-    projectUrl: "public/CaptchaValidator.html"
-  },
-  {
     projectName: "Merge Sort Visualizer in JavaScript",
     projectImage: "assets/Images/merge-visualizing.png",
     projectUrl: "public/mergesort.html"
+  },
+  {
+    projectName: "Re-Create Giphy",
+    projectImage: "assets/Images/giphy.png",
+    projectUrl: "public/Giphy.html
   },
   {
     projectName: "Shell Sort Visualizer in JavaScript",
@@ -1497,6 +1481,7 @@ let projectData = [
     projectImage: "assets/Images/virtual_keyboard.png",
     projectUrl: "public/virtual_keyboard.html"
   },
+ 
   {
     projectName: "product Counter",
     projectImage: "assets/Images/product_counter.png",
