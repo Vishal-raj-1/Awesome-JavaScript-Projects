@@ -1,10 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-
-// Minesweeper
-// Video: https://youtu.be/LFU5ZlrR21E
-
 function Cell(i, j, w) {
   this.i = i;
   this.j = j;
