@@ -10,119 +10,165 @@
 <body>
     <header class="header"><b>Meme Soundboard</b></header><br><br>
 
-
     <br><br><br><br>
-    <div class="keys">
+    <div class="set">
+        <button class="A meme">
         <div data-key="65" class="key">
             <kbd>A</kbd>
             <span class="sound">Airhorn</span>
         </div>
+        </button>
+        <button class="B meme">
         <div data-key="66" class="key">
             <kbd>B</kbd>
             <span class="sound">wow</span>
         </div>
+        </button>
+        <button class="C meme">
         <div data-key="67" class="key">
             <kbd>C</kbd>
             <span class="sound">are you winning?</span>
         </div>
+        </button>
+        <button class="D meme">
         <div data-key="68" class="key">
             <kbd>D</kbd>
             <span class="sound">Ba Dum Tsss</span>
         </div>
+        </button>
+        <button class="E meme">
         <div data-key="69" class="key">
             <kbd>E</kbd>
             <span class="sound">be gone</span>
         </div>
+        </button>
+        <button class="F meme">
         <div data-key="70" class="key">
             <kbd>F</kbd>
             <span class="sound">brah</span>
         </div>
+        </button>
+        <button class="G meme">
         <div data-key="71" class="key">
             <kbd>G</kbd>
             <span class="sound">crickets</span>
         </div>
+        </button>
+        <button class="H meme">
         <div data-key="72" class="key">
             <kbd>H</kbd>
             <span class="sound">disgustang</span>
         </div>
+        </button>
+        <button class="I meme">
         <div data-key="73" class="key">
             <kbd>I</kbd>
             <span class="sound">trump china </span>
         </div>
+        </button>
 
 
-    </div><br><br><br><br>
-    <div class="keys">
+        <button class="J meme">
         <div data-key="74" class="key">
             <kbd>J</kbd>
             <span class="sound">exclamation</span>
         </div>
+        </button>
+        <button class="K meme">
         <div data-key="75" class="key">
             <kbd>K</kbd>
             <span class="sound">FBI</span>
         </div>
+        </button>
+        <button class="L meme">
         <div data-key="76" class="key">
             <kbd>L</kbd>
             <span class="sound">here we go again</span>
         </div>
+        </button>
+        <button class="M meme">
         <div data-key="77" class="key">
             <kbd>M</kbd>
             <span class="sound">at this moment</span>
         </div>
+        </button>
+        <button class="N meme">
         <div data-key="78" class="key">
             <kbd>N</kbd>
             <span class="sound">megalovania</span>
         </div>
+        </button>
+        <button class="O meme">
         <div data-key="79" class="key">
             <kbd>O</kbd>
             <span class="sound">mission failed</span>
         </div>
+        </button>
+        <button class="P meme">
         <div data-key="80" class="key">
             <kbd>P</kbd>
             <span class="sound">NANI</span>
         </div>
+        </button>
+        <button class="Q meme">
         <div data-key="81" class="key">
             <kbd>Q</kbd>
             <span class="sound">nice meme</span>
         </div>
+        </button>
+        <button class="R meme">
         <div data-key="82" class="key">
             <kbd>R</kbd>
             <span class="sound">no god, michael</span>
         </div>
-    </div><br><br><br><br>
-    <div class="keys">
+        </button>
+        <button class="S">
         <div data-key="83" class="key">
             <kbd>S</kbd>
             <span class="sound">oh no no</span>
-        </div>
+        </div></button>
+        <button class="T meme">
         <div data-key="84" class="key">
             <kbd>T</kbd>
             <span class="sound">not to be racist</span>
         </div>
+        </button>
+        <button class="U meme">
         <div data-key="85" class="key">
             <kbd>U</kbd>
             <span class="sound">oof</span>
         </div>
+        </button>
+        <button class="V meme">
         <div data-key="86" class="key">
             <kbd>V</kbd>
             <span class="sound">PewDiePie chungus</span>
         </div>
+        </button>
+        <button class="W meme">
         <div data-key="87" class="key">
             <kbd>W</kbd>
             <span class="sound">PewDiePie gamers</span>
         </div>
+        </button>
+        <button class="X meme">
         <div data-key="88" class="key">
             <kbd>X</kbd>
             <span class="sound">PewDiePie knees</span>
         </div>
+        </button>
+        <button class="Y meme">
         <div data-key="89" class="key">
             <kbd>Y</kbd>
             <span class="sound">why are we</span>
         </div>
+        </button>
+        <button class="Z meme">
         <div data-key="90" class="key">
             <kbd>Z</kbd>
             <span class="sound">damage my guy</span>
         </div>
+        </button>
     </div>
 
     <audio data-key="65" src="../assets/sounds/Airhorn.ogg"></audio>
@@ -151,29 +197,7 @@
     <audio data-key="88" src="../assets/sounds/PewDiePie I Got Your Knees.ogg"></audio>
     <audio data-key="89" src="../assets/sounds/Why Are We Still Here.ogg"></audio>
     <audio data-key="90" src="../assets/sounds/WTF Was That Damage My Guy.ogg"></audio>
-
-
-    <script>
-        function removeTransition(e) {
-            if (e.propertyName !== 'transform') return;
-            e.target.classList.remove('playing');
-        }
-
-        function playSound(e) {
-            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-            const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-            if (!audio) return;
-
-            key.classList.add('playing');
-            audio.currentTime = 0;
-            audio.play();
-        }
-
-        const keys = Array.from(document.querySelectorAll('.key'));
-        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-        window.addEventListener('keydown', playSound);
-    </script>
-
+<script src="../assets/js/meme_sound.js"></script>
 
 </body>
 
