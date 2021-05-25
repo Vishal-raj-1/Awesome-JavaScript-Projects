@@ -1618,7 +1618,13 @@ let projectData = [
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
+  },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/images/hover-board.png",
+    projectUrl: "public/hover_board.html"
   }
+
 ]
 
 var projectDetails = projectData.slice(0);
