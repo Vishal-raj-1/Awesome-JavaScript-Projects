@@ -1439,7 +1439,7 @@ let projectData = [
   {
     projectName: "Re-Create Giphy",
     projectImage: "assets/Images/giphy.png",
-    projectUrl: "public/Giphy.html
+    projectUrl: "public/Giphy.html"
   },
   {
     projectName: "Shell Sort Visualizer in JavaScript",
