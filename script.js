@@ -20,9 +20,19 @@ let projectData = [
     projectUrl: "public/etch.html",
   },
   {
+    projectName: "Physics Engine Game",
+    projectImage: "assets/Images/physics-engine.png",
+    projectUrl: "public/physics-engine.html",
+  },
+  {
     projectName: "Circus Game",
     projectImage: "assets/GIFs/circus.png",
     projectUrl: "public/circus.html",
+  },
+  {
+    projectName: "Pixelated Image",
+    projectImage: "assets/Images/pixelated-img/pixelated-img.png",
+    projectUrl: "public/pixelated.html",
   },
   {
     projectName:"Emoji Feedback Form",
@@ -34,6 +44,16 @@ let projectData = [
     projectName:"MooD SlideR",
     projectImage: "assets/Images/mood-slider.png",
     projectUrl: "public/mood-slider.html",
+  },
+  {
+    projectName:"Space Wrap",
+    projectImage: "assets/GIFs/space.gif",
+    projectUrl: "public/space-wrap.html",
+  },
+  {
+    projectName:"Nebula Effect Form",
+    projectImage: "assets/GIFs/nebula.gif",
+    projectUrl: "public/nebula.html",
   },
   {
     projectName:"Interactive Flashlight",
