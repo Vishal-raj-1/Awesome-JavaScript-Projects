@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Geometry Shapes Calculator",
+    projectImage: "assets/Images/GeometryArea.png",
+    projectUrl: "public/Geometry_Shapes_claculator.html",
+  },
+  {
     projectName: "Shopping Cart",
     projectImage: "assets/Images/shoppingcart.jpeg",
     projectUrl: "public/Shopping_cart.html"
