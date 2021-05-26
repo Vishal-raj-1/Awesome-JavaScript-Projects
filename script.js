@@ -1619,6 +1619,11 @@ let projectData = [
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
    },
+   {
+     projectName: "State Search",
+     projectImage: "assets/Images/stateSearch.png",
+     projectUrl: "public/stateSearch.html"
+   },
   {
     projectName: "Hover Board",
     projectImage: "assets/images/hover-board.png",
