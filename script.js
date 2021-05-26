@@ -507,6 +507,11 @@ let projectData = [
     projectUrl: "public/imagePuzzleGame.html"
   },
   {
+    projectName: "Traffic Lights",
+    projectImage: "assets/GIFs/trafficLights.gif",
+    projectUrl: "public/trafficLights.html"
+  },
+  {
     projectName: "Bubble Sort",
     projectImage: "assets/GIFs/bubbleSort.gif",
     projectUrl: "public/bubbleSort.html"
