@@ -20,6 +20,11 @@ let projectData = [
     projectUrl: "public/etch.html",
   },
   {
+    projectName: "Physics Engine Game",
+    projectImage: "assets/Images/physics-engine.png",
+    projectUrl: "public/physics-engine.html",
+  },
+  {
     projectName: "Circus Game",
     projectImage: "assets/GIFs/circus.png",
     projectUrl: "public/circus.html",
@@ -1573,10 +1578,26 @@ let projectData = [
     projectImage: "assets/Images/hoverimage.png",
     projectUrl: "public/hover_images.html"
   },{
+    projectName: "Preloader Projects",
+    projectImage: "assets/Images/preloader.png",
+    projectUrl: "public/preloader.html"
+  },
+  {
+    projectName: "Gradient background",
+    projectImage: "assets/Images/gradient-background.png",
+    projectUrl: "public/gradient-background.html"
+  },
+  {
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
+  },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/images/hover-board.png",
+    projectUrl: "public/hover_board.html"
   }
+
 ]
 
 var projectDetails = projectData.slice(0);
