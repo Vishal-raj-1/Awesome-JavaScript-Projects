@@ -1574,19 +1574,43 @@ let projectData = [
     projectUrl: "public/pokemon.html"
   },
   {
+    projectName: "GST Calculator",
+    projectImage: "assets/Images/GST_Calculator.png",
+    projectUrl: "public/GST_Calculator.html"
+  },
+  {
+    projectName: "Hover Effects",
+    projectImage: "assets/Images/hoverimage.png",
+    projectUrl: "public/hover_images.html"
+  },{
+
+    projectName: "Preloader Projects",
+    projectImage: "assets/Images/preloader.png",
+    projectUrl: "public/preloader.html"
+  },
+  {
     projectName: "Gradient background",
     projectImage: "assets/Images/gradient-background.png",
     projectUrl: "public/gradient-background.html"
-  },{
+  },
+  {
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
   },
+
    {
     projectName: "Angry birds",
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
+   },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/images/hover-board.png",
+    projectUrl: "public/hover_board.html"
+
   }
+
 
 ]
 
