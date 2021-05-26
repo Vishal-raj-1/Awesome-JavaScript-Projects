@@ -423,7 +423,7 @@ let projectData = [
   ,
   {
     projectName: 'URL Shortner',
-    projectImage: 'assets/GIFs/urlShortner.gif',
+    projectImage: 'assets/GIFs/url_shortner.gif',
     projectUrl: 'public/url-shortner.html'
   }
   ,
