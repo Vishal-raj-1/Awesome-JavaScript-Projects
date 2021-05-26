@@ -11,3 +11,6 @@ let t = document.querySelector('.toggle');
 t.onclick = function(){
    a.classList.toggle('dark');
 }
+
+
+
