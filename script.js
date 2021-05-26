@@ -1598,10 +1598,17 @@ let projectData = [
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
   },
+
+   {
+    projectName: "Angry birds",
+    projectImage: "assets/Images/Angry_bird/demo.png",
+    projectUrl: "public/Angry_bird.html"
+   },
   {
     projectName: "Hover Board",
     projectImage: "assets/images/hover-board.png",
     projectUrl: "public/hover_board.html"
+
   }
 
 
