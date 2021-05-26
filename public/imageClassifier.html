@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/imageClassifier.css" />
+    <title>Image Classification</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Image Classification with ml5.JS</h1>
+
+        <div class="fileSelectorBox">
+            <label for="fileSelector" class="custom-file-upload">Upload</label>
+            <input type="file" id="fileSelector" class="fileSelector" accept="image/*" />
+        </div>
+        <div class="loadingio-spinner-spinner-xsjp6ht4b6g spinner">
+            <div class="ldio-egfjv6kjbis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="resultbox">
+            <img id="image" />
+            <p>The MobileNet model labeled this as <span id="result"> ---- </span> with a confidence of <span
+                    id="probability">
+                    ----</span></p>
+        </div>
+    </div>
+
+
+    <script src="../assets/js/ImageClassifier.js"></script>
+</body>
+
+</html>

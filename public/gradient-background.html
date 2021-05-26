@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/gradient-background.css">
+</head>
+<body>
+    <div>
+        <h1 class="text-light">CSS Animated Gradient Background</h1>
+        <div class="util__buttons text-center">
+            <button id="change-theme-btn" class="theme-btn">Change Theme</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('change-theme-btn')
+            .addEventListener('click', function () {
+                let darkThemeEnabled = document.body.classList.toggle('dark-theme');
+                localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
+
+            });
+
+        if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
+            document.body.classList.add('dark-theme');
+
+        }
+    </script>
+</body>
+
+</html>
