@@ -1543,6 +1543,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Text Extraction from Image",
+    projectImage: "assets/Images/textExtraction.png",
+    projectUrl: "public/textExtraction.html"
+  },
+  {
     projectName: "Image Classifier",
     projectImage: "assets/Images/imageClassifier.png",
     projectUrl: "public/imageClassifier.html"
