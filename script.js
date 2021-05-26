@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Geometry Shapes Calculator",
+    projectImage: "assets/Images/GeometryArea.png",
+    projectUrl: "public/Geometry_Shapes_claculator.html",
+  },
+  {
     projectName: "Shopping Cart",
     projectImage: "assets/Images/shoppingcart.jpeg",
     projectUrl: "public/Shopping_cart.html"
@@ -1574,20 +1579,48 @@ let projectData = [
     projectUrl: "public/pokemon.html"
   },
   {
+    projectName: "GST Calculator",
+    projectImage: "assets/Images/GST_Calculator.png",
+    projectUrl: "public/GST_Calculator.html"
+  },
+  {
+    projectName: "Hover Effects",
+    projectImage: "assets/Images/hoverimage.png",
+    projectUrl: "public/hover_images.html"
+  },{
+
+    projectName: "Preloader Projects",
+    projectImage: "assets/Images/preloader.png",
+    projectUrl: "public/preloader.html"
+  },
+  {
     projectName: "Gradient background",
     projectImage: "assets/Images/gradient-background.png",
     projectUrl: "public/gradient-background.html"
-  },{
+  },
+  {
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
   },
-  {
+
+   {
     projectName: "Angry birds",
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
-  }
+   },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/Images/hover-board.png",
+    projectUrl: "public/hover_board.html"
 
+  },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/Images/Checkers.png",
+    projectUrl: "public/Checkers_game.html"
+
+  },
 ]
 
 var projectDetails = projectData.slice(0);
