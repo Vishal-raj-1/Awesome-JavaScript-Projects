@@ -41,6 +41,11 @@ let projectData = [
     projectUrl: "public/mood-slider.html",
   },
   {
+    projectName:"Space Wrap",
+    projectImage: "assets/GIFs/space.gif",
+    projectUrl: "public/space-wrap.html",
+  },
+  {
     projectName:"Nebula Effect Form",
     projectImage: "assets/GIFs/nebula.gif",
     projectUrl: "public/nebula.html",
