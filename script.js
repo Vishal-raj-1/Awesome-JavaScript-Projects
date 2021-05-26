@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Geometry Shapes Calculator",
+    projectImage: "assets/Images/GeometryArea.png",
+    projectUrl: "public/Geometry_Shapes_claculator.html",
+  },
+  {
     projectName: "Shopping Cart",
     projectImage: "assets/Images/shoppingcart.jpeg",
     projectUrl: "public/Shopping_cart.html"
@@ -20,9 +25,19 @@ let projectData = [
     projectUrl: "public/etch.html",
   },
   {
+    projectName: "Physics Engine Game",
+    projectImage: "assets/Images/physics-engine.png",
+    projectUrl: "public/physics-engine.html",
+  },
+  {
     projectName: "Circus Game",
     projectImage: "assets/GIFs/circus.png",
     projectUrl: "public/circus.html",
+  },
+  {
+    projectName: "Pixelated Image",
+    projectImage: "assets/Images/pixelated-img/pixelated-img.png",
+    projectUrl: "public/pixelated.html",
   },
   {
     projectName:"Emoji Feedback Form",
@@ -34,6 +49,16 @@ let projectData = [
     projectName:"MooD SlideR",
     projectImage: "assets/Images/mood-slider.png",
     projectUrl: "public/mood-slider.html",
+  },
+  {
+    projectName:"Space Wrap",
+    projectImage: "assets/GIFs/space.gif",
+    projectUrl: "public/space-wrap.html",
+  },
+  {
+    projectName:"Nebula Effect Form",
+    projectImage: "assets/GIFs/nebula.gif",
+    projectUrl: "public/nebula.html",
   },
   {
     projectName:"Interactive Flashlight",
@@ -480,6 +505,11 @@ let projectData = [
     projectName: "Image Puzzle Game",
     projectImage: "assets/Images/imagePuzzleGame.png",
     projectUrl: "public/imagePuzzleGame.html"
+  },
+  {
+    projectName: "Traffic Lights",
+    projectImage: "assets/GIFs/trafficLights.gif",
+    projectUrl: "public/trafficLights.html"
   },
   {
     projectName: "Bubble Sort",
@@ -1169,11 +1199,6 @@ let projectData = [
     projectName: "Harry Potter characters",
     projectImage: "assets/Images/harry.png",
     projectUrl: "public/harry.html",
-  }, 
-   {
-    projectName:"WebDevelopmentCourse webpage",
-    projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
-    projectUrl:"public/WebDevelopmentCourse.html"
   },
   {
     projectName: "Mouse Trails effect",
@@ -1392,8 +1417,7 @@ let projectData = [
      projectImage: 'assets/Images/3DImageGallery.PNG',
      projectUrl: 'public/3DImageGallery.html'
 
-  }
-  ,
+   },
   {
     projectName: 'Button Generator',
     projectImage: 'assets/Images/button.PNG ',
@@ -1527,6 +1551,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Image Classifier",
+    projectImage: "assets/Images/imageClassifier.png",
+    projectUrl: "public/imageClassifier.html"
+  },
+  {
     projectName: "Scratch-Off to reveal",
     projectImage: "assets/GIFs/scratchOff.gif",
     projectUrl: "public/scratchOff.html"
@@ -1569,11 +1598,46 @@ let projectData = [
     projectUrl: "public/pokemon.html"
   },
   {
+    projectName: "GST Calculator",
+    projectImage: "assets/Images/GST_Calculator.png",
+    projectUrl: "public/GST_Calculator.html"
+  },
+  {
+    projectName: "Hover Effects",
+    projectImage: "assets/Images/hoverimage.png",
+    projectUrl: "public/hover_images.html"
+  },{
+
+    projectName: "Preloader Projects",
+    projectImage: "assets/Images/preloader.png",
+    projectUrl: "public/preloader.html"
+  },
+  {
+    projectName: "Gradient background",
+    projectImage: "assets/Images/gradient-background.png",
+    projectUrl: "public/gradient-background.html"
+  },
+  {
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
   },
- 
+   {
+    projectName:"WebDevelopmentCourse webpage",
+    projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
+    projectUrl:"public/WebDevelopmentCourse.html"
+  },
+  {
+    projectName: "Angry birds",
+    projectImage: "assets/Images/Angry_bird/demo.png",
+    projectUrl: "public/Angry_bird.html"
+   },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/images/hover-board.png",
+    projectUrl: "public/hover_board.html"
+
+  }
 ]
 
 var projectDetails = projectData.slice(0);
