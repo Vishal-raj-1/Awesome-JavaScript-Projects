@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Nebula Effect
+    </title>
+    <style>
+      body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:-99;
+}
+.login-div {
+  max-width: 430px;
+  padding: 35px;
+  border-radius: 15px;
+  color:white;
+  background: rgba(8,8,8,0.7);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+.logo {
+  background-image: url("Logo.png");
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  margin:0 auto;
+}
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+     <div class="login-div">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email_input" type="email" class="validate">
+          <label for="email_input">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password_input" type="password" class="validate">
+          <label for="password_input">Password</label>
+          <div><a href="#"><b>Forgot password?</b></a></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">Not your computer? Use a Private Window to sign in. <a href="#"><b>Learn more</b></a></div>
+      </div>
+      <div class="row"></div>
+      <div class="row">
+        <div class="col s6"><a href="#">Create account</a></div>
+        <div class="col s6 right-align"><a class="waves-effect waves-light btn">Login</a></div>
+      </div>
+    <script src="../assets/js/nebula-js/three.min.js"></script>
+    <script src="../assets/js/nebula-js/postprocessing.min.js"></script>
+    <script>
+      let scene, camera, cloudParticles = [],composer;
+
+      function init() {
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(60,window.innerWidth / window.innerHeight,1,1000);
+        camera.position.z = 1;
+        camera.rotation.x = 1.16;
+        camera.rotation.y = -0.12;
+        camera.rotation.z = 0.27;
+
+        let ambient = new THREE.AmbientLight(0x555555);
+        scene.add(ambient);
+
+        let directionalLight = new THREE.DirectionalLight(0xff8c19);
+        directionalLight.position.set(0,0,1);
+        scene.add(directionalLight);
+
+        let orangeLight = new THREE.PointLight(0xcc6600,50,450,1.7);
+        orangeLight.position.set(200,300,100);
+        scene.add(orangeLight);
+        let redLight = new THREE.PointLight(0xd8547e,50,450,1.7);
+        redLight.position.set(100,300,100);
+        scene.add(redLight);
+        let blueLight = new THREE.PointLight(0x3677ac,50,450,1.7);
+        blueLight.position.set(300,300,200);
+        scene.add(blueLight);
+
+        renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        scene.fog = new THREE.FogExp2(0x03544e, 0.001);
+        renderer.setClearColor(scene.fog.color);
+        document.body.appendChild(renderer.domElement);
+
+        let loader = new THREE.TextureLoader();
+        loader.load("../assets/Images/nebula-img/smoke.png", function(texture){
+          cloudGeo = new THREE.PlaneBufferGeometry(500,500);
+          cloudMaterial = new THREE.MeshLambertMaterial({
+            map:texture,
+            transparent: true
+          });
+
+          for(let p=0; p<50; p++) {
+            let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
+            cloud.position.set(
+              Math.random()*800 -400,
+              500,
+              Math.random()*500-500
+            );
+            cloud.rotation.x = 1.16;
+            cloud.rotation.y = -0.12;
+            cloud.rotation.z = Math.random()*2*Math.PI;
+            cloud.material.opacity = 0.55;
+            cloudParticles.push(cloud);
+            scene.add(cloud);
+          }
+        });
+        loader.load("../assets/Images/nebula-img/stars.jpg", function(texture){
+
+          const textureEffect = new POSTPROCESSING.TextureEffect({
+            blendFunction: POSTPROCESSING.BlendFunction.COLOR_DODGE,
+            texture: texture
+          });
+          textureEffect.blendMode.opacity.value = 0.2;
+
+          const bloomEffect = new POSTPROCESSING.BloomEffect({
+                blendFunction: POSTPROCESSING.BlendFunction.COLOR_DODGE,
+                kernelSize: POSTPROCESSING.KernelSize.SMALL,
+                useLuminanceFilter: true,
+                luminanceThreshold: 0.3,
+                luminanceSmoothing: 0.75
+              });
+          bloomEffect.blendMode.opacity.value = 1.5;
+
+          let effectPass = new POSTPROCESSING.EffectPass(
+            camera,
+            bloomEffect,
+            textureEffect
+          );
+          effectPass.renderToScreen = true;
+
+          composer = new POSTPROCESSING.EffectComposer(renderer);
+          composer.addPass(new POSTPROCESSING.RenderPass(scene, camera));
+          composer.addPass(effectPass);
+          
+          window.addEventListener("resize", onWindowResize, false);
+          render();
+        });
+      }
+      function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      }
+      function render() {
+        cloudParticles.forEach(p => {
+          p.rotation.z -=0.001;
+        });
+        composer.render(0.1);
+        requestAnimationFrame(render);
+      }
+      init();
+    </script>
+  </body>
+</html>
