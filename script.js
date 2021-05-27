@@ -1543,6 +1543,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Text Extraction from Image",
+    projectImage: "assets/Images/textExtraction.png",
+    projectUrl: "public/textExtraction.html"
+  },
+  {
     projectName: "Image Classifier",
     projectImage: "assets/Images/imageClassifier.png",
     projectUrl: "public/imageClassifier.html"
@@ -1567,6 +1572,11 @@ let projectData = [
     projectImage: "assets/Images/caesarCipher.png",
     projectUrl: "public/caesarCipher.html",
 
+  },
+  {
+    projectName: "Sentiment Analysis",
+    projectImage: "assets/Images/sentimentAnalysis.png",
+    projectUrl: "public/sentimentAnalysis.html"
   },
   {
     projectName: "DOM Node",
@@ -1622,7 +1632,12 @@ let projectData = [
     projectName: "Angry birds",
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
-  },
+   },
+   {
+     projectName: "State Search",
+     projectImage: "assets/Images/stateSearch.png",
+     projectUrl: "public/stateSearch.html"
+   },
   {
     projectName: "Hover Board",
     projectImage: "assets/images/hover-board.png",
