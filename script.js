@@ -507,6 +507,11 @@ let projectData = [
     projectUrl: "public/imagePuzzleGame.html"
   },
   {
+    projectName: "Traffic Lights",
+    projectImage: "assets/GIFs/trafficLights.gif",
+    projectUrl: "public/trafficLights.html"
+  },
+  {
     projectName: "Bubble Sort",
     projectImage: "assets/GIFs/bubbleSort.gif",
     projectUrl: "public/bubbleSort.html"
@@ -1536,6 +1541,11 @@ let projectData = [
     projectName: "Script Detection",
     projectImage: "assets/GIFs/scriptDetection.gif",
     projectUrl: "public/scriptDetection.html"
+  },
+  {
+    projectName: "Image Classifier",
+    projectImage: "assets/Images/imageClassifier.png",
+    projectUrl: "public/imageClassifier.html"
   },
   {
     projectName: "Scratch-Off to reveal",
