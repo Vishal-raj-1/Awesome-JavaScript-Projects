@@ -1448,7 +1448,7 @@ let projectData = [
 
   {
     projectName: "Landing-Page-Using JavaScript",
-    projectImage: "assets/Images/product_counter.png",
+    projectImage: "assets/Images/Landing-page.jpg",
     projectUrl: "public/Landing_Page.html",
   }
 
