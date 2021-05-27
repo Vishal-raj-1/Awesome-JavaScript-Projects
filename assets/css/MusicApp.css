@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+body{
+
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    background-color: royalblue;
+}
+.Music-app-img{
+    width: 270px;
+    height: 270px;
+    display: inline-flex;
+    justify-content: center;
+  
+}
+
+.Music-card{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.Music-card p{
+
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.ImageRoation{
+    animation: ImageRoation linear infinite;
+    animation-direction: alternate;
+    transform-origin: top;
+}
+@keyframes ImageRoation{ 
+    100% { 
+     transform: rotate(30deg); 
+    } 
+    50% { 
+        transform: rotate(0deg); 
+       }
+
+    0%{
+        transform: rotate(-30deg);
+    }
+}
+
+.Music-app-img img{
+    width:100%; 
+    height:100%;
+    border-radius: 50%  !important;
+ 
+}
+
+#bakcward,#play,#forward:hover{
+
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 1rem 6rem !important;
+}
+
+.progressbar-container{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+}
+
+.progress_div{
+    width: 100%;
+    height: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+                0 2px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 4rem;
+    position: relative;
+    transition: all 1s linear;
+    cursor: pointer;
+    appearance: none;
+}
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: royalblue;
+}
+
+.progress_duration_time{
+    display: flex;
+    justify-content: space-between;
+}
