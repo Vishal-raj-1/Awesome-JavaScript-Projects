@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/css/GST_Calculator.css">
+	<title>GST Calculator</title>
+</head>
+<body>
+	<h1>GST Calculator</h1>
+	<div class="container">
+		<!-- User Input -->
+		<form class="user-input">
+			<div class="form-group">
+				<label>Initial Amount</label>
+				<input type="number" id="initial-amount" autocomplete="off">
+			</div>
+			<div class="form-group">
+				<label>GST Rate(%)</label>
+				<input type="number" id="gst-rate" autocomplete="off">
+			</div>
+			<div class="form-group">
+				<input type="submit" value="calculate" id="calculate">
+			</div>
+		</form>
+
+		<!-- GST Calculation -->
+		<div class="GST-Calculation">
+			<div class="form-group">
+				<label>Net Amount</label>
+				<input type="number" id="net-amount">
+			</div>
+			<div class="form-group">
+				<label>GST Amount</label>
+				<input type="number" id="gst-amount">
+			</div>
+			<div class="form-group">
+				<label>Total Amount</label>
+				<input type="number" id="total-amount">
+			</div>
+		</div>
+
+		<!-- Clear the inputs -->
+		<div class="btn-container">
+			<button id="clear">Clear</button>
+		</div>
+	</div>
+</body>
+	<script src="../assets/js/GST_Calculator.js"></script>
+</html>
