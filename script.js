@@ -1624,8 +1624,12 @@ let projectData = [
     projectImage: "assets/images/hover-board.png",
     projectUrl: "public/hover_board.html"
 
+  },
+  {
+    projectName: "3d Flip Card",
+    projectImage: "assets/images/flip-card.png",
+    projectUrl: "public/flip-card.html"
   }
-
 
 ]
 
