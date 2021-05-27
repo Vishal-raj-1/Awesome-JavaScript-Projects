@@ -1574,6 +1574,11 @@ let projectData = [
 
   },
   {
+    projectName: "Sentiment Analysis",
+    projectImage: "assets/Images/sentimentAnalysis.png",
+    projectUrl: "public/sentimentAnalysis.html"
+  },
+  {
     projectName: "DOM Node",
     projectImage: "assets/Images/domNode.png",
     projectUrl: "public/domNode.html"
