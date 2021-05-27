@@ -1281,9 +1281,7 @@ let projectData = [
     projectImage: "assets/Images/math_trainer.png",
     projectUrl: "public/math_trainer.html"
   },
-
   {
-
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html"
@@ -1299,7 +1297,12 @@ let projectData = [
     projectUrl: "public/MusicApp.html"
   },
   {
-  projectName: "Google keep Clone",
+    projectName: "Google Assistant Clone",
+      projectImage: "assets/Images/google_assistant.PNG",
+      projectUrl: "public/google_assistant_clone.html"
+  },
+  {
+  projectName: "Google Keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html"
   },

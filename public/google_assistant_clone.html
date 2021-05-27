@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Google Assistant</title>
+    <link rel="stylesheet" href="/assets/css/google_assistant_clone.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,500"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <audio
+      id="assistantvoice"
+      class="greet"
+      src="https://translate.google.com/translate_tts?ie=UTF-8&q=Hi%2C%20how%20can%20i%20help&tl=en&client=tw-ob"
+      preload="auto"
+      controls
+    >
+      Your browser does not support this element.
+    </audio>
+    <audio id="assistant" class="greet" src="" preload="auto" controls>
+      Your browser does not support this element.
+    </audio>
+    <div id="screen" class="splash">
+      <div class="google">
+        <div class="glogo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+            alt="logo"
+          />
+        </div>
+        <div class="gtext">Assistant</div>
+      </div>
+    </div>
+    <div id="main" class="main">
+      <div class="gassist">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Google_Assistant_logo.svg/50px-Google_Assistant_logo.svg.png"
+          alt=""
+        />
+        <span>Hi, how can I help?</span>
+      </div>
+      <div class="user">
+        <div class="usermain">
+          <div class="lens">
+          <img id="glens" class="glens" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Google_Lens_-_new_logo.png" alt="">
+        </div>
+        <div id="voice" class="voice">
+          <img id="voicebtn" class="voicebtn" src="https://freepngimg.com/download/google/67091-engine-web-search-google-now-voice.png" alt="">
+        </div>
+        <div class="key">
+          <svg id="keyboard" class="keyboard" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#909090"><path d="M16.125,32.25c-8.86035,0 -16.125,7.26465 -16.125,16.125v64.5c0,8.86035 7.26465,16.125 16.125,16.125h129c8.86035,0 16.125,-7.26465 16.125,-16.125v-64.5c0,-8.86035 -7.26465,-16.125 -16.125,-16.125zM16.125,43h129c3.02344,0 5.375,2.35156 5.375,5.375v64.5c0,3.02344 -2.35156,5.375 -5.375,5.375h-129c-3.02344,0 -5.375,-2.35156 -5.375,-5.375v-64.5c0,-3.02344 2.35156,-5.375 5.375,-5.375zM21.5,53.75v10.75h10.75v-10.75zM43,53.75v10.75h10.75v-10.75zM64.5,53.75v10.75h10.75v-10.75zM86,53.75v10.75h10.75v-10.75zM107.5,53.75v10.75h10.75v-10.75zM129,53.75v10.75h10.75v-10.75zM21.5,75.25v10.75h10.75v-10.75zM43,75.25v10.75h10.75v-10.75zM64.5,75.25v10.75h10.75v-10.75zM86,75.25v10.75h10.75v-10.75zM107.5,75.25v10.75h10.75v-10.75zM129,75.25v10.75h10.75v-10.75zM53.75,96.75v10.75h53.75v-10.75zM21.5,96.83399v10.79199h21.5v-10.79199zM118.41797,96.83399v10.79199h21.5v-10.79199z"></path></g></g></svg>
+        </div>
+          <div id="voicebar" class="icon hidden">
+            <div
+              class="bar"
+              style="background-color: #3498db; margin-left: -25px;"
+            ></div>
+            <div
+              class="bar"
+              style="background-color: #e74c3c; margin-left: -8px;"
+            ></div>
+            <div
+              class="bar"
+              style="background-color: #f1c40f; margin-left: 8px;"
+            ></div>
+            <div
+              class="bar"
+              style="background-color: #27ae60; margin-left: 25px;"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/google_assistant_clone.js" async></script>
+  </body>
+</html>
