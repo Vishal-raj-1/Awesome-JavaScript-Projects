@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Geometry Shapes Calculator",
+    projectImage: "assets/Images/GeometryArea.png",
+    projectUrl: "public/Geometry_Shapes_claculator.html",
+  },
+  {
     projectName: "Shopping Cart",
     projectImage: "assets/Images/shoppingcart.jpeg",
     projectUrl: "public/Shopping_cart.html"
@@ -500,6 +505,11 @@ let projectData = [
     projectName: "Image Puzzle Game",
     projectImage: "assets/Images/imagePuzzleGame.png",
     projectUrl: "public/imagePuzzleGame.html"
+  },
+  {
+    projectName: "Traffic Lights",
+    projectImage: "assets/GIFs/trafficLights.gif",
+    projectUrl: "public/trafficLights.html"
   },
   {
     projectName: "Bubble Sort",
@@ -1533,6 +1543,16 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Text Extraction from Image",
+    projectImage: "assets/Images/textExtraction.png",
+    projectUrl: "public/textExtraction.html"
+  },
+  {
+    projectName: "Image Classifier",
+    projectImage: "assets/Images/imageClassifier.png",
+    projectUrl: "public/imageClassifier.html"
+  },
+  {
     projectName: "Scratch-Off to reveal",
     projectImage: "assets/GIFs/scratchOff.gif",
     projectUrl: "public/scratchOff.html"
@@ -1552,6 +1572,11 @@ let projectData = [
     projectImage: "assets/Images/caesarCipher.png",
     projectUrl: "public/caesarCipher.html",
 
+  },
+  {
+    projectName: "Sentiment Analysis",
+    projectImage: "assets/Images/sentimentAnalysis.png",
+    projectUrl: "public/sentimentAnalysis.html"
   },
   {
     projectName: "DOM Node",
@@ -1574,6 +1599,16 @@ let projectData = [
     projectUrl: "public/pokemon.html"
   },
   {
+    projectName: "GST Calculator",
+    projectImage: "assets/Images/GST_Calculator.png",
+    projectUrl: "public/GST_Calculator.html"
+  },
+  {
+    projectName: "Hover Effects",
+    projectImage: "assets/Images/hoverimage.png",
+    projectUrl: "public/hover_images.html"
+  },{
+
     projectName: "Preloader Projects",
     projectImage: "assets/Images/preloader.png",
     projectUrl: "public/preloader.html"
@@ -1587,7 +1622,25 @@ let projectData = [
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
+  },
+
+   {
+    projectName: "Angry birds",
+    projectImage: "assets/Images/Angry_bird/demo.png",
+    projectUrl: "public/Angry_bird.html"
+   },
+   {
+     projectName: "State Search",
+     projectImage: "assets/Images/stateSearch.png",
+     projectUrl: "public/stateSearch.html"
+   },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/images/hover-board.png",
+    projectUrl: "public/hover_board.html"
+
   }
+
 
 ]
 
