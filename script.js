@@ -1467,6 +1467,11 @@ let projectData = [
     projectUrl: "public/mergesort.html"
   },
   {
+    projectName: "Markdown Editor",
+    projectImage: "assets/Images/markdownEditor.png",
+    projectUrl: "public/markdownEditor.html"
+  },
+  {
     projectName: "Re-Create Giphy",
     projectImage: "assets/Images/giphy.png",
     projectUrl: "public/Giphy.html"
