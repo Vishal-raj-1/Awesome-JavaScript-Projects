@@ -1639,8 +1639,12 @@ let projectData = [
     projectImage: "assets/images/hover-board.png",
     projectUrl: "public/hover_board.html"
 
+  },
+  {
+    projectName: "Covid Live Status",
+    projectImage: "assets/images/covid-live.png",
+    projectUrl: "public/covid_live.html"
   }
-
 
 ]
 
