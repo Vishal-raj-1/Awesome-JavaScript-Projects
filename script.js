@@ -1329,6 +1329,11 @@ let projectData = [
     projectUrl: "public/Xylophone.html"
   },
   {
+    projectName: "3D CubeMap",
+    projectImage: "assets/GIFs/3dCubemap.gif",
+    projectUrl: "public/3DCubemap.html"
+  },
+  {
     projectName: "Reaction Game",
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html"
