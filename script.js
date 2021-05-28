@@ -1639,9 +1639,13 @@ let projectData = [
     projectImage: "assets/images/hover-board.png",
     projectUrl: "public/hover_board.html"
 
+  },
+  {
+    projectName: "Contact form",
+    projectImage: "assets/images/contact-form.png",
+    projectUrl: "public/contact-form.html"
   }
-
-
+  
 ]
 
 var projectDetails = projectData.slice(0);
