@@ -1788,6 +1788,11 @@ let projectData = [
     projectName: "Decimal To Binary Converter",
     projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
     projectUrl: "public/DecimalToBinaryConverter.html",
+  },
+  {
+    projectName: "Emoji Factory",
+    projectImage: "assets/images/emoji-factory.png",
+    projectUrl: "public/emoji-factory.html",
   }
 
 
