@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  width: 750px;
+  height: 500px;
+}
+
+.cursor {
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: grayscale(100%);
+}

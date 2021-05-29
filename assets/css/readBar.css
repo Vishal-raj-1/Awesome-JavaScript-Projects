@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.heading {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  background: white;
+  font-family: "Aladin";
+  padding: 1rem 0rem;
+}
+
+.heading h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: inherit;
+}
+
+.scroll_container {
+  background-color: #d8d8d8;
+}
+
+.horizontal_scroll {
+  width: 0%;
+  height: 7px;
+  background-color: #ff8616;
+}
+
+.content {
+  margin: 10rem 5rem 2rem 5rem;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: "Aladin";
+}
+
+.content p {
+    margin: 0.5rem 0rem;
+}
+
+.content p::first-letter {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 5rem;
+}

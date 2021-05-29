@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/contact-form.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="center-div" id="center">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 part1">
+                    <div class="text-center">
+                        <img src="../assets/Images/02.-Communication.png" alt="" class="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 part2">
+                    <h3 class="heading">Quick Contact</h3>
+
+                    <form id="contact" action="" method="post">
+                        <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="1" autofocus id="name1">
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="2" autocomplete="off"
+                                id="email">
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your Message Here...." tabindex="5" id="msg"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit" type="button" id="contact-submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="thankyou">
+            <h1>
+                Thank you for your response
+                <br>
+                <img src="https://i.pinimg.com/originals/5f/92/96/5f9296f0364ebfdb00b594fe368768ab.gif"
+                    class="mail-img">
+            </h1>
+        </div>
+    </div>
+    <script src="../assets/js/contact-form.js"></script>
+</body>
+
+</html>
