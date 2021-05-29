@@ -1773,6 +1773,10 @@ let projectData = [
 
   },
   {
+    projectName: "Covid Live Status",
+    projectImage: "assets/images/covid-live.png",
+    projectUrl: "public/covid_live.html"
+  },{
     projectName: "3d Flip Card",
     projectImage: "assets/images/flip-card.png",
     projectUrl: "public/flip-card.html"
