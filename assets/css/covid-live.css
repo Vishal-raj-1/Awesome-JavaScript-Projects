@@ -39,4 +39,19 @@ table {
     background-color: #008c8c;
     background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");
   }
+  img{
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px, rgba(0, 0, 0, 0.1) 0px 8px 13px,
+    rgba(0, 0, 0, 0.1) 0px 18px 23px;
+
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
   
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
