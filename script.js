@@ -1702,9 +1702,12 @@ let projectData = [
     projectName: "Decimal To Binary Converter",
     projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
     projectUrl: "public/DecimalToBinaryConverter.html",
+  },
+  {
+    projectName: "Wikipedia Search",
+    projectImage: "assets/Images/wikiSearch.png",
+    projectUrl: "public/wikiSearch.html"
   }
-
-
 ];
 
 
