@@ -911,6 +911,21 @@ let projectData = [
     projectUrl: "public/bookmarks.html"
   },
   {
+    projectName: "Insect Catch Game",
+    projectImage: "assets/Images/Insect Catch.png",
+    projectUrl: "public/InsectCatch.html",
+  },
+  {
+    projectName: "Animated Minion Eyes",
+    projectImage: "assets/GIFs/Minion-Eyes.gif",
+    projectUrl: "public/Minion-Eyes.html",
+  },
+  {
+    projectName: 'Exchange Rate',
+    projectImage: 'assets/Images/ExchangeRate.png',
+    projectUrl: 'public/ExchangeRate.html',
+  },
+  {
     projectName: "Exchange Rate",
     projectImage: "assets/Images/ExchangeRate.png",
     projectUrl: "public/ExchangeRate.html"
@@ -1033,13 +1048,13 @@ let projectData = [
   {
     projectName: "Computer Giveaway",
     projectImage: "assets/Images/giveaway.jpg",
-    projectUrl: "public/giveaway.html"
+    projectUrl: "public/giveaway.html",
   },
   {
     projectName: "FoodRecipe",
     projectImage: "assets/GIFs/foodRecipe.gif",
-    projectUrl: "public/foodRecipe.html"
-  },
+    projectUrl: "public/foodRecipe.html",
+  }, 
   {
     projectName: "Simon's Game",
     projectImage: "assets/Images/Simons_s_Game.png",
@@ -1062,8 +1077,13 @@ let projectData = [
   },
   {
     projectName: "JavaScript Dragon Game",
-    projectImage: "assets/Images/JavaScript-Dragon-Game.png",
-    projectUrl: "public/Dino game.html"
+    projectImage: "assets/Images/JavaScript Dragon Game.png",
+    projectUrl: "public/Dino game.html",
+  }, 
+  {
+    projectName: 'Giphy-Search',
+    projectImage: 'assets/GIFs/Giphy-Search.gif',
+    projectUrl: 'public/Giphy-Search.html',
   },
   {
     projectName: "Giphy-Search",
@@ -1079,6 +1099,11 @@ let projectData = [
     projectName: "Hospital Registration Form",
     projectImage: "assets/GIFs/registration_form.gif",
     projectUrl: "public/registration_form.html"
+  },
+  {
+    projectName: "Breakout!",
+    projectImage: "assets/GIFs/breakouthere.gif",
+    projectUrl: "public/breakout.html",
   },
   {
     projectName: "New year crackers",
@@ -1098,7 +1123,17 @@ let projectData = [
   {
     projectName: "Car Avoidance Game",
     projectImage: "assets/Images/carAvoidanceGame.png",
-    projectUrl: "public/carAvoidanceGame.html"
+    projectUrl: "public/carAvoidanceGame.html",
+  }, 
+  {
+    projectName: "New year crackers",
+    projectImage: "assets/GIFs/newyearwish.gif",
+    projectUrl: "public/newyearwish.html",
+  },
+  {
+    projectName: "Speech To Text Converter",
+    projectImage: "assets/GIFs/SpeechtoText.gif",
+    projectUrl: "public/SpeechtoText.html",
   },
   {
     projectName: "Memes Generator",
@@ -1118,7 +1153,12 @@ let projectData = [
   {
     projectName: "Armstrong Checker",
     projectImage: "assets/GIFs/ArmstrongNumber.gif",
-    projectUrl: "public/ArmstrongNumber.html"
+    projectUrl: "public/ArmstrongNumber.html",
+  }, 
+  {
+    projectName: " Testimonial Design",
+    projectImage: "assets/GIFs/TestimonialDesign.gif ",
+    projectUrl: "public/TestimonialDesign.html",
   },
   {
     projectName: "Code Converter",
@@ -1809,3 +1849,15 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("Navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
