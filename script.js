@@ -150,16 +150,6 @@ let projectData = [
     projectUrl: "public/progress.html"
   },
   {
-    projectName: "Smart Temperature Slider",
-    projectImage: "assets/GIFs/temp_slider.gif",
-    projectUrl: "public/temp_slider.html",
-  },
-   {
-    projectName: "Credit Card Payment Form",
-    projectImage: "assets/GIFs/credit_card.png",
-    projectUrl: "public/credit_card.html",
-  },
-  {
     projectName: "Work Time Tracker",
     projectImage: "assets/GIFs/timetracker.gif",
     projectUrl: "public/timetracker.html"
@@ -987,7 +977,7 @@ let projectData = [
   },
   {
     projectName: "Flappy Bird",
-    projectImage: "assets/GIFs/flappy-bird.png",
+    projectImage: "assets/GIFs/flappy-bird.gif",
     projectUrl: "public/flappybird.html"
   },
   {
@@ -1365,12 +1355,12 @@ let projectData = [
     projectImage: "assets/GIFs/dice_game.gif",
     projectUrl: "public/dice_game.html",
   },
-
+  {
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
   },
-
+  {
     projectName: 'Exchange Rate',
     projectImage: 'assets/Images/ExchangeRate.png',
     projectUrl: 'public/ExchangeRate.html'
@@ -1816,8 +1806,6 @@ let projectData = [
   }
 ];
 
-
-
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
   var x = a.projectName.toLowerCase();
@@ -1867,9 +1855,10 @@ searchInput.addEventListener("change", (e) => {
   searchText = e.target.value;
 });
 
-let searchBtn = document.getElementById("searchBtn");
+let searchForm = document.getElementById("searchForm");
 
-searchBtn.addEventListener("click", (e) => {
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
   var filterData = [];
   if (searchText.length !== 0) {
     projectData.forEach((obj) => {
