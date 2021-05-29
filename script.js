@@ -1790,12 +1790,15 @@ let projectData = [
     projectUrl: "public/DecimalToBinaryConverter.html",
   },
   {
+    projectName: "Wikipedia Search",
+    projectImage: "assets/Images/wikiSearch.png",
+    projectUrl: "public/wikiSearch.html"
+  },
+  {
     projectName: "Emoji Factory",
     projectImage: "assets/images/emoji-factory.png",
     projectUrl: "public/emoji-factory.html",
   }
-
-
 ];
 
 
