@@ -1552,7 +1552,6 @@ let projectData = [
     projectName: "Hand Cricket",
     projectImage: "assets/GIFs/handcricket.gif",
     projectUrl: "public/handcricket.html",
-    projectUrl: "public/product_counter.html"
   },
   {
     projectName: "Dynamic Time message",
