@@ -1623,8 +1623,12 @@ let projectData = [
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
   },
-
-   {
+  {
+    projectName: "Food Menu",
+    projectImage: "assets/Images/foodCourt.png",
+    projectUrl: "public/foodCourt.html"
+  },
+  {
     projectName: "Angry birds",
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
@@ -1640,8 +1644,6 @@ let projectData = [
     projectUrl: "public/hover_board.html"
 
   }
-
-
 ]
 
 var projectDetails = projectData.slice(0);
