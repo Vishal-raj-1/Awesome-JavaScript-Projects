@@ -1,0 +1,151 @@
+/*Reset*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	user-select: none;
+	zoom: 0;
+}
+
+html, body {
+	background-color: #ff1744;
+	height: 70vh;
+	width: 100vw;
+	font-size: 20px;
+	font-family: arial;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	margin: 1rem 0;
+	font-size: 1.5rem;
+}
+
+.container {
+	background-color: #ffee58;
+	width: 19rem;
+	border-radius: 0.5rem;
+}
+
+/*User Input*/
+.user-input {
+	padding: 0.5rem;
+}
+.user-input .form-group {
+	margin: 0.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.user-input .form-group label {
+	color: #333;
+	width: 100px;
+	font-size: 0.7rem;
+	font-weight: bold;
+}
+
+.user-input .form-group input[type="number"] {
+	background-color: #999;
+	width: 115px;
+	height: 31px;
+	text-align: right;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border-radius: 0.2rem;
+	border: none;
+	outline: none;
+}
+
+.user-input .form-group input[type="submit"] {
+	background-color: #00acc1;
+	margin: 0.5rem 0 0 0;
+	padding: 0.1rem 0.2rem;
+	font-weight: bold;
+	font-size: 0.6rem;
+	border-radius: 0.2rem;
+	border: none;
+	outline: none;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+.user-input .form-group input[type="submit"]:active {
+	background-color: red;
+	color: #fff;
+}
+
+.user-input .form-group input[type="submit"]:hover {
+	color: #fff;
+}
+
+/*GST Calculation*/
+.GST-Calculation {
+	padding: 0.6rem 0.1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.GST-Calculation .form-group {
+	margin: 0 0.1rem;
+	text-align: center;
+}
+
+.GST-Calculation .form-group label {
+	color: #333;
+	font-weight: bold;
+	font-size: 0.6rem;
+}
+
+.GST-Calculation .form-group input[type="number"] {
+	width: 4.2rem;
+	height: 1.4rem;
+	font-weight: bold;
+	font-size: 0.95rem;
+	text-align: center;
+	border-radius: 0.3rem;
+	border: none;
+	outline: none;
+}
+
+/*Buttons*/
+.btn-container {
+	padding: 0.9rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-container button {
+	background-color: #f50057;
+	padding: 0.16rem 0.4rem;
+	margin: 0 0.9rem;
+	border-radius: 0.4rem;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	box-shadow: 2px 2px 5px #000;
+	cursor: pointer;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 400px) {
+	.container {
+		width: 15rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.container {
+		width: 12.5rem;
+	}
+
+	.GST-Calculation .form-group input[type="number"] {
+		width: 3.8rem;
+	}
+
+}

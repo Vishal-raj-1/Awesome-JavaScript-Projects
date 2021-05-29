@@ -1,0 +1,308 @@
+/* ============================================================ */
+/* GENERAL ELEMENTS                                             */
+/* ============================================================ */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans";
+  font-size: medium;
+}
+
+body {
+  width: calc(100vw - 1rem);
+  height: calc(100vh - 1rem);
+  margin: 0.5rem;
+  background-color: var(--color-light-background);
+  gap: 0.5rem;
+}
+
+@media (orientation: landscape) {
+  body {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    display: grid;
+    grid-template-rows: max-content auto max-content;
+    grid-template-columns: auto;
+  }
+}
+div.common_box {
+  background-color: var(--color-light-theme-light);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0px 0px 2px var(--color-light-theme-dark);
+  color: var(--color-light-foreground);
+}
+
+div.common_box_white {
+  background-color: var(--color-light-foreground);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0px 0px 2px var(--color-light-shadow);
+  color: var(--color-light-foreground);
+}
+:root {
+  --color-light-theme-light: #4a5297;
+  --color-light-background: whitesmoke;
+  --color-light-foreground: white;
+  --color-light-shadow: gray;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/noto-sans/NotoSans-Regular.ttf");
+}
+button.icon_button {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  background-color: var(--color-light-foreground);
+  border-radius: 8px;
+  color: var(--color-light-shadow);
+  fill: var(--color-light-shadow);
+  border: 0;
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+button.icon_button p,
+button.icon_button svg {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+button.icon_button p {
+  margin-left: 0.5rem;
+}
+
+button.icon_button:hover {
+  color: var(--color-light-theme-light);
+  fill: var(--color-light-theme-light);
+}
+
+#input_section {
+  padding: 1rem;
+  background-color: var(--color-light-foreground);
+  box-shadow: 0px 0px 2px var(--color-light-shadow);
+  border-radius: 8px;
+  color: var(--color-light-theme-light);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, max-content);
+  gap: 1rem;
+  font-size: 12pt;
+}
+
+#input_section * {
+  color: var(--color-light-theme-light);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#input_section #input_title {
+  font-size: 24pt;
+}
+
+#input_section input {
+  border: 1px solid var(--color-light-theme-light);
+}
+
+#input_section #button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#input_section #button_container button:first-child {
+  margin-right: 0.5rem;
+}
+
+#input_section button {
+  padding: 0.5rem;
+  background-color: var(--color-light-foreground);
+  border: 0;
+  transition-duration: 100ms;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  padding: 4px;
+  -moz-appearance: textfield;
+}
+
+#input_section button:hover {
+  color: var(--color-light-foreground);
+  background-color: var(--color-light-theme-light);
+  box-shadow: 0px 0px 2px var(--color-light-theme-dark);
+}
+
+#input_section button:active {
+  background-color: var(--color-light-theme-dark);
+  box-shadow: 0;
+}
+
+@media (orientation: landscape) {
+  #output_section {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+    height: calc(100vh - 1rem);
+  }
+
+  #output_section #output_box {
+    overflow-y: scroll;
+    padding-right: 0.5rem;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+  }
+}
+
+@media (orientation: portrait) {
+  #output_section {
+    display: grid;
+    grid-template-rows: max-content auto;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+  }
+
+  #output_section #output_box {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #output_section #output_box div {
+    margin-right: 0.5rem;
+  }
+}
+
+#output_box div {
+  fill: var(--color-light-foreground);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, max-content);
+  gap: 0.25rem;
+  font-size: 12pt;
+}
+
+#output_section div #title_box {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-columns: max-content auto;
+  gap: 0.5rem;
+}
+
+#output_section div #title_box p,
+#output_section div #title_box svg {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#clear_output_button_box {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.fraction {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content 1px max-content;
+  text-align: center;
+  gap: 0.1rem;
+}
+
+.fraction span {
+  background-color: var(--color-light-foreground);
+}
+
+#shape_buttons_box button {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  fill: var(--color-light-foreground);
+  color: var(--color-light-foreground);
+  background-color: var(--color-light-theme-light);
+  border: 0;
+  cursor: pointer;
+}
+
+#shape_buttons_box button p,
+#shape_buttons_box button svg {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#shape_buttons_box button p {
+  margin-left: 0.5rem;
+}
+
+#shape_buttons_box button:active,
+#shape_buttons_box button.active {
+  fill: var(--color-light-theme-light);
+  color: var(--color-light-theme-light);
+  background-color: var(--color-light-foreground);
+}
+
+#title_box a {
+  color: var(--color-light-foreground);
+}
+
+@media (orientation: landscape) {
+  #menu_section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content auto max-content;
+    gap: 0.5rem;
+  }
+
+  #shape_buttons_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #settings_box {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 0.5rem;
+  }
+
+  #title_box p:nth-child(1) {
+    font-size: 24pt;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (orientation: portrait) {
+  #menu_section {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    overflow-x: auto;
+  }
+
+  #shape_buttons_box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #settings_box {
+    display: none;
+  }
+}
