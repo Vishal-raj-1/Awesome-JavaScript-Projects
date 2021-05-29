@@ -1686,8 +1686,15 @@ let projectData = [
     projectName: "Fun facts about Math",
     projectImage: "assets/images/maths_facts.png",
     projectUrl: "public/maths_facts.html"
+  },
+  {
+    projectName: "WorldClock",
+    projectImage: "assets/Images/worldtime.png",
+    projectUrl: "public/worldclock.html",
   }
-]
+
+];
+
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
