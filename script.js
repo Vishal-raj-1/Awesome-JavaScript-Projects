@@ -78,7 +78,7 @@ let projectData = [
   {
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
-    projectUrl: "public/Restaurant.html",
+    projectUrl: "public/Restaurant.html"
   },
   {
     projectName: "Block Ninja",
@@ -1166,7 +1166,7 @@ let projectData = [
   {
     projectName: "Mousehover Effect",
     projectImage: "assets/Images/Mousehover.png",
-    projectUrl: "public/Mousehover.html",
+    projectUrl: "public/Mousehover.html"
   },
   {
     projectName: "Mouse Trails effect",
@@ -1417,7 +1417,7 @@ let projectData = [
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
-     projectUrl: 'public/CaptchaValidator.html',
+     projectUrl: 'public/CaptchaValidator.html'
    },
    {
     projectName: "Filterable Image Gallery",
@@ -1433,7 +1433,6 @@ let projectData = [
     projectName: 'Button Generator',
     projectImage: 'assets/Images/button.PNG ',
     projectUrl: 'public/ButtonGenerator.html'
-
    },
    {
      projectName: 'Battery Indicator',
