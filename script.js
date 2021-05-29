@@ -1333,9 +1333,7 @@ let projectData = [
     projectImage: "assets/Images/math_trainer.png",
     projectUrl: "public/math_trainer.html"
   },
-
   {
-
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html"
@@ -1349,6 +1347,11 @@ let projectData = [
     projectName: "Audio Player App",
     projectImage: "assets/GIFs/MusicPlayerByVishal.gif",
     projectUrl: "public/MusicApp.html"
+  },
+  {
+    projectName: "Google Assistant Clone",
+      projectImage: "assets/Images/google_assistant.PNG",
+      projectUrl: "public/google_assistant_clone.html"
   },
   {
     projectName: "Dice Game",
