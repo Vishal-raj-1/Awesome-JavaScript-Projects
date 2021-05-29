@@ -829,9 +829,15 @@ let projectData = [
     projectUrl: "public/pixels-game.html"
   },
   {
+    projectName: "FullScreen Button fucntionality",
+    projectImage: "assets/Images/Fullscreen.png",
+    projectUrl: "public/fullscreen.html"
+  },
+  {
     projectName: "Vertical Timeline",
     projectImage: "assets/Images/vertical_timeline/Screenshot.png",
     projectUrl: "public/vertical_timeline.html"
+
   },
   {
     projectName: "PIN Code Tracker",
