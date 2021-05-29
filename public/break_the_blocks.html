@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../assets/css/break_blocks/break_the_blocks.css">
+<title>Break The Blocks</title>
+
+
+
+</head>
+<body>
+<div id="bottom"></div>
+<div id="game" >
+<span id="gs">Game Speed</span><br/>
+<input type="radio" class="speed" name="s" id="s" value="Slow" checked> <label for="s" class="lbl" id="ls">Slow</label><br/>
+
+<input type="radio" class="speed" name="s" id="f" value="Fast"> <label for="f" class="lbl"  id="lf">Fast</label><br/>
+
+<input type="radio" class="speed" name="s" id="vf" value="Very Fast"><label for="vf" class="lbl"  id="lvf">Very Fast</label> <br/>
+<span id="pattern">Select Pattern</span><br/>
+<select id="select_tag"> 
+
+</select>
+<span id="btn1" onClick="btn()">Start Game</span>
+
+<span id="score"></span>
+<h1 id="score" style="font-weight:bold;position:fixed;top:440px;left:470px;"></h1></div>
+<div id="multiplier">Level 1</div>
+<div id="score1">Score 0</div>
+<canvas id="canvas">
+</canvas>
+<img id="image" src="../assets/images/break_blocks/ball.png" ></img>
+<img id="bar" src="../assets/images/break_blocks/bar.png" ></img>
+<script src="../assets/js/break_blocks/jquery.js" type="text/javascript"></script>
+<script src="../assets/js/break_blocks/break.js" type="text/javascript"></script>
+</body>
+</html>

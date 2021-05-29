@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Image Puzzle</title>
+    <link href="../assets/css/imagePuzzleGame.css" rel="stylesheet" />
+    <script src="../assets/js/imagePuzzleGame.js"></script>
+</head>
+
+<body>
+    <div id="collage">
+        <h2 id="img-name">Image Puzzle Game</h2>
+        <hr />
+        <div id="playPanel" style="padding:5px; display:none;">
+            <h3 id="imgTitle"></h3>
+            <hr />
+            <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
+                <ul id="sortable" class="sortable"></ul>
+                <div id="actualImageBox">
+                    <div id="stepBox">
+                        <div><b>Steps :</b></div>
+                        <div id="stepCount" class="stepCount">0</div>
+                    </div>
+                    <div id="timeBox">
+                       <b> Time Taken: </b><span id="timerPanel"></span> secs
+                    </div>
+                    <img id="actualImage" />
+                    <div>Re-arrange the boxes to create a picture like this.</div>
+                    <p id="levelPanel">
+                        <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="imagePuzzle.startGame(images, this.value);"/> 
+                                <label for="easy"><b>Easy</b></label>
+                        <input type="radio" name="level" id="medium" value="4" onchange="imagePuzzle.startGame(images, this.value);" />
+                                <label for="medium"><b>Medium</b></label>
+                        <input type="radio" name="level" id="hard" value="5" onchange="imagePuzzle.startGame(images, this.value);" /> 
+                                <label for="hard"><b>Hard</b></label>
+                    </p>
+                    <div>
+                        <button id="newPhoto" type="button" class="btn" onclick="restart();">Change Photo</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="gameOver" style="display:none;">
+            <div style="background-color: #ac9696; padding: 5px 10px 20px 10px; text-align: center; ">
+                <h2 style="text-align:center">Game Over!!</h2>
+                Congratulations!! <br /> You have completed this picture.
+                <br /> Steps: <span id="stepCount" class="stepCount">0</span> steps.
+                <br /> Time Taken: <span class="timeCount">0</span> seconds<br />
+                <div>
+                    <button type="button" onclick="window.location.reload(true);" id="playAgain">Play Again</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var images = [
+                { src: "../assets/Images/ImagePuzzle/london-bridge.jpg", title: 'London Bridge' },
+                { src: "../assets/Images/ImagePuzzle/lotus-temple.jpg", title: 'Lotus Temple' },
+                { src: "../assets/Images/ImagePuzzle/qutub-minar.jpg", title: 'Qutub Minar' },
+                { src: "../assets/Images/ImagePuzzle/statue-of-liberty.jpg", title: 'Statue Of Liberty' },
+                { src: "../assets/Images/ImagePuzzle/taj-mahal.jpg", title: 'Taj Mahal' }
+            ];
+
+            window.onload = function () {
+                var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
+                imagePuzzle.startGame(images, gridSize);
+            };
+            function restart() {
+                var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
+                imagePuzzle.startGame(images, gridSize);
+            }
+        </script>
+    </div>
+    
+    <div id="devop"> 
+        
+    <ul>
+    <li style="list-style: none; font-family: cursive;"><b>Developed By :-</b> </li>
+    <li style="font-family: monospace;">Vanshika Chokhani</li>  
+    </ul>
+    </div>
+</body>
+</html>

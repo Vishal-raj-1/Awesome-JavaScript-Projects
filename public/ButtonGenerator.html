@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/ButtonGenerator.css" />
+    <title>Button Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Button Generator</h1>
+      <div class="properties">
+        <form>
+          <input type="text" placeholder="Button Text" id="btn-text" />
+          <input type="text" placeholder="Background Color" id="btn-bgColor" />
+          <input type="text" placeholder="Text Color" id="btn-textColor" />
+          <select name="textTransform" id="btn-textTransform">
+            <option value="" disabled selected>Text Transform</option>
+            <option value="uppercase">Uppercase</option>
+            <option value="lowercase">Lowercase</option>
+            <option value="capitalize">Capitalize</option>
+          </select>
+          <input
+            type="number"
+            class="left"
+            placeholder="Top Padding"
+            id="btn-tPad"
+          />
+          <input
+            type="number"
+            class="right"
+            placeholder="Right Padding"
+            id="btn-rPad"
+          />
+          <input
+            type="number"
+            class="left"
+            placeholder="Bottom Padding"
+            id="btn-bPad"
+          />
+          <input
+            type="number"
+            class="right"
+            placeholder="Left Padding"
+            id="btn-lPad"
+          />
+          <input
+            type="number"
+            class="left"
+            placeholder="Top Left Radius"
+            id="btn-tlRad"
+          />
+          <input
+            type="number"
+            class="right"
+            placeholder="Top Right Radius"
+            id="btn-trRad"
+          />
+          <input
+            type="number"
+            class="left"
+            placeholder="Bottom Left Radius"
+            id="btn-blRad"
+          />
+          <input
+            type="number"
+            class="right"
+            placeholder="Bottom Right Radius"
+            id="btn-brRad"
+          />
+        </form>
+      </div>
+      <div class="buttons">
+        <div class="button">
+          <button id="btn">Dummy Text</button>
+        </div>
+        <a href="#" id="generateCode">Generate Code</a>
+      </div>
+      <div class="coding">
+        <div>
+          <h3 class="html1">HTML</h3>
+          <div id="html-code">-</div>
+        </div>
+        <h3 class="html2">CSS</h3>
+        <div id="css-code">-</div>
+      </div>
+    </div>
+    <script src="../assets/js/ButtonGenerator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- <link rel="shortcut icon" href="src/img/earth.svg" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="../assets/Images/weatherApp/earth.svg" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="src/style.css" /> -->
+    <link rel="stylesheet" href="../assets/css/weatherApp.css" />
+    <!-- <link rel="stylesheet" href="src/media.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  
+<script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+    <script defer src="../assets/js/weatherApp.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dashboard">
+        <div class="logo">
+          <img src="../assets/Images/weatherApp/earth.svg" alt="" class="logo-img">
+        </div>
+        <div class="weather-main">
+            
+              <form action="" class="form search-input">
+              <input type="text" class="search-city" placeholder="Search City ">
+              
+              <button class="form__btn">OK</button>
+              <i class="fas fa-search-location"></i>
+            </form>
+           
+            <div class="app">   
+
+         
+              <div class="placeholder-weather">
+                <h2>Weather App</h2>
+              <img src="../assets/Images/weatherApp/placeholder.svg" alt="">
+              </div>
+
+
+              <!-- <div class="spinner">
+                <img src="src/img/loading.svg" alt="">
+              </div> -->
+
+
+
+                <!-- <div class="row-1">
+                  <div class="weather-icon">
+                  <img src="src/img/Clouds.svg" alt="" class="weather-img">
+                  </div>
+                       <h2 class="temp"> <span class="temp-data">34</span> °C</h2>
+                        <h3 class="weather-desc">Cloudy</h3>
+                        <h1 class="city">Indore</h1>
+                   </div>
+            <div class="row-2">
+              <div class="max-temp extra-data">
+                
+               
+                  <h4 class="max-temp">Max Temp :</h4>
+                  <p class="max-temp-text">35 °C</p>
+              </div>
+              <div class="min-temp extra-data">
+                <h4 class="min-temp">Min Temp :</h4>
+                <p class="min-temp-text">20 °C</p>
+              </div>
+              <div class="pressure extra-data">
+                <h4 class="pressure">Pressure :</h4>
+                <p class="pressure-text">1005</p>
+              </div>
+              <div class="humidity extra-data">
+                <h4 class="humidity-temp">Humidity :</h4>
+                <p class="humidity-text">11</p>
+               
+              </div>
+              <div class="wind extra-data">
+                <h4 class="wind-temp">Wind Speed :</h4>
+                <p class="wind-text">4.12m/s</p>
+              </div>
+            </div> -->
+          </div>
+
+        </div>
+    </div>
+  </div>
+
+  
+  </body>
+  </body>
+</html>
