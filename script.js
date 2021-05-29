@@ -1808,6 +1808,11 @@ let projectData = [
     projectName: "Emoji Factory",
     projectImage: "assets/images/emoji-factory.png",
     projectUrl: "public/emoji-factory.html",
+  },
+  {
+    projectName: "Image Search",
+    projectImage: "assets/images/image-search.png",
+    projectUrl: "public/image-search.html",
   }
 ];
 
