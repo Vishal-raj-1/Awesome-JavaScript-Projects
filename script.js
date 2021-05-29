@@ -37,7 +37,7 @@ let projectData = [
   {
     projectName: "Circus Game",
     projectImage: "assets/GIFs/circus.png",
-    projectUrl: "public/circus.html",
+    projectUrl: "public/circus.html"
   },
   {
     projectName: "Pixelated Image",
@@ -45,15 +45,14 @@ let projectData = [
     projectUrl: "public/pixelated.html",
   },
   {
-
     projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
-    projectUrl: "public/feedback.html",
+    projectUrl: "public/feedback.html"
   },
   {
-    projectName:"MooD SlideR",
+    projectName: "MooD SlideR",
     projectImage: "assets/Images/mood-slider.png",
-    projectUrl: "public/mood-slider.html",
+    projectUrl: "public/mood-slider.html"
   },
   {
     projectName:"Space Wrap",
@@ -68,17 +67,17 @@ let projectData = [
   {
     projectName:"Interactive Flashlight",
     projectImage: "assets/Images/flashlight.png",
-    projectUrl: "public/flashlight.html",
+    projectUrl: "public/flashlight.html"
   },
   {
     projectName: "Profile Upload Image",
     projectImage: "assets/GIFs/profilepic.gif",
-    projectUrl: "public/uploadimg.html",
+    projectUrl: "public/uploadimg.html"
   },
   {
     projectName: "Expanding Menu Bar",
     projectImage: "assets/Images/expanding-menubar.png",
-    projectUrl: "public/expanding-menu.html",
+    projectUrl: "public/expanding-menu.html"
   },
   {
     projectName: "Laptop Portfolio",
@@ -88,17 +87,17 @@ let projectData = [
   {
     projectName: "Fall In Game",
     projectImage: "assets/GIFs/fall-in-game.gif",
-    projectUrl: "public/fall-game.html",
+    projectUrl: "public/fall-game.html"
   },
   {
     projectName: "Blob Maker",
     projectImage: "assets/Images/blob-maker.png",
-    projectUrl: "public/blob-maker.html",
+    projectUrl: "public/blob-maker.html"
   },
   {
     projectName: "Webpage Printing",
     projectImage: "assets/GIFs/web.gif",
-    projectUrl: "public/web-page.html",
+    projectUrl: "public/web-page.html"
   },
   {
     projectName: "Restaurant Menu",
@@ -113,7 +112,7 @@ let projectData = [
   {
     projectName: "Block Ninja",
     projectImage: "assets/GIFs/block_ninja.gif",
-    projectUrl: "public/block_ninja.html",
+    projectUrl: "public/block_ninja.html"
   },
   {
     projectName: "Math Sprinter Game",
@@ -253,7 +252,7 @@ let projectData = [
   {
     projectName: "GAME_OF_LIFE",
     projectImage: "assets/Images/GAME_OF_LIFE.png",
-    projectUrl: "public/GAME_OF_LIFE.html",
+    projectUrl: "public/GAME_OF_LIFE.html"
   },
   {
     projectName: "Sudoku Game",
@@ -549,7 +548,7 @@ let projectData = [
   {
     projectName: "Mortgage Loan Calculator",
     projectImage: "assets/Images/mortgage_loan_calculator.png",
-    projectUrl: "public/mortgage_loan_calculator.html",
+    projectUrl: "public/mortgage_loan_calculator.html"
   },
   {
     projectName: "Analog Clock",
@@ -637,13 +636,15 @@ let projectData = [
     projectUrl: "public/Tic_Tac_Toe.html"
   },
   {
-
+    projectName: "Tip Calculator",
+    projectImage: "assets/Images/tip-calc.png",
+    projectUrl: "public/tip-calculator.html"
+  },
+  {
     projectName: 'Tip Calculator',
     projectImage: 'assets/Images/tip-calc.png',
     projectUrl: 'public/tip-calculator.html'
-  }
-
-  ,
+  },
   {
     projectName: "DragNDrop",
     projectImage: "assets/GIFs/DragNDrop.gif",
@@ -1420,24 +1421,20 @@ let projectData = [
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
    } ,
-   {
-     projectName: '3D Image Gallery',
-     projectImage: 'assets/Images/3DImageGallery.PNG',
-     projectUrl: 'public/3DImageGallery.html'
-
-
-  }
-  ,
   {
-    projectName: 'Button Generator',
-    projectImage: 'assets/Images/button.PNG ',
-    projectUrl: 'public/ButtonGenerator.html'
-
+    projectName: "3D Image Gallery",
+    projectImage: "assets/Images/3DImageGallery.PNG",
+    projectUrl: "public/3DImageGallery.html"
   },
   {
-    projectName: 'Battery Indicator',
-    projectImage: 'assets/Images/BatteryIndicator.PNG',
-    projectUrl: 'public/BatteryIndicator.html'
+    projectName: "Button Generator",
+    projectImage: "assets/Images/button.PNG ",
+    projectUrl: "public/ButtonGenerator.html"
+  },
+  {
+    projectName: "Battery Indicator",
+    projectImage: "assets/Images/BatteryIndicator.PNG",
+    projectUrl: "public/BatteryIndicator.html"
   },
   {
     projectName: "Box-Shadow Css ",
@@ -1448,6 +1445,11 @@ let projectData = [
     projectName: "Px/Rem Converter",
     projectImage: "assets/GIFs/px-rem.gif",
     projectUrl: "public/px-rem.html"
+  },
+  {
+    projectName: "Energy Converter",
+    projectImage: "assets/Images/energy-converter.jpg",
+    projectUrl: "public/energy-converter.html"
   },
   {
     projectName: "Dinosaur Game",
@@ -1702,6 +1704,7 @@ let projectData = [
 ];
 
 
+
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
   var x = a.projectName.toLowerCase();
@@ -1718,7 +1721,7 @@ function getProjects() {
   let output = "";
   projectDetails.forEach(
     (data, item) =>
-    (output += `
+      (output += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
@@ -1769,7 +1772,7 @@ searchBtn.addEventListener("click", (e) => {
   let filter = "";
   filterData.forEach(
     (data, item) =>
-    (filter += `
+      (filter += `
     <div class="projectCard">
     <a href=${data.projectUrl} class="hoverEffect" target="_blank">
       <img
