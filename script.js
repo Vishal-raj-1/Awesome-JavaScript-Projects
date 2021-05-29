@@ -1420,7 +1420,12 @@ let projectData = [
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
-   } ,
+   },
+   {
+    projectName: "Filterable Image Gallery",
+    projectImage: "assets/Images/Filterable_Image_Gallery/Filterable_Image_Gallery.png",
+    projectUrl: "public/Filterable_Image_Gallery.html"
+  },
   {
     projectName: "3D Image Gallery",
     projectImage: "assets/Images/3DImageGallery.PNG",
@@ -1601,7 +1606,6 @@ let projectData = [
     projectName: "Caesar Cipher",
     projectImage: "assets/Images/caesarCipher.png",
     projectUrl: "public/caesarCipher.html",
-
   },
   {
     projectName: "Sentiment Analysis",
