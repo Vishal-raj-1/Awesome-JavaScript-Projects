@@ -1,0 +1,172 @@
+.scene {
+    /* !3D space! */
+    perspective: 600px;
+  }
+  .items {
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .item {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  .items:hover {
+    transform: rotateY(180deg);
+  }
+  .items-2 {
+    transform-origin: center right;
+  }
+  .items-2:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  .items-3 {
+    transform-origin: center left;
+  }
+  .items-3:hover {
+    transform: translateX(100%) rotateY(-180deg);
+  }
+  .text-rotate {
+    transform: rotate(180deg);
+  }
+  .items-4:hover {
+    transform: rotateX(-180deg);
+  }
+  .items-5:hover {
+    transform: rotateX(180deg);
+  }
+  
+  .items-6:hover {
+    transform: rotate3d(-1, 1, 0, 180deg);
+  }
+  /*variations >>*/
+  body {
+    font-family: "Bangers", cursive;
+    font-size: 62px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  }
+  .scene {
+    width: 350px;
+    min-width: 150px;
+    height: 350px;
+    margin: 30px;
+  }
+  
+  .items {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+  }
+  .item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px #e02577;
+  }
+  
+  .items-1 {
+    background-image: linear-gradient(
+      to top,
+      #051937,
+      #004d7a,
+      #008793,
+      #00bf72,
+      #a8eb12
+    );
+  }
+  .items-2 {
+    background-image: linear-gradient(
+      to bottom,
+      #051937,
+      #00466d,
+      #007aa1,
+      #00b1cc,
+      #12ebeb
+    );
+  }
+  .items-3 {
+    background-image: linear-gradient(
+      to top,
+      #520f60,
+      #3650a2,
+      #0086d0,
+      #00bae7,
+      #12ebeb
+    );
+  }
+  .items-4 {
+    background-image: linear-gradient(
+      to bottom,
+      #520f60,
+      #741580,
+      #9918a1,
+      #c118c2,
+      #eb12e2
+    );
+  }
+  .items-5 {
+    background-image: linear-gradient(
+      to bottom,
+      #051937,
+      #00466d,
+      #007aa1,
+      #00b1cc,
+      #12ebeb
+    );
+  }
+  .items-6 {
+    background-image: linear-gradient(
+      to top,
+      #051937,
+      #004d7a,
+      #008793,
+      #00bf72,
+      #a8eb12
+    );
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    border-radius: 35px;
+    color: #4f1884;
+    text-shadow: 2px 2px #b31ec6;
+    font-size: 1em;
+    margin: 0%;
+  }
+  .theme-btn {
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 2rem;
+    border: 3px solid #000;
+    font-weight: bold;
+    margin-top: 5%;
+  }
+  .dark-theme h1 {
+    text-shadow: #000 4px 2px 2px;
+    -webkit-text-stroke: 3px #94d0cc;
+  }
+  .theme-btn:hover {
+    box-shadow: 0px 2px 4px #424242;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: #94d0cc;
+  }
+  body.dark-theme {
+    margin: 0%;
+    padding: 0%;
+  
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
