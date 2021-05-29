@@ -1683,6 +1683,11 @@ let projectData = [
     projectUrl: "public/bridgeNtorch.html",
   },
   {
+    projectName: "Panorama Cube",
+    projectImage: "assets/GIFs/panoramaCube.gif",
+    projectUrl: "public/panoramaCube.html"
+  },
+  {
     projectName: "Caesar Cipher",
     projectImage: "assets/Images/caesarCipher.png",
     projectUrl: "public/caesarCipher.html",
