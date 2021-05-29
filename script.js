@@ -1351,6 +1351,21 @@ let projectData = [
     projectUrl: "public/MusicApp.html"
   },
   {
+    projectName: "Dice Game",
+    projectImage: "assets/GIFs/dice_game.gif",
+    projectUrl: "public/dice_game.html",
+  },
+
+    projectName: "Form Wave Animation",
+    projectImage: "assets/GIFs/Form_Wave_Animation.gif",
+    projectUrl: "public/Form_Wave_Animation.html",
+  },
+
+    projectName: 'Exchange Rate',
+    projectImage: 'assets/Images/ExchangeRate.png',
+    projectUrl: 'public/ExchangeRate.html'
+  },
+  {
   projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html"
@@ -1502,6 +1517,26 @@ let projectData = [
     projectUrl: "public/DinosaurGame.html"
   },
   {
+    projectName: "Falling Bullets Animation JS",
+    projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
+    projectUrl: "public/FallingBulletsAnimation.html",
+  },
+  {
+    projectName: "Infix Expression Evaluator in JavaScript",
+    projectImage: "assets/GIFs/Infix-Evaluator-in-JavaScript.png",
+    projectUrl: "public/infixevaluator.html",
+  },
+  {
+    projectName: "JavaScript Dragon Game",
+    projectImage: "assets/Images/JavaScript-Dragon-Game.png",
+    projectUrl: "public/Dino game.html",
+  },
+  {
+    projectName: 'Falling Bullets Animation JS',
+    projectImage: 'assets/GIFs/FallingBulletsAnimation.gif',
+    projectUrl: 'public/FallingBulletsAnimation.html'
+  },
+  {
     projectName: "Ternary Search Visualization in JavaScript",
     projectImage: "assets/Images/ternarysearch-visualizing.png",
     projectUrl: "public/ternarysearch.html"
@@ -1510,6 +1545,11 @@ let projectData = [
     projectName: "Binary Search Visualization in JavaScript",
     projectImage: "assets/Images/binarysearch-visualizing.png",
     projectUrl: "public/binarysearch.html"
+  },
+  {
+    projectName: 'JavaScript Dragon Game',
+    projectImage: 'assets/Images/JavaScript-Dragon-Game.png',
+    projectUrl: 'public/Dino game.html'
   },
   {
     projectName: "Heap Sort Visualizer in JavaScript",
@@ -1677,6 +1717,7 @@ let projectData = [
     projectImage: "assets/Images/pokemon.png",
     projectUrl: "public/pokemon.html"
   },
+
   {
     projectName: "GST Calculator",
     projectImage: "assets/Images/GST_Calculator.png",
