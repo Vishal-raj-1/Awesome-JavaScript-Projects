@@ -1820,6 +1820,11 @@ let projectData = [
     projectName: "Image Search",
     projectImage: "assets/images/image-search.png",
     projectUrl: "public/image-search.html",
+  },
+  {
+    projectName: "Sortable List",
+    projectImage: "assets/images/sortable_list.png",
+    projectUrl: "public/sortable_list.html",
   }
 ];
 
