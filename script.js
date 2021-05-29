@@ -1487,6 +1487,11 @@ let projectData = [
     projectUrl: "public/shellsort.html"
   },
   {
+    projectName: "3D Texture Cube",
+    projectImage: "assets/GIFs/3DTexture.gif",
+    projectUrl: "public/3DTexture.html",
+  },
+  {
     projectName: "Balloon Pop Game",
     projectImage: "assets/Images/BalloonPopGame.png",
     projectUrl: "public/BalloonPopGame.html"
