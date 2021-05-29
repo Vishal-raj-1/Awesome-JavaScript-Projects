@@ -1356,17 +1356,17 @@ let projectData = [
     projectUrl: "public/dice_game.html",
   },
 
-    projectName: "Form Wave Animation",
+   { projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
   },
 
-    projectName: 'Exchange Rate',
+  { projectName: 'Exchange Rate',
     projectImage: 'assets/Images/ExchangeRate.png',
     projectUrl: 'public/ExchangeRate.html'
   },
   {
-  projectName: "Google keep Clone",
+    projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html"
   },
@@ -1783,6 +1783,11 @@ let projectData = [
     projectName: "Decimal To Binary Converter",
     projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
     projectUrl: "public/DecimalToBinaryConverter.html",
+  },
+  {
+    projectName:"Web Development Course Webpage",
+    projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
+    projectUrl:"public/WebDevelopmentCourse.html",
   }
 
 
@@ -1902,3 +1907,4 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
