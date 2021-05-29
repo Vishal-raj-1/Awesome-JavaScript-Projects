@@ -1604,6 +1604,11 @@ let projectData = [
     projectUrl: "public/barcodeGenerator.html"
   },
   {
+    projectName: "Stripe Dropdown",
+    projectImage: "assets/GIFs/stripeDropdown.gif",
+    projectUrl: "public/stripeDropdown.html"
+  },
+  {
     projectName: "Array Methods",
     projectImage: "assets/Images/arrayMethods.png",
     projectUrl: "public/arrayMethods.html",
