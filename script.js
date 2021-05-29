@@ -829,6 +829,11 @@ let projectData = [
     projectUrl: "public/pixels-game.html"
   },
   {
+    projectName: "Vertical Timeline",
+    projectImage: "assets/Images/vertical_timeline/Screenshot.png",
+    projectUrl: "public/vertical_timeline.html"
+  },
+  {
     projectName: "PIN Code Tracker",
     projectImage: "assets/GIFs/pinCodeSearch.gif",
     projectUrl: "public/pinCodeSearch.html"
