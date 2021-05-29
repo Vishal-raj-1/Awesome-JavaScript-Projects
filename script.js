@@ -65,6 +65,11 @@ let projectData = [
     projectUrl: "public/nebula.html",
   },
   {
+    projectName: "3D Gltf Scene",
+    projectImage: "assets/GIFs/3DGltf.gif",
+    projectUrl: "public/3DGltf.html"
+  },
+  {
     projectName:"Interactive Flashlight",
     projectImage: "assets/Images/flashlight.png",
     projectUrl: "public/flashlight.html"
@@ -88,6 +93,11 @@ let projectData = [
     projectName: "Fall In Game",
     projectImage: "assets/GIFs/fall-in-game.gif",
     projectUrl: "public/fall-game.html"
+  },
+  {
+    projectName: "3D Paint",
+    projectImage: "assets/GIFs/3DPaint.gif",
+    projectUrl: "public/3DPaint.html"
   },
   {
     projectName: "Blob Maker",
@@ -138,16 +148,6 @@ let projectData = [
     projectName: "Step Progress Bar",
     projectImage: "assets/GIFs/progress.gif",
     projectUrl: "public/progress.html"
-  },
-  {
-    projectName: "Smart Temperature Slider",
-    projectImage: "assets/GIFs/temp_slider.gif",
-    projectUrl: "public/temp_slider.html",
-  },
-   {
-    projectName: "Credit Card Payment Form",
-    projectImage: "assets/GIFs/credit_card.png",
-    projectUrl: "public/credit_card.html",
   },
   {
     projectName: "Work Time Tracker",
@@ -977,7 +977,7 @@ let projectData = [
   },
   {
     projectName: "Flappy Bird",
-    projectImage: "assets/GIFs/flappy-bird.png",
+    projectImage: "assets/GIFs/flappy-bird.gif",
     projectUrl: "public/flappybird.html"
   },
   {
@@ -1333,9 +1333,7 @@ let projectData = [
     projectImage: "assets/Images/math_trainer.png",
     projectUrl: "public/math_trainer.html"
   },
-
   {
-
     projectName: "Timeline",
     projectImage: "assets/GIFs/timeline.gif",
     projectUrl: "public/timeline.html"
@@ -1351,17 +1349,23 @@ let projectData = [
     projectUrl: "public/MusicApp.html"
   },
   {
+    projectName: "Google Assistant Clone",
+      projectImage: "assets/Images/google_assistant.PNG",
+      projectUrl: "public/google_assistant_clone.html"
+  },
+  {
     projectName: "Dice Game",
     projectImage: "assets/GIFs/dice_game.gif",
     projectUrl: "public/dice_game.html",
-  },
-
-   { projectName: "Form Wave Animation",
+  },   
+  {
+    projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
     projectUrl: "public/Form_Wave_Animation.html",
   },
+  {
+    projectName: 'Exchange Rate',
 
-  { projectName: 'Exchange Rate',
     projectImage: 'assets/Images/ExchangeRate.png',
     projectUrl: 'public/ExchangeRate.html'
   },
@@ -1683,6 +1687,11 @@ let projectData = [
     projectUrl: "public/bridgeNtorch.html",
   },
   {
+    projectName: "Panorama Cube",
+    projectImage: "assets/GIFs/panoramaCube.gif",
+    projectUrl: "public/panoramaCube.html"
+  },
+  {
     projectName: "Caesar Cipher",
     projectImage: "assets/Images/caesarCipher.png",
     projectUrl: "public/caesarCipher.html",
@@ -1765,6 +1774,15 @@ let projectData = [
 
   },
   {
+    projectName: "Covid Live Status",
+    projectImage: "assets/images/covid-live.png",
+    projectUrl: "public/covid_live.html"
+  },{
+    projectName: "3d Flip Card",
+    projectImage: "assets/images/flip-card.png",
+    projectUrl: "public/flip-card.html"
+  },
+  {
     projectName: "Contact form",
     projectImage: "assets/images/contact-form.png",
     projectUrl: "public/contact-form.html"
@@ -1788,12 +1806,22 @@ let projectData = [
     projectName:"Web Development Course Webpage",
     projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
     projectUrl:"public/WebDevelopmentCourse.html",
+  },{
+    projectName: "Wikipedia Search",
+    projectImage: "assets/Images/wikiSearch.png",
+    projectUrl: "public/wikiSearch.html"
+  },
+  {
+    projectName: "Emoji Factory",
+    projectImage: "assets/images/emoji-factory.png",
+    projectUrl: "public/emoji-factory.html",
+  },
+  {
+    projectName: "Image Search",
+    projectImage: "assets/images/image-search.png",
+    projectUrl: "public/image-search.html",
   }
-
-
 ];
-
-
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
@@ -1844,9 +1872,10 @@ searchInput.addEventListener("change", (e) => {
   searchText = e.target.value;
 });
 
-let searchBtn = document.getElementById("searchBtn");
+let searchForm = document.getElementById("searchForm");
 
-searchBtn.addEventListener("click", (e) => {
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
   var filterData = [];
   if (searchText.length !== 0) {
     projectData.forEach((obj) => {

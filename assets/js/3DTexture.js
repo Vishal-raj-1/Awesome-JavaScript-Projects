@@ -1,4 +1,5 @@
 import * as THREE from "https://threejsfundamentals.org/threejs/resources/threejs/r127/build/three.module.js";
+import { OrbitControls } from "https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/controls/OrbitControls.js";
 
 function main() {
   const canvas = document.querySelector("#canvas");
@@ -10,6 +11,11 @@ function main() {
   const far = 5;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.z = 2;
+
+  // Orbit Controls
+  const controls = new OrbitControls(camera, canvas);
+  controls.target.set(0, 0, 0);
+  controls.update();
 
   const scene = new THREE.Scene();
 
