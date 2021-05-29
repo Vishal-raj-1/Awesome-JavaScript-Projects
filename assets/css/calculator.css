@@ -1,101 +1,84 @@
-body{
-    background-color: #333;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
-.container{
+
+
+body{
+    font-family: sans-serif;
     text-align: center;
-    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(116, 53, 53, 0.61);
+
 }
 
-body{
-    background-color: #0f0f0f;
-
-}
-
-table{
-    margin: auto;
-}
-
-input {
-    border-radius: 10px;
-    border: none;
-    font-size: 58px;
-    height: 90px;
-    width: 450px;
-    margin-bottom: 5px;
-    outline: none;
-    background: #28f1ed96;
-    box-shadow: inset -3px -3px 7px #00f3fffa,
-                inset 2px 2px 5px #012d2ffc;
+.for{
+    box-shadow: 
+    0em 1.2em 1.2em rgba(0, 0, 0, 0.3),
+    inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
 }
 
 
-button{
-    font-size: 40px;
-    width: 100px;
-    height: 69px;
-    margin: 6px;
-    transform: scale(1);
-    outline: none;
-    border:none;
-    background: linear-gradient(315deg , #56d0c5, #89b0ad);
-    box-shadow: 3px 3px 8px 0px #224e4a,
-               -3px -3px 8px 0px #4ac3bcf2;
-    border-radius: 8px;
+.center{
+    background: black;
+    border-radius: 25px; 
+    width: 350px;
 }
 
 
+input[type="text"]{
+    height:60px ;
+    width: 240px; ;
+    margin-top: 40px ;
+    border-radius: 3px ;
+    border: 1px solid #e1e7ea ;
+    color: black ;
+    font-size: 22px;
+    font-weight: bold ;
+    text-align: right;
+    padding-right: 20px;
 
-button:hover{
-    transform: scale(0.9);
-    cursor: pointer;
-    background-color: #13caefc9;
 }
 
-button:active:focus{
-    box-shadow: inset 3px 3px 8px 0px #224e4a,
-                -3px -3px 8px 0px #4ac3bcf2;
+
+form .buttons{
+    width:300px ;
+    margin:10px 25px 0px 25px ;
+    padding:10px 0px ;
 }
 
-button:focus{
-    box-shadow: inset 3px 3px 5px 0px #224e4a,
-                inset -3px -3px 8px 0px #0bd1f98c;
-}
 
-.calculator{
-    background-image: linear-gradient(to right,
-                      rgb(30, 30, 30),
-                      rgb(42, 223, 220));
-    padding: 23px;
-    border-radius: 30px;
-    display: inline-block;
-    box-shadow: -5px -5px 10px #224c4e,
-                 5px 5px 10px #224c4e;
-}
-
-h1{
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    color: aqua;
-}
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  table{
-  width: 80%;
-  }
-  input{
-    width: 90%;
-    font-size: 30px;
+input[type="button"]{
+    width:45px ;
     height: 50px;
-  }
-  button {
-    font-size: 25px;
-    width: 55px;
-    height: 40px;
-    margin: 4px;
-  }
-  .calculator{
-    width: 80%;
-    margin-top: 30px;
-  }
+    margin:5px ;
+    font-size: 22px;
+    line-height: 55px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+
+
+
+}
+
+input#clear{
+    background: aqua;
+    color: black;
+
+}
+
+input#equal{
+    width:230px ;
+    margin:10px 0px 10px 0px ;
+    font-size:30px ;
+    color: black ;
+    background: royalblue ;
+    border: 1px solid ;
+
+
 }
