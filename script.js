@@ -1426,21 +1426,6 @@ let projectData = [
     projectImage: "assets/Images/Filterable_Image_Gallery/Filterable_Image_Gallery.png",
     projectUrl: "public/Filterable_Image_Gallery.html"
   },
-   {
-     projectName: '3D Image Gallery',
-     projectImage: 'assets/Images/3DImageGallery.PNG',
-     projectUrl: 'public/3DImageGallery.html'
-  },
-  {
-    projectName: 'Button Generator',
-    projectImage: 'assets/Images/button.PNG ',
-    projectUrl: 'public/ButtonGenerator.html'
-   },
-   {
-     projectName: 'Battery Indicator',
-     projectImage: 'assets/Images/BatteryIndicator.PNG',
-     projectUrl: 'public/BatteryIndicator.html'
-   },
   {
     projectName: "3D Image Gallery",
     projectImage: "assets/Images/3DImageGallery.PNG",
