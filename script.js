@@ -1577,6 +1577,11 @@ let projectData = [
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
+  },
+  {
+    projectName: "Balloon and Brick Game",
+    projectImage: "assets/GIFs/Balloon_brick.gif",
+    projectUrl: "public/BalloonAndBrickGame.html"
   }
 ]
 
