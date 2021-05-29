@@ -1699,6 +1699,12 @@ let projectData = [
     projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
     projectUrl: "public/DecimalToBinaryConverter.html",
   }
+  ,{
+    projectName: "Image Search",
+    projectImage: "assets/images/image-search.png",
+    projectUrl: "public/image-search.html",
+  }
+  
 
 
 ];
