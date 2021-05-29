@@ -1357,7 +1357,7 @@ let projectData = [
     projectName: "Dice Game",
     projectImage: "assets/GIFs/dice_game.gif",
     projectUrl: "public/dice_game.html",
-  },
+  },   
   {
     projectName: "Form Wave Animation",
     projectImage: "assets/GIFs/Form_Wave_Animation.gif",
@@ -1365,11 +1365,12 @@ let projectData = [
   },
   {
     projectName: 'Exchange Rate',
+
     projectImage: 'assets/Images/ExchangeRate.png',
     projectUrl: 'public/ExchangeRate.html'
   },
   {
-  projectName: "Google keep Clone",
+    projectName: "Google keep Clone",
     projectImage: "assets/Images/keep.PNG",
     projectUrl: "public/google_keep.html"
   },
@@ -1802,6 +1803,10 @@ let projectData = [
     projectUrl: "public/DecimalToBinaryConverter.html",
   },
   {
+    projectName:"Web Development Course Webpage",
+    projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
+    projectUrl:"public/WebDevelopmentCourse.html",
+  },{
     projectName: "Wikipedia Search",
     projectImage: "assets/Images/wikiSearch.png",
     projectUrl: "public/wikiSearch.html"
@@ -1931,3 +1936,4 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
