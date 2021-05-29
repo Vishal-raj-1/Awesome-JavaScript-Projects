@@ -90,6 +90,11 @@ let projectData = [
     projectUrl: "public/fall-game.html"
   },
   {
+    projectName: "3D Paint",
+    projectImage: "assets/GIFs/3DPaint.gif",
+    projectUrl: "public/3DPaint.html"
+  },
+  {
     projectName: "Blob Maker",
     projectImage: "assets/Images/blob-maker.png",
     projectUrl: "public/blob-maker.html"
