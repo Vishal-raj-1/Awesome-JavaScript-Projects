@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/Giphy.css">
+        <title>ReCreate GIFs</title>
+</head>
+
+<body onload="Preloader()">
+
+    <div class="loader" id="loader"> </div>
+   
+   <div class="container">
+
+<div class="header d-flex align-self-center justify-content-between mb-3">
+    <h1 class="mt-4" style="color: white;">Re-Create Giphy </h1>
+    <div id="Avatar"></div>
+</div>
+
+
+<div class="container-fluid mb-2 text-center">   
+            
+            <input class="form-control form-control-lg p-3" id="Gif_input" type="search" placeholder="Search Gifs" aria-label=".form-control-lg example">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary mt-2 p-2" id="Gif_btn" type="button" style="font-weight: bold; font-style: italic;">Search Now</button>
+              </div>  
+            
+        </div>
+        <div class="container-fluid mt-3">
+           <div class="Gif_Holder" id="Gif_Search"></div>
+           <div class="Gif_Holder mt-2" id="Gif_Holder"></div>
+           <div class="Gif_Holder mt-2" id="Gif_sticker"> </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="Cr" style="font-size: 12px; font-style: italic; color: white;" >
+        Developed By
+        <a href="https://www.linkedin.com/in/vishal-kumar-6a741b192/" target="_blank" style="text-decoration: none; color: white"> Vishal Kumar</a> </div>
+    </div>
+
+
+   
+   <script>
+
+const Loader =document.querySelector(".loader")
+
+
+function Preloader(){
+    Loader.classList.add("hidden")
+}
+
+
+   </script>
+    <script src="../assets/js/Giphy.js"></script>
+
+</body>
+
+</html>
