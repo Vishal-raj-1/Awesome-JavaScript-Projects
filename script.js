@@ -1417,7 +1417,7 @@ let projectData = [
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
-     projectUrl: 'public/CaptchaValidator.html'
+     projectUrl: 'public/CaptchaValidator.html',
    },
    {
     projectName: "Filterable Image Gallery",
