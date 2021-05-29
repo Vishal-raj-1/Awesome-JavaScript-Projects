@@ -10,6 +10,11 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html"
   },
   {
+    projectName: "Weather App",
+    projectImage: "assets/Images/weatherApp/Image.PNG",
+    projectUrl: "public/weatherApp.html"
+  },
+  {
     projectName: "Rubik's Cube",
     projectImage: "assets/GIFs/rubiks_cube.gif",
     projectUrl: "public/rubiks_cube.html"
@@ -40,7 +45,7 @@ let projectData = [
     projectUrl: "public/pixelated.html",
   },
   {
-    projectName:"Emoji Feedback Form",
+
     projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html",
@@ -675,11 +680,6 @@ let projectData = [
     projectName: "Rock Paper Scissor Game",
     projectImage: "assets/Images/r-p-s/rps.gif",
     projectUrl: "public/Rock-paper-scissor.html"
-  },
-  {
-    projectName: "Weather App",
-    projectImage: "assets/GIFs/Weather_app.gif",
-    projectUrl: "public/Weather_app.html"
   },
   {
     projectName: "Yoga App",
@@ -1408,6 +1408,7 @@ let projectData = [
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
    } ,
+
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
@@ -1418,6 +1419,7 @@ let projectData = [
      projectImage: 'assets/Images/3DImageGallery.PNG',
      projectUrl: 'public/3DImageGallery.html'
 
+
   }
   ,
   {
@@ -1425,12 +1427,12 @@ let projectData = [
     projectImage: 'assets/Images/button.PNG ',
     projectUrl: 'public/ButtonGenerator.html'
 
-   },
-   {
-     projectName: 'Battery Indicator',
-     projectImage: 'assets/Images/BatteryIndicator.PNG',
-     projectUrl: 'public/BatteryIndicator.html'
-   },
+  },
+  {
+    projectName: 'Battery Indicator',
+    projectImage: 'assets/Images/BatteryIndicator.PNG',
+    projectUrl: 'public/BatteryIndicator.html'
+  },
   {
     projectName: "Box-Shadow Css ",
     projectImage: "assets/GIFs/box-shadow.gif",
