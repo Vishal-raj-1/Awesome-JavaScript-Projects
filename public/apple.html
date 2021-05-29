@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/css/apple_game.css" />
+    <title>Apple Collector</title>
+</head>
+
+<body>
+
+    <ol id="scoreboard">
+        <li>Time Left: <span id="time">30</span></li>
+        <li><button onclick="startGame();" id="btn">Play</button></li>
+        <li>Score: <span id="score">0</span></li>
+    </ol>
+
+    <div id="scene">
+        <img id="ground" src="../assets/Images/AppleGame/ground.png" />
+        <img id="tree" src="../assets/Images/AppleGame/tree.png" />
+        <img style="top: 200px ;left: 110px;" onclick="fallDown(this)" class="apple" src="../assets/Images/AppleGame/apple.png" />
+        <img style="top: 205px ;left: 145px;" onclick="fallDown(this)" class="apple" src="../assets/Images/AppleGame/apple.png" />
+        <img style="top: 170px ;left: 185px;" onclick="fallDown(this)" class="apple" src="../assets/Images/AppleGame/apple.png" />
+        <img style="top: 215px ;left: 220px;" onclick="fallDown(this)" class="apple" src="../assets/Images/AppleGame/apple.png" />
+        <img style="top: 170px ;left: 255px;" onclick="fallDown(this)" class="apple" src="../assets/Images/AppleGame/apple.png" />
+    </div>
+    <p style="width: 400px; margin: 0 auto;">Hi: <span id="high">0</span></p>
+    <script type="text/javascript" src="../assets/js/AppleGameController.js"></script>
+
+</body>
+
+</html>

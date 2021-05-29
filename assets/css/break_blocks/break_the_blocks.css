@@ -1,0 +1,137 @@
+label
+{
+	color: #33AB3D;
+	line-height: 20px;
+	text-align: center;
+	font-weight:bold;
+	
+
+}
+#gs
+{
+color: DARKBLUE;
+	line-height: 30px;
+	text-align: center;
+	font-weight:bold;
+}
+#pattern
+{
+color: DARKBLUE;
+	line-height: 30px;
+	text-align: center;
+	font-weight:bold;
+	position:relative;
+	
+}
+label:hover
+{
+	font-size:110%;
+	color: GREEN;	
+}
+
+#game{
+
+padding:20px 80px 90px 80px;;
+border-radius: 10px;
+border : solid 2px black;
+position:fixed;
+
+background:white;
+}
+
+#score
+{
+position:fixed;top:340px;left:500px;
+	color: #F50C3F;
+		
+	text-weight:bold;
+	color: #0F0F0F;
+		font-size:250%;
+text-shadow:  1px 1px #7A7B7D;
+}
+#select_tag{
+position:fixed;top:273px;left:518px;
+width: 95px;
+}
+
+#btn1
+{
+cursor: pointer;
+	
+	position:fixed;top:300px;left:520px;
+	width: 85px;
+	height: 35px;
+	
+	
+	background: black;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	
+	margin: 0 7px 11px 0;
+	
+	color: white;
+	line-height: 36px;
+	text-align: center;
+	text-weight:bold;
+	
+	/* prevent selection of text inside keys */
+	user-select: none;
+	
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.5s ease;
+}
+#btn1:hover {
+background: lightgray;
+border : 1 px;
+	box-shadow: 0px 4px black;
+	color: black;
+	
+	
+	}
+*{margin:0;padding:0;}
+
+#multiplier
+{
+position:fixed;
+font-family: 'Oswald';
+font-size:15px;
+font-weight:700;
+left:5px;
+background : #80B2FF;
+border-radius: 2px;
+padding:3px 10px;
+bottom : 2px;
+color:white;
+}
+#score1{
+position:fixed;
+font-family: 'Oswald';
+font-size:15px;
+font-weight:700;
+right:5px;
+background : #80B2FF;
+border-radius: 2px;
+padding:3px 10px;
+bottom : 2px;
+color:white;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+#image{
+position:fixed;
+}
+#bar{
+position:fixed;
+bottom:30px;
+}
+#bottom{
+position:fixed;
+background:black;
+}

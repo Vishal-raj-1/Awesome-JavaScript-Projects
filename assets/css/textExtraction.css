@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+  background: #f0f5ff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container h1 {
+  font-size: 3rem;
+  margin: 2rem 0rem;
+  text-align: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border-bottom: 0.17rem solid #ff8616;
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.result p {
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+#image {
+  max-width: 350px;
+  max-height: 350px;
+  border: 3px solid #5eb8f3;
+  border-radius: 5px;
+}
+
+@keyframes ldio-egfjv6kjbis {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.ldio-egfjv6kjbis div {
+  left: 93px;
+  top: 29px;
+  position: absolute;
+  animation: ldio-egfjv6kjbis linear 1s infinite;
+  background: #ff8616;
+  width: 14px;
+  height: 30px;
+  border-radius: 4.5px / 4.5px;
+  transform-origin: 7px 71px;
+}
+
+.ldio-egfjv6kjbis div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -0.9166666666666666s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -0.8333333333333334s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.75s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.6666666666666666s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.5833333333333334s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.5s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.4166666666666667s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.3333333333333333s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.25s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.16666666666666666s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.08333333333333333s;
+  background: #ff8616;
+}
+
+.ldio-egfjv6kjbis div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+  background: #ff8616;
+}
+
+.loadingio-spinner-spinner-xsjp6ht4b6g {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+
+.ldio-egfjv6kjbis {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+
+.ldio-egfjv6kjbis div {
+  box-sizing: content-box;
+}
+
+.spinner {
+  display: none;
+}

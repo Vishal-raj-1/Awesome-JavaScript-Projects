@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+    --blue: #3c6382;
+    --dark-blue: #0a3d62;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s cubic-bezier(.38, 1.15, .7, 1.12);
+}
+
+*::selection {
+    background: var(--dark-blue);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem 9%;
+    padding-top: 8rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--blue);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 1rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 2rem;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+}
+
+header .logo span {
+    color: var(--blue);
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    margin-left: .7rem;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    color: var(--dark-blue);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    background: var(--blue);
+    color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header.sticky {
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+#menu {
+    font-size: 3rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    background: url(../Images/covid-19/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.home .content h1 {
+    font-size: 5rem;
+    color: var(--dark-blue);
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    color: var(--blue);
+    font-weight: normal;
+}
+
+.home .content .btn {
+    display: inline-block;
+    padding: .7rem 3rem;
+    color: #fff;
+    background: var(--blue);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.home .content .btn:hover {
+    background: var(--dark-blue);
+}
+
+.prevent .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prevent .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.prevent .box-container .box img {
+    height: 12rem;
+    padding: 1rem;
+}
+
+.prevent .box-container .box h3 {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.prevent .box-container .box p {
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.prevent .box-container .box:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.symptoms {
+    background: url(../Images/covid-19/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.symptoms .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.symptoms .column .main-image img {
+    width: 43vh;
+}
+
+.symptoms .column .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.symptoms .column .box-container .box {
+    margin: 1rem;
+    text-align: center;
+}
+
+.symptoms .column .box-container .box img {
+    width: 20rem;
+    padding: 1rem;
+}
+
+.symptoms .column .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.precautions .column {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.precautions .column .box-container {
+    margin: 1.5rem;
+    flex: 1 1 50rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.precautions .column .box-container .title {
+    padding: 1.5rem .5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    background: var(--blue);
+    color: #fff;
+}
+
+.precautions .column .box-container:last-child .title {
+    background: #ff3300;
+}
+
+.precautions .column .box-container .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.precautions .column .box-container .box img {
+    width: 15rem;
+    padding: 1rem;
+}
+
+.precautions .column .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.precautions .column .box-container .box p {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    padding: 1rem 0;
+}
+
+.doctor {
+    background: url(../Images/covid-19/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.doctor .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.doctor .box-container .box {
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 1rem;
+    margin: 1.5rem;
+    text-align: center;
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    width: 33rem;
+}
+
+.doctor .box-container .box img {
+    margin: 1rem;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    background: var(--blue);
+}
+
+.doctor .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.doctor .box-container .box span {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
+
+.doctor .box-container .box .share {
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.doctor .box-container .box .share a {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    margin: .4rem;
+    background: #eee;
+    color: var(--blue);
+}
+
+.doctor .box-container .box .share a:hover {
+    background: var(--blue);
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+.hand-wash .column {
+    display: flex;
+    justify-content: center;
+}
+
+.hand-wash .column .main-image img {
+    width: 25vw;
+}
+
+.hand-wash .column .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hand-wash .column .box-container .box {
+    text-align: center;
+    margin: 2rem;
+}
+
+.hand-wash .column .box-container .box img {
+    width: 17rem;
+    height: 17rem;
+    padding: 1rem;
+}
+
+.hand-wash .column .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.footer {
+    background: url(../Images/covid-19/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+    flex: 1 1 25rem;
+    margin: 2rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--blue);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    padding: .5rem 0;
+}
+
+.footer .box-container .box a {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    padding: .5rem 0;
+    display: block;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .credit {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    padding: 2.5rem 1rem;
+    color: var(--dark-blue);
+}
+
+.footer .credit a {
+    color: var(--blue);
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+}
+
+.scroll-top img {
+    width: 8rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+
+    100%,
+    0% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-3rem);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    section {
+        padding: 1rem 3%;
+        padding-top: 8rem;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    header .navbar.nav-toggle {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .symptoms .column .main-image img {
+        display: none;
+    }
+
+    .hand-wash .column .main-image img {
+        display: none;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home .content h1 {
+        font-size: 4rem;
+    }
+
+    .home .content h3 {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    .home .content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .symptoms .column .box-container .box img {
+        width: 14rem;
+    }
+
+    .precautions .column .box-container .box {
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .doctor .box-container .box {
+        width: 100%;
+    }
+
+}

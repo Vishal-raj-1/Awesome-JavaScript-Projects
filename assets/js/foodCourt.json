@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "title": "buttermilk pancakes",
+    "category": "breakfast",
+    "price": 15.99,
+    "img": "../assets/Images/foodCourt/item-1.jpeg",
+    "desc": "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed"
+  },
+  {
+    "id": 2,
+    "title": "diner double",
+    "category": "lunch",
+    "price": 13.99,
+    "img": "../assets/Images/foodCourt/item-2.jpeg",
+    "desc": "vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats"
+  },
+  {
+    "id": 3,
+    "title": "godzilla milkshake",
+    "category": "shakes",
+    "price": 6.99,
+    "img": "../assets/Images/foodCourt/item-3.jpeg",
+    "desc": "ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral."
+  },
+  {
+    "id": 4,
+    "title": "country delight",
+    "category": "breakfast",
+    "price": 20.99,
+    "img": "../assets/Images/foodCourt/item-4.jpeg",
+    "desc": "Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut"
+  },
+  {
+    "id": 5,
+    "title": "egg attack",
+    "category": "lunch",
+    "price": 22.99,
+    "img": "../assets/Images/foodCourt/item-5.jpeg",
+    "desc": "franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up "
+  },
+  {
+    "id": 6,
+    "title": "oreo dream",
+    "category": "shakes",
+    "price": 18.99,
+    "img": "../assets/Images/foodCourt/item-6.jpeg",
+    "desc": "Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday"
+  },
+  {
+    "id": 7,
+    "title": "bacon overflow",
+    "category": "breakfast",
+    "price": 8.99,
+    "img": "../assets/Images/foodCourt/item-7.jpeg",
+    "desc": "carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird"
+  },
+  {
+    "id": 8,
+    "title": "american classic",
+    "category": "lunch",
+    "price": 12.99,
+    "img": "../assets/Images/foodCourt/item-8.jpeg",
+    "desc": "on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut"
+  },
+  {
+    "id": 9,
+    "title": "quarantine buddy",
+    "category": "shakes",
+    "price": 16.99,
+    "img": "../assets/Images/foodCourt/item-9.jpeg",
+    "desc": "skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing."
+  },
+  {
+    "id": 10,
+    "title": "bison steak",
+    "category": "dinner",
+    "price": 22.99,
+    "img": "../assets/Images/foodCourt/item-10.jpeg",
+    "desc": "skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing."
+  },
+  {
+    "id": 11,
+    "title": "Cheesecake Dip",
+    "category": "shakes",
+    "price": 12.55,
+    "img": "../assets/Images/foodCourt/item-11.jpg",
+    "desc": "The cheesecake dip can be whipped up in a snap when you need a last minute dessert and is great for a fun snack at movie night."
+  },
+  {
+    "id": 12,
+    "title": "Tangy Tomato Rice",
+    "category": "dinner",
+    "price": 40.25,
+    "img": "../assets/Images/foodCourt/item-12.jpg",
+    "desc": "Whether you are looking for a flavorful Indian dish or for an easy way to use up some leftovers in the fridge, tangy tomato rice is the perfect dish for brunch, lunch, or dinner."
+  },
+  {
+    "id": 13,
+    "title": "Walnut Pasta",
+    "category": "lunch",
+    "price": 21.99,
+    "img": "../assets/Images/foodCourt/item-13.jpg",
+    "desc": "This is an easy one-dish lunch that's perfect for weekdays. If you're feeling extra wholesome, use whole wheat pasta – the broccoli and walnuts stand up to the heartier texture very well."
+  },
+  {
+    "id": 14,
+    "title": "Whipped Hot Cocoa",
+    "category": "shakes",
+    "price": 20.75,
+    "img": "../assets/Images/foodCourt/item-18.jpg",
+    "desc": "Whipped hot cocoa isn’t actually hot, but it is super delicious and rich—a perfect kid-friendly variation of the popular dalgona coffee. Ice cold milk is topped with a freshly whipped chocolate cream and finished with a drizzle of chocolate syrup. "
+  },
+  {
+    "id": 15,
+    "title": "Baingan Aaloo",
+    "category": "dinner",
+    "price": 51.78,
+    "img": "../assets/Images/foodCourt/item-14.jpg",
+    "desc": "Baingan Aaloo ki subji is really easy and turns out a delicious dish that tastes great when served with hot chapatis."
+  },
+  {
+    "id": 16,
+    "title": "Denver Omelet",
+    "category": "breakfast",
+    "price": 15.82,
+    "img": "../assets/Images/foodCourt/item-16.jpg",
+    "desc": "Piled high with ham, onion, bell pepper, and cheese, it's a meal in and of itself, an easy breakfast dish to make at home and customize according to your own taste. "
+  },
+  {
+    "id": 17,
+    "title": "German Eiskaffee",
+    "category": "shakes",
+    "price": 10.21,
+    "img": "../assets/Images/foodCourt/item-17.jpg",
+    "desc": "The German eiskaffee, or coffee and ice cream, attempts to recreate the flavor and feeling of a sidewalk café in Germany. "
+  },
+  {
+    "id": 18,
+    "title": "Butter Roasted Potatoes",
+    "category": "breakfast",
+    "price": 10.65,
+    "img": "../assets/Images/foodCourt/item-15.jpg",
+    "desc": "It's a perfect side dish to a classic meat and potato dinner, tasty with a lunchtime salad, and pairs well at breakfast time alongside a frittata or omelets."
+  },
+  {
+    "id": 19,
+    "title": "Chana Kulcha",
+    "category": "lunch",
+    "price": 30.15,
+    "img": "../assets/Images/foodCourt/item-19.jpg",
+    "desc": "The quintessential chana kulcha  needs only a few ingredients - cumin powder, ginger, coriander powder, carom powder and some mango powder, which is what gives the chana it's sour and tangy taste."
+  },
+  {
+    "id": 20,
+    "title": "Paneer Kebabs",
+    "category": "dinner",
+    "price": 60.25,
+    "img": "../assets/Images/foodCourt/item-20.jpg",
+    "desc": "Indulge in the divine taste of paneer with these crispy fried kebabs. you can't miss these kebabs that will satiate your hunger pangs like nobody. "
+  },
+  {
+    "id": 21,
+    "title": "Almond Saffron Milkshake",
+    "category": "shakes",
+    "price": 15.15,
+    "img": "../assets/Images/foodCourt/item-21.jpg",
+    "desc": "Almonds, walnuts and flax seeds make this milkshake extremely nutritious and a great pre workout drink. It'll give you an instant energy boost and one you'll really enjoy drinking. "
+  },
+  {
+    "id": 22,
+    "title": "Urlai Roast",
+    "category": "lunch",
+    "price": 75.11,
+    "img": "../assets/Images/foodCourt/item-22.jpg",
+    "desc": "Oh, this one's a real delight! Perfectly boiled baby potatoes cooked in a peppery Chettinad masala, onions and tomatoes. "
+  }
+]
