@@ -1351,6 +1351,11 @@ let projectData = [
     projectUrl: "public/Xylophone.html"
   },
   {
+    projectName: "3D CubeMap",
+    projectImage: "assets/GIFs/3dCubemap.gif",
+    projectUrl: "public/3DCubemap.html"
+  },
+  {
     projectName: "Reaction Game",
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html"
@@ -1496,6 +1501,11 @@ let projectData = [
     projectUrl: "public/mergesort.html"
   },
   {
+    projectName: "Markdown Editor",
+    projectImage: "assets/Images/markdownEditor.png",
+    projectUrl: "public/markdownEditor.html"
+  },
+  {
     projectName: "Re-Create Giphy",
     projectImage: "assets/Images/giphy.png",
     projectUrl: "public/Giphy.html"
@@ -1504,6 +1514,11 @@ let projectData = [
     projectName: "Shell Sort Visualizer in JavaScript",
     projectImage: "assets/Images/shell-visualizing.png",
     projectUrl: "public/shellsort.html"
+  },
+  {
+    projectName: "3D Texture Cube",
+    projectImage: "assets/GIFs/3DTexture.gif",
+    projectUrl: "public/3DTexture.html",
   },
   {
     projectName: "Balloon Pop Game",
@@ -1578,6 +1593,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Text Extraction from Image",
+    projectImage: "assets/Images/textExtraction.png",
+    projectUrl: "public/textExtraction.html"
+  },
+  {
     projectName: "Image Classifier",
     projectImage: "assets/Images/imageClassifier.png",
     projectUrl: "public/imageClassifier.html"
@@ -1604,6 +1624,11 @@ let projectData = [
 
   },
   {
+    projectName: "Sentiment Analysis",
+    projectImage: "assets/Images/sentimentAnalysis.png",
+    projectUrl: "public/sentimentAnalysis.html"
+  },
+  {
     projectName: "DOM Node",
     projectImage: "assets/Images/domNode.png",
     projectUrl: "public/domNode.html"
@@ -1612,6 +1637,11 @@ let projectData = [
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
+  },
+  {
+    projectName: "Stripe Dropdown",
+    projectImage: "assets/GIFs/stripeDropdown.gif",
+    projectUrl: "public/stripeDropdown.html"
   },
   {
     projectName: "Array Methods",
@@ -1649,17 +1679,31 @@ let projectData = [
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
   },
-
-   {
+  {
+    projectName: "Food Menu",
+    projectImage: "assets/Images/foodCourt.png",
+    projectUrl: "public/foodCourt.html"
+  },
+  {
     projectName: "Angry birds",
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
+   },
+   {
+     projectName: "State Search",
+     projectImage: "assets/Images/stateSearch.png",
+     projectUrl: "public/stateSearch.html"
    },
   {
     projectName: "Hover Board",
     projectImage: "assets/images/hover-board.png",
     projectUrl: "public/hover_board.html"
 
+  },
+    {
+    projectName: "Fun facts about Math",
+    projectImage: "assets/images/maths_facts.png",
+    projectUrl: "public/maths_facts.html"
   }
 
 ]
