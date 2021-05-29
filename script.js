@@ -1692,6 +1692,12 @@ let projectData = [
     projectImage: "assets/Images/worldtime.png",
     projectUrl: "public/worldclock.html",
   }
+  ,{
+    projectName: "Decimal To Binary Converter",
+    projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
+    projectUrl: "public/DecimalToBinaryConverter.html",
+  }
+
 
 ];
 
