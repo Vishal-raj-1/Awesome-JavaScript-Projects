@@ -78,7 +78,7 @@ let projectData = [
   {
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
-    projectUrl: "public/Restaurant.html"
+    projectUrl: "public/Restaurant.html",
   },
   {
     projectName: "Block Ninja",
@@ -1422,15 +1422,13 @@ let projectData = [
    {
     projectName: "Filterable Image Gallery",
     projectImage: "assets/Images/Filterable_Image_Gallery/Filterable_Image_Gallery.png",
-    projectUrl: "public/Filterable_Image_Gallery.html",
+    projectUrl: "public/Filterable_Image_Gallery.html"
   },
    {
      projectName: '3D Image Gallery',
      projectImage: 'assets/Images/3DImageGallery.PNG',
      projectUrl: 'public/3DImageGallery.html'
-
-  }
-  ,
+  },
   {
     projectName: 'Button Generator',
     projectImage: 'assets/Images/button.PNG ',
