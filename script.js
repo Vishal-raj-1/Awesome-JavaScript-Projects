@@ -10,6 +10,11 @@ let projectData = [
     projectUrl: "public/Shopping_cart.html"
   },
   {
+    projectName: "Weather App",
+    projectImage: "assets/Images/weatherApp/Image.PNG",
+    projectUrl: "public/weatherApp.html"
+  },
+  {
     projectName: "Rubik's Cube",
     projectImage: "assets/GIFs/rubiks_cube.gif",
     projectUrl: "public/rubiks_cube.html"
@@ -678,11 +683,6 @@ let projectData = [
     projectUrl: "public/Rock-paper-scissor.html"
   },
   {
-    projectName: "Weather App",
-    projectImage: "assets/GIFs/Weather_app.gif",
-    projectUrl: "public/Weather_app.html"
-  },
-  {
     projectName: "Yoga App",
     projectImage: "assets/Images/yogascreen.png",
     projectUrl: "public/yoga.html"
@@ -828,6 +828,17 @@ let projectData = [
     projectName: "Pixels Game",
     projectImage: "assets/GIFs/pixels.gif",
     projectUrl: "public/pixels-game.html"
+  },
+  {
+    projectName: "FullScreen Button fucntionality",
+    projectImage: "assets/Images/Fullscreen.png",
+    projectUrl: "public/fullscreen.html"
+  },
+  {
+    projectName: "Vertical Timeline",
+    projectImage: "assets/Images/vertical_timeline/Screenshot.png",
+    projectUrl: "public/vertical_timeline.html"
+
   },
   {
     projectName: "PIN Code Tracker",
@@ -1330,6 +1341,11 @@ let projectData = [
     projectUrl: "public/Xylophone.html"
   },
   {
+    projectName: "3D CubeMap",
+    projectImage: "assets/GIFs/3dCubemap.gif",
+    projectUrl: "public/3DCubemap.html"
+  },
+  {
     projectName: "Reaction Game",
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html"
@@ -1399,27 +1415,12 @@ let projectData = [
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
    } ,
+
    {
      projectName: 'Captcha Validator',
      projectImage: 'assets/Images/CaptchaValidator.png',
      projectUrl: 'public/CaptchaValidator.html'
    } ,
-   {
-     projectName: '3D Image Gallery',
-     projectImage: 'assets/Images/3DImageGallery.PNG',
-     projectUrl: 'public/3DImageGallery.html'
-  }
-  ,
-  {
-    projectName: "Linear Search Visualization in JavaScript",
-    projectImage: "assets/Images/linearsearch-visualizing.png",
-    projectUrl: "public/linearsearch.html"
-  },
-  {
-    projectName: "Captcha Validator",
-    projectImage: "assets/Images/CaptchaValidator.png",
-    projectUrl: "public/CaptchaValidator.html"
-  },
   {
     projectName: "3D Image Gallery",
     projectImage: "assets/Images/3DImageGallery.PNG",
@@ -1486,6 +1487,11 @@ let projectData = [
     projectUrl: "public/mergesort.html"
   },
   {
+    projectName: "Markdown Editor",
+    projectImage: "assets/Images/markdownEditor.png",
+    projectUrl: "public/markdownEditor.html"
+  },
+  {
     projectName: "Re-Create Giphy",
     projectImage: "assets/Images/giphy.png",
     projectUrl: "public/Giphy.html"
@@ -1494,6 +1500,11 @@ let projectData = [
     projectName: "Shell Sort Visualizer in JavaScript",
     projectImage: "assets/Images/shell-visualizing.png",
     projectUrl: "public/shellsort.html"
+  },
+  {
+    projectName: "3D Texture Cube",
+    projectImage: "assets/GIFs/3DTexture.gif",
+    projectUrl: "public/3DTexture.html",
   },
   {
     projectName: "Balloon Pop Game",
@@ -1562,6 +1573,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Text Extraction from Image",
+    projectImage: "assets/Images/textExtraction.png",
+    projectUrl: "public/textExtraction.html"
+  },
+  {
     projectName: "Image Classifier",
     projectImage: "assets/Images/imageClassifier.png",
     projectUrl: "public/imageClassifier.html"
@@ -1588,6 +1604,11 @@ let projectData = [
 
   },
   {
+    projectName: "Sentiment Analysis",
+    projectImage: "assets/Images/sentimentAnalysis.png",
+    projectUrl: "public/sentimentAnalysis.html"
+  },
+  {
     projectName: "DOM Node",
     projectImage: "assets/Images/domNode.png",
     projectUrl: "public/domNode.html"
@@ -1596,6 +1617,11 @@ let projectData = [
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
+  },
+  {
+    projectName: "Stripe Dropdown",
+    projectImage: "assets/GIFs/stripeDropdown.gif",
+    projectUrl: "public/stripeDropdown.html"
   },
   {
     projectName: "Array Methods",
@@ -1632,21 +1658,51 @@ let projectData = [
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
   },
-
-   {
+  {
+    projectName: "Food Menu",
+    projectImage: "assets/Images/foodCourt.png",
+    projectUrl: "public/foodCourt.html"
+  },
+  {
     projectName: "Angry birds",
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
+   },
+   {
+     projectName: "State Search",
+     projectImage: "assets/Images/stateSearch.png",
+     projectUrl: "public/stateSearch.html"
    },
   {
     projectName: "Hover Board",
     projectImage: "assets/images/hover-board.png",
     projectUrl: "public/hover_board.html"
 
+  },
+  {
+    projectName: "Contact form",
+    projectImage: "assets/images/contact-form.png",
+    projectUrl: "public/contact-form.html"
+  },
+    {
+    projectName: "Fun facts about Math",
+    projectImage: "assets/images/maths_facts.png",
+    projectUrl: "public/maths_facts.html"
+  },
+  {
+    projectName: "WorldClock",
+    projectImage: "assets/Images/worldtime.png",
+    projectUrl: "public/worldclock.html",
+  }
+  ,{
+    projectName: "Decimal To Binary Converter",
+    projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
+    projectUrl: "public/DecimalToBinaryConverter.html",
   }
 
 
-]
+];
+
 
 
 var projectDetails = projectData.slice(0);
