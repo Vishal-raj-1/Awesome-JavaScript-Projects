@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mood Slider</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<style>
+		body{
+	background-color: #101749;
+	padding: 0;
+	margin: 0;
+}
+.container{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+input[type="range"]{
+	width: 90vw;
+	height: 6px;
+	-webkit-appearance:none;
+	background-color: white;
+	border-radius: 6px;
+	outline: none;
+	margin-top: 60px;
+}
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	height: 30px;
+	width: 30px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 10px 15px 10px rgba(0,0,0,0.2);
+}
+.material-icons{
+	font-size: 130px;
+	color: #3fcad8;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 style="color: white;font-size:3rem;margin-bottom:4rem;">MooD SlideR</h1>
+		<i class="material-icons" id="emoji">
+		sentiment_satisfied
+		</i>
+		<input type="range" min="0" max="4" value="2" id="slider">
+	</div>
+	<script>
+		var slider=document.getElementById("slider");
+		var emoji=document.getElementById("emoji");
+		var emoticons=["mood_bad",
+		"sentiment_very_dissatisfied",
+		"sentiment_satisfied",
+		"sentiment_satisfied_alt",
+		"sentiment_very_satisfied"
+		];
+
+		slider.oninput=function(){
+			emoji.innerHTML=emoticons[slider.value];
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expanding Menu Javascript</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+		body{
+	background-color: #AED6F1 ;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+.toggle{
+	background-color:#30BDF2;
+	height: 80px;
+	width: 80px;
+	color:white ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 1s;
+	cursor: pointer;
+}
+.items{
+	display: flex;
+	flex-direction: row;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: 0.5s;
+}
+.items>a{
+	display: flex;
+	background-color: white;
+	height: 80px;
+	width:80px;
+	color:#b2b2b2 ;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+}
+.toggle>.material-icons{
+	font-size: 60px;
+}
+a>.material-icons{
+	font-size: 30px;
+}
+a:hover>.material-icons{
+	font-size: 40px;
+	color:#30BDF2;
+}
+	</style>
+    <script>
+		var state=false;
+function expand(){
+	if(state==false){
+		document.getElementById('items').style.transform='scaleX(1)';
+		document.getElementById('toggle1').style.transform='rotate(45deg)';
+
+		state=true;
+	}
+	else{
+		document.getElementById('items').style.transform='scaleX(0)';
+		document.getElementById('toggle1').style.transform='rotate(0deg)';
+		state=false;
+	}
+}
+	</script>  
+</head>
+<body>
+	
+	<div class="menu" >
+		<div class="toggle" id="toggle" onclick="expand()">
+			<i class="material-icons" id="toggle1">
+				add
+			</i>
+		</div>
+		<div class="items" id="items">
+		<a href="#" id="item1">
+			<i class="material-icons">
+				person
+			</i>
+		</a>
+		<a href="#" id="item2">
+			<i class="material-icons">
+				message
+			</i>
+		</a>
+		<a href="#" id="item3">
+			<i class="material-icons">
+				camera_alt
+			</i>
+		</a>
+		<a href="#" id="item4">
+			<i class="material-icons">
+				notifications
+			</i>
+		</a>
+		</div>
+	</div>
+	<div style="font-size: 50px; font-weight: 600;color:white;">Expanding Menu Bar</div>
+</body>
+</html>

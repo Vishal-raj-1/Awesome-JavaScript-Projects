@@ -1,226 +1,201 @@
-/* Include the padding and border in an element's total width and height */
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Remove margins and padding from the list */
-  ul {
-    padding: 0;
-    list-style-type: none;
-    height: 60vh;
-    
-    
-    /* width: 40%; */
-  }
-  
-  /* Style the list items */
-  ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    /* background: #eee; */
-    font-size: 18px;
-    transition: 0.2s;
-    text-align: justify;
-  
-    /* make the list items unselectable */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Set all odd list items to a different color (zebra-stripes) */
-  /* ul li:nth-child(odd) {
-    background: #f9f9f9;
-  } */
-  
-  /* Darker background-color on hover */
-  ul li:hover {
-    background: #087ae4;
-  }
-  
-  /* When clicked on, add a background color and strike out text */
-  ul li.checked {
-    background: rgb(245, 0, 0);
-    color: #fff;
-    text-decoration: line-through;
-  }
-  
-  /* Add a "checked" mark when clicked on */
-  ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-  }
-  
-  /* Style the close button */
-  .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-  }
-  
-  .close:hover {
-    background-color: #f44336;
-    color: white;
-  }
-  
-  /* Style the header */
-  .header {
-    background-color: #e40a5e;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
-  }
-  
-  /* Clear floats after the header */
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the input */
-  input {
-    border: none;
-    border-radius: 0;
-    width: 75%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-  }
-  
-  /* Style the "Add" button */
-  .addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #087ae4;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
-    border: 2Px solid black;
-    border-left: 0Px;
-  }
-  
-  .addBtn:hover {
-    background-color: #bbb;
-  }
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
-  /* toggle section */
-body{
-    /* background-color: #06a8ad; */
-    background-color: rgb(59, 131, 17);
-    /* background-color: #1C0C1C; */
+*{
+  font-family: Lato, sans-serif;
 }
 
+body {
+  background-color: #E4E9FD;
+  background: radial-gradient(at 50% -20%, #ffe3fe, #b4aee8) fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
 
-  section{
-      background-color: #f3de21;
-      /* margin-top: -3%; */
-      border: 2Px solid black;
-      
-  }
+h1 {
+  color: #fff;
+  padding: 10px;
+}
 
-  #toggle-sec{
-      
-    /* display: inline-block; */
-    margin-top: 2%;
-    align-items: center;
-    font-size: 1rem;
-    width: 99.25%;
-    text-align: center;
-    font-weight: normal;
-  }
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #31326f;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  padding: 5px 75px 10px 30px;
+}
 
-  h1{
-    background-color: deeppink;
-    margin-top: -2%;
-    border: 2Px solid black;
-    margin-left: -0.3%;
-    /* box-shadow: 7px 5Px 5px 5Px white; */
-    -webkit-box-shadow: 0 10px 100px white;
-        box-shadow: 0 100px 100px white;
-    font-size: 2rem;
-    height: 5%;
-    width: 100%;
-  }
+#heading {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #A683E3;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
 
-  h2{
-    text-decoration: underline;
-  }
+.inputField {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 40px;
+}
 
+button.add-btn{
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  border-width: 0;
+}
 
-  /* the classes that the the pre-existing ids/classes shall be replaced with are defined here */
+input[type="text"] {
+  text-align: center;
+  color: #f1faee;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
 
-  .dark-mode {
-    background-color: midnightblue;
-    color: white;
-  }
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
 
-  .darkbod-mode {
-    background-color: darkviolet;
-    color: white;
-  }
-  
-  #btn-box
-   {height: 5vh;
-    width: 10vw;
-    margin: 3% 0% 0% 0%;
-    /* border: 2Px solid black; */
-    background-color: white;
-    display: inline-block;
-   }
-  
-   #btn
-   {height: 75%;
-    width: 42%;
-    margin: 2%;
-    border: 2Px solid black;
-    background-color: black;
-    display: inline-block;
-   }
-  
-   .btn-new
- {height: 90%;
-  width: 40%;
-  transform: translateX(125%);
-  margin: 2%;
-  border: 2Px solid black;
-  background-color: black;
- }
+::placeholder {
+  color: grey;
+  opacity: 1;
+} 
 
- h3{
-     display: inline-block;
- }
+.add-btn {
+  opacity: 0.6;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  pointer-events: none;
+}
 
- .check-box{
-     display: flex;
-     flex-direction: row;
-     align-items: space-evenly;
- } 
+.inputField button.add-btn:hover,
+.footer button.clearAll-btn:hover{
+  background: #721ce3;
+}
 
- input{
-    border: 2Px solid black;
- }
+.inputField button.add-btn.active{
+  opacity: 1;
+  pointer-events: auto;
+}
 
- #mood-box{
-     width: 19%;
-     display: inline-block;
- }
+.item {
+  position: relative;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #427f92;
+}
 
- #header-box{
-    display: inline-block;
-    width: 79%;
- }
+.todo-list__label {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-list__label .checkbox {
+  opacity: 0;
+  appearance: none;
+}
+.todo-list__label .checkbox + .check {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #f1faee;
+  transition: 0.2s;
+}
+.todo-list__label .checkbox.completed + .check {
+  width: 25px;
+  height: 15px;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+}
+.todo-list__label .checkbox ~ span.todo-text {
+  position: relative;
+  left: 40px;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.todo-list__label .checkbox ~ span.todo-text::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f1faee;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.todo-list__label .checkbox.completed ~ span.todo-text {
+  color: #585b57;
+}
+.todo-list__label .checkbox.completed ~ span.todo-text::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.todoList li .trash{
+  position: absolute;
+  right: 2px;
+  width: 45px;
+  text-align: center;
+  color: #f1faee;
+  opacity: 0.5;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todoList li .trash:hover {
+  opacity: 1;
+}
+
+.box .footer{
+  display: flex;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  color: #f1faee;
+  min-height: 70px;
+  margin: 10px 0 10px 40px;
+}
+.footer button.clearAll-btn{
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #f1faee;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 100px;
+  background: #A683E3;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.footer button.clearAll-btn.active{
+  opacity: 1;
+  pointer-events: auto;
+}

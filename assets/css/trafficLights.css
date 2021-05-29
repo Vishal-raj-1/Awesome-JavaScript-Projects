@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #2c3e50;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0;
+  height: 200px;
+  width: 70px;
+  margin-bottom: 0px;
+}
+
+.stick {
+  background-color: #2c3e50;
+  height: 380px;
+  width: 12px;
+  margin-top: 0px;
+}
+
+i {
+  margin-left: 10px;
+}
+
+.base {
+  background-color: #2c3e50;
+  width: 200px;
+  height: 10px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 5px 0px #2c3e50;
+}
+
+.circle {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.tooltip1 {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  color: #555;
+  font-weight: 300;
+  padding: 15px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 170%;
+  transform: translate(0%, 0%);
+  transition: all 0.5s ease;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.tooltip2 {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  color: #555;
+  font-weight: 300;
+  padding: 15px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 170%;
+  transform: translate(0%, 0%);
+  transition: all 0.5s ease;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.tooltip3 {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  color: #555;
+  font-weight: 300;
+  padding: 15px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 170%;
+  transform: translate(0%, 0%);
+  transition: all 0.5s ease;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.circle::after {
+  border-right: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.circle.red {
+  background-color: red;
+  box-shadow: 0 0 20px 5px red;
+}
+
+.circle.yellow {
+  background-color: #f1c40f;
+  box-shadow: 0 0 20px 5px #f1c40f;
+}
+
+.circle.green {
+  background-color: #2ecc71;
+  box-shadow: 0 0 20px 5px #2ecc71;
+}

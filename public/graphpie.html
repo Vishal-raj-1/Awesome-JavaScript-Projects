@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/691867/control-panel.css">
+
+    <title>Pie Chart</title>
+  </head>
+  <style>
+    body {
+    font-family: arial;
+    font-size: 9pt;
+    background-color: #0071bc;
+}
+
+#container {
+    position: absolute;
+    
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#error {
+    display: none;
+}
+
+#color-0, #color-1, #color-2 {
+    width: 50pt;
+}
+
+#label-0, #label-1, #label-2 {
+    width: 100pt;
+}
+
+  </style>
+  <body>
+    <div id="container"></div>
+
+<div id="error">
+    <h1>The graphic files could not be loaded</h1>
+</div>
+
+<!-- Include the runtime library -->
+<!-- NOTE: The Archer Runtime library is free for personal, non-commercial use and testing environments. -->
+<!-- For using the Archer Runtime library in production environments please visit https://archer.graphics to learn more about commercial licensing options. -->
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/691867/archer.min.js'></script>
+
+<script language='javascript' type='text/javascript'>
+    /*
+     * NOTE: This example may only work when it is loaded through a web server. The example code needs to load the archer
+     * graphic file as well as the archer configuration file, which for security reasons is not allowed when loading the
+     * HTML file from the file system.
+     */
+
+    /**
+     * Root location where your interactive graphic is stored.
+     * Leave empty to resolve paths relative from this HTML.
+     * Can also contain an absolute URL to the server where your graphic is stored, for example:
+     * http://my-domain.com/graphics/my-graphic/
+     */
+    var rootUrl = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/691867/';
+
+    /**
+     * Location of the assets folder, by default resolved relative from root URL
+     */
+    var assetUrl = rootUrl;
+
+    /**
+     * Location of the SVG file, by default resolved relative from root URL
+     */
+    var graphicUrl = rootUrl + 'ring-chart.archer.graphic.svg';
+
+    /**
+     * Location of the graphic configuration file, by default resolved relative from root URL
+     */
+    var configUrl = rootUrl + 'ring-chart.archer.config.json';
+
+    /**
+     * The container HTML element in which to display the graphic
+     */
+    var container = document.getElementById('container');
+
+    // Create a graphic instance over the container
+    var graphic = archer.create(container);
+
+    // Tell the graphic where assets (e.g. images) are located
+    graphic.document.setAssetRoot(assetUrl);
+
+    // Load graphic and configuration
+    graphic.loadUrl(graphicUrl, configUrl);
+
+    // Wait until files are loaded
+    graphic.on('ready', function () {
+
+        // Make graphic fit into container bounds
+        graphic.view.zoomToFit();
+
+        // Enable zoom / pan with mouse
+        graphic.view.enableMouse(true, true);
+
+        // Set variable values
+        App.init();
+
+        // Add event listeners
+
+    });
+
+    // Files could not be loaded, maybe due to security restrictions
+    // Display error message
+    graphic.on('error', function () {
+        document.getElementById('error').style['display'] = 'block';
+    })
+</script>
+
+<div id="control-panel">
+    <section>
+        <h1>Category 1</h1>
+        <div class="row">
+            <div>
+                <label for="label-0">Text</label>
+                <input id="label-0" type="text" value="Well running projects"/>
+            </div>
+            <div>
+                <label for="color-0">Color</label>
+                <input id="color-0" type="text" value="#ff0000"/>
+            </div>
+        </div>
+        <div>
+            <label for="value-0">Value</label>
+            <input id="value-0" type="range" min="0" max="100"/>
+        </div>
+    </section>
+    <section>
+        <h1>Category 2</h1>
+        <div class="row">
+            <div>
+                <label for="label-1">Text</label>
+                <input id="label-1" type="text" value="Normal projects"/>
+            </div>
+            <div>
+                <label for="color-1">Color</label>
+                <input id="color-1" type="text" value="#ff0000"/>
+            </div>
+        </div>
+        <div>
+            <label for="value-1">Value</label>
+            <input id="value-1" type="range" min="0" max="100"/>
+        </div>
+    </section>
+    <section>
+        <h1>Category 3</h1>
+        <div class="row">
+            <div>
+                <label for="label-2">Text</label>
+                <input id="label-2" type="text" value="Critical projects"/>
+            </div>
+            <div>
+                <label for="color-2">Color</label>
+                <input id="color-2" type="text" value="#ff0000"/>
+            </div>
+        </div>
+        <div>
+            <label for="value-2">Value</label>
+            <input id="value-2" type="range" min="0" max="100"/>
+        </div>
+    </section>
+    <section>
+        <h1></h1>
+        <div class="row">
+            <input id="keep-positions" type="checkbox" value="false"/>
+            <label for="keep-positions">Keep positions</label>
+        </div>
+    </section>
+</div>
+  
+  
+<a href="https://archer.graphics" target="_" title="Powered by Archer" style="display: block; position: absolute; right: 0px; bottom: 0px; width: 60px; height: 60px; background-image: url(&quot;data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E %3C!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E %3Csvg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='120px' height='120px' viewBox='0 0 120 120' style='enable-background:new 0 0 120 120;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .st0%7Bfill:%231AC1E3;%7D .st1%7Bclip-path:url(%23SVGID_2_);%7D .st2%7Bfill:%231AC1E3;stroke:%231AC1E3;stroke-miterlimit:10;%7D %3C/style%3E %3Cdefs%3E %3Cfilter id='black-glow'%3E %3CfeColorMatrix type='matrix' values= '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E %3CfeGaussianBlur stdDeviation='5' result='coloredBlur'/%3E %3CfeMerge%3E %3CfeMergeNode in='coloredBlur'/%3E %3CfeMergeNode in='SourceGraphic'/%3E %3C/feMerge%3E %3C/filter%3E %3C/defs%3E %3Cg%3E %3Cg%3E %3Ccircle cx='60' cy='60' r='40' filter='url(%23black-glow)' /%3E %3C/g%3E %3C/g%3E %3Cg%3E %3Cpath class='st0' d='M65.7,63.4L65.7,63.4c-0.6,0.7-1.1,1-1.9,1c-1.1,0-1.8-0.6-1.8-1.7c0-2,2.2-2.1,3.6-2.1h0.6 c0.1-0.2,0.1-0.3,0.1-0.5c0-0.6-0.6-0.7-1.1-0.7c-0.7,0-1.4,0.2-2,0.5l0.2-1.2c0.7-0.2,1.3-0.3,2.1-0.3c1.1,0,2.3,0.4,2.3,1.8 c0,0.8-0.6,3.1-0.7,4.2h-1.3L65.7,63.4z M64.2,63.3c1.1,0,1.5-0.8,1.8-1.8h-0.6c-0.7,0-2,0.2-2,1.1C63.4,63,63.8,63.3,64.2,63.3z' /%3E %3Cpath class='st0' d='M69.4,59.2c0.1-0.2,0.1-0.6,0.2-0.8H71l-0.2,1.1l0,0c0.2-0.6,1-1.2,1.8-1.2c0.2,0,0.4,0,0.6,0.1l-0.4,1.4 c-0.2-0.1-0.4-0.1-0.6-0.1c-1.1,0-1.6,1-1.8,1.9l-0.6,2.6h-1.6L69.4,59.2z'/%3E %3Cpath class='st0' d='M77.7,59.7c-0.2-0.2-0.7-0.2-1.1-0.2c-1.2,0-1.9,1.1-1.9,2.2c0,0.7,0.2,1.6,1.3,1.6c0.4,0,0.8-0.2,1.2-0.2 L77,64.2c-0.5,0.2-1,0.2-1.5,0.2c-1.5,0-2.5-1-2.5-2.6c0-2.1,1.4-3.7,3.4-3.7c0.6,0,1.1,0.2,1.6,0.2L77.7,59.7z'/%3E %3Cpath class='st0' d='M79.7,55.6h1.6l-0.7,3.3l0,0c0.4-0.4,1-0.7,1.7-0.7c1.1,0,1.9,0.7,1.9,1.9c0,0.5-0.2,1-0.2,1.3l-0.6,2.9h-1.6 l0.6-2.8c0.1-0.4,0.2-0.8,0.2-1.2c0-0.5-0.3-0.8-0.8-0.8c-1.1,0-1.4,1-1.6,1.9l-0.6,3H78L79.7,55.6z'/%3E %3Cpath class='st0' d='M86.5,61.8c0,1.1,0.6,1.5,1.6,1.5c0.6,0,1.2-0.2,1.8-0.4l-0.2,1.2c-0.6,0.2-1.2,0.3-1.9,0.3 c-1.7,0-2.9-0.8-2.9-2.6s1.4-3.6,3.4-3.6c1.4,0,2.5,0.7,2.5,2.2c0,0.5-0.1,0.9-0.2,1.3C90.6,61.8,86.5,61.8,86.5,61.8z M89.3,60.7 c0-0.2,0.1-0.2,0.1-0.4c0-0.6-0.3-1-1-1c-1,0-1.4,0.6-1.6,1.4H89.3L89.3,60.7z'/%3E %3Cpath class='st0' d='M92.3,59.2c0.1-0.2,0.1-0.6,0.2-0.8H94l-0.2,1.1l0,0c0.2-0.6,1-1.2,1.8-1.2c0.2,0,0.4,0,0.6,0.1l-0.3,1.5 c-0.2-0.1-0.4-0.1-0.6-0.1c-1.1,0-1.6,1-1.8,1.9l-0.6,2.6h-1.6L92.3,59.2z'/%3E %3C/g%3E %3Cg%3E %3Cg%3E %3Cg%3E %3Cdefs%3E %3Ccircle id='SVGID_1_' cx='60' cy='60' r='40'/%3E %3C/defs%3E %3CclipPath id='SVGID_2_'%3E %3Cuse xlink:href='%23SVGID_1_' style='overflow:visible;'/%3E %3C/clipPath%3E %3Cg class='st1'%3E %3Cpath class='st2' d='M53,48.6'/%3E %3Cg%3E %3Cpath class='st2' d='M59,75.4L59,75.4L59,75.4z'/%3E %3Cpath class='st2' d='M117.4,34l-2.2-5.4c0,0-36.4,9.9-59.9,17.5l0,0c-1.4-8-3.2-13.9-5.1-14.3c-6.4-1-12.6,11.4-16.9,22.2 c-2.1,1-3.4,1.7-4.1,2.3c-1,1.1-0.5,3.3,1,6c-1.4,4.2-2.2,7-2.2,7s2.6-7.2,6-15l0,0c4.2-1.7,11.1-3.7,19-5.8 c2.3,8,4.7,18.6,6,26.9c-0.7-8.3-1.9-18.8-3.4-27.4C79.2,41.8,117.4,34,117.4,34z M30.2,62.3c-1.2-2.5-1.5-4.5-0.6-5.5 c0.5-0.5,1.6-1.2,3.2-1.8C31.8,57.6,31,60.1,30.2,62.3L30.2,62.3z M34.6,53.4c4.5-9.9,10.2-20.3,13.6-17 c1.2,1.1,2.8,5.1,4.4,10.6C45.2,49.4,38.8,51.6,34.6,53.4z'/%3E %3C/g%3E %3Cpath class='st2' d='M30.6,62.9c5,9.5,20.9,25.5,26.6,25.5l0,0C50.9,85.5,35.8,71.6,30.6,62.9L30.6,62.9z'/%3E %3Cpath class='st2' d='M59,75.4c0.8,5.4,1.4,9.6,1.5,12.3c0.1,1.4-1.6,1.4-3.4,0.6l0,0c1.1,0,2.5-0.6,2.6-2.2 C59.9,83.7,59.2,80,59,75.4'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E&quot;); background-size: contain;"></a>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <script>
+      var App = {
+    barNames: ['front', 'right', 'left'],
+    keepPositions: false,
+    bars: [{
+        color: '#ff5353',
+        text: 'Dead horse projects',
+        value: 23
+    }, {
+        color: '#ffde00',
+        text: 'Difficult projects',
+        value: 32
+    }, {
+        color: '#53de53',
+        text: 'Well-running projects',
+        value: 45
+    }],
+
+    init: function () {
+
+        this.keepPositionsEl = document.getElementById('keep-positions');
+
+        this.keepPositionsEl.onchange = function (evt) {
+            this.keepPositions = !this.keepPositions;
+            valueChanged();
+        }.bind(this);
+
+        var labelChanged = function (inputIndex) {
+
+            this.bars[inputIndex].text = this.bars[inputIndex].labelEl.value;
+            graphic.setValue(this.barNames[inputIndex] + '-label-details', this.bars[inputIndex].text);
+            valueChanged();
+
+        }.bind(this);
+
+        var colorChanged = function (inputIndex) {
+
+            this.bars[inputIndex].color = this.bars[inputIndex].colorEl.value;
+            graphic.setValue(this.barNames[inputIndex] + '-color', this.bars[inputIndex].color);
+            valueChanged();
+
+        }.bind(this);
+
+        var valueChanged = function () {
+
+            var total = 0;
+            var highest = 0;
+            for (var barIndex = 0; barIndex < this.bars.length; barIndex++) {
+
+                var barValue = parseFloat(this.bars[barIndex].valueEl.value);
+                total += barValue;
+                if (barValue > highest) highest = barValue;
+
+            }
+
+            var highestRatio = highest / total;
+
+            for (var barIndex = 0; barIndex < this.bars.length; barIndex++) {
+
+                var bar = this.bars[barIndex];
+                bar.ratio = parseFloat(bar.valueEl.value) / total;
+                bar.height = 100 * bar.ratio / highestRatio;
+            }
+
+            var sortArray = this.bars.slice();
+
+            if (!this.keepPositions) {
+                sortArray.sort(function (a, b) {
+                    return a.height - b.height;
+                });
+            }
+
+            for (var barIndex = 0; barIndex < sortArray.length; barIndex++) {
+
+                var bar = sortArray[barIndex];
+                graphic.setValue(this.barNames[barIndex] + '-value', bar.height);
+                graphic.setValue(this.barNames[barIndex] + '-color', bar.color);
+                graphic.setValue(this.barNames[barIndex] + '-label', Math.round(bar.ratio * 1000) / 10 + '%');
+
+                graphic.setValue(this.barNames[barIndex] + '-label-details', bar.text);
+            }
+
+
+        }.bind(this);
+
+        for (var i = 0; i < this.bars.length; i++) {
+
+            var bar = this.bars[i];
+
+            bar.valueEl = document.getElementById('value-' + i);
+            bar.labelEl = document.getElementById('label-' + i);
+            bar.colorEl = document.getElementById('color-' + i);
+            
+            bar.valueEl.value = bar.value;
+            bar.colorEl.value = bar.color;
+            bar.labelEl.value = bar.text;
+
+            bar.labelEl.onkeyup = function (evt) {
+
+                var id = evt.currentTarget.id;
+                labelChanged(parseInt(id.substring(id.indexOf('-') + 1, id.length)));
+            };
+
+            bar.valueEl.oninput = function (evt) {
+
+                var id = evt.currentTarget.id;
+                valueChanged();
+
+            };
+
+            bar.colorEl.oninput = function (evt) {
+
+                var id = evt.currentTarget.id;
+                colorChanged(id.substring(id.indexOf('-') + 1, id.length));
+
+            };
+        }
+
+        valueChanged();
+    }
+};
+    </script>
+  </body>
+</html>

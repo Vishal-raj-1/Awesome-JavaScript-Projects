@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CHESS GAME</title>
+  <link rel="stylesheet" href="../assets/css/chess.css">
+  <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1384d584272127.5d572e5c12a4e.png" type="image/x-icon">
+</head>
+<body>
+    <h1>CHESS GAME</h1>
+<!-- partial:index.partial.html -->
+<div id="game">
+    <div class='cellprefix'>8</div>
+    <div class='gamecell' id='1_8'></div>
+    <div class='gamecell black' id='2_8'></div>
+    <div class='gamecell' id='3_8'></div>
+    <div class='gamecell black' id='4_8'></div>
+    <div class='gamecell' id='5_8'></div>
+    <div class='gamecell black' id='6_8'></div>
+    <div class='gamecell' id='7_8'></div>
+    <div class='gamecell black' id='8_8'></div><br>
+    <div class='cellprefix'>7</div>
+    <div class='gamecell black' id='1_7'></div>
+    <div class='gamecell' id='2_7'></div>
+    <div class='gamecell black' id='3_7'></div>
+    <div class='gamecell' id='4_7'></div>
+    <div class='gamecell black' id='5_7'></div>
+    <div class='gamecell' id='6_7'></div>
+    <div class='gamecell black' id='7_7'></div>
+    <div class='gamecell' id='8_7'></div><br>
+    <div class='cellprefix'>6</div>
+    <div class='gamecell' id='1_6'></div>
+    <div class='gamecell black' id='2_6'></div>
+    <div class='gamecell' id='3_6'></div>
+    <div class='gamecell black' id='4_6'></div>
+    <div class='gamecell' id='5_6'></div>
+    <div class='gamecell black' id='6_6'></div>
+    <div class='gamecell' id='7_6'></div>
+    <div class='gamecell black' id='8_6'></div><br>
+    <div class='cellprefix'>5</div>
+    <div class='gamecell black' id='1_5'></div>
+    <div class='gamecell' id='2_5'></div>
+    <div class='gamecell black' id='3_5'></div>
+    <div class='gamecell' id='4_5'></div>
+    <div class='gamecell black' id='5_5'></div>
+    <div class='gamecell' id='6_5'></div>
+    <div class='gamecell black' id='7_5'></div>
+    <div class='gamecell' id='8_5'></div><br>
+    <div class='cellprefix'>4</div>
+    <div class='gamecell' id='1_4'></div>
+    <div class='gamecell black' id='2_4'></div>
+    <div class='gamecell' id='3_4'></div>
+    <div class='gamecell black' id='4_4'></div>
+    <div class='gamecell' id='5_4'></div>
+    <div class='gamecell black' id='6_4'></div>
+    <div class='gamecell' id='7_4'></div>
+    <div class='gamecell black' id='8_4'></div><br>
+    <div class='cellprefix'>3</div>
+    <div class='gamecell black' id='1_3'></div>
+    <div class='gamecell' id='2_3'></div>
+    <div class='gamecell black' id='3_3'></div>
+    <div class='gamecell' id='4_3'></div>
+    <div class='gamecell black' id='5_3'></div>
+    <div class='gamecell' id='6_3'></div>
+    <div class='gamecell black' id='7_3'></div>
+    <div class='gamecell' id='8_3'></div><br>
+    <div class='cellprefix'>2</div>
+    <div class='gamecell' id='1_2'></div>
+    <div class='gamecell black' id='2_2'></div>
+    <div class='gamecell' id='3_2'></div>
+    <div class='gamecell black' id='4_2'></div>
+    <div class='gamecell' id='5_2'></div>
+    <div class='gamecell black' id='6_2'></div>
+    <div class='gamecell' id='7_2'></div>
+    <div class='gamecell black' id='8_2'></div><br>
+    <div class='cellprefix'>1</div>
+    <div class='gamecell black' id='1_1'></div>
+    <div class='gamecell' id='2_1'></div>
+    <div class='gamecell black' id='3_1'></div>
+    <div class='gamecell' id='4_1'></div>
+    <div class='gamecell black' id='5_1'></div>
+    <div class='gamecell' id='6_1'></div>
+    <div class='gamecell black' id='7_1'></div>
+    <div class='gamecell' id='8_1'></div><br>
+    <div class='cellprefix'><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+      <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+    </svg></div>
+    <div class='cellprefix'>a</div>
+    <div class='cellprefix'>b</div>
+    <div class='cellprefix'>c</div>
+    <div class='cellprefix'>d</div>
+    <div class='cellprefix'>e</div>
+    <div class='cellprefix'>f</div>
+    <div class='cellprefix'>g</div>
+    <div class='cellprefix'>h</div><br>
+    <div id='turn'>It's Whites Turn!</div>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="../assets/js/chess.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.canvas {
+    background-color: blue;
+    color: white;
+    font-size: 1.3em;
+    width: 60%;
+    height: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 5px;
+}
+
+#message{
+    color: orange;
+    font-size: 1.5em;
+}
+
+button {
+    font-size: 1.3em;
+    margin-top: 50px;
+    border-radius: 7.5px;
+    border-radius: none;
+}

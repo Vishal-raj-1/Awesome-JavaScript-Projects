@@ -9,52 +9,37 @@
     scroll-behavior: smooth;
 }
 
-    .icon-bar {
-      position: fixed;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
 
-    .icon-bar a {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 20px;
-    }
+/* Sticky Navbar */
 
-    .icon-bar a:hover {
-      background-color: #eeebdd;
-      color: #3B5998;
-    }
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
-    .facebook {
-      background: #3B5998;
-      color: white;
-    }
+.icon-bar a i {
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    background: white;
+    color: #37517e;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
 
-    .twitter {
-      background: #3B5998;
-      color: white;
-    }
-
-    .google {
-      background: #3B5998;
-      color: white;
-    }
-
-    .linkedin {
-      background: #3B5998;
-      color: white;
-    }
-
-    .youtube {
-      background: #3B5998;
-      color: white;
-    }
+.icon-bar a i:hover {
+    background: #37517e;
+    color: white;
+}
 
 a{
   text-decoration: none;
@@ -63,6 +48,7 @@ a{
   outline: none;
 }
 ul{
+
     list-style-type: none;
 }
 body::-webkit-scrollbar {
@@ -220,60 +206,13 @@ body::-webkit-scrollbar-thumb {
     color: #333;
 }
 
-body {margin:0;height:2000px;}
-    
-    .icon-bar {
-      position: fixed;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-    
-    .icon-bar a {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 20px;
-    }
-    
-    .icon-bar a:hover {
-      background-color: #eeebdd;
-      color: #3B5998;
-    }
-    
-    .facebook {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .twitter {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .google {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .linkedin {
-      background: #3B5998;
-      color: white;
-    }
-    
-    .youtube {
-      background: #3B5998;
-      color: white;
-    }
+
 
     .typed{
         color: #87CEEB;
     }
 
-    
+
 header{
     background-color: #37517E;
     height: 80vh;
@@ -281,10 +220,12 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-nav{
+ nav{
+
+    color: #fff;
     position: fixed;
     top: 0;
-    background-color: #37517e98;
+    background-color: #37517E;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -300,15 +241,75 @@ nav ul{
     align-items: center;
     color: #fff;
 }
-.active{
-    color: #47b2e4;
+
+ nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 10px 0px 5px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+nav ul li a{
+    position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-nav ul li a:hover{
-    color: #47b2e4;
+nav ul li a:after{
+    display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
 }
-nav ul li{
-    margin-right: 40px;
-}
+nav ul li a:hover:after {
+
+    animation: circle 1.5s ease-in forwards;
+  }
+@keyframes circle {
+ 0% {
+     width: 1px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      z-index: -1;
+      background: #eee;
+      border-radius: 100%;
+    }
+100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+    }
+  }
+
 i#menuBar,
 i#menuClose{
     position: fixed;
@@ -321,6 +322,7 @@ i#menuClose{
     cursor: pointer;
 }
 i#menuClose{
+
     color: #37517E;
 }
 
@@ -413,14 +415,17 @@ i#menuClose{
 }
 
 .body{
-    padding: 20px 200px;
+    padding: 0px 40px;
     text-align: center;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
-.body h1{
+.heading{
+    padding-top: 30px;
+}
+.body h2{
     color: #37517E;
     font-size: 30px;
     text-transform: uppercase;
@@ -430,7 +435,7 @@ i#menuClose{
     height: 3px;
     background-color: #47b2e4;
     width: 50px;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 .dualSections{
     display: flex;
@@ -449,6 +454,7 @@ i#menuClose{
 }
 .dualSectionImg{
     flex-basis: 40%;
+    margin: 0px 0px 0px 10px;
 }
 .dualSectionImg img{
     width: 400px;
@@ -470,6 +476,12 @@ i#menuClose{
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
+}
+.projectDescription h2{
+    color: #37517E;
+    font-size: 30px;
+    text-transform: uppercase;
+
 }
 .projectCard{
     position: relative;
@@ -511,8 +523,8 @@ i#menuClose{
     border-radius: 50%;
 }
 .projectCard:hover{
-    -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.644));
-            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.644));
+    -webkit-filter: drop-shadow(0px 3px 15px rgba(0,0,0,0.4));
+    filter: drop-shadow(0px 3px 15px rgba(0,0,0,0.4));
 }
 .homeProjects{
     background-color: #F3F5FA;
@@ -521,7 +533,7 @@ i#menuClose{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 20px 200px;
+    padding: 25px 200px 35px 200px;
 }
 .homeProjects h1{
     color: #37517E;
@@ -533,7 +545,7 @@ i#menuClose{
     height: 3px;
     background-color: #47b2e4;
     width: 100px;
-    margin: 10px 0;
+    /*margin: 10px 0; */f
 }
 .projectDescription{
     flex-basis: 40%;
@@ -562,7 +574,7 @@ a.button:hover{
     align-items: center;
     justify-content: center;
     padding: 20px 200px;
-    height: 30vh;
+    height: 47vh;
     color: #37517E;
 }
 .ctaText{
@@ -575,7 +587,7 @@ a.button:hover{
     color: #37517E;
 }
 .ctaButton{
-    flex-basis: 30%;
+    flex-basis: 40%;
     text-align: center;
 }
 .ctaButton a{
@@ -681,7 +693,7 @@ footer a{
 }
 
 #back-button{
-    
+
     font-size: 1.1rem;
 }
 
@@ -809,3 +821,90 @@ footer a{
         border-radius: 5px;
     }
 }
+header{
+    height: 100vh;
+}
+
+@media (max-width: 700px) {
+    .icon-bar {
+        display: none;
+    }
+}
+
+
+/* Style for search bar */
+
+/* Style the search field */
+div.searchProject input[type=text] {
+    padding: 10px;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  /* Style the submit button */
+  div.searchProject button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #4667a0;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+  div.searchProject button:hover {
+    background: #2e4b7e;
+  }
+
+  /* Clear floats */
+  div.searchProject::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+   /* search bar styling         */
+ .search-box {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    height: 60px;
+    background: #2f3640;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;  }
+  
+  .search-box:hover .search-txt {
+    width: 300px;
+    padding: 0 10px;
+  }
+  
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    width: 0px;
+  }
+  
+  .search-btn {
+    background-color: #2e4b7e;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  
