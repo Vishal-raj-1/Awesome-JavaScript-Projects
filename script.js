@@ -1773,6 +1773,11 @@ let projectData = [
 
   },
   {
+    projectName: "3d Flip Card",
+    projectImage: "assets/images/flip-card.png",
+    projectUrl: "public/flip-card.html"
+  },
+  {
     projectName: "Contact form",
     projectImage: "assets/images/contact-form.png",
     projectUrl: "public/contact-form.html"
