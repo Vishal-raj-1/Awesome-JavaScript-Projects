@@ -71,7 +71,7 @@ let projectData = [
   },
   {
     projectName: "Animated Unsubscribe Page",
-    projectImage: "assets/Images/unsub_page.png",
+    projectImage: "assets/GIFs/unsub_page.png",
     projectUrl: "public/unsub_page.html",
   },
   {
