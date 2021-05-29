@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Geometry Shapes Calculator",
+    projectImage: "assets/Images/GeometryArea.png",
+    projectUrl: "public/Geometry_Shapes_claculator.html",
+  },
+  {
     projectName: "Shopping Cart",
     projectImage: "assets/Images/shoppingcart.jpeg",
     projectUrl: "public/Shopping_cart.html"
@@ -500,6 +505,11 @@ let projectData = [
     projectName: "Image Puzzle Game",
     projectImage: "assets/Images/imagePuzzleGame.png",
     projectUrl: "public/imagePuzzleGame.html"
+  },
+  {
+    projectName: "Traffic Lights",
+    projectImage: "assets/GIFs/trafficLights.gif",
+    projectUrl: "public/trafficLights.html"
   },
   {
     projectName: "Bubble Sort",
@@ -1319,6 +1329,11 @@ let projectData = [
     projectUrl: "public/Xylophone.html"
   },
   {
+    projectName: "3D CubeMap",
+    projectImage: "assets/GIFs/3dCubemap.gif",
+    projectUrl: "public/3DCubemap.html"
+  },
+  {
     projectName: "Reaction Game",
     projectImage: "assets/Images/ReactionGame/rg2.jpg",
     projectUrl: "public/ReactionGame.html"
@@ -1457,6 +1472,11 @@ let projectData = [
     projectUrl: "public/mergesort.html"
   },
   {
+    projectName: "Markdown Editor",
+    projectImage: "assets/Images/markdownEditor.png",
+    projectUrl: "public/markdownEditor.html"
+  },
+  {
     projectName: "Re-Create Giphy",
     projectImage: "assets/Images/giphy.png",
     projectUrl: "public/Giphy.html"
@@ -1465,6 +1485,11 @@ let projectData = [
     projectName: "Shell Sort Visualizer in JavaScript",
     projectImage: "assets/Images/shell-visualizing.png",
     projectUrl: "public/shellsort.html"
+  },
+  {
+    projectName: "3D Texture Cube",
+    projectImage: "assets/GIFs/3DTexture.gif",
+    projectUrl: "public/3DTexture.html",
   },
   {
     projectName: "Balloon Pop Game",
@@ -1533,6 +1558,16 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Text Extraction from Image",
+    projectImage: "assets/Images/textExtraction.png",
+    projectUrl: "public/textExtraction.html"
+  },
+  {
+    projectName: "Image Classifier",
+    projectImage: "assets/Images/imageClassifier.png",
+    projectUrl: "public/imageClassifier.html"
+  },
+  {
     projectName: "Scratch-Off to reveal",
     projectImage: "assets/GIFs/scratchOff.gif",
     projectUrl: "public/scratchOff.html"
@@ -1554,6 +1589,11 @@ let projectData = [
 
   },
   {
+    projectName: "Sentiment Analysis",
+    projectImage: "assets/Images/sentimentAnalysis.png",
+    projectUrl: "public/sentimentAnalysis.html"
+  },
+  {
     projectName: "DOM Node",
     projectImage: "assets/Images/domNode.png",
     projectUrl: "public/domNode.html"
@@ -1562,6 +1602,11 @@ let projectData = [
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
+  },
+  {
+    projectName: "Stripe Dropdown",
+    projectImage: "assets/GIFs/stripeDropdown.gif",
+    projectUrl: "public/stripeDropdown.html"
   },
   {
     projectName: "Array Methods",
@@ -1574,9 +1619,60 @@ let projectData = [
     projectUrl: "public/pokemon.html"
   },
   {
+    projectName: "GST Calculator",
+    projectImage: "assets/Images/GST_Calculator.png",
+    projectUrl: "public/GST_Calculator.html"
+  },
+  {
+    projectName: "Hover Effects",
+    projectImage: "assets/Images/hoverimage.png",
+    projectUrl: "public/hover_images.html"
+  },{
+
+    projectName: "Preloader Projects",
+    projectImage: "assets/Images/preloader.png",
+    projectUrl: "public/preloader.html"
+  },
+  {
+    projectName: "Gradient background",
+    projectImage: "assets/Images/gradient-background.png",
+    projectUrl: "public/gradient-background.html"
+  },
+  {
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
     projectUrl: "public/checkboxes.html"
+  },
+  {
+    projectName: "Food Menu",
+    projectImage: "assets/Images/foodCourt.png",
+    projectUrl: "public/foodCourt.html"
+  },
+  {
+    projectName: "Angry birds",
+    projectImage: "assets/Images/Angry_bird/demo.png",
+    projectUrl: "public/Angry_bird.html"
+   },
+   {
+     projectName: "State Search",
+     projectImage: "assets/Images/stateSearch.png",
+     projectUrl: "public/stateSearch.html"
+   },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/images/hover-board.png",
+    projectUrl: "public/hover_board.html"
+
+  },
+  {
+    projectName: "Contact form",
+    projectImage: "assets/images/contact-form.png",
+    projectUrl: "public/contact-form.html"
+  },
+    {
+    projectName: "Fun facts about Math",
+    projectImage: "assets/images/maths_facts.png",
+    projectUrl: "public/maths_facts.html"
   },
   {
     projectName: "Balloon and Brick Game",
