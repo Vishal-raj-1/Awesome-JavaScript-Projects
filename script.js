@@ -65,6 +65,11 @@ let projectData = [
     projectUrl: "public/nebula.html",
   },
   {
+    projectName: "3D Gltf Scene",
+    projectImage: "assets/GIFs/3DGltf.gif",
+    projectUrl: "public/3DGltf.html"
+  },
+  {
     projectName:"Interactive Flashlight",
     projectImage: "assets/Images/flashlight.png",
     projectUrl: "public/flashlight.html"
