@@ -1435,7 +1435,7 @@ let projectData = [
   },
   {
     projectName: "Train_Details",
-    projectImage: "assets/Images/Landing-page.jpg",
+    projectImage: "assets/Images/Train_Details.jpg",
     projectUrl: "public/Train_Details.html",
   }
 
