@@ -868,3 +868,43 @@ div.searchProject input[type=text] {
     clear: both;
     display: table;
   }
+
+   /* search bar styling         */
+ .search-box {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    height: 60px;
+    background: #2f3640;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;  }
+  
+  .search-box:hover .search-txt {
+    width: 300px;
+    padding: 0 10px;
+  }
+  
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    width: 0px;
+  }
+  
+  .search-btn {
+    background-color: #2e4b7e;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  
