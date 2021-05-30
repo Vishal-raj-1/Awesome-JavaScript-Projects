@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+body {
+  background-color: #0a1931;
+}
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.3) -2px 4px 0px;
+  color: #f54748;
+  letter-spacing: normal;
+  letter-spacing: 3px;
+  font-family: "Courgette", cursive;
+}
+.second-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.3) -2px 4px 0px;
+  color: #fff;
+  letter-spacing: normal;
+  letter-spacing: 3px;
+  font-family: "Courgette", cursive;
+}
+.text-center {
+  text-align: center;
+}
+button {
+  border-color: dodgerblue;
+  background-color: dodgerblue;
+  color: #fff;
+  transition: all 150ms ease-in-out;
+  font-size: 1.5rem;
+  box-shadow: dodgerblue 0px 6px 12px -2px, dodgerblue 0px 3px 7px -3px;
+  border-radius: 1rem;
+  padding: 10px;
+  font-size: 20px;
+  margin: 1%;
+}
+button:hover {
+  box-shadow: 0 0 10px 0 dodgerblue;
+  color: black;
+}
+button:active {
+  transform: translateY(-5);
+}
+h3 {
+  color: #fff;
+  font-weight: lighter;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+}
