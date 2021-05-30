@@ -5,7 +5,7 @@ body{
     background-image:url("../Images/CompoundInterestCalculator_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-
+    height: 100vh;
     overflow: hidden; 
 }
 .CompoundInterestCalc h1{
