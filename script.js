@@ -225,6 +225,11 @@ let projectData = [
     projectUrl: "public/robber.html"
   },
   {
+    projectName: "Background Effect",
+    projectImage: "assets/GIFs/backgroundEffect.gif",
+    projectUrl: "public/backgroundEffect.html"
+  },
+  {
     projectName: "BLOG WEBSITE",
     projectImage: "assets/Images/blog-img/blog.png",
     projectUrl: "public/blog.html"
