@@ -1820,7 +1820,12 @@ let projectData = [
     projectName: "Image Search",
     projectImage: "assets/images/image-search.png",
     projectUrl: "public/image-search.html",
-  }
+  },
+  {
+    projectName: "Physics Calculator",
+    projectImage: "assets/images/phy_calc.png",
+    projectUrl: "public/phy_calc.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
