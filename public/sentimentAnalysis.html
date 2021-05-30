@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/sentimentAnalysis.css" />
+    <title>ml5 - Sentiment</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="contentbox">
+            <h1>Sentiment Analysis</h1>
+
+            <p>
+                This example uses model trained on movie reviews. This model scores the sentiment of text with
+                a value between 0 ("negative") and 1 ("positive"). The movie reviews were truncated to a
+                maximum of 200 words and only the 20,000 most common words in the reviews are used.
+            </p>
+        </div>
+
+        <div class="inputbox">
+            <input id="inputText" type="text" placeholder="Enter your thoughts" />
+            <button id="submitBtn">Check</button>
+        </div>
+
+        <div class="loadingio-spinner-spinner-xsjp6ht4b6g spinner">
+            <div class="ldio-egfjv6kjbis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="resultbox">
+            <p class="warning">Please Enter Something</p>
+            <p class="score">Sentiment score:<span id="score"></span></p>
+            <p class="thoughts">Your thoughts seem to be <span id="type"> </span> , maybe? - ml5.JS Model</p>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="../assets/js/SentimentAnalysis.js"></script>
+</body>
+
+</html>
