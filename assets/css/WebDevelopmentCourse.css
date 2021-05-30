@@ -1,0 +1,64 @@
+body {
+    size: cover;
+    Background-attachment:fixed;
+    background-image: url(../Images/WebDevelopmentCoursebackground.jpg);
+  }
+  #table1
+  {
+        color: white;
+        margin-left: auto;
+        margin-right:auto;
+        font-family: Arial, Helvetica, sans-serif;
+        border-color: #60f708;
+  }
+  #table2
+  {
+        color:white;
+        margin-left:auto;
+        margin-right: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        border-color: blue;
+
+  }
+  h1
+  {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: bisque;
+        text-shadow: red;
+  }
+  h3{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color:red;
+  }
+  .button{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        justify-content: center;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+          text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+         cursor: pointer;
+         align-items: center;
+         border-color: #60f708;
+        
+
+  }
+  .center 
+  {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     height: 200px;
+
+    }
+    .button:hover
+     {
+     background-color: blue;
+     color: white;
+            }

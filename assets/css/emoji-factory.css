@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Parisienne&family=Playball&display=swap");
+
+body {
+  background-color: #242a33;
+}
+
+.icon {
+  margin-top: 1%;
+  font-size: 2em;
+  display: block !important;
+  text-align: center;
+}
+
+.text-center {
+  display: grid;
+  align-items: center;
+  place-items: center;
+  height: 30vh;
+}
+
+.grid1 {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px;
+  max-width: 1084px;
+  margin: 2% auto;
+}
+
+.contain {
+  width: 200px;
+  height: 200px;
+  background-color: dodgerblue;
+  margin: 2%;
+  color: #fff;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.3) -2px 4px 0px;
+  color: white;
+  letter-spacing: normal;
+  letter-spacing: 6px;
+  font-family: "Playball";
+}
+
+.box {
+  width: 40%;
+  height: 10vh;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+button {
+  background-color: dodgerblue;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 1rem;
+  padding: 1%;
+  font-size: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: "Playball", cursive;
+}
