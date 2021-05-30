@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Parisienne&family=Playball&display=swap");
+
+body {
+  background-image: url("https://as2.ftcdn.net/jpg/02/53/95/77/500_F_253957784_kXqsg08KHyaXnmKP5iB3C2zxOm8VPDLz.jpg");
+}
+h1 {
+  color: #000;
+  font-size: 3.5rem;
+  background-color: #fff;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  letter-spacing: 6px;
+  border-radius: 1rem;
+  text-shadow: rgba(255, 193, 255, 0.933) 4px 2px 2px;
+  font-family: "Playball", cursive;
+}
+
+.box {
+  width: 70%;
+  height: 40vh;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  margin-left: 1%;
+  font-family: "Playball", cursive;
+  letter-spacing: 3px;
+  font-weight: 350;
+}
+button {
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 1rem;
+  padding: 1%;
+  font-size: 20px;
+  color: green;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: "Playball", cursive;
+}
+.text-center {
+  display: grid;
+  align-items: center;
+  place-items: center;
+  width: 80;
+  height: 50vh;
+}
