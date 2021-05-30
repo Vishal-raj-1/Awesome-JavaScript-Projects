@@ -566,6 +566,11 @@ let projectData = [
     projectUrl: "public/birthdayReminder.html"
   },
   {
+    projectName: "Notifications",
+    projectImage: "assets/GIFs/notifications.gif",
+    projectUrl: "public/notifications.html"
+  },
+  {
     projectName: "Date Time Widget",
     projectImage: "assets/GIFs/dateTimeWidget.gif",
     projectUrl: "public/dateTimeWidget.html"
