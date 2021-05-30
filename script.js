@@ -15,6 +15,11 @@ let projectData = [
     projectUrl: "public/weatherApp.html"
   },
   {
+    projectName: "Shoot Target Game",
+    projectImage: "assets/GIFs/shoot.png",
+    projectUrl: "public/shoot.html",
+  },
+  {
     projectName: "Rubik's Cube",
     projectImage: "assets/GIFs/rubiks_cube.gif",
     projectUrl: "public/rubiks_cube.html"
