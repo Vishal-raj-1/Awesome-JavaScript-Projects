@@ -807,8 +807,12 @@ let projectData = [
     projectName: 'Expanding Card',
     projectImage: 'assets/GIFs/ExpandingCard.gif',
     projectUrl: 'public/ExpandingCard.html'
-  }
- ,
+  },
+  {
+    projectName: "Play Loader",
+    projectImage: "assets/GIFs/playLoader.gif",
+    projectUrl: "public/playLoader.html"
+  },
   {
     projectName: "Background Slider",
     projectImage: "assets/GIFs/BackgroundSlider.gif",
