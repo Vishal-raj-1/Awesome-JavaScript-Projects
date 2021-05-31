@@ -1,0 +1,66 @@
+html,
+body {
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+}
+
+#scene {
+    width: 400px;
+    height: 400px;
+    background-color: #aaf;
+    overflow: hidden;
+    margin: 16px auto;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1), -2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+#tree {
+    position: absolute;
+    display: block;
+    width: 200px;
+    bottom: 80px;
+    left: 100px;
+}
+
+#ground {
+    position: absolute;
+    display: block;
+    width: 400px;
+    bottom: 0;
+}
+
+.apple {
+    position: absolute;
+    top: 225px;
+    left: 120px;
+    width: 16px;
+    height: auto;
+    transition: top .5s ease;
+}
+
+#scoreboard {
+    width: 400px;
+    margin: 4px auto;
+    padding: 0;
+    background-color: #eaeaea;
+}
+
+#scoreboard:after {
+    clear: both;
+    display: block;
+    content: " ";
+}
+
+#scoreboard li {
+    list-style: none;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 4px;
+    text-align: center;
+    float: left;
+}
+
+span {
+    font-weight: bold;
+    color: #55f;
+}

@@ -93,15 +93,15 @@ function showNotes(){
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col">
-                    <h2 class="card-title">${element.title}</h2>
-                <p class="card-text">${element.text}</p>
-                </div>
-                <div class="col-2">
-                <span class="iconify" data-icon=${element.favorite ? "bi:star-fill":"bi:star"} data-inline="false" data-width="24" data-height="24" style=${element.favorite ? "color:gold":"color:black"} onclick=favoriteNote(${index})></span>
+                    <h2 class="card-title" id="noteTitle">${element.title}</h2>
+                    <p class="card-text" id="noteText">${element.text}</p>
+                    </div>
+                    <div class="col-2">
+                    <span class="iconify" data-icon=${element.favorite ? "bi:star-fill":"bi:star"} data-inline="false" data-width="24" data-height="24" style=${element.favorite ? "color:gold":"color:black"} onclick=favoriteNote(${index})></span>
                 </div>
             </div>  
-            <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
-            <button onclick="editNote(${index})"  class="btn btn-primary">Edit Note</button>
+            <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-large jsBtn">Delete Note</button>
+            <button onclick="editNote(${index})"  class="btn btn-large jsBtn">Edit Note</button>
             
         </div>
     </div>`
@@ -112,7 +112,7 @@ function showNotes(){
         notesEle.innerHTML = addNote;
     }
     else{
-        notesEle.innerHTML = `You haven't add any note yet. Try to to add some note using above section and then press "Add Note" button.`
+        notesEle.innerHTML = `<div class="container lead text-white">You haven't add any note yet. Try to to add some note using above section and then press "Add Note" button.</div>`
     }
     
 }
@@ -195,7 +195,7 @@ addTxt.addEventListener("input", function () {
 
 });
 
-let addTxt = document.getElementById("addTxt");
+//let addTxt = document.getElementById("addTxt");
 let addTitle = document.getElementById("addTitle");
 
 addTxt.addEventListener("input", function () {

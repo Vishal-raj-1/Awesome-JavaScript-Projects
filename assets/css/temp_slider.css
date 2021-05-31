@@ -1,0 +1,43 @@
+body {
+    background-color: #FCEFD6;
+    overflow: hidden;
+    text-align:center;
+   }
+   body,
+   html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   }
+   
+   svg {
+    
+    width: 100%;
+    height: 100%;
+    
+   }
+   
+   .label{
+    fill:#FFFCF9;
+    font-size:1.8em;
+    font-family: "din-condensed-web", sans-serif;
+    /* font-family: "filson-soft", sans-serif; */
+    text-anchor:middle;
+    letter-spacing:1.2px;
+   }
+   
+   
+    .tubeLabel{
+    fill:#FCEFD6;
+    font-size:1.4em;
+    font-family: "din-condensed-web", sans-serif;
+    /* font-family: "filson-soft", sans-serif; */
+    text-anchor:middle;
+   }
+   .dragger{
+    -webkit-tap-highlight-color:transparent;
+   }
+    
+   

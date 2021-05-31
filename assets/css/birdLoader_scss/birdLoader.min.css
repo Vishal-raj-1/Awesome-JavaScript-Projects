@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #18233e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bird {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.hair-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: rotateHair 3s infinite ease-in-out;
+}
+
+.hair {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  border-radius: 0 125px 125px 0;
+  background-color: #a12a15;
+}
+
+.face {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.white-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: rotateWhite 3s infinite ease-in-out;
+}
+
+.white {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  border-radius: 0 80px 80px 0;
+  background-color: white;
+}
+
+.shadow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotateShadow 3s infinite ease-in-out;
+  z-index: 2;
+}
+
+.shadow {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 87.5px 0;
+}
+
+.bigBeak-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: rotateBigBeak 3s infinite ease-in-out;
+}
+
+.bigBeak {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  background-color: #f7a500;
+  border-radius: 87.5px 0 0 0;
+}
+
+.smallBeak-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: rotateSmallBeak 3s infinite ease-in-out;
+}
+
+.smallBeak {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 50%;
+  left: 25%;
+  background-color: #f7ce42;
+  border-radius: 0 0 0 87.5px;
+}
+
+.eye-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: moveEye 3s infinite ease-in-out;
+}
+
+.eye {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  bottom: 51%;
+  left: 51%;
+  background-color: #18233e;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+@keyframes rotateHair {
+  0% {
+    transform: rotate(-360deg);
+  }
+  25% {
+    transform: rotate(-360deg);
+  }
+  40% {
+    transform: rotate(-180deg);
+  }
+  60% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes rotateWhite {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-180deg);
+  }
+  60% {
+    transform: rotate(-180deg);
+  }
+  80% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateShadow {
+  25% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateBigBeak {
+  25% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateBigBeak {
+  25% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateSmallBeak {
+  25% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  75% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes moveEye {
+  25% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-100deg);
+  }
+  75% {
+    transform: rotate(-100deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

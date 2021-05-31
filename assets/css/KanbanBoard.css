@@ -1,0 +1,97 @@
+h1,h4 {
+    font-family: "Arimo", sans-serif;
+  }
+  header h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  p {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 35px;
+  }
+  .main-container {
+    display: flex;
+  }
+  .columns {
+    display: flex;
+    align-items: flex-start;
+    margin: 1.6rem auto;
+  }
+  .column {
+    width: 18rem;
+    margin: 0 0.6rem;
+    background: #a8a8a8;
+    border: #000013 0.2rem solid;
+    border-radius: 0.2rem;
+  }
+  .column-header {
+    padding: 0.1rem;
+    border-bottom: #000013 0.2rem solid;
+  }
+  .column-header h4 {
+    text-align: center;
+  }
+  .to-do-column .column-header {
+    background: #ff872f;
+  }
+  .doing-column .column-header {
+    background: #13a4d9;
+  }
+  .done-column .column-header {
+    background: #15d072;
+  }
+  .trash-column .column-header {
+    background: #ff4444;
+  }
+  .task-list {
+    min-height: 3rem;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  .column-button {
+    text-align: center;
+    padding: 0.1rem;
+  }
+  .button {
+    font-family: "Arimo", sans-serif;
+    font-weight: 700;
+    border: #000013 0.14rem solid;
+    border-radius: 0.2rem;
+    color: #000013;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+  }
+  .delete-button {
+    background-color: #ff4444;
+    margin: 0.1rem auto 0.6rem auto;
+  }
+  .delete-button:hover {
+    background-color: #fa7070;
+  }
+  .task {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    list-style-type: none;
+    background: #fff;
+    transition: all 0.3s;
+    margin: 0.4rem;
+    height: 4rem;
+    border: #000013 0.15rem solid;
+    border-radius: 0.2rem;
+    cursor: move;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .task p {
+    margin: auto;
+  }
+  

@@ -1,0 +1,49 @@
+* {
+	font-family: "Lucida Grande";
+}
+
+#gameContainer {
+	background-color: black;
+	width: 480px;
+	height: 480px;
+	padding: 20px;
+}
+
+.row {
+	width: 100%;
+}
+
+.square {
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 94%;
+	height: 94%;
+	margin: 3%;
+	color: black;
+	text-align: center;
+	line-height: 56px;
+}
+
+.square:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
+#startGame {
+	width: 120px;
+	padding: 10px;
+	margin-top: 10px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+#startGame:hover {
+	color: red;
+	cursor: pointer;
+}

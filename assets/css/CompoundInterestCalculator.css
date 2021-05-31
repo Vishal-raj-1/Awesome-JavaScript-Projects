@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image:url("../Images/CompoundInterestCalculator_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden; 
+}
+.CompoundInterestCalc h1{
+    text-align:center;
+    padding: 0 0 20px 0;
+    color:#023047;
+    border-bottom:1px solid #023047;
+}
+.CompoundInterestCalc{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 500px; 
+    background: #F0F8FF;
+    border-radius: 10px;
+}
+.form{
+    padding: 0 40px;
+    box-sizing: border-box;
+    position:relative;
+}
+input, output{
+    width:60%;
+    height: 35px;
+    background:white;
+    outline: none;
+    border-radius: 8px;
+}
+label{
+    color:  #023047;
+    font-size: 18px;
+}
+#btn{
+    background-color: #023047;
+    width:50%;
+    color: white;
+    border: 2px solid #ff6e40;
+    border-radius: 12px;
+    font-size: 26px;
+    text-align: center; 
+    display: table;
+    margin: 0 auto
+}
+#btn {
+    transition-duration: 0.4s;
+  }
+#btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }

@@ -1,27 +1,91 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    background-image: url(https://wallpapercave.com/wp/wp4448389.jpg);
+    /* background: linear-gradient(to left, #607d8b, #d459cb); */
     color: black;
     display: flex;
-    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
-.stopwatch {
-    font-size: 7rem;
+#timing {
+    padding: 20px;
+    font-size: 32px;
+    position: relative;
+    height: 460px;
+    line-height: 116px;
+    border-radius: 5%;
+    margin: 0 auto;
+    background-color: #fff;
 }
-
-.btn {
-    padding: 5px 13px;
+.para{
+    padding: 10px;
+}
+.stopwatch{
+    border: 5px solid hotpink;
+    font-size: 50px;
+    border-radius: 30px;
+}
+.heading{
+    padding: auto;
+    text-shadow: rgb(36, 248, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-text-stroke-width: medium;
     color: white;
-    border: 2px solid rgb(27, 9, 129);
-    margin: 10px;
-    font-weight: 450;
-    border-radius: 10px;
-    background-color: rgb(27, 9, 129);
+    -webkit-text-stroke: 2px black;
+}
+p{
+    font-weight: 400;
+    color: rgb(38, 71, 218);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 50px;
+    font-family: arial;
+    font-weight: bold;
 }
 
-.btn:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
+#start,#reset{
+    width: 90px;
+    height: 55px;
+    line-height: 44px;
+    border-inline-width: inherit;
+    border-radius: 26px;
+    text-align: justify;
+    color: #fff;
+    background: linear-gradient(45deg, #f8f, #f0f);
+    box-shadow: 0 8px 25px rgb(50, 16, 202), 0 8px 25px #ff00ef;
+    transition: all ease 0.1s;
+}
+#stop,#lap,#resetlaps{
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: rgb(235, 234, 243);
+    font-weight: 400;
+    background: linear-gradient(45deg,#33bcd5,#ff00ec);
+    box-shadow: 0 8px 25px #bf5fc045, 0 8px 25px #e5dff23b;
+    transition: all cubic-bezier(0.98, 0.05, 0.08, 1.29) 0.1s;
+}
+
+#stop:hover {
+    color: rgb(27, 23, 27);
+}
+#resetlaps:hover {
+    color: rgb(27, 23, 27);
+}
+#lap:hover {
+    color: rgb(27, 23, 27);
+}
+#start:hover {
+    color: rgb(27, 23, 27);
+}
+#reset:hover {
+    color: rgb(27, 23, 27);
 }
 
 ul li {

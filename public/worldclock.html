@@ -1,0 +1,98 @@
+<!--  Author:Priyadarshan2000 (Priyadarshan Ghosh)
+             World Clock -->
+<html>
+  <head> 
+  <title>World Clock</title>   
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">  
+   <link rel="stylesheet" type="text/css" href="../assets/css/worldclock.css">  
+   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5940863911183002",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body> <div class="span-10 right last" style="text-align:right;">
+  <form method="post" action="#" class="inline" id="newcity_form">
+      <input id="newcity" style="text-align:left;" name="newcity" type="text" class="title hint ui-autocomplete-input" title="city, country or time zone" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+      <button type="submit" id="addcity" value="Submit" class="groovybutton">Add</button>
+      <input type="hidden" id="newcityid">
+  </form></div>
+  <div class="container">  
+    <div id="content" class="span-18 prepend-top"> 
+<!-- city template -->
+<script type="text/html" id="cityitem_templ">
+  <ul class="list append-3 prepend-3 span-12 last">
+   <% for ( var i = 0; i < cities.length; i++ ) { var city = cities[i]; %>        
+   <li class="ui-corner-all prepend-top span-12 <%=city.day_night_class%>" city="<%=city.id%>">
+      <div class="span-6 prepend-1">
+        <div><span class="cityname"><%=city.name%></span> 
+        </div>            
+      </div>
+      <div class="span-5 last">
+        <div>
+          <span class="time"><%=city.time_text%></span>
+          <span class="timezone" title="Observing Daylight Saving Time"><%=city.timezone_text%> <%= city.isDST ? '*' : ''%>
+          </span>
+        </div>                
+        <div>
+          <span class="date" ><%=city.date_text%></span>                
+        </div>
+      </div>
+      <span class="remove hide">X</span>
+   </li>
+   <% } %></ul>
+</script> 
+<script type="text/html" id="citytiles_templ">
+<ul class="tiles span-16 append-1 prepend-1 last">
+<% for ( var i = 0; i < cities.length; i++ ) { var city = cities[i]; %>        
+  <li class="ui-corner-all ui-state-active prepend-top span-5 <%=city.day_night_class%>" city="<%=city.id%>">
+    <div class="cityname"><%=city.name%></div>
+    <div>
+      <span class="time"><%=city.time_text%></span>
+      <span class="timezone" title="Observing Daylight Saving Time"><%=city.timezone_text%> <%= city.isDST ? '*' : ''%>
+    </div>
+    <div><span class="date" ><%=city.date_text%></span></div>
+    <span class="remove hide">X</span>
+  </li>
+  <% } %></ul>
+</script>
+       
+<div id="city_list">  
+  </div>
+<div id="slider_block" class="prepend-3 append-2 span-13 last append-bottom" style="position:relative;height:40px;">
+	<p title="Local Time" style="position: absolute; left: 93px;" class="triangle-isosceles" id="localtime">04:10 PM</p>
+	<div id="slider" class="span-12 last ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="position:absolute;top:25px;"><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;"></a></div>
+</div>     
+   <script type="text/javascript" src="../assets/js/worldclock.js"></script> 
+  
+  
+<script>
+$(document).ready(function() {
+  KBJS.WTP.app.init();
+	
+	var version = '8.5';
+  if (version !== KBJS.WTP.options.version){
+    $('#features').show();
+    KBJS.WTP.options.version = version;
+    KBJS.WTP.options.save();
+  }
+	var svcParams = [];
+	svcParams.push("is24Hr=");
+	svcParams.push(KBJS.WTP.options.is24Hr);
+	svcParams.push("&layout=");
+	svcParams.push(KBJS.WTP.options.layout);
+	svcParams.push("&timeFormat=");
+	svcParams.push(KBJS.WTP.options.timeFormat);
+	svcParams.push("&dateFormat=");
+	svcParams.push(KBJS.WTP.options.dateFormat);
+    
+});</script> 
+
+
+  
+</body>
+
+   
+</html>

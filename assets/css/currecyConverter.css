@@ -1,54 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    text-align: center;
+    background-image: url("../Images/Currency_Converter_Background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-
-h1 {
-    margin-top: 25px;
+.heading {
+    font-family: 'Pacifico', cursive;
+    margin: 35px auto 20px;
+    color: white;
 }
-
+hr {
+    border-top: 2px solid white;
+    width: 40%;
+    margin-bottom: 55px;
+}
 .main {
-    display:flex;
-    flex-direction:column;
-    width: 500px;
-    height: 200px;
-    margin-top: 1%;
-    margin-left: 37%;
-    border: 1px solid black;
-    padding: 15px;
+    width: 50vw;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+label {
+    font-size: 20px;
+}
+.btn {
+    width: 200px;
+}
+#finalAmount {
+    color: White;
+    font-family: 'Lobster', cursive;
+    display: none;
+    margin: 50px auto;
+}
+#finalAmount h2 {
+    font-size: 50px;
+}
+.finalValue {
+    font-family: 'Amiri', serif;
 }
 
-.originalAmount, .originalAmount, .finalAmount {
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    margin-bottom: 15px;
+/* Media Queries */
+
+@media (max-width: 768px) {
+    hr {
+        width: 60%;
+    }
+    .main {
+        width: 100%;
+    }
 }
 
-.searchBox {
-    width:220px;
-    height:30px;
-    font-size:1.2rem;
-    padding:5px;
-}
-
-.conversion {
-    display:flex;
-    justify-content:space-around;
-    font-size:1.4rem;
-}
-
-.convert {
-    width:150px;
-    font-size:1.2rem;
-    margin-top: 20px;
-    margin-left: 40%;
-}
-
-.finalAmount {
-    margin-top: 20px;
+@media (max-width: 400px) {
+    .heading {
+        font-size: 60px;
+    }
+    hr {
+        width: 75%;
+    }
+    #finalAmount h2, .finalValue {
+        font-size: 40px;
+    }
 }

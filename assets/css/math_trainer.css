@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.outerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #77acf1;
+}
+
+.innerBox {
+  width: 70vw;
+  height: 80vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.heading {
+  margin-top: 2%;
+  color: #e44d2e;
+  padding: 10px;
+  width: 70%;
+  font-size: 40px;
+  border-radius: 8px;
+  letter-spacing: 4px;
+}
+.displayVal {
+  width: 60%;
+  height: 30%;
+  font-size: 30px;
+}
+
+#questionBox {
+  font-size: 2.3rem;
+  margin-top: 20px;
+  font-family: "Source Serif Pro", serif;
+}
+#answerBox {
+  font-size: 1.5rem;
+  color: #14a76c;
+}
+#userInput {
+
+  width: 65%;
+  padding: 15px;
+  border: 1px dotted rgba(149, 157, 165, 0.5);
+  outline: none;
+  letter-spacing: 2px;
+}
+#userInput:focus {
+  outline: 1.5px solid #14a76c;
+  box-shadow: none;
+  border: none;
+}
+button {
+  margin: 20px;
+  padding: 10px;
+  width: 25%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.flexbox-buttons {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+#submitButton {
+  background-color: #14a76c;
+  width: 30%;
+}
+
+#nextQuesButton {
+  background-color: #77acf1;
+   width: 30%;
+}
+
+#viewAnswerButton {
+  background-color: #b34180;
+   width: 30%;
+}
+
+
+@media only screen and (max-width: 926px) {
+    
+  
+    .heading{
+      font-size: 30px;
+    }
+    .displayVal{
+    font-size: 20px;
+  }
+    #questionBox{
+      font-size: 30px;
+    }
+
+  .flexbox-buttons{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  }
+  #submitButton{
+    width: 60%;
+  }
+  #nextQuesButton{
+    width: 60%;
+  }
+  #viewAnswerButton{
+    width: 60%;
+  }
+}
+
+
+@media only screen and (max-width: 593px) {
+  
+  .displayVal{
+    font-size: 20px;
+  }
+  #submitButton{
+   letter-spacing: 1px;
+  }
+  #nextQuesButton{
+    letter-spacing: 1px;
+  }
+  #viewAnswerButton{
+    letter-spacing: 1px;
+  }
+  
+}
+
+@media only screen and (max-width: 372px) {
+  .flexbox-buttons{
+    width: 100%;
+  }
+  #answerBox {
+     font-size: 1rem;
+  }
+  #userInput {
+    letter-spacing: 0px;
+  }
+   #submitButton{
+   letter-spacing: 0px;
+  }
+  #nextQuesButton{
+    letter-spacing: 0px;
+  }
+  #viewAnswerButton{
+    letter-spacing: 0px;
+  }
+}
