@@ -619,10 +619,11 @@ let projectData = [
     projectUrl: "public/newyearcountdown.html"
   },
   {
-    projectName: "Line replacing text",
-    projectImage: "assets/GIFs/line-replacing-project-.gif",
-    projectUrl: "public/line_replacing_project.html"
-  },
+    projectName: 'URL Shortner',
+    projectImage: 'assets/GIFs/url_shortner.gif',
+    projectUrl: 'public/url-shortner.html'
+  }
+  ,
   {
     projectName: "Password Generator",
     projectImage: "assets/GIFs/passwordGenerator.gif",
