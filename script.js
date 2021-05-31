@@ -1945,6 +1945,11 @@ let projectData = [
     projectUrl: "public/image-search.html",
   },
   {
+    projectName: "Gradient Showcase",
+    projectImage: "assets/images/gradient-showcase.png",
+    projectUrl: "public/gradient-showcase.html",
+  }
+,{
     projectName: "Meal Genrator",
     projectImage: "assets/images/meal-genrator.png",
     projectUrl: "public/meal-genrator.html",
@@ -1958,7 +1963,6 @@ let projectData = [
     projectImage: "assets/images/sortable_list.png",
     projectUrl: "public/sortable_list.html",
   },
-
 {
   projectName: "Background Video header",
   projectImage: "assets/images/background-header.png",
