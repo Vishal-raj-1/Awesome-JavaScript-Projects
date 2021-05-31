@@ -1820,8 +1820,13 @@ let projectData = [
     projectName: "Image Search",
     projectImage: "assets/images/image-search.png",
     projectUrl: "public/image-search.html",
+  },
+  {
+    projectName: "Train_Schedule Manager",
+    projectImage: "assets/Images/train_schedule.png",
+    projectUrl: "public/train_schedule.html",
   }
-];
+]
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
