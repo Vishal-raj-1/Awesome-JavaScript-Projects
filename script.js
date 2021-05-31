@@ -2083,6 +2083,11 @@ let projectData = [
     projectUrl: "public/sortable_list.html",
   },
 
+  {
+    projectName: "Circle Animation",
+    projectImage: "assets/GIFs/circleAnimation.gif",
+    projectUrl: "public/circleAnimation.html",
+  },
 
 
 
