@@ -717,6 +717,17 @@ let projectData = [
     projectUrl: "public/hangman.html"
   },
   {
+
+    projectName: "Random_Picker_visualiser",
+    projectImage: "assets/GIFs/README.md",
+    projectUrl: "public/Random_Picker.html",
+  },
+  {
+    projectName: "Animated Minion Eyes",
+    projectImage: "assets/GIFs/Minion-Eyes.gif",
+    projectUrl: "public/Minion-Eyes.html",
+},
+  {
     projectName: "Rock Paper Scissor Game",
     projectImage: "assets/Images/r-p-s/rps.gif",
     projectUrl: "public/Rock-paper-scissor.html"
@@ -735,7 +746,8 @@ let projectData = [
     projectName: 'RGB TO HEX CONVERTER',
     projectImage: 'assets/Images/RGB_HEX.png',
     projectUrl: 'public/RGB_HEX.html'
-  }
+}
+
   ,
  
 
