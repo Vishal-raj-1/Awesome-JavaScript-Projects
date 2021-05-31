@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Balloon Pop
+    </title>
+    <style>
+        .header{
+            font-family: Copperplate, Papyrus, fantasy;
+            font-weight: bold;
+            font-size: 2em;
+            position: relative;
+        }
+        body{
+            font-size: 100%;
+            background-image : url("../assets/Images/BalloonAndBrickGame/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+        .my_canvas{
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <span class = "header" style = "left:600px">Pop the Balloon</span>
+    <span class = "header" id = "score" style = "left: 900px"></span>
+    <div style = "text-align: center;">
+        <canvas id = "game_area" class = "my_canvas" width = "1100" height = "600"></canvas>
+    </div>
+</body>
+<script type = "text/javascript" src = "../assets/js/BalloonAndBrickGame/canvas_elements.js"></script>
+<script type = "text/javascript" src = "../assets/js/BalloonAndBrickGame/game.js"></script>
+</html>
