@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Shoot Game</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Quicksand', sans-serif;
+   }
+body{
+    background: #fff;
+}
+.container{
+    position: relative;
+    width: 100%;    height: 100vh;
+}
+.container ul{
+    position: absolute;
+    top: 50%;  left: 50%;
+    transform: translate(-50%,-50%);
+}
+ul li{
+    list-style: none;
+    position: absolute;
+    top: 50%;  left: 50%;
+    transform: translate(-50%,-50%); 
+    border: 1px solid #fff;
+    background: #262626;  color: #fff;
+    border-radius: 50%;
+}
+ul li:nth-child(-n+3){
+    border-color: #262626;
+    background: #fff;  color: #262626; 
+}
+ul li:nth-child(1){
+    width: calc(9 * 50px);  height: calc(9 * 50px);
+}
+ul li:nth-child(2){
+    width: calc(8 * 50px);  height: calc(8 * 50px);
+}
+ul li:nth-child(3){
+    width: calc(7 * 50px);  height: calc(7 * 50px);
+}
+ul li:nth-child(4){
+    width: calc(6 * 50px);  height: calc(6 * 50px);
+}
+ul li:nth-child(5){
+    width: calc(5 * 50px);  height: calc(5 * 50px);
+}
+ul li:nth-child(6){
+    width: calc(4 * 50px);  height: calc(4 * 50px);
+}
+ul li:nth-child(7){
+    width: calc(3 * 50px);  height: calc(3 * 50px);
+}
+ul li:nth-child(8){
+    width: calc(2 * 50px);  height: calc(2 * 50px);
+}
+ul li:nth-child(9){
+    width: calc(1 * 50px);  height: calc(1 * 50px);
+}
+ul li:nth-child(10){
+    width: 10px;  height: 10px;
+    background: #fff;
+}
+
+
+ul li span{
+    position: absolute;
+    top: 50%;   transform: translateY(-50%);   
+    font-size: 25px;
+    font-weight: bold;
+}
+ul li span:nth-child(1){
+    left: 7px;
+}
+ul li span:nth-child(2){
+    right: 7px;
+}
+ul li::before,ul li::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 50%;  transform: translateX(-50%);
+    font-size: 25px;
+    font-weight: bold;
+}
+ul li::before{
+    top: -4px; 
+}
+ul li::after{
+     bottom: -4px;
+}
+
+/**************  CSS Of Javascript Content #shoot  *********************/
+.container #shoot{
+     position: absolute;
+     width: 20px;  height: 20px;
+}
+.container #shoot::before{
+     content: '';
+     position: absolute;
+     top: 0;  left: 0;
+     width: 100%;   height: 100%;
+     background: #f00;
+     border-radius: 50%;
+     opacity: 0;
+}
+.container #shoot.active::before{
+    animation: animate .5s;
+}
+@keyframes animate{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+.container #shoot span{
+    position: absolute;
+    top: 50%;  left: 50%;
+    transform: translate(-50%,-100%);
+    width: 5px;  height: 50px;
+    background: #262626;
+    transform-origin: bottom;
+    opacity: 0;
+    transition: .5s;
+}
+.container #shoot span:nth-child(1){
+    transform: translate(-50%,-100%) rotate(0); 
+}
+.container #shoot span:nth-child(2){
+    transform: translate(-50%,-100%) rotate(90deg); 
+}
+.container #shoot span:nth-child(3){
+    transform: translate(-50%,-100%) rotate(180deg); 
+}
+.container #shoot span:nth-child(4){
+    transform: translate(-50%,-100%) rotate(-90deg); 
+}
+
+.container #shoot.active span{
+    animation: animateShootSpan .5s;
+}
+.container #shoot.active span:nth-child(1){
+    transform: translate(-50%,-100%) translateY(-150px) rotate(0); 
+}
+.container #shoot.active span:nth-child(2){
+    transform: translate(-50%,-100%) translateX(150px) rotate(90deg); 
+}
+.container #shoot.active span:nth-child(3){
+    transform: translate(-50%,-100%) translateY(150px) rotate(180deg); 
+}
+.container #shoot.active span:nth-child(4){
+    transform: translate(-50%,-100%) translateX(-150px) rotate(-90deg); 
+}
+@keyframes animateShootSpan{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/**************  CSS Of Javascript Content  bullet *********************/
+.container .bullet{
+    position: absolute;
+    width: 20px;  height: 20px;
+    background: #3f51b5;
+    border-radius: 50%;
+}
+
+
+  </style>
+  <body>
+     <div class="container">
+               <ul>
+                   <li data-text="1"><span>1</span><span>1</span></li>
+                   <li data-text="2"><span>2</span><span>2</span></li>
+                   <li data-text="3"><span>3</span><span>3</span></li>
+                   <li data-text="4"><span>4</span><span>4</span></li>
+                   <li data-text="5"><span>5</span><span>5</span></li>
+
+                   <li data-text="6"><span>6</span><span>6</span></li>
+                   <li data-text="7"><span>7</span><span>7</span></li>
+                   <li data-text="8"><span>8</span><span>8</span></li>
+                   <li></li>
+                   <li></li>
+               </ul>
+
+               <div id="shoot">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                   <span></span>
+               </div>
+           </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('mousemove',function(event){
+                    document.getElementById('shoot').classList.remove('active');
+               })
+
+               window.addEventListener('click',function(){
+                   var x = event.pageX;
+                   var y = event.pageY;
+                   var shoot =  document.getElementById('shoot');
+                   shoot.style.left = (x - 10) + 'px';
+                   shoot.style.top = (y - 10) + 'px';
+                   shoot.classList.add('active');
+
+                  
+                   var divNode = document.createElement('div');
+                   divNode.style.top = (y - 10) + 'px'; 
+                   divNode.style.left = (x -10)  + 'px'; 
+                   divNode.classList.add('bullet');
+                   document.querySelector('.container').appendChild(divNode);
+               })
+    </script>
+   
+  </body>
+</html>

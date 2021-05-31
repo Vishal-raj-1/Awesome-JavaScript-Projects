@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI Calculator</title>
+    <link rel="stylesheet" href="../assets/css/CompoundInterestCalculator.css">
+</head>
+<body>
+    <div class="CompoundInterestCalc">
+        <h1>Compound Interest Calculator</h1>
+        <div class="form">
+            <div class="input">
+                <label for="p">Enter Principal Amount :</label>
+                <input type="number" id="p"><br><br>
+                <label for="r">Enter Rate of Interest :</label>
+                <input type="number" id="r"><br><br>
+                <label for="t">Enter No. of years :</label>
+                <input type="number" id="t"><br><br>
+                <label for="tp">Select Compound Frequency :</label>
+                <select id="tp">
+                    <option>Select</option>
+                    <option>Yearly</option>
+                    <option>Half Yearly</option>
+                    <option>Quarterly</option>
+                    <option>Monthly</option>
+                </select><br>
+            </div>
+            <br>
+            <div class="button">
+                <input type="submit" id="btn" onclick="calculate()">
+            </div>
+            <br>
+            <div class="output">
+                <label for="ta">Total Amount :</label>
+                <input type="number" id="ta" readonly><br><br>
+                <label for="ci">Compound Interest :</label>
+                <input type="number" id="ci" readonly>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../assets/js/CompoundInterestCalculator.js"></script>
+</html>

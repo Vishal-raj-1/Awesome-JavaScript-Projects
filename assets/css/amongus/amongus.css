@@ -1,0 +1,121 @@
+body{
+	background-color:black;
+}
+.head{
+	position: absolute;
+	color: darkblue;
+	font-size:50px;
+	left: 205px;
+	top: 10px;
+}
+.back{
+	position: relative;
+	background-color: #23a4b8;
+	width: 800px;
+	height: 100px;
+	top: 330px;
+	left: 350px;
+	border-radius: 100%;
+	z-index:-2;
+}
+
+.hand{
+	position: relative;
+	background-color: red;
+	width: 40px;
+	height: 140px;
+	top: 380px;
+	left: 609px;
+	border-radius: 55px 0px 10px 55px;
+	border: 8px solid black;
+
+}
+#body{
+	position: absolute;
+	background-color: red;
+	width: 130px;
+	height: 220px;
+	top: 310px;
+	left: 660px;
+	border-radius: 70px 100px 70px 70px;
+	border: 8px solid black;
+	
+
+}
+
+#lleg{
+	position: absolute;
+	background-color: red;
+	width: 50px;
+	height: 68px;
+	top: 511px;
+	left: 667px;
+	border: 8px solid black;
+	border-radius: 0px 0px 30px 30px;
+	border-left: 5px solid black;
+	z-index: -1;
+
+}
+#rleg{
+	position: absolute;
+	background-color: red;
+	width: 50px;
+	height: 68px;
+	top: 511px;
+	left: 734px;
+	border: 8px solid black;
+	border-radius: 0px 0px 30px 30px;
+	border-left: 5px solid black;
+	z-index: -1;
+	
+
+}
+
+.eye{
+	position: absolute;
+	background-color: #918f8e;
+	width: 80px;
+	height: 50px;
+	top: 360px;
+	left: 729px;
+	border-radius: 20px 30px 30px 20px;
+	border: 8px solid black;
+
+}
+
+
+.foot{
+	position: absolute;
+	color: green;
+	font-size:20px;
+	left: 530px;
+	top: 700px;
+}
+
+.but{
+	position: absolute;
+	background-color: #42e36d;
+	padding: 10px 30px 10px 30px;
+	border-radius: 20px;
+	font-size: 20px;
+	left: 550px;
+	top: 100px;
+
+}
+.but:hover{
+     color:white;
+}
+
+.but1{
+	position: absolute;
+	background-color: #42e36d;
+	padding: 10px 30px 10px 30px;
+	border-radius: 20px;
+	font-size: 20px;
+	left: 780px;
+	top: 100px;
+	
+}
+.but1:hover{
+     color:white;
+}

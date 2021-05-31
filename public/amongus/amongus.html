@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Amongus game</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/amongus/style.css">
+	<script type="text/javascript" src="../../assets/js/amongus/index.js"></script>
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link href="../../assets/Images/amongus/logo.png" rel="icon">
+
+
+</head>
+<body  id="b" onkeydown='getKeyAndMove(event)'>
+	<button style="background-color: black; color: white; width: 100px; height:100px;font-size: 100px; border-color: black;" onclick="backmini()"><i class='bx bx-arrow-back'></i></button>
+	
+	<div id="bac">
+		<div id="table"></div>
+		<div id="table2"></div>
+		<div id="table3"></div>
+		<div id="table4"></div>
+		<div id="table5"></div>
+		
+	</div>
+
+	<div id="img">
+	<div id="nameme">U</div>
+	 <div class="hand"></div>
+	 <div id="body"></div>
+	 <div id="lleg"></div>
+	 <div id="rleg"></div>
+	 <div class="eye"></div>
+	 <div class="line"></div>
+	</div>
+	<img id="emb" src="../../assets/Images/amongus/emb.png">
+
+	<img onclick="goKill()" id="kill" src="../../assets/Images/amongus/kill.png">
+	
+	<div id="img1">
+	 <div id="name1">Bot</div>
+	 <div class="hand1"></div>
+	 <div id="body1"></div>
+	 <div id="lleg1"></div>
+	 <div id="rleg1"></div>
+	 <div class="eye1"></div>
+	 <div class="line1"></div>
+	</div>
+
+	<div id="deadimg"></div>
+
+    <div id="navcircle"></div>
+	<button id="upar" onclick="moveUp()"><i style="font-size: 50px;" class='bx bxs-chevrons-up' ></i></button>
+	<button id="dowar" onclick="moveDown()"><i style="font-size: 50px;" class='bx bxs-chevrons-down' ></i></button>
+	<button id="lefar" onclick="moveLeft()"><i  style="font-size: 50px;" class='bx bxs-chevrons-left' ></i></button>
+	<button id="rigar" onclick="moveRight()"><i style="font-size: 50px;" class='bx bxs-chevrons-right' ></i></button>
+	<img onclick="gosabo()" id="sab" src="../../assets/Images/amongus/sabotage.png">
+	<div id="saboo"></div>
+
+	<div id="score">Score:0</div>
+	<div id="no"></div>
+
+
+
+
+</body>
+</html>

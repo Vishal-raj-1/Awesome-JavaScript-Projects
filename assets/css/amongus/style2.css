@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+	background-color: black;
+}
+
+#mainlo{
+	
+	height: 150px;
+	width: 270px;
+    margin-top: 200px;
+	
+	
+}
+
+#mainlo1{
+	
+	height: 150px;
+	width: 270px;
+	
+}
+
+
+#bumain{
+	background-color: white;
+	height: 70px;
+	width: 280px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	border-radius: 50px;
+	
+}
+
+#bumain:hover{
+	background-color: #d6d6d6;
+}
