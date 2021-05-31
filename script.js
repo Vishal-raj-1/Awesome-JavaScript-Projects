@@ -211,7 +211,7 @@ let projectData = [
   },
   {
     projectName: "FORM VALIDATE",
-    projectImage: "assets/Images/formvalidate.png",
+    projectImage: "assets/Images/formValidate.png",
     projectUrl: "public/formvalidate.html"
   },
   {
