@@ -125,6 +125,9 @@ let projectData = [
   {
     projectName: "RESTAURANT WEBSITE",
     projectImage: "assets/GIFs/Restaurant.gif",
+
+    projectUrl: "public/Restaurant.html",
+
     projectUrl: "public/Restaurant.html"
   },
   {
@@ -188,6 +191,7 @@ let projectData = [
     projectName: "Fortune Teller",
     projectImage: "assets/GIFs/fortune.gif",
     projectUrl: "public/fortune.html"
+
   },
   {
     projectName: "ECOMMERCE WEBSITE",
@@ -515,6 +519,14 @@ let projectData = [
     projectUrl: "public/counter.html"
   },
   {
+
+    projectName: 'Counter',
+    projectImage: 'assets/GIFs/counter.gif',
+    projectUrl: 'public/counter.html'
+  }
+  ,
+  {
+
     projectName: "Local Storage",
     projectImage: "assets/Images/localstorage.png",
     projectUrl: "public/localstorage.html"
@@ -811,10 +823,19 @@ let projectData = [
     projectUrl: "public/UserListFilter.html"
   },
   {
+
+    projectName: 'Particle JS Project',
+    projectImage: 'assets/GIFs/Particle.gif',
+    projectUrl: 'public/Particle.html'
+  }
+  ,
+
+
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html"
   },
+
   {
     projectName: "Flip Cards",
     projectImage: "assets/GIFs/flipped.gif",
@@ -1065,10 +1086,24 @@ let projectData = [
     projectUrl: "public/photoDetails.html"
   },
   {
+
+    projectName: 'Ludo Game',
+    projectImage: 'assets/Images/ludo/ludo.png',
+    projectUrl: 'public/ludo.html'
+  }
+  ,
+  {
+    projectName: 'AwesomeSnakeGame',
+    projectImage: 'assets/GIFs/AwesomeSnakeGame.gif',
+    projectUrl: 'public/AwesomeSnakeGame.html'
+  }
+  ,
+
     projectName: "Guess the song",
     projectImage: "assets/Images/guess_song/view.png",
     projectUrl: "public/guess_song.html"
   },
+
   {
     projectName: "Document to Handwritting",
     projectImage: "assets/Images/page.jpg",
@@ -1868,6 +1903,7 @@ let projectData = [
     projectImage: "assets/GIFs/canvasText.gif",
     projectUrl: "public/canvasText.html"
   },
+
   {
     projectName: "Bridge N Torch",
     projectImage: "assets/Images/bridgeNtorch.png",
@@ -1894,10 +1930,18 @@ let projectData = [
     projectUrl: "public/domNode.html"
   },
   {
+
+    projectName: 'Guess The Number',
+    projectImage: 'assets/Images/guess.png',
+    projectUrl: 'public/guess.html'
+  }
+  ,
+
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
   },
+
   {
     projectName: "Stripe Dropdown",
     projectImage: "assets/GIFs/stripeDropdown.gif",
@@ -1913,7 +1957,6 @@ let projectData = [
     projectImage: "assets/Images/pokemon.png",
     projectUrl: "public/pokemon.html"
   },
-
   {
     projectName: "Pubg Drop",
     projectImage: "assets/GIFs/pubgdrop.gif",
@@ -1930,6 +1973,19 @@ let projectData = [
     projectUrl: "public/hover_images.html"
   },
   {
+
+    projectName: 'Selection Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/selection-visualizing.png',
+    projectUrl: 'public/selectionsort.html'
+  }
+  ,
+  {
+    projectName: 'Purple Rain',
+    projectImage: 'assets/Images/purpleRain.gif',
+    projectUrl: 'public/purpleRain.html'
+  }
+  ,
+
     projectName: "Preloader Projects",
     projectImage: "assets/Images/preloader.png",
     projectUrl: "public/preloader.html"
@@ -1939,6 +1995,7 @@ let projectData = [
     projectImage: "assets/Images/gradient-background.png",
     projectUrl: "public/gradient-background.html"
   },
+
   {
     projectName: "Check Multiple Checkboxes",
     projectImage: "assets/GIFs/checkboxes.gif",
@@ -1950,6 +2007,45 @@ let projectData = [
     projectUrl: "public/foodCourt.html"
   },
   {
+
+    projectName: 'Prefix Expression Evaluator in JavaScript',
+    projectImage: 'assets/GIFs/prefix-evaluator.png',
+    projectUrl: 'public/prefixevaluator.html'
+  }
+  , {
+    projectName: 'Insertion Sort Visualizer in JavaScript',
+    projectImage: 'assets/GIFs/insertion-visualizer.png',
+    projectUrl: 'public/insertionsort.html'
+  }
+  ,
+  {
+    projectName: 'Postfix Expression Evaluator in JavaScript',
+    projectImage: 'assets/GIFs/postfix-evaluator.png',
+    projectUrl: 'public/postfixevaluator.html'
+  }
+  ,
+  {
+    projectName: 'Multiplation Table Calculator',
+    projectImage: 'assets/GIFs/multiplicationTableCalculator_ss.gif',
+    projectUrl: 'public/multiplicationTableCalculator.html'
+  }
+  ,
+  {
+    projectName: 'Dice it',
+    projectImage: 'assets/Images/dice_it.jfif',
+    projectUrl: 'public/diceit.html'
+  }
+  ,
+  {
+    projectName: 'Amongus Minigame',
+    projectImage: 'assets/GIFs/amongusminigame.gif',
+    projectUrl: 'public/Amongusminigame.html'
+  },
+  {
+    projectName: 'Math Trainer',
+    projectImage: 'assets/Images/math_trainer.png',
+    projectUrl: 'public/math_trainer.html'
+
     projectName: "Angry birds",
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
@@ -1969,6 +2065,7 @@ let projectData = [
     projectName: "Css transform",
     projectImage: "assets/images/css-transform.png",
     projectUrl: "public/css-transform.html"
+
   },
   { 
     projectName: "Hover Board",
@@ -1976,16 +2073,32 @@ let projectData = [
     projectUrl: "public/Checkers_game.html"
 
   },
+
+  {
+    projectName: "Timeline",
+    projectImage: "assets/GIFs/timeline.gif",
+    projectUrl: "public/timeline.html",
+  }
+  ,
+
   {
     projectName: "Covid Live Status",
     projectImage: "assets/images/covid-live.png",
     projectUrl: "public/covid_live.html"
   },
   {
+
+    projectName: "Random Name Generator",
+    projectImage: "assets/Images/random_name_generator.png",
+    projectUrl: "public/random_name_generator.html"
+  }
+  ,
+
     projectName: "3d Flip Card",
     projectImage: "assets/images/flip-card.png",
     projectUrl: "public/flip-card.html"
   },
+
   {
     projectName: "Contact form",
     projectImage: "assets/images/contact-form.png",
@@ -2043,16 +2156,6 @@ let projectData = [
     projectUrl: "public/image-search.html",
   },
   {
-    projectName: "Physics Calculator",
-    projectImage: "assets/images/phy_calc.png",
-    projectUrl: "public/phy_calc.html",
-  },
-  {
-    projectName: "Background Video header",
-    projectImage: "assets/images/background-header.png",
-    projectUrl: "public/background-header.html",
-  },
-  {
     projectName: "Sortable List",
     projectImage: "assets/images/sortable_list.png",
     projectUrl: "public/sortable_list.html",
@@ -2066,12 +2169,6 @@ let projectData = [
     projectName: "Netflix Nav",
     projectImage: "assets/images/netnav.png",
     projectUrl: "public/netnav.html",
-  },
-  {
-
-    projectName: "Random Choice Picker",
-    projectImage: "assets/images/random_choice_picker.png",
-    projectUrl: "public/random_choice_picker.html",
   },
   {
     projectName: "Among Us Mod",
@@ -2089,6 +2186,12 @@ let projectData = [
     projectUrl: "public/gradient-showcase.html",
 
   }
+
+  , {
+    projectName: 'Bucket Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/bucket-visualizing.png',
+    projectUrl: 'public/bucketsort.html'
+
 ,{
     projectName: "Meal Genrator",
     projectImage: "assets/images/meal-genrator.png",
@@ -2097,6 +2200,7 @@ let projectData = [
     projectName: "Train_Schedule Manager",
     projectImage: "assets/Images/train_schedule.png",
     projectUrl: "public/train_schedule.html",
+
   },
   {
     projectName: "Lyrics Search App",
@@ -2106,6 +2210,25 @@ let projectData = [
 
 
   {
+
+    projectName: 'Bubble Sort Visualizer in JavaScript',
+    projectImage: 'assets/Images/bubble-visualizing.png',
+    projectUrl: 'public/bubblevisualiser.html'
+  }
+  ,
+  {
+    projectName: 'Linear Search Visualization in JavaScript',
+    projectImage: 'assets/Images/linearsearch-visualizing.png',
+    projectUrl: 'public/linearsearch.html'
+
+  },
+  {
+    projectName: 'Captcha Validator',
+    projectImage: 'assets/Images/CaptchaValidator.png',
+    projectUrl: 'public/CaptchaValidator.html'
+  }
+]
+
     projectName: "Sortable List",
     projectImage: "assets/images/sortable_list.png",
     projectUrl: "public/sortable_list.html",
@@ -2125,8 +2248,8 @@ let projectData = [
   projectImage: "assets/images/background-header.png",
   projectUrl: "public/background-header.html",
 }
-
 ];
+
 
 
 var projectDetails = projectData.slice(0);
@@ -2167,10 +2290,15 @@ function getProjects() {
 
 // Search function starts
 let searchInput = document.getElementById('searchBar')
-let searchText='';
+let searchText = '';
+
+
+searchInput.addEventListener('change', (e) => {
+  searchText = e.target.value
 
 searchInput.addEventListener('change',(e) => {
   searchText= e.target.value
+
 })
 
 
@@ -2179,6 +2307,17 @@ searchInput.addEventListener("change", (e) => {
 });
 
 let searchForm = document.getElementById("searchForm");
+
+
+searchBtn.addEventListener('click', (e) => {
+  var filterData = []
+  if (searchText.length !== 0) {
+    projectData.forEach(obj => {
+      if (obj.projectName.toLowerCase().includes(searchText.toLowerCase())) {
+        filterData.push(obj);
+      }
+    })
+    console.log(filterData)
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -2190,6 +2329,7 @@ searchForm.addEventListener("submit", (e) => {
       }
     });
     console.log(filterData);
+
   } else {
     filterData = [...projectData];
     //console.log(filterData)
@@ -2213,7 +2353,12 @@ searchForm.addEventListener("submit", (e) => {
   `)
   );
   projectContainer.innerHTML = filter;
+
+
+})
+
 });
+
 
 // search function ends
 window.onscroll = function () {
