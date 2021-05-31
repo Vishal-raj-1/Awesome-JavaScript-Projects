@@ -1835,7 +1835,12 @@ let projectData = [
     projectName: "Netflix Nav",
     projectImage: "assets/images/netnav.png",
     projectUrl: "public/netnav.html",
-  }
+  },
+  {
+    projectName: "Random Choice Picker",
+    projectImage: "assets/images/random_choice_picker.png",
+    projectUrl: "public/random_choice_picker.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
