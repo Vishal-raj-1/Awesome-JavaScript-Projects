@@ -1830,6 +1830,11 @@ let projectData = [
     projectName: "3D Rotating Nav",
     projectImage: "assets/images/rota.png",
     projectUrl: "public/rotating_nav_anim.html",
+  },
+  {
+    projectName: "Netflix Nav",
+    projectImage: "assets/images/netnav.png",
+    projectUrl: "public/netnav.html",
   }
 ];
 
