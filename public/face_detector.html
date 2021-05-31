@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Face Detector</title>
+
+
+</head>
+<link rel="stylesheet" href="../assets/css/face_detector.css">
+
+<body>
+
+
+    <h1>Face Detector&nbsp;&nbsp;&nbsp;<span><i class="fa fa-camera" style="font-size:50px;color:white;"></i></span>
+    </h1>
+    <button id="btn">Open Webcam</button>
+    <video id="video" autoplay></video>
+    <canvas id="canvas" width="600px" height="400px"></canvas>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+    <script defer src="../assets/js/face_detector.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="../assets/css/notifications.css">
+</head>
+
+<body>
+
+    <div class="notification">
+
+        <svg class="notification__bell" viewBox="0 0 79 79" width="79" height="79">
+            <g stroke="currentColor" stroke-width="4">
+                <g transform="translate(2 2)">
+
+                    <g transform="translate(37.5 0)">
+                        <circle cx="0" cy="8" r="8">
+                        </circle>
+
+                        <circle class="bell__clapper" cx="0" cy="63" r="12">
+                        </circle>
+
+                        <path class="bell__body" stroke-linejoin="round"
+                            d="M 0 8 a 25 25 0 0 1 25 25 v 17 l 5 6 q 3 7 -6 7 h -48 q -9 0 -6 -7 l 5 -6 v -17 a 25 25 0 0 1 25 -25">
+                        </path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+
+        <div class="notification__message message--info">
+            <h1>Info</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+            <button aria-labelledby="button-dismiss">
+                <span id="button-dismiss" hidden>Dismiss</span>
+                <svg viewBox="0 0 100 100" width="10" height="10">
+                    <g stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+                        fill="none">
+                        <g transform="translate(50 50) rotate(45)">
+                            <path d="M 0 -30 v 60 z M -30 0 h 60">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="../assets/js/Notifications.js"></script>
+</body>
+
+</html>
