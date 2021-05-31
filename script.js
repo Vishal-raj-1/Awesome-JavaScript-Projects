@@ -50,6 +50,9 @@ let projectData = [
     projectUrl: "public/pixelated.html",
   },
   {
+
+    
+
     projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html"
@@ -75,7 +78,7 @@ let projectData = [
     projectUrl: "public/3DGltf.html"
   },
   {
-    projectName:"Interactive Flashlight",
+    projectName: "Interactive Flashlight",
     projectImage: "assets/Images/flashlight.png",
     projectUrl: "public/flashlight.html"
   },
@@ -165,6 +168,18 @@ let projectData = [
     projectUrl: "public/progress.html"
   },
   {
+
+    projectName: "Smart Temperature Slider",
+    projectImage: "assets/GIFs/temp_slider.gif",
+    projectUrl: "public/temp_slider.html",
+  },
+  {
+    projectName: "Credit Card Payment Form",
+    projectImage: "assets/GIFs/credit_card.png",
+    projectUrl: "public/credit_card.html",
+  },
+  {
+
     projectName: "Work Time Tracker",
     projectImage: "assets/GIFs/timetracker.gif",
     projectUrl: "public/timetracker.html"
@@ -635,6 +650,11 @@ let projectData = [
   }
   ,
   {
+    projectName: "Line Through Effect",
+    projectImage: "assets/Images/line-through.png",
+    projectUrl: "public/line_through.html"
+  },
+  {
     projectName: "Password Generator",
     projectImage: "assets/GIFs/passwordGenerator.gif",
     projectUrl: "public/passwordGenerator.html"
@@ -683,7 +703,13 @@ let projectData = [
     projectName: 'Tip Calculator',
     projectImage: 'assets/Images/tip-calc.png',
     projectUrl: 'public/tip-calculator.html'
+
+  }
+
+  ,
+
   },
+
   {
     projectName: "DragNDrop",
     projectImage: "assets/GIFs/DragNDrop.gif",
@@ -1565,6 +1591,31 @@ let projectData = [
     projectName: 'Linear Search Visualization in JavaScript',
     projectImage: 'assets/Images/linearsearch-visualizing.png',
     projectUrl: 'public/linearsearch.html'
+
+  },
+  {
+    projectName: 'Captcha Validator',
+    projectImage: 'assets/Images/CaptchaValidator.png',
+    projectUrl: 'public/CaptchaValidator.html'
+  },
+  {
+    projectName: '3D Image Gallery',
+    projectImage: 'assets/Images/3DImageGallery.PNG',
+    projectUrl: 'public/3DImageGallery.html'
+
+  }
+  ,
+  {
+    projectName: 'Button Generator',
+    projectImage: 'assets/Images/button.PNG ',
+    projectUrl: 'public/ButtonGenerator.html'
+
+  },
+  {
+    projectName: 'Battery Indicator',
+    projectImage: 'assets/Images/BatteryIndicator.PNG',
+    projectUrl: 'public/BatteryIndicator.html'
+
    } ,
 
    {
@@ -1586,6 +1637,7 @@ let projectData = [
     projectName: "Button Generator",
     projectImage: "assets/Images/button.PNG ",
     projectUrl: "public/ButtonGenerator.html"
+
   },
   {
     projectName: "Battery Indicator",
