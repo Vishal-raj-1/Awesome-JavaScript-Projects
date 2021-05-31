@@ -8,30 +8,31 @@
 	</head>
 
 	<body>
-		<h1>URL SHORTENER</h1>
+			<h1>URL SHORTENER</h1>
 
-		<form id="form-user">
-			<label for="input-longurl">Long URL :</label>
-			<input
-				type="text"
-				id="input-longurl"
-				autofocus
-				required
-				placeholder="Long URL"
-				tabindex="1"
-                spellcheck="false"
-			/>
+			<form id="form-user">
+				<label for="input-longurl">Long URL :</label>
+				<input
+					type="text"
+					id="input-longurl"
+					autofocus
+					required
+					placeholder="Long URL"
+					tabindex="1"
+					spellcheck="false"
+				/>
 
-			<button type="submit">Send <span></span></button>
-		</form>
+				<button type="submit">Send <span></span></button>
+				</form>
 
-		<div id="result">
-			<p></p>
-			<a target="_blank"></a>
-		</div>
-		<div id="error">
-			<p></p>
-		</div>
+				<div id="result">
+					<p></p>
+					<a target="_blank"></a>
+				</div>
+				<div id="error">
+					<p></p>
+			    </div>
+		    </div>
 
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script src="../assets/js/url.js"></script>
