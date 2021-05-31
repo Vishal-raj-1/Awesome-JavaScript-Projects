@@ -1732,6 +1732,12 @@ let projectData = [
   },
 
   {
+    projectName: "Hand Cricket",
+    projectImage: "assets/GIFs/handcricket.gif",
+    projectUrl: "public/handcricket.html",
+},
+
+  {
     projectName: "Landing-Page-Using JavaScript",
     projectImage: "assets/Images/Landing-page.jpg",
     projectUrl: "public/Landing_Page.html",
@@ -1745,6 +1751,7 @@ let projectData = [
     projectName: "Gray Scale Cursor",
     projectImage: "assets/Images/grayCursor.png",
     projectUrl: "public/grayCursor.html"
+
   },
   {
     projectName: "Dynamic Time message",
