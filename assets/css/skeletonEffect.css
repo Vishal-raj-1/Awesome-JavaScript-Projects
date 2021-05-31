@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #f5faff;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  max-width: 350px;
+  width: 350px;
+  margin: 20px;
+  border-radius: 2px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card-image {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  visibility: hidden;
+  border-top-left-radius: 15px;
+}
+
+.card-title span {
+  visibility: hidden;
+}
+
+.card-description span {
+  visibility: hidden;
+}
+
+.card-info {
+  position: relative;
+  color: #222;
+  padding: 20px;
+}
+
+.card-info h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.card-info .card-mediaIcons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info .card-mediaIcons a {
+  color: #999;
+  font-size: 1.4em;
+  margin: 0 10px;
+  background: #eee;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: color 0.3s ease;
+}
+
+.card-mediaIcons a i {
+  visibility: hidden;
+}
+
+.card-info .card-mediaIcons a:hover {
+  color: #222;
+}
+
+.loading {
+  position: relative;
+  background: #e2e2e2;
+  overflow: hidden;
+}
+
+.loading::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+  }
+}

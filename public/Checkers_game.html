@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='ngCheckers'>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/ngCheckers.css">
+  </head> 
+
+  <body ng-controller="checkersCtrl">
+
+    <div id="gameContainer">
+      <div>
+          <div class="row" ng-repeat="row in board">
+              <div class="square" ng-style="setClass(square)" ng-repeat="square in row track by $index" ng-click="select(square)">
+                <div ng-style="setStyling(square)" class="circle">
+                  <span>{{square.isKing ? 'K' : ''}}</span>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div>Player Turn : {{player}}</div>
+    <div>Red Score : {{redScore}}</div>
+    <div>Black Score : {{blackScore}}</div>
+
+    <script src="../assets/js/Checkers_js/angular.min.js"></script>
+    <script src="../assets/js/Checkers_js/ngCheckers.js"></script> 
+  </body>
+
+</html>
