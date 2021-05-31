@@ -1769,15 +1769,22 @@ let projectData = [
    },
   {
     projectName: "Hover Board",
-    projectImage: "assets/images/hover-board.png",
+    projectImage: "assets/Images/hover-board.png",
     projectUrl: "public/hover_board.html"
+
+  },
+  {
+    projectName: "Hover Board",
+    projectImage: "assets/Images/Checkers.png",
+    projectUrl: "public/Checkers_game.html"
 
   },
   {
     projectName: "Covid Live Status",
     projectImage: "assets/images/covid-live.png",
     projectUrl: "public/covid_live.html"
-  },{
+  },
+  {
     projectName: "3d Flip Card",
     projectImage: "assets/images/flip-card.png",
     projectUrl: "public/flip-card.html"
