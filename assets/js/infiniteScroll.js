@@ -1,101 +1,80 @@
-// Get elements for changing
-const imageContainer = getElement("image-container");
-const loader = getElement("loader");
+const postsContainer = document.getElementById('posts-container');
+const loading = document.querySelector('.loader');
+const filter = document.getElementById('filter');
 
-let ready = false;
-let imagesLoaded = 0;
-let totalImages = 0;
+let limit = 5;
+let page = 1;
 
-// Array on images
-let photosArray = [];
+// Fetch posts from API
+async function getPosts() {
+  const res = await fetch(
+    `https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`
+  );
 
-// Unsplash API
-let imageCount = 5;
-//Replace below api key with your api key.(the key below is for demo purpose it doesn't work)
-const apiKey = "YQm143tVS6oQ_KwFG5G6OdmeBVs0PX1PK3sqc2eftMc";
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${imageCount}`;
+  const data = await res.json();
 
-// Check if all images were loaded
-function imageLoaded() {
-  imagesLoaded++;
-  if (imagesLoaded === totalImages) {
-    ready = true;
-    loader.hidden = true;
-    increaseImagesToLoadCount();
-  }
+  return data;
 }
 
-function increaseImagesToLoadCount() {
-  imageCount = 30;
-  apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${imageCount}`;
-}
+// Show posts in DOM
+async function showPosts() {
+  const posts = await getPosts();
 
-// Create Elements for links and photos, and add to DOM
-function displayPhotos() {
-  imagesLoaded = 0;
-  //Set the amount of photos
-  totalImages = photosArray.length;
+  posts.forEach(post => {
+    const postEl = document.createElement('div');
+    postEl.classList.add('post');
+    postEl.innerHTML = `
+      <div class="number">${post.id}</div>
+      <div class="post-info">
+        <h2 class="post-title">${post.title}</h2>
+        <p class="post-body">${post.body}</p>
+      </div>
+    `;
 
-  // Run function for each object in photosArray
-  photosArray.forEach((photo) => {
-    // Create <a> to link to unsplash
-    const item = document.createElement("a");
-    setAttributes(item, {
-      href: photo.links.html,
-      target: "_blank",
-    });
-
-    // Create <img> for photo
-    const img = document.createElement("img");
-    setAttributes(img, {
-      src: photo.urls.regular,
-      alt: photo.alt_description,
-      title: photo.alt_description,
-    });
-
-    // Event Listner to check when each photo has finished loading
-    img.addEventListener("load", imageLoaded);
-
-    // Put <img> inside <a>, then both inside image container
-    item.appendChild(img);
-    imageContainer.appendChild(item);
+    postsContainer.appendChild(postEl);
   });
 }
 
-// Get Photos from Unsplash API
-async function getPhotos() {
-  try {
-    const response = await fetch(apiUrl);
-    photosArray = await response.json();
-    console.log(photosArray);
-    displayPhotos();
-  } catch (error) {
-    // Catch Error Here
-  }
+// Show loader & fetch more posts
+function showLoading() {
+  loading.classList.add('show');
+
+  setTimeout(() => {
+    loading.classList.remove('show');
+
+    setTimeout(() => {
+      page++;
+      showPosts();
+    }, 300);
+  }, 1000);
 }
 
-// Helper Function to quickly assign elements with IDs to constants
-function getElement(elemID) {
-  return document.getElementById(elemID);
+// Filter posts by input
+function filterPosts(e) {
+  const term = e.target.value.toUpperCase();
+  const posts = document.querySelectorAll('.post');
+
+  posts.forEach(post => {
+    const title = post.querySelector('.post-title').innerText.toUpperCase();
+    const body = post.querySelector('.post-body').innerText.toUpperCase();
+
+    if (title.indexOf(term) > -1 || body.indexOf(term) > -1) {
+      post.style.display = 'flex';
+    } else {
+      post.style.display = 'none';
+    }
+  });
 }
 
-// Helper function to set attributes on DOM elements
-function setAttributes(element, attributes) {
-  for (const key in attributes) {
-    element.setAttribute(key, attributes[key]);
-  }
-}
+// Show initial posts
+showPosts();
 
-// Check to see if scrolling near the bottom of the page, if so, load more
-window.addEventListener("scroll", () => {
-  if (
-    window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 &&
-    ready
-  ) {
-    ready = false;
-    getPhotos();
+window.addEventListener('scroll', () => {
+  const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+
+  if (scrollTop + clientHeight >= scrollHeight - 5) {
+    showLoading();
   }
 });
 
-// On Load
-getPhotos();
+filter.addEventListener('input', filterPosts);
