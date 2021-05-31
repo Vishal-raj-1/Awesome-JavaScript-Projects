@@ -2068,6 +2068,12 @@ let projectData = [
     projectUrl: "public/netnav.html",
   },
   {
+
+    projectName: "Random Choice Picker",
+    projectImage: "assets/images/random_choice_picker.png",
+    projectUrl: "public/random_choice_picker.html",
+  },
+  {
     projectName: "Among Us Mod",
     projectImage: "assets/GIFs/among.gif",
     projectUrl: "public/amongus/index.html",
@@ -2119,6 +2125,7 @@ let projectData = [
   projectImage: "assets/images/background-header.png",
   projectUrl: "public/background-header.html",
 }
+
 ];
 
 
