@@ -406,10 +406,18 @@ let projectData = [
     projectUrl: "public/pinpad.html"
   },
   {
-    projectName: "Music Player",
-    projectImage: "assets/GIFs/Music_Player.gif",
-    projectUrl: "public/MusicPlayer.html"
-  },
+    projectName: 'Random Maze Generator',
+    projectImage: 'assets/GIFs/Mazegenerator.gif',
+    projectUrl: 'public/mazeGenerator.html'
+  }
+  ,
+  {
+    projectName: 'Music Player',
+    projectImage: 'assets/GIFs/Music_Player.gif',
+    projectUrl: 'public/MusicPlayer.html'
+  }
+  ,
+
   {
     projectName: "Drag Drop To-Do List",
     projectImage: "assets/GIFs/DragToDo.gif",
