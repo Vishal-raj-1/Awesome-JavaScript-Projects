@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Home Page</title>
+
+    <style>
+        body {
+            background: #2ecc71;
+            font-size: 62.5%;
+        }
+
+        .container {
+            padding: 2em;
+            margin-top: 4rem;
+        }
+
+
+
+        /* GENERAL BUTTON STYLING */
+        button,
+        button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        button {
+            background: none;
+            border: 3px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em 6em;
+            position: relative;
+            text-transform: uppercase;
+        }
+    
+
+        button::before,
+        button::after {
+            background: #fff;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+
+        button:hover>a {
+            color: #2ecc71;
+        }
+
+        button a{
+            text-decoration: none;
+        }
+
+        /* BUTTON 1 */
+        .btn-1::after {
+            height: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn-1:hover:after {
+            height: 100%;
+        }
+
+        /* BUTTON 2 */
+        .btn-2::after {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 0;
+        }
+
+        .btn-2:hover:after {
+            width: 100%;
+        }
+
+        /* BUTTON 3 */
+        .btn-3::after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+
+        .btn-3:hover:after {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+       
+      
+        <button class="btn-1"><a href="../assets/js/Train_code/Running_Status.html" target="_blank">Train Details</a></button>
+        <button class="btn-2"><a href="../assets/js/Train_code/Train_Details.html" target="_blank">Running Details </a> </button>
+        <button class="btn-3"> <a href="../assets/js/Train_code/station.html" target="_blank">station code</a> </button>
+        
+        
+    </div>
+
+
+</body>
+
+</html>
