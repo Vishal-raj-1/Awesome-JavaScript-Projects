@@ -8,11 +8,35 @@
 
 html {
 	font: normal 20px/1.5 sans-serif;
+	color: #fff;
 }
+
+body{
+	background-image: url("../Images/url.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+}
+a:link {
+	color: white;
+	background-color: transparent;
+  }
+  a:visited {
+	color: rgb(213, 213, 213);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: rgb(255, 255, 255);
+	font-size:larger;
+	background-color: transparent;
+  }
+  
 
 h1 {
 	margin: 2rem auto;
-	background: linear-gradient(to right, rgb(204, 46, 46), rgb(166, 94, 193));
 	text-align: center;
 	color: #fff;
 	padding: 10px;
@@ -39,12 +63,11 @@ h1 {
 
 button {
 	font-size: 1rem;
-	border: 2px solid rgb(211, 42, 42);
-	border-radius: 40rem;
+	border: 1px solid rgb(255, 255, 255);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	padding: 0.5rem 2rem;
-	margin-top: 1rem;
-	background-color: rgb(211, 42, 42);
+	padding: 0.6rem 4rem;
+	margin-top: 2rem;
+	background-color: rgba(16, 29, 72, 0.405);
 	transition-duration: 0.4s;
 	color: white;
 	outline-style: none;
@@ -56,15 +79,16 @@ button {
 }
 
 button:hover {
-	border: 2px solid rgb(211, 42, 42);
-	border-radius: 40rem;
-	background-color: white;
-	color: rgb(211, 42, 42);
+	border: 1px solid rgb(255, 255, 255);
+	box-shadow: 0 8px 16px 0 rgba(124, 124, 124, 0.2), 0 6px 20px 0 rgba(124, 124, 124, 0.19);
+	background-color: rgba(16, 29, 72, 0.391);
+	color: rgb(255, 255, 255);
 }
 
 #result,
 #error {
 	display: flex;
+	color: #fff;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -72,7 +96,7 @@ button:hover {
 }
 
 #error {
-	color: red;
+	color: rgb(255, 255, 255);
 }
 
 .loader {
@@ -89,8 +113,8 @@ button:hover {
 }
 
 button:hover .loader {
-	border-top-color: rgb(211, 42, 42);
-	border-bottom-color: rgb(211, 42, 42);
+	border-top-color: rgba(255, 255, 255, 0.891);
+	border-bottom-color: rgba(255, 255, 255, 0.953);
 }
 
 @keyframes rotate {

@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+</head>
+
+<body>
+    <div id="navbarContainer">
+        <div id="navbar">
+            <div id="bubbleWrapper">
+                <div id="bubble1" class="bubble"><span class="icon"><i class="fas fa-home"></i></span></div>
+                <div id="bubble2" class="bubble"><span class="icon"><i class="fab fa-twitter"></i></span></div>
+                <div id="bubble3" class="bubble"><span class="icon"><i class="fas fa-bell"></i></span></div>
+                <div id="bubble4" class="bubble"><span class="icon"><i class="fas fa-user"></i></span></div>
+            </div>
+            <div id="menuWrapper">
+                <div id="menu1" class="menuElement" onclick="move('1', '50px', '#ffcc80')"><i class="fas fa-home"></i>
+                </div>
+                <div id="menu2" class="menuElement" onclick="move('2', '150px', '#81d4fa')"><i
+                        class="fab fa-twitter"></i></div>
+                <div id="menu3" class="menuElement" onclick="move('3', '250px', '#c5e1a5')"><i class="fas fa-bell"></i>
+                </div>
+                <div id="menu4" class="menuElement" onclick="move('4', '350px', '#ce93d8')"><i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <div id="bgWrapper">
+            <div id="bg"></div>
+            <div id="bgBubble"></div>
+        </div>
+    </div>
+
+    <svg width="0" height="0">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" id="blurFilter" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15"
+                    result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script src="../assets/js/Navigation.js"></script>
+</body>
+
+</html>
