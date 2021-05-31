@@ -1,0 +1,150 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fefefe;
+    color: #373737;
+    margin: 0;
+    padding: 0;
+    background: #543093;
+    background: linear-gradient(45deg, #543093 32%, #d960ae 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( 			startColorstr="#543093", 			endColorstr="#d960ae", 			GradientType=1 		);
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: "Cabin", Arial, sans-serif;
+  }
+  
+  .container {
+    width: 600px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    background: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 30px;
+    box-shadow: 5px 10px 40px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .inner-container {
+    width: 100%;
+  }
+  
+  svg {
+    max-width: 90%;
+    position: relative;
+    left: 5%;
+    margin: 0 auto;
+  }
+  
+  .bottom {
+    text-align: center;
+    margin-top: 0em;
+    max-width: 70%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .bottom h2 {
+    font-family: "Rokkitt", sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto 0.25em;
+  }
+  .bottom p {
+    color: #777;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0 auto 2em;
+  }
+  
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .buttons button {
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #d960ae;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    transition: all 0.25s ease-in-out;
+  }
+  .buttons button:hover {
+    background-color: #cf3799;
+  }
+  .buttons button#cancel {
+    margin-right: 0;
+    color: #333;
+    background-color: #eddfeb;
+  }
+  .buttons button#cancel:hover {
+    background-color: #dbbed7;
+  }
+  .buttons button#go-back {
+    display: none;
+  }
+  .buttons button:focus {
+    border: none;
+    outline: 0;
+  }
+  
+  #blob-3,
+  #blob-2,
+  #mouth-happy,
+  #mouth-sad,
+  #eyebrow-happy-left,
+  #eyebrow-happy-right,
+  #eyes-laughing,
+  #open-mouth,
+  #tongue,
+  #mouth-scared {
+    display: none;
+  }
+  
+  @media (max-width: 699px) {
+    .container {
+      width: 90%;
+    }
+  
+    .bottom {
+      margin-top: 1em;
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 399px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .bottom h2 {
+      font-size: 24px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+    .buttons button {
+      margin-right: 0;
+    }
+  
+    svg {
+      padding-top: 0;
+    }
+  }
