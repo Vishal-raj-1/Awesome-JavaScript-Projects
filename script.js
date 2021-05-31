@@ -1966,6 +1966,16 @@ let projectData = [
     projectUrl: "public/image-search.html",
   },
   {
+    projectName: "Sortable List",
+    projectImage: "assets/images/sortable_list.png",
+    projectUrl: "public/sortable_list.html",
+  },
+  {
+    projectName: "3D Rotating Nav",
+    projectImage: "assets/images/rota.png",
+    projectUrl: "public/rotating_nav_anim.html",
+  },
+  {
     projectName: "Among Us Mod",
     projectImage: "assets/GIFs/among.gif",
     projectUrl: "public/amongus/index.html",
