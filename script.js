@@ -1314,8 +1314,8 @@ let projectData = [
   },
 
   {
-    projectName: "Infinite Scroll Image Gallery",
-    projectImage: "assets/Images/infiniteScroll.png",
+    projectName: "Infinite Scroll Blogs",
+    projectImage: "assets/Images/infiniteScrollBlog.png",
     projectUrl: "public/infiniteScroll.html"
   },
   {
