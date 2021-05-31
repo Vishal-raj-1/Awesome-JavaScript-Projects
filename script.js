@@ -1237,7 +1237,7 @@ let projectData = [
     projectUrl: "public/Code_Converter.html"
   },
   {
-    projectName: "AmoungUs Game Move",
+    projectName: "AmongUs Game Move",
     projectImage: "assets/GIFs/amongus.gif",
     projectUrl: "public/amongus.html"
   },
@@ -1954,6 +1954,11 @@ let projectData = [
     projectName: "Image Search",
     projectImage: "assets/images/image-search.png",
     projectUrl: "public/image-search.html",
+  },
+  {
+    projectName: "Among Us Mod",
+    projectImage: "assets/GIFs/among.gif",
+    projectUrl: "public/amongus/index.html",
   },
   {
     projectName: "Compound Interest Calculator",
