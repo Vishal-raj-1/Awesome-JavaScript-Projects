@@ -565,7 +565,7 @@ let projectData = [
   },
   {
     projectName: "Mortgage Loan Calculator",
-    projectImage: "assets/Images/mortgage_loan_calculator.png",
+    projectImage: "assets/Images/loan.png",
     projectUrl: "public/mortgage_loan_calculator.html"
   },
   {
