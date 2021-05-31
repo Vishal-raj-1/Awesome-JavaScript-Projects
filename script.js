@@ -1704,6 +1704,11 @@ let projectData = [
     projectUrl: "public/scriptDetection.html"
   },
   {
+    projectName: "Skeleton Loading Effect",
+    projectImage: "assets/GIFs/skeletonEffect.gif",
+    projectUrl: "public/skeletonEffect.html"
+  },
+  {
     projectName: "Text Extraction from Image",
     projectImage: "assets/Images/textExtraction.png",
     projectUrl: "public/textExtraction.html"
