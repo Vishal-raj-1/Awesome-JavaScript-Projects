@@ -1885,7 +1885,13 @@ let projectData = [
   projectName: "Background Video header",
   projectImage: "assets/images/background-header.png",
   projectUrl: "public/background-header.html",
+},
+{
+  projectName: "Video Search",
+  projectImage: "assets/images/video-search.png",
+  projectUrl: "public/video-search.html",
 }
+
 
 ];
 
