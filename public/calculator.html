@@ -1,67 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scientific-Calculator</title>
     <link rel="stylesheet" href="../assets/css/calculator.css">
-    <title>Calculator</title>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Calculator</h1>
-        <div class="calculator">
-
-            <input type="text"  id="screen" readonly>
-
-            <table>
-                <tr>
-                    <td><button id="(">(</button></td>
-                    <td><button id=")">)</button></td>
-                    <td><button id="Del">DEL</button></td>
-                    <td><button id="AC">AC</button></td>
-                </tr>
-                <tr>
-                    <td><button id="7">7</button></td>
-                    <td><button id="8">8</button></td>
-                    <td><button id="9">9</button></td>
-                    <td><button id="*">x</button></td>
-                </tr>
-                <tr>
-                    <td><button id="4">4</button></td>
-                    <td><button id="5">5</button></td>
-                    <td><button id="6">6</button></td>
-                    <td><button id="-">-</button></td>
-                </tr>
-                <tr>
-                    <td><button id="1">1</button></td>
-                    <td><button id="2">2</button></td>
-                    <td><button id="3">3</button></td>
-                    <td><button id="+">+</button></td>
-                </tr>
-                <tr>
-                    <td><button id="0">0</button></td>
-                    <td><button id="Dot">.</button></td>
-                    <td><button id="/">/</button></td>
-                    <td><button id="Equal">=</button></td>
-                </tr>
-            </table>
-        </div>
+    <div class="center">
+        <form name="forms" class="for">
+            <input name="display" id="display" type="text">
+            <div class="buttons">
+                <input type="button" value="9" onclick="designate('9')">
+                <input type="button" value="8" onclick="designate('8')">
+                <input type="button" value="7" onclick="designate('7')">
+                <input type="button" value="DEL" onclick="del()">
+                <input type="button" value="AC" onclick="ac()"><br>
+                <input type="button" value="6"   onclick="designate('6')">
+                <input type="button" value="5"   onclick="designate('5')">
+                <input type="button" value="4"   onclick="designate('4')">
+                <input type="button" value="-"   onclick="designate('-')">
+                <input type="button" value="+"   onclick="designate('+')"><br>
+                <input type="button" value="3"   onclick="designate('3')">
+                <input type="button" value="2"   onclick="designate('2')">
+                <input type="button" value="1"   onclick="designate('1')">
+                <input type="button" value="*"   onclick="designate('*')">
+                <input type="button" value="/"   onclick="designate('/')"><br>
+                <input type="button" value="0"   onclick="designate('0')">
+                <input type="button" value="."   onclick="designate('.')">
+                <input type="button" value="("   onclick="designate('(')">
+                <input type="button" value=")"   onclick="designate(')')">
+                <input type="button" value="&#8730;"   onclick="sqrt()"><br>
+                <input type="button" value="%"   onclick="per()">
+                <input type="button" value="x!"   onclick="fact()">
+                <input type="button" value="rad"   onclick="rad()">
+                <input type="button" value="x&#178;"   onclick="square()">
+                <input type="button" value="log"   onclick="logarithm()"><br>
+                <input type="button" value="ln"   onclick="lan()">
+                <input type="button" value="pi"   onclick="pi()">
+                <input type="button" value="sin"   onclick="sine()">
+                <input type="button" value="cos"   onclick="cos()">
+                <input type="button" value="tan"   onclick="tan()"><br>
+                <input type="button" value="0"   onclick="designate('0')">
+                <input type="button" value="="   onclick="equal()">
+            </div>
+        </form>
     </div>
-
+    <script src="../assets/js/calculator.js"></script>
 </body>
-<script src="../assets/js/calculator.js"></script>
-<script type="text/javascript" src="../assets/js/vanilla-tilt.js"></script>
-    <script type="text/javascript">
-	    VanillaTilt.init(document.querySelector(".calculator"),
-	     {
-		   max: 2,
-		   speed: 800,
-		    glare: true,
-		    "max-glare":0.2,
-	     });
-</script>
-
 </html>

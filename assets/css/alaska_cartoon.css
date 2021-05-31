@@ -1,0 +1,85 @@
+:root {
+    --buttons: #d65f5f;
+    --white-shadow-buttons: #ea9396;
+    --black-shadow-buttons: #a32227;
+  
+    --day-bg: #aad1f2;
+    --night-bg: #032746;
+  }
+  
+  body {
+    margin: 0;
+    background: white;
+  }
+  body.day {
+    animation: toDay 0.3s linear 1 forwards;
+  }
+  body.night {
+    animation: toNight 0.3s linear 1 forwards;
+  }
+  body.white {
+    animation: toWhite 0.3s linear 1 forwards;
+  }
+  svg {
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bg {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100vw);
+    height: calc(100vh);
+  }
+  
+  .panel-interaction {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  button.tamagochi {
+    border-radius: 50%;
+    border: 3px solid #000;
+    background-color: var(--buttons);
+    padding: 5px;
+    margin: 0 5px;
+    outline: none;
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+  
+    box-shadow: 2px 2px 1px var(--white-shadow-buttons) inset,
+      -3px -2px 2px var(--black-shadow-buttons) inset;
+  }
+  button.tamagochi:active {
+    box-shadow: 2px 2px 1px var(--black-shadow-buttons) inset,
+      -3px -2px 2px var(--white-shadow-buttons) inset;
+  }
+  
+  @keyframes toDay {
+    100% {
+      background-color: var(--day-bg);
+    }
+  }
+  
+  @keyframes toNight {
+    100% {
+      background-color: var(--night-bg);
+    }
+  }
+  @keyframes toWhite {
+    100% {
+      background-color: #fff;
+    }
+  }
+  

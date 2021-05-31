@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Details Displayer</title>
+  </head>
+  <script>
+  function display(element){
+    document.getElementById('image').innerHTML = element.alt;
+  }
+  function revert(){
+    document.getElementById('image').innerHTML = "Hover over a zodiac sign image to display details.";
+  }
+ </script>
+  <style>
+  #image{
+      width: 600px;
+      margin: auto;
+      margin-top: 7rem;
+      margin-bottom: 3rem;
+      height: 70px;
+      border: 3px solid #5B21B6;
+      border-radius:2rem;
+      background-color: #312E81;
+      background-repeat: no-repeat;
+      color:white;
+      background-size: 100%;
+      font-family: Didot;
+      font-size: 150%;
+      line-height: 60px;
+      text-align: center;
+  }
+  img{
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  }
+  </style>
+  <body style="background-color:#DBEAFE
+  ;">
+    <div style="text-align: center;">
+    <p id = "image">Hover over a sunsign image to display details.<p>
+    <img alt = "Sagittarius are beautiful, loyal and passionate." src = "../assets/Images/sagi.png" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "Pisces are dreamy, helpful and love everyone!" src = "../assets/Images/pisces.png" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "Scorpions are friends for life. They are trustworthy." src = "../assets/Images/scorpio.png" onmouseover = "display(this)" onmouseout = "revert()">
+    </div>
+  </body>
+</html>

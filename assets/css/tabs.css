@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: hsl(210, 36%, 96%);
+  color: hsl(209, 61%, 16%);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 1.25rem;
+}
+
+img {
+  display: block;
+}
+
+h4 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+}
+
+@media screen and (min-width: 800px) {
+  h4 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+.section {
+  padding: 5rem 0;
+  padding-top: 1rem;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-img {
+  margin-bottom: 2rem;
+}
+
+.about-img img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  height: 20rem;
+  filter: drop-shadow(1px 10px 10px black);
+}
+
+@media screen and (min-width: 992px) {
+  .about-img img {
+    margin-bottom: 0;
+    margin-top: 2.1rem;
+  }
+
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+}
+
+@media (max-width: 982px) {
+  .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-img img {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+
+.about {
+  background: #fff;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-auto-rows: auto 1fr;
+  box-shadow: 0px 2px 10px 0px black;
+}
+
+.btn-container {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-btn:nth-child(1) {
+  border-top-left-radius: 0.5rem;
+}
+
+.tab-btn:nth-child(3) {
+  border-top-right-radius: 0.5rem;
+}
+
+.tab-btn {
+  font-family: "Crimson Text", sans-serif;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  display: block;
+  background: hsl(212, 33%, 89%);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.tab-btn:hover:not(.active) {
+  background: hsl(205, 100%, 96%);
+  color: #49a6e9;
+}
+
+.about-content {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.content {
+  display: none;
+}
+
+.tab-btn.active {
+  background: #fff;
+}
+
+.content.active {
+  display: block;
+}

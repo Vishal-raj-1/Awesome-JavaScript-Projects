@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spock Lizard Rock Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: whitesmoke;
+  font-family: Lato, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: 530px;
+  height: 600px;
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.header {
+  background: dodgerblue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.player-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 40px;
+}
+
+#player .far,
+#player .choice {
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+#computer .far,
+#computer .choice {
+  color: rgb(235, 43, 52);
+}
+
+#player .far:last-of-type,
+#computer .far:last-of-type {
+  margin-right: 0;
+}
+
+.selected {
+  color: black !important;
+}
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 95%;
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .far {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    height: 550px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .far {
+    font-size: 43px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Rock Paper Scissors Lizard Spock</h1>
+        </div>
+        <!-- Player Container -->
+        <div class="player-container" id="player">
+            <h2>You - <span id="playerScore"></span><span class="choice" id="playerChoice"></span></h2>
+            <i class="far fa-hand-rock" title="Rock" id="playerRock" onclick="select('rock')"></i>
+            <i class="far fa-hand-paper" title="Paper" id="playerPaper" onclick="select('paper')"></i>
+            <i class="far fa-hand-scissors" title="Scissors" id="playerScissors" onclick="select('scissors')"></i>
+            <i class="far fa-hand-lizard" title="Lizard" id="playerLizard" onclick="select('lizard')"></i>
+            <i class="far fa-hand-spock" title="Spock" id="playerSpock" onclick="select('spock')"></i>
+        </div>
+        <!-- Computer Container -->
+        <div class="player-container" id="computer">
+            <h2>Computer - <span id="computerScore"></span><span class="choice" id="computerChoice"></span></h2>
+            <i class="far fa-hand-rock" title="Rock" id="computerRock"></i>
+            <i class="far fa-hand-paper" title="Paper" id="computerPaper"></i>
+            <i class="far fa-hand-scissors" title="Scissors" id="computerScissors"></i>
+            <i class="far fa-hand-lizard" title="Lizard" id="computerLizard"></i>
+            <i class="far fa-hand-spock" title="Spock" id="computerSpock"></i>
+        </div>
+        <!-- Reset Icon -->
+        <i class="fas fa-sync-alt reset-icon" title="Reset" onclick="resetAll()"></i>
+        <!-- Results Text -->
+        <div class="result-container">
+            <h3 class="result-text" id="resultText"></h3>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="../assets/js/spock-game-js/spock-script.js" type="module"></script>
+</body>
+</html>

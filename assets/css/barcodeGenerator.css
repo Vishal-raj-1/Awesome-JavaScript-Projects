@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container h2 {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+.container input {
+  border: none;
+  outline: none;
+  border-bottom: 4px solid #ff8616;
+  width: 80vw;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.container button {
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border: 2px solid #ff8616;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease-in;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.container button:hover {
+  background: #ff8616;
+  color: #fff;
+}
+
+#barcode text {
+  font-family: "Alegreya Sans", sans-serif !important;
+  font-weight: 600 !important;
+}

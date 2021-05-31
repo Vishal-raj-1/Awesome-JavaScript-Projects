@@ -1,0 +1,16 @@
+name: Add label to Merged PR
+
+on:
+  pull_request_target:
+    types: [closed]
+
+
+jobs:
+  if: github.event.pull_request.merged == true
+  automate-issues-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: initial labeling
+        uses: andymckay/labeler@master
+        with:
+          add-labels: 'GSSOC21'
