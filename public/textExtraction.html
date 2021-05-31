@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tesseract OCR </title>
+    <link rel="stylesheet" href="../assets/css/textExtraction.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Text extraction with Tesseract</h1>
+
+        <div class="fileSelectorBox">
+            <label for="fileSelector" class="custom-file-upload">Upload</label>
+            <input type="file" id="fileSelector" class="fileSelector" accept="image/*" />
+        </div>
+
+
+        <div class="result">
+            <img id="image" />
+            <p class="text"></p>
+        </div>
+
+        <div class="loadingio-spinner-spinner-xsjp6ht4b6g spinner">
+            <div class="ldio-egfjv6kjbis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+    <script src="../assets/js/TextExtraction.js"></script>
+</body>
+
+</html>

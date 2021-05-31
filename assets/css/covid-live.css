@@ -1,0 +1,57 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 2% 3%;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.45);
+  }
+  
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    color: #ff8474;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ff8474;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px, rgba(0, 0, 0, 0.1) 0px 8px 13px,
+      rgba(0, 0, 0, 0.1) 0px 18px 23px;
+    letter-spacing: normal;
+  }
+  body {
+    background-color: #008c8c;
+    background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");
+  }
+  img{
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px, rgba(0, 0, 0, 0.1) 0px 8px 13px,
+    rgba(0, 0, 0, 0.1) 0px 18px 23px;
+
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
