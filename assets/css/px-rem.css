@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #355773;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #194350;
+  }
+  
+  .heading{
+      margin-top: 5%;
+    text-align: center;
+    font-size: 300%;
+    color: white;
+  }
+  
+  hr{
+    border: none;
+    border-top: solid 1px #F1F4F7;
+    box-sizing: content-box;
+    width: 30%;
+    padding: 0 1.25rem;
+    margin: 1.25rem 0 1.25rem -1.25rem;
+    margin-left: 34%;
+  }
+  
+  .converter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    min-width: 30rem;
+    height: 15rem;
+    margin: auto;
+    padding: 0.625rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 6px;
+    border: 1px solid #E1E8EC;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  .row{
+    margin: 0.625rem 0;
+  }
+  
+  .row:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .row .w6,
+  .row .w12{
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 0 0.3125rem; 
+  }
+  
+  .row .w12{
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="number"]{
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: solid 1px #E1E8EC;
+    padding: 0.625rem 0.9375rem;
+  }
+  
+  input[type="text"][readonly]{
+    background-color: #F1F4F7;
+  }
+  
+  label{
+    position: absolute;
+    top: 0.0625rem;
+    left: 0.375rem;
+    width: 1.875rem;
+    height: 2.0625rem;
+    line-height: 2.0625rem;
+    text-align: center;
+    background: #F1F4F7;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.625rem;
+    border-right: solid 1px #E1E8EC;
+  }
+  
+  label + input[type="text"],
+  label + input[type="number"]{
+    padding-left: 2.5rem;
+  }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Calendar</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="../assets/Images/calendar_Logo.png">
+    
+    <!-- Bootstrap stylesheet and scripts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+    <!-- Fontawesom icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/calendar.css">
+</head>
+
+<body>
+
+    <div class="block go_to d-flex flex-column align-items-center text-center">
+
+        <!-- Input fields -->
+
+        <div class="data d-flex flex-column align-items-center">
+
+            <div class="form-row">
+
+                <!-- Date -->
+                <div class="col">
+                    <div class="input-group mb-3  input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Date</span>
+                        </div>
+                        <input type="number" class="form-control" min="1" max="31" id="date">
+                    </div>
+                </div>
+
+                <!-- Month -->
+                <div class="col">
+                    <div class="input-group mb-3  input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Month</span>
+                        </div>
+                        <select class="form-control" id="month">
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Year -->
+                <div class="col">
+                    <div class="input-group mb-3  input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Year</span>
+                        </div>
+                        <input type="number" class="form-control" min="1" value="2021" id="year">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="buttons d-flex flex-row">
+
+                <!-- goto button -->
+                <div class="col">
+                    <button class="btn btn-primary" onclick="go_to()">Goto</button>
+                </div>
+
+                <!-- today button -->
+                <div class="col">
+                    <button class="btn btn-primary" onclick="to_day()">Today</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- calendar display box -->
+        <div class="box card">
+            <!-- arrow icons -->
+            <i class="fas fa-chevron-left" id="prev"></i>
+            <i class="fas fa-chevron-right" id="next"></i>
+
+            <!-- calendar -->
+            <div id="cala" class=""></div>
+        </div>
+        
+    </div>
+
+    
+
+    <script src="../assets/js/calendar.js"></script>
+</body>
+
+</html>

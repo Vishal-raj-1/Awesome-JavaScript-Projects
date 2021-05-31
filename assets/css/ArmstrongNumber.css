@@ -1,0 +1,72 @@
+.inputdata {
+  text-align: center;
+  margin-top: 21vh;
+}
+.span1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: black;
+}
+.input1 {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  place-items: center;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 18px;
+  margin-top: 1rem;
+  background: rgb(226, 232, 235);
+  max-width: 350px;
+}
+.btn1 {
+	padding: 3px;
+	font-size: 1rem;
+	border-radius: 29%;
+  margin: 20px;
+  background: -webkit-linear-gradient(to right, #1fce85, #0f78f0d0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1fce85, #0f78f0d0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 6px 6px rgb(70, 59, 59);
+}
+button:hover {
+  background-color: #c694ff;
+}
+input:focus {
+  outline: none;
+}
+.output {
+  text-align: center;
+  font-size: 0.9rem;
+}
+body
+{
+	text-align: center;
+  margin-top: 100px;
+	height: 100%;
+	background-image: url("https://i.pinimg.com/originals/ea/1d/97/ea1d9797c9bf3dda7a23b238e5e4b364.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Akaya Telivigala', cursive;
+	background: #c2e59c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1fce85, #0f78f0d0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1fce85, #0f78f0d0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#div2
+		{
+			display:block;
+			padding: 50px;
+			background-color: white;
+			border-radius: 19px;
+			box-shadow: 10px 10px rgb(70, 59, 59);
+      width: 100%;
+      margin: auto;
+      max-width: 500px;
+		}
+ p{
+			margin:  2rem 1rem;
+		}
+.heading{
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}

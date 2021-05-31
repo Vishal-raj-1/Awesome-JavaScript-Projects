@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+.intro-text {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.text p {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.creation,
+.resultant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: 1rem;
+}
+
+.creation p,
+.resultant p {
+  border: 2px solid #8a8aff;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 15px;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.resultant p {
+  border-color: #ff8616;
+}
+
+input {
+  width: 50vw;
+  height: 50px;
+  border: 2px solid #5aeb5a;
+  border-radius: 5px;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  padding: 1rem;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pops,
+.pushs,
+.shifts,
+.unshifts {
+  border-radius: 1rem;
+  box-shadow: -1px 1px 7px 1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  background-color: white;
+  margin: 2rem 1rem 1.7rem 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+}
+
+.pops {
+  background-color: red;
+  border-color: red;
+}
+
+.pushs {
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.shifts {
+  background-color: MediumSpringGreen;
+  border-color: MediumSpringGreen;
+}
+
+.unshifts {
+  background-color: darkOrange;
+  border-color: darkOrange;
+}
+
+.pops:active,
+.pushs:active,
+.shifts:active,
+.unshifts:active {
+  transform: translateY(10px);
+}

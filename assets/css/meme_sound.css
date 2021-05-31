@@ -1,0 +1,103 @@
+html {
+  font-size: 9px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../Images/meme_sound.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.header {
+  /* background-color: #f1f1f1; */
+  font-size: 29px;
+  padding: 18px;
+  color: #4caf50;
+  text-align: center;
+}
+.but {
+  font-size: 10px;
+  background-color: #cf142b;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 20px;
+}
+
+/* .container { 
+    padding: 6px;
+    height: 2px;
+    position: relative;
+    border: none; 
+  }
+  
+  .center {
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  } */
+
+.keys {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.set {
+  margin: 2% auto;
+  width: 90vw;
+  text-align: center;
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 10rem;
+  height: 8rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
+button{
+  padding: 0%;
+  border: 3px;
+  border: 0.4rem solid black;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 10px;
+}

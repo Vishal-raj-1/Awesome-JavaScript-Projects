@@ -1,0 +1,92 @@
+body
+{
+    /* CORRECTED THE IMAGE PATH */
+    background-image: url(../Images/bg-infix.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.content
+{
+    max-width: 900px;
+    justify-content: center;
+}
+.navbar-brand mb-0 h1
+{
+    color: black;
+   
+}
+.navbar-light .navbar-brand
+{
+    color: white;
+}
+.navbar navbar-light bg-light
+{
+    width: 100%;
+    
+}
+.navbar
+{
+    padding: 0%;
+}
+.navbar-brand
+{
+    font-size: 1.8rem;
+}
+.navbar-light .navbar-brand:hover
+{
+    color: white;
+}
+.inputdata
+{
+   text-align: center;
+   margin-top:8vh;
+}
+.span1
+{
+    font-size: 2vw;
+    font-weight: 500;
+    color: black;
+}
+.input1
+{
+    width: 60%;
+    text-align: center;
+    height: auto;
+    place-items: center;
+    font-size: 1rem;
+    border: 2px solid rgb(233, 228, 228);
+    border-radius: 18px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background: rgb(235, 230, 230);
+    max-width: 600px;
+    min-width: 240px;
+}
+.btn1
+{
+    border: wheat;
+    background-color: #0e5beb;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 1.9rem;
+    margin-right: 0.8rem;
+    width: 26%;
+    height: auto;
+    max-width: 100px;
+    min-width: 79px;
+}
+button:hover
+{
+    background-color:#1585e0;
+}
+input:focus
+{
+    outline: none;
+}
+.output
+{
+    text-align: center;
+}

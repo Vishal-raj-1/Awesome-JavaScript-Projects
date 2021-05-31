@@ -1,0 +1,117 @@
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .thankyou {
+    display: none;
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .thankyou h1 {
+    font-size: 45px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #000;
+    margin-top: 1rem;
+    text-shadow: #000 4px 2px 2px;
+    -webkit-text-stroke: 3px #005a8d;
+    animation: rot 1s ease-in-out infinite alternate-reverse both;
+  }
+  .main-div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .mail-img {
+    border-radius: 50%;
+    margin-top: 5%;
+    width: 350px;
+    animation: rot 1s ease-in-out infinite alternate-reverse both;
+  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  .center-div {
+    width: 65vw;
+    height: 70vh;
+  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  .part1 {
+    background-color: #faf3f3;
+    width: 65vw;
+    height: 70vh;
+  }
+  .part2 {
+    background-color: #005a8d;
+    width: 65vw;
+    height: 70vh;
+  }
+  .heading {
+    font-size: 45px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #000;
+    margin-top: 1rem;
+    text-shadow: #000 4px 2px 2px;
+    -webkit-text-stroke: 3px #fff;
+  }
+  #contact {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 65%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 30px;
+    padding: 10px;
+    border-radius: 2rem;
+    border: 2px solid a7bbc7;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  #contact button[type="button"] {
+    cursor: pointer;
+    border: none;
+    background: #0cf;
+    color: #fff;
+    margin: 0 0 5px;
+    padding: 12px;
+    font-size: 23px;
+    border-radius: 1.5rem;
+  }
+  
+  #contact button[type="button"]:hover {
+    background: #09c;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .img {
+    width: 400px;
+    animation: rot 1s ease-in-out infinite alternate-reverse both;
+  }
+  @keyframes rot {
+    0% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+  

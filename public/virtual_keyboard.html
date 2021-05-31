@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/virtual_keyboard.css" />
+    <title>Javascript Keyboard</title>
+</head>
+<body>
+    <center><h1>Virtual Keyboard</h1></center>
+
+    <div class="display" id="display">Type Here</div>
+
+    <div class="keyboard">
+	    <table class="center">
+	        <tr>
+	        <!-- Numbers Start -->
+	        <td>
+	            <button id="btn1">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-1"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M13 20v-16l-5 5" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn2">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-2"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M8 8a4 4 0 1 1 8 0c0 1.098 -.564 2.025 -1.159 2.815l-6.841 9.185h8"
+	                />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn3">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-3"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M12 12a4 4 0 1 0 -4 -4" />
+	                <path d="M8 16a4 4 0 1 0 4 -4" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn4">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-4"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M15 20v-15l-8 11h10" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn5">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-5"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M8 20h4a4 4 0 1 0 0 -8h-4v-8h8" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn6">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-6"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M8 16a4 4 0 1 0 8 0v-1a4 4 0 1 0 -8 0" />
+	                <path d="M16 8a4 4 0 1 0 -8 0v8" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn7">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-7"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M8 4h8l-4 16" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn8">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-8"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <circle cx="12" cy="8" r="4" />
+	                <circle cx="12" cy="16" r="4" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn9">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-9"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M16 8a4 4 0 1 0 -8 0v1a4 4 0 1 0 8 0" />
+	                <path d="M8 16a4 4 0 1 0 8 0v-8" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btn0">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-0"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M16 16v-8" />
+	                <path
+	                d="M12 20a4 4 0 0 0 4 -4v-8a4 4 0 1 0 -8 0v8a4 4 0 0 0 4 4z"
+	                />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnClear">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-square-x"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="#000000"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <rect x="4" y="4" width="16" height="16" rx="2" />
+	                <path d="M10 10l4 4m0 -4l-4 4" />
+	            </svg>
+	            </button>
+	        </td>
+	        </tr>
+	        <!-- First Row of letters -->
+	        <tr>
+	        <td>
+	            <button id="btnQ">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-q"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-6"
+	                />
+	                <line x1="13" y1="15" x2="18" y2="20" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnW">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-w"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M4 4l4 16l4 -14l4 14l4 -16" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnE">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-e"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M17 4h-10v16h10" />
+	                <line x1="7" y1="12" x2="15" y2="12" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnR">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-r"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-16h5.5a4 4 0 0 1 0 9h-5.5" />
+	                <line x1="12" y1="13" x2="17" y2="20" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnT">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-t"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="6" y1="4" x2="18" y2="4" />
+	                <line x1="12" y1="4" x2="12" y2="20" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnY">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-y"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 4l5 9l5 -9" />
+	                <line x1="12" y1="13" x2="12" y2="20" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnU">
+	             <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-u"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M6 4v11a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-11" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnI">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-i"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="12" y1="4" x2="12" y2="20" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnO">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-o"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-6"
+	                />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnP">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-p"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="#2c3e50"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-16h5.5a4 4 0 0 1 0 9h-5.5" />
+	            </svg>
+	            </button>
+	        </td>
+	        </tr>
+	        <!-- Second row of letter -->
+	        <tr>
+	        <td>
+	            <button id="btnA">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-a"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-12a4 4 0 0 1 4 -4h2a4 4 0 0 1 4 4v12" />
+	                <line x1="7" y1="13" x2="17" y2="13" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnS">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-s"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M17 8a4 4 0 0 0 -4 -4h-2a4 4 0 0 0 0 8h2a4 4 0 0 1 0 8h-2a4 4 0 0 1 -4 -4"
+	                />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnD">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-d"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 4h6a5 5 0 0 1 5 5v6a5 5 0 0 1 -5 5h-6v-16" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnF">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-f"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M17 4h-10v16" />
+	                <line x1="7" y1="12" x2="15" y2="12" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnG">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-g"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-2h-4"
+	                />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnH">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-h"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="17" y1="4" x2="17" y2="20" />
+	                <line x1="7" y1="12" x2="17" y2="12" />
+	                <line x1="7" y1="4" x2="7" y2="20" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnJ">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-j"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M17 4v12a4 4 0 0 1 -4 4h-2a4 4 0 0 1 -4 -4" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnK">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-k"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="7" y1="4" x2="7" y2="20" />
+	                <path d="M7 12h2l8 -8" />
+	                <line x1="9" y1="12" x2="17" y2="20" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnL">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-l"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 4v16h10" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnColon" style="font-size: 40px; width: 60px">
+	            ;
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnQuote" style="font-size: 40px; width: 60px">
+	            "
+	            </button>
+	        </td>
+	        </tr>
+	        <!-- Thirs row of letter -->
+	        <tr>
+	        <td>
+	            <button id="btnZ">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-z"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 4h10l-10 16h10" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnX">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-x"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="7" y1="4" x2="17" y2="20" />
+	                <line x1="17" y1="4" x2="7" y2="20" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnC">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-c"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5"
+	                />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnV">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-v"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M6 4l6 16l6 -16" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnB">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-b"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-16h6a4 4 0 0 1 0 8a4 4 0 0 1 0 8h-6" />
+	                <line x1="7" y1="12" x2="13" y2="12" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnN">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-n"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-16l10 16v-16" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnM">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-m"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M6 20v-16l6 14l6 -14v16" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnComma" style="font-size: 42px; width: 60px">
+	            ,
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnPeriod" style="font-size: 42px; width: 60px">
+	            .
+	            </button>
+	        </td>
+	        <td>
+	            <button id="btnSlash" style="font-size: 42px; width: 60px">
+	            /
+	            </button>
+	        </td>
+	        <td rowspan="2">
+	            <button style="height: 120px" id="btnRtrn">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-corner-down-left"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="#2c3e50"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M18 6v6a3 3 0 0 1 -3 3h-10l4 -4m0 8l-4 -4" />
+	            </svg>
+	            </button>
+	        </td>
+	        </tr>
+	        <!-- Space bar divs -->
+	        <tr>
+	        <td></td>
+	        <td></td>
+	        
+	        <td colspan="5">
+	            <button style="width: 250px" id="btnSpace">
+	            <svg
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-space"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="#2c3e50"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M4 10v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1 -1v-3" />
+	            </svg>
+	            </button>
+	        </td>
+	        <td></td>
+	        <td></td>
+	        </tr>
+	    </table>
+    </div>
+
+    <script src="../assets/js/virtual_keyboard.js"></script>
+</body>
+</html>

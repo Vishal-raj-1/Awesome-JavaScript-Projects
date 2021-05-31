@@ -1,0 +1,50 @@
+/*     background-image: url('../Images/FlappyBird/flappybird-pipe.png'); */
+/* ../Images/FlappyBird/fire1.gif */
+
+body
+{
+    margin:0;
+}
+ canvas
+{
+    border :1px solid #000;
+} 
+#fire1
+{
+    background-image: url("../Images/FlappyBird/fire1.gif");
+    left:300px;
+    top:100px;
+}
+#fire2
+{
+    background-image: url("../Images/FlappyBird/fire2.gif");
+    left:900px;
+    top:200px;
+}
+.fire
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* top:200px; */
+    background-position: center center;
+    background-size: cover;
+    display: none;
+}
+.ending
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* top:200px; */
+    background-position: center center;
+    background-size: cover; 
+    display: none; 
+}
+#ending1
+{
+    background-image: url("../Images/FlappyBird/end3.gif");
+    top:300px;
+    left:400px;
+}
+

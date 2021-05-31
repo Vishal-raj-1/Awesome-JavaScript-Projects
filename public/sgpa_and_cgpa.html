@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA and CGPA calculator</title>
+    <link rel="stylesheet" href="../assets/css/sgpa_and_cgpa.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body  >
+    <div class="sgpa">
+        <div class="sgpa_title">
+            <h3>
+                SGPA calculator
+            </h3>
+        </div>
+        <div class="sgpa_subtitle">
+            <h5>
+                Please enter the Grade points of your courses and their credits of a particular semester
+            </h5>
+        </div>
+
+        <div class="subject1">
+            <input class="course" id="gp1" placeholder = "gradepoint1" />
+            <input class="credits" id ="c1" placeholder="credits1" />
+        </div>
+        <div class="subject2">
+            <input class="course" id="gp2" placeholder = "gradepoint2" />
+            <input class="credits" id ="c2" placeholder="credits2" />
+        </div>
+        <div class="subject3">
+            <input class="course" id="gp3" placeholder = "gradepoint3" />
+            <input class="credits" id ="c3" placeholder="credits3" />
+        </div>
+        <div class="subject4">
+            <input class="course" id="gp4" placeholder = "gradepoint4" />
+            <input class="credits" id ="c4" placeholder="credits4" />
+        </div>
+        <div class="subject5">
+            <input class="course" id="gp5" placeholder = "gradepoint5" />
+            <input class="credits" id ="c5" placeholder="credits5" />
+        </div>
+        <div class="subject6">
+            <input class="course" id="gp6" placeholder = "gradepoint6" />
+            <input class="credits" id ="c6" placeholder="credits6" />
+        </div>
+        <div class="subject7">
+            <input class="course" id="gp7" placeholder = "gradepoint7" />
+            <input class="credits" id ="c7" placeholder="credits7" />
+        </div>
+        <div class="subject8">
+            <input class="course" id="gp8" placeholder = "gradepoint8" />
+            <input class="credits" id ="c8" placeholder="credits8" />
+        </div>
+
+        <div class="sgpa_result">
+            <h3>Your SGPA is equal to : </h3>
+            <button onclick="sgpaRefresh()" class="sgpa_reset">
+              Reset
+            </button>
+            <button onclick="sgpaResult()" class="sgpa_submit">
+             Submit
+            </button>
+          </div>
+       
+    </div>
+    
+
+    <div class="cgpa">
+        <div class="cgpa_title">
+            <h3>
+                CGPA calculator
+            </h3>
+        </div>
+
+        <div class="old_cgpa">
+            <h5>CGPA till last semester </h5>
+            <input class="oldcgpa" id ="ocgpa" placeholder="cgpa till last semester" />
+        </div>
+        <div class="past_tcredits">
+            <h5>Total credits till last semester</h5>
+            <input class="total_pcredits" id ="ptc" placeholder="total credits till last semester" />
+        </div>
+        <div class="new_sgpa">
+            <h5>Present semester's SGPA </h5>
+            <input class="newsgpa" id ="nsgpa" placeholder="sgpa" />
+        </div>
+        <div class="tcredits">
+           <h5>Total credits of present semester</h5>
+            <input class="total_credits" id ="tc" placeholder="total credits of present semester" />
+        </div>
+
+        <div class="cgpa_result">
+            <h3>Your CGPA is equal to : </h3>
+            <button onclick="cgpaRefresh()" class="cgpa_reset">
+              Reset
+            </button>
+            <button onclick="cgpaResult()" class="cgpa_submit">
+             Submit
+            </button>
+          </div>
+       
+    </div>
+
+    <script src="../assets/js/sgpa_and_cgpa.js"></script>
+
+</body>
+</html>

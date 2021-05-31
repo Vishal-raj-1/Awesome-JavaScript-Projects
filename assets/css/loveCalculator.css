@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Lovers Quarrel', cursive */
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+body {
+    color: white;
+}
+.hidden{
+    display: none;
+}
+.container {
+    display: none;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    background: url("../Images/header.jpg");
+    background-position: bottom;
+    background-size: cover;
+    align-items: center;
+    justify-content: initial;
+}
+
+.heading h1 {
+    font-size: 51px;
+    font-weight: normal;
+    text-shadow: 3px 2px 5px #822055;
+    color: pink;
+}
+
+#loader h1 {
+    color: deeppink;
+    text-align: center;
+    font-weight: normal;
+    padding: 0px 283px;
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+h1.quote {
+    font-size: 39px;
+    font-weight: normal;
+    color: black;
+    text-shadow: 2px 2px 4px lightpink;
+    margin-top: 24px;
+}
+
+.userData {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+    width: 100%;
+}
+
+audio {
+    display: none;
+}
+
+p1.name {
+    font-size: 23px;
+}
+
+input.name-input1,
+input.name-input2 {
+    width: 276px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    text-align: center;
+    box-shadow: 4px 4px 9px black;
+    border-radius: 9px;
+    color: white;
+}
+
+button#btn {
+    padding: 7px;
+    width: 140px;
+    font-weight: bold;
+    font-size: 27px;
+    border-radius: 14px;
+    box-shadow: 5px 4px 8px black;
+    background: lightpink;
+    outline: none;
+    border: none;
+    color: #ec395b;
+    text-shadow: 2px 2px 3px black;
+}
+
+ ::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.tryAgainbtn {
+    padding: 10px;
+    width: 140px;
+    font-size: 19px;
+    border-radius: 14px;
+    box-shadow: 5px 4px 8px black;
+    background: #f31435;
+    outline: none;
+    margin-top: 41px;
+    border: none;
+}
+
+.results {
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+p.aboutlove {
+    font-size: 28px;
+    text-shadow: 1px 3px 1px #f34a67;
+    margin-top: 3px;
+}
+
+div#loader {
+    height: 100vh;
+    background-image: url("../Images/loader.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.results-js {
+    height: 215px;
+    width: 227px;
+    background-image: url("../Images/heart.gif");
+    background-size: cover;
+    background-position: center;
+    padding: 53px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 5px 3px black;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.error{
+    padding-top: 40px;
+    font-weight: 900;
+    color: #ff0033;
+    font-size: 1.6rem;
+    text-shadow: 0.7px 0.7px #ddd;
+}
+
+/* Responsive Style */
+
+@media screen and (max-width: 480px) {
+    div#loader {
+        background-size: 100% auto;
+    }
+    .userData {
+        flex-direction: column;
+    }
+    .container {
+        justify-content: center;
+    }
+    .heading h1 {
+        font-size: 36px;
+    }
+    h1.quote {
+        font-size: 25px;
+    }
+    input.name-input1,
+    input.name-input2 {
+        width: 223px;
+        margin: 10px;
+        font-size: 21px;
+    }
+    button#btn {
+        width: 128px;
+        margin: 12px;
+        text-shadow: 1px 1px 1px black;
+        font-size: 22px;
+    }
+    #loader h1 {
+        font-size: 27px;
+        padding: 9px;
+    }
+    .results-js {
+        height: 150px;
+        width: 150px;
+        padding: 26px;
+    }
+    .tryAgainbtn {
+        margin-top: 6px;
+    }
+}

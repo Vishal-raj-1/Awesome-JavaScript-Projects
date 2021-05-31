@@ -1,0 +1,170 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+	{
+		text-align: center;
+		height: 100%;
+		background: url("../Images/palindrome/bg11.jpg") ;
+		background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+
+		}
+
+h1{
+position: absolute;
+left: 50%;
+top: 20%;
+transform: translate(-50%,-50%);
+margin: 0;
+padding:0 .5%;
+font-size: 3rem;
+font-family: sans-serif;
+
+color: aliceblue;
+text-shadow: .21rem .3rem .5rem rgb(182, 173, 173);
+text-transform: uppercase;
+border: .6rem solid white;
+border-top: none;
+}
+
+h1 span{
+position: relative;
+display: inline-block;
+}
+h3{
+position: absolute;
+top: 28%;
+left: 39%;
+margin: 0;
+padding:0 0.5%;
+
+text-transform: uppercase;
+color: aliceblue;
+font-size: 2rem;
+text-shadow: .3rem .5rem .5rem rgb(182, 173, 173);
+letter-spacing: 0.8rem;
+font-family: sans-serif;
+border: .5rem solid white;
+border-top: none;
+}
+
+h3 span{
+position: relative;
+display: inline-block;
+}
+
+h1 span:nth-child(even)
+{
+color: rgb(24, 29, 94);
+animation: animate 2s alternate infinite;
+}
+
+h3 span:nth-child(3)
+{
+color: rgb(24, 29, 94);
+animation: animate 2s alternate infinite;
+}
+
+@keyframes animate{
+0%{
+	transform: translateY(0rem) rotate(0deg);
+}
+40%{
+	transform: translateY(0rem) rotate(0deg);
+}
+50%{
+	transform: translateY(-3rem) rotate(180deg);
+}
+60%{
+	transform: translateY(0rem) rotate(360deg);
+}
+100%{
+	transform: translateY(0rem) rotate(360deg);
+}
+
+}
+
+#def
+{
+margin-top: 24rem;
+animation: text 2s 1;
+font-size: 1.5em;
+font-family: 'Fredoka One', cursive;
+color: aliceblue;
+}
+	#result
+	{ 
+		margin-top: .5rem;
+		font-family: 'Freckle Face', cursive;
+		font-size: 1.5em;
+		color: rgb(173, 165, 165);
+	}
+	#div2
+	{
+		display: inline-block;
+		padding: 30px;
+		background-color: white;
+		border-radius: 10px;
+	}
+	@keyframes text 
+	{
+		from {
+			transform : scale(1);
+			opacity   : 1;
+		}
+		50% {
+			transform : scale(0.75);
+			opacity   : 0.25;
+		}
+		to {
+			transform : scale(1);
+			opacity   : 1;
+		}
+	}
+	#fld
+	{   
+		padding: 20px;
+		font-size: 19px;
+		margin-bottom: 20px;
+		border:none;
+		border-bottom: 2px solid black;
+		outline: none;
+		width: 50%;
+	}
+	#btn
+	{
+		padding: .4rem;
+		font-size: 1.5rem;
+		border-radius:.4rem;
+		margin: .6rem;
+		border: none;
+		text-transform: uppercase;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		background-color: rgb(239, 239, 243);
+		box-shadow: .2rem .6rem .8rem gray;
+	}
+	#btn:hover
+	{
+		 transform: scale(1.1);
+		cursor: pointer;
+		color: rgb(43, 183, 226);
+
+	}
+	
+
+	@media screen and (max-width: 50rem) {
+		h1 {
+			font-size: 2rem;
+		  width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+		}
+		h3 {
+			
+			font-size: 1.5rem;
+			left: 1%;
+			width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+		  }
+	  }

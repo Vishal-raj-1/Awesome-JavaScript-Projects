@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>URL Shortner</title>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="../assets/css/url.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>URL Shortner</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../assets/css/url.css">
-</head>
+	<body>
+			<h1>URL SHORTENER</h1>
 
-<body>
-    <h1>URL SHORTENER</h1>
+			<form id="form-user">
+				<label for="input-longurl">Long URL :</label>
+				<input
+					type="text"
+					id="input-longurl"
+					autofocus
+					required
+					placeholder="Long URL"
+					tabindex="1"
+					spellcheck="false"
+				/>
 
-    <form id="form-user" action="#" method="post">
-        <div class="form-box error" data-errormsg="">
-            <label for="input-first">Long URL</label>
-            <input type="text" id="input-longurl" autofocus required placeholder="Long URL" tabindex="1" />
-        </div>
+				<button type="submit">Send <span></span></button>
+				</form>
 
-        <div class="form-box">
-            <button id="button-send">Send</button>
-        </div>
-    </form>
+				<div id="result">
+					<p></p>
+					<a target="_blank"></a>
+				</div>
+				<div id="error">
+					<p></p>
+			    </div>
+		    </div>
 
-
-    <div id="div1">
-        <p id="msg1"></p>
-        <h2><a id="longurl" target="_blank"></a></h2>
-        <p id="msg2"></p>
-        <h2><a id="shorturl" target="_blank"></a></h2>
-    </div>
-    <script src="../assets/js/url.js"></script>
-</body>
-
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="../assets/js/url.js"></script>
+	</body>
 </html>
