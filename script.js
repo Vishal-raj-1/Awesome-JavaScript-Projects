@@ -727,15 +727,13 @@ let projectData = [
     projectUrl: "public/RGB_Color_Guessing_Game.html"
   },
   {
-    projectName: "RGB TO HEX CONVERTER",
-    projectImage: "assets/Images/RGB_HEX.png",
-    projectUrl: "public/RGB_HEX.html"
-  },
-  {
-    projectName: "Text to Voice Generator",
-    projectImage: "assets/GIFs/Text-voice.gif",
-    projectUrl: "public/textToVoice.html"
-  },
+    projectName: 'RGB TO HEX CONVERTER',
+    projectImage: 'assets/Images/RGB_HEX.png',
+    projectUrl: 'public/RGB_HEX.html'
+  }
+  ,
+ 
+
   {
     projectName: "Github User Finder",
     projectImage: "assets/GIFs/github_finder.gif",
@@ -769,7 +767,12 @@ let projectData = [
   {
     projectName: "Calendar",
     projectImage: "assets/Images/calendar_backcover.png",
-    projectUrl: "public/calendar.html"
+    projectUrl: "public/calendar.html",
+  },
+  {
+    projectName: "Random User Finder",
+    projectImage: "assets/GIFs/Random_User.gif",
+    projectUrl: "public/Randomuser.html",
   },
 
   {
@@ -827,11 +830,13 @@ let projectData = [
     projectImage: "assets/GIFs/RotatingNav.gif ",
     projectUrl: "public/RotatingNav.html"
   },
+
   {
     projectName: "Random User Finder",
     projectImage: "assets/GIFs/Random_User.gif",
     projectUrl: "public/Randomuser.html"
   },
+
   {
     projectName: 'Math Quiz for kids 🙂 ',
     projectImage: 'assets/Images/MathQuiz.jpg',
@@ -1143,6 +1148,7 @@ let projectData = [
     projectImage: "assets/GIFs/playbeats.gif",
     projectUrl: "public/Play-Beats.html"
   },
+
   {
     projectName: "Hospital Registration Form",
     projectImage: "assets/GIFs/registration_form.gif",
@@ -1272,7 +1278,12 @@ let projectData = [
   {
     projectName: "Mousehover Effect",
     projectImage: "assets/Images/Mousehover.png",
-    projectUrl: "public/Mousehover.html"
+    projectUrl: "public/Mousehover.html",
+  },
+  {
+    projectName: "Mouse Trails effect",
+    projectImage: "assets/GIFs/MouseTrails.gif",
+    projectUrl: "public/MouseTrails.html",
   },
   {
     projectName: "Colora",
@@ -1298,7 +1309,13 @@ let projectData = [
   {
     projectName: "Harry Potter characters",
     projectImage: "assets/Images/harry.png",
-    projectUrl: "public/harry.html"
+    projectUrl: "public/harry.html",
+  },
+  
+  {
+    projectName: "Guess The Number",
+    projectImage: "assets/Images/guess.png",
+    projectUrl: "public/guess.html",
   },
   
   {
@@ -1379,7 +1396,12 @@ let projectData = [
   {
     projectName: "Math Trainer",
     projectImage: "assets/Images/math_trainer.png",
-    projectUrl: "public/math_trainer.html"
+    projectUrl: "public/math_trainer.html",
+  },
+  {
+    projectName: "Text to Voice Generator",
+    projectImage: "assets/GIFs/Text-voice.gif",
+    projectUrl: "public/textToVoice.html",
   },
   {
     projectName: "Timeline",
@@ -1553,6 +1575,7 @@ let projectData = [
     projectImage: "assets/GIFs/box-shadow.gif",
     projectUrl: "public/box-shadow.html"
   },
+
   {
     projectName: "Px/Rem Converter",
     projectImage: "assets/GIFs/px-rem.gif",
@@ -1616,10 +1639,16 @@ let projectData = [
   {
     projectName: "Pacman game",
     projectImage: "assets/Images/Pacman.png",
-    projectUrl: "public/Pacman.html"
+    projectUrl: "public/Pacman.html",
   },
+  
   {
-    projectName: "Merge Sort Visualizer in JavaScript",
+    projectName: "Re-Create Giphy",
+    projectImage: "assets/Images/giphy.png",
+    projectUrl: "public/Giphy.html",
+  },
+
+  {   projectName: "Merge Sort Visualizer in JavaScript",
     projectImage: "assets/Images/merge-visualizing.png",
     projectUrl: "public/mergesort.html"
   },
@@ -1682,7 +1711,13 @@ let projectData = [
   {
     projectName: "product Counter",
     projectImage: "assets/Images/product_counter.png",
-    projectUrl: "public/product_counter.html"
+    projectUrl: "public/product_counter.html",
+  },
+
+  {
+    projectName: "Landing-Page-Using JavaScript",
+    projectImage: "assets/Images/Landing-page.jpg",
+    projectUrl: "public/Landing_Page.html",
   },
   {
     projectName: "Reading progress Bar",
@@ -1789,7 +1824,8 @@ let projectData = [
     projectName: "Hover Effects",
     projectImage: "assets/Images/hoverimage.png",
     projectUrl: "public/hover_images.html"
-  },{
+  },
+  {
 
     projectName: "Preloader Projects",
     projectImage: "assets/Images/preloader.png",
@@ -1862,6 +1898,7 @@ let projectData = [
     projectImage: "assets/Images/worldtime.png",
     projectUrl: "public/worldclock.html",
   }
+
   ,{
     projectName: "Decimal To Binary Converter",
     projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
