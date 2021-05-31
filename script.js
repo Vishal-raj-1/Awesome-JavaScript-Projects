@@ -1874,7 +1874,13 @@ let projectData = [
     projectName: "Image Search",
     projectImage: "assets/images/image-search.png",
     projectUrl: "public/image-search.html",
-  }
+  },
+{
+  projectName: "Background Video header",
+  projectImage: "assets/images/background-header.png",
+  projectUrl: "public/background-header.html",
+}
+
 ];
 
 var projectDetails = projectData.slice(0);

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+header {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 85vh;
+  min-height: 25rem;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.3) -2px 4px 0px;
+  color: #fff;
+  background-color: black;
+  letter-spacing: normal;
+  letter-spacing: 3px;
+  font-family: "Courgette", cursive;
+  margin: 0px;
+  padding-bottom: 1rem;
+}
+header .container {
+  position: relative;
+  z-index: 2;
+  padding-left: 0px;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.first,
+.sec {
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.3) -2px 4px 0px;
+  color: #fff;
+  letter-spacing: normal;
+  letter-spacing: 3px;
+  font-family: "Courgette", cursive;
+}
+.sec {
+  font-size: 3rem !important;
+}
