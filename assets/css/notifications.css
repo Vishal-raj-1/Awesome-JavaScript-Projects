@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(0, 0%, 100%);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.notification {
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: hsl(0, 0%, 20%);
+  overflow-x: hidden;
+  padding: 0.25rem;
+}
+
+.notification__bell {
+  display: block;
+  width: 48px;
+  height: auto;
+  fill: hsl(0, 0%, 100%);
+}
+
+.notification.received .bell__body {
+  animation: swingBody 0.7s 0.02s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.notification.received .bell__clapper {
+  animation: swingClapper 0.7s 0.04s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes swingBody {
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes swingClapper {
+  5% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  80% {
+    transform: rotate(8deg);
+  }
+}
+
+.notification__message {
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-columns: 1fr auto;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.1), 0 2px 3px hsla(0, 0%, 0%, 0.1);
+  border-left: 0.5rem solid hsl(0, 0%, 100%);
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition-property: transform, opacity, visibility;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.notification__message h1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
+
+.notification__message p {
+  max-width: 320px;
+  font-size: 0.8rem;
+  grid-column: 1/-1;
+}
+
+.notification__message button {
+  background: none;
+  border: none;
+  color: inherit;
+  width: 20px;
+  height: 20px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+  outline: none;
+}
+
+.notification__message button svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.notification.received .notification__message {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.message--info {
+  border-left-color: #90dee9;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle stroke="none" fill="%2390dee9" cx="50" cy="22" r="8"></circle><path fill="none" stroke="%2390dee9" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" d="M 45 40 h 5 v 40 h -5 h 10"></path></svg>'),
+    hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 0% 2%;
+}
+
+.message--success {
+  border-left-color: hsl(120, 67%, 74%);
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="none" stroke="%2390e990" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" d="M 20 52 l 25 25 l 30 -50"></path></svg>'),
+    hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 0% 2%;
+}
+
+.message--warning {
+  border-left-color: hsl(54, 67%, 74%);
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="none" stroke="%23e9e090" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" d="M 50 18 v 40"></path><circle stroke="none" fill="%23e9e090" cx="50" cy="78" r="8"></circle></svg>'),
+    hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 0% 2%;
+}
+
+.message--danger {
+  border-left-color: hsl(0, 67%, 74%);
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><g transform="translate(50 50) rotate(45)"><path fill="none" stroke="%23e99090" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" d="M 0 -30 v 60 z M -30 0 h 60"></path></g></svg>'),
+    hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 0% 2%;
+}

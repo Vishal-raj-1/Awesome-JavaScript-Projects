@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+body{
+    background-color: transparent;
+}
+
+li {
+  height: 40vh;
+  text-align: center;
+  list-style: none;
+  margin: 5% auto;
+}
+
+ul {
+  padding: 0px;
+}
+h2,
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.3) -2px 4px 0px;
+  color: #000;
+  letter-spacing: normal;
+  letter-spacing: 3px;
+  font-family: "Courgette", cursive;
+}
+.heading {
+  font-size: 4rem;
+  color: dodgerblue;
+}
+p {
+  color: #fff;
+  font-size: 1.5rem;
+}

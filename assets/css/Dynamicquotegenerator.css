@@ -125,7 +125,7 @@ body {
 
 .Color-stripe {
   background: #fff;
-  width: 100px;
+  width: 300px;
   height: 30px;
 
   display: flex;
@@ -138,13 +138,44 @@ body {
 
 .pink,
 .grey,
-.blue {
+.blue,
+.peach,
+.yellow,
+.green,
+.lightblue,
+.purple,
+.orange{
   width: 20px;
   height: 20px;
   border-radius: 50%;
   border: 1px solid #000;
 
   transition: 0.5s ease-in-out;
+}
+.orange{
+  background: #fc9162;
+}
+.purple{
+  background: #c968f2;
+  margin-right: 10px;
+}
+.lightblue{
+  background: #a2eafa;
+  margin-right: 10px;
+}
+.green{
+  background: #b6fc90;
+  margin-right: 10px;
+}
+.peach
+{
+  background: #fa7a7a;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.yellow{
+  background: #fafa8c;
+  margin-right: 10px;
 }
 
 .pink {
@@ -163,7 +194,12 @@ body {
 
 .pink:hover,
 .grey:hover,
-.blue:hover {
+.blue:hover,
+.peach:hover,
+.yellow:hover,
+.green:hover ,
+.purple:hover,
+.orange:hover{
   transform: scale(0.95);
 }
 

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!--Title-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, intial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!--Title-->
+        <title>Number Cricket</title>
+
+        <!--Favicon-->
+        <link href="assets/Images/favico.jpg" rel="icon">
+
+        <!--Bootstrap Css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <!--Css file-->
+        <link rel="stylesheet" href="../assets/css/handcricket.css">
+        
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- Javascript file-->
+        <script src="../assets/js/handcricket.js"></script>
+
+        <!--jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    </head>
+    
+    <body>
+
+        <!--Score Nav-->
+        <nav class="navbar fixed-top navbar-dark" id="navv">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="navpscore" >Player Score = 0</a>
+              <a class="navbar-brand" id="navcscore">Computer Score = 0</a>
+            </div>
+          </nav>
+
+        <!--Modal display-->
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="Modalp">
+              Launch demo modal
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" id="modalheader">
+                            <h5 class="modal-title" id="exampleModalLabel">Game Over</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body" id="modalbody">
+                        You Won the Match!
+                         </div>
+
+                        <div class="modal-footer"id="modalfooter">
+                            <a href="../public/handcricket.html"><button type="button" class="btn btn-dark" >Play again</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="Modalc">
+            Launch demo modal
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" id="modalheader">
+                          <h5 class="modal-title" id="exampleModalLabel">Game Over</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+
+                      <div class="modal-body" id="modalbody">
+                      Computer Won the Match!
+                       </div>
+
+                      <div class="modal-footer" id="modalfooter">
+                          <a href="../public/handcricket.html"><button type="button" class="btn btn-dark" >Play again</button></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+
+
+        <!--Choosing bat or bowl-->
+        <div class="container" id="toss">
+            <div class="row">
+                <div class="col-12 col-sm-12" id="headt">
+                    Choose your option
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-sm-7">
+                    <a href="#batting"> <button id="bttoss" onclick="goClear()">Batting</button></a>
+                </div>
+
+                <div class="col-6 col-sm-4">
+                    <a href="#bowling"> <button id="bltoss" onclick="goClear()">Bowling</button></a>
+                </div>
+            </div>
+        </div>
+
+       
+        <!--Batting--> 
+        <div class="container" id="batting">
+
+            <div class="row" id="bbb">
+                <div class="col-12 col-sm-12" id="headb">
+                    Batting
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <label id="label">Player</label>
+                    <div id="player">
+                        
+                            <label id="label1">Type bet 1 and 6</label><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-3"></div>
+                                    <div class="col-xl-6">
+                                        <button id="pnumbt1" value="1" onclick="goBat1()">1</button>
+                                        <button id="pnumbt2" value="2" onclick="goBat2()">2</button>
+                                        <button id="pnumbt3" value="3" onclick="goBat3()">3</button>
+                                        <button id="pnumbt4" value="4" onclick="goBat4()">4</button>
+                                        <button id="pnumbt5" value="5" onclick="goBat5()">5</button>
+                                        <button id="pnumbt6" value="6" onclick="goBat6()">6</button>
+                                        
+                                        <button id="pnumbt0" value="0" onclick="goBat0()">0</button>
+                                        
+                                    </div>
+                                    <div class="col-xl-3"></div>
+                                </div>
+                            </div>
+
+                            
+                            
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <label id="label">Computer</label>
+                    <div id="computer">
+                        
+                            <label id="label1">Computer 1&&6</label><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <div id="cnumbt"></div>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <div id="cbat">System generated number</div>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+              <!--Bowling--> 
+                <div class="container" id="bowling">
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12" id="headb">
+                            Bowling
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label id="label">Player</label>
+                            <div id="player">
+                                
+                                    <label id="label1">Type bet 1 and 6</label><br>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xl-3"></div>
+                                            <div class="col-xl-6 ">
+                                                <button id="pnumbl1" value="1" onclick="goBowl1()">1</button>
+                                                <button id="pnumbl2" value="2" onclick="goBowl2()">2</button>
+                                                <button id="pnumbl3" value="3" onclick="goBowl3()">3</button>
+                                                <button id="pnumbl4" value="4" onclick="goBowl4()">4</button>
+                                                <button id="pnumbl5" value="5" onclick="goBowl5()">5</button>
+                                                <button id="pnumbl6" value="6" onclick="goBowl6()">6</button>
+                                                
+                                                <button id="pnumbl0" value="0" onclick="goBowl0()">0</button>
+                                                
+                                            </div>
+                                            <div class="col-xl-3"></div>
+                                        </div>
+                                    </div>
+        
+                                    
+                                    
+                            </div>
+                        </div>
+        
+                        <div class="col-12 col-md-6">
+                            <label id="label">Computer</label>
+                            <div id="computer">
+                                
+                                    <label id="label1">Computer 1&&6</label><br>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-6">
+                                                <div id="cnumbl"></div>
+                                            </div>
+                                            <div class="col-md-3"></div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-6">
+                                                <div id="cbowl">System generated number</div>
+                                            </div>
+                                            <div class="col-md-3"></div>
+                                        </div>
+                                    </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+        
+         <!--Script file-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+        
+
+    </body>
+</html>
