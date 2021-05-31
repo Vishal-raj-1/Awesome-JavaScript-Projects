@@ -777,6 +777,11 @@ let projectData = [
     projectUrl: "public/ArmstrongNumber.html",
   },
 
+  {
+    projectName: "Circle Animation",
+    projectImage: "assets/GIFs/circleAnimation.gif",
+    projectUrl: "public/circleAnimation.html",
+  },
 
 
 ];
