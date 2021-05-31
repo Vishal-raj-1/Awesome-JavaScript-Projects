@@ -1949,6 +1949,11 @@ let projectData = [
     projectUrl: "public/image-search.html",
   },
   {
+    projectName: "Compound Interest Calculator",
+    projectImage: "assets/GIFs/CompoundInterestCalculator.gif",
+    projectUrl: "public/CompoundInterestCalculator.html",
+  },
+    {
     projectName: "Gradient Showcase",
     projectImage: "assets/images/gradient-showcase.png",
     projectUrl: "public/gradient-showcase.html",
