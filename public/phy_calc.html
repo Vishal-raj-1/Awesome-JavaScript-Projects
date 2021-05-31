@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Share&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/phy_calc.css">
+  <title>Physics Calculator</title>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <img src="/assets/svg/phy_calc2.svg" width="24px" height="24px" id="menu" />
+
+      <h1 class="brand">Physics Calculator</h1>
+      <div class="darkmode">
+        <p>Darkmode</p>
+        <input type="checkbox" class="mode" id="darkmode" />
+
+      </div>
+    </div>
+  </header>
+
+<!-- sidebar begins -->
+  <aside> 
+    <div class="sidebar">
+      <div class="sidebar-inner"  id="sidebar-items">
+        <div>
+          <div class="sidebar-item" id="constant">
+            <p>Constants</p>
+           <img src="/assets/svg/phy_calc1.svg" width="20px" height="20px" id="more"/>
+
+          </div>
+          <div>
+            <ul class="constant-items list">
+              <li class="list-item">Speed of light (c) = 3 X 10<sup>8</sup>m/s</li>
+              <li class="list-item">Planck constant (h) = 6.63 × 10<sup>-34</sup> J s</li>
+              <li class="list-item">Gravitation constant(G) = 6.67 X 10<sup>-11</sup>m<sup>3</sup> kg<sup>-1</sup>
+                s<sup>-2</sup></li>
+              <li class="list-item">Mass of electron (m<sub>e</sub>) = 9.1 × 10<sup>-31</sup> kg</li>
+              <li class="list-item">Mass of proton (m<sub>p</sub>) = 1.6726 × 10<sup>-27</sup> kg</li>
+              <li class="list-item">Mass of neutron (m<sub>n</sub>) = 1.6749 × 10<sup>-27</sup> kg</li>
+              <li class="list-item">Coulomb constant  = 9 × 10<sup>9</sup> N m<sup>2</sup>/C<sup>2</sup></li>
+              <li class="list-item">Charge of electron (e) = 1.602 × 10<sup>-19</sup> C</li>
+              <li class="list-item">Avogadro’s number(N<sub>A</sub>) = 6.023 × 10<sup>23</sup> mol<sup>-1</sup></li>   
+              <li class="list-item">Faraday constant (F) = 96485 C/mol</li>
+              <li class="list-item">Boltzmann constant (k) = 1.38 × 10<sup>-23</sup> J/K</sup></li>              
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="sidebar-item" id="unit">
+            <p>Units</p>
+           <img src="/assets/svg/phy_calc1.svg" width="20px" height="20px" id="more" />
+            
+          </div>
+          <div>
+            <ul class="unit-items list">
+              <li class="list-item">kg = kilogram</li>
+              <li class="list-item">N - Newtons</li>
+              <li class="list-item">m = meters</li>
+              <li class="list-item">v = velocity</li>
+              <li class="list-item">A = Area</li>
+              <li class="list-item">V = Volume</li>
+              <li class="list-item">Pa = Pascal</li>
+              <li class="list-item">J = Joules</li>
+              <li class="list-item">s = seconds</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+<!-- different numerical quantites -->
+  <div id="quantites">
+    <div id="gravity" class="property">
+      <div class="head">
+        <h3>Gravity</h3>
+        <div class="tooltip">
+          ?
+          <div class="tip">$$ F = {G {m1 * m2 \over r^2}} $$</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="single-input">
+          <input type="text" value="" placeholder="Mass 1"></input>
+          <p class="unit">Kg</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="Mass 2"></input>
+          <p class="unit">Kg</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="distance"></input>
+          <p class="unit">m</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="Result" class="result" disabled="true" disabled="true"></input>
+          <p class="unit">N</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="force" class="property">
+      <div class="head">
+        <h3>Force</h3>
+        <div class="tooltip">
+          ?
+          <div class="tip">$$ F = {m * a} $$</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="single-input">
+          <input type="text" value="" placeholder="Mass"></input>
+          <p class="unit">m</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="accelaration"></input>
+          <p class="unit">m/s</p>
+        </div>
+
+        <div class="single-input">
+          <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
+          <p class="unit">N</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="acceleration" class="property">
+      <div class="head">
+        <h3>Acceleration</h3>
+        <div class="tooltip">
+          ?
+          <div class="tip">$$ a = {{v - u} \over t }$$</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="single-input">
+          <input type="text" value="" placeholder="intial velocity"></input>
+          <p class="unit">m</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="final velocity"></input>
+          <p class="unit">m/s</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="time"></input>
+          <p class="unit">s</p>
+        </div>
+
+        <div class="single-input">
+          <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
+          <p class="unit">m/s<sup>-2</sup></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="AverageSpeed" class="property">
+      <div class="head">
+        <h3>Average Speed</h3>
+        <div class="tooltip">
+          ?
+          <div class="tip">$$ S = {d \over t} $$</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="single-input">
+          <input type="text" value="" placeholder="distance"></input>
+          <p class="unit">m</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="time"></input>
+          <p class="unit">s</p>
+        </div>
+
+        <div class="single-input">
+          <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
+          <p class="unit">m/s<sup>-1</sup></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="drag" class="property">
+      <div class="head">
+        <h3>Drag</h3>
+        <div class="tooltip">
+          ?
+          <div class="tip">$$ F = {1\over2}{\rho * C * A v^2} $$</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="single-input">
+          <input type="text" value="" placeholder="Area"></input>
+          <p class="unit">m<sup>2</sup></p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="velocity"></input>
+          <p class="unit">m/s</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
+          <p class="unit">ms</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="density" class="property">
+      <div class="head">
+        <h3>Density</h3>
+        <div class="tooltip">
+          ?
+          <div class="tip">$$ D = {m \over V} $$</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="single-input">
+          <input type="text" value="" placeholder="Mass"></input>
+          <p class="unit">kg</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="Volume"></input>
+          <p class="unit">m<sup>3</sup></p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
+          <p class="unit">kgm<sup>-3</sup></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="pressure" class="property">
+      <div class="head">
+        <h3>Pressure</h3>
+        <div class="tooltip">
+          ?
+          <div class="tip">$$ P = {f \over m} $$</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="single-input">
+          <input type="text" value="" placeholder="Force"></input>
+          <p class="unit">N</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="Area"></input>
+          <p class="unit">m<sup>2</sup></p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
+          <p class="unit">Nm<sup>-2</sup></p>
+        </div>
+      </div>
+    </div>
+    <div id="work" class="property">
+      <div class="head">
+        <h3>Work</h3>
+        <div class="tooltip">
+          ?
+          <div class="tip">$$ W = f * d $$</div>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="single-input">
+          <input type="text" value="" placeholder="Force"></input>
+          <p class="unit">N</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="distance"></input>
+          <p class="unit">m</p>
+        </div>
+        <div class="single-input">
+          <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
+          <p class="unit">Nm</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="/assets/js/phy_calc.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+</body>
+</html>

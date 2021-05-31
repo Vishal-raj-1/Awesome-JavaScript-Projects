@@ -603,15 +603,111 @@ a.button:hover{
     color: #fff;
 }
 footer{
-    background-color: #37517E;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 8vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-footer a{
-    color: #47b2e4;
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+   
 }
+footer .container .sec{
+          margin-right: 30px;
+        }
+footer .container .sec.Aboutus
+      {
+          width: 40%;
+      }
+      footer .container .sec.Aboutus h2
+      {
+          position: relative;
+          color: #fff;
+          font-weight: 500;
+          margin-bottom: 15px;
+      } 
+      footer .container .sec.Aboutus h2:before
+      {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 50px;
+          height: 2px;
+          background: #f00;
+      }
+      footer p
+      {
+          color: #999;
+      }
+      .sci
+      {
+          margin-top: 20px;
+          display: flex;
+      }
+      .sci li
+      {
+          list-style: none;
+      }
+      .sci li a
+      {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: #222;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+          text-decoration: none;
+          border-radius: 4px;
+      }
+      .sci li a:hover
+      {
+          background: #f00;
+      }
+      .sci li a .fa
+      {
+          color: #fff;
+          font-size: 20px;
+      }
+      .QuickLinks
+      {
+          position: relative;
+          width: 25%;
+      }
+      .QuickLinks u1 li
+      {
+          list-style: none;
+      }
+      .QuickLinks u1 li a
+      {
+          color: #999;
+          text-decoration: none;
+          margin-bottom: 10px;
+          display: inline-block;
+
+      }
+      .QuickLinks u1 li a:hover
+      {
+          color: #fff;
+      }
+      .copyrightText
+      {
+       width: 100%;
+       background: #181818;
+       padding: 8px 100px;
+       text-align: center;
+       color: #999;
+      }
 .body p{
     color: #37517E;
 }

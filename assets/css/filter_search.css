@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+section{
+  padding:20px;
+  width:1280px;
+  margin:40px auto;
+}
+section ul{
+  display:flex;
+  margin-bottom:10px;
+}
+section ul li{
+  list-style:none;
+  background:#eee;
+  padding:8px 20px;
+  margin:5px;
+  letter-spacing:1px;
+  cursor:pointer;
+}
+section ul li.active{
+    background:hotpink;
+    color:white;
+}
+.product{
+  display: flex;
+  flex-wrap: wrap;
+}
+.product .itemBox{
+  position:relative;
+  width:300px;
+  height:300px;
+  margin:5px;
+}
