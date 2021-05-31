@@ -225,6 +225,11 @@ let projectData = [
     projectUrl: "public/bbc-news-feed.html"
   },
   {
+    projectName: "Animated Unsubscribe Page",
+    projectImage: "assets/GIFs/unsub_page.png",
+    projectUrl: "public/unsub_page.html",
+  },
+  {
     projectName: "Doodle Jump",
     projectImage: "assets/Images/doodle-jump/doodle-jump.png",
     projectUrl: "public/doodle-jump.html"
