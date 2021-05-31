@@ -1,7 +1,8 @@
 :root {
  
-  --background: #cc0066;
+  --background:lightcoral;
   --text:#ffcce6;
+  --imageoverlay:100%;
 }
 
 * {
@@ -17,12 +18,27 @@ body {
   font-family: "montserrat", sans-serif;
   height: 100%;
   text-align: center;
-  background: var(--background);
+  background: url('../Images/drumkit_bg.jpg') bottom center;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   overflow-x: hidden;
   margin: auto;
   justify-content: center;
 }
+
+body:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--imageoverlay);
+    background-color: var(--background);
+    opacity: 0.4;
+}
+
 
 .heading{
 font-size: 2.5rem;
@@ -105,8 +121,13 @@ footer p {
   padding: 10px;
   font-size: 1rem;
   border-radius: 2rem;
-  border: 3px solid #000;
+  transition:0.5s ease;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
 }
+
+
 
 /* for smaller devices*/
 
@@ -130,7 +151,7 @@ header img {
 }
 /* theme styling  */
 
-body.dark-theme {
+.dark-theme:after {
   background-color: #222;
   color: #fff;
 }

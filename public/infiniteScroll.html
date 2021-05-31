@@ -8,16 +8,25 @@
   </head>
   <body>
     <!-- title -->
-    <h1>Unsplash API - Infinite Scroll</h1>
+    <h1>My Blog</h1>
 
-    <!-- Loader -->
-    <div class="loader" id="loader">
-      <img src="../assets/Images/infiniteScroll-loader.svg" alt="Loading" />
+    <div class="filter-container">
+      <input
+        type="text"
+        id="filter"
+        class="filter"
+        placeholder="Filter posts..."
+      />
     </div>
 
-    <!-- Image Container -->
-    <div class="image-container" id="image-container"></div>
+    <div id="posts-container"></div>
 
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    
     <!-- Script -->
     <script src="../assets/js/infiniteScroll.js"></script>
   </body>

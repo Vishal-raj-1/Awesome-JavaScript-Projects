@@ -6,6 +6,7 @@ on:
 
 
 jobs:
+  if: github.event.pull_request.merged == true
   automate-issues-labels:
     runs-on: ubuntu-latest
     steps:

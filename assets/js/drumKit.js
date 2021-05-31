@@ -99,3 +99,20 @@ if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
   document.body.classList.add('dark-theme');
   
 }
+
+//To set overlay height
+
+
+const resizer = () =>{
+  var scrollHeight = Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+  );
+  console.log(scrollHeight);
+  document.body.style.setProperty("--imageoverlay", scrollHeight + "px");
+}
+
+resizer();
+
+
