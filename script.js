@@ -1881,12 +1881,18 @@ let projectData = [
     projectImage: "assets/images/image-search.png",
     projectUrl: "public/image-search.html",
   },
+
+  {
+    projectName: "Sortable List",
+    projectImage: "assets/images/sortable_list.png",
+    projectUrl: "public/sortable_list.html",
+  },
+
 {
   projectName: "Background Video header",
   projectImage: "assets/images/background-header.png",
   projectUrl: "public/background-header.html",
 }
-
 ];
 
 var projectDetails = projectData.slice(0);
