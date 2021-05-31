@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Qoute generator</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+	<style type="text/css">
+		 header{
+		 	padding: 2em;
+		 	background-color: #00aeff;
+		 	margin-top: 2em;
+		 	text-align: center;
+		 	color: #fff;
+		 }
+
+		 .quote{
+		 	font-size: 2em;
+		 }
+
+		 .btn-large{
+		 	margin: 0.5em;
+		 }
+
+		 .card{
+		 	text-align: center;
+		 	width: 45em;
+		 }
+
+		 .new-quote-button{
+		 	background-color: #00aeff;
+		 	border-color: rgb(21,0,255);
+		 }
+
+		 #button:hover{
+		 	background-color: teal;
+		 }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row flex-top justify-content-center">
+			<header class="border shadow">
+				<h1>Quote Generator</h1>
+			</header>
+		</div>
+
+		<div class="row flex-top justify-content-center">
+			<button id="button" class="btn-large new-quote-button" onclick="getQuote()">New Quote</button>
+		</div>
+
+		<div class="row flex-top justify-content-center">
+			<main class="card">
+				<p class="quote card-body center" id="newQuoteSection">...</p>
+			</main>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		var quotes= [
+		"Code never lies,comments sometimes do.", "Talk is cheap.Show me the code.", "First solve the problem.Then, write the code.","Code is like humor. When you have to explain it, it’s bad." ,"Java is to JavaScript what car is to Carpet." ,"In order to be irreplaceable, one must always be different.","Simplicity is the soul of efficiency.","Make it work, make it right, make it fast.","Fix the cause, not the symptom.","I don't care if it works on your machine! We are not shipping your machine!"]
+		function getQuote() {
+			var randomNumber=Math.floor(Math.random()*quotes.length);
+			document.getElementById("newQuoteSection").innerHTML=quotes[randomNumber]; 
+		}
+	</script>
+</body>
+</html>

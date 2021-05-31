@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PIANO</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <style>
+		*, *::before, *::after{
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #143F68;
+			margin: 0;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.piano{
+			display: flex;
+		}
+		.key{
+			height: calc(var(--width)*4);
+			width: var(--width);
+		}
+		.white{
+			--width: 100px;
+			/*height: 400px;*/
+			background-color: white;
+			border: 1px solid #333;
+		}
+		.white.active{
+			background-color: #CCC;
+		}
+		.black{
+			--width: 60px;
+			/*height: 240px;*/
+			background-color: black;
+			margin-left: calc(var(--width) / -2);
+			margin-right: calc(var(--width) / -2);
+			z-index: 2;
+		}
+		.black.active{
+			background-color: #333;
+		}
+		body p{
+         	margin-right: 110px;
+         	margin-left: -260px;
+         	margin-top: 500px;
+         	
+         	color: white;
+         }
+
+	</style>
+</head>
+<body>
+	<p>To play using computer keyboard<br>
+		White keys-[z,x,c,v,b,n,m]<br>
+		Black keys-[s,d,g,h,j]<br>
+	(From left to right)</p>
+    <div class="piano">
+		<div data-note="C" class="key white"></div>
+		<div data-note="Db" class="key black"></div>
+		<div data-note="D" class="key white"></div>
+		<div data-note="Eb" class="key black"></div>
+		<div data-note="E" class="key white"></div>
+		<div data-note="F" class="key white"></div>
+		<div data-note="Gb" class="key black"></div>
+		<div data-note="G" class="key white"></div>
+		<div data-note="Ab" class="key black"></div>
+		<div data-note="A" class="key white"></div>
+		<div data-note="Bb" class="key black"></div>
+		<div data-note="B" class="key white"></div>
+	</div>
+
+	<audio id="C" src="../assets/sounds/notes/C.mp3"></audio>
+	<audio id="Db" src="../assets/sounds/notes/Db.mp3"></audio>
+	<audio id="D" src="../assets/sounds/notes/D.mp3"></audio>
+	<audio id="Eb" src="../assets/sounds/notes/Eb.mp3"></audio>
+	<audio id="E" src="../assets/sounds/notes/E.mp3"></audio>
+	<audio id="F" src="../assets/sounds/notes/F.mp3"></audio>
+	<audio id="Gb" src="../assets/sounds/notes/Gb.mp3"></audio>
+	<audio id="G" src="../assets/sounds/notes/G.mp3"></audio>
+	<audio id="Ab" src="../assets/sounds/notes/Ab.mp3"></audio>
+	<audio id="A" src="../assets/sounds/notes/A.mp3"></audio>
+	<audio id="Bb" src="../assets/sounds/notes/Bb.mp3"></audio>
+	<audio id="B" src="../assets/sounds/notes/B.mp3"></audio>
+
+	<script defer>
+        const WHITE_KEYS=['z','x','c','v','b','n','m']
+        const BLACK_KEYS=['s','d','g','h','j']
+		const keys=document.querySelectorAll('.key')
+        const whiteKeys=document.querySelectorAll('.key.white')
+        const blackKeys=document.querySelectorAll('.key.black')
+
+		keys.forEach(key => {
+			key.addEventListener('click', () => playNote(key))
+		})
+
+        document.addEventListener('keydown', e => {
+            const key=e.key
+            const whiteKeyIndex=WHITE_KEYS.indexOf(key)
+            const blackKeyIndex=BLACK_KEYS.indexOf(key)
+
+            if(whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex])
+            if(blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
+        })
+
+		function playNote(key){
+			const noteAudio=document.getElementById(key.dataset.note)
+			noteAudio.currentTime=0
+			noteAudio.play()
+			key.classList.add('active')
+			noteAudio.addEventListener('ended', () => {
+				key.classList.remove('active')
+			})
+		}
+	</script>
+    
+</body>
+
+
+</html>

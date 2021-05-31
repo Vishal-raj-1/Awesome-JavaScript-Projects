@@ -211,7 +211,7 @@ let projectData = [
   },
   {
     projectName: "FORM VALIDATE",
-    projectImage: "assets/Images/formvalidate.png",
+    projectImage: "assets/Images/formValidate.png",
     projectUrl: "public/formvalidate.html"
   },
   {
@@ -717,6 +717,17 @@ let projectData = [
     projectUrl: "public/hangman.html"
   },
   {
+
+    projectName: "Random_Picker_visualiser",
+    projectImage: "assets/GIFs/README.md",
+    projectUrl: "public/Random_Picker.html",
+  },
+  {
+    projectName: "Animated Minion Eyes",
+    projectImage: "assets/GIFs/Minion-Eyes.gif",
+    projectUrl: "public/Minion-Eyes.html",
+},
+  {
     projectName: "Rock Paper Scissor Game",
     projectImage: "assets/Images/r-p-s/rps.gif",
     projectUrl: "public/Rock-paper-scissor.html"
@@ -735,7 +746,8 @@ let projectData = [
     projectName: 'RGB TO HEX CONVERTER',
     projectImage: 'assets/Images/RGB_HEX.png',
     projectUrl: 'public/RGB_HEX.html'
-  }
+}
+
   ,
  
 
@@ -1004,6 +1016,11 @@ let projectData = [
     projectUrl: "public/wordScramble.html"
   },
   {
+    projectName: "Photo Details Teller",
+    projectImage: "assets/Images/photoDetails.png",
+    projectUrl: "public/photoDetails.html"
+  },
+  {
     projectName: "Guess the song",
     projectImage: "assets/Images/guess_song/view.png",
     projectUrl: "public/guess_song.html"
@@ -1225,7 +1242,7 @@ let projectData = [
     projectUrl: "public/Code_Converter.html"
   },
   {
-    projectName: "AmoungUs Game Move",
+    projectName: "AmongUs Game Move",
     projectImage: "assets/GIFs/amongus.gif",
     projectUrl: "public/amongus.html"
   },
@@ -1297,8 +1314,8 @@ let projectData = [
   },
 
   {
-    projectName: "Infinite Scroll Image Gallery",
-    projectImage: "assets/Images/infiniteScroll.png",
+    projectName: "Infinite Scroll Blogs",
+    projectImage: "assets/Images/infiniteScrollBlog.png",
     projectUrl: "public/infiniteScroll.html"
   },
   {
@@ -1720,6 +1737,12 @@ let projectData = [
   },
 
   {
+    projectName: "Hand Cricket",
+    projectImage: "assets/GIFs/handcricket.gif",
+    projectUrl: "public/handcricket.html",
+},
+
+  {
     projectName: "Landing-Page-Using JavaScript",
     projectImage: "assets/Images/Landing-page.jpg",
     projectUrl: "public/Landing_Page.html",
@@ -1733,6 +1756,7 @@ let projectData = [
     projectName: "Gray Scale Cursor",
     projectImage: "assets/Images/grayCursor.png",
     projectUrl: "public/grayCursor.html"
+
   },
   {
     projectName: "Dynamic Time message",
@@ -1821,6 +1845,11 @@ let projectData = [
   },
 
   {
+    projectName: "Pubg Drop",
+    projectImage: "assets/GIFs/pubgdrop.gif",
+    projectUrl: "public/pubgdrop.html"
+  },
+  {
     projectName: "GST Calculator",
     projectImage: "assets/Images/GST_Calculator.png",
     projectUrl: "public/GST_Calculator.html"
@@ -1831,7 +1860,6 @@ let projectData = [
     projectUrl: "public/hover_images.html"
   },
   {
-
     projectName: "Preloader Projects",
     projectImage: "assets/Images/preloader.png",
     projectUrl: "public/preloader.html"
@@ -1908,8 +1936,17 @@ let projectData = [
     projectName: "Decimal To Binary Converter",
     projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
     projectUrl: "public/DecimalToBinaryConverter.html",
+  }
+  ,{
+    projectName: "Book Search ",
+    projectImage: "assets/images/book-search.png",
+    projectUrl: "public/book-search.html",
   },
   {
+    projectName: "Joke with category",
+    projectImage: "assets/images/joke-category.png",
+    projectUrl: "public/joke-category.html",
+  },{
     projectName:"Web Development Course Webpage",
     projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
     projectUrl:"public/WebDevelopmentCourse.html",
@@ -1928,7 +1965,30 @@ let projectData = [
     projectImage: "assets/images/image-search.png",
     projectUrl: "public/image-search.html",
   },
-
+  {
+    projectName: "Among Us Mod",
+    projectImage: "assets/GIFs/among.gif",
+    projectUrl: "public/amongus/index.html",
+  },
+  {
+    projectName: "Compound Interest Calculator",
+    projectImage: "assets/GIFs/CompoundInterestCalculator.gif",
+    projectUrl: "public/CompoundInterestCalculator.html",
+  },
+    {
+    projectName: "Gradient Showcase",
+    projectImage: "assets/images/gradient-showcase.png",
+    projectUrl: "public/gradient-showcase.html",
+  }
+,{
+    projectName: "Meal Genrator",
+    projectImage: "assets/images/meal-genrator.png",
+    projectUrl: "public/meal-genrator.html",
+  },{
+    projectName: "Train_Schedule Manager",
+    projectImage: "assets/Images/train_schedule.png",
+    projectUrl: "public/train_schedule.html",
+  },
   {
     projectName: "Lyrics Search App",
     projectImage: "assets/Images/Lyrics_search_app.png",
@@ -1941,6 +2001,9 @@ let projectData = [
     projectImage: "assets/images/sortable_list.png",
     projectUrl: "public/sortable_list.html",
   },
+
+
+
 
 
 {
