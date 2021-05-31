@@ -2043,6 +2043,16 @@ let projectData = [
     projectUrl: "public/image-search.html",
   },
   {
+    projectName: "Physics Calculator",
+    projectImage: "assets/images/phy_calc.png",
+    projectUrl: "public/phy_calc.html",
+  },
+  {
+    projectName: "Background Video header",
+    projectImage: "assets/images/background-header.png",
+    projectUrl: "public/background-header.html",
+  },
+  {
     projectName: "Sortable List",
     projectImage: "assets/images/sortable_list.png",
     projectUrl: "public/sortable_list.html",
