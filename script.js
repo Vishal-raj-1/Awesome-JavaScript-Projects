@@ -894,6 +894,11 @@ let projectData = [
     projectUrl: "public/palindrome.html"
   },
   {
+    projectName: "Tabs",
+    projectImage: "assets/GIFs/tabs.gif",
+    projectUrl: "public/tabs.html"
+  },
+  {
     projectName: "Student marks calculator",
     projectImage: "assets/Images/studentCalc.png",
     projectUrl: "public/studentCalc.html"
