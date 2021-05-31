@@ -1985,9 +1985,16 @@ let projectData = [
     projectUrl: "public/maths_facts.html"
   },
   {
+
+    projectName: "Balloon and Brick Game",
+    projectImage: "assets/GIFs/Balloon_brick.gif",
+    projectUrl: "public/BalloonAndBrickGame.html"
+},
+  {
     projectName: "WorldClock",
     projectImage: "assets/Images/worldtime.png",
     projectUrl: "public/worldclock.html",
+
   }
 
   ,{
