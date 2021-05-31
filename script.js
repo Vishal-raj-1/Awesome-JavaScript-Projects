@@ -1821,6 +1821,11 @@ let projectData = [
   },
 
   {
+    projectName: "Pubg Drop",
+    projectImage: "assets/GIFs/pubgdrop.gif",
+    projectUrl: "public/pubgdrop.html"
+  },
+  {
     projectName: "GST Calculator",
     projectImage: "assets/Images/GST_Calculator.png",
     projectUrl: "public/GST_Calculator.html"
@@ -1831,7 +1836,6 @@ let projectData = [
     projectUrl: "public/hover_images.html"
   },
   {
-
     projectName: "Preloader Projects",
     projectImage: "assets/Images/preloader.png",
     projectUrl: "public/preloader.html"
