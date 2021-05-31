@@ -175,6 +175,11 @@ let projectData = [
     projectUrl: "public/Weather_app.html",
   },
   {
+    projectName: "Random_Picker_visualiser",
+    projectImage: "assets/GIFs/README.md",
+    projectUrl: "public/Random_Picker.html",
+  },
+  {
     projectName: "Animated Minion Eyes",
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
