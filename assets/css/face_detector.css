@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body{
+    margin:0;
+    padding:0;
+    display: grid;
+    font-family: 'Bree Serif', serif;
+    place-content: center;
+    background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+video{
+    display: none;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+
+canvas{
+    margin-top: 4%;
+    display: none;
+    
+}
+#btn {
+    box-sizing: border-box;
+    background-color: transparent;
+    margin:auto;
+    width: 500px;
+    padding : 20px;
+    border: 2px solid white;
+    border-radius: 0.6em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  #btn:hover, #btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  #btn:hover {
+    box-shadow: 0 0 40px 40px #abaeb1 inset;
+   
+  }
