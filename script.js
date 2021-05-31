@@ -1926,6 +1926,10 @@ let projectData = [
     projectUrl: "public/DecimalToBinaryConverter.html",
   },
   {
+    projectName: "Joke with category",
+    projectImage: "assets/images/joke-category.png",
+    projectUrl: "public/joke-category.html",
+  },{
     projectName:"Web Development Course Webpage",
     projectImage:"assets/GIFs/WebDevelopmentCourse.gif",
     projectUrl:"public/WebDevelopmentCourse.html",
