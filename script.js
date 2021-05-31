@@ -830,7 +830,7 @@ let projectData = [
   }
   ,
 
-
+  {
     projectName: "Particle JS Project",
     projectImage: "assets/GIFs/Particle.gif",
     projectUrl: "public/Particle.html"
@@ -963,7 +963,6 @@ let projectData = [
     projectName: "Vertical Timeline",
     projectImage: "assets/Images/vertical_timeline/Screenshot.png",
     projectUrl: "public/vertical_timeline.html"
-
   },
   {
     projectName: "PIN Code Tracker",
@@ -1015,6 +1014,19 @@ let projectData = [
     projectImage: "assets/GIFs/Animated_moving_car.gif",
     projectUrl: "public/Animated_moving_car.html"
   },
+//   {
+//     projectName:"Filter_Search",
+//     projectUrl:"public/filter_search.html",
+//   },
+
+  //   {
+  //     projectName: "DarkMode",
+  //     projectImage: {
+  //                     "assets/Images/DarkMode1.jpeg",
+  //                     "assets/Image/DarkMode2.jpeg",
+  //                   },
+  //     projectUrl: "public/DarkMode.html",
+  //    },
   {
     projectName: "Dark Mode",
     projectImage: "assets/GIFs/DarkMode.gif",
@@ -1098,7 +1110,7 @@ let projectData = [
     projectUrl: 'public/AwesomeSnakeGame.html'
   }
   ,
-
+  {
     projectName: "Guess the song",
     projectImage: "assets/Images/guess_song/view.png",
     projectUrl: "public/guess_song.html"
@@ -1536,7 +1548,6 @@ let projectData = [
   },
   {
     projectName: 'Exchange Rate',
-
     projectImage: 'assets/Images/ExchangeRate.png',
     projectUrl: 'public/ExchangeRate.html'
   },
@@ -1936,7 +1947,7 @@ let projectData = [
     projectUrl: 'public/guess.html'
   }
   ,
-
+  {
     projectName: "Barcode Generator",
     projectImage: "assets/Images/barcodeGenerator.png",
     projectUrl: "public/barcodeGenerator.html"
@@ -1985,7 +1996,7 @@ let projectData = [
     projectUrl: 'public/purpleRain.html'
   }
   ,
-
+  {
     projectName: "Preloader Projects",
     projectImage: "assets/Images/preloader.png",
     projectUrl: "public/preloader.html"
@@ -2045,7 +2056,8 @@ let projectData = [
     projectName: 'Math Trainer',
     projectImage: 'assets/Images/math_trainer.png',
     projectUrl: 'public/math_trainer.html'
-
+  },
+  {
     projectName: "Angry birds",
     projectImage: "assets/Images/Angry_bird/demo.png",
     projectUrl: "public/Angry_bird.html"
@@ -2093,7 +2105,7 @@ let projectData = [
     projectUrl: "public/random_name_generator.html"
   }
   ,
-
+  {
     projectName: "3d Flip Card",
     projectImage: "assets/images/flip-card.png",
     projectUrl: "public/flip-card.html"
@@ -2191,7 +2203,7 @@ let projectData = [
     projectName: 'Bucket Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/bucket-visualizing.png',
     projectUrl: 'public/bucketsort.html'
-
+  }
 ,{
     projectName: "Meal Genrator",
     projectImage: "assets/images/meal-genrator.png",
@@ -2227,8 +2239,7 @@ let projectData = [
     projectImage: 'assets/Images/CaptchaValidator.png',
     projectUrl: 'public/CaptchaValidator.html'
   }
-]
-
+,{
     projectName: "Sortable List",
     projectImage: "assets/images/sortable_list.png",
     projectUrl: "public/sortable_list.html",

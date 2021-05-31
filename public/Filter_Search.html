@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<style>
+.filterDiv {
+  float: left;
+  padding:20px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color:lightsalmon;
+  color:white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color:hotpink;
+  color: white;
+}
+</style>
+<body>
+
+<h2 style="text-align: center;color:chartreuse;font-family: cursive;">Store</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cakes')"> Cake</button>
+  <button class="btn" onclick="filterSelection('sweets')"> Sweets</button>
+  <button class="btn" onclick="filterSelection('icecream')"> Ice-cream</button>
+  <button class="btn" onclick="filterSelection('cupcake')"> Cupcake</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv sweets">
+    <div class="card" style="width: 12rem;">
+        <img src="https://hirasweets.com/wp-content/uploads/2019/10/hirasweetsexclusivesweets.jpg"
+         class="card-img-top" alt="cakeimage" style="width:12rem;height:10rem;">
+         <div class="card-body" style="background-color:mintcream;color:black;font-family: fantasy;">
+         <p class="card-text">Sweet Item  $10</p>
+        </div>
+      </div>
+  </div>
+  <div class="filterDiv  icecream">
+    <div class="card" style="width: 12rem;">
+        <img src="https://www.thespruceeats.com/thmb/1QoEFkpjZh0U2pxIociGJhzxDTY=/2723x2042/smart/filters:no_upscale()/easy-chocolate-ice-cream-recipe-1945798-hero-01-45d9f26a0aaf4c1dba38d7e0a2ab51e2.jpg" 
+         class="card-img-top" alt="icecreamimage" style="width:12rem;height:10rem;">
+         <div class="card-body" style="background-color:mintcream;color:black;font-family: fantasy;">
+         <p class="card-text">Ice-Cream Item  $20</p>
+        </div>
+      </div>
+  </div>
+  <div class="filterDiv sweets">
+    <div class="card" style="width: 12rem;">
+        <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2018/10/pjimage-1-1540982669.jpg" 
+         class="card-img-top" alt="icecreamimage" style="width:12rem;height:10rem;">
+         <div class="card-body" style="background-color:mintcream;color:black;font-family: fantasy;">
+         <p class="card-text">Sweets Item  $30</p>
+        </div>
+      </div>
+  </div>
+  <div class="filterDiv cakes">
+    <div class="card" style="width: 12rem;">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/2/2019/04/Choc-Fudge-Cake-b2d1909.jpg?quality=45&resize=620,443" 
+         class="card-img-top" alt="icecreamimage" style="width:12rem;height:10rem;">
+         <div class="card-body" style="background-color:mintcream;color:black;font-family: fantasy;">
+         <p class="card-text">Cake Item  $40</p>
+        </div>
+      </div>
+  </div>
+  <div class="filterDiv icecream">
+    <div class="card" style="width: 12rem;">
+        <img src="https://i2.wp.com/www.sugarspunrun.com/wp-content/uploads/2018/07/Ice-Cream-Cone-Cupcakes-Recipe-1-of-1-6.jpg"
+         class="card-img-top" alt="cakeimage" style="width:12rem;height:10rem;">
+         <div class="card-body" style="background-color:mintcream;color:black;font-family: fantasy;">
+         <p class="card-text">Ice-cream Item  $30</p>
+        </div>
+      </div>
+  </div>
+  <div class="filterDiv cakes">
+    <div class="card" style="width: 12rem;">
+        <img src="https://preppykitchen.com/wp-content/uploads/2018/04/Funfetti-cake-recipe-new.jpg" 
+         class="card-img-top" alt="icecreamimage" style="width:12rem;height:10rem;">
+         <div class="card-body" style="background-color:mintcream;color:black;font-family: fantasy;">
+         <p class="card-text">Cake Item  $20</p>
+        </div>
+      </div>
+  </div>
+ 
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
