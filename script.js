@@ -1945,6 +1945,10 @@ let projectData = [
     projectUrl: "public/image-search.html",
   },
   {
+    projectName: "Meal Genrator",
+    projectImage: "assets/images/meal-genrator.png",
+    projectUrl: "public/meal-genrator.html",
+  },{
     projectName: "Train_Schedule Manager",
     projectImage: "assets/Images/train_schedule.png",
     projectUrl: "public/train_schedule.html",
