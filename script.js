@@ -949,6 +949,11 @@ let projectData = [
     projectUrl: "public/ExchangeRate.html"
   },
   {
+    projectName: "Navigation",
+    projectImage: "assets/GIFs/navigation.gif",
+    projectUrl: "public/navigation.html"
+  },
+  {
     projectName: "CGPA Calculator",
     projectImage: "assets/Images/cgpaCalculator.png",
     projectUrl: "public/cgpaCalculator.html"
