@@ -2041,6 +2041,11 @@ let projectData = [
     projectUrl: "public/rotating_nav_anim.html",
   },
   {
+    projectName: "Netflix Nav",
+    projectImage: "assets/images/netnav.png",
+    projectUrl: "public/netnav.html",
+  },
+  {
     projectName: "Among Us Mod",
     projectImage: "assets/GIFs/among.gif",
     projectUrl: "public/amongus/index.html",
@@ -2054,6 +2059,7 @@ let projectData = [
     projectName: "Gradient Showcase",
     projectImage: "assets/images/gradient-showcase.png",
     projectUrl: "public/gradient-showcase.html",
+
   }
 ,{
     projectName: "Meal Genrator",
