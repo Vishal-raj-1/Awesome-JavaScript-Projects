@@ -1928,15 +1928,11 @@ let projectData = [
     projectImage: "assets/images/image-search.png",
     projectUrl: "public/image-search.html",
   },
-<<<<<<< HEAD
   {
     projectName: "Train_Schedule Manager",
     projectImage: "assets/Images/train_schedule.png",
     projectUrl: "public/train_schedule.html",
-  }
-]
-=======
-
+  },
   {
     projectName: "Sortable List",
     projectImage: "assets/images/sortable_list.png",
@@ -1949,7 +1945,6 @@ let projectData = [
   projectUrl: "public/background-header.html",
 }
 ];
->>>>>>> e4309260bb576779bba00da387f64a070e3d915b
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
