@@ -1936,6 +1936,11 @@ let projectData = [
     projectName: "Decimal To Binary Converter",
     projectImage: "assets/GIFs/DecimalToBinaryConverter.gif",
     projectUrl: "public/DecimalToBinaryConverter.html",
+  }
+  ,{
+    projectName: "Book Search ",
+    projectImage: "assets/images/book-search.png",
+    projectUrl: "public/book-search.html",
   },
   {
     projectName: "Joke with category",
