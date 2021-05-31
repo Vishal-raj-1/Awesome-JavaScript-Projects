@@ -145,6 +145,11 @@ let projectData = [
     projectUrl: "public/alaska_cartoon.html"
   },
   {
+    projectName: "Slingshot",
+    projectImage: "assets/GIFs/slingshot.gif",
+    projectUrl: "public/slingshot.html",
+  },
+  {
     projectName: "Pig Game",
     projectImage: "assets/GIFs/PigGame.gif",
     projectUrl: "public/PigGame.html"
