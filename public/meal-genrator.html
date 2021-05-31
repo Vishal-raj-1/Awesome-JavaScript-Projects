@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Generator</title>
+</head>
+<link rel="stylesheet" href="../assets/css/meal-genrator.css">
+
+<body>
+
+    <h1 class="heading">Meal Generator<br>
+        <img src="https://media.tenor.com/images/34f5c4cdde696240a411548a05c5bea1/tenor.gif" class="eat"
+            id="eating-img">
+    </h1>
+    <div class="text-center">
+        <input type="text" id='item' placeholder="Enter food or meal">
+        <button id='search' onclick="getrecipe()">Search</button>
+        <br>
+        <button id='random' onclick="getrandom()">random</button>
+    </div>
+    <div class="text-center">
+
+        <div id="box" class="box1">
+
+        </div>
+    </div>
+    <script src="../assets/js/meal-genratore.js"></script>
+</body>
+
+</html>
