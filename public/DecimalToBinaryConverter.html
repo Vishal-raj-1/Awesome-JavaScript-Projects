@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal to Binary Converter</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/DecimalToBinaryConverter.css">
+</head>
+<body>
+    <div class="converter" align="center">
+        <h1 >Decimal to Binary Converter</h1>
+        <div class="form">
+            <div id="input">
+                <label>Enter decimal number:</label>
+                <input type = "text" id="ip">
+            </div>
+            <br>
+            <button id="convert">CONVERT</button>
+            <div id="output">
+                <br>
+                <label>Binary equivalent:</label>
+                <input type = "text" id = "op" readonly>
+            </div>
+        </div>
+    </div>   
+</body>
+<script>
+    let btn = document.getElementById('convert');
+    btn.addEventListener('click', function(){
+        let input = document.getElementById("ip").value;
+        document.getElementById("op").value = dec2bin(input);
+        function dec2bin(dec){
+            return ((dec >>> 0).toString(2));
+        }
+    });
+</script>
+</html>
