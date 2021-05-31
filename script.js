@@ -225,6 +225,12 @@ let projectData = [
     projectUrl: "public/voicelocker.html"
   },
   {
+    projectName: "Battery Level",
+    projectImage: "assets/GIFs/Battery_Level.gif",
+    projectUrl: "public/Battery_Level.html",
+
+  },
+  {
     projectName: "FORM VALIDATE",
     projectImage: "assets/Images/formValidate.png",
     projectUrl: "public/formvalidate.html"
