@@ -130,6 +130,11 @@ let projectData = [
     projectUrl: "public/math-sprinter-game.html"
   },
   {
+    projectName: "Face Detector",
+    projectImage: "assets/Images/Face_Detector.png",
+    projectUrl: "public/face_detector.html"
+  },
+  {
     projectName: "Alaska Cartoon",
     projectImage: "assets/GIFs/alaska_cartoon.png",
     projectUrl: "public/alaska_cartoon.html"
