@@ -2052,16 +2052,29 @@ let projectData = [
     projectUrl: "public/train_schedule.html",
   },
   {
+    projectName: "Lyrics Search App",
+    projectImage: "assets/Images/Lyrics_search_app.png",
+    projectUrl: "public/Lyrics_search_App.html",
+  },
+
+
+  {
     projectName: "Sortable List",
     projectImage: "assets/images/sortable_list.png",
     projectUrl: "public/sortable_list.html",
   },
+
+
+
+
+
 {
   projectName: "Background Video header",
   projectImage: "assets/images/background-header.png",
   projectUrl: "public/background-header.html",
 }
 ];
+
 
 var projectDetails = projectData.slice(0);
 projectDetails.sort(function (a, b) {
