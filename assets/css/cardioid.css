@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+h1 {
+    color: white;
+    font-family: 'Slabo 27px', serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: #262626;
+    width: 95%;
+    max-width: 500px;
+}
+
+footer {
+    position: fixed;
+    color: #efefef;
+    background-color: #262626;
+    bottom: 0;
+    right: 10px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+footer>span {
+    color: red;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: tomato;
+}

@@ -1,7 +1,8 @@
 :root {
  
-  --background: #cc0066;
+  --background:lightcoral;
   --text:#ffcce6;
+  --imageoverlay:100%;
 }
 
 * {
@@ -17,15 +18,35 @@ body {
   font-family: "montserrat", sans-serif;
   height: 100%;
   text-align: center;
-  background: var(--background);
+  background: url('../Images/drumkit_bg.jpg') bottom center;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   overflow-x: hidden;
   margin: auto;
   justify-content: center;
 }
 
+body:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--imageoverlay);
+    background-color: var(--background);
+    opacity: 0.4;
+}
+
+
+.heading{
+font-size: 2.5rem;
+}
+
 header {
-  margin: 1em;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 header img {
@@ -39,7 +60,7 @@ header h1 {
 }
 .container{
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 120px;
     width: 100%;
     height: auto;
 }
@@ -56,8 +77,8 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  margin-top: 2rem;
-  padding: 2em 0;
+  margin-top: 1.5rem;
+  padding: 0.5em 0;
   background: linear-gradient(to right,#25CCF7, #192A56);
   width: 100%;
   justify-content: center;
@@ -83,10 +104,10 @@ footer p {
   text-shadow: 3px 0 white;
   border-radius: 0.25em;
   display: inline-block;
-  width: 110px;
-  height: 130px;
+  width: 90px;
+  height: 100px;
   text-align: center;
-  margin: 10px;
+  margin: 12px;
   background-color: black;
 }
 
@@ -96,18 +117,47 @@ footer p {
 
 }
 
+.theme-btn{
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 2rem;
+  transition:0.5s ease;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
 /* for smaller devices*/
 
 @media (max-width: 766px) {
-  header {
-    margin: 2em;
-  }
+ 
 
 .drum span {
     font-size: 0.7em;
   }
 
   footer {
-    padding: 1em 0;
+    padding: 0.5em 0;
   }
 }
+
+@media (max-width: 400x) {
+header img {
+  width: 300px !important;
+}
+
+}
+/* theme styling  */
+
+.dark-theme:after {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-theme #change-theme-btn {
+  color: #222;
+  background-color: #25CCF7;
+}
+

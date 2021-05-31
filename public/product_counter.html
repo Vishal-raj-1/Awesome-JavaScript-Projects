@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Counter</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="../assets/css/product_counter.css" rel="stylesheet">
+</head>
+
+<body>
+   
+      <div class="counter">
+         <h1>Javascript Product Counter</h1>;
+
+         <div class="counter-inner">
+               <div class="total-product">
+                  <img src="https://static-01.daraz.pk/p/ff1123addcb22a4476c656d10bccf4ef.jpg_340x340q80.jpg_.webp" alt="">
+                  <div>
+                       <h5>Price: 78 Rupees</h5>
+                       <h5>Quantity: <span id="quantity">0</span></h5>
+                      <h5>Total Price: <span id="total-price">0</span> Rupees</h5>
+                  </div>
+               </div>
+               
+               <!-- <button class="btn" id="minus">-</button> -->
+               <button class="btn" onclick="productCount(false)">-</button>
+               <input type="number" value="0" id="input">
+               <!-- <button class="btn" id="plus">+</button> -->
+               <button class="btn" onclick="productCount(true)">+</button>
+               <br>
+
+               <button class="btn btn-buy" id="buy">Buy Now Product</button>
+         </div>
+      </div>
+ 
+    
+     <!-- JAVASCRIPT -->
+  <script src="../assets/js/product_counter.js"></script>
+</body>  
+</html>   

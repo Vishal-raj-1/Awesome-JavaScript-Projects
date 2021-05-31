@@ -1,0 +1,60 @@
+.card {
+    width: 22rem;
+    margin: 9px;
+}
+
+#fah, #kel, #cel{
+    font-size: 65px;
+    width: 22rem;
+    margin: 9px;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.jumbotron {
+    background-color: black !important;
+    color: whitesmoke;
+}
+
+.footer {
+    font-family: 'Architects Daughter', cursive;
+    width: 100%;
+    color: black;
+    font-size: 30px;
+    position: fixed;
+    bottom: 10px;
+}
+a {
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+}
+i {
+    color: red;
+}
+
+@media only screen and (max-width: 576px) {
+    .display-2 {
+        font-size: 50px !important;
+    }
+    #fah, #kel, #cel{
+        font-size: 45px;
+    }
+    .footer {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .display-2 {
+        font-size: 65px !important;
+    }
+    #fah, #kel, #cel{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        position: static;
+    }
+}

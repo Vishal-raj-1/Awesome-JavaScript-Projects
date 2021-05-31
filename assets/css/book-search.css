@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+.box {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 25px;
+  max-width: 1084px;
+  margin: 2% auto;
+}
+
+.each {
+  width: 350px;
+  height: 400px;
+  background-color: #d8e3e7;
+  margin: 2%;
+  color: #fff;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.3) -2px 4px 0px;
+  color: white;
+  letter-spacing: normal;
+  letter-spacing: 6px;
+  font-family: "Courgette", cursive;
+}
+
+.text-center {
+  text-align: center;
+}
+
+p {
+  letter-spacing: 0px ;
+  font-size: 400;
+  color: #242a33;
+}
+img {
+  width: 150px;
+  height: 200px;
+  box-shadow: rgba(70, 70, 90, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.para {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 0px;
+  text-align: center;
+  font-family: "Courgette", cursive;
+}
+body {
+  background-color: #114e60;
+}
+input {
+  font-size: 1.5rem;
+  border: 3px solid dodgerblue;
+  box-shadow: rgba(70, 70, 90, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  font-family: "Playball";
+}
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+button {
+  background-color: dodgerBlue;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 1rem;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 3%;
+}
+
+.title {
+  background-color: #2b2e4a;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 5px;
+  padding: 7px;
+  margin-top: 0px;
+  max-height: 6vh;
+  min-height: 6vh;
+}
+a {
+  color: #2b2e4a;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  text-decoration: none;
+}

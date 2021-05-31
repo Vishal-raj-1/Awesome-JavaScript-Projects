@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:url('../Images/circleAnimation.jpg') no-repeat  center/cover;
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+}
+.circle{
+    width:25px;
+    height:25px;
+    border:1px solid white;
+    position:absolute;
+    border-radius: 15px;
+}

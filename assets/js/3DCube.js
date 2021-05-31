@@ -1,3 +1,5 @@
+import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
+
 let camera, scene, renderer, cube;
 
 function init() {
@@ -22,7 +24,7 @@ function init() {
   document.body.appendChild(renderer.domElement);
 
   // Init BoxGeometry object (rectangular cuboid)
-  const geometry = new THREE.BoxGeometry(1, 1, 1);
+  const geometry = new THREE.BoxGeometry(2, 2, 2);
 
   // Create material with color
   const material = new THREE.MeshStandardMaterial({ color: 0xff0051 });
@@ -44,6 +46,11 @@ function init() {
 
   // Position camera
   camera.position.z = 5;
+
+  // Orbit controls ( mouse events )
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.target.set(0, 0, 0);
+  controls.update();
 }
 
 // Draw the scene every time the screen is refreshed
@@ -70,4 +77,3 @@ window.addEventListener("resize", onWindowResize, false);
 
 init();
 animate();
-

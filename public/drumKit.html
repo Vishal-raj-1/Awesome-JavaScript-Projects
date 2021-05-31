@@ -12,17 +12,14 @@
   <title>Javascript Drum kit</title>
 </head>
 
-<body>
+<body onresize="resizer()">
   <div class="container">
     <header>
+      <h1 class="heading"><i class="fab fa-js"></i> Javascript Drum-Kit <i class="fas fa-drum"></i></h1>
       <img src="../assets/GIFs/drum-kit.gif" alt="drum icon">
-      <h1><i class="fab fa-js"></i> Javascript Drum-Kit <i class="fas fa-drum"></i></h1>
     </header>  
     <main class="keys">
-  <header>
-    <img src="../assets/GIFs/drum-kit.gif" alt="drum icon">
-    <h1><i class="fab fa-js"></i> Javascript Drum-Kit <i class="fas fa-drum"></i></h1>
-  </header>
+ 
 
 
 
@@ -50,10 +47,13 @@
     <audio data-key="76" src="../assets/sounds/tom.wav"></audio>
 
   </main>
+</main>
+<div class="util__buttons">
+  <button id="change-theme-btn" class="theme-btn">Change Theme</button>
+</div>
 
-  <div class="util__buttons">
-    <button id="util__button-theme">Change Theme</button>
-  </div>
+</div>
+
 
   
 

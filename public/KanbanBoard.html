@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="../assets/css/KanbanBoard.css" />    
+</head>
+<body>
+    <header>
+        <h1>Simple Kanban Board</h1>
+      </header>
+      <div class="main-container">
+        <ul class="columns">
+          <li class="column to-do-column">
+            <div class="column-header">
+              <h4>To Do</h4>
+            </div>
+            <ul class="task-list" id="to-do">
+              <li class="task" draggable="true">
+                <p>Task 1</p>
+              </li>
+              <li class="task" draggable="true">
+                <p>Task 2</p>
+              </li>
+              <li class="task" draggable="true">
+                <p>Task 3</p>
+              </li>
+              <li class="task" draggable="true">
+                <p>Task 4</p>
+              </li>
+            </ul>
+          </li>
+          <li class="column doing-column">
+            <div class="column-header">
+              <h4>Doing</h4>
+            </div>
+            <ul class="task-list" id="doing">
+              <li class="task" draggable="true">
+                <p>Task 5</p>
+              </li>
+              <li class="task" draggable="true">
+                <p>Task 6</p>
+              </li>
+            </ul>
+          </li>     
+          <li class="column done-column">
+            <div class="column-header">
+              <h4>Done</h4>
+            </div>
+            <ul class="task-list" id="done">
+              <li class="task" draggable="true">
+                <p>Task 7</p>
+              </li>
+              <li class="task" draggable="true">
+                <p>Task 8</p>
+              </li>
+              <li class="task" draggable="true">
+                <p>Task 9</p>
+              </li>
+            </ul>
+          </li>
+          <li class="column trash-column">
+            <div class="column-header">
+              <h4>Trash</h4>
+            </div>
+            <ul class="task-list" id="trash">
+              <li class="task" draggable="true">
+                <p>Task 10</p>
+              </li>
+            </ul>
+            <div class="column-button">
+              <button class="button delete-button" onclick="emptyTrash()">Delete</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <script src="../assets/js/KanbanBoard.js"></script>
+</body>
+</html>

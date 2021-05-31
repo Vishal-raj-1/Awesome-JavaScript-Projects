@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Loan Calculator</title>
+  </head>
+  <style>
+    body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bab5e3;
+}
+
+.container {
+  height: auto;
+  width: 500px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom left, #e4dfec, white, white);
+}
+.sub-container {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  height: max-content;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header button {
+  height: max-content;
+  width: max-content;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 35px;
+  color: #9088d2;
+}
+
+.header button:hover {
+  cursor: pointer;
+}
+
+.view,
+.breakup {
+  width: 50%;
+}
+.details input {
+  width: 100%;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----- Styling the sliders ----*/
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #9088d2;
+  border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+  border: 5px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #9088d2;
+  cursor: pointer;
+  margin-top: -6px;
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #b3b3b3;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #9088d2;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+  border-radius: 10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+  border: 5px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #9088d2;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #9088d2;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+  border-radius: 10px;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #9088d2;
+  border-radius: 5px;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #9088d2;
+  border-radius: 5px;
+}
+
+input[type="range"]::-ms-thumb {
+  box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+  border: 5px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #9088d2;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: #9088d2;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: #9088d2;
+}
+
+/*-------------------------------------*/
+#price {
+  color: #130f31;
+  font-size: 25px;
+}
+
+.loan-details {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#price-container {
+  color: #9088d2;
+  margin-top: 50px;
+}
+
+#price-container::before {
+  content: "Monthly Payable:";
+  font-size: 12px;
+  display: block;
+}
+
+  </style>
+  <body>
+    <div class="container">
+  <div class="header">
+    <h1 style="color: #6258A8">Loan Calculator</h1>
+    <button>
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
+  <div class="sub-container">
+    <div class="view">
+      <div class="details">
+        <div>
+          <div class="detail">
+            <p style="color: #9088D2">Amount</p>
+            <p id="loan-amt-text" style="color: #6258A8"></p>
+          </div>
+          <input type="range" id="loan-amount" min="0" max="10000000" step="50000">
+        </div>
+        <div>
+          <div class="detail">
+            <p style="color: #9088D2">Length</p>
+            <p id="loan-period-text" style="color: #6258A8"></p>
+          </div>
+          <input type="range" id="loan-period" min="1" max="30" step="1">
+        </div>
+        <div>
+          <div class="detail">
+            <p style="color: #9088D2">% Interest</p>
+            <p id="interest-rate-text" style="color: #6258A8"></p>
+          </div>
+          <input type="range" id="interest-rate" min="1" max="15" step="1">
+        </div>
+      </div>
+      <div class="footer">
+        <p id="price-container"><span id="price">0</span>/mo</p>
+      </div>
+    </div>
+    <div class="breakup">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  <div class="loan-details">
+    <div class='chart-details'>
+      <p style="color: #9088D2">Principal</p>
+      <p id="cp" style="color: #130F31; font-size: 17px;"></p>
+    </div>
+    <div class='chart-details'>
+      <p style="color: #9088D2">Interest</p>
+      <p id="ci" style="color: #130F31; font-size: 17px;"></p>
+    </div>
+    <div class='chart-details'>
+      <p style="color: #9088D2">Total Payable</p>
+      <p id="ct" style="color: #130F31; font-size: 17px;"></p>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+    <script>
+      var P, R, N, myChart;
+
+// update loan amount
+document.getElementById("loan-amount").addEventListener("input", (x) => {
+  document.querySelector("#loan-amt-text").innerText = parseInt(
+    x.target.value
+  ).toLocaleString("en-IN");
+  P = parseFloat(x.target.value);
+  displayDetails();
+});
+
+// update Rate of Interest
+document.getElementById("interest-rate").addEventListener("input", (x) => {
+  document.querySelector("#interest-rate-text").innerText = x.target.value + "%";
+  R = parseFloat(x.target.value);
+  displayDetails();
+});
+
+// update loan period
+document.getElementById("loan-period").addEventListener("input", (x) => {
+  document.querySelector("#loan-period-text").innerText =
+    x.target.value + " years";
+  N = parseFloat(x.target.value);
+  displayDetails();
+});
+
+// calculate total Interest payable
+function calculateLoanDetails(p, r, emi) {
+  let totalInterest = 0;
+  while (p > 0) {
+    let interest = parseFloat(p) * parseFloat(r);
+    p = parseFloat(p) - (parseFloat(emi) - interest);
+    totalInterest += interest;
+  }
+  return totalInterest;
+}
+
+// calculate details
+function displayDetails() {
+  let r = parseFloat(R) / 1200;
+  let n = parseFloat(N) * 12;
+
+  let base = 1 + r;
+  let num = parseFloat(P) * r * Math.pow(base, n);
+  let denom = Math.pow(base, n) - 1;
+  let emi = parseFloat(num) / parseFloat(denom);
+
+  let payabaleInterest = calculateLoanDetails(P, r, emi);
+
+  let opts = '{style: "decimal", currency: "IN"}';
+
+  document.querySelector("#cp").innerText = parseFloat(P).toLocaleString(
+    "en-IN",
+    opts
+  );
+
+  document.querySelector("#ci").innerText = parseFloat(
+    payabaleInterest
+  ).toLocaleString("en-IN", opts);
+
+  document.querySelector("#ct").innerText = parseFloat(
+    parseFloat(P) + parseFloat(payabaleInterest)
+  ).toLocaleString("en-IN", opts);
+
+  document.querySelector("#price").innerText = parseFloat(emi).toLocaleString(
+    "en-IN",
+    opts
+  );
+
+  myChart.data.datasets[0].data[0] = P;
+  myChart.data.datasets[0].data[1] = payabaleInterest;
+  myChart.update();
+}
+
+// Initialize everything
+function initialize() {
+  document.querySelector("#loan-amt-text").innerText = parseInt(
+    document.getElementById("loan-amount").value
+  ).toLocaleString("en-IN");
+  P = parseFloat(document.getElementById("loan-amount").value);
+
+  document.querySelector("#interest-rate-text").innerText =
+    document.getElementById("interest-rate").value + "%";
+  R = parseFloat(document.getElementById("interest-rate").value);
+
+  document.querySelector("#loan-period-text").innerText =
+    document.getElementById("loan-period").value + " years";
+  N = parseFloat(document.getElementById("loan-period").value);
+
+  let data = {
+    labels: ["Principal", "Interest"],
+    datasets: [
+      {
+        label: "Home Loan Details",
+        data: [0, 0],
+        backgroundColor: ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+        hoverOffset: 4
+      }
+    ]
+  };
+
+  let config = {
+    type: "pie",
+    data: data
+  };
+
+  myChart = new Chart(document.getElementById("myChart"), config);
+  displayDetails();
+}
+initialize();
+
+    </script>
+  </body>
+</html>

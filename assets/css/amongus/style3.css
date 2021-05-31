@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+	background-color: black;
+}
+
+#mainlo{
+	
+	height: 250px;
+	width: 370px;
+    margin-top: 200px;
+	
+	
+}
+
+#mainlo1{
+	
+	margin-top: 20px;
+	height: 90px;
+	width: 170px;
+	border-radius:15px;
+	padding:10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px
+	
+}
+
+
+#mainlol:hover{
+	background-color: #d6d6d6;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+</head>
+<link rel="stylesheet" href="../assets/css/book-search.css">
+
+<body onload="getbook()">
+    <h1 class="heading">Find your Book</h1>
+    <p class="para">Give the best event to your life by reading the books.
+    </p>
+
+    <div class="text-center">
+        <input onchange="getbook()" type="text" placeholder="Enter  the book name" id="search" />
+        <button onclick="getbook()">Search</button>
+
+        <div id="box"></div>
+
+    </div>
+
+    <script src="../assets/js/book-search.js"></script>
+</body>
+
+</html>
