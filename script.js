@@ -747,11 +747,7 @@ let projectData = [
     projectImage: "assets/GIFs/Random_User.gif",
     projectUrl: "public/Randomuser.html",
   },
-  {
-    projectName: "Animated Minion Eyes",
-    projectImage: "assets/GIFs/Minion-Eyes.gif",
-    projectUrl: "public/Minion-Eyes.html",
-  },
+
   {
     projectName: "Bubble Particle Project",
     projectImage: "assets/GIFs/bubble-particle.gif",
@@ -929,11 +925,7 @@ let projectData = [
     projectImage: "assets/GIFs/Minion-Eyes.gif",
     projectUrl: "public/Minion-Eyes.html",
   },
-  {
-    projectName: 'Exchange Rate',
-    projectImage: 'assets/Images/ExchangeRate.png',
-    projectUrl: 'public/ExchangeRate.html',
-  },
+  
   {
     projectName: "Exchange Rate",
     projectImage: "assets/Images/ExchangeRate.png",
@@ -1094,11 +1086,7 @@ let projectData = [
     projectImage: 'assets/GIFs/Giphy-Search.gif',
     projectUrl: 'public/Giphy-Search.html',
   },
-  {
-    projectName: "Giphy-Search",
-    projectImage: "assets/GIFs/Giphy-Search.gif",
-    projectUrl: "public/Giphy-Search.html",
-  },
+  
   {
     projectName: "Play-Beats",
     projectImage: "assets/GIFs/playbeats.gif",
@@ -1115,11 +1103,7 @@ let projectData = [
     projectImage: "assets/GIFs/breakouthere.gif",
     projectUrl: "public/breakout.html",
   },
-  {
-    projectName: "New year crackers",
-    projectImage: "assets/GIFs/newyearwish.gif",
-    projectUrl: "public/newyearwish.html",
-  },
+ 
   {
     projectName: "Tetris Game",
     projectImage: "assets/Images/TetrisGame.png",
@@ -1514,26 +1498,10 @@ let projectData = [
     projectImage: "assets/GIFs/DinosaurGame.gif",
     projectUrl: "public/DinosaurGame.html"
   },
-  {
-    projectName: "Falling Bullets Animation JS",
-    projectImage: "assets/GIFs/FallingBulletsAnimation.gif",
-    projectUrl: "public/FallingBulletsAnimation.html",
-  },
-  {
-    projectName: "Infix Expression Evaluator in JavaScript",
-    projectImage: "assets/GIFs/Infix-Evaluator-in-JavaScript.png",
-    projectUrl: "public/infixevaluator.html",
-  },
-  {
-    projectName: "JavaScript Dragon Game",
-    projectImage: "assets/Images/JavaScript-Dragon-Game.png",
-    projectUrl: "public/Dino game.html",
-  },
-  {
-    projectName: 'Falling Bullets Animation JS',
-    projectImage: 'assets/GIFs/FallingBulletsAnimation.gif',
-    projectUrl: 'public/FallingBulletsAnimation.html'
-  },
+  
+  
+  
+ 
   {
     projectName: "Ternary Search Visualization in JavaScript",
     projectImage: "assets/Images/ternarysearch-visualizing.png",
@@ -1544,11 +1512,7 @@ let projectData = [
     projectImage: "assets/Images/binarysearch-visualizing.png",
     projectUrl: "public/binarysearch.html"
   },
-  {
-    projectName: 'JavaScript Dragon Game',
-    projectImage: 'assets/Images/JavaScript-Dragon-Game.png',
-    projectUrl: 'public/Dino game.html'
-  },
+ 
   {
     projectName: "Heap Sort Visualizer in JavaScript",
     projectImage: "assets/Images/heap-visualizing.png",
