@@ -722,12 +722,7 @@ let projectData = [
     projectImage: 'assets/Images/tip-calc.png',
     projectUrl: 'public/tip-calculator.html'
 
-  }
-
-  ,
-
   },
-
   {
     projectName: "DragNDrop",
     projectImage: "assets/GIFs/DragNDrop.gif",
@@ -2266,15 +2261,6 @@ let searchInput = document.getElementById('searchBar')
 let searchText = '';
 
 
-searchInput.addEventListener('change', (e) => {
-  searchText = e.target.value
-
-searchInput.addEventListener('change',(e) => {
-  searchText= e.target.value
-
-})
-
-
 searchInput.addEventListener("change", (e) => {
   searchText = e.target.value;
 });
@@ -2330,7 +2316,8 @@ searchForm.addEventListener("submit", (e) => {
 
 })
 
-});
+  }
+})
 
 
 // search function ends
