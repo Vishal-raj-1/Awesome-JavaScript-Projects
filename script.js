@@ -51,9 +51,6 @@ let projectData = [
     projectUrl: "public/pixelated.html",
   },
   {
-
-    
-
     projectName: "Emoji Feedback Form",
     projectImage: "assets/GIFs/feedback.gif",
     projectUrl: "public/feedback.html"
@@ -2216,6 +2213,11 @@ let projectData = [
   projectName: "Background Video header",
   projectImage: "assets/images/background-header.png",
   projectUrl: "public/background-header.html",
+},
+{
+  projectName: "Dinosaur Video Game",
+  projectImage: "assets/images/dinosaur.png",
+  projectUrl: "public/dinosaur-game.html",
 }
 ];
 

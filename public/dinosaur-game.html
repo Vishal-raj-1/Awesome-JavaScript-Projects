@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>GAME USING JAVASCRIPT</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .game-heading {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+        text-shadow: 3px 2px green;
+        font-size: 5em;
+        margin: 40px 0;
+      }
+
+      .game {
+        width: 800px;
+        height: 300px;
+        margin: 60px auto;
+        display: flex;
+        border: 3px solid red;
+      }
+
+      .cactus {
+        height: 40px;
+        object-fit: contain;
+        position: relative;
+        top: 261px;
+        left: 670px;
+        animation: block 3s infinite linear;
+      }
+
+      .block {
+        height: 40px;
+      }
+
+      .character {
+        height: 100px;
+      }
+
+      .dino {
+        height: 100px;
+        object-fit: contain;
+        position: relative;
+        top: 203px;
+      }
+
+      .animate {
+        animation: character 500ms;
+      }
+
+      @keyframes block {
+        0% {
+          left: 670px;
+        }
+        100% {
+          left: -60px;
+        }
+      }
+
+      @keyframes character {
+        0% {
+          top: 203px;
+        }
+        30% {
+          top: 140px;
+        }
+        70% {
+          top: 140px;
+        }
+        100% {
+          top: 203px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="game-heading">GAME</h1>
+    <div class="game">
+      <div class="character">
+        <img class="dino" src="../assets/Images/dinoImg.png" alt="dino" />
+      </div>
+      <div class="block">
+        <img class="cactus" src="../assets/Images/cactus.png" alt="cactus" />
+      </div>
+    </div>
+  </body>
+  <script>
+    const character = document.querySelector(".dino");
+    const block = document.querySelector(".cactus");
+
+    const jump = () => {
+      character.classList.add("animate");
+      setTimeout(function () {
+        character.classList.remove("animate");
+      }, 500);
+    };
+
+    var checkDead = setInterval(function () {
+      var blockleft = parseInt(
+        window.getComputedStyle(block).getPropertyValue("left")
+      );
+      var charactertop = parseInt(
+        window.getComputedStyle(character).getPropertyValue("top")
+      );
+      console.log(charactertop);
+      console.log(blockleft);
+      if (blockleft < 5 && charactertop >= 178) {
+        block.style.animation = "none";
+        block.style.display = "none";
+        alert("Uh..Oh, you lose.");
+      }
+    }, 100);
+  </script>
+  
+</html>
