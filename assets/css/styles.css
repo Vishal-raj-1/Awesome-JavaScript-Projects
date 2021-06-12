@@ -608,9 +608,6 @@ footer{
     height: auto;
     padding: 50px 100px;
     background: #111;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 footer .container {
     display: flex;
@@ -898,19 +895,12 @@ footer .container .sec.Aboutus
     .CTA img{
         display: none;
     }
-    footer{
-        flex-direction: column;
-        padding: 30px 0;
-    }
     .contactForm{
         width: 100%;
     }
     .contactForm p:first-child,
     .contactForm p:nth-child(2){
         width: 98%;
-    }
-    footer p{
-        font-size: 15px;
     }
     .projectCardImg{
         width: 350px;
@@ -1005,3 +995,19 @@ div.searchProject input[type=text] {
     transition: 0.5s;
   }
   
+  @media (max-width : 880px){
+      .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+
+      footer .container .sec.Aboutus{
+          width: 100%;
+          padding: 0px;
+      }
+
+      .QuickLinks{
+          width: 100%;
+      }
+  }
