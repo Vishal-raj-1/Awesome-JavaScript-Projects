@@ -545,7 +545,7 @@ i#menuClose{
     height: 3px;
     background-color: #47b2e4;
     width: 100px;
-    /*margin: 10px 0; */f
+    /*margin: 10px 0; */
 }
 .projectDescription{
     flex-basis: 40%;
@@ -608,30 +608,22 @@ footer{
     height: auto;
     padding: 50px 100px;
     background: #111;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 footer .container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
-   
+    margin: 10px 0;
 }
-footer .container .sec{
-          margin-right: 30px;
-        }
+
 footer .container .sec.Aboutus
       {
           width: 40%;
+          padding-right: 30px;
       }
       footer .container .sec.Aboutus h2
       {
           position: relative;
           color: #fff;
-          font-weight: 500;
           margin-bottom: 15px;
       } 
       footer .container .sec.Aboutus h2:before
@@ -640,9 +632,9 @@ footer .container .sec.Aboutus
           position: absolute;
           bottom: -5px;
           left: 0;
-          width: 50px;
+          width: 190px;
           height: 2px;
-          background: #f00;
+          background: #fff;
       }
       footer p
       {
@@ -672,7 +664,7 @@ footer .container .sec.Aboutus
       }
       .sci li a:hover
       {
-          background: #f00;
+          background: #37517E;
       }
       .sci li a .fa
       {
@@ -683,6 +675,10 @@ footer .container .sec.Aboutus
       {
           position: relative;
           width: 25%;
+      }
+      .QuickLinks h2
+      {
+          margin-bottom: 10px;
       }
       .QuickLinks u1 li
       {
@@ -699,6 +695,8 @@ footer .container .sec.Aboutus
       .QuickLinks u1 li a:hover
       {
           color: #fff;
+          padding-left: 5px;
+          transition: all 0.5s ease;
       }
       .copyrightText
       {
@@ -897,19 +895,12 @@ footer .container .sec.Aboutus
     .CTA img{
         display: none;
     }
-    footer{
-        flex-direction: column;
-        padding: 30px 0;
-    }
     .contactForm{
         width: 100%;
     }
     .contactForm p:first-child,
     .contactForm p:nth-child(2){
         width: 98%;
-    }
-    footer p{
-        font-size: 15px;
     }
     .projectCardImg{
         width: 350px;
@@ -1004,3 +995,19 @@ div.searchProject input[type=text] {
     transition: 0.5s;
   }
   
+  @media (max-width : 880px){
+      .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+
+      footer .container .sec.Aboutus{
+          width: 100%;
+          padding: 0px;
+      }
+
+      .QuickLinks{
+          width: 100%;
+      }
+  }
