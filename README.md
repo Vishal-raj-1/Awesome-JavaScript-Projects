@@ -133,7 +133,7 @@ git push -u origin <your_branch_name>
 <tr>
   <td>
 <center>
-  <a href="https://letsgrowmore.in/projects/"><img src="https://letsgrowmore.in/wp-content/uploads/2021/05/cropped-growmore-removebg-preview.png"></img></a>
+  <a href="https://letsgrowmore.in/soc/"><img src="https://letsgrowmore.in/wp-content/uploads/2021/05/cropped-growmore-removebg-preview.png"></img></a>
   </center>
   </td>
   </tr>
