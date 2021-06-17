@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName:"Payment Gateway Integration ",
+    projectImage:"public/Payment Gateway Integration/images/2.png",
+    projectUrl:"public/Payment Gateway Integration/index.html"
+    },
+  {
     projectName: "Geometry Shapes Calculator",
     projectImage: "assets/Images/GeometryArea.png",
     projectUrl: "public/Geometry_Shapes_claculator.html",
