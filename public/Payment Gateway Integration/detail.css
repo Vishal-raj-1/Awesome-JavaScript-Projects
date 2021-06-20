@@ -1,0 +1,48 @@
+body{
+    background-image:url("https://image.freepik.com/free-vector/comic-style-background_23-2148827394.jpg");
+    background-size:cover;
+    text-align:center;
+}
+body{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    
+    border-radius:30px;
+    border: 1px solid rgba( 254, 254, 254, 0.18 );
+    width:55%;
+    position:absolute;
+    margin-top:180px;
+    margin-left:370px;
+    align-items:center;
+}
+.heading{
+    text-align:center;
+    font-family:"Brush Script MT", cursive;
+    font-size: 20px;
+    
+}
+.mssg{
+    margin-left: 100px;
+    margin-bottom:30px;
+    font-family:"Brush Script MT", cursive;
+    font-size: 20px;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px 100px;
+}
+button{
+    border-radius: 50px;
+}
+.btn{
+    position:relative;
+    left:28%;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+button:hover{
+    background-color:rgb(23, 205, 231);
+}
+#smart-button-container input:hover{
+    background-color: #eabf9f;
+}
