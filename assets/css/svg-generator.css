@@ -1,0 +1,27 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    background: repeat center/cover;
+  }
+  
+  svg {
+    width: 100vw;
+    height: 100vh;
+  }
+  svg.path path {
+    stroke: none;
+  }
+  svg.stroke path {
+    fill: none;
+    stroke-width: 1px;
+  }
+  svg .circle {
+    fill: #fff;
+  }
