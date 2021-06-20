@@ -2221,7 +2221,12 @@ let projectData = [
   projectName: "Background Video header",
   projectImage: "assets/images/background-header.png",
   projectUrl: "public/background-header.html",
-}
+},
+{
+  projectName: "SVG Generator",
+  projectImage: "assets/images/svg-generator.png",
+  projectUrl: "public/svg-generator.html",
+}  
 ];
 
 
