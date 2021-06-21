@@ -41,6 +41,11 @@ let projectData = [
     projectUrl: "public/physics-engine.html",
   },
   {
+    projectName: "Dinosaur Video Game",
+    projectImage: "assets/Images/dinosaur.png",
+    projectUrl: "public/dinosaur.html",
+  },
+  {
     projectName: "Circus Game",
     projectImage: "assets/GIFs/circus.png",
     projectUrl: "public/circus.html"
