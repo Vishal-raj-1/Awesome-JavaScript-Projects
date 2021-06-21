@@ -608,7 +608,6 @@ footer{
     height: auto;
     padding: 50px 100px;
     background: #111;
-    margin-bottom: -50px;
 }
 footer .container {
     display: flex;
