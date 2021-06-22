@@ -1,8 +1,8 @@
 let projectData = [
- {
-    projectName:"Payment Gateway Integration ",
-    projectImage:"public/Payment Gateway Integration/images/2.png",
-    projectUrl:"public/Payment Gateway Integration/index.html"
+  {
+    projectName:"Payment Gateway Integration",
+    projectImage:"assets/Images/Payment-integration.png",
+    projectUrl:"public/Payment_Gateway_Integration/index.html"
     },
   {
     projectName: "Geometry Shapes Calculator",
@@ -47,9 +47,14 @@ let projectData = [
     projectUrl: 'public/physics-engine.html',
   },
   {
-    projectName: 'Circus Game',
-    projectImage: 'assets/GIFs/circus.png',
-    projectUrl: 'public/circus.html',
+    projectName: "Dinosaur Video Game",
+    projectImage: "assets/Images/dinosaur.png",
+    projectUrl: "public/dinosaur.html",
+  },
+  {
+    projectName: "Circus Game",
+    projectImage: "assets/GIFs/circus.png",
+    projectUrl: "public/circus.html"
   },
   {
     projectName: 'Pixelated Image',
