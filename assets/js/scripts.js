@@ -25,8 +25,32 @@ $(document).ready(function()
     
 });
 
+/******* Form validation *******/
 
+const fname = document.querySelector("#fname");
+const lname = document.querySelector("#lname");
+const email = document.querySelector("#email");
+function checkform()
+{
+	if (fname.value.length == 0)
+	{
+		// something is wrong
+		alert('There is a problem with the first field');
+		return false;
+	}
+	else if (lname.value.length == 0)
+	{
+		// something else is wrong
+		alert('There is a problem with last name');
+		return false;
+	} else if(email.value.length == 0) {
+        alert("There is a problem with email");
+    }
 
+	return true;
+}
+
+/* Form validation ends */
 
 let menuBar = document.getElementById('menuBar');
 let menus = document.getElementById('menu');
