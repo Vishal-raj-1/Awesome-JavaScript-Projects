@@ -553,7 +553,8 @@ i#menuClose{
 }
 .projectDescription p{
     color: #37517E;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
 a.button{
@@ -562,6 +563,7 @@ a.button{
     border: 2px solid #228abb;
     transition: .25s all ease-in-out;
     border-radius: 3px;
+    margin-left: 210px;
 }
 a.button:hover{
     background-color: #228abb;
@@ -626,7 +628,7 @@ footer .container .sec.Aboutus
           position: relative;
           color: #fff;
           margin-bottom: 15px;
-      } 
+      }
       footer .container .sec.Aboutus h2:before
       {
           content: '';
@@ -790,6 +792,14 @@ footer .container .sec.Aboutus
 #back-button{
 
     font-size: 1.1rem;
+}
+
+button#back-button:hover{
+  background-color: rgba(51, 51, 51, 0.726);
+}
+
+input#submit:hover{
+  background-color: rgba(51, 51, 51, 0.726);
 }
 
 /* Responsiveness */
@@ -968,12 +978,12 @@ div.searchProject input[type=text] {
     height: 60px;
     background: #2f3640;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;  }
-  
+
   .search-box:hover .search-txt {
     width: 300px;
     padding: 0 10px;
   }
-  
+
   .search-txt {
     border: none;
     background: none;
@@ -984,7 +994,7 @@ div.searchProject input[type=text] {
     font-size: 1.2rem;
     width: 0px;
   }
-  
+
   .search-btn {
     background-color: #2e4b7e;
     width: 60px;
@@ -995,7 +1005,7 @@ div.searchProject input[type=text] {
     border-radius: 50%;
     transition: 0.5s;
   }
-  
+
   @media (max-width : 880px){
       .container{
           display: flex;
