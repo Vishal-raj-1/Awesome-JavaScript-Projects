@@ -1022,3 +1022,18 @@ div.searchProject input[type=text] {
           width: 100%;
       }
   }
+
+  @media(max-width: 399px) {
+      .path{
+          padding: 15px 30px;
+      }
+      .contactForm p:last-child input, .contactForm p:last-child button  {
+          font-size: 15px;
+      }
+      .contactForm p input, .contactForm p textarea {
+          padding: 0;
+      }
+      #back-button {
+          font-size: 15px;
+      }
+  }
