@@ -6,7 +6,10 @@
   font-family: "Jost", sans-serif;
   box-sizing: border-box;
 }
-
+.social-container i {
+   
+    cursor: pointer;
+}
 body {
   background: #f6f5f7;
   display: flex;
