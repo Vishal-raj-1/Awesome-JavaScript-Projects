@@ -12,15 +12,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<style>
+
+ </style>
 
 
 
 </head>
 
 <body>
+
+<header>
+		<nav>
+			<div>
+				<input type="checkbox" class="checkbox" id="chk" />
+				<label class="label" for="chk">
+				  <i class="fas fa-moon"></i>
+				  <i class="fas fa-sun"></i>
+				  <div class="ball"></div>
+				</label>
+			  </div>
+	
+	</nav>
+</header>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+    <form action="#">
 			<h1>Create Account</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fa fa-facebook"></i></a>
@@ -35,6 +52,7 @@
 			<button>Sign Up</button>
 		</form>
 	</div>
+    
 	<div class="form-container sign-in-container">
 		<form action="#">
 			<h1>Sign in</h1>
@@ -124,6 +142,14 @@
     </footer>
     <!-- Closed Footer -->
     <script src="./assets/js/signuplogin.js"></script>
+     
+    <script>
+	const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});
+</script>
 </body>
 
 </html>
