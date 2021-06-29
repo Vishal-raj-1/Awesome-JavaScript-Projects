@@ -139,13 +139,13 @@ git push -u origin <your_branch_name>
   </tr>
 </p>
 
-## Project Maintainers 😃
+## Project Admin 😃
 
 <table>
   <tbody><tr>
-    <td align="center"><a href="https://github.com/Vishal-raj-1"><img alt="" src="https://avatars.githubusercontent.com/u/59874304?s=400&u=a90ce890d0e3d04ef84d5ae09b143dcb2ecc5d1b&v=4" width="130px;"><br><sub><b> Vishal Rajput </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=Vishal-raj-1" title="Code">💻 </a></td> </a></td>
-    <td align="center"><a href="https://github.com/urvashi-code1255"><img alt="" src="https://avatars.githubusercontent.com/u/63122133?s=400&u=acae9e4d42078288a36310800dfbce3906bc3798&v=4" width="130px;"><br><sub><b>
- Urvashi Anand </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=urvashi-code1255" title="Code">💻 </a></td></a></td>
+     <td align="center"><a href="https://github.com/Vishal-raj-1"><img alt="" src="https://avatars.githubusercontent.com/u/59874304?s=400&u=a90ce890d0e3d04ef84d5ae09b143dcb2ecc5d1b&v=4" width="130px;"><br><sub><b> Vishal Rajput </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=Vishal-raj-1" title="Code">💻 </a></td> </a></td>
+  <!--  <td align="center"><a href="https://github.com/urvashi-code1255"><img alt="" src="https://avatars.githubusercontent.com/u/63122133?s=400&u=acae9e4d42078288a36310800dfbce3906bc3798&v=4" width="130px;"><br><sub><b>
+ Urvashi Anand </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=urvashi-code1255" title="Code">💻 </a></td></a></td> -->
   </tr>
 </tbody></table>
 
