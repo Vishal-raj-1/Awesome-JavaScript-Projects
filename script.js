@@ -2170,6 +2170,11 @@ let projectData = [
     projectImage: 'assets/images/DetectInternetconnection.jpeg',
     projectUrl: 'public/DetectInternetconnection.html',
   },
+  {
+    projectName: "Weather App",
+    projectImage: "assets/images/Weather-App.png",
+    projectUrl: "public/Weather-App.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
