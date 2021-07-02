@@ -2183,7 +2183,7 @@ let projectData = [
   {
     projectName: "Custom Range Slider",
     projectImage: "assets/images/Custom-Range-Slider.png",
-    projectUrl: "public/Custom Range Slider.html",
+    projectUrl: "public/Custom-Range-Slider.html",
   },
 ];
 
