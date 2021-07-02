@@ -18,6 +18,20 @@
 </head>
 
 <body>
+
+<header>
+		<nav>
+			<div>
+				<input type="checkbox" class="checkbox" id="chk" />
+				<label class="label" for="chk">
+				  <i class="fas fa-moon"></i>
+				  <i class="fas fa-sun"></i>
+				  <div class="ball"></div>
+				</label>
+			  </div>
+	
+	</nav>
+</header>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
@@ -75,6 +89,13 @@
     </footer>
     <!-- Closed Footer -->
     <script src="./assets/js/signuplogin.js"></script>
+    <script>
+	const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});
+</script>
 </body>
 
 </html>
