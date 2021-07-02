@@ -2180,6 +2180,11 @@ let projectData = [
     projectImage: "assets/images/Movie-Search-App.png",
     projectUrl: "public/Movie-Search-App.html",
   },
+  {
+    projectName: "Custom Range Slider",
+    projectImage: "assets/images/Custom-Range-Slider.png",
+    projectUrl: "public/Custom Range Slider.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
