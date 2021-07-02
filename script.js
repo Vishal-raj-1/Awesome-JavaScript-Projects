@@ -2175,6 +2175,11 @@ let projectData = [
     projectImage: "assets/images/Weather-App.png",
     projectUrl: "public/Weather-App.html",
   },
+  {
+    projectName: "Movie Search App",
+    projectImage: "assets/images/Movie-Search-App.png",
+    projectUrl: "public/Movie-Search-App.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
