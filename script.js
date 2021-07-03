@@ -2185,6 +2185,11 @@ let projectData = [
     projectImage: "assets/images/Custom-Range-Slider.png",
     projectUrl: "public/Custom-Range-Slider.html",
   },
+  {
+    projectName: "Image Filter App",
+    projectImage: "assets/images/Image-Filter-App.png",
+    projectUrl: "public/Image-Filter-App.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
