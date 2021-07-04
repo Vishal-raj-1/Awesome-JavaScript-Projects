@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  height: 2000px;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #eeebdd;
+  color: #3b5998;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #3b5998;
+  color: white;
+}
+
+.google {
+  background: #3b5998;
+  color: white;
+}
+
+.linkedin {
+  background: #3b5998;
+  color: white;
+}
+
+.youtube {
+  background: #3b5998;
+  color: white;
+}
+
+.darkmode-toggle {
+  position: absolute;
+}
+
+.darkmode-toggle {
+  background: #100f2c;
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  border-radius: 50%;
+  border: 2px solid rgb(236, 236, 243);
+  left: 70.2rem;
+  top: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#menu .active {
+  color: #37517e;
+  background-color: white;
+}
