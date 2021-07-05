@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName:"Form validation",
+    projectImage:"assets/Images/Form-validation/formjs.png",
+    projectUrl:"public/Form-validation/index.html"
+  },
+  {
     projectName:"Payment Gateway Integration",
     projectImage:"assets/Images/Payment-integration.png",
     projectUrl: "public/Payment-Gateway-Integration/index.html"
