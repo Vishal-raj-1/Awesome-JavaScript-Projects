@@ -6,73 +6,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Awesome JavaScript Projects, the platform which helps developer to get set go with their learning or making their life easier with premade projects.">
+    <meta name="description"
+        content="Awesome JavaScript Projects, the platform which helps developer to get set go with their learning or making their life easier with premade projects.">
     <title>Awesome JavaScript | Home</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="./assets/Images/favicons/faviconss.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="assets/typed.js/typed.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<!-- separate css file included -->
+<link rel="stylesheet" href="index.css">
+
 </head>
 
-<!-- CSS for sticky sidebar -->
-<style>
-    body {
-        margin: 0;
-        height: 2000px;
-    }
-    
-    .icon-bar {
-        position: fixed;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-    
-    .icon-bar a {
-        display: block;
-        text-align: center;
-        padding: 16px;
-        transition: all 0.3s ease;
-        color: white;
-        font-size: 20px;
-    }
-    
-    .icon-bar a:hover {
-        background-color: #eeebdd;
-        color: #3B5998;
-    }
-    
-    .facebook {
-        background: #3B5998;
-        color: white;
-    }
-    
-    .twitter {
-        background: #3B5998;
-        color: white;
-    }
-    
-    .google {
-        background: #3B5998;
-        color: white;
-    }
-    
-    .linkedin {
-        background: #3B5998;
-        color: white;
-    }
-    
-    .youtube {
-        background: #3B5998;
-        color: white;
-    }
-</style>
-<!-- CSS for footor fix -->
 
 <body>
     <!--Sticky Sidebar-->
@@ -80,11 +33,12 @@
 
         <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
         <!--links are not available so targetted to the website link-->
-        <a href="" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://twitter.com/?lang=en" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
         <!--links are not available so targetted to the website link-->
-        <a href="https://twitter.com/?lang=en" target="_blank" class="google"><i class="fa fa-google"></i></a>
+        <a href="https://www.google.com/" target="_blank" class="google"><i class="fa fa-google"></i></a>
         <!--links are not available so targetted to the website link-->
-        <a href="https://www.linkedin.com/in/vishal-r-0710061a1/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/vishal-r-0710061a1/" target="_blank" class="linkedin"><i
+                class="fa fa-linkedin"></i></a>
         <a href="https://youtu.be/YpufpDOuffQ" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
 
 
@@ -109,20 +63,20 @@
                 <h2 class="shadow"><a href="index.html">Awesome JavaScript</a></h2>
                 <i class="fa fa-bars" aria-hidden="true" id="menuBar" onclick="menu()"></i>
                 <i class="fa fa-times" aria-hidden="true" id="menuClose" onclick="menuClose()"></i>
-                <ul id="menu">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-
-
-
-                    <li><a href="signuplogin.html">Signup/login</a></li>
-
-                    <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank" class="github githubs"><i class="fa fa-github" aria-hidden="true"></i></a>
-
-                </ul>
+                <div class="container">
+                    <div class ="navbar">
+                        <ul id="menu">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="signuplogin.html">Signup/login</a></li>
+        
+                            <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank"
+                                class="github githubs"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <div class="bannerSection">
                 <div class="bannerText">
@@ -130,7 +84,8 @@
                     <span class="typed"></span>
                     <div class="buttonCenter">
                         <a href="#about" class="commanBtn">Get Started</a>
-                        <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank" class="commanBtn" id="github"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                        <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank"
+                            class="commanBtn" id="github"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
                     </div>
                 </div>
                 <div class="bannerIllustration">
@@ -153,9 +108,15 @@
                         <p>
 
 
-                            This platform is built by passionate and talented JavaScript Developers around the world to make learning JavaScript fun and easy for the newbies!<br><br> With the plethora of open source, beginner friendly JavaScript projects
-                            available here, one can indulge in project-based learning and kickstart their JavaScript Development journey. This platform is a one stop destination to build your basics, clear your doubts, contribute to projects, build new
-                            projects and have a fun learning experience. We are glad to help you with your JavaScript needs!! It will help you, clear your javascript doubts. You can use this projects for you fulfilling your need.
+                            This platform is built by passionate and talented JavaScript Developers around the world to
+                            make learning JavaScript fun and easy for the newbies!<br><br> With the plethora of open
+                            source, beginner friendly JavaScript projects
+                            available here, one can indulge in project-based learning and kickstart their JavaScript
+                            Development journey. This platform is a one stop destination to build your basics, clear
+                            your doubts, contribute to projects, build new
+                            projects and have a fun learning experience. We are glad to help you with your JavaScript
+                            needs!! It will help you, clear your javascript doubts. You can use this projects for you
+                            fulfilling your need.
 
 
                         </p>
@@ -173,7 +134,8 @@
                 <div class="projectArea">
                     <div class="projectCard">
                         <a href="./public/Analogclock.html" class="hoverEffect" target="_blank">
-                            <img class="projectCardImg" src="./assets/GIFs/analogClock.gif" alt="Analogue Clock Project" />
+                            <img class="projectCardImg" src="./assets/GIFs/analogClock.gif"
+                                alt="Analogue Clock Project" />
                             <h5 class="projectCardTitle">Analog Clock</h5>
                             <span class="computerLegs"></span>
                             <span class="computerBase"></span>
@@ -183,9 +145,12 @@
                 <div class="projectDescription">
                     <h2>JavaScript Projects</h2>
                     <hr>
-                    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based
+                    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript
+                        specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has
+                        curly-bracket syntax, dynamic typing, prototype-based
                         object-orientation, and first-class functions.
-                        <br><br> Click on the below given button top surf the Awesome JavaScript Projects, that can help you in many ways as per your need. So, get set go.
+                        <br><br> Click on the below given button top surf the Awesome JavaScript Projects, that can help
+                        you in many ways as per your need. So, get set go.
                     </p>
                     <a href="projects.html" class="button">More Projects</a>
                 </div>
@@ -196,7 +161,8 @@
             <div class="CTA">
                 <div class="ctaText">
                     <h1>Let's get started...</h1>
-                    <p>Awesome JavaScript is the open source project that helps you in JavaScript Projects. Contact us if you want to suggest the project that can be implemented in order to add in the website.</p>
+                    <p>Awesome JavaScript is the open source project that helps you in JavaScript Projects. Contact us
+                        if you want to suggest the project that can be implemented in order to add in the website.</p>
                 </div>
                 <div class="ctaButton">
                     <a href="contact.html">Contact Now</a>
@@ -211,8 +177,11 @@
         <div class="container">
             <div class="sec Aboutus">
                 <h2>Awesome JavaScript</h2>
-                <p>This platform is build by JavaScript Developers around the world to make learning JavaScript easy for the newbies. This is the open source JavaScript project, which you can work on in GitHub. It will help you, clear your javascript doubts.
-                    You can use this projects for you fulfilling your need. It will help you, clear your javascript doubts. You can use this projects for you fulfilling your need.
+                <p>This platform is build by JavaScript Developers around the world to make learning JavaScript easy for
+                    the newbies. This is the open source JavaScript project, which you can work on in GitHub. It will
+                    help you, clear your javascript doubts.
+                    You can use this projects for you fulfilling your need. It will help you, clear your javascript
+                    doubts. You can use this projects for you fulfilling your need.
                 </p>
             </div>
             <div class="sec QuickLinks">
@@ -237,11 +206,15 @@
             <div>
                 <h2>Follow Us</h2>
                 <ul class="sci">
-                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects" target="_blank"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -255,81 +228,10 @@
 
 
     <script src="./assets/js/scripts.js"></script>
-</body>
 
-</html>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-    function addDarkmodeWidget() {
-        new Darkmode().showWidget();
-    }
-    window.addEventListener('load', addDarkmodeWidget);
-</script>
-
-<script>
-    const options = {
-        bottom: '100px', // default: '32px'
-        right: 'unset', // default: '32px'
-        left: '32px', // default: 'unset'
-        time: '0.9s', // default: '0.3s'
-        mixColor: '#fff', // default: '#fff'
-        backgroundColor: '#fff', // default: '#fff'
-        buttonColorDark: '#100f2c', // default: '#100f2c'
-        buttonColorLight: '#fff', // default: '#fff'
-        saveInCookies: true, // default: true,
-        label: '🌓', // default: ''
-        autoMatchOsTheme: true // default: true
-    }
-
-    const darkmode = new Darkmode(options);
-    darkmode.showWidget();
-</script>
-<style>
-    .darkmode-toggle {
-        position: absolute;
-    }
-    
-    .darkmode-toggle {
-        background: #100f2c;
-        width: 3rem;
-        height: 3rem;
-        position: fixed;
-        border-radius: 50%;
-        border: 2px solid rgb(236, 236, 243);
-        left: 70.2rem;
-        top: 30px;
-        cursor: pointer;
-        transition: all 0.5s ease;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-    
-    #menu .active {
-        color: #37517e;
-        background-color: white;
-    }
-</style>
+    <!-- a separate js file added -->
+    <script src="./index.js"></script>
 
 </body>
-<script src="./assets/js/scripts.js"></script>
-
-<script>
-    (
-        function(w, d) {
-            w.CollectId = "60b4f9907948c2395d09a422";
-            var h = d.head || d.getElementsByTagName("head")[0];
-            var s = d.createElement("script");
-            s.setAttribute("type", "text/javascript");
-            s.async = true;
-            s.setAttribute("src", "https://collectcdn.com/launcher.js");
-            h.appendChild(s);
-        })
-    (window, document);
-</script>
 
 </html>

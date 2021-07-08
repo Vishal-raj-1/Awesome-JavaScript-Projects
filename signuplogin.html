@@ -18,55 +18,20 @@
 </head>
 
 <body>
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="social"><i class="fa fa-google"></i></a>
-				<a href="https://www.linkedin.com/in/vishal-r-0710061a1/" target="_blank" class="social"><i class="fa fa-linkedin"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" required/>
-			<input type="email" placeholder="Email" required/>
-			<input type="password" name="password" id="password" placeholder="Password" required />
-		        <i class="bi bi-eye-slash" id="togglePassword"></i>
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Sign in</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="social"><i class="fa fa-google"></i></a>
-				<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" required/>
-			<input type="password" name="password" id="password" placeholder="Password" required />
-			<i class="bi bi-eye-slash" id="togglePassword"></i>
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Sign Up</button>
-			</div>
-		</div>
-	</div>
-</div>
 
+    <header>
+        <nav>
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+				  <i class="fas fa-moon"></i>
+				  <i class="fas fa-sun"></i>
+				  <div class="ball"></div>
+				</label>
+            </div>
+
+        </nav>
+    </header>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
@@ -124,6 +89,13 @@
     </footer>
     <!-- Closed Footer -->
     <script src="./assets/js/signuplogin.js"></script>
+    <script>
+        const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
 </body>
 
 </html>
