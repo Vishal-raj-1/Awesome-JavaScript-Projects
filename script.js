@@ -2190,6 +2190,11 @@ let projectData = [
     projectImage: "assets/images/Image-Filter-App.png",
     projectUrl: "public/Image-Filter-App.html",
   },
+  {
+    projectName: "Double Vertical Slider App",
+    projectImage: "assets/images/Double-Vertical-Slider.png",
+    projectUrl: "public/Double-Vertical-Slider.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
