@@ -2181,6 +2181,11 @@ let projectData = [
     projectUrl: "public/Weather-App.html",
   },
   {
+    projectName: "Page Scroll Indicator",
+    projectImage: "assets/images/page_scroll_indicator.png",
+    projectUrl: "public/page_scroll_indicator.html",
+  },
+  {
     projectName: "Movie Search App",
     projectImage: "assets/images/Movie-Search-App.png",
     projectUrl: "public/Movie-Search-App.html",
