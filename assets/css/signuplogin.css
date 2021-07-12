@@ -152,6 +152,19 @@ button:hover {
     background-color: #228abb;
     color: #fff;
 }
+button{
+  background-position: center;
+  transition: background 0.6s;
+}
+button:hover {
+  background:  #228abb radial-gradient(circle, transparent 1%, #228abb 1%) center/15000%;
+}
+button:active{
+  background-color: white; 
+  /*#6eb9f7;*/
+  background-size: 100%;
+  transition: background 0s;
+}
 
 button:active {
     transform: scale(0.95);
@@ -164,6 +177,12 @@ button:focus {
 button.ghost {
     background-color: transparent;
     border-color: #ffffff;
+}
+button.ghost:active{
+  background-color: white; 
+  /*#6eb9f7;*/
+  background-size: 100%;
+  transition: background 0s;
 }
 
 .social:hover {
