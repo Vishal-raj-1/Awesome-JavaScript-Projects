@@ -523,11 +523,6 @@ let projectData = [
     projectUrl: 'public/counter.html',
   },
   {
-    projectName: 'Counter',
-    projectImage: 'assets/GIFs/counter.gif',
-    projectUrl: 'public/counter.html',
-  },
-  {
     projectName: 'Local Storage',
     projectImage: 'assets/Images/localstorage.png',
     projectUrl: 'public/localstorage.html',
@@ -775,11 +770,6 @@ let projectData = [
     projectUrl: 'public/Weather_app.html',
   },
   {
-    projectName: 'Weather App',
-    projectImage: 'assets/GIFs/Weather_app.gif',
-    projectUrl: 'public/Weather_app.html',
-  },
-  {
     projectName: 'Whack a Mole Game',
     projectImage: 'assets/Images/whack-a-mole.png',
     projectUrl: 'public/whack-a-mole.html',
@@ -819,12 +809,6 @@ let projectData = [
     projectImage: 'assets/GIFs/Particle.gif',
     projectUrl: 'public/Particle.html',
   },
-  {
-    projectName: 'Particle JS Project',
-    projectImage: 'assets/GIFs/Particle.gif',
-    projectUrl: 'public/Particle.html',
-  },
-
   {
     projectName: 'Flip Cards',
     projectImage: 'assets/GIFs/flipped.gif',
@@ -896,13 +880,6 @@ let projectData = [
     projectImage: 'assets/GIFs/RotatingNav.gif ',
     projectUrl: 'public/RotatingNav.html',
   },
-
-  {
-    projectName: 'Text to Voice Generator',
-    projectImage: 'assets/GIFs/textToVoice.gif',
-    projectUrl: 'public/textToVoice.html',
-  },
-
   {
     projectName: 'Math Quiz for kids 🙂 ',
     projectImage: 'assets/Images/MathQuiz.jpg',
@@ -1042,12 +1019,6 @@ let projectData = [
     projectUrl: 'public/InsectCatch.html',
   },
   {
-    projectName: 'Animated Minion Eyes',
-    projectImage: 'assets/GIFs/Minion-Eyes.gif',
-    projectUrl: 'public/Minion-Eyes.html',
-  },
-
-  {
     projectName: 'Exchange Rate',
     projectImage: 'assets/Images/ExchangeRate.png',
     projectUrl: 'public/ExchangeRate.html',
@@ -1137,11 +1108,6 @@ let projectData = [
     projectName: 'Typewriter Effect',
     projectImage: 'assets/GIFs/typewriter.gif',
     projectUrl: 'public/typewriter.html',
-  },
-  {
-    projectName: 'AwesomeSnakeGame',
-    projectImage: 'assets/GIFs/AwesomeSnakeGame.gif',
-    projectUrl: 'public/AwesomeSnakeGame.html',
   },
   {
     projectName: 'Pagination',
@@ -1499,16 +1465,6 @@ let projectData = [
     projectUrl: 'public/dice_game.html',
   },
   {
-    projectName: 'Form Wave Animation',
-    projectImage: 'assets/GIFs/Form_Wave_Animation.gif',
-    projectUrl: 'public/Form_Wave_Animation.html',
-  },
-  {
-    projectName: 'Exchange Rate',
-    projectImage: 'assets/Images/ExchangeRate.png',
-    projectUrl: 'public/ExchangeRate.html',
-  },
-  {
     projectName: 'Google keep Clone',
     projectImage: 'assets/Images/keep.PNG',
     projectUrl: 'public/google_keep.html',
@@ -1634,32 +1590,11 @@ let projectData = [
     projectImage: 'assets/Images/BatteryIndicator.PNG',
     projectUrl: 'public/BatteryIndicator.html',
   },
-
-  {
-    projectName: 'Captcha Validator',
-    projectImage: 'assets/Images/CaptchaValidator.png',
-    projectUrl: 'public/CaptchaValidator.html',
-  },
   {
     projectName: 'Filterable Image Gallery',
     projectImage:
       'assets/Images/Filterable_Image_Gallery/Filterable_Image_Gallery.png',
     projectUrl: 'public/Filterable_Image_Gallery.html',
-  },
-  {
-    projectName: '3D Image Gallery',
-    projectImage: 'assets/Images/3DImageGallery.PNG',
-    projectUrl: 'public/3DImageGallery.html',
-  },
-  {
-    projectName: 'Button Generator',
-    projectImage: 'assets/Images/button.PNG ',
-    projectUrl: 'public/ButtonGenerator.html',
-  },
-  {
-    projectName: 'Battery Indicator',
-    projectImage: 'assets/Images/BatteryIndicator.PNG',
-    projectUrl: 'public/BatteryIndicator.html',
   },
   {
     projectName: 'Box-Shadow Css ',
@@ -1727,11 +1662,6 @@ let projectData = [
     projectUrl: 'public/markdownEditor.html',
   },
   {
-    projectName: 'Re-Create Giphy',
-    projectImage: 'assets/Images/giphy.png',
-    projectUrl: 'public/Giphy.html',
-  },
-  {
     projectName: 'Shell Sort Visualizer in JavaScript',
     projectImage: 'assets/Images/shell-visualizing.png',
     projectUrl: 'public/shellsort.html',
@@ -1777,12 +1707,6 @@ let projectData = [
     projectName: 'Hand Cricket',
     projectImage: 'assets/GIFs/handcricket.gif',
     projectUrl: 'public/handcricket.html',
-  },
-
-  {
-    projectName: 'Landing-Page-Using JavaScript',
-    projectImage: 'assets/Images/Landing-page.jpg',
-    projectUrl: 'public/Landing_Page.html',
   },
 
   {
@@ -1913,16 +1837,6 @@ let projectData = [
     projectUrl: 'public/hover_images.html',
   },
   {
-    projectName: 'Selection Sort Visualizer in JavaScript',
-    projectImage: 'assets/Images/selection-visualizing.png',
-    projectUrl: 'public/selectionsort.html',
-  },
-  {
-    projectName: 'Purple Rain',
-    projectImage: 'assets/Images/purpleRain.gif',
-    projectUrl: 'public/purpleRain.html',
-  },
-  {
     projectName: 'Preloader Projects',
     projectImage: 'assets/Images/preloader.png',
     projectUrl: 'public/preloader.html',
@@ -1942,41 +1856,6 @@ let projectData = [
     projectName: 'Food Menu',
     projectImage: 'assets/Images/foodCourt.png',
     projectUrl: 'public/foodCourt.html',
-  },
-  {
-    projectName: 'Prefix Expression Evaluator in JavaScript',
-    projectImage: 'assets/GIFs/prefix-evaluator.png',
-    projectUrl: 'public/prefixevaluator.html',
-  },
-  {
-    projectName: 'Insertion Sort Visualizer in JavaScript',
-    projectImage: 'assets/GIFs/insertion-visualizer.png',
-    projectUrl: 'public/insertionsort.html',
-  },
-  {
-    projectName: 'Postfix Expression Evaluator in JavaScript',
-    projectImage: 'assets/GIFs/postfix-evaluator.png',
-    projectUrl: 'public/postfixevaluator.html',
-  },
-  {
-    projectName: 'Multiplation Table Calculator',
-    projectImage: 'assets/GIFs/multiplicationTableCalculator_ss.gif',
-    projectUrl: 'public/multiplicationTableCalculator.html',
-  },
-  {
-    projectName: 'Dice it',
-    projectImage: 'assets/Images/dice_it.jfif',
-    projectUrl: 'public/diceit.html',
-  },
-  {
-    projectName: 'Amongus Minigame',
-    projectImage: 'assets/GIFs/amongusminigame.gif',
-    projectUrl: 'public/Amongusminigame.html',
-  },
-  {
-    projectName: 'Math Trainer',
-    projectImage: 'assets/Images/math_trainer.png',
-    projectUrl: 'public/math_trainer.html',
   },
   {
     projectName: 'Angry birds',
@@ -2003,21 +1882,10 @@ let projectData = [
     projectImage: 'assets/Images/Checkers.png',
     projectUrl: 'public/Checkers_game.html',
   },
-
-  {
-    projectName: 'Timeline',
-    projectImage: 'assets/GIFs/timeline.gif',
-    projectUrl: 'public/timeline.html',
-  },
   {
     projectName: 'Covid Live Status',
     projectImage: 'assets/images/covid-live.png',
     projectUrl: 'public/covid_live.html',
-  },
-  {
-    projectName: 'Random Name Generator',
-    projectImage: 'assets/Images/random_name_generator.png',
-    projectUrl: 'public/random_name_generator.html',
   },
   {
     projectName: '3d Flip Card',
@@ -2111,49 +1979,16 @@ let projectData = [
     projectImage: 'assets/images/gradient-showcase.png',
     projectUrl: 'public/gradient-showcase.html',
   },
-
-  {
-    projectName: 'Bucket Sort Visualizer in JavaScript',
-    projectImage: 'assets/Images/bucket-visualizing.png',
-    projectUrl: 'public/bucketsort.html',
-  },
   {
     projectName: 'Meal Genrator',
     projectImage: 'assets/images/meal-genrator.png',
     projectUrl: 'public/meal-genrator.html',
   },
   {
-    projectName: 'Train_Schedule Manager',
-    projectImage: 'assets/Images/train_schedule.png',
-    projectUrl: 'public/train_schedule.html',
-  },
-  {
     projectName: 'Lyrics Search App',
     projectImage: 'assets/Images/Lyrics_search_app.png',
     projectUrl: 'public/Lyrics_search_App.html',
   },
-
-  {
-    projectName: 'Bubble Sort Visualizer in JavaScript',
-    projectImage: 'assets/Images/bubble-visualizing.png',
-    projectUrl: 'public/bubblevisualiser.html',
-  },
-  {
-    projectName: 'Linear Search Visualization in JavaScript',
-    projectImage: 'assets/Images/linearsearch-visualizing.png',
-    projectUrl: 'public/linearsearch.html',
-  },
-  {
-    projectName: 'Captcha Validator',
-    projectImage: 'assets/Images/CaptchaValidator.png',
-    projectUrl: 'public/CaptchaValidator.html',
-  },
-  {
-    projectName: 'Sortable List',
-    projectImage: 'assets/images/sortable_list.png',
-    projectUrl: 'public/sortable_list.html',
-  },
-
   {
     projectName: 'Circle Animation',
     projectImage: 'assets/GIFs/circleAnimation.gif',
