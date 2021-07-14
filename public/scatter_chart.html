@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- chart.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/scatter_chart.css" />
+    <style>
+      canvas#myChart {
+        margin: 3% 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Scatter Chart App</h1>
+    <canvas id="myChart" width="400" height="125"></canvas>
+
+    <form id="input-form" on>
+      Enter x:
+      <input type="number" name="x" id="x" required autofocus />
+      Enter y:
+      <input type="number" name="y" id="y" required />
+      <button id="plot-btn" type="submit">Plot</button>
+    </form>
+    <table id="data-table">
+      <tr>
+        <th>Sr. no.</th>
+        <th>x</th>
+        <th>y</th>
+      </tr>
+    </table>
+
+    <div class="footer">
+      <p>Made with ❤️ by Diksha Nigam</p>
+    </div>
+
+    <script src="../assets/js/scatter_chart.js"></script>
+  </body>
+</html>

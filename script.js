@@ -2016,6 +2016,11 @@ let projectData = [
     projectUrl: "public/Weather-App.html",
   },
   {
+    projectName: "Page Scroll Indicator",
+    projectImage: "assets/images/page_scroll_indicator.png",
+    projectUrl: "public/page_scroll_indicator.html",
+  },
+  {
     projectName: "Movie Search App",
     projectImage: "assets/images/Movie-Search-App.png",
     projectUrl: "public/Movie-Search-App.html",
@@ -2036,9 +2041,16 @@ let projectData = [
     projectUrl: "public/Double-Vertical-Slider.html",
   },
   {
+
     projectName: "Bar Chart",
     projectImage: "assets/images/barchart.png",
     projectUrl: "public/barchart.html",
+  },
+  {
+    projectName: "Scatter Chart App",
+    projectImage: "assets/images/scatter_chart.png",
+    projectUrl: "public/scatter_chart.html",
+
   },
 ];
 
