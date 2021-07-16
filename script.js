@@ -1617,7 +1617,7 @@ let projectData = [
     projectImage: "assets/GIFs/DinosaurGame.gif",
     projectUrl: "public/DinosaurGame.html",
   },
-
+  
   {
     projectName: "Ternary Search Visualization in JavaScript",
     projectImage: "assets/Images/ternarysearch-visualizing.png",
@@ -2016,6 +2016,11 @@ let projectData = [
     projectUrl: "public/Weather-App.html",
   },
   {
+    projectName: "Page Scroll Indicator",
+    projectImage: "assets/images/page_scroll_indicator.png",
+    projectUrl: "public/page_scroll_indicator.html",
+  },
+  {
     projectName: "Movie Search App",
     projectImage: "assets/images/Movie-Search-App.png",
     projectUrl: "public/Movie-Search-App.html",
@@ -2036,14 +2041,14 @@ let projectData = [
     projectUrl: "public/Double-Vertical-Slider.html",
   },
   {
-    projectName: "Random Password Generator",
-    projectImage: "assets/images/password-generator.jpg",
-    projectUrl: "public/password.html",
-  },
-  {
     projectName: "Radar Chart Implementation ",
     projectImage: "assets/images/radarchart.jpg",
     projectUrl: "public/radar.html",
+  },
+  {
+    projectName: "Scatter Chart App",
+    projectImage: "assets/images/scatter_chart.png",
+    projectUrl: "public/scatter_chart.html",
   },
 ];
 
