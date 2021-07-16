@@ -2040,6 +2040,11 @@ let projectData = [
     projectImage: "assets/images/password-generator.jpg",
     projectUrl: "public/password.html",
   },
+  {
+    projectName: "Radar Chart Implementation ",
+    projectImage: "assets/images/radarchart.jpg",
+    projectUrl: "public/radar.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
