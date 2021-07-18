@@ -1999,6 +1999,7 @@ let projectData = [
     projectName: "SVG Generator",
     projectImage: "assets/images/svg-generator.png",
     projectUrl: "public/svg-generator.html",
+
   },
   {
     projectName: "Background Video header",
@@ -2041,6 +2042,12 @@ let projectData = [
     projectUrl: "public/Double-Vertical-Slider.html",
   },
   {
+
+    projectName: "Line Chart",
+    projectImage: "assets/images/linechart.jpg",
+    projectUrl: "public/linechart.html",
+  },
+  {
     projectName: "Bar Chart",
     projectImage: "assets/images/barchart.png",
     projectUrl: "public/barchart.html",
@@ -2054,6 +2061,7 @@ let projectData = [
     projectName: "Random Password Generator",
     projectImage: "assets/images/password-generator.jpg",
     projectUrl: "public/password.html",
+
   },
 ];
 
