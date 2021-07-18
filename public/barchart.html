@@ -19,7 +19,7 @@
     <section class="mt-4">
       <div class="container">
         <div class="text-center">
-          <h2>Line Chart in Vanilla JavaScript</h2>
+          <h2>Bar Chart in Vanilla JavaScript</h2>
         </div>
         <div class="row justify-content-center mt-4">
           <div class="col-md-8 text-center">
@@ -158,7 +158,7 @@
         }
 
         const barChart = new Chart(chart, {
-          type: "line",
+          type: "bar",
           data: {
             labels: labels,
             datasets: [
@@ -167,7 +167,8 @@
                 data: values,
                 borderWidth: 2,
                 borderColor: "green",
-                tension: 0.1,
+                hoverBorderWidth: 4,
+                hoverBorderColor: "#000",
               },
             ],
           },
