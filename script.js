@@ -2052,8 +2052,8 @@ let projectData = [{
     },
     {
         projectName: "Sudoku Solver",
-        projectImage: "assets/Images/Sudoku Solver.jpeg",
-        projectUrl: "public/Sudoku Solver.html",
+        projectImage: "assets/Images/Sudoku_Solver.jpeg",
+        projectUrl: "public/Sudoku_Solver.html",
 
     },
 
