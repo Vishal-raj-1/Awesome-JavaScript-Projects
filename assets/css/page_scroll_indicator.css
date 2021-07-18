@@ -1,0 +1,52 @@
+        p{
+            font-size:1.5rem;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        h2{
+            font-size:3rem;
+            color:#DD1155;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        h3{
+            font-size:2.5rem;
+            color:#DD1155;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        body{
+            background-color:#38023B;
+            color:#A288E3;
+        }
+        .container{
+            margin:15%;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left:0;
+            height:25%;
+            z-index: 1;
+            width: 100%;
+            background-color: #DD1155;
+        }
+
+        .header h1 {
+            text-align: center;
+            color:white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 15px;
+            background: white;
+            margin-top:2%;
+        }
+
+        .progress-bar {
+            height: 15px;
+            background: #5BC8AF;
+            width: 0%;
+        }
