@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Line Chart</title>
+  </head>
+
+  <body style="background-color: antiquewhite">
+    <section class="mt-4">
+      <div class="container">
+        <div class="text-center">
+          <h2>Line Chart in Vanilla JavaScript</h2>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-8 text-center">
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Add Dataset
+            </button>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+    </section>
+
+    <!-- modal itself -->
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Enter your information</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="dataform">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="chartname"
+                  placeholder="Chart Name"
+                />
+              </div>
+              <hr />
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="datalabel"
+                  name="datalabel"
+                  placeholder="Label Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="datavalue"
+                  name="datavalue"
+                  placeholder="Value"
+                />
+              </div>
+              <div id="newJSdiv"></div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="addvalue">
+              Add One Value
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              onclick="saveValues()"
+              data-bs-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <canvas id="chart"></canvas>
+    </div>
+
+    <script>
+      let chart = document.getElementById("chart").getContext("2d");
+      let dataForm = document.getElementById("dataform");
+      let addValue = document.getElementById("addvalue");
+
+      // Adding a new pair of values
+      addValue.onclick = function () {
+        let newDiv = document.createElement("div");
+        newDiv.id = "newdiv";
+        newDiv.class = "mb-3";
+        newDiv.style.padding = "10px 0px 10px 0px";
+
+        // Creating and adding the newly created label
+        let newLabel = document.createElement("input");
+        newLabel.setAttribute("id", "dynamiclabel");
+        newLabel.setAttribute("name", "newdatalabel");
+        newLabel.setAttribute("type", "text");
+        newLabel.setAttribute("class", "form-control");
+        newLabel.setAttribute("placeholder", "Label Name");
+        newLabel.style.margin = "5px 0px 5px 0px";
+        newDiv.appendChild(newLabel);
+
+        // Creating and adding the newly created value feild
+        let newValue = document.createElement("input");
+        newValue.setAttribute("id", "dynamicvalue");
+        newValue.setAttribute("name", "newdatavalue");
+        newValue.setAttribute("type", "number");
+        newValue.setAttribute("class", "form-control");
+        newValue.setAttribute("placeholder", "Value");
+        newLabel.style.margin = "5px 0px 5px 0px";
+        newDiv.appendChild(newValue);
+
+        document.getElementById("newJSdiv").appendChild(newDiv);
+      };
+
+      // Submit button
+      const saveValues = () => {
+        let chartName = document.getElementById("chartname").value;
+        let dataLabel = document.getElementById("datalabel").value;
+        let dataValue = document.getElementById("datavalue").value;
+
+        let dynamicLabel = document.getElementsByName("newdatalabel");
+        let dynamicValue = document.getElementsByName("newdatavalue");
+
+        let labels = [dataLabel];
+        let values = [dataValue];
+
+        // Saving values created by dynamic fields
+        for (let i = 0; i < dynamicLabel.length; i++) {
+          labels.push(dynamicLabel[i].value);
+          values.push(dynamicValue[i].value);
+        }
+
+        /// Plotting the chart
+        const lineChart = new Chart(chart, {
+          type: "line",
+          data: {
+            labels: labels,
+            datasets: [
+              {
+                label: chartName,
+                data: values,
+                borderWidth: 2,
+                borderColor: "green",
+                hoverBorderWidth: 4,
+                hoverBorderColor: "#000",
+              },
+            ],
+          },
+          options: {
+            plugins: {
+              title: {
+                display: true,
+                text: chartName,
+                fontSize: 30,
+              },
+              legend: {
+                display: false,
+              },
+            },
+          },
+        });
+      };
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
+  </body>
+</html>
