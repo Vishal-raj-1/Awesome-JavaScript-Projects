@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#data-table {
+  margin: 0 auto;
+}
+
+#data-table td,
+#data-table th {
+  padding: 0.5rem 1rem;
+  width: 20%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
