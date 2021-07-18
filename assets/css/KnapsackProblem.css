@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+
+}
+
+.title{
+    position: relative;
+    font-size: 30px;
+    
+}
+
+h1, h2{
+    position: relative;
+    text-align: center;
+}
+.add_delete_item, .calculateResetBtn{
+    position: relative;
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: #ccbbdc;
+    
+}
+
+#itemInformations{
+    min-height: 200px;
+    margin-left: 560px;
+    padding-top: 20px;
+}
+
+.item{
+    padding: 10px;
+    
+}
+
+#result{
+    
+    align-items: center;
+}
+
+span{
+    display: flex;
+    position: relative;
+    padding: 20px 0px;
+    margin-left: 690px;
+    
+}
+input{
+    height: 30px;
+    
+}
+
+#result{
+    font-size: 30px;
+    text-align: center;
+}
