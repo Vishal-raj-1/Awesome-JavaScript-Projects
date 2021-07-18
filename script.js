@@ -2036,6 +2036,11 @@ let projectData = [
     projectUrl: "public/Double-Vertical-Slider.html",
   },
   {
+    projectName: "Bar Chart",
+    projectImage: "assets/images/barchart.png",
+    projectUrl: "public/barchart.html",
+  },
+  {
     projectName: "Random Password Generator",
     projectImage: "assets/images/password-generator.jpg",
     projectUrl: "public/password.html",
