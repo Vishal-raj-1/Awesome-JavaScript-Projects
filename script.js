@@ -2054,7 +2054,7 @@ let projectData = [
     projectName: "Random Password Generator",
     projectImage: "assets/images/password-generator.jpg",
     projectUrl: "public/password.html",
-  }
+  },
 ];
 
 var projectDetails = projectData.slice(0);
