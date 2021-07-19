@@ -1992,71 +1992,88 @@ let projectData = [{
         projectImage: "assets/GIFs/circleAnimation.gif",
         projectUrl: "public/circleAnimation.html",
     },
-
-    {
-        projectName: "SVG Generator",
-        projectImage: "assets/images/svg-generator.png",
-        projectUrl: "public/svg-generator.html",
-    },
-    {
-        projectName: "Background Video header",
-        projectImage: "assets/images/background-header.png",
-        projectUrl: "public/background-header.html",
-    },
-    {
-        projectName: "Detect Internet Connection",
-        projectImage: "assets/images/DetectInternetconnection.jpeg",
-        projectUrl: "public/DetectInternetconnection.html",
-    },
-    {
-        projectName: "Weather App",
-        projectImage: "assets/images/Weather-App.png",
-        projectUrl: "public/Weather-App.html",
-    },
-    {
-        projectName: "Page Scroll Indicator",
-        projectImage: "assets/images/page_scroll_indicator.png",
-        projectUrl: "public/page_scroll_indicator.html",
-    },
-    {
-        projectName: "Movie Search App",
-        projectImage: "assets/images/Movie-Search-App.png",
-        projectUrl: "public/Movie-Search-App.html",
-    },
-    {
-        projectName: "Custom Range Slider",
-        projectImage: "assets/images/Custom-Range-Slider.png",
-        projectUrl: "public/Custom-Range-Slider.html",
-    },
-    {
-        projectName: "Image Filter App",
-        projectImage: "assets/images/Image-Filter-App.png",
-        projectUrl: "public/Image-Filter-App.html",
-    },
-    {
-        projectName: "Double Vertical Slider App",
-        projectImage: "assets/images/Double-Vertical-Slider.png",
-        projectUrl: "public/Double-Vertical-Slider.html",
-    },
-    {
-
-        projectName: "Bar Chart",
-        projectImage: "assets/images/barchart.png",
-        projectUrl: "public/barchart.html",
-    },
-    {
-        projectName: "Scatter Chart App",
-        projectImage: "assets/images/scatter_chart.png",
-        projectUrl: "public/scatter_chart.html",
-
-    },
     {
         projectName: "Sudoku Solver",
         projectImage: "assets/Images/Sudoku_Solver.jpeg",
         projectUrl: "public/Sudoku_Solver.html",
 
     },
+  {
+    projectName: "SVG Generator",
+    projectImage: "assets/images/svg-generator.png",
+    projectUrl: "public/svg-generator.html",
 
+  },
+  {
+    projectName: "Background Video header",
+    projectImage: "assets/images/background-header.png",
+    projectUrl: "public/background-header.html",
+  },
+  {
+    projectName: "Detect Internet Connection",
+    projectImage: "assets/images/DetectInternetconnection.jpeg",
+    projectUrl: "public/DetectInternetconnection.html",
+  },
+  {
+    projectName: "Weather App",
+    projectImage: "assets/images/Weather-App.png",
+    projectUrl: "public/Weather-App.html",
+  },
+  {
+    projectName: "Page Scroll Indicator",
+    projectImage: "assets/images/page_scroll_indicator.png",
+    projectUrl: "public/page_scroll_indicator.html",
+  },
+  {
+    projectName: "Movie Search App",
+    projectImage: "assets/images/Movie-Search-App.png",
+    projectUrl: "public/Movie-Search-App.html",
+  },
+  {
+    projectName: "Custom Range Slider",
+    projectImage: "assets/images/Custom-Range-Slider.png",
+    projectUrl: "public/Custom-Range-Slider.html",
+  },
+  {
+    projectName: "Image Filter App",
+    projectImage: "assets/images/Image-Filter-App.png",
+    projectUrl: "public/Image-Filter-App.html",
+  },
+  {
+    projectName: "Double Vertical Slider App",
+    projectImage: "assets/images/Double-Vertical-Slider.png",
+    projectUrl: "public/Double-Vertical-Slider.html",
+  },
+  {
+    projectName: "Line Chart",
+    projectImage: "assets/images/linechart.jpg",
+    projectUrl: "public/linechart.html",
+  },
+  {
+    projectName: "Bar Chart",
+    projectImage: "assets/images/barchart.png",
+    projectUrl: "public/barchart.html",
+  },
+  {
+    projectName: "Random Password Generator",
+    projectImage: "assets/images/password-generator.jpg",
+    projectUrl: "public/password.html",
+  },
+  {
+    projectName: "Radar Chart Implementation ",
+    projectImage: "assets/images/radarchart.jpg",
+    projectUrl: "public/radar.html",
+  },
+  {
+    projectName: "Scatter Chart App",
+    projectImage: "assets/images/scatter_chart.png",
+    projectUrl: "public/scatter_chart.html",
+  },
+  {
+    projectName: "Random Password Generator",
+    projectImage: "assets/images/password-generator.jpg",
+    projectUrl: "public/password.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
