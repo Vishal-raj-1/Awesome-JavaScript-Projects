@@ -2042,7 +2042,6 @@ let projectData = [
     projectUrl: "public/Double-Vertical-Slider.html",
   },
   {
-
     projectName: "Line Chart",
     projectImage: "assets/images/linechart.jpg",
     projectUrl: "public/linechart.html",
@@ -2053,6 +2052,16 @@ let projectData = [
     projectUrl: "public/barchart.html",
   },
   {
+    projectName: "Random Password Generator",
+    projectImage: "assets/images/password-generator.jpg",
+    projectUrl: "public/password.html",
+  },
+  {
+    projectName: "Radar Chart Implementation ",
+    projectImage: "assets/images/radarchart.jpg",
+    projectUrl: "public/radar.html",
+  },
+  {
     projectName: "Scatter Chart App",
     projectImage: "assets/images/scatter_chart.png",
     projectUrl: "public/scatter_chart.html",
@@ -2061,7 +2070,6 @@ let projectData = [
     projectName: "Random Password Generator",
     projectImage: "assets/images/password-generator.jpg",
     projectUrl: "public/password.html",
-
   },
 ];
 
