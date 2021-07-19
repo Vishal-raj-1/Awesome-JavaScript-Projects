@@ -9,29 +9,65 @@
 	 margin: 0;
 	 padding: 0;
 	 font-family: 'Hind', sans-serif;
-	 background: rgb(239, 250, 251);
+	 background: brown;
 	 color: #4d5974;
 	 display: flex;
 	 min-height: 100vh;
+	 
 }
+
  .container {
 	 margin: 0 auto;
 	 padding: 4rem;
 	 width: 48rem;
+	 
+ }
+ 
+ .card{
+	
+	background-color:rgb(194, 187, 187);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+h2{
+	color: #362222;
+	text-align: right;
+	letter-spacing: 2px;
+	
+	background-color:rgb(194, 187, 187);
+	
+}
+.border-bottom{
+	border-bottom: 1px solid purple;
+	padding-bottom: 5px;
+}
+
+.img{
+    width:200px;
+position:relative;
+    top: -10px;
+    filter: drop-shadow(0 25px 0px #E1D6F6);
+}
+
+/*expand and collapse cards*/
+
+
  .accordion .accordion-item {
-	 border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid #ebc7c7;
+	color: #222831;
+	text-align: center;
+	
 }
+
  .accordion .accordion-item button[aria-expanded='true'] {
-	 border-bottom: 1px solid #03b5d2;
+	border-bottom: 1px dotted  #F0EFEF;
 }
  .accordion button {
 	 position: relative;
 	 display: block;
-	 text-align: left;
+	 align-items: center;
 	 width: 100%;
 	 padding: 1em 0;
-	 color: #7288a2;
+	 color: #31112C;
 	 font-size: 1.15rem;
 	 font-weight: 400;
 	 border: none;
@@ -40,15 +76,17 @@
 }
  .accordion button:hover, .accordion button:focus {
 	 cursor: pointer;
-	 color: #03b5d2;
+	 color: #EE4540;
+	 
 }
  .accordion button:hover::after, .accordion button:focus::after {
 	 cursor: pointer;
-	 color: #03b5d2;
-	 border: 1px solid #03b5d2;
+	 color: #A72693;
+	 border: 1px solid #A72693;
 }
  .accordion button .accordion-title {
 	 padding: 1em 1.5em 1em 0;
+	 
 }
  .accordion button .icon {
 	 display: inline-block;
@@ -80,7 +118,7 @@
 	 background: currentColor;
 }
  .accordion button[aria-expanded='true'] {
-	 color: #03b5d2;
+	 color: #EE4540;
 }
  .accordion button[aria-expanded='true'] .icon::after {
 	 width: 0;
@@ -100,7 +138,7 @@
 }
  .accordion .accordion-content p {
 	 font-size: 1rem;
-	 font-weight: 300;
+	 font-weight: bold;
 	 margin: 2em 0;
 }
- 
+/*ends*/
