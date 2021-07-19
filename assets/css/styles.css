@@ -366,7 +366,22 @@ i#menuClose{
 }
 .buttonCenter a.commanBtn:hover{
     background-color: #228abb;
+    
 }
+.buttonCenter a.commanBtn {
+  background-position: center;
+  transition: background 0.4s;
+}
+.buttonCenter a.commanBtn:hover {
+  background:  #228abb radial-gradient(circle, transparent 1%,  #228abb 1%) center/15000%;
+}
+.buttonCenter a.commanBtn:active {
+  background-color: white; 
+  /*#6eb9f7;*/
+  background-size: 100%;
+  transition: background 0s;
+}
+
 .github{
     display: flex;
     align-items: center;
@@ -471,6 +486,20 @@ i#menuClose{
     background-color: #228abb;
     color: #fff;
 }
+.dualSectionsText a{
+  background-position: center;
+  transition: background 0.4s;
+}
+.dualSectionsText a:hover {
+  background:  #228abb radial-gradient(circle, transparent 1%,  #228abb 1%) center/15000%;
+}
+.dualSectionsText a:active {
+  background-color: white; 
+  /*#6eb9f7;*/
+  background-size: 100%;
+  transition: background 0s;
+}
+
 .project-section{
     display: flex;
     flex-wrap: wrap;
@@ -563,11 +592,24 @@ a.button{
     border: 2px solid #228abb;
     transition: .25s all ease-in-out;
     border-radius: 3px;
-    margin-left: 210px;
+    margin-left: 10px;
 }
 a.button:hover{
     background-color: #228abb;
     color: #fff;
+}
+a.button {
+  background-position: center;
+  transition: background 0.6s;
+}
+a.button:hover {
+  background:  #228abb radial-gradient(circle, transparent 1%,  #228abb 1%) center/15000%;
+}
+a.button:active {
+  background-color: white; 
+  /*#6eb9f7;*/
+  background-size: 100%;
+  transition: background 0s;
 }
 
 .CTA{
@@ -603,6 +645,19 @@ a.button:hover{
 .ctaButton a:hover{
     background-color: #228abb;
     color: #fff;
+}
+.ctaButton a{
+  background-position: center;
+  transition: background 0.6s;
+}
+.ctaButton a:hover {
+  background:  #228abb radial-gradient(circle, transparent 1%,  #228abb 1%) center/15000%;
+}
+.ctaButton a:active {
+  background-color: white; 
+  /*#6eb9f7;*/
+  background-size: 100%;
+  transition: background 0s;
 }
 footer{
     position: relative;
@@ -794,12 +849,38 @@ footer .container .sec.Aboutus
     font-size: 1.1rem;
 }
 
-button#back-button:hover{
+/* button#back-button:hover{
   background-color: rgba(51, 51, 51, 0.726);
+} */
+button#back-button{
+  background-position: center;
+  transition: background 0.4s;
+}
+button#back-button:hover {
+  background:  rgba(51, 51, 51, 0.726) radial-gradient(circle, transparent 1%, rgba(51, 51, 51, 0.726) 1%) center/15000%;
+}
+button#back-button:active {
+  background-color: white; 
+  /*#6eb9f7;*/
+  background-size: 100%;
+  transition: background 0s;
 }
 
-input#submit:hover{
+/* input#submit:hover{
   background-color: rgba(51, 51, 51, 0.726);
+} */
+input#submit{
+  background-position: center;
+  transition: background 0.4s;
+}
+input#submit:hover {
+  background:  rgba(51, 51, 51, 0.726) radial-gradient(circle, transparent 1%, rgba(51, 51, 51, 0.726) 1%) center/15000%;
+}
+input#submit:active {
+  background-color: white; 
+  /*#6eb9f7;*/
+  background-size: 100%;
+  transition: background 0s;
 }
 
 /* Responsiveness */
