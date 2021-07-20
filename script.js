@@ -2052,6 +2052,12 @@ let projectData = [
     projectUrl: "public/scatter_chart.html",
 
   },
+  {
+    projectName: "KnapsackProblem",
+    projectImage: "assets/images/KnapsackProblem.png",
+    projectUrl: "public/KnapSackProblem.html",
+
+  },
 ];
 
 var projectDetails = projectData.slice(0);

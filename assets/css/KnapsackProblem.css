@@ -30,7 +30,7 @@ button{
 
 #itemInformations{
     min-height: 200px;
-    margin-left: 560px;
+    margin-left: 750px;
     padding-top: 20px;
 }
 
@@ -48,7 +48,7 @@ span{
     display: flex;
     position: relative;
     padding: 20px 0px;
-    margin-left: 690px;
+    margin-left: 900px;
     
 }
 input{
