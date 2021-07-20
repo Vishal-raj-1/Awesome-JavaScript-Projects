@@ -2053,7 +2053,7 @@ let projectData = [
 
   },
   {
-    projectName: "KnapsackProblem",
+    projectName: "0/1 Knapsack Solution",
     projectImage: "assets/images/KnapsackProblem.png",
     projectUrl: "public/KnapSackProblem.html",
 
