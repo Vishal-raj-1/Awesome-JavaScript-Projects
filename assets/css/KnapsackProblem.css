@@ -30,7 +30,7 @@ button{
 
 #itemInformations{
     min-height: 200px;
-    margin-left: 750px;
+    margin-left: 550px;
     padding-top: 20px;
 }
 
@@ -40,15 +40,16 @@ button{
 }
 
 #result{
-    
+    min-height: 200px;
     align-items: center;
 }
 
 span{
-    display: flex;
+    display: block;
     position: relative;
+    align-items: center;
     padding: 20px 0px;
-    margin-left: 900px;
+    margin-left: 690px;
     
 }
 input{
@@ -59,4 +60,15 @@ input{
 #result{
     font-size: 30px;
     text-align: center;
+}
+
+.description{
+    padding-left:100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+#descTitle{
+    font-size: 25px;
+    text-decoration: underline;
 }
