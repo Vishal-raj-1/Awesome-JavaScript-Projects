@@ -2074,6 +2074,12 @@ let projectData = [{
     projectImage: "assets/images/password-generator.jpg",
     projectUrl: "public/password.html",
   },
+  {
+    projectName: "0/1 Knapsack Solution",
+    projectImage: "assets/images/KnapsackProblem.png",
+    projectUrl: "public/KnapSackProblem.html",
+
+  },
 ];
 
 var projectDetails = projectData.slice(0);
