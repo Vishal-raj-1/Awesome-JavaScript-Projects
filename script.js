@@ -2056,6 +2056,14 @@ let projectData = [{
         projectUrl: "public/Sudoku_Solver.html",
 
     },
+    {
+        projectName: "File Zipper",
+        projectImage: "assets/Images/File_Zipper.jpeg",
+        projectUrl: "public/File_Zipper.html",
+
+    },
+
+
 
 ];
 
