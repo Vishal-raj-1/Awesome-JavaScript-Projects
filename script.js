@@ -2080,6 +2080,11 @@ let projectData = [{
     projectUrl: "public/KnapSackProblem.html",
 
   },
+  {
+    projectName: "Portfolio Website",
+    projectImage: "assets/images/Portfolio/Portfolio.png",
+    projectUrl: "public/Portfolio.html",
+  },
 ];
 
 var projectDetails = projectData.slice(0);
