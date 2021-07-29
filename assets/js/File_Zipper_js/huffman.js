@@ -29,10 +29,9 @@ class HuffmanCoder{
         let res = String(index*2)+" <= "+index+" => "+String(index*2+1);
         return res + '\n' + left + '\n' + right;
     }
-
-    destringify(data){
+ destringify(data){
         let node = [];
-        if(data[this.ind]==='\'){
+        if(data[this.ind]==='\''){
             this.ind++;
             node.push(data[this.ind]);
             this.ind++;
@@ -48,6 +47,7 @@ class HuffmanCoder{
 
         return node;
     }
+
 
     getMappings(node, path){
         if(typeof(node[1])==="string"){
