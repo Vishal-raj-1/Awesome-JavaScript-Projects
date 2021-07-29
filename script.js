@@ -1,5 +1,10 @@
 let projectData = [
   {
+    projectName: "Drawing App",
+    projectImage: "assets/Images/Drawing%20App.PNG",
+    projectUrl: "public/Drawing%20App/index.html",
+  },
+  {
     projectName: "Form validation",
     projectImage: "assets/Images/Form-validation/formjs.png",
     projectUrl: "public/Form-validation/index.html",
