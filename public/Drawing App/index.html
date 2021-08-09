@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=yes">
+        <title>Drawing App</title>   
+        <link rel="stylesheet" href="../../assets/css/Drawing App/style.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css">
+    </head>
+    <body>
+        <!----------------------->
+        <div id="header">Drawing App</div>
+        <!----------------------->
+        <div class="inputContainer">
+            <!-------------------->
+            <div id="input" id="colorInput">
+                <input type="color" list id="paintColor">
+            </div>
+            <!----------------------->
+            <div class="input" id="thicknessInput">
+                <div id="circle"></div>
+            </div>
+            <div id="input">
+                <div id="slider"></div>
+            </div>
+        </div>
+        <!-------------------------------------->
+        <div id="container">
+            <canvas id="paint" width="500px" height="400px">
+
+            </canvas>
+        </div>
+        <div class="inputContainer2">
+            <!-------------------------->
+            <div class="input2">
+                <span id="erase" class="button">Erase</span>
+            </div>
+            <!-------------------------->
+            <div class="input2">
+                <span id="reset" class="button">Reset</span>
+            </div>
+            <!-------------------------->
+            <div class="input2">
+                <span id="save" class="button">Save</span>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="../..assets/js/Drawing App/script.js"></script>
+    </body>
+</html>
