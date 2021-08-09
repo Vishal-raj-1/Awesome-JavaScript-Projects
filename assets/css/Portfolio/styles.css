@@ -1,0 +1,73 @@
+html,body{
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+.para{
+    width: 70%;
+    margin: 40px auto 40px ;
+}
+.header-img{
+    width: 70%;
+    /*margin-left: 10rem;*/
+    border: 5px solid lightsalmon;
+    box-align:left;
+}
+ 
+ .logo-img{
+    width: 50%;
+    border: 5px solid lightsalmon;
+    box-align:left;
+}
+.gradient{
+    background: rgb(171,80,255);
+background: linear-gradient(90deg, rgba(171,80,255,1) 17%, rgba(252,70,107,1) 46%, rgba(171,80,255,1) 71%);
+}
+.page-header{
+    /*margin-top: 4rem;*/
+    font-size: 1.25rem;
+    color:white;
+
+}
+.card img{
+    width: 80%;
+}
+.card{
+    margin:0 auto;
+    float:none;
+    margin-bottom: 10px;
+    padding: 10px auto 10px;
+    transition: .1s;
+    border: 10px solid salmon;
+}
+.card:hover {
+    transform:scale(1.1);
+    transition: all .5s ease-in-out 0.3s;
+    border-radius: 40px;
+  }
+.btn{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-img{
+    width:8%;
+    border: 5px solid lightsalmon;
+    box-align:left;
+}
+.about-img{
+    width: 50%;
+    border: 5px solid lightsalmon;
+    box-align:left;
+    
+}
+.skills{
+    text-align: center;
+    margin: 50px auto 50px;
+}
+
+.container{
+    margin-top: 0%;
+}
