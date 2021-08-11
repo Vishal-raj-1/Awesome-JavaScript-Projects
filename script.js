@@ -1,4 +1,10 @@
 let projectData = [
+
+   {
+    projectName: "Random Quote Generator",
+    projectImage: "assets/Images/Random_Quote_Generator.png",
+    projectUrl: "public/Random_Quote_Generator.html",
+  },
   {
     projectName: "Drawing App",
     projectImage: "assets/Images/Drawing%20App.PNG",
