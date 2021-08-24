@@ -141,13 +141,17 @@ git push -u origin <your_branch_name>
 
 ## Project Admin 😃
 
+<div align="center">
 <table>
   <tbody><tr>
      <td align="center"><a href="https://github.com/Vishal-raj-1"><img alt="" src="https://avatars.githubusercontent.com/u/59874304?s=400&u=a90ce890d0e3d04ef84d5ae09b143dcb2ecc5d1b&v=4" width="130px;"><br><sub><b> Vishal Rajput </b></sub></a><br><a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/commits?author=Vishal-raj-1" title="Code">💻 </a></td> </a></td>
   </tr>
 </tbody></table>
+</div>
 
 ## Our valuable Contributors👩‍💻👨‍💻 :
+<div align="center">
 <a href="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=Vishal-raj-1/Awesome-JavaScript-Projects" />
 </a>
+</div>
