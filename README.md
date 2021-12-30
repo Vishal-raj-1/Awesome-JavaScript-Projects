@@ -10,7 +10,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/issues)
 [![GitHub forks](https://img.shields.io/github/forks/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/network)
 [![GitHub stars](https://img.shields.io/github/stars/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/stargazers)
-<a href="https://discord.gg/tRmWXExVtw"><img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" /></a>
 
 Are you a Newbie in Web development and want to dive deep into Javascript?
 
