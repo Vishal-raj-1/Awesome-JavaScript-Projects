@@ -1,0 +1,107 @@
+body
+{
+    background: url(https://cdn.pixabay.com/photo/2016/01/19/14/53/book-1149031__340.jpg) center center fixed;
+    text-align: center;
+    background-size: cover;
+}
+#header
+{
+    background: linear-gradient(white,rgba(128,128,128,0.1));
+    background:-o-linear-gradient(white,rgba(128,128,128,0.1));
+    background:-moz-linear-gradient(white,rgba(128,128,128,0.1));
+    background:-webkit-linear-gradient(white,rgba(128,128,128,0.1));
+    height: 70px;
+    width: 500px;
+    margin: 8px auto;
+    font-size: 2em;
+    color: rgb(7, 7, 7);
+    line-height: 60px;
+}
+.inputContainer
+{
+    width: 300px;
+    margin: 0 auto;
+}
+.input
+{
+    height: 40px;
+    font-size: 1.6em;
+}
+#slider
+{
+    margin: 10px auto;
+}
+#circle
+{
+    height: 5px;
+    width: 1px;
+    border-radius: 50%;
+    background: black;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
+}
+#thicknessInput
+{
+    position: relative;
+}
+#container
+{
+    width: 500px;
+    height: 400px;
+    border: 1px solid rgba(122,174,229,0.5);
+    margin: 10px auto;
+}
+.inputContainer2
+{
+    width: 399px;
+    margin: 0 auto;
+}
+#paint
+{
+    background-color: #fff;
+    cursor: crosshair;
+}
+.input2
+{
+    width: 133px;
+    color: grey;
+    font-size: 1.0em;
+    float: left;
+}
+.button
+{
+    background: #fff;
+    height: 50px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 4px rgba(0,0,0,0.3);
+    -o-box-shadow: 0px 4px rgba(0,0,0,0.3);
+    position: relative;
+}
+.button:hover
+{
+    color: white;
+    background: linear-gradient(white,rgba(128,128,128,0.1));
+    background:-o-linear-gradient(white,rgba(128,128,128,0.1));
+    background:-moz-linear-gradient(white,rgba(128,128,128,0.1));
+    background:-webkit-linear-gradient(white,rgba(128,128,128,0.1));
+}
+.button:active
+{
+    top: 4px;
+}
+.eraseMode
+{
+    background-color: red;
+    color: #fff;
+}

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Fractional Knapsack Problem</title>
+        <script src="../assets/js/KnapsackProblem.js"></script>
+        <link rel="stylesheet" href="../assets/css/KnapsackProblem.css">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Knapsack Problem</h1>
+        </div>
+
+        <div id="knapsackCapacity">
+            <h2>Knapsack Weight (KG)</h2>
+            <span>
+                <input id="knapsackWeight" type="number" placeholder="Enter Weight (kg)">
+            </span>
+            
+        </div>
+
+        <div class="add_delete_item">
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="deleteItem()">Delete Item</button>
+        </div>
+        <!--The items information area-->
+        <div id="itemInformations">
+            <!--Setting one default input area that cannot be deleted-->
+            Item 1
+            <input type="number" id="item1" name="item1" placeholder="Enter Weight (KG)">
+            Profit 1
+            <input type="number" id="profit1" name="profit1" placeholder="Enter Profit">
+            <br>
+        
+        </div>
+        <div class="calculateResetBtn">
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="location.reload()">Reset</button>
+        </div>
+        <div id="result">
+            <h2>Result</h2>
+           
+        </div>
+        <div class="description">
+            <h2 id="descTitle">Problem Description</h2>
+            <br />
+            <h3 id="theDesc">This 0/1 Knapsack Problem uses Greedy algorithm/method. Greedy algorithm will always take the items which maximized the profit of the knapsack. 0/1 Knapsack either takes the item as a whole or leave it and not take it. the algorithm chooses the items acording to the highest to the lowest profit by weight (profit/weight) of each item.</h3>
+            <br />
+            <h3>The limitation of knapsack greedy which will not give the optimal solution but will give the profit which is maximized.</h3>
+            
+            <br />
+
+            <h3 id="descTitle">For Example:</h3>
+            <p>Knapsack Weight: 50 KG</p>
+            <p>Item 1: 10KG    Profit : 60</p>
+            <p>Item 2: 20KG    Profit : 100</p>
+            <p>Item 3: 30KG    Profit : 120</p>
+
+            <p>Output: (1,1,0)</p>
+            <br />
+            <p>The output will not be (0,1,1) because if we calculate the profit by weight of this output it will be (220/50 = 4.4). Whereas if we take the profit by weight of the output (1,1,0) it is (160/30 = 5.3333) which is higher that the other one. therefore the profit is maximized when we take item 1 and item 2.</p>
+
+        </div>
+
+        
+          
+    </body>
+</html>

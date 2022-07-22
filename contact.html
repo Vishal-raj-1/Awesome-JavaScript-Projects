@@ -117,11 +117,12 @@
         <div class="contactForm">
           <!-- <form action="#" method="post"> -->
 
-          <form
+          <!-- <form
             action="https://formcarry.com/s/S2thQbCqEvW"
             method="POST"
             accept-charset="UTF-8"
-          >
+          > -->
+          <form onsubmit=" event.preventDefault(); JSalert();">
             <p>
               <label for="fname">First Name</label>
               <input
@@ -145,7 +146,6 @@
             <p>
               <label for="email">Your Email</label>
               <input
-                type="email"
                 id="email"
                 placeholder="Enter your Email id here"
                 name="email"
@@ -181,12 +181,7 @@
               >
                 Back
               </button>
-              <input
-                onclick="JSalert()"
-                type="submit"
-                id="submit"
-                value="Send Message"
-              />
+              <input type="submit" id="submit" value="Send Message" />
             </p>
           </form>
         </div>
@@ -210,8 +205,24 @@
     <!-- Closed Footer -->
     <script src="./assets/js/scripts.js"></script>
     <script type="text/javascript">
+      function ValidateEmail(inputText) {
+        var mailformat =
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (inputText.match(mailformat)) return true;
+        else return false;
+      }
+
       function JSalert() {
-        swal("Congrats!", "Message was delivered successfully!", "success");
+        console.log(document.getElementById("email").value);
+        if (ValidateEmail(document.getElementById("email").value)) {
+          swal("Congrats!", "Message was delivered successfully!", "success");
+          console.log("Its true");
+          return true;
+        } else {
+          swal("Error!", "Email is not entered correctly!", "error");
+          console.log("Its false");
+          return false;
+        }
       }
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
