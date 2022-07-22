@@ -1,23 +1,21 @@
 <h1 align="center">Awesome JavaScript Projects</h1>
 
-## You can Have a look here [Website](https://vishal-raj-1.github.io/Awesome-JavaScript-Projects/)
+Are you a Newbie in Web development and want to dive deep into Javascript? Do checkout this video to learn JS Basics first
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=9Shi7sbrHqY&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=6">
+    <img src="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/blob/main/assets/Images/intro%20to%20JS.png" width=80%> 
+  </a>
+</p>
 
-[![GitHub issues](https://img.shields.io/github/issues/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/issues)
-[![GitHub forks](https://img.shields.io/github/forks/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/network)
-[![GitHub stars](https://img.shields.io/github/stars/Vishal-raj-1/Awesome-JavaScript-Projects)](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/stargazers)
 
-Are you a Newbie in Web development and want to dive deep into Javascript?
+Are you looking for some awesome Javascript Projects in which each and every project will teach you an important Javascript Concept? Let's Learn JS DOM Now
 
-<p align="center"><img src="https://media.giphy.com/media/l4q83E0RjRSGLXBLO/giphy.gif" width = 40%></p>
-
-Are you looking for some awesome Javascript Projects in which each and every project will teach you an important Javascript Concept?
-
-<p align="center"><img src="https://media.giphy.com/media/Uq4XZx6xm8bdVgrv9T/giphy.gif" width = 40%></p>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=9Shi7sbrHqY&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=7">
+    <img src="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/blob/main/assets/Images/intro%20to%20DOM.png" width=80%> 
+  </a>
+</p>
 
 Do you want to contribute to some Awesome Javascript projects and showcase your Javascript skills through it?🤩
 
