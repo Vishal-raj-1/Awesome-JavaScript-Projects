@@ -3059,7 +3059,12 @@ let projectData = [
 		projectImage: 'assets/GIFs/DinosaurGame.gif',
 		projectUrl: 'public/DinosaurGame.html',
 	},
+    {
+        projectName: "File Zipper",
+        projectImage: "assets/Images/File_Zipper.jpeg",
+        projectUrl: "public/File_Zipper.html",
 
+    },
 	{
 		projectName: 'Ternary Search Visualization in JavaScript',
 		projectImage: 'assets/Images/ternarysearch-visualizing.png',
@@ -3070,7 +3075,6 @@ let projectData = [
 		projectImage: 'assets/Images/binarysearch-visualizing.png',
 		projectUrl: 'public/binarysearch.html',
 	},
-
 	{
 		projectName: 'Heap Sort Visualizer in JavaScript',
 		projectImage: 'assets/Images/heap-visualizing.png',
