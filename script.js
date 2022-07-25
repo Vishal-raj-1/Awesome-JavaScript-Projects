@@ -5,11 +5,6 @@ let projectData = [
 		projectUrl: 'public/Random_Quote_Generator.html',
 	},
 	{
-		projectName: 'Drawing App',
-		projectImage: 'assets/Images/Drawing%20App.PNG',
-		projectUrl: 'public/Drawing%20App/index.html',
-	},
-	{
 		projectName: 'Form validation',
 		projectImage: 'assets/Images/Form-validation/formjs.png',
 		projectUrl: 'public/Form-validation/index.html',
@@ -696,11 +691,6 @@ let projectData = [
 		projectName: 'Mario Game',
 		projectImage: 'assets/GIFs/mario.gif',
 		projectUrl: 'public/mario.html',
-	},
-	{
-		projectName: 'Drawing App',
-		projectImage: 'assets/GIFs/draw.gif',
-		projectUrl: 'public/draw.html',
 	},
 	{
 		projectName: 'QR Code Generator',
@@ -3538,19 +3528,29 @@ let projectData = [
 ];
 
 var projectDetails = projectData.slice(0);
+console.log(projectDetails)
 projectDetails.sort(function(a, b) {
     var x = a.projectName.toLowerCase();
     var y = b.projectName.toLowerCase();
     return x < y ? -1 : x > y ? 1 : 0;
 });
 
+function removeDuplicate(){
+	projectDetails = projectDetails.filter((value, index, self) =>
+	index === self.findIndex((t) => (
+	  t.projectName === value.projectName
+	))
+  )
+}
+removeDuplicate();
+
 let projectContainer = document.getElementById("js-projects");
-console.log(projectContainer);
 
 window.addEventListener("load", getProjects());
 
 function getProjects() {
     let output = "";
+	projectDetails = new Set(projectDetails);
     projectDetails.forEach(
         (data, item) =>
         (output += `
@@ -3570,7 +3570,6 @@ function getProjects() {
     );
 
     projectContainer.innerHTML = output;
-    console.log("projectContainer", projectContainer.innerHTML);
 }
 
 // Search function starts
@@ -3591,7 +3590,6 @@ searchBtn.addEventListener("click", (e) => {
                 filterData.push(obj);
             }
         });
-        console.log(filterData);
 
         searchForm.addEventListener("submit", (e) => {
             e.preventDefault();
@@ -3604,10 +3602,8 @@ searchBtn.addEventListener("click", (e) => {
                         filterData.push(obj);
                     }
                 });
-                console.log(filterData);
             } else {
                 filterData = [...projectData];
-                //console.log(filterData)
             }
             let filter = "";
             filterData.forEach(

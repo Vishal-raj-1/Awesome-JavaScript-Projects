@@ -1,0 +1,107 @@
+body {
+    text-align: center;
+    vertical-align: center;
+    background-color: chocolate;
+}
+
+h1 {
+    background-color: black;
+    color: darkred;
+}
+
+.container{
+    padding:10px;
+
+}
+
+button{
+    padding: .7rem;
+    background-color: transparent;
+    border-radius: 8%;
+    background-color: black !important;
+    color: white;
+    box-shadow: 2px 3px 3px rgba(199, 234, 240, 0.7);
+
+}
+button:hover{
+    border: 3px solid white;
+    box-shadow: 3px 5px 3px #8888;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+section .wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+
+}
+
+section .wave.wave1
+{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2
+{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3
+{
+    animation: animate 15s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+
+section .wave.wave4
+{
+    animation: animate 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -2s;
+    bottom: 20;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position-x:0 ;
+    }
+    100%
+    {
+        background-position-x:1000px ;
+    }
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        background-position-x:0 ;
+    }
+    100%
+    {
+        background-position-x:-1000px ;
+    }
+}
