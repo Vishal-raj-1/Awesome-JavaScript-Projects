@@ -33,7 +33,15 @@ What we have for you here?
 
 So, What are you waiting for?
 
+# Resources:
 
+1. [Frontend Development Essential Course](https://www.youtube.com/playlist?list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ)
+2. [HTML Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=2)
+3. [CSS Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=3)
+4. [CSS Flexbox Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=4)
+5. [CSS Grid Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=5)
+6. [JavaScript Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=6)
+7. [JavaScript DOM Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=7)
 
 # Tech-Stack :
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
