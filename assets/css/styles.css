@@ -1094,6 +1094,14 @@ div.searchProject::after {
 
   .buttonCenter{
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .commanBtn{
+   margin: 10px 0 !important;
   }
 
   #embedForPc {
