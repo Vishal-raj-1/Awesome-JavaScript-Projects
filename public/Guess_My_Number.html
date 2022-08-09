@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number!</title>
+    <link rel="stylesheet" href="../assets/css/Guess_My_Number.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <header>
+        <div class="inner-header-container">
+          <div>
+            <button id="reset_btn">Again!</button>
+            <button id="modal_trigger">Modal</button>
+          </div>
+          <p>(Between 1 and 20)</p>
+        </div>
+        <h1 class="app-title">Guess My Number!</h1>
+      </header>
+      <div class="qmark-container">
+        <p class="qmark">?</p>
+      </div>
+      <main>
+        <div class="main-container">
+          <input type="number" id="input_num" placeholder="Guess" />
+          <button id="check_btn">Check!</button>
+        </div>
+        <div id="status_container" class="main-container">
+          <p id="guess_status"></p>
+          <p id="score">Score: 20</p>
+          <p id="highscore">Highscore: 0</p>
+        </div>
+      </main>
+    </div>
+    <div class="modal" id="modal">
+      <p id="close_btn">❌</p>
+      <h1 class="modal-title">I'm a modal window</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt
+        ducimus facere maxime dolorum, fugiat modi ex veniam accusamus corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt
+        ducimus facere maxime dolorum, fugiat modi ex veniam accusamus corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt
+        ducimus facere maxime dolorum, fugiat modi ex veniam accusamus corporis?
+      </p>
+    </div>
+    <script src="../assets/js/Guess_My_Number.js"></script>
+  </body>
+</html>

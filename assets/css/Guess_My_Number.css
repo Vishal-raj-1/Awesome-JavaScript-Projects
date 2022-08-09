@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #2b2b2b;
+}
+p,
+h1 {
+  color: #eee;
+}
+header {
+  padding: 1.5rem;
+}
+.inner-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner-header-container p {
+  font-size: 1.125rem;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.app-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.qmark-container {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+}
+.qmark {
+  background-color: #eee;
+  width: 6rem;
+  height: 6rem;
+  font-size: 4rem;
+  color: #2b2b2b;
+  display: inline-flex;
+  place-items: center;
+  place-content: center;
+}
+.qmark::before {
+  content: "";
+  height: 0.5rem;
+  width: 100%;
+  position: absolute;
+  color: #eee;
+  background-color: #eee;
+  z-index: -1;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-container * {
+  margin-block: 0.5rem;
+  margin-inline: 4rem;
+}
+.main-container input {
+  background-color: #2b2b2b;
+  border: 0.25rem solid #eee;
+  font-size: 3rem;
+  max-width: 12rem;
+  padding-block: 0.25rem;
+  text-align: center;
+  caret-color: #eee;
+  color: #eee;
+  outline: none;
+}
+.main-container p {
+  font-size: 1.5rem;
+}
+.victory {
+  background-color: limegreen;
+}
+.defeat {
+  background-color: darkred;
+}
+.modal {
+  display: none;
+  min-width: 30rem;
+  max-width: 45rem;
+  padding: 1.25rem;
+  position: absolute;
+  background-color: #eee;
+  color: #2b2b2b;
+  border-radius: 0.5rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal * {
+  color: #2b2b2b;
+  margin-block: 1.5rem;
+}
+#close_btn {
+  margin: 0;
+  margin-left: calc(100% - 1.25rem);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: inline-block;
+}
+.fade {
+  filter: blur(8px);
+}
