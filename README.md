@@ -43,6 +43,7 @@ So, What are you waiting for?
 6. [JavaScript Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=6)
 7. [JavaScript DOM Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=7)
 8. [JavaScript Certification Course](https://www.scaler.com/topics/course/javascript-beginners/)
+9. [JavaScript Roadmap](https://roadmap.sh/javascript)
 
 
 # Tech-Stack :
