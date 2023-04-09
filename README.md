@@ -1,5 +1,16 @@
 <h1 align="center">Awesome JavaScript Projects</h1>
 
+# Update:
+I have launch free mentorship for frontend developer. If you want to learn frontend development, build real world projects, and get jobs in frontend development. So should definetly check out this free mentorship program.
+
+<p align="center">
+  <a href="https://youtu.be/tI7R7YG4jEY">
+    <img src="https://img.youtube.com/vi/tI7R7YG4jEY/0.jpg" alt="Frontend Developer Mentorship" />
+  </a>
+</p>
+
+[More Details About Mentorship](vishal-raj-1.notion.site)
+
 Are you a Newbie in Web development and want to dive deep into Javascript? Do checkout this video to learn JS Basics first
 
 <p align="center">
