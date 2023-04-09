@@ -3,17 +3,16 @@
 Are you a Newbie in Web development and want to dive deep into Javascript? Do checkout this video to learn JS Basics first
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=9Shi7sbrHqY&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=6">
-    <img src="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/blob/main/assets/Images/intro%20to%20JS.png" width=80%> 
+  <a href="https://www.youtube.com/watch?v=9Shi7sbrHqY">
+    <img src="https://img.youtube.com/vi/9Shi7sbrHqY/0.jpg" alt="JavaScript Tutorial For Beginners" />
   </a>
 </p>
-
 
 Are you looking for some awesome Javascript Projects in which each and every project will teach you an important Javascript Concept? Let's Learn JS DOM Now
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=9Shi7sbrHqY&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=7">
-    <img src="https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects/blob/main/assets/Images/intro%20to%20DOM.png" width=80%> 
+  <a href="https://youtu.be/85jzHRTVdsc">
+    <img src="https://img.youtube.com/vi/85jzHRTVdsc/0.jpg" alt="JavaScript Tutorial For Beginners" />
   </a>
 </p>
 
@@ -36,13 +35,16 @@ So, What are you waiting for?
 # Resources:
 
 1. [Frontend Development Essential Course](https://www.youtube.com/playlist?list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ)
-2. [HTML Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=2)
-3. [CSS Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=3)
-4. [CSS Flexbox Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=4)
-5. [CSS Grid Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=5)
-6. [JavaScript Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=6)
-7. [JavaScript DOM Crash Course](https://www.youtube.com/watch?v=EOwWXNBKtBM&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=7)
-8. [JavaScript Certification Course](https://www.scaler.com/topics/course/javascript-beginners/)
+2. [HTML Crash Course - From Beginner to Pro in 40 minutes](https://youtu.be/EOwWXNBKtBM)
+3. [CSS Crash Course: Learn CSS in 60 minutes](https://youtu.be/Qu0dbQxm6II)
+4. [Learn Flexbox in 25 minutes - The Complete Crash Course](https://youtu.be/3nLglJtUHjA)
+5. [Learn CSS Grid in 35 minutes: The Ultimate Crash Course for Beginners](https://youtu.be/ULp7wPJ-rzQ)
+6. [Learn Git and GitHub basics for Open Source Contribution](https://youtu.be/ng_3YZHnz8U)
+7. [JavaScript Tutorial for Beginners](https://youtu.be/9Shi7sbrHqY)
+8. [JavaScript DOM Manipulation - Full Course for Beginners](https://youtu.be/85jzHRTVdsc)
+9. [Build a Google Keep Clone with JavaScript](https://youtu.be/CVS8CdVrsoc)
+10. [Learn JavaScript by Building a Whack A Mole Game](https://youtu.be/lY7j-NBGFHM)
+11. [Master JavaScript Promises, Fetch API, and Async/Await](https://youtu.be/z1LJ_gWwzFs)
 
 
 # Tech-Stack :
