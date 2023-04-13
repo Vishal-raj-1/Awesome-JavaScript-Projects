@@ -9,6 +9,7 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 .icon-bar a {
@@ -18,6 +19,7 @@ body {
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
+  
 }
 
 .icon-bar a:hover {
