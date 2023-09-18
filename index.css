@@ -19,6 +19,7 @@ body {
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
+  
 }
 
 .icon-bar a:hover {
@@ -76,5 +77,21 @@ body {
   color: #37517e;
   background-color: white;
 }
+@media only screen and (max-width: 360px) {
+  
+a.linka{
+  font-size: 10px;
+} 
+}
+@media only screen and (max-width: 330px) {
 
+  a.linka {
+    display: none;
+  }
+}
+@media only screen and (min-width: 361px) {
 
+  a.linka {
+    font-size: 12px;
+  }
+}
