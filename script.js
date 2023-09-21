@@ -1,7 +1,7 @@
 let projectData = [
 	{
 		projectName: 'Random Quote Generator',
-		projectImage: 'assets/Images/Random_Quote_Generator.png',
+		projectImage: 'assets/Images/Random_Quote_Generator.PNG',
 		projectUrl: 'public/Random_Quote_Generator.html',
 	},
 	{
@@ -1015,7 +1015,7 @@ let projectData = [
 	},
 	{
 		projectName: 'Insect Catch Game',
-		projectImage: 'assets/Images/Insect Catch.png',
+		projectImage: 'assets/Images/Insect-Catch.png',
 		projectUrl: 'public/InsectCatch.html',
 	},
 	{
@@ -1050,7 +1050,7 @@ let projectData = [
 	},
 	{
 		projectName: 'Ludo Game',
-		projectImage: 'assets/Images/ludo/ludo.png',
+		projectImage: 'assets/Images/ludo/ludo.png.png',
 		projectUrl: 'public/ludo.html',
 	},
 	{
@@ -1091,7 +1091,7 @@ let projectData = [
 	},
 	{
 		projectName: 'Flappy Bird',
-		projectImage: 'assets/GIFs/flappy-bird.gif',
+		projectImage: 'assets/GIFs/flappy-bird.png',
 		projectUrl: 'public/flappybird.html',
 	},
 	{
@@ -1186,7 +1186,7 @@ let projectData = [
 	},
 	{
 		projectName: 'JavaScript Dragon Game',
-		projectImage: 'assets/Images/JavaScript Dragon Game.png',
+		projectImage: 'assets/Images/JavaScript-Dragon-Game.png',
 		projectUrl: 'public/Dino game.html',
 	},
 	{
@@ -2447,7 +2447,7 @@ let projectData = [
 	},
 	{
 		projectName: 'Insect Catch Game',
-		projectImage: 'assets/Images/Insect Catch.png',
+		projectImage: 'assets/Images/Insect-Catch.png',
 		projectUrl: 'public/InsectCatch.html',
 	},
 	{
@@ -2523,7 +2523,7 @@ let projectData = [
 	},
 	{
 		projectName: 'Flappy Bird',
-		projectImage: 'assets/GIFs/flappy-bird.gif',
+		projectImage: 'assets/GIFs/flappy-bird.png',
 		projectUrl: 'public/flappybird.html',
 	},
 	{
@@ -2887,7 +2887,7 @@ let projectData = [
 	},
 	{
 		projectName: 'Google Assistant Clone',
-		projectImage: 'assets/Images/google_assistant.PNG',
+		projectImage: 'assets/Images/google_assistant.png',
 		projectUrl: 'public/google_assistant_clone.html',
 	},
 
@@ -3310,7 +3310,7 @@ let projectData = [
 	},
 	{
 		projectName: 'Css transform',
-		projectImage: 'assets/images/css-transform.png',
+		projectImage: 'assets/Images/css-transform.png',
 		projectUrl: 'public/css-transform.html',
 	},
 	{
@@ -3320,23 +3320,23 @@ let projectData = [
 	},
 	{
 		projectName: 'Covid Live Status',
-		projectImage: 'assets/images/covid-live.png',
+		projectImage: 'assets/Images/covid-live.png',
 		projectUrl: 'public/covid_live.html',
 	},
 	{
 		projectName: '3d Flip Card',
-		projectImage: 'assets/images/flip-card.png',
+		projectImage: 'assets/Images/card-flip.png',
 		projectUrl: 'public/flip-card.html',
 	},
 
 	{
 		projectName: 'Contact form',
-		projectImage: 'assets/images/contact-form.png',
+		projectImage: 'assets/Images/contact-form.png',
 		projectUrl: 'public/contact-form.html',
 	},
 	{
 		projectName: 'Fun facts about Math',
-		projectImage: 'assets/images/maths_facts.png',
+		projectImage: 'assets/Images/maths_facts.png',
 		projectUrl: 'public/maths_facts.html',
 	},
 	{
@@ -3357,12 +3357,12 @@ let projectData = [
 	},
 	{
 		projectName: 'Book Search ',
-		projectImage: 'assets/images/book-search.png',
+		projectImage: 'assets/Images/book-search.png',
 		projectUrl: 'public/book-search.html',
 	},
 	{
 		projectName: 'Joke with category',
-		projectImage: 'assets/images/joke-category.png',
+		projectImage: 'assets/Images/joke-category.png',
 		projectUrl: 'public/joke-category.html',
 	},
 	{
@@ -3377,27 +3377,27 @@ let projectData = [
 	},
 	{
 		projectName: 'Emoji Factory',
-		projectImage: 'assets/images/emoji-factory.png',
+		projectImage: 'assets/Images/emoji-factory.png',
 		projectUrl: 'public/emoji-factory.html',
 	},
 	{
 		projectName: 'Image Search',
-		projectImage: 'assets/images/image-search.png',
+		projectImage: 'assets/Images/image-search.png',
 		projectUrl: 'public/image-search.html',
 	},
 	{
 		projectName: 'Sortable List',
-		projectImage: 'assets/images/sortable_list.png',
+		projectImage: 'assets/Images/sortable_list.png',
 		projectUrl: 'public/sortable_list.html',
 	},
 	{
 		projectName: '3D Rotating Nav',
-		projectImage: 'assets/images/rota.png',
+		projectImage: 'assets/Images/rota.png',
 		projectUrl: 'public/rotating_nav_anim.html',
 	},
 	{
 		projectName: 'Netflix Nav',
-		projectImage: 'assets/images/netnav.png',
+		projectImage: 'assets/Images/netnav.png',
 		projectUrl: 'public/netnav.html',
 	},
 	{
@@ -3412,12 +3412,12 @@ let projectData = [
 	},
 	{
 		projectName: 'Gradient Showcase',
-		projectImage: 'assets/images/gradient-showcase.png',
+		projectImage: 'assets/Images/gradient-showcase.png',
 		projectUrl: 'public/gradient-showcase.html',
 	},
 	{
 		projectName: 'Meal Genrator',
-		projectImage: 'assets/images/meal-genrator.png',
+		projectImage: 'assets/Images/meal-genrator.png',
 		projectUrl: 'public/meal-genrator.html',
 	},
 	{
@@ -3437,92 +3437,92 @@ let projectData = [
 	},
 	{
 		projectName: 'SVG Generator',
-		projectImage: 'assets/images/svg-generator.png',
+		projectImage: 'assets/Images/svg-generator.png',
 		projectUrl: 'public/svg-generator.html',
 	},
 	{
 		projectName: 'Background Video header',
-		projectImage: 'assets/images/background-header.png',
+		projectImage: 'assets/Images/background-header.png',
 		projectUrl: 'public/background-header.html',
 	},
 	{
 		projectName: 'Detect Internet Connection',
-		projectImage: 'assets/images/DetectInternetconnection.jpeg',
+		projectImage: 'assets/Images/DetectInternetconnection.jpeg',
 		projectUrl: 'public/DetectInternetconnection.html',
 	},
 	{
 		projectName: 'Weather App',
-		projectImage: 'assets/images/Weather-App.png',
+		projectImage: 'assets/Images/Weather-App.png',
 		projectUrl: 'public/Weather-App.html',
 	},
 	{
 		projectName: 'Page Scroll Indicator',
-		projectImage: 'assets/images/page_scroll_indicator.png',
+		projectImage: 'assets/Images/page_scroll_indicator.png',
 		projectUrl: 'public/page_scroll_indicator.html',
 	},
 	{
 		projectName: 'Movie Search App',
-		projectImage: 'assets/images/Movie-Search-App.png',
+		projectImage: 'assets/Images/Movie-Search-App.png',
 		projectUrl: 'public/Movie-Search-App.html',
 	},
 	{
 		projectName: 'Custom Range Slider',
-		projectImage: 'assets/images/Custom-Range-Slider.png',
+		projectImage: 'assets/Images/Custom-Range-Slider.png',
 		projectUrl: 'public/Custom-Range-Slider.html',
 	},
 	{
 		projectName: 'Image Filter App',
-		projectImage: 'assets/images/Image-Filter-App.png',
+		projectImage: 'assets/Images/Image-Filter-App.png',
 		projectUrl: 'public/Image-Filter-App.html',
 	},
 	{
 		projectName: 'Double Vertical Slider App',
-		projectImage: 'assets/images/Double-Vertical-Slider.png',
+		projectImage: 'assets/Images/Double-Vertical-Slider.png',
 		projectUrl: 'public/Double-Vertical-Slider.html',
 	},
 	{
 		projectName: 'Line Chart',
-		projectImage: 'assets/images/linechart.jpg',
+		projectImage: 'assets/Images/linechart.jpg',
 		projectUrl: 'public/linechart.html',
 	},
 	{
 		projectName: 'Bar Chart',
-		projectImage: 'assets/images/barchart.png',
+		projectImage: 'assets/Images/barchart.png',
 		projectUrl: 'public/barchart.html',
 	},
 	{
 		projectName: 'Random Password Generator',
-		projectImage: 'assets/images/password-generator.jpg',
+		projectImage: 'assets/Images/password-generator.jpg',
 		projectUrl: 'public/password.html',
 	},
 	{
 		projectName: 'Radar Chart Implementation ',
-		projectImage: 'assets/images/radarchart.jpg',
+		projectImage: 'assets/Images/radarchart.jpg',
 		projectUrl: 'public/radar.html',
 	},
 	{
 		projectName: 'Scatter Chart App',
-		projectImage: 'assets/images/scatter_chart.png',
+		projectImage: 'assets/Images/scatter_chart.png',
 		projectUrl: 'public/scatter_chart.html',
 	},
 	{
 		projectName: 'Random Password Generator',
-		projectImage: 'assets/images/password-generator.jpg',
+		projectImage: 'assets/Images/password-generator.jpg',
 		projectUrl: 'public/password.html',
 	},
 	{
 		projectName: '0/1 Knapsack Solution',
-		projectImage: 'assets/images/KnapsackProblem.png',
+		projectImage: 'assets/Images/KnapsackProblem.PNG',
 		projectUrl: 'public/KnapSackProblem.html',
 	},
 	{
 		projectName: 'Portfolio Website',
-		projectImage: 'assets/images/Portfolio/Portfolio.png',
+		projectImage: 'assets/Images/Portfolio/Portfolio.png',
 		projectUrl: 'public/Portfolio.html',
 	},
 	{
 		projectName: '15 Puzzle Game',
-		projectImage: 'assets/images/15puzzle/15puzzle.png',
+		projectImage: 'assets/Images/15puzzle/15puzzle.png',
 		projectUrl: 'public/15puzzle.html',
 	},
 ];
