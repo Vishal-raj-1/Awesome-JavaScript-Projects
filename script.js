@@ -751,7 +751,7 @@ let projectData = [
 	},
 	{
 		projectName: 'Random_Picker_visualiser',
-		projectImage: 'assets/GIFs/README.md',
+		projectImage: 'assets/GIFs/Random_Picker_Visualiser.gif',
 		projectUrl: 'public/Random_Picker.html',
 	},
 	{
