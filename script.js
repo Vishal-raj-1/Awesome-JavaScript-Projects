@@ -2184,7 +2184,7 @@ let projectData = [
 	{
 		projectName: 'Random_Picker_visualiser',
 		projectImage: 'assets/GIFs/README.md',
-		projectUrl: 'public/Random_Picker.html',
+		projectUrl: 'public/random_choice_picker.html',
 	},
 	{
 		projectName: 'Animated Minion Eyes',
