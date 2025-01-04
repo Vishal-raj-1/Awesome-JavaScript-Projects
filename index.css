@@ -58,13 +58,13 @@ body {
 
 .darkmode-toggle {
   background: #100f2c;
-  width: 3rem;
-  height: 3rem;
+  width: 2.3rem;
+  height: 2.3rem;
   position: fixed;
   border-radius: 50%;
   border: 2px solid rgb(236, 236, 243);
   left: 70.2rem;
-  top: 30px;
+  top: 24px;
   cursor: pointer;
   transition: all 0.5s ease;
   display: flex;
