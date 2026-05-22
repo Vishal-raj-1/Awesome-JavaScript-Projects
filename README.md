@@ -56,6 +56,7 @@ So, What are you waiting for?
 9. [Build a Google Keep Clone with JavaScript](https://youtu.be/CVS8CdVrsoc)
 10. [Learn JavaScript by Building a Whack A Mole Game](https://youtu.be/lY7j-NBGFHM)
 11. [Master JavaScript Promises, Fetch API, and Async/Await](https://youtu.be/z1LJ_gWwzFs)
+12. [TutorialSearch](https://tutorialsearch.io/browse/programming-languages/vanilla-javascript) - Free cross-platform search engine indexing 50,000+ tutorials from Udemy, Skillshare, Pluralsight, and other major learning platforms across 45+ categories.
 
 
 # Tech-Stack :
